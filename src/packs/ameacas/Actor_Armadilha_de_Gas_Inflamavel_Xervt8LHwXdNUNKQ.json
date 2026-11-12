@@ -1,0 +1,52 @@
+{
+  "name": "Armadilha de Gás Inflamável",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "cBIp29VyRjlLDfOn",
+  "system": {
+    "attributes": {
+      "nd": "6"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Andar 2, área 4 (depósito).</b></p><p style=\"text-align:justify\">Entrar no depósito de Jaren (porta trancada: Ladinagem CD 20). Investigação CD 20 descobre a armadilha e que ela não pode ser desativada; a alavanca da área 6 a desativa.</p>",
+      "effects": "<p style=\"text-align:justify\">Gás venenoso, ativado por quem pisar no chão. Afeta todos em alcance curto: perda de [[/r 1d12[perda]]] PV por rodada durante 3 rodadas (Fortitude CD 20 reduz para 1 rodada).</p><p style=\"text-align:justify\"><b>O gás é inflamável.</b> Explodir a porta com uma bomba causa [[/r 12d6[impacto]]] de impacto em alcance curto (Reflexos CD 20 reduz à metade).</p>",
+      "actions": "<p style=\"text-align:justify\">Dentro: [[/r 1d4]] poções de curar ferimentos (4d8+4 PV) e [[/r 4d6*1000]] T$ (as últimas economias de Jaren).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura2"
+    },
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "d37f53b7",
+      "assinaturas": [
+        "d37f53b7"
+      ]
+    }
+  },
+  "_id": "Xervt8LHwXdNUNKQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!Xervt8LHwXdNUNKQ"
+}

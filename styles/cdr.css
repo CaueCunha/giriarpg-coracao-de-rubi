@@ -1,0 +1,14 @@
+/* Coração de Rubi · módulo da campanha */
+.cdr-importar {
+	flex: 1 0 100%;
+	margin-top: 4px;
+}
+.cdr-nota {
+	border-left: 3px solid #7a5a2a;
+	padding-left: 6px;
+	margin-bottom: 4px;
+}
+.cdr-ref {
+	font-size: 0.85em;
+	opacity: 0.85;
+}

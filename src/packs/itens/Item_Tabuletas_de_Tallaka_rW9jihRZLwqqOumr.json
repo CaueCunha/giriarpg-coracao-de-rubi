@@ -1,0 +1,94 @@
+{
+  "name": "Tabuletas de Tallaka",
+  "type": "tesouro",
+  "img": "systems/tormenta20/icons/itens/gerais/livro.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Tabuletas de pedra com runas anãs e desenhos de armaduras de aço-rubi (andar 2, área 8). Um anão ou Conhecimento CD 15 lê. Um inventor recebe +10 em testes para fabricar itens de aço-rubi. Entregues a Ezequias, ele dá uma melhoria em um item à escolha de cada jogador.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — O Segredo das Minas",
+    "qtd": 1,
+    "preco": 0,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "FYqoFd8yCzZseA4H",
+  "flags": {
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "63eefd77",
+      "assinaturas": [
+        "63eefd77"
+      ]
+    }
+  },
+  "_id": "rW9jihRZLwqqOumr",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!rW9jihRZLwqqOumr"
+}

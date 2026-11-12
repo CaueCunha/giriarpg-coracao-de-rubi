@@ -1,0 +1,40 @@
+{
+  "name": "PJ · Dado de Aniversário — Rolar novamente",
+  "type": "script",
+  "img": "icons/sundries/gaming/dice-runed-brown.webp",
+  "command": "// PJ · Dado de Aniversário — Rolar novamente\nconst PODER = \"Dado de Aniversário\";\nconst MARCA_CENA = \"Dado de Aniversário — usos da cena\";\n\n// Mestre sem token: devolver usos\nactor = canvas.tokens.controlled[0]?.actor ?? (game.user.isGM ? null : game.user.character);\nif (!actor) {\n\tif (!game.user.isGM) return ui.notifications.warn(\"Selecione o token do seu personagem.\");\n\tconst donos = game.actors.filter((a) => a.items.some((i) => i.name === PODER));\n\tif (!donos.length) return ui.notifications.warn(\"Nenhum personagem tem o poder \" + PODER + \".\");\n\tfor (const a of donos) {\n\t\tconst it = a.items.find((i) => i.name === PODER);\n\t\tconst f = it.getFlag(\"tormenta20\", \"dadoAniversario\") ?? {};\n\t\tawait it.setFlag(\"tormenta20\", \"dadoAniversario\", { ...f, usos: f.max ?? 1 });\n\t\tconst marca = a.effects.find((e) => e.name === MARCA_CENA);\n\t\tif (marca) await marca.delete();\n\t}\n\treturn ui.notifications.info(\"Usos do \" + PODER + \" devolvidos: \" + donos.map((a) => a.name).join(\", \") + \".\");\n}\n\nconst item = actor.items.find((i) => i.name === PODER);\nif (!item) return ui.notifications.warn(actor.name + \" não tem o poder \" + PODER + \".\");\nconst cfg = item.getFlag(\"tormenta20\", \"dadoAniversario\") ?? { usos: 1, max: 1, recarga: \"nunca\" };\nlet restantes = cfg.usos;\nif (cfg.recarga === \"cena\") {\n\tconst marca = actor.effects.find((e) => e.name === MARCA_CENA);\n\trestantes = cfg.max - (marca?.getFlag(\"tormenta20\", \"gastos\") ?? 0);\n}\nif (restantes <= 0) return ui.notifications.warn(actor.name + \" já usou o \" + PODER + (cfg.recarga === \"cena\" ? \" nesta cena.\" : \".\"));\n\n// últimas rolagens deste personagem\nconst msgs = game.messages.contents.slice().reverse()\n\t.filter((m) => m.speaker?.actor === actor.id && m.rolls?.length)\n\t.slice(0, 6);\nif (!msgs.length) return ui.notifications.warn(\"Nenhuma rolagem recente de \" + actor.name + \" no chat.\");\nconst opcoes = [];\nfor (const m of msgs) {\n\tconst titulo = (m.flavor || m.content.replace(/<[^>]+>/g, \" \").replace(/\\s+/g, \" \").trim().slice(0, 50)) || \"Rolagem\";\n\tm.rolls.forEach((r, i) => opcoes.push({ m, i, r, label: titulo + \" — \" + r.formula + \" = \" + r.total }));\n}\nconst lista = opcoes.map((o, k) => '<label style=\"display:block;margin:.2em 0\"><input type=\"radio\" name=\"op\" value=\"' + k + '\"' + (k === 0 ? \" checked\" : \"\") + \"> \" + o.label + \"</label>\").join(\"\");\n\nconst escolha = await foundry.applications.api.DialogV2.prompt({\n\twindow: { title: \"PJ · Dado de Aniversário — Rolar novamente\" },\n\tcontent: \"<p>Usos restantes: <strong>\" + restantes + \"</strong>. Qual rolagem rolar de novo?</p>\" + lista,\n\tok: { label: \"Rolar novamente\", callback: (ev, btn) => btn.form.querySelector(\"input[name=op]:checked\")?.value },\n\trejectClose: false\n});\nif (escolha === undefined || escolha === null) return;\nconst alvo = opcoes[Number(escolha)];\n\nconst nova = await alvo.r.reroll();\nawait nova.toMessage({\n\tspeaker: ChatMessage.getSpeaker({ actor }),\n\tflavor: \"<strong>🎂 Dado de Aniversário!</strong> Rolando novamente: \" + alvo.label + \" → <strong>\" + nova.total + \"</strong>\"\n});\n\nif (cfg.recarga === \"cena\") {\n\tconst marca = actor.effects.find((e) => e.name === MARCA_CENA);\n\tconst gastos = (marca?.getFlag(\"tormenta20\", \"gastos\") ?? 0) + 1;\n\tif (marca) await marca.setFlag(\"tormenta20\", \"gastos\", gastos);\n\telse await actor.createEmbeddedDocuments(\"ActiveEffect\", [{\n\t\tname: MARCA_CENA, img: \"icons/sundries/gaming/dice-runed-brown.webp\", type: \"base\",\n\t\tduration: { value: null, units: \"seconds\", expiry: \"sceneEnd\" },\n\t\tflags: { tormenta20: { gastos } },\n\t\tsystem: { changes: [], targets: [], status: null, onuse: false,\n\t\t\tabilityUse: { description: \"\", automatic: false, aumenta: false, custo: 0, names: [], types: [] },\n\t\t\taura: { isAura: false, range: 0 } }\n\t}]);\n} else {\n\tawait item.setFlag(\"tormenta20\", \"dadoAniversario\", { ...cfg, usos: restantes - 1 });\n}\nui.notifications.info(PODER + \": restam \" + (restantes - 1) + \" uso(s) para \" + actor.name + \".\");",
+  "folder": "z1GNH0r9GefXJ36a",
+  "flags": {
+    "world": {
+      "cdr": "pjs",
+      "cdrRole": "dadoAniversarioMacro"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha",
+      "antigo": "campanha-macros",
+      "assinatura": "3ba43ee9",
+      "assinaturas": [
+        "3ba43ee9"
+      ]
+    }
+  },
+  "ownership": {
+    "default": 2
+  },
+  "_id": "3TrSlrAIfPn0MS8C",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "author": null,
+  "scope": "global",
+  "_key": "!macros!3TrSlrAIfPn0MS8C"
+}

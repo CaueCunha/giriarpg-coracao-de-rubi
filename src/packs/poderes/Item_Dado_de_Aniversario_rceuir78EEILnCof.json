@@ -1,0 +1,86 @@
+{
+  "name": "Dado de Aniversário",
+  "type": "poder",
+  "img": "icons/sundries/gaming/dice-runed-brown.webp",
+  "folder": "gTeFpWRIClm5tB7J",
+  "flags": {
+    "world": {
+      "cdr": "pjs",
+      "cdrRole": "dadoAniversario"
+    },
+    "tormenta20": {
+      "dadoAniversario": {
+        "usos": 1,
+        "max": 1,
+        "recarga": "nunca"
+      }
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha",
+      "antigo": "campanha-itens",
+      "assinatura": "a508b769",
+      "assinaturas": [
+        "a508b769"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>Um presente de aniversário dos deuses do acaso — Nimb sorri para você hoje.</em></p>\n<p>Você pode rolar novamente <strong>qualquer rolagem</strong> que acabou de fazer (teste de perícia, ataque, dano, magia ou qualquer outra ação) e ficar com o novo resultado. <strong>1 uso.</strong> Os usos não se recuperam.</p>\n<p><em>Automação:</em> use a macro <strong>PJ · Dado de Aniversário — Rolar novamente</strong> logo após a rolagem.</p>",
+      "unidentified": ""
+    },
+    "source": "Poder customizado — mesa Coração de Rubi",
+    "tipo": "geral",
+    "subtipo": "Customizado",
+    "ativacao": {
+      "execucao": "free",
+      "custo": 0,
+      "qtd": "",
+      "condicao": "",
+      "special": ""
+    },
+    "duracao": {
+      "value": 0,
+      "units": "inst",
+      "special": ""
+    },
+    "alcance": "self",
+    "rolls": [],
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    }
+  },
+  "_id": "rceuir78EEILnCof",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!rceuir78EEILnCof"
+}

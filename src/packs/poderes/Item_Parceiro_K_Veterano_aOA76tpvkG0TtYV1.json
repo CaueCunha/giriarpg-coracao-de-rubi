@@ -1,0 +1,146 @@
+{
+  "name": "Parceiro: K (Veterano)",
+  "type": "poder",
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Parceiro Veterano.</strong> K pode proteger e aconselhar os aventureiros. O personagem que K estiver ajudando recebe <strong>+2 na Defesa</strong> e, <strong>uma vez por cena</strong>, pode rolar novamente um teste de perícia recém realizado.</p>\n<p><em>Automação:</em> o +2 na Defesa vale enquanto este poder estiver na ficha. Para rolar novamente, use a macro <strong>A2 · K — Rolar novamente</strong> logo após o teste.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi, Aventura 2, p. 43",
+    "tipo": "geral",
+    "subtipo": "Parceiros",
+    "ativacao": {
+      "execucao": "passive",
+      "custo": 0,
+      "qtd": "",
+      "condicao": "",
+      "special": ""
+    },
+    "duracao": {
+      "value": 0,
+      "units": "inst",
+      "special": ""
+    },
+    "alcance": "none",
+    "rolls": [],
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    }
+  },
+  "folder": "TX9KyFk3uf8oVbqk",
+  "flags": {
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "d865fa6b",
+      "assinaturas": [
+        "d865fa6b"
+      ]
+    }
+  },
+  "_id": "aOA76tpvkG0TtYV1",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "name": "K — Parceiro Veterano (+2 Defesa)",
+      "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>K protege este personagem.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.defesa.bonus",
+            "value": "2",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": false,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": 0,
+          "names": [],
+          "types": []
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "dsQEKlgRuUSFXWw1",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!aOA76tpvkG0TtYV1.dsQEKlgRuUSFXWw1"
+    }
+  ],
+  "_key": "!items!aOA76tpvkG0TtYV1"
+}

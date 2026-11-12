@@ -1,0 +1,27 @@
+name: Testes
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Baixar o sistema Tormenta20
+        run: npm run setup
+      - name: Compêndios em dia com os geradores
+        run: |
+          npm run build
+          git diff --stat --exit-code -- src/packs module.json build/relatorio.md || {
+            echo "::error::src/packs ou module.json não batem com os geradores. Rode npm run build e faça commit."
+            exit 1
+          }
+      - run: npm test

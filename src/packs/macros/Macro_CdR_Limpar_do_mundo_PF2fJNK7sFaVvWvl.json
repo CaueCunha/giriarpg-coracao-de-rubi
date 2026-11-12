@@ -1,0 +1,35 @@
+{
+  "_id": "PF2fJNK7sFaVvWvl",
+  "name": "CdR · Limpar do mundo",
+  "type": "script",
+  "img": "icons/svg/trash.svg",
+  "scope": "global",
+  "command": "// Apaga do mundo o conteúdo do Coração de Rubi para você puxar só o que quiser do compêndio.\n// Guarda uma cópia num compêndio do mundo e não apaga o que você editou, a não ser que você marque.\ngame.modules.get(\"giriarpg-coracao-de-rubi\")?.api?.abrirLimpar();",
+  "folder": "WcIUMsDXIBAmlv4X",
+  "flags": {
+    "world": {
+      "cdr": "cdrcampanha",
+      "cdrRole": "limpador"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha",
+      "antigo": "campanha-macros",
+      "assinatura": "d162458f",
+      "assinaturas": [
+        "d162458f"
+      ]
+    }
+  },
+  "_key": "!macros!PF2fJNK7sFaVvWvl",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

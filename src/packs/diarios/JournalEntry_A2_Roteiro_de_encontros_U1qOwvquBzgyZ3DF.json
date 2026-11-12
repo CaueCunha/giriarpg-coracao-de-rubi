@@ -1,0 +1,266 @@
+{
+  "name": "A2 · Roteiro de encontros",
+  "folder": "MOPvvk5arOC4lVkr",
+  "flags": {
+    "world": {
+      "cdr": "a2",
+      "cdrRole": "roteiro"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-diarios",
+      "assinatura": "5ebce50d",
+      "assinaturas": [
+        "5ebce50d"
+      ]
+    }
+  },
+  "_id": "U1qOwvquBzgyZ3DF",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Abertura e estrada",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — Ezequias:</b> T$ 1.000 por aventureiro (dobra se pedirem), pagos ao entregar a ferramenta-artefato.</li><li><b>Cena 2 — Lonien:</b> Pede para achar o irmão Jaren, expulso da Guilda por desvio de dinheiro.</li><li><b>Cena 3 — Emboscada anã:</b> Percepção CD 15 ou surpreendidos. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.xKjy59Oo80vbJuYR]{Stroka} + 4 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.b03cn7FuNWwVVFTE]{anões capangas}. Stroka pede clemência com menos de 15 PV.</li><li><b>Cena 4 — Entrada:</b> Elevador velho; Sabedoria CD 10 lembra que masmorras são mais perigosas no fundo.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "YWioM2HmpUBjtCLI",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!U1qOwvquBzgyZ3DF.YWioM2HmpUBjtCLI"
+    },
+    {
+      "name": "Andar 1 — Os Mineradores Perdidos",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Área 1:</b> Investigação CD 15: sinais de uso recente.</li><li><b>Área 2:</b> 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.JZkBFgpkrnZ3FEro]{anões veteranos} (Furtividade × Percepção +8). Pedem ajuda na 2ª rodada; os humanos da área 3 chegam na 3ª. Bilhete de Zhura.</li><li><b>Área 3:</b> 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.VNOIptIw8n3zdTeo]{humanos mercenários} (Furtividade × Percepção +3). 2 rolagens de tesouro ND 3. Desenhos de construtos (Misticismo CD 20).</li><li><b>Área 4:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.VNOIptIw8n3zdTeo]{Vigia dorminhoco} (Furtividade CD 5; Intimidação CD 15 o expulsa). Documentos sobre trolls (Conhecimento CD 15 → item Anotações sobre Trolls).</li><li><b>Área 5:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.VNOIptIw8n3zdTeo]{humano mercenário} + @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.3ZJ1NkD2uHYWOvFx]{lobo}.</li><li><b>Área 6:</b> Cofre de Zhura (Ladinagem CD 25 ou a chave): corda e arpéu, pistola certeira com 10 balas, 2 rolagens de tesouro ND 4.</li><li><b>Área 7:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.8nF417WMPtOsk3Va]{Zhura} + 3 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.JZkBFgpkrnZ3FEro]{anões veteranos} e 1d6+4 reféns (cada anão mata um se o grupo atacar). Teste estendido Diplomacia/Intimidação CD 25 (20 com Stroka), 3 sucessos. Thrûn sobrevive. 1º terço da chave no nicho.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "2EcE41lnCNnfpgYb",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!U1qOwvquBzgyZ3DF.2EcE41lnCNnfpgYb"
+    },
+    {
+      "name": "Andar 2 — Sede de Vingança",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Geral:</b> Áreas escuras: o grupo precisa de luz ou visão no escuro.</li><li><b>Área 2:</b> Explosão e cadáveres fumegantes dos capangas de Jaren.</li><li><b>Área 3:</b> 3 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.JZkBFgpkrnZ3FEro]{anões veteranos} + @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.pCRrM8mpXMDOD0BC]{Caixotes de Bombas}.</li><li><b>Área 4:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.Xervt8LHwXdNUNKQ]{Armadilha de Gás Inflamável} (depósito de Jaren).</li><li><b>Área 5:</b> 2 gorloggs (Tormenta20, p. 291; não criados por esta macro).</li><li><b>Área 6:</b> 3 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.aK7LmFcmApCOSkiL]{humanos matadores} + @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.XrAaAx2ZdRoRjIU2]{mago matador}. Alavanca que desativa a armadilha da área 4.</li><li><b>Área 7:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.jlXaXEKsVw95zGvT]{Corredor Explosivo}</li><li><b>Área 8:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.ZLiUT36p3ZxOVNFO]{Jaren} + @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.XrAaAx2ZdRoRjIU2]{mago matador} + 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.aK7LmFcmApCOSkiL]{humanos matadores}. 2º terço da chave e Tabuletas de Tallaka. Poupado, Jaren leva a Lonien como parceira.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "PNke1ACBw8YTw2pT",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!U1qOwvquBzgyZ3DF.PNke1ACBw8YTw2pT"
+    },
+    {
+      "name": "Andar 3 — As Sobras da Guerra",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Área 2:</b> Laboratório de Tallaka: minério de aço-rubi e pergaminhos (anão ou Conhecimento CD 15; tradução T$ 30). Porta com nicho triangular.</li><li><b>Área 3:</b> K desperta. Amigável: parceiro veterano (item Parceiro: K). Atacado ou desrespeitado: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.I5nmDojbL3CulmVG]{K (hostil)}.</li><li><b>Área 4:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.fNzKB93MoFYhFlzl]{Desafio de Heredrimm}</li><li><b>Área 5:</b> 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.xeorJiEASGyQ8e8V]{trolls rubi}; peça triangular no corpo de um deles.</li><li><b>Área 6:</b> 4 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.aloOyOBzPQw67D4a]{guardiões de aço}.</li><li><b>Área 7:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.ABK1D1A0iCmWAHhR]{Enigma do Sol e da Lua} → @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.1wlNB8OincRyIcRm]{guardião de rubi} + @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.xeorJiEASGyQ8e8V]{troll rubi}. Baú: 2 rolagens de tesouro ND 6.</li><li><b>Área 8:</b> 3º terço da chave, acoplado no construto.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "mJWDZIzP9bIXEWDo",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!U1qOwvquBzgyZ3DF.mJWDZIzP9bIXEWDo"
+    },
+    {
+      "name": "Andar 4 — Os Segredos de Tallaka",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Área 2:</b> Porta: Ladinagem CD 20. 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.aloOyOBzPQw67D4a]{guardiões de aço} + @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.1wlNB8OincRyIcRm]{guardião de rubi}. Manopla dos Anões e 1 rolagem de tesouro ND 7.</li><li><b>Área 3:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.q6SKQKDtPxnL2YV3]{Abismo}</li><li><b>Área 4:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.GRKGgkwtwMIC0wOp]{Caminho Diagonal (Teias Corrosivas)}</li><li><b>Área 5:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.JojeVVwIENgxclMF]{Porta do Último Experimento}. Últimos documentos de Tallaka.</li><li><b>Área 6:</b> 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.aloOyOBzPQw67D4a]{guardiões de aço}.</li><li><b>Área 7:</b> Cofre (três terços da chave). @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.S1zN7ZeUIIMzPKhZ]{Abominação Rubi}. Corpo de Tallaka, 2 pedaços de aço-rubi, 10 flechas de aço-rubi, machado anão de aço-rubi, tesouro ND 8. O pedestal do artefato está vazio.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "kvik3itW8j8s9pZc",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!U1qOwvquBzgyZ3DF.kvik3itW8j8s9pZc"
+    },
+    {
+      "name": "Epílogo",
+      "type": "text",
+      "sort": 600,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Lonien:</b> Quer selar a mina com um desabamento. Aliada permanente se a câmara for destruída: 30% de desconto em alquímicos e poções.</li><li><b>K:</b> Quer preservar a câmara. Aliado permanente se ela for mantida: 30% de desconto em melhorias. Se o grupo destruir a câmara, @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.I5nmDojbL3CulmVG]{K ataca} e luta até a morte.</li><li><b>Meio-termo:</b> Boa interpretação + Diplomacia estendida CD 25, 3 sucessos: os dois ficam aliados.</li><li><b>Registrar:</b> Destino de Stroka, Zhura e Jaren; aliança com K e/ou Lonien.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "av5dRBZAXCNMaFLW",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!U1qOwvquBzgyZ3DF.av5dRBZAXCNMaFLW"
+    }
+  ],
+  "_key": "!journal!U1qOwvquBzgyZ3DF"
+}

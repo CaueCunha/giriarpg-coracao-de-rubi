@@ -1,0 +1,164 @@
+{
+  "name": "Manopla dos Anões",
+  "type": "equipamento",
+  "img": "systems/tormenta20/icons/itens/equipamentos/manopla.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Esta manopla de aço-rubi foi originalmente criada por mestres anões. Uma vez por rodada, você pode gastar 1 PM para receber +2 em Força por 1 rodada.</p><p style=\"text-align:justify\"><b>Automação:</b> use o item (gasta 1 PM) e aplique o efeito do cartão no próprio token; ele some sozinho no início do próximo turno.</p><p style=\"text-align:justify\">Andar 4, área 2.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — O Segredo das Minas",
+    "tipo": "acessorio",
+    "preco": 9000,
+    "peso": 0,
+    "espacos": 1,
+    "ativacao": {
+      "custo": 1,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "qtd": 1,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "rolls": [],
+    "equipado": false,
+    "equipado2": {
+      "slot": 0,
+      "type": "body"
+    },
+    "armadura": {
+      "maxAtr": 0,
+      "penalidade": 0,
+      "value": 0
+    }
+  },
+  "folder": "FYqoFd8yCzZseA4H",
+  "flags": {
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "2e41cc69",
+      "assinaturas": [
+        "2e41cc69"
+      ]
+    }
+  },
+  "_id": "wbQSRWm82TH7fb8y",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "name": "Manopla dos Anões (+2 For)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/manopla.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.modificadores.atributos.for",
+            "value": "2",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": false,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": []
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "7nQH73Hi6ABdM4rx",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!wbQSRWm82TH7fb8y.7nQH73Hi6ABdM4rx"
+    }
+  ],
+  "_key": "!items!wbQSRWm82TH7fb8y"
+}

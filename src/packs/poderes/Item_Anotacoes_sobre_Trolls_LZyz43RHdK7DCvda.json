@@ -1,0 +1,148 @@
+{
+  "name": "Anotações sobre Trolls",
+  "type": "poder",
+  "img": "systems/tormenta20/icons/itens/gerais/diario.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Desenhos de trolls com setas apontando partes do corpo (andar 1, corredor após a área 4). Com Conhecimento CD 15, cada herói recebe 1d6 de bônus para usar uma vez em um teste de ataque contra um troll ou para aumentar a CD de uma magia lançada contra um troll.</p><p style=\"text-align:justify\"><b>Automação:</b> arraste para a ficha de cada herói. No ataque contra o troll, Shift+clique e marque a opção; depois apague o item. Para a CD da magia, role 1d6 e some à mão.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — O Segredo das Minas",
+    "tipo": "geral",
+    "subtipo": "Coração de Rubi",
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": []
+  },
+  "folder": "YGubTcbrGVekF1J3",
+  "flags": {
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "7c850dbc",
+      "assinaturas": [
+        "7c850dbc"
+      ]
+    }
+  },
+  "_id": "LZyz43RHdK7DCvda",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "name": "Anotações sobre Trolls (+1d6)",
+      "img": "icons/svg/upgrade.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "+1d6 em um ataque contra um troll.",
+      "system": {
+        "changes": [
+          {
+            "key": "ataque",
+            "value": "1d6",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "attack"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "3tcauhIJzDaRUcTA",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!LZyz43RHdK7DCvda.3tcauhIJzDaRUcTA"
+    }
+  ],
+  "_key": "!items!LZyz43RHdK7DCvda"
+}

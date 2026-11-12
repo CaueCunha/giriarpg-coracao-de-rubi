@@ -1,0 +1,52 @@
+{
+  "name": "Enigma do Sol e da Lua",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "cBIp29VyRjlLDfOn",
+  "system": {
+    "attributes": {
+      "nd": "7"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Andar 3, área 7.</b></p><p style=\"text-align:justify\"><b>Solução:</b> apagar todas as lamparinas no sentido horário em relação à porta (o sol se põe, a lua sobe).</p>",
+      "effects": "<p style=\"text-align:justify\">Pistas: o mosaico mostra Azgher, Deus do Sol, e Tenebra, Deusa das Trevas (Int ou Religião CD 10).</p><p style=\"text-align:justify\">Para os anões, Tenebra é a heroína e Azgher o vilão (Religião CD 15).</p><p style=\"text-align:justify\">Todas as noites Tenebra derrota Azgher e traz a escuridão confortável (Religião CD 20).</p>",
+      "actions": "<p style=\"text-align:justify\">A porta se fecha quando o último entra e as 6 lamparinas se acendem. Na sala, um troll rubi desperta e um guardião de rubi se ativa. Resolvido o enigma, um pedestal sobe com um baú: duas rolagens de tesouro de ND 6.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura2"
+    },
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "088ab3a0",
+      "assinaturas": [
+        "088ab3a0"
+      ]
+    }
+  },
+  "_id": "ABK1D1A0iCmWAHhR",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!ABK1D1A0iCmWAHhR"
+}

@@ -1,0 +1,35 @@
+{
+  "_id": "vQYT5OcR53AKo4Ba",
+  "name": "CdR · Corrigir condições (T20 1.6.5)",
+  "type": "script",
+  "img": "icons/svg/daze.svg",
+  "scope": "global",
+  "command": "// Correção das condições do Tormenta20 1.6.5 (Foundry v14)\n//\n// Causa: ao abrir o mundo, o sistema cria o compêndio do mundo \"Condições\"\n// (world.statuses) copiando os efeitos da pasta de condições do compêndio\n// \"Efeitos\" do sistema. O código procura a pasta pelo id \"69zW3EVSgASXTmsp\",\n// mas no compêndio da 1.6.5 essa pasta tem o id \"STATUSEFFECTS000\". Nada é\n// copiado, o compêndio fica vazio e o menu de condições do token fica sem nada.\n//\n// Esta macro copia as condições que faltam para world.statuses. Não apaga nada.\n// Rode como GM, uma vez em cada mundo, e depois recarregue a página (F5).\n\nif (!game.user.isGM) return ui.notifications.error(\"Rode esta macro como Mestre.\");\n\nconst origem = game.packs.get(\"tormenta20.efeitos\");\nif (!origem) return ui.notifications.error(\"Compêndio tormenta20.efeitos não encontrado.\");\n\nlet destino = game.packs.get(\"world.statuses\");\nif (!destino) {\n\tdestino = await foundry.documents.collections.CompendiumCollection.createCompendium({\n\t\tlabel: \"Condições\",\n\t\tname: \"statuses\",\n\t\ttype: \"ActiveEffect\",\n\t\townership: { ASSISTANT: \"OWNER\", PLAYER: \"OBSERVER\" }\n\t});\n}\n\n// Backup do que já existe em world.statuses (baixa um JSON, se houver algo)\nconst existentes = await destino.getDocuments();\nif (existentes.length) {\n\tconst backup = JSON.stringify(existentes.map((d) => d.toObject()), null, 2);\n\tfoundry.utils.saveDataToFile(backup, \"application/json\", `backup-world-statuses-${game.world.id}.json`);\n}\n\n// Condições do compêndio do sistema: pasta \"Condições\" (id STATUSEFFECTS000)\nconst pastaCondicoes = origem.folders.find((f) => f.id === \"STATUSEFFECTS000\" || /condi/i.test(f.name));\nif (!pastaCondicoes) return ui.notifications.error(\"Pasta de condições não encontrada no compêndio Efeitos.\");\n\nconst docs = await origem.getDocuments();\nconst condicoes = docs.filter((d) => (d.folder?.id ?? d._source.folder) === pastaCondicoes.id);\n\nconst jaTem = new Set(existentes.map((d) => d.statuses.first()));\nconst criar = condicoes.filter((d) => !jaTem.has(d.statuses.first())).map((d) => {\n\tconst obj = d.toObject();\n\tobj.folder = null;\n\treturn obj;\n});\n\nif (!criar.length) {\n\treturn ui.notifications.info(`Nada a copiar: world.statuses já tem ${existentes.length} condições.`);\n}\n\nawait destino.configure({ locked: false });\nawait ActiveEffect.createDocuments(criar, { keepId: true, pack: destino.collection });\nawait destino.configure({ locked: true });\n\nChatMessage.create({\n\tcontent: `<p><b>Condições corrigidas</b> em ${game.world.title}: ${criar.length} copiadas `\n\t\t+ `(havia ${existentes.length}). Recarregue a página (F5) para o menu de condições aparecer.</p>`,\n\twhisper: ChatMessage.getWhisperRecipients(\"GM\")\n});\n",
+  "folder": "WcIUMsDXIBAmlv4X",
+  "flags": {
+    "world": {
+      "cdr": "cdrcampanha",
+      "cdrRole": "corrigirCondicoes"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha",
+      "antigo": "campanha-macros",
+      "assinatura": "5ee9bdaa",
+      "assinaturas": [
+        "5ee9bdaa"
+      ]
+    }
+  },
+  "_key": "!macros!vQYT5OcR53AKo4Ba",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

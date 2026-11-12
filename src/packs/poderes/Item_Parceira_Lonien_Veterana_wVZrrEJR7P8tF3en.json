@@ -1,0 +1,162 @@
+{
+  "name": "Parceira: Lonien (Veterana)",
+  "type": "poder",
+  "img": "icons/consumables/potions/potion-flask-corked-pink.webp",
+  "flags": {
+    "world": {
+      "cdr": "a2",
+      "cdrParceiro": "lonien"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "c79dd0be",
+      "assinaturas": [
+        "c79dd0be"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><strong>Parceira Veterana.</strong> Lonien pode curar e proteger os aventureiros. O personagem que Lonien estiver ajudando recebe <strong>+2 em testes de resistência</strong> e, <strong>uma vez por cena</strong>, se for reduzido a 0 PV ou menos, cura <strong>4d8+4 PV</strong>.</p>\n<p><em>Automação:</em> o +2 vale enquanto este poder estiver na ficha. Com o módulo ativo, a cura acontece sozinha quando o herói cai a 0 PV ou menos (1x por cena). A macro <strong>A2 · Lonien — Cura de Emergência</strong> cura na hora.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi, Aventura 2, p. 44",
+    "tipo": "geral",
+    "subtipo": "Parceiros",
+    "ativacao": {
+      "execucao": "passive",
+      "custo": 0,
+      "qtd": "",
+      "condicao": "",
+      "special": ""
+    },
+    "duracao": {
+      "value": 0,
+      "units": "inst",
+      "special": ""
+    },
+    "alcance": "none",
+    "rolls": [
+      {
+        "name": "Cura de Emergência",
+        "key": "dano0",
+        "type": "dano",
+        "parts": [
+          [
+            "4d8+4",
+            "curapv",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ],
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    }
+  },
+  "folder": "TX9KyFk3uf8oVbqk",
+  "_id": "wVZrrEJR7P8tF3en",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "name": "Lonien — Parceira Veterana (+2 resistência)",
+      "img": "icons/consumables/potions/potion-flask-corked-pink.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Lonien protege este personagem.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.modificadores.pericias.resistencia",
+            "value": "2",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": false,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": 0,
+          "names": [],
+          "types": []
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "VKi6zy5GgF7EC2Be",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!wVZrrEJR7P8tF3en.VKi6zy5GgF7EC2Be"
+    }
+  ],
+  "_key": "!items!wVZrrEJR7P8tF3en"
+}

@@ -1,0 +1,190 @@
+{
+  "name": "A2 · Documentos para os jogadores",
+  "folder": "MOPvvk5arOC4lVkr",
+  "flags": {
+    "world": {
+      "cdr": "a2",
+      "cdrRole": "documentos"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-diarios",
+      "assinatura": "6dd4f110",
+      "assinaturas": [
+        "6dd4f110"
+      ]
+    }
+  },
+  "_id": "EMQIreyLCiNJDrw6",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Bilhete de Zhura (andar 1, área 2)",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Não se esqueçam: a Guilda dos Mineradores paga bem, mas exige muito! Não falhem, ou eles chamarão outros mercenários. Precisamos agir a qualquer sinal de pessoas mandadas pelo tal Ezequias. Não me decepcionem. — Zhura</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "2KRTLECqPW4ZGEzs",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!EMQIreyLCiNJDrw6.2KRTLECqPW4ZGEzs"
+    },
+    {
+      "name": "Lembrete do anão (andar 2, área 3)",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Afiar machado. Aparar a barba. Cobrar de Jaren o pagamento.</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "0gWhCYAtxXeY7HE6",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!EMQIreyLCiNJDrw6.0gWhCYAtxXeY7HE6"
+    },
+    {
+      "name": "Diário de Tallaka (andar 3)",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Já faz semanas que me estabeleci neste laboratório, com uma boa quantidade de aço-rubi. Minha primeira medida foi defensiva: a criação de construtos que ataquem qualquer intruso. Agora, poderei estudar o aço-rubi.</i></p><p><i>Há séculos lutamos contra os malditos finntroll. Nossos soldados são bravos, mas os trolls nobres são ardilosos. Fazem experimentos bioarcanos, que transformam criaturas do subterrâneo em armas de guerra. A vitória é improvável. A menos que façamos nossos próprios experimentos...</i></p><p><i>O aço-rubi é o material mais fantástico de Arton. Mais duro que diamante, mais resistente que adamante, armas forjadas por ele cortam qualquer coisa. Muitas outras raças querem entender como conseguimos o aço-rubi, mas continuaremos em silêncio sobre isso. O aço-rubi é uma das grandes vantagens dos anões e continuará sendo. Ainda há aspectos do material que nós mesmos não entendemos, mas há cada vez mais anões empenhados em estudá-lo.</i></p><p><i>Descobri aspectos incríveis do aço-rubi, que aumentam a eficácia de armas e armaduras. Será uma boa ajuda contra os trolls e os outros monstros usados pelos finntroll.</i></p><p><i>Por que me preocupar com armas e armaduras? Se usar o aço-rubi em meus construtos, posso deixá-los ainda mais poderosos e, assim, poupar a vida de incontáveis anões!</i></p><p><i>Acho que vou conseguir convencer os militares a me escutarem. Alguns ainda viram o nariz para meus construtos, acham que não são tão confiáveis quanto um soldado... Mas estamos em guerra e temos que fazer o que for preciso para vencer. K confirmou que os construtos estão melhorando nos testes de lógica, o que é bom, pois me ajudará convencer os outros de que eles não se virarão contra os nossos.</i></p><p><i>Meus novos espécimes de estudo chegaram! São trolls da superfície, mas ainda assim estou empolgada, sinto que estou prestes a descobrir algo fantástico! K está preocupado com a minha saúde, mas ele é um golem, não entende que anões são resistentes. Vou usar o espaço do andar de baixo para fazer esses novos experimentos. Nunca fui tão longe, mas tenho esperanças de que conseguirei bons resultados.</i></p><p><i>Hoje, K foi ferido por um dos espécimes. Ele insiste que não precisa de descanso, mas não vou forçar sua energia. Vou deixá-lo na salinha de descanso, se recuperando, enquanto sigo com os experimentos. Não sei qual foi a última vez que dormi, mas Doherimm cobra resultados e não quero dar chance para os finntroll causarem mais destruição.</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "hRJ0R3anOg2EP57i",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!EMQIreyLCiNJDrw6.hRJ0R3anOg2EP57i"
+    },
+    {
+      "name": "Últimos documentos de Tallaka (andar 4, área 5)",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Sei que, se Doherimm ficar sabendo disso, todas as minhas pesquisas serão canceladas, mas não me importo mais. O que quero agora é derrotar os malditos finntroll e salvar meu povo. Ainda há tanto que não sabemos sobre o aço-rubi que seria um desperdício abandonar os estudos agora. Que Heredrimm tenha misericórdia de mim…</i></p><p><i>O artefato é fantástico! Consegui usá-lo em armas, armaduras e construtos… Moldar aço-rubi é difícil, mas com as temperaturas que ele permite atingir na forja, torna-se brincadeira de elfo. Ele precisa ficar trancado em meu cofre. Se cair nas mãos dos trolls nobres, estamos perdidos.</i></p><p><i>Meus novos espécimes chegaram. Me sinto mal por estar enganando esses anões, mas preciso saber até onde podemos usar aço-rubi em um organismo vivo. Em Doherimm, eles foram avisados que me ajudariam com o transporte, mas não é verdade. Talvez morram, mas será por uma boa causa.</i></p><p><i>Todos os experimentos de aço-rubi em organismos vivos foram um fracasso. A maioria não passa da cirurgia, mas os que sobrevivem se queixam de dores horríveis... e logo morrem. Achei que aplicando aço-rubi diretamente nas pessoas poderia conseguir um resultado melhor, mas agora me vejo em um beco sem saída...</i></p><p><i>K acha que os anões partiram depois de terem me auxiliado, mas a verdade é que queimei os corpos. Estou pensando em que desculpa dar para Doherimm para pedir mais ajuda. As famílias dessas pessoas vão ficar preocupadas, preciso pensar no que vou falar... Imaginei que uma ou outra poderia morrer, mas não assim. O que vou fazer? O que eu já fiz?</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "tNWr4P9uRR6rrsED",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!EMQIreyLCiNJDrw6.tNWr4P9uRR6rrsED"
+    }
+  ],
+  "_key": "!journal!EMQIreyLCiNJDrw6"
+}

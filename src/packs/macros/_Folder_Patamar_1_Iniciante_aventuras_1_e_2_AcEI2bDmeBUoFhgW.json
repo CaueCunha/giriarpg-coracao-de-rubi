@@ -1,0 +1,27 @@
+{
+  "_id": "AcEI2bDmeBUoFhgW",
+  "name": "Patamar 1 · Iniciante (aventuras 1 e 2)",
+  "type": "Macro",
+  "folder": null,
+  "sorting": "a",
+  "sort": 100000,
+  "color": "#3f5f7a",
+  "description": "",
+  "flags": {
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1"
+    }
+  },
+  "_key": "!folders!AcEI2bDmeBUoFhgW",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

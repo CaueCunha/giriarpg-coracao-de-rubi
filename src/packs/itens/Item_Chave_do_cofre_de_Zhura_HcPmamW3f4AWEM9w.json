@@ -1,0 +1,94 @@
+{
+  "name": "Chave do cofre de Zhura",
+  "type": "tesouro",
+  "img": "systems/tormenta20/icons/itens/gerais/gazua.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Abre a porta da área 6 do andar 1 (sem ela: Ladinagem CD 25). Zhura a entrega se for convencida a desistir.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — O Segredo das Minas",
+    "qtd": 1,
+    "preco": 0,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "FYqoFd8yCzZseA4H",
+  "flags": {
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "8d0bd4ad",
+      "assinaturas": [
+        "8d0bd4ad"
+      ]
+    }
+  },
+  "_id": "HcPmamW3f4AWEM9w",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!HcPmamW3f4AWEM9w"
+}
