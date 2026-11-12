@@ -1,0 +1,266 @@
+{
+  "name": "A2 · Como usar no Foundry",
+  "folder": "MOPvvk5arOC4lVkr",
+  "flags": {
+    "world": {
+      "cdr": "a2",
+      "cdrRole": "comoUsar"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-diarios",
+      "assinatura": "b71b7086",
+      "assinaturas": [
+        "b71b7086"
+      ]
+    }
+  },
+  "_id": "OoXVbzSnCR4wlKq9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Tudo desta aventura fica nas pastas <strong>Coração de Rubi / Aventura 2 · O Segredo das Minas</strong> (Atores, Itens, Macros e Diários). As ameaças estão em <em>Ameaças</em>, os perigos em <em>Armadilhas e Enigmas</em> e os parceiros em <em>Parceiros</em>. Cenas e mapas ficam por sua conta.</p>\n<p>Fonte: livro <em>Coração de Rubi</em>, pp. 29–45. Os valores das fichas foram conferidos contra o livro: Defesa, PV, CD, iniciativa, percepção, resistências e ataques batem em todas.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "FZyEsHDMgUlEjqnJ",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!OoXVbzSnCR4wlKq9.FZyEsHDMgUlEjqnJ"
+    },
+    {
+      "name": "Ameaças",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<table>\n<thead>\n<tr>\n<th>Ameaça</th>\n<th>ND</th>\n<th>Onde</th>\n<th>Automação</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Anão Capanga</td>\n<td>½</td>\n<td>Cena 3 (x4)</td>\n<td>Ataque e dano prontos</td>\n</tr>\n<tr>\n<td>Stroka</td>\n<td>3</td>\n<td>Cena 3</td>\n<td>Bloqueio com Escudo (RD 5 por 1 rodada, pelo cartão); Contra-golpe usa o ataque de escudo</td>\n</tr>\n<tr>\n<td>Anão Veterano</td>\n<td>2</td>\n<td>A1 áreas 2 e 7; A2 área 3</td>\n<td>Machado anão e besta pesada</td>\n</tr>\n<tr>\n<td>Humano Mercenário</td>\n<td>1</td>\n<td>A1 áreas 3, 4 e 5</td>\n<td>Golpe Covarde opcional (+2 ataque, +2d6)</td>\n</tr>\n<tr>\n<td>Lobo</td>\n<td>½</td>\n<td>A1 área 5</td>\n<td>Copiado do compêndio do sistema</td>\n</tr>\n<tr>\n<td>Zhura</td>\n<td>4</td>\n<td>A1 área 7</td>\n<td>Ferreira Elemental (escolhe o elemento na janela do ataque, +1d6); Ordens (+2 em perícias até o fim da cena, pelo cartão)</td>\n</tr>\n<tr>\n<td>Humano Matador</td>\n<td>2</td>\n<td>A2 áreas 6 e 8</td>\n<td>Golpe Covarde opcional (+2 ataque, +3d6)</td>\n</tr>\n<tr>\n<td>Mago Matador</td>\n<td>3</td>\n<td>A2 áreas 6 e 8</td>\n<td>8 magias do compêndio, CD 19, 28 PM; Arcano de Batalha (+4 automático em Seta Infalível e Bola de Fogo)</td>\n</tr>\n<tr>\n<td>Jaren</td>\n<td>5</td>\n<td>A2 área 8</td>\n<td>Espada com +2d4 ácido automático; Bomba de Ácido (6d4+6, Ref CD 23, botão Vulnerável); Pasmo (1 rodada) ao ouvir falar de Lonien</td>\n</tr>\n<tr>\n<td>Guardião de Aço</td>\n<td>4</td>\n<td>A3 área 6; A4 áreas 2 e 6</td>\n<td>Pancada com botão Atordoado (1 rodada), que some sozinho e leva o Desprevenido junto</td>\n</tr>\n<tr>\n<td>Guardião de Rubi</td>\n<td>5</td>\n<td>A3 área 7; A4 área 2</td>\n<td>Pancada ignora RD 10 sozinha; botão Sangrando; Sensores; rolagem de fortificação 75%</td>\n</tr>\n<tr>\n<td>Troll Rubi</td>\n<td>5</td>\n<td>A3 áreas 5 e 7</td>\n<td>Garra ignora RD 10 sozinha; Dilacerar; cura acelerada 15 (automática); imune a fogo; fortificação 50%</td>\n</tr>\n<tr>\n<td>Abominação Rubi</td>\n<td>8</td>\n<td>A4 área 7</td>\n<td>Pancada ignora RD 15 + Sangrando; mordida com Atordoado (1 rodada); Dilacerar; cura acelerada 10 (automática); imune a atordoado e paralisado</td>\n</tr>\n<tr>\n<td>K (hostil)</td>\n<td>5</td>\n<td>A3 área 3 ou epílogo</td>\n<td>Guardião de rubi com Int 2 (o livro diz \"Inteligência 15\", notação antiga)</td>\n</tr>\n</tbody>\n</table>\n<p>Gorloggs (A2 área 5) ficaram de fora, como você decidiu antes. As fichas de Guardião de Rubi, Abominação Rubi e K usam as artes da pasta <em>2. NPCs/Aventura 2</em>.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "7ctvSYOT6xpGo9vi",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!OoXVbzSnCR4wlKq9.7ctvSYOT6xpGo9vi"
+    },
+    {
+      "name": "Perigos",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<table>\n<thead>\n<tr>\n<th>Perigo</th>\n<th>Onde</th>\n<th>No ator</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Caixotes de Bombas</td>\n<td>A2 área 3</td>\n<td>Rolagem de 2d4 bombas e do dano para cada quantidade (Ref CD 20)</td>\n</tr>\n<tr>\n<td>Armadilha de Gás Inflamável</td>\n<td>A2 área 4</td>\n<td>1d12 de perda por rodada (Fort CD 20) e explosão de 12d6 (Ref CD 20)</td>\n</tr>\n<tr>\n<td>Corredor Explosivo</td>\n<td>A2 área 7</td>\n<td>6d6 por bomba (Ref CD 17), padrão de 3m</td>\n</tr>\n<tr>\n<td>Desafio de Heredrimm</td>\n<td>A3 área 4</td>\n<td>Pistas da balança com as CDs</td>\n</tr>\n<tr>\n<td>Enigma do Sol e da Lua</td>\n<td>A3 área 7</td>\n<td>Solução e pistas; avisa do troll e do guardião</td>\n</tr>\n<tr>\n<td>Abismo</td>\n<td>A4 área 3</td>\n<td>Atletismo CD 20 ou Acrobacia CD 15</td>\n</tr>\n<tr>\n<td>Caminho Diagonal</td>\n<td>A4 área 4</td>\n<td>Diagonal é o caminho seguro; 4d8 ácido por turno; link de Imóvel</td>\n</tr>\n<tr>\n<td>Porta do Último Experimento</td>\n<td>A4 área 5</td>\n<td>2d12 de perda por rodada (Fort CD 20)</td>\n</tr>\n</tbody>\n</table>\n<p>O ND dos perigos é só referência (o nível do grupo no andar); o livro não dá ND para eles.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "DwFP6pz3c9oW9Esr",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!OoXVbzSnCR4wlKq9.DwFP6pz3c9oW9Esr"
+    },
+    {
+      "name": "Itens",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<table>\n<thead>\n<tr>\n<th>Item</th>\n<th>Automação</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Manopla dos Anões</td>\n<td>Gasta 1 PM ao usar; botão +2 Força por 1 rodada</td>\n</tr>\n<tr>\n<td>Machado anão de aço-rubi</td>\n<td>Certeira, precisa e ignora RD 10, tudo automático</td>\n</tr>\n<tr>\n<td>Flechas de aço-rubi (x10)</td>\n<td>Opção \"Flecha de aço-rubi\" na janela do ataque (ignora RD 10)</td>\n</tr>\n<tr>\n<td>Pistola certeira + 10 balas</td>\n<td>Certeira automática</td>\n</tr>\n<tr>\n<td>Espada de injeção alquímica de Jaren</td>\n<td>Opções na janela: ácido +2d4 ou fogo alquímico +1d6</td>\n</tr>\n<tr>\n<td>Anotações sobre Trolls</td>\n<td>Opção +1d6 em um ataque contra troll (apagar depois de usar)</td>\n</tr>\n<tr>\n<td>Parceiro: K (Veterano)</td>\n<td>+2 Defesa permanente enquanto estiver na ficha; rolagem novamente pela macro <strong>A2 · K — Rolar novamente</strong></td>\n</tr>\n<tr>\n<td>Parceira: Lonien (Veterana)</td>\n<td>+2 em resistências permanente; cura 4d8+4 sozinha quando o herói cai a 0 PV (1x por cena). A macro <strong>A2 · Lonien — Cura de Emergência</strong> cura na hora</td>\n</tr>\n<tr>\n<td>Terços da chave, peça triangular, chave do cofre de Zhura, pedaços de aço-rubi, Tabuletas de Tallaka</td>\n<td>Tesouros com a descrição de onde estão e para que servem</td>\n</tr>\n</tbody>\n</table>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "iXhxIFoR6wWKjITU",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!OoXVbzSnCR4wlKq9.iXhxIFoR6wWKjITU"
+    },
+    {
+      "name": "Como usar na mesa",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul>\n<li><strong>Bônus opcionais</strong> (Golpe Covarde, elemento da Zhura, injeção, flecha de aço-rubi): Shift+clique no ataque e marque na janela.</li>\n<li><strong>Condições</strong> (Atordoado, Sangrando, Vulnerável, Pasmo): depois do ataque, selecione o token de quem falhou na resistência e clique no efeito do cartão do chat.</li>\n<li><strong>Atordoado (1 rodada)</strong> some sozinho no início do turno seguinte. Sangrando e Vulnerável usam a condição padrão do sistema, que dura a cena.</li>\n<li><strong>Diário Roteiro de Encontros</strong>: uma página por andar, com os links das fichas (arraste direto para a cena).</li>\n<li><strong>Documentos para os jogadores</strong>: bilhete de Zhura, lembrete do anão e os diários de Tallaka, prontos para \"Mostrar aos jogadores\".</li>\n</ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "LDaacT4z7zoDyzbF",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!OoXVbzSnCR4wlKq9.LDaacT4z7zoDyzbF"
+    },
+    {
+      "name": "O que fica na mão do mestre",
+      "type": "text",
+      "sort": 600,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul>\n<li>\"Uma vez por cena por criatura\" do atordoamento e \"uma vez por rodada\" do Bloqueio com Escudo.</li>\n<li>Dilacerar: clicar quando as duas garras acertarem o mesmo alvo.</li>\n<li>Fortificação: rolagem própria, clicada quando acontecer. A cura acelerada do troll rubi e da Abominação é automática no início do turno (em combate); o aviso no chat lembra de descontar o dano de ácido do troll.</li>\n<li>Recarga da Bomba de Ácido e efeitos da Visão da Verdade (Sensores).</li>\n<li>Pedido de clemência de Stroka (&lt;15 PV) e de Jaren (&lt;10 PV): anotado na biografia de cada um.</li>\n<li>Rolagem novamente do K: macro <strong>A2 · K — Rolar novamente</strong>, logo depois do teste.</li>\n</ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "qXHe6nZ7EG8lbv4O",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!OoXVbzSnCR4wlKq9.qXHe6nZ7EG8lbv4O"
+    }
+  ],
+  "_key": "!journal!OoXVbzSnCR4wlKq9"
+}

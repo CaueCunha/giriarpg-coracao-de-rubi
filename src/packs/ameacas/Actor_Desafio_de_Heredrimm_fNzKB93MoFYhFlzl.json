@@ -1,0 +1,52 @@
+{
+  "name": "Desafio de Heredrimm",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "cBIp29VyRjlLDfOn",
+  "system": {
+    "attributes": {
+      "nd": "7"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Andar 3, área 4.</b></p><p style=\"text-align:justify\">Igualar o peso dos dois lados da balança do mosaico (personagens e equipamento). A porta se fecha e se tranca assim que o primeiro personagem passa: o grupo decide quem fica dentro.</p>",
+      "effects": "<p style=\"text-align:justify\">Pistas: Heredrimm é o nome anão de Khalmyr, Deus da Justiça (Conhecimento ou Religião CD 15).</p><p style=\"text-align:justify\">Na doutrina anã, o equilíbrio de Khalmyr é literal; mercadores o evocam para garantir transações (Conhecimento ou Religião CD 20).</p><p style=\"text-align:justify\">O piso é formado por duas plataformas que cedem levemente sob o peso (Investigação ou Percepção CD 20).</p>",
+      "actions": "<p style=\"text-align:justify\">Com a balança equilibrada, ouve-se um clique e as duas portas se abrem.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura2"
+    },
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "3881a206",
+      "assinaturas": [
+        "3881a206"
+      ]
+    }
+  },
+  "_id": "fNzKB93MoFYhFlzl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!fNzKB93MoFYhFlzl"
+}

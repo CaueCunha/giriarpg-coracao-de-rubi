@@ -1,0 +1,40 @@
+{
+  "name": "A2 · Lonien — Cura de Emergência",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/consumables/potions/potion-flask-corked-pink.webp",
+  "folder": "UHZOS0Iyiab7WR0y",
+  "flags": {
+    "world": {
+      "cdr": "a2",
+      "cdrRole": "lonienCura"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-macros",
+      "assinatura": "deda6098",
+      "assinaturas": [
+        "deda6098"
+      ]
+    }
+  },
+  "ownership": {
+    "default": 2
+  },
+  "command": "// Lonien — Cura de Emergência: cura 4d8+4 PV agora no herói selecionado (1x por cena).\n// A cura automática ao cair a 0 PV já vem do módulo Coração de Rubi; esta macro é para usar na hora.\nactor = canvas.tokens.controlled[0]?.actor ?? game.user.character;\nif (!actor) return ui.notifications.warn(\"Selecione o token do herói que Lonien está ajudando.\");\nconst api = game.modules.get(\"giriarpg-coracao-de-rubi\")?.api;\nif (!api) return ui.notifications.warn(\"Ative o módulo Coração de Rubi.\");\nawait api.curaLonien(actor);",
+  "_id": "x40HxFCjsBilsfK0",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "author": null,
+  "_key": "!macros!x40HxFCjsBilsfK0"
+}

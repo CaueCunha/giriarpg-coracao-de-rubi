@@ -1,0 +1,35 @@
+{
+  "_id": "KTh6tBduyQjb6Lwj",
+  "name": "CdR · Corrigir aprimoramentos antigos",
+  "type": "script",
+  "img": "icons/svg/upgrade.svg",
+  "scope": "global",
+  "command": "/**\n * Corrigir Aprimoramentos (efeitos \"ao usar\" no formato antigo) — Tormenta20 v1.6.x, Foundry v14\n *\n * Problema: itens vindos de módulos (ex.: Deuses de Arton, Heróis de Arton) guardam os\n * aprimoramentos no formato antigo, em flags.tormenta20 (onuse, custo, aumenta...). O sistema\n * atual só lê system.onuse/system.abilityUse, então esses aprimoramentos não aparecem na janela\n * do Shift+clique. Ex.: Flecha de Luz.\n *\n * O que a macro faz: aplica a mesma conversão que o próprio sistema usa na migração v14\n * (module/data/migrations/v14.mjs, migrateEffectsV2) só nos efeitos que ainda estão no formato\n * antigo. Efeitos já convertidos não são tocados.\n *\n * Como usar:\n *  • Com um token selecionado: corrige só os itens desse personagem.\n *  • Sem token: pergunta e corrige todos os personagens e itens do mundo (aba Itens).\n * Itens dentro de compêndios de módulos não são alterados: rode de novo depois de puxar um item novo.\n */\n\nconst TIPOS = [\"self\", \"ability\", \"attack\", \"consumable\", \"equipment\", \"power\", \"skill\", \"spell\"];\n\nfunction precisaCorrigir(ef) {\n\treturn ef.flags?.tormenta20?.onuse && !ef.system.onuse;\n}\n\nfunction conversao(ef) {\n\tconst f = ef.flags.tormenta20;\n\tconst item = ef.parent;\n\tconst ehMagia = item?.type === \"magia\" || (item?.type === \"consumivel\" && item?.system.tipo === \"scroll\");\n\tconst types = ehMagia && !ef.isTemporary ? [\"self\"] : TIPOS.filter((k) => f[k]);\n\tconst names = (f.items ?? \"\").replaceAll(\",\", \";\").split(\";\").map((s) => s.trim()).filter(Boolean);\n\tconst custo = Number.isNumeric(f.custo) ? Number(f.custo) : null;\n\n\tconst update = {\n\t\t_id: ef.id,\n\t\tdisabled: true,\n\t\t\"system.onuse\": true,\n\t\t\"system.abilityUse.automatic\": false,\n\t\t\"system.abilityUse.aumenta\": !!f.aumenta,\n\t\t\"system.abilityUse.custo\": custo,\n\t\t\"system.abilityUse.names\": names,\n\t\t\"system.abilityUse.types\": types\n\t};\n\t// Na magia, o texto do aprimoramento vai para a descrição (como o sistema faz)\n\tif (ehMagia && ef.name !== item.name && !ef.description) {\n\t\tupdate.name = \"Aprimoramento\";\n\t\tupdate.description = `<p>${ef.name}</p>`;\n\t}\n\tif (f.durationScene) update.duration = { expiry: \"sceneEnd\", value: null, units: \"rounds\" };\n\treturn update;\n}\n\nasync function corrigirItem(item) {\n\tconst updates = item.effects.filter(precisaCorrigir).map(conversao);\n\tif (updates.length) await item.updateEmbeddedDocuments(\"ActiveEffect\", updates);\n\treturn updates.length;\n}\n\nasync function corrigirAtor(actor) {\n\tlet n = 0;\n\tfor (const item of actor.items) n += await corrigirItem(item);\n\tconst proprios = actor.effects.filter(precisaCorrigir).map(conversao);\n\tif (proprios.length) await actor.updateEmbeddedDocuments(\"ActiveEffect\", proprios);\n\treturn n + proprios.length;\n}\n\nconst selecionado = canvas.tokens?.controlled[0]?.actor;\nconst relatorio = [];\nlet total = 0;\n\nif (selecionado) {\n\ttotal = await corrigirAtor(selecionado);\n\trelatorio.push(`${selecionado.name}: ${total}`);\n} else {\n\tconst ok = await foundry.applications.api.DialogV2.confirm({\n\t\twindow: { title: \"Corrigir Aprimoramentos\" },\n\t\tcontent: \"<p>Nenhum token selecionado. Corrigir os aprimoramentos de <b>todos os personagens e itens do mundo</b>?</p>\"\n\t});\n\tif (!ok) return;\n\tfor (const actor of game.actors) {\n\t\tconst n = await corrigirAtor(actor);\n\t\tif (n) relatorio.push(`${actor.name}: ${n}`);\n\t\ttotal += n;\n\t}\n\tlet nItens = 0;\n\tfor (const item of game.items) nItens += await corrigirItem(item);\n\tif (nItens) relatorio.push(`Itens do mundo: ${nItens}`);\n\ttotal += nItens;\n}\n\nChatMessage.create({\n\twhisper: ChatMessage.getWhisperRecipients(\"GM\").map((u) => u.id),\n\tcontent: `<h3>Corrigir Aprimoramentos</h3><p>${total} efeito(s) convertido(s).</p>${relatorio.length ? `<p>${relatorio.join(\"<br>\")}</p>` : \"\"}`\n});\nui.notifications.info(`Aprimoramentos corrigidos: ${total}.`);\n",
+  "folder": "WcIUMsDXIBAmlv4X",
+  "flags": {
+    "world": {
+      "cdr": "cdrcampanha",
+      "cdrRole": "corrigirAprimoramentos"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha",
+      "antigo": "campanha-macros",
+      "assinatura": "6364f19f",
+      "assinaturas": [
+        "6364f19f"
+      ]
+    }
+  },
+  "_key": "!macros!KTh6tBduyQjb6Lwj",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

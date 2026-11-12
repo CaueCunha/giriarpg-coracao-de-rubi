@@ -1,0 +1,35 @@
+{
+  "_id": "Pc0RjaRi4wH1Y9Iw",
+  "name": "CdR · Puxar do compêndio",
+  "type": "script",
+  "img": "icons/svg/download.svg",
+  "scope": "global",
+  "command": "// Puxa do compêndio para o mundo só as aventuras escolhidas (nada é substituído).\ngame.modules.get(\"giriarpg-coracao-de-rubi\")?.api?.abrirPuxar();",
+  "folder": "WcIUMsDXIBAmlv4X",
+  "flags": {
+    "world": {
+      "cdr": "cdrcampanha",
+      "cdrRole": "importador"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha",
+      "antigo": "campanha-macros",
+      "assinatura": "7daa166f",
+      "assinaturas": [
+        "7daa166f"
+      ]
+    }
+  },
+  "_key": "!macros!Pc0RjaRi4wH1Y9Iw",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

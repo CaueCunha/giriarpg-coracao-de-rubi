@@ -1,0 +1,228 @@
+{
+  "name": "A2 · Roteiro dos andares 3, 4 e epílogo",
+  "folder": "MOPvvk5arOC4lVkr",
+  "flags": {
+    "world": {
+      "cdr": "a2",
+      "cdrRole": "roteiro34"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-diarios",
+      "assinatura": "9e93db79",
+      "assinaturas": [
+        "9e93db79"
+      ]
+    }
+  },
+  "_id": "KCRxnNPGKL4LFgO9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><strong>Aventura 2 — O Segredo das Minas</strong> · Para as sessões depois do Andar 2. Grupo de 6 PJs, nível 6 ao entrar no Andar 3 e 7 no Andar 4 (marcos do livro).</p>\n<table>\n<thead>\n<tr>\n<th>Andar</th>\n<th>Livro</th>\n<th>Núcleo</th>\n<th>Terço da chave</th>\n<th>Quem brilha</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>3</td>\n<td>Parte 3, p. 36–38</td>\n<td>Laboratório de Tallaka, golem K, enigmas, trolls rubi</td>\n<td>3º, preso no construto da área 8</td>\n<td>Badawi (selos), Bel, Kaelion</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Parte 4, p. 38–40</td>\n<td>Diário sombrio, armadilhas, Abominação Rubi, cofre vazio</td>\n<td>Usa os três</td>\n<td>Badawi (a fera acorda), Octo, Kaelion</td>\n</tr>\n<tr>\n<td>Epílogo</td>\n<td>p. 40–41</td>\n<td>Selar a mina (Lonien) ou preservar (K)</td>\n<td>—</td>\n<td>Badawi, Kaelion, Thor</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Fio condutor:</strong> Tallaka começou com boas intenções e terminou usando o próprio povo como cobaia. O andar 4 é o espelho de Aleister (Octo), de Ezequias (o que ele vai virar) e da fera (algo corrompido dentro de um corpo vivo, como Badawi).</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "lA6lVEL9UD2YkjwQ",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!KCRxnNPGKL4LFgO9.lA6lVEL9UD2YkjwQ"
+    },
+    {
+      "name": "Andar 3 — As Sobras da Guerra",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Pedra esculpida em ângulos retos, gemas mágicas iluminam. Ninguém passou por aqui em décadas: nem Jaren, nem os Bastiões.</p>\n<p><strong>A fera de Badawi:</strong> fica mais inquieta. Ele sente o puxão \"logo abaixo\".</p>\n<table>\n<thead>\n<tr>\n<th>Área</th>\n<th>O que tem</th>\n<th>Notas</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Corredor com três portas</td>\n<td>—</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>Laboratório de Tallaka</strong></td>\n<td>Pergaminhos em anão (Conhecimento CD 15 ou tradutor por T$ 30): guerra contra os finntroll, aço-rubi, K, \"novos espécimes\". Porta com nicho <strong>triangular</strong> (a peça está na área 5)</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Golem K</strong> desperta</td>\n<td>Pergunta por Tallaka. Não é hostil, a menos que desrespeitem a memória dela. Vira parceiro especial</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Desafio de Heredrimm</strong> (balança)</td>\n<td>Igualar o peso dos dois lados. Pistas: Heredrimm = Khalmyr (CD 15), equilíbrio literal na doutrina anã (CD 20), plataformas cedem (Investigação/Percepção CD 20)</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>2 trolls rubi</strong></td>\n<td>Peça triangular presa num troll. Use os desenhos de trolls do Andar 1 (+1d6)</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>4 guardiões de aço</strong></td>\n<td>K avisa que eram guardas programados</td>\n</tr>\n<tr>\n<td>7</td>\n<td><strong>Enigma do Sol e da Lua</strong></td>\n<td>Apagar as lamparinas em sentido horário a partir da porta (sol se põe, lua sobe). Pistas: Azgher e Tenebra (CD 10), Tenebra é a heroína anã (CD 15), Tenebra vence toda noite (CD 20). Depois: guardião de rubi + troll rubi; baú de tesouro ND 6</td>\n</tr>\n<tr>\n<td>8</td>\n<td><strong>O Terço Final</strong></td>\n<td>Troll rubi + guardião de rubi. <strong>3º terço</strong> acoplado no construto</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Ganchos pessoais:</strong>\n- <strong>Badawi:</strong> sugestão de bônus de +2 para entender mecanismos de contenção (a porta triangular, a balança). As portas que se trancam sozinhas são selos anões, o assunto dele.\n- <strong>Bel:</strong> o laboratório de Tallaka é pesquisa sem fé, como a da mãe dela. Bom lugar para achar uma anotação de Aloysius, se ele passou por aqui (decisão sua: Al chegou até o Andar 3?).\n- <strong>Kaelion:</strong> guardiões e trolls com aço-rubi, construtos como o golem das Cinzas Vermelhas.\n- <strong>Thor:</strong> K pergunta o que é um lefou. É a primeira pessoa (coisa) que pergunta sem medo.\n- <strong>Em Yuvalin, se K subir:</strong> Ezequias fica fascinado e enche K de perguntas sobre os experimentos.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "g8rjAEXVnAG1nnkU",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!KCRxnNPGKL4LFgO9.g8rjAEXVnAG1nnkU"
+    },
+    {
+      "name": "Andar 4 — Os Segredos de Tallaka",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><strong>Para ler ao chegar:</strong></p>\n<blockquote>\n<p>O elevador para e o frio que sai do corredor não é de pedra. Badawi sente: o que o chamou desde Zakharov está aqui, e está acordado.</p>\n</blockquote>\n<table>\n<thead>\n<tr>\n<th>Área</th>\n<th>O que tem</th>\n<th>Notas</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Corredor</td>\n<td>—</td>\n</tr>\n<tr>\n<td>2</td>\n<td><strong>2 guardiões de aço + 1 guardião de rubi</strong></td>\n<td>Porta Ladinagem CD 20. <strong>Manopla dos Anões</strong> e tesouro ND 7</td>\n</tr>\n<tr>\n<td>3</td>\n<td><strong>Abismo</strong> de 6m</td>\n<td>Atletismo CD 20 ou Acrobacia CD 15. Ossos de anões perto (Cura CD 15)</td>\n</tr>\n<tr>\n<td>4</td>\n<td><strong>Caminho Diagonal</strong></td>\n<td>Só a diagonal é segura (3 escolhas). Investigação CD 25 revela. Teias corrosivas: Ref CD 25, 4d8 ácido por turno, Força CD 25 para sair</td>\n</tr>\n<tr>\n<td>5</td>\n<td><strong>Último experimento</strong> (documentos)</td>\n<td>Ladinagem CD 20 ativa gás (2d12 por 3 rodadas, Fort CD 20); 25 no teste ou Investigação CD 25 evita. <strong>Diário sombrio:</strong> Tallaka enganou anões de Doherimm, usou-os como cobaias e queimou os corpos. O artefato \"ficava trancado no cofre\"</td>\n</tr>\n<tr>\n<td>6</td>\n<td><strong>2 guardiões de aço</strong></td>\n<td>—</td>\n</tr>\n<tr>\n<td>7</td>\n<td><strong>O Cofre</strong></td>\n<td>Três nichos para os terços. Dentro: <strong>Abominação Rubi</strong> (ND 8). Depois: corpo de Tallaka, 2 pedaços de aço-rubi, 10 flechas de aço-rubi, machado anão de aço-rubi, tesouro ND 8. <strong>O pedestal do artefato está vazio</strong></td>\n</tr>\n</tbody>\n</table>\n<p><strong>O diário sombrio (área 5) é a cena de interpretação do andar:</strong>\n- <strong>K</strong> fica abalado: \"Guerras nunca são simples\".\n- <strong>Octo:</strong> Tallaka é Aleister. Cobaias compradas com mentiras, mortas e esquecidas. Ele pode reconhecer o padrão das anotações (sugestão: Aleister leu ou copiou Tallaka).\n- <strong>Badawi:</strong> \"aço-rubi aplicado direto em organismos vivos\". O que a fera sente é isso.\n- <strong>Ultred:</strong> Tallaka sentenciou sem certeza, como os barões fizeram com ele.</p>\n<h3>A Abominação Rubi e a fera de Badawi</h3>\n<p>É a primeira cena em que o selo pode ceder. Regra opcional do \"selo instável\" (combine com o jogador antes; deve ser tensão, não castigo):\n- <strong>Gatilhos:</strong> Badawi cai a 0 PV, um aliado cai na frente dele, ou ele está a até 9m da Abominação.\n- <strong>Teste:</strong> Vontade CD 23 (15 + ND 8). Sucesso: segura a fera e ganha +1d6 de dano de trevas até o fim da cena. Falha: a fera assume por 1d4 rodadas e ataca a criatura mais próxima, aliada ou inimiga; o jogador decide o que ela faz dentro disso.\n- <strong>Crescimento:</strong> a cada aventura, a CD cai 2.</p>\n<p><strong>Abominação para 6 PJs:</strong> +2 em testes e dano, +40% PV (322 → cerca de 450). Ela tem cura acelerada 10, fortificação 75% e imunidade a atordoamento e paralisia; pancada ignora RD 15 e causa sangramento. Ficha pronta no Foundry pelo script da Aventura 2 (ajustar PV na mão).</p>\n<h3>O pedestal vazio</h3>\n<p>O artefato não está na mina. K não sabe explicar. Deixe a pergunta no ar: quem levou? (No livro, ele reaparece mais tarde; aqui também cabe Aloysius ter passado antes, se você quiser ligar à Bel.)</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "zsPuGtHuEdqDO4f7",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!KCRxnNPGKL4LFgO9.zsPuGtHuEdqDO4f7"
+    },
+    {
+      "name": "Epílogo — Selar ou preservar",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>De volta a Yuvalin, com o pedestal vazio.</p>\n<ul>\n<li><strong>Lonien</strong> (se for aliada) quer selar a mina com um desabamento: \"Vocês não estarão aqui para impedir todos!\"</li>\n<li><strong>K</strong> quer preservar: \"Ela deu a vida para descobrir as propriedades do aço-rubi.\"</li>\n<li><strong>Preservar:</strong> K vira aliado permanente (30% de desconto em melhorias de armas e armaduras). Lonien não ataca, mas eles não são bem-vindos na loja de poções.</li>\n<li><strong>Destruir:</strong> K fica hostil e luta até a morte. Lonien vira aliada permanente (loja com 30% de desconto; Jaren lá, tentando mudar de vida).</li>\n<li><strong>Meio-termo:</strong> teste estendido de Diplomacia CD 25 (3 sucessos) mantém os dois.</li>\n</ul>\n<p><strong>Badawi tem a melhor opinião da mesa:</strong> selar sem destruir é literalmente o ensinamento de Dahriol. Sugestão: ele propõe um <strong>selo de Dahriol</strong> na câmara, que a mantém fechada para enxeridos e aberta para K. Isso pode valer como o meio-termo (ou dar +5 no teste estendido).</p>\n<p><strong>Ezequias</strong> recebe o relato. O artefato sumido o perturba mais do que ele admite. Momentos para plantar:\n- <strong>Thor:</strong> revelação de meio-irmão (sugestão do documento de backgrounds).\n- <strong>Octo:</strong> \"Já vi esse trabalho antes\", sobre as cicatrizes.\n- <strong>Badawi:</strong> Ezequias pede de novo para estudar o selo, agora com a desculpa da Abominação.\n- <strong>Tabuletas de Tallaka:</strong> se entregues, cada PJ ganha uma melhoria.</p>\n<p><strong>Marco:</strong> o grupo termina a A2 no <strong>8º nível</strong> e segue para a Aventura 3, Blefe Fatal (Aslavi).</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "E9rJNW89MQi2fBVd",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!KCRxnNPGKL4LFgO9.E9rJNW89MQi2fBVd"
+    },
+    {
+      "name": "Decisões em aberto",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul>\n<li>Aloysius passou pela câmara? Até que andar?</li>\n<li>Badawi conta da fera ou esconde?</li>\n<li>Regra do selo instável: usar ou não?</li>\n<li>Destino de Jaren (vivo com Lonien ou morto) muda o epílogo.</li>\n</ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "sV8sY2v0cIzgR19l",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!KCRxnNPGKL4LFgO9.sV8sY2v0cIzgR19l"
+    }
+  ],
+  "_key": "!journal!KCRxnNPGKL4LFgO9"
+}

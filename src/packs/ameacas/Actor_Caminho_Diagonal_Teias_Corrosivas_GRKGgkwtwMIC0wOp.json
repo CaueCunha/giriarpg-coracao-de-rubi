@@ -1,0 +1,52 @@
+{
+  "name": "Caminho Diagonal (Teias Corrosivas)",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "cBIp29VyRjlLDfOn",
+  "system": {
+    "attributes": {
+      "nd": "8"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Andar 4, área 4.</b></p><p style=\"text-align:justify\">Cruzar 4 fileiras de plataformas. A partir da porta, a única direção segura é a <b>diagonal (frente e esquerda)</b>; pergunte a direção três vezes.</p>",
+      "effects": "<p style=\"text-align:justify\">As plataformas com armadilha podem ser reveladas com Investigação CD 25 ou <i>Visão Mística</i>.</p><p style=\"text-align:justify\">Quem pisar numa armadilha faz Reflexos CD 25. Se falhar, é preso por teias corrosivas: fica @STATUS[imovel] e sofre [[/r 4d8[acido]]] de ácido no início de cada turno.</p><p style=\"text-align:justify\">Para se soltar: Força CD 25 ou causar 20 pontos de dano de corte nas teias.</p>",
+      "actions": "<p style=\"text-align:justify\">Selecione o token preso e clique no ícone ao lado de Imóvel para aplicar a condição.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura2"
+    },
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "da1e6072",
+      "assinaturas": [
+        "da1e6072"
+      ]
+    }
+  },
+  "_id": "GRKGgkwtwMIC0wOp",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!GRKGgkwtwMIC0wOp"
+}

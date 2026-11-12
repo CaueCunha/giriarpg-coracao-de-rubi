@@ -1,0 +1,240 @@
+{
+  "name": "Pistola certeira",
+  "type": "arma",
+  "img": "systems/tormenta20/icons/itens/equipamentos/pistola.webp",
+  "sort": 300000,
+  "flags": {
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "50d96a12",
+      "assinaturas": [
+        "50d96a12"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Encontrada no cofre de Zhura (andar 1, área 6), com 10 balas.</p><p style=\"text-align:justify\"><b>Automação:</b> certeira (+1 no ataque) entra sozinha.</p><p style=\"text-align:justify\">A arma de fogo mais comum. Recarregar uma pistola é uma ação padrão.</p>",
+      "unidentified": ""
+    },
+    "source": "Tormenta20 — Edição Jogo do Ano, p. 150",
+    "equipado": 0,
+    "equipado2": {
+      "slot": 0,
+      "type": "hand"
+    },
+    "carregado": true,
+    "peso": 1,
+    "espacos": 1,
+    "qtd": 1,
+    "preco": 250,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "rolls": [
+      {
+        "name": "Ataque",
+        "key": "ataque0",
+        "type": "ataque",
+        "parts": [
+          [
+            "1d20",
+            "",
+            ""
+          ],
+          [
+            "pont",
+            "",
+            ""
+          ],
+          [
+            "0",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      },
+      {
+        "name": "Dano",
+        "key": "dano1",
+        "type": "dano",
+        "parts": [
+          [
+            "2d6",
+            "perfuracao",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ],
+    "criticoM": 19,
+    "criticoX": 3,
+    "alcance": "short",
+    "tipoUso": "sim",
+    "propriedades": {
+      "ada": false,
+      "agi": false,
+      "alo": false,
+      "dup": false,
+      "ver": false,
+      "adaptavel": false,
+      "agil": false,
+      "alongada": false,
+      "arremesso": false,
+      "ataqueDistancia": true,
+      "duasMaos": false,
+      "dupla": false,
+      "leve": false,
+      "municao": true,
+      "versatil": false
+    },
+    "ativacao": {
+      "custo": null,
+      "condicao": "",
+      "execucao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "chatFlavor": "",
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null,
+      "mpMultiplier": false
+    },
+    "origin": "",
+    "tags": [],
+    "chatGif": "",
+    "upgrades": {
+      "melhoria1": "accurate",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "material": [],
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "itemType": [],
+      "improvement": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "materialEspecial1": "",
+      "enableAutoUpgrades": true
+    },
+    "ataques": 0,
+    "proficiencia": "fogo",
+    "proposito": "disparo",
+    "empunhadura": "uma",
+    "size": "normal",
+    "rolltags": [],
+    "automationtags": []
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.tormenta20.equipamentos.Item.TILlgOKqyS3Ps4le",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "FYqoFd8yCzZseA4H",
+  "_id": "s8sZOu7RCqxly2cw",
+  "effects": [
+    {
+      "name": "Certeira",
+      "img": "icons/svg/upgrade.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "+1 nos testes de ataque.",
+      "system": {
+        "changes": [
+          {
+            "key": "ataque",
+            "value": "1",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": true,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "self"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "flags": {
+        "tormenta20": {
+          "upgrade": "accurate"
+        }
+      },
+      "_id": "8aBzIZB0NmPZQB7I",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!s8sZOu7RCqxly2cw.8aBzIZB0NmPZQB7I"
+    }
+  ],
+  "_key": "!items!s8sZOu7RCqxly2cw"
+}

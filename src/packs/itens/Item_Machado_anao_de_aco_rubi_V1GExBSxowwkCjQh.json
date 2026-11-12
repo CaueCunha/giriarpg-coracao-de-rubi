@@ -1,0 +1,383 @@
+{
+  "name": "Machado anão de aço-rubi",
+  "type": "arma",
+  "img": "systems/tormenta20/icons/itens/equipamentos/machado-anao.webp",
+  "sort": 600000,
+  "flags": {
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "b7a612ff",
+      "assinaturas": [
+        "b7a612ff"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Machado anão certeiro e preciso de aço-rubi, guardado no cofre de Tallaka (andar 4, área 7).</p><p style=\"text-align:justify\"><b>Automação:</b> certeira (+1 no ataque), precisa (+1 na margem de ameaça) e aço-rubi (ignora 10 de RD) entram sozinhos em todo ataque. Ignorar a imunidade a crítico de lefeu fica com o mestre.</p><p style=\"text-align:justify\">A arma preferida de onze entre dez guerreiros anões. Um machado anão é muito grande para ser usado com uma só mão sem treinamento especial; por isso é uma arma exótica. Ele pode ser usado como uma arma marcial de duas mãos.</p>",
+      "unidentified": ""
+    },
+    "source": "Tormenta20 — Edição Jogo do Ano, p. 149",
+    "equipado": 0,
+    "equipado2": {
+      "slot": 0,
+      "type": "hand"
+    },
+    "carregado": true,
+    "peso": 4,
+    "espacos": 1,
+    "qtd": 1,
+    "preco": 30,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "rolls": [
+      {
+        "name": "Ataque",
+        "key": "ataque0",
+        "type": "ataque",
+        "parts": [
+          [
+            "1d20",
+            "",
+            ""
+          ],
+          [
+            "luta",
+            "",
+            ""
+          ],
+          [
+            "0",
+            "",
+            ""
+          ]
+        ],
+        "adaptavel": "",
+        "versatil": ""
+      },
+      {
+        "name": "Dano",
+        "key": "dano1",
+        "type": "dano",
+        "parts": [
+          [
+            "1d10",
+            "corte",
+            ""
+          ],
+          [
+            "@for",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ],
+    "criticoM": 20,
+    "criticoX": 3,
+    "alcance": "",
+    "tipoUso": "sim",
+    "propriedades": {
+      "ada": false,
+      "agi": false,
+      "alo": false,
+      "dup": false,
+      "ver": false,
+      "adaptavel": false,
+      "agil": false,
+      "alongada": false,
+      "arremesso": false,
+      "ataqueDistancia": false,
+      "duasMaos": false,
+      "dupla": false,
+      "leve": false,
+      "municao": false,
+      "versatil": false,
+      "des": false
+    },
+    "ativacao": {
+      "custo": null,
+      "condicao": "",
+      "execucao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "chatFlavor": "",
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null,
+      "mpMultiplier": false
+    },
+    "origin": "",
+    "tags": [],
+    "chatGif": "",
+    "upgrades": {
+      "melhoria1": "accurate",
+      "melhoria2": "precise",
+      "melhoria3": "specialmaterial",
+      "melhoria4": "",
+      "material": [],
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "itemType": [],
+      "improvement": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "materialEspecial1": "",
+      "enableAutoUpgrades": true
+    },
+    "ataques": 0,
+    "proficiencia": "exotica",
+    "proposito": "corpo-a-corpo",
+    "empunhadura": "uma",
+    "size": "normal",
+    "rolltags": [],
+    "automationtags": []
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.tormenta20.equipamentos.Item.xXK2IqgRyxPdhdmQ",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "FYqoFd8yCzZseA4H",
+  "_id": "V1GExBSxowwkCjQh",
+  "effects": [
+    {
+      "name": "Certeira",
+      "img": "icons/svg/upgrade.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "+1 nos testes de ataque.",
+      "system": {
+        "changes": [
+          {
+            "key": "ataque",
+            "value": "1",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": true,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "self"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "flags": {
+        "tormenta20": {
+          "upgrade": "accurate"
+        }
+      },
+      "_id": "ZZPXmZ5GT86cjtne",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!V1GExBSxowwkCjQh.ZZPXmZ5GT86cjtne"
+    },
+    {
+      "name": "Precisa",
+      "img": "icons/svg/upgrade.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "+1 na margem de ameaça.",
+      "system": {
+        "changes": [
+          {
+            "key": "criticoM",
+            "value": "-1",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": true,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "self"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "flags": {
+        "tormenta20": {
+          "upgrade": "precise"
+        }
+      },
+      "_id": "cCGSbSXIms7k3anO",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!V1GExBSxowwkCjQh.cCGSbSXIms7k3anO"
+    },
+    {
+      "name": "Aço-rubi (ignora RD 10)",
+      "img": "icons/svg/downgrade.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "Ignora 10 pontos de redução de dano.",
+      "system": {
+        "changes": [
+          {
+            "key": "ignoraRD",
+            "value": "10",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": true,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "self"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "4TMEw7h3bUN9aLZM",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!V1GExBSxowwkCjQh.4TMEw7h3bUN9aLZM"
+    }
+  ],
+  "_key": "!items!V1GExBSxowwkCjQh"
+}

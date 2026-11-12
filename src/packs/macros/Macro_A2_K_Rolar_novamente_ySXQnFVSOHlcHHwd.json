@@ -1,0 +1,40 @@
+{
+  "name": "A2 · K — Rolar novamente",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "folder": "UHZOS0Iyiab7WR0y",
+  "flags": {
+    "world": {
+      "cdr": "a2",
+      "cdrRole": "kRolar"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-macros",
+      "assinatura": "727e0edb",
+      "assinaturas": [
+        "727e0edb"
+      ]
+    }
+  },
+  "ownership": {
+    "default": 2
+  },
+  "command": "// K — Rolar novamente — 1x por cena, para quem tiver o poder \"Parceiro: K (Veterano)\"\nactor = canvas.tokens.controlled[0]?.actor ?? game.user.character;\nif (!actor) return ui.notifications.warn(\"Selecione o token do herói que K está ajudando.\");\nif (!actor.items.some((i) => i.name === \"Parceiro: K (Veterano)\")) return ui.notifications.warn(actor.name + \" não tem o poder do K na ficha.\");\nconst MARCA = \"K — rolagem novamente usada\";\nif (actor.effects.some((e) => e.name === MARCA)) return ui.notifications.warn(\"K já ajudou \" + actor.name + \" a rolar novamente nesta cena.\");\n\n// último teste deste ator no chat (ignora rolagens de dano)\nconst msg = game.messages.contents.slice().reverse().find((m) =>\n\tm.speaker?.actor === actor.id && m.rolls?.some((r) => r.dice?.some((d) => d.faces === 20)));\nif (!msg) return ui.notifications.warn(\"Nenhum teste recente de \" + actor.name + \" encontrado no chat.\");\nconst original = msg.rolls.find((r) => r.dice?.some((d) => d.faces === 20));\nconst titulo = (msg.flavor || msg.content.replace(/<[^>]+>/g, \" \").replace(/\\s+/g, \" \").trim().slice(0, 60)) || \"teste\";\n\nconst confirma = await foundry.applications.api.DialogV2.confirm({\n\twindow: { title: \"K — Rolar novamente\" },\n\tcontent: \"<p>Rolar novamente <strong>\" + titulo + \"</strong> (resultado anterior: <strong>\" + original.total + \"</strong>)?</p>\"\n});\nif (!confirma) return;\n\nconst nova = await original.reroll();\nawait nova.toMessage({\n\tspeaker: ChatMessage.getSpeaker({ actor }),\n\tflavor: \"<strong>K aconselha:</strong> rolando novamente \" + titulo + \" (antes: \" + original.total + \")\"\n});\nawait actor.createEmbeddedDocuments(\"ActiveEffect\", [{\n\tname: MARCA, img: \"icons/creatures/magical/construct-iron-stomping-yellow.webp\", type: \"base\",\n\tduration: { value: null, units: \"seconds\", expiry: \"sceneEnd\" },\n\tdescription: \"<p>Rolagem novamente do K já usada nesta cena.</p>\",\n\tsystem: { changes: [], targets: [], status: null, onuse: false,\n\t\tabilityUse: { description: \"\", automatic: false, aumenta: false, custo: 0, names: [], types: [] },\n\t\taura: { isAura: false, range: 0 } }\n}]);",
+  "_id": "ySXQnFVSOHlcHHwd",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "author": null,
+  "_key": "!macros!ySXQnFVSOHlcHHwd"
+}

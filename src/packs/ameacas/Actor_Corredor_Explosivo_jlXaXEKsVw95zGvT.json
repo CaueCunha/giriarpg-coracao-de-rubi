@@ -1,0 +1,52 @@
+{
+  "name": "Corredor Explosivo",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "cBIp29VyRjlLDfOn",
+  "system": {
+    "attributes": {
+      "nd": "6"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Andar 2, área 7.</b></p><p style=\"text-align:justify\">Atravessar o corredor estreito (uma pessoa por vez) sem pisar nas bombas enterradas a cada 3m.</p>",
+      "effects": "<p style=\"text-align:justify\">Investigação CD 20 revela cada bomba. Quem pisar numa sofre [[/r 6d6[impacto]]] de impacto (Reflexos CD 17 reduz à metade).</p>",
+      "actions": "<p style=\"text-align:justify\">Se os jogadores notarem o padrão (uma bomba a cada 3m), podem pular os espaços perigosos, como fazem Jaren e seus capangas.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura2"
+    },
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "ef889f41",
+      "assinaturas": [
+        "ef889f41"
+      ]
+    }
+  },
+  "_id": "jlXaXEKsVw95zGvT",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!jlXaXEKsVw95zGvT"
+}

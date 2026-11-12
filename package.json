@@ -1,0 +1,17 @@
+{
+  "name": "giriarpg-coracao-de-rubi",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Módulo Foundry VTT da campanha Coração de Rubi (Tormenta20)",
+  "scripts": {
+    "setup": "node tools/baixar-sistema.mjs",
+    "build": "node tools/build.mjs",
+    "pack": "node tools/pack.mjs",
+    "test": "node --test --test-concurrency=1 \"tests/*.test.mjs\""
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.5",
+    "jsdom": "^26.1.0"
+  }
+}

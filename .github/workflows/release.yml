@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Compilar compêndios
+        run: npm run pack
+      - name: Montar module.zip
+        run: |
+          mkdir -p dist
+          zip -r dist/module.zip module.json scripts styles lang packs assets README.md
+          cp module.json dist/module.json
+      - name: Publicar release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSAO="v$(node -p "require('./module.json').version")"
+          if gh release view "$VERSAO" >/dev/null 2>&1; then
+            gh release upload "$VERSAO" dist/module.json dist/module.zip --clobber
+          else
+            gh release create "$VERSAO" dist/module.json dist/module.zip --title "Coração de Rubi $VERSAO" --notes "Instale pelo manifesto: https://github.com/${{ github.repository }}/releases/latest/download/module.json"
+          fi

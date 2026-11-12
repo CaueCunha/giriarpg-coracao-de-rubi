@@ -1,0 +1,52 @@
+{
+  "name": "Caixotes de Bombas",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "cBIp29VyRjlLDfOn",
+  "system": {
+    "attributes": {
+      "nd": "6"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Andar 2, área 3.</b></p><p style=\"text-align:justify\">Evitar que as bombas explodam (ou explodi-las de propósito contra os anões veteranos).</p>",
+      "effects": "<p style=\"text-align:justify\">Dentro dos caixotes há [[/r 2d4]] bombas. Se mais de 6 pontos de dano de fogo forem causados perto deles, todas explodem: 6d6 de dano, +2d6 por bomba extra, em todas as criaturas a até 6m (Ref CD 20 reduz à metade).</p><p style=\"text-align:justify\">Dano por quantidade de bombas: 2 → [[/r 8d6]] · 3 → [[/r 10d6]] · 4 → [[/r 12d6]] · 5 → [[/r 14d6]] · 6 → [[/r 16d6]] · 7 → [[/r 18d6]] · 8 → [[/r 20d6]].</p>",
+      "actions": "<p style=\"text-align:justify\">Três anões veteranos emboscam o grupo escondidos atrás dos caixotes. Um deles leva o lembrete: <i>Afiar machado. Aparar a barba. Cobrar de Jaren o pagamento.</i></p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura2"
+    },
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "fb9c70cc",
+      "assinaturas": [
+        "fb9c70cc"
+      ]
+    }
+  },
+  "_id": "pCRrM8mpXMDOD0BC",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!pCRrM8mpXMDOD0BC"
+}

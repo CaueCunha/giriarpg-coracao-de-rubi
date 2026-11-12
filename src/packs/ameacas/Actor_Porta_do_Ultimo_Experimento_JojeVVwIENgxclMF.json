@@ -1,0 +1,52 @@
+{
+  "name": "Porta do Último Experimento",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "cBIp29VyRjlLDfOn",
+  "system": {
+    "attributes": {
+      "nd": "8"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Andar 4, área 5.</b></p><p style=\"text-align:justify\">Abrir a porta trancada (Ladinagem CD 20) sem disparar o gás. Resultado 25 na Ladinagem ou Investigação CD 25 evita a armadilha.</p>",
+      "effects": "<p style=\"text-align:justify\">Gás venenoso em alcance curto: perda de [[/r 2d12[perda]]] PV por rodada durante 3 rodadas (Fortitude CD 20 reduz para 1 rodada).</p>",
+      "actions": "<p style=\"text-align:justify\">Dentro: os últimos documentos de Tallaka (veja \"Documentos para os jogadores\").</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura2"
+    },
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "8b8fd99d",
+      "assinaturas": [
+        "8b8fd99d"
+      ]
+    }
+  },
+  "_id": "JojeVVwIENgxclMF",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!JojeVVwIENgxclMF"
+}

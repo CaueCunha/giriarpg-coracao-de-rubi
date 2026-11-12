@@ -1,0 +1,35 @@
+{
+  "_id": "gQYfLO1d3mOq4LZD",
+  "name": "CdR · Diagnóstico de condições",
+  "type": "script",
+  "img": "icons/svg/hazard.svg",
+  "scope": "global",
+  "command": "// Diagnóstico das condições do Tormenta20 (sistema 1.6.5)\n// Somente leitura: não altera nada no mundo. Rode como GM numa macro de Script.\n// Mostra: (1) pastas de efeitos/condições e onde elas estão aninhadas,\n// (2) ícones de condição (CONFIG.statusEffects) que não carregam.\n\nconst linhas = [];\nconst caminho = (f) => {\n\tconst partes = [];\n\tlet atual = f;\n\twhile (atual) {\n\t\tpartes.unshift(atual.name);\n\t\tatual = atual.folder;\n\t}\n\treturn partes.join(\" / \");\n};\n\nlinhas.push(`<h3>Sistema</h3><p>${game.system.id} ${game.system.version} | Foundry ${game.version}</p>`);\n\n// 1) Pastas (Folder) relacionadas a efeitos, condições ou tormenta20\nconst pastas = game.folders.filter((f) => /efeito|condi|effect|tormenta/i.test(f.name));\nlinhas.push(\"<h3>Pastas relevantes</h3>\");\nif (!pastas.length) linhas.push(\"<p>Nenhuma pasta com 'efeito', 'condição' ou 'tormenta' no nome.</p>\");\nfor (const f of pastas) {\n\tlinhas.push(`<p><b>[${f.type}]</b> ${caminho(f)} <i>(${f.contents.length} itens, id ${f.id})</i></p>`);\n}\n\n// 2) Ícones das condições\nlinhas.push(\"<h3>Ícones das condições</h3>\");\nconst quebrados = [];\n// No T20 1.6 CONFIG.statusEffects é um objeto (id → condição); no Foundry puro é uma lista.\nconst STATUS = Array.isArray(CONFIG.statusEffects) ? CONFIG.statusEffects : Object.values(CONFIG.statusEffects ?? {});\nfor (const s of STATUS) {\n\tconst img = s.img ?? s.icon;\n\tif (!img) continue;\n\ttry {\n\t\tconst r = await fetch(img, { method: \"HEAD\" });\n\t\tif (!r.ok) quebrados.push(`${s.id ?? s.name}: ${img} (${r.status})`);\n\t} catch (e) {\n\t\tquebrados.push(`${s.id ?? s.name}: ${img} (erro)`);\n\t}\n}\nlinhas.push(`<p>${STATUS.length} condições, ${quebrados.length} com ícone quebrado.</p>`);\nif (quebrados.length) linhas.push(`<p>${quebrados.join(\"<br>\")}</p>`);\n\n// Amostra de onde os ícones apontam\nconst amostra = STATUS.slice(0, 3).map((s) => s.img ?? s.icon).join(\"<br>\");\nlinhas.push(`<p><b>Exemplos de caminho:</b><br>${amostra}</p>`);\n\nChatMessage.create({\n\tcontent: linhas.join(\"\"),\n\twhisper: ChatMessage.getWhisperRecipients(\"GM\"),\n});\n",
+  "folder": "WcIUMsDXIBAmlv4X",
+  "flags": {
+    "world": {
+      "cdr": "cdrcampanha",
+      "cdrRole": "diagnosticoCondicoes"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha",
+      "antigo": "campanha-macros",
+      "assinatura": "0e375f59",
+      "assinaturas": [
+        "0e375f59"
+      ]
+    }
+  },
+  "_key": "!macros!gQYfLO1d3mOq4LZD",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

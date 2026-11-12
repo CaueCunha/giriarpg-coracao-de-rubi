@@ -1,0 +1,35 @@
+{
+  "_id": "ZnNrU0iunAKM2X0l",
+  "name": "CdR · Atualizar do compêndio",
+  "type": "script",
+  "img": "icons/svg/upgrade.svg",
+  "scope": "global",
+  "command": "// Lista o que mudou no compêndio e atualiza só o que você marcar (o que foi editado à mão fica como está).\ngame.modules.get(\"giriarpg-coracao-de-rubi\")?.api?.abrirAtualizar();",
+  "folder": "WcIUMsDXIBAmlv4X",
+  "flags": {
+    "world": {
+      "cdr": "cdrcampanha",
+      "cdrRole": "atualizador"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha",
+      "antigo": "campanha-macros",
+      "assinatura": "c021c216",
+      "assinaturas": [
+        "c021c216"
+      ]
+    }
+  },
+  "_key": "!macros!ZnNrU0iunAKM2X0l",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

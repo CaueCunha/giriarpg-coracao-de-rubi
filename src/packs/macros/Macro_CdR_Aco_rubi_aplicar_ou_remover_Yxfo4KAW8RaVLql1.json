@@ -1,0 +1,35 @@
+{
+  "_id": "Yxfo4KAW8RaVLql1",
+  "name": "CdR · Aço-rubi (aplicar ou remover)",
+  "type": "script",
+  "img": "systems/tormenta20/icons/itens/gerais/aco-rubi.webp",
+  "scope": "global",
+  "command": "/**\n * Coração de Rubi — Material especial: AÇO-RUBI (Tormenta20, Foundry v14)\n *\n * Aplica (ou remove) o aço-rubi em armas, munições, armaduras, escudos e esotéricos:\n *  • Arma: ignora 10 pontos de redução de dano (automático em todo ataque).\n *    Ignorar a imunidade a crítico de lefeu fica com o mestre (o sistema não tem esse campo).\n *  • Munição: opção \"Munição de aço-rubi\" na janela de ataque (Shift+clique) — ignora 10 de RD.\n *  • Esotérico: magias que causam dano ignoram 10 de RD (automático) e há a opção\n *    \"contra lefeu\" na janela de uso, que faz o dano ignorar as imunidades a dano.\n *  • Armadura / escudo: rolagem \"Aço-rubi\" no item para ignorar o dano extra de\n *    crítico ou ataque furtivo (leve/escudo 25% = 1 no 1d4; pesada 50% = par; somam).\n *\n * Como usar: selecione o token (ou nenhum, para itens da aba Itens) e execute.\n */\n\nconst FLAG = \"acoRubi\";\n\nactor = canvas.tokens?.controlled[0]?.actor ?? null;\nconst pool = actor ? actor.items.contents : game.items.contents;\n\nfunction categoria(item) {\n\tif (item.type === \"arma\") return \"arma\";\n\tif (item.type === \"consumivel\" && item.system.tipo === \"ammo\") return \"ammo\";\n\tif (item.type === \"equipamento\" && [\"leve\", \"pesada\", \"escudo\", \"esoterico\"].includes(item.system.tipo)) return item.system.tipo;\n\treturn null;\n}\n\nconst elegiveis = pool.filter((i) => categoria(i));\nif (!elegiveis.length) return ui.notifications.warn(actor\n\t? `${actor.name} não tem armas, munições, armaduras, escudos ou esotéricos.`\n\t: \"Nenhum item elegível na aba Itens. Selecione um token para aplicar nos itens dele.\");\n\nconst temAco = (i) => i.getFlag(\"tormenta20\", FLAG) || i.system.upgrades?.material === \"ruby-steel\";\nconst linhas = elegiveis\n\t.sort((a, b) => a.name.localeCompare(b.name))\n\t.map((i) => `<label style=\"display:flex;gap:.5em;align-items:center;margin:.15em 0\">\n\t\t<input type=\"checkbox\" name=\"itens\" value=\"${i.id}\">\n\t\t<img src=\"${i.img}\" width=\"24\" height=\"24\" style=\"border:none\">\n\t\t<span>${i.name}</span>\n\t\t<em style=\"margin-left:auto;opacity:.7\">${categoria(i)}${temAco(i) ? \" · já é aço-rubi\" : \"\"}</em>\n\t</label>`).join(\"\");\n\nconst escolha = await foundry.applications.api.DialogV2.wait({\n\twindow: { title: `Aço-Rubi — ${actor?.name ?? \"Itens do mundo\"}` },\n\tcontent: `<p>Marque os itens:</p><div style=\"max-height:400px;overflow:auto\">${linhas}</div>`,\n\tbuttons: [\n\t\t{ action: \"aplicar\", label: \"Aplicar aço-rubi\", default: true,\n\t\t\tcallback: (ev, btn) => ({ modo: \"aplicar\", ids: [...btn.form.querySelectorAll(\"input[name=itens]:checked\")].map((e) => e.value) }) },\n\t\t{ action: \"remover\", label: \"Remover aço-rubi\",\n\t\t\tcallback: (ev, btn) => ({ modo: \"remover\", ids: [...btn.form.querySelectorAll(\"input[name=itens]:checked\")].map((e) => e.value) }) }\n\t],\n\trejectClose: false\n});\nif (!escolha?.ids?.length) return;\n\n// Um único checkbox não vira lista em form.elements; trata esse caso\nfunction ids() { return escolha.ids; }\n\nfunction efeitoUso(nome, changes, types, automatic, descricao) {\n\treturn {\n\t\tname: nome,\n\t\timg: \"icons/commodities/gems/gem-rough-cushion-red.webp\",\n\t\ttype: \"base\",\n\t\ttransfer: false,\n\t\tdisabled: true,\n\t\tdescription: descricao,\n\t\tflags: { tormenta20: { [FLAG]: true } },\n\t\tsystem: {\n\t\t\tchanges: changes.map(([key, value, type]) => ({ key, value, type, priority: null, phase: \"initial\" })),\n\t\t\ttargets: [],\n\t\t\tstatus: null,\n\t\t\tonuse: true,\n\t\t\tabilityUse: { description: \"\", automatic, aumenta: false, custo: null, names: [], types },\n\t\t\taura: { isAura: false, range: 0 }\n\t\t}\n\t};\n}\n\nconst RD10 = [[\"ignoraRD\", \"10\", \"add\"]];\nconst DESC_ARMA = \"<p>Aço-rubi: a arma ignora 10 pontos de redução de dano, além de ignorar a imunidade a crítico de lefeu.</p>\";\nconst DESC_ESO = \"<p>Aço-rubi: magias que causam dano ignoram 10 pontos de redução de dano, além de ignorar as imunidades a dano de lefeu.</p>\";\n\nfor (const id of ids()) {\n\tconst item = pool.find((i) => i.id === id);\n\tif (!item) continue;\n\tconst cat = categoria(item);\n\t// limpa o que já existir\n\tconst antigos = item.effects.filter((e) => e.getFlag(\"tormenta20\", FLAG)).map((e) => e.id);\n\tif (antigos.length) await item.deleteEmbeddedDocuments(\"ActiveEffect\", antigos);\n\tconst rolls = (item.system.rolls ?? []).filter((r) => r.key !== \"acorubi\").map((r) => r.toObject?.() ?? r);\n\n\tif (escolha.modo === \"remover\") {\n\t\tawait item.update({\n\t\t\t\"system.rolls\": rolls,\n\t\t\t\"flags.tormenta20.-=acoRubi\": null\n\t\t});\n\t\tcontinue;\n\t}\n\n\t// O material fica marcado pela flag: o campo antigo system.upgrades.material (texto) o T20 1.6 descarta.\n\tconst update = { [`flags.tormenta20.${FLAG}`]: true };\n\n\tif (cat === \"arma\") {\n\t\tawait item.createEmbeddedDocuments(\"ActiveEffect\", [\n\t\t\tefeitoUso(\"Aço-rubi: ignora RD 10\", RD10, [\"self\"], true, DESC_ARMA)\n\t\t]);\n\t} else if (cat === \"ammo\") {\n\t\tawait item.createEmbeddedDocuments(\"ActiveEffect\", [\n\t\t\tefeitoUso(`Munição de aço-rubi (${item.name}): ignora RD 10`, RD10, [\"attack\"], false, DESC_ARMA)\n\t\t]);\n\t} else if (cat === \"esoterico\") {\n\t\tawait item.createEmbeddedDocuments(\"ActiveEffect\", [\n\t\t\tefeitoUso(\"Aço-rubi: magia ignora RD 10\", RD10, [\"spell\"], true, DESC_ESO),\n\t\t\tefeitoUso(\"Aço-rubi: contra lefeu (ignora imunidades a dano)\", [[\"tipoDano\", \"dano\", \"override\"]], [\"spell\"], false, DESC_ESO)\n\t\t]);\n\t} else {\n\t\tconst pct = cat === \"pesada\" ? 50 : 25;\n\t\trolls.push({\n\t\t\tname: `Aço-rubi: ignora crítico/furtivo se ≤ ${pct} (some armadura + escudo)`,\n\t\t\tkey: \"acorubi\", type: \"formula\", parts: [[\"1d100\", \"\", \"\"]], versatil: \"\", adaptavel: \"\"\n\t\t});\n\t\tupdate[\"system.rolls\"] = rolls;\n\t}\n\tawait item.update(update);\n}\n\nui.notifications.info(`Aço-rubi ${escolha.modo === \"remover\" ? \"removido de\" : \"aplicado em\"} ${ids().length} item(ns).`);\n",
+  "folder": "WcIUMsDXIBAmlv4X",
+  "flags": {
+    "world": {
+      "cdr": "cdrcampanha",
+      "cdrRole": "acoRubi"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha",
+      "antigo": "campanha-macros",
+      "assinatura": "73b90298",
+      "assinaturas": [
+        "73b90298"
+      ]
+    }
+  },
+  "_key": "!macros!Yxfo4KAW8RaVLql1",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

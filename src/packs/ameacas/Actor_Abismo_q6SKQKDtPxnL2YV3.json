@@ -1,0 +1,52 @@
+{
+  "name": "Abismo",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "cBIp29VyRjlLDfOn",
+  "system": {
+    "attributes": {
+      "nd": "8"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Andar 4, área 3.</b></p><p style=\"text-align:justify\">Atravessar a fenda de 6m, aparentemente sem fundo. Os ossos perto dela são de anões (Cura CD 15).</p>",
+      "effects": "<p style=\"text-align:justify\">Saltar: Atletismo CD 20. Esgueirar-se pela beirada: Acrobacia CD 15. Outras soluções criativas a critério do mestre.</p>",
+      "actions": "<p style=\"text-align:justify\">Do outro lado, uma porta marcada com X (área 4) e o corredor para a área 6.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura2"
+    },
+    "world": {
+      "cdr": "a2"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "d59902aa",
+      "assinaturas": [
+        "d59902aa"
+      ]
+    }
+  },
+  "_id": "q6SKQKDtPxnL2YV3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!q6SKQKDtPxnL2YV3"
+}

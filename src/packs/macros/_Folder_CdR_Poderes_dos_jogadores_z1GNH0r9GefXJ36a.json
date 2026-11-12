@@ -1,0 +1,30 @@
+{
+  "name": "CdR · Poderes dos jogadores",
+  "type": "Macro",
+  "color": "#6b5a2f",
+  "flags": {
+    "world": {
+      "cdr": "pjs"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "campanha"
+    }
+  },
+  "_id": "z1GNH0r9GefXJ36a",
+  "description": "",
+  "folder": "WcIUMsDXIBAmlv4X",
+  "sorting": "a",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!z1GNH0r9GefXJ36a"
+}
