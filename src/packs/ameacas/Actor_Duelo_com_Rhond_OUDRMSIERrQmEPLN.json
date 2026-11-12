@@ -1,0 +1,52 @@
+{
+  "name": "Duelo com Rhond",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "N7IZFx6lX4fePtUq",
+  "system": {
+    "attributes": {
+      "nd": "20"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 1, Cena 6 (forja de Rhond).</b></p><p style=\"text-align:justify\">Cada personagem enfrenta Rhond sozinho. A arma de aço-rubi que recebe depende de quantas rodadas aguenta (as armas não perdem encantos em áreas de Tormenta).</p>",
+      "effects": "<p style=\"text-align:justify\">Rhond faz <b>2 ataques</b> na 1ª rodada, <b>4</b> na 2ª e <b>6</b> na 3ª. Para quando o personagem fica inconsciente e recupera todos os PV entre duelos. Magias antes do duelo são permitidas; qualquer interferência durante a luta expulsa todos do templo, sem armas.</p><p style=\"text-align:justify\"><b>2 rodadas:</b> arma de aço-rubi formidável, mais uma melhoria e um encanto. <b>3 rodadas:</b> magnífica, mais duas melhorias, um encanto e uma propriedade de classe. <b>4 rodadas:</b> magnífica, mais três melhorias, dois encantos e as duas propriedades de classe.</p>",
+      "actions": "<p style=\"text-align:justify\">Propriedades de classe: veja \"As Armas de Rhond\" nos Documentos para os jogadores.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura6"
+    },
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-ameacas",
+      "assinatura": "b5cd2a7c",
+      "assinaturas": [
+        "b5cd2a7c"
+      ]
+    }
+  },
+  "_id": "OUDRMSIERrQmEPLN",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!OUDRMSIERrQmEPLN"
+}

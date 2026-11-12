@@ -1,0 +1,96 @@
+{
+  "name": "Mapa de Reynard",
+  "type": "tesouro",
+  "img": "systems/tormenta20/icons/itens/gerais/bussola.webp",
+  "flags": {
+    "world": {
+      "cdrRole": "mapaReynard",
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-itens",
+      "assinatura": "56635b98",
+      "assinaturas": [
+        "94981a6e",
+        "56635b98"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Mapa da área de Tormenta de Zakharov feito por Reynard na incursão da Companhia Rubra: +5 em Sobrevivência dentro da área de Tormenta (vale no teste estendido da Parte 2).</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Horizonte de Sangue",
+    "qtd": 1,
+    "preco": 0,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "f769WvjvcympgxAd",
+  "_id": "KV87wswsqV77eSwG",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!KV87wswsqV77eSwG"
+}

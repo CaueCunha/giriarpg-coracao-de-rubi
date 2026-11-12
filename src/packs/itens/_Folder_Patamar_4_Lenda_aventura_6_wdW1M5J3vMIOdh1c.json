@@ -1,0 +1,27 @@
+{
+  "_id": "wdW1M5J3vMIOdh1c",
+  "name": "Patamar 4 · Lenda (aventura 6)",
+  "type": "Item",
+  "folder": null,
+  "sorting": "a",
+  "sort": 400000,
+  "color": "#5a2f7a",
+  "description": "",
+  "flags": {
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4"
+    }
+  },
+  "_key": "!folders!wdW1M5J3vMIOdh1c",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

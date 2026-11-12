@@ -1,0 +1,94 @@
+{
+  "name": "Armadura rubra",
+  "type": "tesouro",
+  "img": "systems/tormenta20/icons/itens/equipamentos/couraca.webp",
+  "flags": {
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-itens",
+      "assinatura": "609bf88c",
+      "assinaturas": [
+        "609bf88c"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Uma das mais de dez armaduras de Reynard, aberrantes, feitas de matéria vermelha e partes de carapaça, escama e pele de demônios da Tormenta, usadas pela Companhia Rubra. Existem de todos os tipos do livro básico; são mágicas (se ajustam ao usuário) e não metálicas (druidas e devotos de Allihanna podem usar).</p><p style=\"text-align:justify\">Cada uma tem <b>três melhorias e três encantos</b> à escolha do jogador e fornece <b>resistência a Tormenta +5</b>. Monte a armadura escolhida a partir do compêndio do sistema e cole este texto nela.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Horizonte de Sangue",
+    "qtd": 1,
+    "preco": 0,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "f769WvjvcympgxAd",
+  "_id": "ukgLhhA6AbVKiuJi",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!ukgLhhA6AbVKiuJi"
+}

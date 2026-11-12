@@ -323,6 +323,62 @@
 ### Avisos do Foundry simulado (0)
 
 
+## Patamar 4 · Lenda (aventura 6)
+
+- Ameaças e NPCs: 22 documento(s)
+- Poderes: 2 documento(s)
+- Itens: 13 documento(s)
+- Diários: 3 documento(s)
+- Tabelas: 1 documento(s)
+- Macros: 1 documento(s)
+
+### Ligações com o sistema e o Giria T20 (39)
+
+| Dono | Item | Tipo | O que foi feito |
+|---|---|---|---|
+| Adramalek, Cardeal da Dominação | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Adramalek, Cardeal da Dominação | Sangue dos Inimigos | poder | ficha do livro + origem no sistema |
+| Adramalek, Cardeal da Dominação | Sangue dos Inimigos | poder | origem no Giria T20 (uso) |
+| Elemental Corrompido | Mordida | arma | ficha do livro + origem no sistema |
+| Elemental Corrompido | Pancada | arma | ficha do livro + origem no sistema |
+| Elemental Corrompido | Agarrar Aprimorado | poder | ficha do livro + origem no sistema |
+| Eridibus, Cardeal da Evolução (Centopeia-Dragão) | Mordida | arma | ficha do livro + origem no sistema |
+| Eridibus, Cardeal da Evolução (Centopeia-Dragão) | Agarrar Aprimorado | poder | ficha do livro + origem no sistema |
+| Eridibus, Cardeal da Evolução (Centopeia-Dragão) | Aura de Calor | poder | ficha do livro + origem no sistema |
+| Eridibus, Cardeal da Evolução (Centopeia-Dragão) | Engolir | poder | ficha do livro + origem no sistema |
+| Eridibus, Cardeal da Evolução (Centopeia-Dragão) | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Eridibus, Cardeal da Evolução (Bisão da Montanha) | Chifres | arma | ficha do livro + origem no sistema |
+| Eridibus, Cardeal da Evolução (Bisão da Montanha) | Passar por Cima | poder | link para o sistema |
+| Eridibus, Cardeal da Evolução (Bisão da Montanha) | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Eridibus, Cardeal da Evolução (Lula Abissal) | Agarrar Aprimorado | poder | ficha do livro + origem no sistema |
+| Eridibus, Cardeal da Evolução (Lula Abissal) | Constrição | poder | link para o sistema |
+| Eridibus, Cardeal da Evolução (Lula Abissal) | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Esmagador Coletivo | Pancada | arma | ficha do livro + origem no sistema |
+| Esmagador Coletivo | Agarrar Aprimorado | poder | ficha do livro + origem no sistema |
+| Ezequias Heldret (sumo-sacerdote) | Sumo-Sacerdote | poder | origem no Giria T20 (manual) |
+| Hashmalan, Cardeal da Assimilação | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Queklain, Cardeal da Devoção | Machado de guerra | arma | ficha do livro + origem no sistema |
+| Queklain, Cardeal da Devoção | Machado de guerra | arma | origem no Giria T20 (uso) |
+| Queklain, Cardeal da Devoção | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Lefeu, Sarektril | Espinhos | poder | ficha do livro + origem no sistema |
+| Lefeu, Sarektril | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Lefeu, Zirradak | Marreta | arma | ficha do livro + origem no sistema |
+| Lefeu, Zirradak | Marreta | arma | origem no Giria T20 (uso) |
+| Lefeu, Zirradak | Lança | arma | ficha do livro + origem no sistema |
+| Lefeu, Zirradak | Lança | arma | origem no Giria T20 (uso) |
+| Lefeu, Zirradak | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Ezzayn com Batalhão Burodron | Enxame | poder | link para o sistema |
+| Ezzayn com Batalhão Burodron | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Ezzayn com Cavalaria Hurobakk | Enxame | poder | link para o sistema |
+| Ezzayn com Cavalaria Hurobakk | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| Ezzayn com Esquadrão Veridak | Enxame | poder | link para o sistema |
+| Ezzayn com Esquadrão Veridak | Insanidade da Tormenta | poder | ficha do livro + origem no sistema |
+| (item) | Coração de Rubi | arma | já era cópia do sistema |
+| (item) | Espada da Tormenta | arma | já era cópia do sistema |
+
+### Avisos do Foundry simulado (0)
+
+
 ## Campanha (ferramentas do mestre e artefatos dos jogadores)
 
 - Poderes: 1 documento(s)
@@ -338,10 +394,10 @@
 
 ## Compêndios
 
-- `ameacas` (Ameaças e NPCs): 83 documento(s), 18 pasta(s)
-- `poderes` (Poderes): 10 documento(s), 10 pasta(s)
-- `itens` (Itens): 43 documento(s), 8 pasta(s)
-- `diarios` (Diários): 18 documento(s), 8 pasta(s)
-- `tabelas` (Tabelas): 3 documento(s), 5 pasta(s)
-- `macros` (Macros): 16 documento(s), 10 pasta(s)
+- `ameacas` (Ameaças e NPCs): 105 documento(s), 22 pasta(s)
+- `poderes` (Poderes): 12 documento(s), 12 pasta(s)
+- `itens` (Itens): 56 documento(s), 10 pasta(s)
+- `diarios` (Diários): 21 documento(s), 10 pasta(s)
+- `tabelas` (Tabelas): 4 documento(s), 7 pasta(s)
+- `macros` (Macros): 17 documento(s), 12 pasta(s)
 

@@ -1,0 +1,339 @@
+{
+  "name": "A6 · Encontros na Tormenta",
+  "img": "icons/svg/hazard.svg",
+  "folder": "rtkFVm8EBd7FaTzM",
+  "flags": {
+    "world": {
+      "cdr": "a6",
+      "cdrRole": "encontrosTormenta"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-tabelas",
+      "assinatura": "8136a27e",
+      "assinaturas": [
+        "8136a27e"
+      ]
+    }
+  },
+  "formula": "2d6",
+  "replacement": true,
+  "displayRoll": true,
+  "description": "Uma rolagem por dia na área de Tormenta (Parte 2, Cena 3).",
+  "_id": "vV2aFpXTNg2MkEJA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "results": [
+    {
+      "type": "text",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "name": "Fábrica de Esmagadores",
+      "description": "Cultistas entoam cânticos em volta de uma fornalha de carne esponjosa. 2d4 @UUID[Compendium.giria-t20.ameacas.Actor.1WalURwykNVk3Ahu]{sacerdotes de Aharadak}; na 1ª rodada, um gasta uma ação padrão para ativar a fornalha e gera um @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.IOW66LxdEoOX8xDk]{esmagador coletivo} no fim da rodada. Um sacerdote adjacente pode reativá-la depois de 1d4 rodadas.",
+      "_id": "YJoUOlWMKMs6kD8v",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.YJoUOlWMKMs6kD8v"
+    },
+    {
+      "type": "text",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "name": "Manada Mortal",
+      "description": "Centauros insetoides e um demônio altivo de lâmina brilhante: um @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.viEQ3d9URPIwAovi]{sarektril} e um @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.gwR8grEPmZhDylkF]{ezzayn com hurobakks}.",
+      "_id": "y0pcnrt0GRQxohsz",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.y0pcnrt0GRQxohsz"
+    },
+    {
+      "type": "text",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "name": "Definhamento",
+      "description": "A Tormenta se alimenta do grupo: todos perdem [[/r 10d8]] PV e ficam @STATUS[debilitado] até o fim do próximo dia (Fort CD 35 evita ambos).",
+      "_id": "jfhYcMf4z5yqZ3c1",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.jfhYcMf4z5yqZ3c1"
+    },
+    {
+      "type": "text",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "name": "Tempestade Elétrica",
+      "description": "Dura [[/r 2d4]] rodadas numa área de 90 m. No início de cada rodada, um personagem aleatório na área sofre [[/r 10d8[eletricidade]]] de eletricidade e [[/r 10d8[trevas]]] de trevas.",
+      "_id": "xYKtsel4zfgm9kVj",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.xYKtsel4zfgm9kVj"
+    },
+    {
+      "type": "text",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "name": "Patrulha Aérea",
+      "description": "O guincho de um veridak alerta a patrulha: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.TPde99GBQpfKMSvM]{ezzayn com veridaks}.",
+      "_id": "yOHwthOFBm1CsHEw",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.yOHwthOFBm1CsHEw"
+    },
+    {
+      "type": "text",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "name": "Chuva Ácida",
+      "description": "Dura [[/r 2d4]] rodadas numa área de 90 m. No início de cada rodada, quem está na área sofre [[/r 4d8[acido]]] de ácido; o dano persiste uma rodada depois de sair ou de a chuva acabar.",
+      "_id": "YFSFHo0200Q2LLJI",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.YFSFHo0200Q2LLJI"
+    },
+    {
+      "type": "text",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "name": "Patrulha Subterrânea",
+      "description": "O chão treme e demônios emergem: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.u68KZIERTIkubrRr]{ezzayn com burodrons}.",
+      "_id": "CaAJzYiGqIZUTTIb",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.CaAJzYiGqIZUTTIb"
+    },
+    {
+      "type": "text",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "name": "Labaredas Infernais",
+      "description": "Cada jogador rola 1d20; ímpar, uma coluna de chamas causa [[/r 5d6[fogo]]] de fogo e [[/r 5d6[trevas]]] de trevas (Ref CD 35 reduz à metade). Repete por mais [[/r 1d4]] rodadas; não há como fugir, só melhorar o teste ou ganhar resistência.",
+      "_id": "2Py1uSTIegMegK0V",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.2Py1uSTIegMegK0V"
+    },
+    {
+      "type": "text",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "name": "Pesadelos Reais",
+      "description": "Vontade CD 35: quem falha vê seu maior medo, fica @STATUS[apavorado] e faz Vontade CD 35 por rodada; cada falha causa [[/r 6d8[psiquico]]] psíquico e [[/r 1d8]] PM perdidos. Acaba com dois sucessos seguidos. Quem não está apavorado pode prestar ajuda.",
+      "_id": "O2DBEA87lGiCcHDS",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.O2DBEA87lGiCcHDS"
+    },
+    {
+      "type": "text",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "name": "Colosso Corrompido",
+      "description": "Um besouro do tamanho de um pequeno castelo: um @UUID[Compendium.giria-t20.ameacas.Actor.FF9PpLugg4L34Jh1]{thuwarokk}.",
+      "_id": "Dd4tvoyLTDUTjFjQ",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.Dd4tvoyLTDUTjFjQ"
+    },
+    {
+      "type": "text",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "name": "Nenhum",
+      "description": "Um dia de paz relativa (na medida do possível dentro da Tormenta).",
+      "_id": "N8BSx7R9MCgDV6Ol",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!vV2aFpXTNg2MkEJA.N8BSx7R9MCgDV6Ol"
+    }
+  ],
+  "_key": "!tables!vV2aFpXTNg2MkEJA"
+}

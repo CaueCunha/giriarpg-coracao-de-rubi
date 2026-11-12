@@ -1,0 +1,94 @@
+{
+  "name": "Arma de Rhond",
+  "type": "tesouro",
+  "img": "systems/tormenta20/icons/itens/equipamentos/espada-bastarda.webp",
+  "flags": {
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-itens",
+      "assinatura": "d153ae2a",
+      "assinaturas": [
+        "d153ae2a"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Arma ou manopla de aço-rubi à escolha, forjada e batizada por Rhond numa cerimônia religiosa. Não perde seus encantos em áreas de Tormenta.</p><p style=\"text-align:justify\"><b>2 rodadas no duelo:</b> formidável, mais uma melhoria e um encanto. <b>3 rodadas:</b> magnífica, mais duas melhorias, um encanto e uma propriedade de classe. <b>4 rodadas:</b> magnífica, mais três melhorias, dois encantos e as duas propriedades de classe.</p><p style=\"text-align:justify\">Monte a arma a partir do compêndio do sistema e cole este texto e as propriedades escolhidas (Documentos para os jogadores, página As Armas de Rhond).</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Horizonte de Sangue",
+    "qtd": 1,
+    "preco": 0,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "f769WvjvcympgxAd",
+  "_id": "pirhe6YHkwnUdT5y",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!pirhe6YHkwnUdT5y"
+}

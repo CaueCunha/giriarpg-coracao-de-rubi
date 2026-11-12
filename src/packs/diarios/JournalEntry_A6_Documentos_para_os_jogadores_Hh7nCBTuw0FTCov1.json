@@ -1,0 +1,228 @@
+{
+  "name": "A6 · Documentos para os jogadores",
+  "folder": "DawYAA2ZKaAbkyDF",
+  "flags": {
+    "world": {
+      "cdr": "a6",
+      "cdrRole": "documentos"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-diarios",
+      "assinatura": "2a0a5332",
+      "assinaturas": [
+        "2a0a5332"
+      ]
+    }
+  },
+  "_id": "Hh7nCBTuw0FTCov1",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Discurso de Ezequias (Esquadrão Escarlate)",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<i>Sejam bem-vindos, amigos! Hoje, escrevemos um novo capítulo da nossa história, não só como cidadãos de Yuvalin, mas como artonianos! Hoje, um grupo de bravos desafia a maior ameaça que assola nosso mundo! (...) Foi graças ao seu trabalho que hoje esse contingente exibe suas lâminas vermelhas, como presas que rosnam para os invasores, prestes a desferir o bote. É graças a vocês que, hoje, nasce o Esquadrão Escarlate!</i>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "Bf6Y8m7uRj7DqfIn",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Hh7nCBTuw0FTCov1.Bf6Y8m7uRj7DqfIn"
+    },
+    {
+      "name": "O desafio dos Cardeais (o Emissário)",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<i>A essência está novamente em seu lugar. O desafio está lançado. Artonianos, vocês devem confrontar os outros três Cardeais e receber suas bênçãos. Caso sejam aprovados, um de vocês será nomeado Cardeal, e irá forjar uma nova essência no Santuário do Coração. Mas, se forem julgados indignos, serão destruídos.</i>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "DlcF6OblUQg3E99W",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Hh7nCBTuw0FTCov1.DlcF6OblUQg3E99W"
+    },
+    {
+      "name": "Enigmas de Hashmalan",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ol><li>O que é meu, mas quem me conhece usa muito mais do que eu?</li><li>Não é vivo, mas cresce. Não respira, mas falta de ar pode matá-lo. O que é?</li><li>O que está sempre à nossa frente, mas nunca chega?</li><li>Existe algo que quanto mais se perde, mais se tem. O que é?</li><li>Você acordou em uma sala trancada. Para sair, pegou uma chave dentro de uma caixa, dentro de uma gaiola. O que você abriu primeiro?</li><li>O que mantém sempre o mesmo tamanho, não importa quanto pese?</li><li>Existe algo em Arton que é totalmente feito de água, mas deixa de existir se for mergulhado nela. O que é?</li><li>Qual a última coisa que se pode tirar de uma criatura?</li><li>O que é que todos têm, sempre aumenta, mas nunca diminui?</li><li>Qual a única palavra de seu idioma que sempre se escreve errado?</li></ol>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "tIHT6EmB7AJiC75F",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Hh7nCBTuw0FTCov1.tIHT6EmB7AJiC75F"
+    },
+    {
+      "name": "As Armas de Rhond: propriedades de classe",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Escolha propriedades de uma classe em que você tenha pelo menos um nível; só valem empunhando a arma.<ul><li><b>Arcanista:</b> <i>Aniquilação:</i> suas magias ignoram as imunidades dos lefeu. <i>Devastação:</i> magias de dano ganham um benefício de Magia Ampliada de graça.</li><li><b>Bárbaro:</b> <i>Poder Gigante:</i> em fúria, o dano da arma aumenta um passo. <i>Poder Esmagador:</i> em fúria, aplica o dobro da Força no dano corpo a corpo com ela.</li><li><b>Bardo:</b> <i>Compasso:</i> habilidades e magias de bardo não sofrem aumento de custo em área de Tormenta. <i>Fortíssimo:</i> quem está sob sua Inspiração ignora as imunidades dos lefeu.</li><li><b>Bucaneiro:</b> <i>Zombaria:</i> Panache contra lefeu ou criatura da Tormenta recupera 3 PM em vez de 1. <i>Astúcia:</i> dobra a Esquiva Sagaz contra eles.</li><li><b>Caçador:</b> <i>Abater:</i> o dano de Marca da Presa ganha um dado do mesmo tipo. <i>Predador Rubro:</i> bônus de Explorador dentro da área de Tormenta (ou +2 se já tiver).</li><li><b>Cavaleiro:</b> <i>Honra Artoniana:</i> Duelo contra lefeu ou criatura da Tormenta ganha +2. <i>Indômito:</i> Posturas como ação livre e sem aumento de custo em área de Tormenta.</li><li><b>Clérigo:</b> <i>Ira Divina:</i> suas magias ignoram as imunidades dos lefeu. <i>Arma Eclesiástica:</i> magias divinas custam –1 PM (cumulativo com Símbolo Sagrado Energizado e Símbolo Abençoado).</li><li><b>Druida:</b> <i>Garras Rubras:</i> modificações e encantos passam para as armas naturais na Forma Selvagem. <i>Elementos Alienígenas:</i> seus ataques e magias ignoram as imunidades dos lefeu.</li><li><b>Guerreiro:</b> <i>Ataque Superior:</i> Ataque Especial contra lefeu ou criatura da Tormenta ganha +4. <i>Ataque Veloz:</i> Ataque Extra até duas vezes por rodada.</li><li><b>Inventor:</b> <i>Ferramenta de Precisão:</i> contra lefeu ou criatura da Tormenta, recebe o benefício de Encontrar Fraqueza. <i>Participação na Construção:</i> a arma conta como feita por você para poderes de inventor e o dano aumenta um passo.</li><li><b>Ladino:</b> <i>Ponto Cego:</i> flanqueia lefeu e criaturas da Tormenta e o Ataque Furtivo os afeta. <i>Chacina:</i> os dados do Ataque Furtivo aumentam uma categoria.</li><li><b>Lutador:</b> <i>Pancada:</i> a arma causa o dano do seu ataque desarmado (Briga) com um dado a mais e aceita habilidades de ataque desarmado. <i>Rajada:</i> Ataque Relâmpago até duas vezes por ação agredir.</li><li><b>Nobre:</b> <i>Arauto:</i> Gritar Ordens dá +2 a mais e não sofre aumento de custo em área de Tormenta. <i>Soberania:</i> Orgulho para atacar lefeu ou criatura da Tormenta também soma no dano.</li><li><b>Paladino:</b> <i>Punição Divina:</i> Golpe Divino contra lefeu e criaturas da Tormenta causa 2 dados a mais. <i>Juízo Final:</i> o bônus da Aura Sagrada dobra; Aura Ardente afeta lefeu e ignora imunidades e RD.</li></ul></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "wxYiQOequLN5YKtn",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Hh7nCBTuw0FTCov1.wxYiQOequLN5YKtn"
+    },
+    {
+      "name": "Coração da Tormenta",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Toda área de Tormenta tem um ponto de origem, uma fenda na realidade por onde a Anticriação invade Arton. O da área de Zakharov é uma lança que perfura nossa realidade. Qualquer não lefeu em alcance curto fica debilitado, enjoado e esmorecido e perde 10d6 PV por rodada; reduzido a 0 PV, é desintegrado. Isso afeta até lefou.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "igLVgZRlxIz1LG1b",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Hh7nCBTuw0FTCov1.igLVgZRlxIz1LG1b"
+    }
+  ],
+  "_key": "!journal!Hh7nCBTuw0FTCov1"
+}

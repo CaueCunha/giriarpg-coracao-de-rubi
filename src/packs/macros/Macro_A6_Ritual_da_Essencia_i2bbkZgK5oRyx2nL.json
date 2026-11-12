@@ -1,0 +1,40 @@
+{
+  "name": "A6 · Ritual da Essência",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/sun.svg",
+  "folder": "tH40lad5GYJARFZL",
+  "flags": {
+    "world": {
+      "cdr": "a6",
+      "cdrRole": "ritualEssencia"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-macros",
+      "assinatura": "62721442",
+      "assinaturas": [
+        "62721442"
+      ]
+    }
+  },
+  "command": "// A6 · Ritual da Essência (Horizonte de Sangue, Parte 3, Cena 6). Só o mestre.\n// Rode no FIM de cada rodada. Marque os pilares ativos que ainda não foram energizados:\n// a macro rola 1d4 para cada (4 = energizado) e lembra os lefeu que surgem nesta rodada.\n// O estado (rodada, pilares energizados, contagem final) fica guardado no próprio usuário.\nif (!game.user.isGM) return ui.notifications.warn(\"Só o mestre roda esta macro.\");\nconst { DialogV2 } = foundry.applications.api;\nconst PILARES = [\"Assimilação\", \"Devoção\", \"Dominação\", \"Evolução\"];\nconst est = foundry.utils.duplicate(game.user.getFlag(\"world\", \"cdrRitual\") ?? { rodada: 0, energizados: [], ativos: [], final: 0 });\nconst linha = (p) => {\n\tconst e = est.energizados.includes(p), a = est.ativos.includes(p);\n\treturn \"<label style='display:block'><input type='checkbox' name='\" + p + \"'\" + (a || e ? \" checked\" : \"\") + (e ? \" disabled\" : \"\") + \"> Pilar da \" + p + (e ? \" <b>(energizado)</b>\" : \"\") + \"</label>\";\n};\nconst r = await DialogV2.wait({\n\twindow: { title: \"Ritual da Essência\" }, rejectClose: false,\n\tcontent: \"<p>Fim da rodada <b>\" + (est.rodada + 1) + \"</b> do ritual. Pilares ativos:</p>\" + PILARES.map(linha).join(\"\"),\n\tbuttons: [\n\t\t{ action: \"rodar\", label: \"Fim da rodada\", default: true, callback: (e, b) => ({ f: b.form.elements }) },\n\t\t{ action: \"zerar\", label: \"Recomeçar ritual\", callback: () => \"zerar\" }\n\t]\n});\nif (!r) return;\nif (r === \"zerar\") { await game.user.unsetFlag(\"world\", \"cdrRitual\"); return ui.notifications.info(\"Ritual recomeçado.\"); }\nest.rodada += 1;\nest.ativos = PILARES.filter((p) => r.f[p]?.checked);\nlet html = \"\";\nfor (const p of est.ativos.filter((x) => !est.energizados.includes(x))) {\n\tconst d = (await new Roll(\"1d4\").evaluate()).total;\n\tif (d === 4) est.energizados.push(p);\n\thtml += \"<p>Pilar da \" + p + \": \" + d + (d === 4 ? \" — <b>energizado!</b> (a essência pode ser retirada)\" : \"\") + \"</p>\";\n}\nif (est.ativos.length) {\n\tif (!est.inicio) est.inicio = est.rodada;\n\tconst n = est.rodada - est.inicio + 1;\n\thtml += \"<p>\" + (n % 2 ? \"Surge um <b>ezzayn</b> adjacente à pirâmide.\" : \"Surge um <b>sarektril</b> adjacente à pirâmide.\") + \"</p>\";\n}\nif (est.energizados.length === 4) {\n\test.final += 1;\n\thtml += est.final >= 4 ? \"<h3>O ritual está completo!</h3><p>Vá para o fim da Cena 6.</p>\" : \"<p>Todos os pilares energizados: rodada <b>\" + est.final + \" de 4</b>.</p>\";\n}\nawait game.user.setFlag(\"world\", \"cdrRitual\", est);\nChatMessage.create({ whisper: ChatMessage.getWhisperRecipients(\"GM\").map((u) => u.id), content: \"<h3>Ritual da Essência · rodada \" + est.rodada + \"</h3>\" + (html || \"<p>Nenhum pilar ativo.</p>\") });",
+  "_id": "i2bbkZgK5oRyx2nL",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "author": null,
+  "_key": "!macros!i2bbkZgK5oRyx2nL"
+}

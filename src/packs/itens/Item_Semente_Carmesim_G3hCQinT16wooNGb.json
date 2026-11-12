@@ -1,0 +1,287 @@
+{
+  "name": "Semente Carmesim",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/baga-de-fogo.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Baga retorcida de odor ocre, um superalimento do mercado de Ahar'kadhan. Consumir cura 10d10+10 PV e remove uma condição entre enjoado, envenenado, exausto, fatigado ou fraco, mas deixa debilitado até o fim do próximo turno.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Horizonte de Sangue",
+    "qtd": 1,
+    "preco": 0,
+    "ativacao": {
+      "execucao": "action",
+      "custo": 0,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "rolls": [
+      {
+        "name": "Cura",
+        "key": "dano0",
+        "type": "dano",
+        "parts": [
+          [
+            "10d10+10",
+            "curapv",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ],
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "tipo": "",
+    "subtipo": ""
+  },
+  "folder": "f769WvjvcympgxAd",
+  "flags": {
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-itens",
+      "assinatura": "7518847d",
+      "assinaturas": [
+        "dbe0b67c",
+        "7518847d"
+      ]
+    }
+  },
+  "_id": "G3hCQinT16wooNGb",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "name": "Debilitado (1 rodada)",
+      "img": "systems/tormenta20/icons/conditions/debilitado.svg",
+      "statuses": [
+        "debilitado"
+      ],
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.modificadores.atributos.for",
+            "value": -5,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.modificadores.atributos.des",
+            "value": -5,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.modificadores.atributos.con",
+            "value": -5,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.acro.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.atle.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.cava.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.fort.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.furt.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.inic.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.luta.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.pilo.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.pont.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.refl.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          }
+        ],
+        "status": {
+          "category": "",
+          "ignoreImunity": false,
+          "upgrade": "",
+          "childEffect": []
+        },
+        "targets": [],
+        "onuse": false,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": []
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "type": "base",
+      "disabled": false,
+      "start": null,
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "showIcon": 1,
+      "flags": {},
+      "_id": "qxKCZejGdHjiQCza",
+      "origin": null,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!G3hCQinT16wooNGb.qxKCZejGdHjiQCza"
+    }
+  ],
+  "_key": "!items!G3hCQinT16wooNGb"
+}

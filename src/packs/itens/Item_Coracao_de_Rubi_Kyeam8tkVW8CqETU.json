@@ -1,0 +1,703 @@
+{
+  "name": "Coração de Rubi",
+  "type": "arma",
+  "img": "systems/tormenta20/icons/itens/equipamentos/lanca.webp",
+  "sort": 800000,
+  "flags": {
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-itens",
+      "assinatura": "47be899e",
+      "assinaturas": [
+        "47be899e"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">O coração da área de Tormenta de Aharadak, a chave-portal entre Arton e a Anticriação. Apesar de \"desativado\", ainda é perigosíssimo: lança magnífica veloz que causa os efeitos de um Coração da Tormenta por 1d4 rodadas em qualquer criatura que toque (debilitada, enjoada, esmorecida e perdendo 10d6 PV por rodada; 0 PV desintegra, até lefou).</p><p style=\"text-align:justify\"><b>Automação:</b> +3 no ataque e +2 no dano (magnífica) entram sozinhos; botões das condições e rolagem da perda de PV no cartão.</p><p style=\"text-align:justify\">Qualquer arma feita com uma haste de madeira e uma ponta afiada, natural ou metálica. Por sua facilidade de fabricação, é muito comum entre orcs, kobolds, trogloditas e outras raças menos civilizadas. Uma lança pode ser arremessada.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Horizonte de Sangue",
+    "equipado": 0,
+    "equipado2": {
+      "slot": 0,
+      "type": "hand"
+    },
+    "carregado": true,
+    "peso": 1.5,
+    "espacos": 1,
+    "qtd": 1,
+    "preco": 2,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "rolls": [
+      {
+        "name": "Ataque",
+        "key": "ataque0",
+        "type": "ataque",
+        "parts": [
+          [
+            "1d20",
+            "",
+            ""
+          ],
+          [
+            "luta",
+            "",
+            ""
+          ],
+          [
+            "0",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      },
+      {
+        "name": "Dano",
+        "key": "dano1",
+        "type": "dano",
+        "parts": [
+          [
+            "1d6",
+            "perfuracao",
+            ""
+          ],
+          [
+            "@for",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      },
+      {
+        "name": "Coração da Tormenta: PV perdidos",
+        "key": "formula9",
+        "type": "formula",
+        "parts": [
+          [
+            "10d6",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      },
+      {
+        "name": "Rodadas",
+        "key": "formula10",
+        "type": "formula",
+        "parts": [
+          [
+            "1d4",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ],
+    "criticoM": 20,
+    "criticoX": 2,
+    "alcance": "short",
+    "tipoUso": "sim",
+    "propriedades": {
+      "ada": false,
+      "agi": false,
+      "alo": false,
+      "dup": false,
+      "ver": false,
+      "adaptavel": false,
+      "agil": false,
+      "alongada": false,
+      "arremesso": true,
+      "ataqueDistancia": false,
+      "duasMaos": false,
+      "dupla": false,
+      "leve": false,
+      "municao": false,
+      "versatil": false,
+      "des": false
+    },
+    "ativacao": {
+      "custo": null,
+      "condicao": "",
+      "execucao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "chatFlavor": "",
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null,
+      "mpMultiplier": false
+    },
+    "origin": "",
+    "tags": [],
+    "chatGif": "",
+    "upgrades": {
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "material": [],
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "itemType": [],
+      "improvement": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "materialEspecial1": "",
+      "enableAutoUpgrades": true
+    },
+    "ataques": 0,
+    "proficiencia": "simples",
+    "proposito": "arremesso",
+    "empunhadura": "uma",
+    "size": "normal",
+    "rolltags": [],
+    "automationtags": []
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.tormenta20.equipamentos.Item.vaCe85lpdH10teLi",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "f769WvjvcympgxAd",
+  "_id": "Kyeam8tkVW8CqETU",
+  "effects": [
+    {
+      "name": "Magnífica",
+      "img": "icons/svg/upgrade.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "+3 no ataque, +2 no dano.",
+      "system": {
+        "changes": [
+          {
+            "key": "ataque",
+            "value": "3",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          },
+          {
+            "key": "dano",
+            "value": "2",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": true,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "self"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "fZNQn3bi3vlj4EMR",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Kyeam8tkVW8CqETU.fZNQn3bi3vlj4EMR"
+    },
+    {
+      "name": "Debilitado",
+      "img": "systems/tormenta20/icons/conditions/debilitado.svg",
+      "statuses": [
+        "debilitado"
+      ],
+      "duration": {
+        "expiry": "sceneEnd",
+        "value": null,
+        "units": "seconds",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.modificadores.atributos.for",
+            "value": -5,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.modificadores.atributos.des",
+            "value": -5,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.modificadores.atributos.con",
+            "value": -5,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.acro.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.atle.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.cava.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.fort.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.furt.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.inic.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.luta.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.pilo.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.pont.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.refl.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          }
+        ],
+        "status": {
+          "category": "",
+          "ignoreImunity": false,
+          "upgrade": "",
+          "childEffect": []
+        },
+        "targets": [],
+        "onuse": false,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": []
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "type": "base",
+      "disabled": false,
+      "start": null,
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "showIcon": 1,
+      "flags": {},
+      "_id": "H8s5l87DBvxCYVFe",
+      "origin": null,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Kyeam8tkVW8CqETU.H8s5l87DBvxCYVFe"
+    },
+    {
+      "name": "Enjoado",
+      "img": "systems/tormenta20/icons/conditions/enjoado.svg",
+      "statuses": [
+        "enjoado"
+      ],
+      "duration": {
+        "expiry": "sceneEnd",
+        "value": null,
+        "units": "seconds",
+        "expired": false
+      },
+      "system": {
+        "status": {
+          "category": "metabolismo",
+          "ignoreImunity": false,
+          "upgrade": "",
+          "childEffect": []
+        },
+        "changes": [],
+        "targets": [],
+        "onuse": false,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": []
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "type": "base",
+      "disabled": false,
+      "start": null,
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "showIcon": 1,
+      "flags": {},
+      "_id": "WmGJooqUEUClQg1z",
+      "origin": null,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Kyeam8tkVW8CqETU.WmGJooqUEUClQg1z"
+    },
+    {
+      "name": "Esmorecido",
+      "img": "systems/tormenta20/icons/conditions/esmorecido.svg",
+      "statuses": [
+        "esmorecido"
+      ],
+      "duration": {
+        "expiry": "sceneEnd",
+        "value": null,
+        "units": "seconds",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.modificadores.atributos.int",
+            "value": -5,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.modificadores.atributos.sab",
+            "value": -5,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.modificadores.atributos.car",
+            "value": -5,
+            "type": "add",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.ades.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.atua.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.conh.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.cura.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.dipl.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.enga.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.guer.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.inti.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.intu.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.inve.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.joga.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.mist.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.nobr.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.perc.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.reli.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.sobr.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          },
+          {
+            "key": "system.pericias.vont.condi",
+            "value": -5,
+            "type": "downgrade",
+            "phase": "initial",
+            "priority": null
+          }
+        ],
+        "status": {
+          "category": "mental",
+          "ignoreImunity": false,
+          "upgrade": "",
+          "childEffect": []
+        },
+        "targets": [],
+        "onuse": false,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": []
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "type": "base",
+      "disabled": false,
+      "start": null,
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "showIcon": 1,
+      "flags": {},
+      "_id": "dDWmdQaS3JYxAF7X",
+      "origin": null,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!Kyeam8tkVW8CqETU.dDWmdQaS3JYxAF7X"
+    }
+  ],
+  "_key": "!items!Kyeam8tkVW8CqETU"
+}

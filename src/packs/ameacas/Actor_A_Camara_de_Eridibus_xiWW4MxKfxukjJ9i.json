@@ -1,0 +1,52 @@
+{
+  "name": "A Câmara de Eridibus",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "N7IZFx6lX4fePtUq",
+  "system": {
+    "attributes": {
+      "nd": "20"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cena 2 (ala da Evolução).</b></p><p style=\"text-align:justify\">Sobreviver até a 10ª rodada ou derrotar as três formas de Eridibus. Eridibus aceita o desafio e começa a mudar.</p>",
+      "effects": "<p style=\"text-align:justify\"><b>1ª rodada — Centopeia-Dragão:</b> chão arenoso (terreno difícil) e calor: quem não tem resistência a clima ou fogo fica @STATUS[exausto] e vulnerável a fogo.</p><p style=\"text-align:justify\"><b>4ª rodada — Bisão da Montanha:</b> neve vermelha, escuridão total (camuflagem total) e vento que impede a voz (condição terrível para magias). Sem resistência a clima ou frio: @STATUS[esmorecido], @STATUS[alquebrado] e vulnerável a frio.</p><p style=\"text-align:justify\"><b>7ª rodada — Lula Abissal:</b> a sala se enche de líquido ácido; do fim da 7ª rodada em diante, todos submersos e quem toca o líquido sofre [[/r 6d6[acido]]] de ácido no início do turno.</p><p style=\"text-align:justify\"><b>10ª rodada:</b> o líquido escoa; cada criatura faz Atletismo CD 35 ou é sugada contra a grade ([[/r 10d6[impacto]]] de impacto). A sala volta ao normal e Eridibus, satisfeito, entrega a Essência da Evolução.</p>",
+      "actions": "<p style=\"text-align:justify\">A forma que chega a 0 PV dá lugar à próxima com PV máximos. Derrotado antes da 10ª rodada, Eridibus se desfaz numa massa amorfa com a essência (octaedro esmeralda) no meio.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura6"
+    },
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-ameacas",
+      "assinatura": "75f2d956",
+      "assinaturas": [
+        "75f2d956"
+      ]
+    }
+  },
+  "_id": "xiWW4MxKfxukjJ9i",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!xiWW4MxKfxukjJ9i"
+}
