@@ -1,0 +1,195 @@
+{
+  "name": "Seiva Rubra",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/essencia-mana.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Frasco de líquido viscoso de gosto metálico, cheio de mana, vendido no mercado de Ahar'kadhan (escambo: Diplomacia ou Enganação CD 30). Beber cura 3d8 PM, mas deixa confuso até o fim do próximo turno.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Horizonte de Sangue",
+    "qtd": 1,
+    "preco": 0,
+    "ativacao": {
+      "execucao": "action",
+      "custo": 0,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "rolls": [
+      {
+        "name": "PM recuperados",
+        "key": "formula0",
+        "type": "formula",
+        "parts": [
+          [
+            "3d8",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ],
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "tipo": "",
+    "subtipo": ""
+  },
+  "folder": "f769WvjvcympgxAd",
+  "flags": {
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-itens",
+      "assinatura": "43705e50",
+      "assinaturas": [
+        "142a80f9",
+        "43705e50"
+      ]
+    }
+  },
+  "_id": "uZuSyPvZsgxcTv3W",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "name": "Confuso (1 rodada)",
+      "img": "systems/tormenta20/icons/conditions/confuso.svg",
+      "statuses": [
+        "confuso"
+      ],
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "system": {
+        "status": {
+          "category": "mental",
+          "ignoreImunity": false,
+          "upgrade": "",
+          "childEffect": []
+        },
+        "changes": [],
+        "targets": [],
+        "onuse": false,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": []
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "type": "base",
+      "disabled": false,
+      "start": null,
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "showIcon": 1,
+      "flags": {},
+      "_id": "ngGhfq8bUlNfhXxE",
+      "origin": null,
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!uZuSyPvZsgxcTv3W.ngGhfq8bUlNfhXxE"
+    }
+  ],
+  "_key": "!items!uZuSyPvZsgxcTv3W"
+}

@@ -1,0 +1,114 @@
+{
+  "name": "A6 · Como usar no Foundry",
+  "folder": "DawYAA2ZKaAbkyDF",
+  "flags": {
+    "world": {
+      "cdr": "a6",
+      "cdrRole": "comoUsar"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-diarios",
+      "assinatura": "bd64bb20",
+      "assinaturas": [
+        "bd64bb20"
+      ]
+    }
+  },
+  "_id": "nE8yPCjsgyjpBgmi",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Tudo desta aventura fica nas pastas <b>A6 · Horizonte de Sangue</b> (Atores, Itens, Tabelas, Macros e Diários). Ameaças em <i>Ameaças</i>; perigos e testes em <i>Perigos e Testes</i>. Cenas e mapas ficam por sua conta.</p><p style=\"text-align:justify\">O ezzayn comum, o sacerdote de Aharadak, o thuwarokk e as magias de Reynard vêm do <b>Giria T20</b> pelos links. Os três ezzayn com burodrons, hurobakks e veridaks são fichas próprias, com os ajustes do livro já aplicados.</p><p style=\"text-align:justify\">Eridibus tem uma ficha por forma: troque o token quando ele mudar. Fichas conferidas com o livro (pp. 122–127).</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "FoyHtlIl8VBHJKg5",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!nE8yPCjsgyjpBgmi.FoyHtlIl8VBHJKg5"
+    },
+    {
+      "name": "Automações",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Elemental Corrompido:</b> Cura acelerada 50 automática (no rio); apague a habilidade Reabastecer se ele sair da água. Ácido extra automático nos ataques.</li><li><b>Matéria vermelha:</b> Adramalek, Queklain, sarektril e a Espada da Tormenta somam +1d6 sozinhos.</li><li><b>Opções no ataque:</b> Fúria Rubra de Adramalek (+10), Golpe Profano de Queklain (+6d8), descarga da Rasgacéus de Rhond e o bônus contra construtos da Maça Estilhaçadora.</li><li><b>Zirradak:</b> Ataque furtivo +10d6 automático (Mutação Mortífera deixa todo alvo desprevenido).</li><li><b>Botões de condição:</b> Atordoado (esmagador), paralisado (lula), em chamas, lento, caído, agarrado, fascinado e as condições do Coração da Tormenta.</li><li><b>Reynard:</b> Parceiro: +5 em Misticismo e Vontade enquanto estiver na ficha.</li><li><b>Testes e tabela:</b> Rumo à Cidade na Tormenta: macro CdR · Teste estendido e tabela A6 · Encontros na Tormenta (2d6). Ritual: macro A6 · Ritual da Essência (guarda a rodada e os pilares energizados; use Recomeçar para zerar).</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "sKGeTjsk0sBZDsS3",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!nE8yPCjsgyjpBgmi.sKGeTjsk0sBZDsS3"
+    }
+  ],
+  "_key": "!journal!nE8yPCjsgyjpBgmi"
+}

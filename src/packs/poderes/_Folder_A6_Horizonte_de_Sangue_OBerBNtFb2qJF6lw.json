@@ -1,0 +1,30 @@
+{
+  "name": "A6 · Horizonte de Sangue",
+  "type": "Item",
+  "color": "#5a2f7a",
+  "flags": {
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4"
+    }
+  },
+  "_id": "OBerBNtFb2qJF6lw",
+  "description": "",
+  "folder": "Rtd3eM97ey07ad89",
+  "sorting": "a",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!OBerBNtFb2qJF6lw"
+}

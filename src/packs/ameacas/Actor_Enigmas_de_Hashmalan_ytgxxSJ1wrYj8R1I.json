@@ -1,0 +1,52 @@
+{
+  "name": "Enigmas de Hashmalan",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "N7IZFx6lX4fePtUq",
+  "system": {
+    "attributes": {
+      "nd": "20"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cena 4 (ala da Assimilação).</b></p><p style=\"text-align:justify\">Responder às dez perguntas do Cardeal da Assimilação, <b>60 segundos reais</b> cada (45 depois de errar a 3ª). Com <b>7 acertos</b>, Hashmalan entrega a Essência da Assimilação (esfera branca).</p>",
+      "effects": "<p style=\"text-align:justify\">Cada resposta errada impõe uma consequência a um personagem, escolhido pelos jogadores antes de saberem qual é (lista no roteiro, página Enigmas de Hashmalan).</p><p style=\"text-align:justify\">Com menos de 7 acertos, Hashmalan os declara indignos e ataca; a 0 PV, o globo vira a essência.</p>",
+      "actions": "<p style=\"text-align:justify\">Mostre as perguntas aos jogadores pelo diário <b>A6 · Documentos para os jogadores</b> (página Enigmas de Hashmalan) e cronometre na mesa.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura6"
+    },
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-ameacas",
+      "assinatura": "48350211",
+      "assinaturas": [
+        "48350211"
+      ]
+    }
+  },
+  "_id": "ytgxxSJ1wrYj8R1I",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!ytgxxSJ1wrYj8R1I"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "O Ritual da Essência",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "N7IZFx6lX4fePtUq",
+  "system": {
+    "attributes": {
+      "nd": "20"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cenas 5 e 6 (Câmara Primordial).</b></p><p style=\"text-align:justify\">Ativar e energizar os quatro pilares e mantê-los por mais <b>4 rodadas</b>. Ativar: ficar adjacente ao pilar empunhando a essência certa e gastar uma ação padrão. No fim de cada rodada, role 1d4 por pilar ativo: 4 energiza (depois a essência pode ser retirada). Ezequias precisa ficar adjacente à pirâmide <b>com uma essência</b> o ritual inteiro: troque essências entre ele e os pilares.</p>",
+      "effects": "<p style=\"text-align:justify\">Não lefeu na sala sofrem os efeitos de área de Tormenta; em alcance curto da pirâmide, os de um <b>Coração da Tormenta</b>: @STATUS[debilitado], @STATUS[enjoado], @STATUS[esmorecido] e [[/r 10d6]] PV por rodada (0 PV: desintegrado). Quem porta uma essência é imune aos dois.</p><p style=\"text-align:justify\">No fim da 1ª rodada com algum pilar ativo e a cada rodada ímpar, surge um ezzayn junto à pirâmide; no fim da rodada seguinte e a cada rodada par, um sarektril.</p><p style=\"text-align:justify\"><b>Assimilação:</b> ativado, não lefeu ficam @STATUS[alquebrado]; energizado, replica uma habilidade ou magia usada na última rodada. <b>Devoção:</b> +5 no ataque dos lefeu (+10 energizado). <b>Dominação:</b> nuvem rubra de 3 m num ponto aleatório a cada rodada ([[/r 6d6[acido]]] de ácido dentro e um relâmpago de [[/r 8d8[eletricidade]]] num herói em alcance médio, Ref CD 28 metade); energizado, cada nuvem tem 1 em 4 de gerar um ezzayn. <b>Evolução:</b> lefeu com +5 no dano e 50 PV temporários; energizado, um lefeu evolui por rodada (ezzayn ganham tipos de lefeu; com todos, surge um sarektril).</p>",
+      "actions": "<p style=\"text-align:justify\"><b>Ler o tomo</b> (quantas vezes quiser): Conhecimento CD 35 revela um pilar; sempre faça Vontade CD 30 (+5 por leitura anterior) ou perca [[/r 3d8]] PM.</p><p style=\"text-align:justify\">Use a macro <b>A6 · Ritual da Essência</b> no fim de cada rodada. A pirâmide ocupa 6 m no centro; cada pilar fica a 30 m de uma face.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura6"
+    },
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-ameacas",
+      "assinatura": "2193eeb6",
+      "assinaturas": [
+        "2193eeb6"
+      ]
+    }
+  },
+  "_id": "YRIk3ovhOZ0DCu9S",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!YRIk3ovhOZ0DCu9S"
+}

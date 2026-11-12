@@ -1,0 +1,2410 @@
+{
+  "name": "Rhond, o Deus das Armas",
+  "type": "npc",
+  "img": "systems/tormenta20/icons/ameacas/golem-de-ferro.png",
+  "folder": "IOYXj4ERd6Doas0K",
+  "prototypeToken": {
+    "name": "Rhond, o Deus das Armas",
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "systems/tormenta20/icons/ameacas/golem-de-ferro.png"
+    },
+    "disposition": -1,
+    "actorLink": false,
+    "bar1": {
+      "attribute": "attributes.pv"
+    }
+  },
+  "system": {
+    "atributos": {
+      "for": {
+        "base": 15,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "des": {
+        "base": 1,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "con": {
+        "base": 12,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "int": {
+        "base": 8,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "sab": {
+        "base": 8,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "car": {
+        "base": 5,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      }
+    },
+    "attributes": {
+      "nd": "20",
+      "cd": 47,
+      "pv": {
+        "value": 1200,
+        "max": 1200,
+        "temp": 0,
+        "min": 0
+      },
+      "pm": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "min": 0
+      },
+      "defesa": {
+        "base": 59,
+        "atributo": "des",
+        "pda": 0,
+        "value": 10,
+        "outros": 0,
+        "condi": 0,
+        "bonus": []
+      },
+      "movement": {
+        "walk": {
+          "base": 9,
+          "bonus": []
+        },
+        "climb": {
+          "base": 0,
+          "bonus": []
+        },
+        "burrow": {
+          "base": 0,
+          "bonus": []
+        },
+        "swim": {
+          "base": 0,
+          "bonus": []
+        },
+        "fly": {
+          "base": 0,
+          "bonus": []
+        },
+        "hover": false,
+        "unit": "m",
+        "tags": []
+      },
+      "sentidos": {
+        "value": [
+          "cegas"
+        ],
+        "custom": ""
+      },
+      "carga": {
+        "value": 0,
+        "atributo": "for",
+        "base": 10,
+        "bonus": [],
+        "limit": 0,
+        "max": 0,
+        "pct": 0,
+        "encumbered": false
+      },
+      "conjuracao": "int",
+      "nivel": {
+        "value": 0,
+        "xp": {
+          "value": 0,
+          "pct": 0,
+          "proximo": 0
+        }
+      },
+      "treino": 0
+    },
+    "detalhes": {
+      "tipo": "hum",
+      "raca": "Deus menor",
+      "resistencias": "imunidade a desprevenido, surpreendido, efeitos mentais, metabolismo, metamorfose e veneno; redução de dano 20; resistência a magia +10",
+      "ataquescac": "Armamento de Rhond x6 +48 (veja as armas).",
+      "ataquesad": "",
+      "equipamento": "",
+      "tesouro": "Nenhum.",
+      "biography": {
+        "value": "<p style=\"text-align:justify\">O Deus Menor das Armas (Tormenta20, p. 365): forma metálica enorme de seis braços, rude e de poucas palavras, em sua forja vulcânica. Parte 1, Cena 6: luta um contra um com cada personagem para escolher a arma de aço-rubi certa. Sem força total: dois ataques na 1ª rodada, quatro na 2ª e seis na 3ª; para se alguém ficar inconsciente e recupera todos os PV entre os duelos. Qualquer interferência expulsa todos do templo. Escolhe a arma pelo estilo do oponente (ex.: Rasgacéus contra RD ou armaduras pesadas). Veja o perigo Duelo com Rhond.</p>",
+        "public": ""
+      },
+      "origem": "",
+      "divindade": "",
+      "movimento": "",
+      "role": ""
+    },
+    "tracos": {
+      "tamanho": "gra",
+      "resistencias": {
+        "dano": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "perda": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "acido": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "corte": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "eletricidade": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "essencia": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "fogo": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "frio": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "impacto": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "luz": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "psiquico": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "perfuracao": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "trevas": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        }
+      },
+      "ic": {
+        "value": [
+          "desprevenido",
+          "surpreendido"
+        ],
+        "custom": ""
+      },
+      "idiomas": {
+        "value": [],
+        "custom": ""
+      },
+      "profArmaduras": {
+        "value": [],
+        "custom": ""
+      },
+      "profArmas": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "dinheiro": {
+      "tc": 0,
+      "tl": 0,
+      "to": 0,
+      "tp": 0
+    },
+    "modificadores": {
+      "custoPM": 0,
+      "atributos": {
+        "for": [],
+        "des": [],
+        "con": [],
+        "int": [],
+        "sab": [],
+        "car": [],
+        "fisicos": [],
+        "mentais": [],
+        "geral": []
+      },
+      "ataque": {
+        "geral": [],
+        "cac": [],
+        "ad": []
+      },
+      "cura": {
+        "geral": [],
+        "mag": [],
+        "alq": []
+      },
+      "dano": {
+        "ad": [],
+        "alq": [],
+        "cac": [],
+        "geral": [],
+        "mag": []
+      },
+      "pericias": {
+        "geral": [],
+        "resistencia": [],
+        "semataque": [],
+        "ataque": [],
+        "atr": {
+          "for": [],
+          "des": [],
+          "con": [],
+          "int": [],
+          "sab": [],
+          "car": []
+        }
+      }
+    },
+    "pericias": {
+      "acro": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": true,
+        "size": false
+      },
+      "ades": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "atle": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "for",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "atua": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cava": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "conh": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cura": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "dipl": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "enga": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "fort": {
+        "treinado": false,
+        "outros": 12,
+        "custom": false,
+        "label": "",
+        "atributo": "con",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "furt": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": true,
+        "size": true
+      },
+      "guer": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "inic": {
+        "treinado": false,
+        "outros": 6,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "inti": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "intu": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "inve": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "joga": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "ladi": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": true,
+        "pda": true,
+        "size": false
+      },
+      "luta": {
+        "treinado": false,
+        "outros": 23,
+        "custom": false,
+        "label": "",
+        "atributo": "for",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "mist": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "nobr": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "perc": {
+        "treinado": false,
+        "outros": 6,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "pilo": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "pont": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "refl": {
+        "treinado": false,
+        "outros": 9,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "reli": {
+        "treinado": false,
+        "outros": 10,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "sobr": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "vont": {
+        "treinado": false,
+        "outros": 10,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "alfa": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "alqu": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "arme": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "arte": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cozi": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "enge": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": true,
+        "size": false
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourcePrimary"
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourceSecondary"
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourceTertiary"
+      },
+      "deathsave": {
+        "value": 0,
+        "max": 3,
+        "label": "T20.ResourceDeathSave"
+      },
+      "shadow": {
+        "value": 0,
+        "max": 5,
+        "label": "T20.ResourceShadow"
+      },
+      "catarse": {
+        "value": 0,
+        "max": 3,
+        "label": "T20.ResourceCatarse"
+      }
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura6"
+    },
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-ameacas",
+      "assinatura": "63aaf1e3",
+      "assinaturas": [
+        "63aaf1e3"
+      ]
+    }
+  },
+  "_id": "5IiPztbc9uz99R6c",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": [
+    {
+      "name": "Lança Rasgacéus",
+      "type": "arma",
+      "img": "systems/tormenta20/icons/itens/equipamentos/lanca.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Mais 1d6 de eletricidade; ignora 20 de RD. O atingido sofre mais 4d8+4 de eletricidade (Fort CD 47 reduz à metade).</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Horizonte de Sangue",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "1d8+25",
+                "essencia",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 20,
+        "criticoX": 3,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "natural",
+        "empunhadura": "leve",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 0,
+        "peso": 0,
+        "qtd": 1,
+        "preco": 0,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": 0,
+          "condicao": "",
+          "execucao": "passive",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": 0,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_id": "WrpqBEYMhYkCBwyR",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [
+        {
+          "name": "Eletricidade",
+          "img": "icons/svg/lightning.svg",
+          "type": "base",
+          "transfer": false,
+          "disabled": true,
+          "description": "+1d6 de eletricidade, ignora 20 de RD.",
+          "system": {
+            "changes": [
+              {
+                "key": "dano",
+                "value": "1d6[eletricidade]",
+                "type": "add",
+                "priority": null,
+                "phase": "initial"
+              },
+              {
+                "key": "ignoraRD",
+                "value": "20",
+                "type": "add",
+                "priority": null,
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": true,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "_id": "RwwfGVUZccFQHgKD",
+          "origin": null,
+          "tint": "#ffffff",
+          "start": null,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "statuses": [],
+          "showIcon": 1,
+          "folder": null,
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!5IiPztbc9uz99R6c.WrpqBEYMhYkCBwyR.RwwfGVUZccFQHgKD"
+        },
+        {
+          "name": "Descarga (+4d8+4)",
+          "img": "icons/svg/lightning.svg",
+          "type": "base",
+          "transfer": false,
+          "disabled": true,
+          "description": "Fort CD 47 reduz à metade.",
+          "system": {
+            "changes": [
+              {
+                "key": "dano",
+                "value": "4d8+4[eletricidade]",
+                "type": "add",
+                "priority": null,
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "_id": "usmfNBDtU8CmcFXw",
+          "origin": null,
+          "tint": "#ffffff",
+          "start": null,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "statuses": [],
+          "showIcon": 1,
+          "folder": null,
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!5IiPztbc9uz99R6c.WrpqBEYMhYkCBwyR.usmfNBDtU8CmcFXw"
+        }
+      ],
+      "_key": "!actors.items!5IiPztbc9uz99R6c.WrpqBEYMhYkCBwyR"
+    },
+    {
+      "name": "Mangual Punição",
+      "type": "arma",
+      "img": "systems/tormenta20/icons/itens/equipamentos/mangual.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">O atingido fica sangrando (cumulativo) e fraco, depois debilitado. Ao acertar, Rhond lança Dissipar Magia no alvo.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Horizonte de Sangue",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "1d12+31",
+                "impacto",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 20,
+        "criticoX": 2,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "natural",
+        "empunhadura": "leve",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 0,
+        "peso": 0,
+        "qtd": 1,
+        "preco": 0,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": 0,
+          "condicao": "",
+          "execucao": "passive",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": 0,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_id": "qbpBYhb1jYpZoygZ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [
+        {
+          "name": "Sangrando",
+          "img": "systems/tormenta20/icons/conditions/sangrando.svg",
+          "statuses": [
+            "sangrando"
+          ],
+          "duration": {
+            "expiry": "sceneEnd",
+            "value": null,
+            "units": "seconds",
+            "expired": false
+          },
+          "system": {
+            "changes": [
+              {
+                "key": "dano",
+                "value": "1d6[perda]",
+                "type": "custom",
+                "phase": "initial",
+                "priority": null
+              }
+            ],
+            "status": {
+              "category": "metabolismo",
+              "ignoreImunity": false,
+              "upgrade": "",
+              "childEffect": []
+            },
+            "targets": [],
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "type": "base",
+          "disabled": false,
+          "start": null,
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": false,
+          "showIcon": 1,
+          "flags": {},
+          "_id": "L4pNVwPvdmgRUojx",
+          "origin": null,
+          "folder": null,
+          "sort": 0,
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!5IiPztbc9uz99R6c.qbpBYhb1jYpZoygZ.L4pNVwPvdmgRUojx"
+        },
+        {
+          "name": "Fraco",
+          "img": "systems/tormenta20/icons/conditions/fraco.svg",
+          "statuses": [
+            "fraco"
+          ],
+          "duration": {
+            "expiry": "sceneEnd",
+            "value": null,
+            "units": "seconds",
+            "expired": false
+          },
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.atributos.for",
+                "value": -2,
+                "type": "add",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.modificadores.atributos.des",
+                "value": -2,
+                "type": "add",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.modificadores.atributos.con",
+                "value": -2,
+                "type": "add",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.acro.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.atle.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.cava.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.fort.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.furt.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.inic.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.luta.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.pilo.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.pont.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.refl.condi",
+                "value": -2,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              }
+            ],
+            "status": {
+              "category": "",
+              "ignoreImunity": false,
+              "upgrade": "",
+              "childEffect": []
+            },
+            "targets": [],
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "type": "base",
+          "disabled": false,
+          "start": null,
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": false,
+          "showIcon": 1,
+          "flags": {},
+          "_id": "sN6nMlSoxfx2l3sf",
+          "origin": null,
+          "folder": null,
+          "sort": 0,
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!5IiPztbc9uz99R6c.qbpBYhb1jYpZoygZ.sN6nMlSoxfx2l3sf"
+        },
+        {
+          "name": "Debilitado",
+          "img": "systems/tormenta20/icons/conditions/debilitado.svg",
+          "statuses": [
+            "debilitado"
+          ],
+          "duration": {
+            "expiry": "sceneEnd",
+            "value": null,
+            "units": "seconds",
+            "expired": false
+          },
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.atributos.for",
+                "value": -5,
+                "type": "add",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.modificadores.atributos.des",
+                "value": -5,
+                "type": "add",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.modificadores.atributos.con",
+                "value": -5,
+                "type": "add",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.acro.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.atle.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.cava.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.fort.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.furt.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.inic.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.luta.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.pilo.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.pont.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.pericias.refl.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              }
+            ],
+            "status": {
+              "category": "",
+              "ignoreImunity": false,
+              "upgrade": "",
+              "childEffect": []
+            },
+            "targets": [],
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "type": "base",
+          "disabled": false,
+          "start": null,
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": false,
+          "showIcon": 1,
+          "flags": {},
+          "_id": "ZUqnt9MVSf9XJokk",
+          "origin": null,
+          "folder": null,
+          "sort": 0,
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!5IiPztbc9uz99R6c.qbpBYhb1jYpZoygZ.ZUqnt9MVSf9XJokk"
+        }
+      ],
+      "_key": "!actors.items!5IiPztbc9uz99R6c.qbpBYhb1jYpZoygZ"
+    },
+    {
+      "name": "Martelo de Guerra Implacável",
+      "type": "arma",
+      "img": "systems/tormenta20/icons/itens/equipamentos/martelo-de-guerra.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Fort CD 47 ou fica caído e é empurrado 1,5 m (+1,5 m a cada 5 pontos de falha); bater em algo causa 1d6 de impacto por 1,5 m.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Horizonte de Sangue",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "1d10+35",
+                "impacto",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 17,
+        "criticoX": 2,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "natural",
+        "empunhadura": "leve",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 0,
+        "peso": 0,
+        "qtd": 1,
+        "preco": 0,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": 0,
+          "condicao": "",
+          "execucao": "passive",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": 0,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_id": "FXpxTTFMU5zKvUVo",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [
+        {
+          "name": "Caído",
+          "img": "systems/tormenta20/icons/conditions/caido.svg",
+          "statuses": [
+            "caido"
+          ],
+          "duration": {
+            "expiry": "sceneEnd",
+            "value": null,
+            "units": "seconds",
+            "expired": false
+          },
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.luta.condi",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.attributes.defesa.outros",
+                "value": -5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              },
+              {
+                "key": "system.attributes.movement.*.base",
+                "value": 1.5,
+                "type": "downgrade",
+                "phase": "initial",
+                "priority": null
+              }
+            ],
+            "status": {
+              "category": "",
+              "ignoreImunity": false,
+              "upgrade": "",
+              "childEffect": []
+            },
+            "targets": [],
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "type": "base",
+          "disabled": false,
+          "start": null,
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": false,
+          "showIcon": 1,
+          "flags": {},
+          "_id": "oO3xIH08CWQjGf5I",
+          "origin": null,
+          "folder": null,
+          "sort": 0,
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!5IiPztbc9uz99R6c.FXpxTTFMU5zKvUVo.oO3xIH08CWQjGf5I"
+        }
+      ],
+      "_key": "!actors.items!5IiPztbc9uz99R6c.FXpxTTFMU5zKvUVo"
+    },
+    {
+      "name": "Espada Bastarda Vitória",
+      "type": "arma",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-bastarda.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Rola dois dados no ataque e usa o melhor.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Horizonte de Sangue",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "1d12+35",
+                "corte",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 19,
+        "criticoX": 2,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "natural",
+        "empunhadura": "leve",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 0,
+        "peso": 0,
+        "qtd": 1,
+        "preco": 0,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": 0,
+          "condicao": "",
+          "execucao": "passive",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": 0,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_id": "olQc4ND4OqCuP5wj",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!5IiPztbc9uz99R6c.olQc4ND4OqCuP5wj"
+    },
+    {
+      "name": "Maça Estilhaçadora",
+      "type": "arma",
+      "img": "systems/tormenta20/icons/itens/equipamentos/maca.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">+2d8 contra construtos e objetos e ignora a RD deles; objeto destruído explode em estilhaços (3d6 de corte nos adjacentes).</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Horizonte de Sangue",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "1d12+25",
+                "impacto",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 20,
+        "criticoX": 3,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "natural",
+        "empunhadura": "leve",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 0,
+        "peso": 0,
+        "qtd": 1,
+        "preco": 0,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": 0,
+          "condicao": "",
+          "execucao": "passive",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": 0,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_id": "1AoZXoJhlwl0l28H",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [
+        {
+          "name": "Contra construto ou objeto (+2d8)",
+          "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+          "type": "base",
+          "transfer": false,
+          "disabled": true,
+          "description": "+2d8 e ignora RD.",
+          "system": {
+            "changes": [
+              {
+                "key": "dano",
+                "value": "2d8",
+                "type": "add",
+                "priority": null,
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "_id": "1KLwTHg7mdnUDgs4",
+          "origin": null,
+          "tint": "#ffffff",
+          "start": null,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "statuses": [],
+          "showIcon": 1,
+          "folder": null,
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!5IiPztbc9uz99R6c.1AoZXoJhlwl0l28H.1KLwTHg7mdnUDgs4"
+        }
+      ],
+      "_key": "!actors.items!5IiPztbc9uz99R6c.1AoZXoJhlwl0l28H"
+    },
+    {
+      "name": "Espada Longa Devoradora",
+      "type": "arma",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">O atingido perde PM igual à metade do dano sofrido.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Horizonte de Sangue",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "1d10+35",
+                "corte",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 19,
+        "criticoX": 2,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "natural",
+        "empunhadura": "leve",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 0,
+        "peso": 0,
+        "qtd": 1,
+        "preco": 0,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": 0,
+          "condicao": "",
+          "execucao": "passive",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": 0,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_id": "O4OdoJrUMVVczDSc",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!5IiPztbc9uz99R6c.O4OdoJrUMVVczDSc"
+    },
+    {
+      "name": "Ferreiro Divino",
+      "type": "poder",
+      "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Fabrica armas com até quatro melhorias e três encantos sem sacrificar PM e pode imbuir outros poderes (veja As Armas de Rhond).</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Horizonte de Sangue",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "passive",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "m5LuQQRXtcoFW7nq",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!5IiPztbc9uz99R6c.m5LuQQRXtcoFW7nq"
+    },
+    {
+      "name": "Atacar Braços",
+      "type": "poder",
+      "img": "icons/skills/melee/shield-damaged-broken-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Um braço pode ser atacado (Defesa 62). Com 150 de dano num braço, ele fica desabilitado e Rhond perde um ataque por uma rodada.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Horizonte de Sangue",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "passive",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "kAMkk7L1El9IcASc",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!5IiPztbc9uz99R6c.kAMkk7L1El9IcASc"
+    }
+  ],
+  "effects": [],
+  "_key": "!actors!5IiPztbc9uz99R6c"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Travessia Cáustica",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "N7IZFx6lX4fePtUq",
+  "system": {
+    "attributes": {
+      "nd": "16"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 2, Cena 2 (Rio Panteão).</b></p><p style=\"text-align:justify\">O barco de aço-rubi de Ezequias está a 90 m da outra margem e avança 18 m por rodada (5 rodadas). No meio do caminho, o elemental corrompido ataca.</p>",
+      "effects": "<p style=\"text-align:justify\">Se ninguém engajar o elemental, ele ataca o barco (RD 10, 200 PV).</p><p style=\"text-align:justify\">Barco destruído: terminar a travessia nadando nas águas corrompidas causa [[/r 8d6[acido]]] de ácido por rodada.</p>",
+      "actions": "<p style=\"text-align:justify\">Engajar o elemental para proteger o barco; ajudar Ezequias no timão (Pilotagem) fica a critério do mestre.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura6"
+    },
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-ameacas",
+      "assinatura": "d5422852",
+      "assinaturas": [
+        "d5422852"
+      ]
+    }
+  },
+  "_id": "ShmWLHv2jYBogeYS",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!ShmWLHv2jYBogeYS"
+}

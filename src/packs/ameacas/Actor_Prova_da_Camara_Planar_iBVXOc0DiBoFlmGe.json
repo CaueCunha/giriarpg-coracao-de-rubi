@@ -1,0 +1,52 @@
+{
+  "name": "Prova da Câmara Planar",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "N7IZFx6lX4fePtUq",
+  "system": {
+    "attributes": {
+      "nd": "—"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 1, Cenas 2 a 4 (Academia Arcana).</b></p><p style=\"text-align:justify\">A prova de três etapas de Reynard numa câmara planar de 30 m de lado que simula a Tormenta. Depois de cada vitória, Reynard pergunta se o grupo quer continuar.</p>",
+      "effects": "<p style=\"text-align:justify\"><b>Etapa 1 — Amostra Grátis:</b> @UUID[Compendium.giria-t20.ameacas.Actor.iyw5BEMbEtquOLqT]{ezzayn}. Derrota (mais da metade inconsciente): Reynard manda o grupo embora, sem prêmio. Vitória e parada: uma armadura rubra por herói.</p><p style=\"text-align:justify\"><b>Etapa 2 — Fauna Lefeu:</b> 2 esmagadores coletivos (absorvidos reaparecem inconscientes). Derrota: armaduras, com desapontamento. Vitória e parada: armaduras e o mapa de Reynard.</p><p style=\"text-align:justify\"><b>Etapa 3 — Das Profundezas Carmesim:</b> o zirradak (Conhecimento CD 36). Derrota (alguém em risco de morte): mesmas recompensas da etapa 2. Vitória: noite na Academia, as histórias da Companhia Rubra e Reynard como parceiro a partir da Parte 2.</p>",
+      "actions": "<p style=\"text-align:justify\">Reynard assiste por uma janela de campo de força (com quem não quiser participar). Ao fim, vá para a Cena 5.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura6"
+    },
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-ameacas",
+      "assinatura": "3f3e8399",
+      "assinaturas": [
+        "3f3e8399"
+      ]
+    }
+  },
+  "_id": "iBVXOc0DiBoFlmGe",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!iBVXOc0DiBoFlmGe"
+}

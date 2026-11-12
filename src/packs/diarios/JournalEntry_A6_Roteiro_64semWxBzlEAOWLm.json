@@ -1,0 +1,266 @@
+{
+  "name": "A6 · Roteiro",
+  "folder": "DawYAA2ZKaAbkyDF",
+  "flags": {
+    "world": {
+      "cdr": "a6",
+      "cdrRole": "roteiro"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-diarios",
+      "assinatura": "fa3a4c7e",
+      "assinaturas": [
+        "fa3a4c7e"
+      ]
+    }
+  },
+  "_id": "64semWxBzlEAOWLm",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\"><b>Horizonte de Sangue</b> (livro, pp. 105–127). A última parte da Jornada Heroica, para heróis de 18º nível: com Yuvalin livre e o Parvathar em mãos, o grupo invade a área de Tormenta de Zakharov.</p><p style=\"text-align:justify\"><b>Parte 1:</b> preparação com Reynard (Academia Arcana) e Rhond (Deus Menor das Armas). <b>Parte 2:</b> a travessia da Tormenta até Ahar'kadhan e o primeiro Cardeal, Queklain. <b>Parte 3:</b> os outros três Cardeais no Santuário da Tormenta e o Ritual da Essência.</p><p style=\"text-align:justify\">Ezequias, recém-nomeado Mestre Fundidor, já processa aço-rubi na Fundição Central. O plano final dele sempre foi destruir a área de Tormenta. A virada do epílogo: ele faz um acordo com Aharadak e vira seu sumo-sacerdote.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "zWEvnCszWFpYIUGL",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!64semWxBzlEAOWLm.zWEvnCszWFpYIUGL"
+    },
+    {
+      "name": "Parte 1 — Mais Perto do Sonho",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Introdução:</b> Ezequias manda o grupo à Academia Arcana com a @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.05Bo79vCYTZWBGEt]{Chave de Wynna}: procurar Venturella Hoffart, assistente do Arquimago Reynard.</li><li><b>Cena 1 — A Academia Arcana:</b> Venturella, sulfure de pele rubra e terno cinza, leva o grupo ao Centro de Testes. Reynard, líder da lendária Companhia Rubra, quer ter certeza de que não os manda para a morte e propõe uma prova em três etapas.</li><li><b>Cenas 2 a 4 — A Prova:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.iBVXOc0DiBoFlmGe]{Prova da Câmara Planar}: @UUID[Compendium.giria-t20.ameacas.Actor.iyw5BEMbEtquOLqT]{ezzayn}, depois 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.IOW66LxdEoOX8xDk]{esmagadores coletivos}, depois o @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.WpsuFowoB7BZCN3M]{zirradak}. Recompensas: @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.ukgLhhA6AbVKiuJi]{armaduras rubras}, @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.KV87wswsqV77eSwG]{Mapa de Reynard} e @UUID[Compendium.giriarpg-coracao-de-rubi.poderes.Item.g6EaNPTIikL9xQQR]{Reynard como parceiro}.</li><li><b>Cena 5 — A Ferramenta Certa:</b> Ezequias separou os melhores lingotes de aço-rubi e manda o grupo a Rhond com a @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.cPfZCl5bFgkSdU8h]{Carta dos clérigos de Rhond} e o Parvathar.</li><li><b>Cena 6 — A Ferro e Fogo:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.5IiPztbc9uz99R6c]{Rhond, o Deus das Armas}: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.OUDRMSIERrQmEPLN]{Duelo com Rhond}. Cada um recebe uma @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.pirhe6YHkwnUdT5y]{Arma de Rhond} conforme as rodadas que aguentou. Depois, despedidas em Yuvalin.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "GLYqCrQLVwVl0keS",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!64semWxBzlEAOWLm.GLYqCrQLVwVl0keS"
+    },
+    {
+      "name": "Parte 2 — Dia Vermelho",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — Planos & Sonhos:</b> Cerimônia no Parque Normandia: nasce o Esquadrão Escarlate. Plano: seguir os passos da Companhia Rubra, achar uma alma acorrentada e seguir a corrente até a Cidade na Tormenta. Cada personagem escolhe um @UUID[Compendium.giriarpg-coracao-de-rubi.poderes.Item.8DsI2NQ080BoQeuP]{aliado mestre do Esquadrão}.</li><li><b>Cena 2 — Travessia Cáustica:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.ShmWLHv2jYBogeYS]{Travessia Cáustica} contra o @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.iJ50Yw7uhjVBPIMT]{Elemental Corrompido}.</li><li><b>Cena 3 — Deixai Toda Esperança:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.HLSGVQIIU5JaRq6F]{Rumo à Cidade na Tormenta}, com a tabela @UUID[Compendium.giriarpg-coracao-de-rubi.tabelas.RollTable.vV2aFpXTNg2MkEJA]{Encontros na Tormenta} (2d6, uma vez por dia).</li><li><b>Cena 4 — O Arauto Carmesim:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.t9fbIYKY1FtfeKUV]{Queklain, Cardeal da Devoção}, preso a quatro almas acorrentadas e a uma corrente que some no horizonte. Pomposo, exige que se curvem; ataca se insultarem Aharadak ou recusarem duas vezes. Derrotado, revela Goradar e o cristal: @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.EkCaNsgbdFRrL8Yy]{Essência da Devoção} (se ninguém pegar, Ezequias pega).</li><li><b>Cena 5 — A Divina Anticriação:</b> O desfiladeiro: voar faz cair (6d6) e teletransporte falha. No pórtico de tentáculos, o Emissário (lefeu sem nome, cortês; destruído com 60 de dano, outro idêntico chega na rodada seguinte). Ahar'kadhan parece normal, mas os sorrisos são congelados. No Grande Templo, o Emissário anuncia o desafio: enfrentar os outros três Cardeais e forjar uma nova essência no Santuário do Coração.</li><li><b>Cena 6 — Cidade Rubra:</b> Um dia livre (efeitos da Tormenta anulados na cidade). <b>Ateliê:</b> Vontade CD 35 ou frustrado por 1d4 dias; Conhecimento ou Religião CD 30 sobre os Cardeais. <b>Mercado:</b> escambo (Diplomacia ou Enganação CD 30, ±5 pela criatividade), @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.G3hCQinT16wooNGb]{sementes carmesim} e @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.uZuSyPvZsgxcTv3W]{seiva rubra}; Diplomacia ou Investigação CD 30. <b>Taverna A Beleza Divina:</b> Mestre Rupert e os serviçais; um teste livre por jogador; dormir lá pede Vontade CD 30 (luxuosa ou ruim). No fim, Ezequias revela que quer usar o título de Cardeal para destruir o Coração da Tormenta.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "KBJNiezKlNyHTVKL",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!64semWxBzlEAOWLm.KBJNiezKlNyHTVKL"
+    },
+    {
+      "name": "Os Quatro Pilares Cardeais (informações)",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Anote cada sucesso dos testes da Cena 6 e revele no fim do dia, conforme o total:</p><ul><li><b>3+ sucessos:</b> Os quatro Cardeais regem a cidade, manifestação da vontade de Aharadak. Os outros três: Adramalek (Dominação), Eridibus (Evolução no combate; o livro também o chama de Assimilação nesta lista) e Hashmalan (Assimilação).</li><li><b>5+ sucessos:</b> Cada Cardeal é um pilar da fé em Aharadak: dominar, converter, assimilar e evoluir os artonianos. Forma e poderes ligados ao pilar.</li><li><b>7+ sucessos:</b> O Santuário da Tormenta é o antigo Castelo Aharadak, com quatro alas (uma por Cardeal) e a Câmara Primordial, onde fica o Coração da Tormenta.</li><li><b>10+ sucessos:</b> Adramalek era um humano, um dos maiores guerreiros contra a Tormenta. Hashmalan é uma consciência sem corpo, paródia do Helladarion, que testa conhecimento e raciocínio. Eridibus é uma criatura sem forma que muda a si e o ambiente com um pensamento, em busca da forma artoniana suprema.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "smu1xlG20BEfFXQd",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!64semWxBzlEAOWLm.smu1xlG20BEfFXQd"
+    },
+    {
+      "name": "Parte 3 — Fora da Realidade",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — O Começo do Fim:</b> O Emissário guia o grupo ao Santuário (portão em forma de bocarra, tapete de carne). Salão com fonte, mesa de paródias de comida, quatro escadarias infinitas e uma porta quadrada selada. A Essência da Devoção acende um quadrante; Ezequias (e lefou) sente a Lança de Aharadak atrás dela. Entre os Cardeais, descanso luxuoso de 8 horas; comer da mesa cura [[/r 7d8+7]] PV e remove condições, ou beber da fonte recupera [[/r 2d8]] PM (um por descanso).</li><li><b>Cena 2 — Eridibus, o Cardeal da Evolução:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.xiWW4MxKfxukjJ9i]{A Câmara de Eridibus}: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.JssW0bc4OoWjDvzr]{centopeia-dragão}, @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.3u74iulAspYEi9XC]{bisão da montanha} e @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.RW8lxuQQ0Vfelwcu]{lula abissal}. Prêmio: @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.ef9BijH8Faa57VP8]{Essência da Evolução}.</li><li><b>Cena 3 — Adramalek, o Cardeal da Dominação:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.UlcZHswUQv0iOHHD]{Adramalek, Cardeal da Dominação} salta de um trono de cadáveres lefeu e ataca sem conversa. Com Reynard presente, ele reconhece Velk, o Galo Louco. Prêmio: @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.asD5eB4NIfnMNvM1]{Essência da Dominação}.</li><li><b>Cena 4 — Hashmalan, o Cardeal da Assimilação:</b> A biblioteca: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.Fa5I1MsqzJRmGys7]{Hashmalan, Cardeal da Assimilação} e os @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.ytgxxSJ1wrYj8R1I]{Enigmas de Hashmalan}. Prêmio: @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.ZRXbYU0owwA7A2ot]{Essência da Assimilação}.</li><li><b>Cena 5 — O Ritual da Essência:</b> As quatro essências abrem a porta; uma escadaria sem fim leva à câmara da pirâmide, com a lança fincada no topo mantendo aberto o portal. Um tomo de páginas de carne explica o ritual. O Emissário espera novas essências; Ezequias quer voltar o poder do coração contra ele mesmo.</li><li><b>Cena 6 — Sacrifício:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.YRIk3ovhOZ0DCu9S]{O Ritual da Essência} com a macro <b>A6 · Ritual da Essência</b>. Uma cena longa: de preferência numa sessão só para ela. No fim, Ezequias arranca a lança, o fluxo da Tormenta se inverte, a fenda explode e ele some. Na saída do castelo, o céu está azul: a área de Zakharov desapareceu.</li><li><b>Epílogo:</b> Ahar'kadhan está menos aberrante e os habitantes, mais lúcidos. Ezequias, mais lefeu do que nunca e empunhando o @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.Kyeam8tkVW8CqETU]{Coração de Rubi}, explica o acordo com Aharadak: a área recuou, e ele virou sumo-sacerdote e regente, criando a Essência da Unificação para a coexistência. Convida o grupo a segui-lo; se recusarem, lamenta e se despede. O plano de Aharadak: tornar a Tormenta mais \"artoniana\" e ganhar força no Panteão. Ficha: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.tmnHARWJNEEUCL3K]{Ezequias Heldret (sumo-sacerdote)}.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "p6xYNBnBnTUAAKl3",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!64semWxBzlEAOWLm.p6xYNBnBnTUAAKl3"
+    },
+    {
+      "name": "Enigmas de Hashmalan (respostas)",
+      "type": "text",
+      "sort": 600,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Cada pergunta tem 60 segundos reais (45 depois de errar a 3ª). Os jogadores escolhem quem sofre a consequência <b>antes</b> de saber qual é. Com 7 acertos, recebem a essência; com menos, Hashmalan ataca.</p><ol><li><b>O que é meu, mas quem me conhece usa muito mais do que eu?</b><br>Resposta: <i>Meu nome.</i><br>Consequência: Sempre que ouvir o próprio nome, perde 5 PM.</li><li><b>Não é vivo, mas cresce. Não respira, mas falta de ar pode matá-lo. O que é?</b><br>Resposta: <i>O fogo.</i><br>Consequência: Vulnerabilidade a fogo.</li><li><b>O que está sempre à nossa frente, mas nunca chega?</b><br>Resposta: <i>O futuro.</i><br>Consequência: O tempo de resposta das próximas perguntas cai para 45 segundos.</li><li><b>Existe algo que quanto mais se perde, mais se tem. O que é?</b><br>Resposta: <i>Sono.</i><br>Consequência: Sempre que descansa, rola um dado: ímpar, não recupera PV nem PM.</li><li><b>Você acordou em uma sala trancada. Para sair, pegou uma chave dentro de uma caixa, dentro de uma gaiola. O que você abriu primeiro?</b><br>Resposta: <i>Os olhos.</i><br>Consequência: Fica cego permanentemente.</li><li><b>O que mantém sempre o mesmo tamanho, não importa quanto pese?</b><br>Resposta: <i>Uma balança.</i><br>Consequência: Role 1d6 duas vezes para dois atributos; some-os e divida por dois: esse é o novo valor dos dois.</li><li><b>Existe algo em Arton que é totalmente feito de água, mas deixa de existir se for mergulhado nela. O que é?</b><br>Resposta: <i>Gelo.</i><br>Consequência: Vulnerabilidade a frio permanente.</li><li><b>Qual a última coisa que se pode tirar de uma criatura?</b><br>Resposta: <i>A vida.</i><br>Consequência: Perde 50 PV permanentemente.</li><li><b>O que é que todos têm, sempre aumenta, mas nunca diminui?</b><br>Resposta: <i>A idade.</i><br>Consequência: Fica velho (ajustes de atributos de Tormenta20, p. 108).</li><li><b>Qual a única palavra de seu idioma que sempre se escreve errado?</b><br>Resposta: <i>Errado.</i><br>Consequência: Falha automaticamente em qualquer teste com 1 ou 2 no dado.</li></ol>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "1GtvAvF5ofyhScmK",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!64semWxBzlEAOWLm.1GtvAvF5ofyhScmK"
+    }
+  ],
+  "_key": "!journal!64semWxBzlEAOWLm"
+}

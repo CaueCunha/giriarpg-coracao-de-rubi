@@ -1,0 +1,52 @@
+{
+  "name": "Rumo à Cidade na Tormenta",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "N7IZFx6lX4fePtUq",
+  "system": {
+    "attributes": {
+      "nd": "—"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 2, Cena 3 (área de Tormenta).</b></p><p style=\"text-align:justify\">Encontrar uma alma acorrentada: teste estendido de <b>Sobrevivência CD 35, 7 sucessos</b>. Dois testes por dia (manhã e tarde); abrindo mão de descansar, um terceiro à noite. O mapa de Reynard dá +5.</p>",
+      "effects": "<p style=\"text-align:justify\">Dentro da Tormenta valem os efeitos de área de Tormenta (Tormenta20, p. 319).</p><p style=\"text-align:justify\">Falha no teste estendido: as distorções devolvem o grupo às margens do Rio Panteão e tudo recomeça.</p><p style=\"text-align:justify\">A cada dia, role uma vez na tabela <b>A6 · Encontros na Tormenta</b> (2d6).</p>",
+      "actions": "<p style=\"text-align:justify\">Use a macro <b>CdR · Teste estendido</b> (CD 35, 7 sucessos). Com sucesso, vá para a Cena 4 (Queklain).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura6"
+    },
+    "world": {
+      "cdr": "a6"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar4",
+      "antigo": "patamar4-ameacas",
+      "assinatura": "cd75b326",
+      "assinaturas": [
+        "cd75b326"
+      ]
+    }
+  },
+  "_id": "HLSGVQIIU5JaRq6F",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!HLSGVQIIU5JaRq6F"
+}
