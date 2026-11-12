@@ -1,9 +1,9 @@
 {
   "name": "giriarpg-coracao-de-rubi",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
-  "description": "Módulo Foundry VTT da campanha Coração de Rubi (Tormenta20)",
+  "description": "Giria T20 - Coração de Rubi (Campanha): módulo Foundry VTT da campanha (Tormenta20)",
   "scripts": {
     "setup": "node tools/baixar-sistema.mjs",
     "build": "node tools/build.mjs",
