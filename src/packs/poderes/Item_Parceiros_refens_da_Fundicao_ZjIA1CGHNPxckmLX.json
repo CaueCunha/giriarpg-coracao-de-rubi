@@ -1,0 +1,78 @@
+{
+  "name": "Parceiros: reféns da Fundição",
+  "type": "poder",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Na Fornalha Central (Parte 2, Cena 13), acorrentados e desmaiados. Libertar: Ladinagem CD 25 ou destruir a corrente (RD 10, 50 PV). Cada um libertado que receba ao menos 20 PV de cura vira parceiro na cena. Cada um morre se sofrer 20 de dano.</p><p style=\"text-align:justify\"><b>Penellope Pendragon</b>, a anã \"ferreira a frio\": @UUID[Compendium.tormenta20.parceiros.Item.Un1h4jcM8qtf4F8L]{guardião} veterana. <b>Goro Okazaki</b>, aprendiz de Muramune: @UUID[Compendium.tormenta20.parceiros.Item.nNpGA5SWMj7rtUQR]{combatente} veterano. <b>Artemis</b>, moreau da raposa joalheira: @UUID[Compendium.tormenta20.parceiros.Item.rntcrujiIc63hKOp]{médico} veterana. <b>Galix</b>, \"o príncipe da pólvora\": @UUID[Compendium.tormenta20.parceiros.Item.FIJfKOIU8dzbvSDG]{destruidor} veterano.</p><p style=\"text-align:justify\">Arraste para a ficha de um personagem durante a cena e apague depois.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Mentes Malignas que Planejam Destruição",
+    "tipo": "ability",
+    "ativacao": {
+      "execucao": "passive",
+      "custo": 0,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "subtipo": ""
+  },
+  "folder": "yWmpv5N6xCJfzwIG",
+  "flags": {
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-itens",
+      "assinatura": "c48b8238",
+      "assinaturas": [
+        "c48b8238"
+      ]
+    }
+  },
+  "_id": "ZjIA1CGHNPxckmLX",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!ZjIA1CGHNPxckmLX"
+}

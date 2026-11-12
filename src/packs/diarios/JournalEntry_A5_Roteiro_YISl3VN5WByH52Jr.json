@@ -1,0 +1,266 @@
+{
+  "name": "A5 · Roteiro",
+  "folder": "kX69dbjBbHvAxlEu",
+  "flags": {
+    "world": {
+      "cdr": "a5",
+      "cdrRole": "roteiro"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-diarios",
+      "assinatura": "bc9bff65",
+      "assinaturas": [
+        "bc9bff65"
+      ]
+    }
+  },
+  "_id": "YISl3VN5WByH52Jr",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\"><b>Mentes Malignas que Planejam Destruição</b> (livro, pp. 85–103). Personagens do 15º ao 18º nível. Com a queda da Guilda (que tinha acordo oculto com a Supremacia), os puristas tomaram Yuvalin da noite para o dia, trazendo tropas pelo ar nos Três Espectros Invisíveis, navios voadores feitos por anões, elfos e goblins escravizados, blindados contra adivinhação. O cerco de Zakharov fracassa.</p><p style=\"text-align:justify\"><b>Parte 1:</b> Lislah Céu Negro e o Mariposa caçam os Três Espectros. <b>Parte 2:</b> salto sobre Yuvalin até a Fundição Central e o Príncipe Conrad Kor Kovith. <b>Parte 3:</b> o caderno de Ezequias, o colosso ARQUEMIS-B e o Reator de Tormenta.</p><p style=\"text-align:justify\"><b>Lislah Céu Negro:</b> clériga de Tenebra de robes negros e máscara branca, corsária celeste veterana da resistência contra Tauron; inquieta, dramática e cheia de títulos (\"a casamenteira profana!\"). Não é maligna, mas parte da tripulação é morta-viva: deixe os jogadores interpretarem o atrito. Está furiosa porque os puristas \"copiaram o navio dela\".</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "o2CA4tPa7AGTwlAs",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!YISl3VN5WByH52Jr.o2CA4tPa7AGTwlAs"
+    },
+    {
+      "name": "Parte 1 — Os Céus de Yuvalin",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — Volta ao Lar:</b> Trilhos das minas destruídos, casas em escombros, trincheiras e túneis com runas de proteção arcana. Soldados de Zakharov reconhecem os heróis e os levam a uma câmara subterrânea.</li><li><b>Cena 2 — Sala de Guerra:</b> Velas negras, mapas, plantas de navios e um altar a Tenebra. Lislah explica a situação e oferece a @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.HZHR8X6taTmbcNpA]{carta de corso}: tripulantes do Mariposa, caçando os Espectros. Os aventureiros podem descansar e comprar no quartel.</li><li><b>Cena 3 — O Mariposa:</b> Ao anoitecer, uma âncora-elevador sobe até o navio-templo (@UUID[Compendium.giriarpg-coracao-de-rubi.poderes.Item.NzSFcnDT7aRAV3I4]{Mariposa}). Guerra ou Intuição CD 20: hora de se preparar para combate aéreo.</li><li><b>Cena 4 — Caçada aos Espectros:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.N4KLwGro1siMa6KZ]{Perseguição Celeste}</li><li><b>Cena 5 — Os Espectros:</b> <b>5A</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.ertixddjx1aHav4B]{Hidra Helicoide} (Capitã Helga Hellmeistër); <b>5B</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.9TIlXMS6nj83TuuP]{Diligência Dracocérbera} (Gio Diovanni e os três dragões negros); <b>5C</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.hPjRMISaXqc2o1mk]{Corvo de Krauser} (Lorde Resuark). Combate abstrato e épico. Depois de cada um, descansar ou caçar o próximo; três noites no total, ou os puristas destroem o Mariposa (veja Missões Adicionais).</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "zOF8hqTeEzKUp3zo",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!YISl3VN5WByH52Jr.zOF8hqTeEzKUp3zo"
+    },
+    {
+      "name": "Parte 2 — Salto sobre Yuvalin",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Sem os Espectros, é um cerco comum, mas uma esfera de contenção arcana impede teletransporte para dentro. Plano de Lislah: tropas saltam do Mariposa à noite, com levitação, para tomar a Fundição Central (sem o calor dela, o resto da cidade se rende). Lislah avisa sobre o Príncipe Conrad Kor Kovith.</p><p style=\"text-align:justify\"><b>Teste de salto</b> (macro <b>A5 · Salto sobre Yuvalin</b>): Acrobacia ou Atletismo (paraquedas), Cavalgar ou Pilotagem (montaria ou veículo), Misticismo (Voo), Acrobacia ou Reflexos (voo natural). Voo: +5. Habilidade ou ideia: +2 ou –2 à escolha. <b>≤19</b> Cena 2 e 10d6 de impacto; <b>20–24</b> Cena 2; <b>25–26</b> Cena 3 surpreendido; <b>27</b> Cena 3; <b>28–29</b> Cena 4; <b>30–31</b> Cena 5; <b>32–33</b> Cena 6; <b>34–35</b> Cena 7; <b>36–37</b> Cena 8; <b>38–39</b> Cena 9; <b>40–44</b> Cena 10; <b>45+</b> Cena 11.</p><p style=\"text-align:justify\"><b>Avançando:</b> depois de cada cena, explorar outra do mesmo distrito ou avançar. Ao entrar num distrito novo, Percepção ou Sobrevivência CD 30 para escolher a cena (falha: o mestre escolhe). Quem chega numa cena em andamento entra rolando Iniciativa. <b>Sem descanso</b>: quanto mais exploram, mais gastos chegam à Fundição.</p><ul><li><b>Cena 2 — Carvão: Muros Externos:</b> Pátio de soldados descansando. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.s18OldIgO6E9Nqtq]{Grupo de Assalto de Elite}. Depois, os mecanismos abrem os portões para o exército de Zakharov.</li><li><b>Cena 3 — Carvão: Jardins-Estufa:</b> 4 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.k8rSWvapgyEGR5UD]{baterias de artilharia} atacam quem invade o perímetro (não atiram nas estufas). Dentro: Fortitude CD 25 contra o calor ou fatigado por um dia (redução de fogo imuniza) e um @UUID[Compendium.giria-t20.ameacas.Actor.jiX0Itt2On27hc30]{golem de ferro}.</li><li><b>Cena 4 — Carvão: Bairro Boêmio:</b> Um @UUID[Compendium.giria-t20.ameacas.Actor.nS4HkD02ynlbbtUT]{capitão-baluarte} e 2 @UUID[Compendium.giria-t20.ameacas.Actor.2kweWiPEjdPB3zkv]{capelães de guerra} interrogam pessoas na praça. Nenhum não humano no bairro: foram levados para a Fundição.</li><li><b>Cena 5 — Bigorna: Oficina Beluhga:</b> Destruída por explosão, sem sinal de Penellope. Investigação CD 25: cofre (RD 10, 50 PV, Ladinagem CD 25) com quatro armas de gelo eterno com dois encantos cada (role).</li><li><b>Cena 6 — Bigorna: Taverna Fim do Mundo:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.r9F0WMyr8oJcHPEr]{Pólvora Goblin}</li><li><b>Cena 7 — Bigorna: Minérios Maravilhosos:</b> Percepção CD 20: 2 @UUID[Compendium.giria-t20.ameacas.Actor.4bdMgKDWlnZ7SaO1]{cavaleiros do Leopardo Negro} revirando a oficina de Ezequias. Investigação CD 20: compartimento secreto com 1d4 poções e o @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.tGlzpnePxsaoWAWu]{Caderno de anotações de Ezequias}.</li><li><b>Cena 8 — Forja: Parque Normandia:</b> Redoma estilhaçada, neve e fogo. Furtividade CD 28: falha, @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.Uv8IooKBoYVEkA8y]{Manada de Ber'baram}; passa, um @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.iAkizhl7Jnx4xB2s]{Ber'baram} na saída.</li><li><b>Cena 9 — Forja: Sede da Guilda:</b> Quartel purista meio destruído pela resistência. 3 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.JnxNvO1K5ZgIbj7m]{golens de reconhecimento}.</li><li><b>Cena 10 — Forja: Kanpeki:</b> A oficina em chamas; um espadachim solitário contra um @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.s18OldIgO6E9Nqtq]{grupo de assalto de elite}: @UUID[Compendium.giriarpg-coracao-de-rubi.poderes.Item.m1PSYDVarhF9wBqd]{Mestre Muramune}. Goro foi levado para a Fundição; quem jurar resgatá-lo recebe a @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.EZRXVnzkfPTHAbL1]{Hariken}.</li><li><b>Cena 11 — Portões da Fundição:</b> 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.k8rSWvapgyEGR5UD]{baterias de artilharia} e um @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.s18OldIgO6E9Nqtq]{grupo de assalto de elite}. Quem chega direto do céu surpreende as tropas.</li><li><b>Cena 12 — Caminhada pelo Inferno:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.b1Rv6xVe9PVuERtL]{Caminhada pelo Inferno}</li><li><b>Cena 13 — O Príncipe do Submundo:</b> Prisioneiros acorrentados em volta da fornalha: @UUID[Compendium.giriarpg-coracao-de-rubi.poderes.Item.ZjIA1CGHNPxckmLX]{Penellope, Goro, Artemis e Galix}. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.qH3uugKCZteT4l7E]{Príncipe Conrad Kor Kovith}. No início de cada rodada, todos sofrem [[/r 2d6[fogo]]] de fogo pelo calor (role também para os quatro prisioneiros; 20 de dano mata) e o príncipe se cura com isso. Desativar a fornalha (ação completa, Ofício [engenhoqueiro] ou Ladinagem CD 30; ou destruir o mecanismo, RD 10, 100 PV) acaba com o calor e a cura, e derruba o campo de interferência mágica.</li><li><b>Cena 14 — Balde de Água Fria:</b> Sem a Fundição, a cidade congela e os puristas ficam presos, mas não se rendem. Ezequias sumiu: foi levado prisioneiro. Escaramuças ou descanso por alguns dias.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "3PwGsHYeUHiCdSyY",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!YISl3VN5WByH52Jr.3PwGsHYeUHiCdSyY"
+    },
+    {
+      "name": "Parte 3 — A.R.Q.U.E.M.I.S.",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — O Caderno de Ezequias:</b> Um marujo morto-vivo chama o grupo ao Mariposa. Lislah viu um colosso de guerra purista vindo por terra, quase do tamanho do antigo gigante de Arsenal. Ezequias foi levado até ele num dos Espectros. Se ninguém achou o caderno, Lislah o entrega (\"A gente costumava sair junto em noites de lua nova...\").</li><li><b>Cena 2 — O Código Lefeu:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.eecYFajfPO8q0AGQ]{O Código Lefeu}</li><li><b>Cena 3 — Odeio o Cheiro de Tormenta pela Manhã:</b> No 4º dia, fumaça rubra no horizonte. Lislah quer lutar em campo aberto enquanto o exército evacua. Não ponha trilhos: deixe os jogadores planejarem, e avise pelos NPCs que o colosso causa muito dano por rodada.</li><li><b>Cena 4 — A Batalha contra o ARQUEMIS-B:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.BItINPhtRAPNuhNT]{ARQUEMIS-B}. Com Lislah, sempre flanqueado. A 0 PV desaba (10d6 de impacto em alcance curto, Ref CD 25 reduz à metade) e pode se reerguer; com a tripulação desabilitada, Fissão do Reator.</li><li><b>Cena 5 — O Reator da Tormenta:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.CtPekIrtD4SwByBG]{Reator de Tormenta}. Na 3ª rodada, um orbe de metal cai: Ezequias, numa armadura rubra quitinosa que se desmonta (\"Vocês estão com uma expressão horrível.\"). A lamparina verde dele baixa a CD do Campo de Distorção para 25, e ele entrega as @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.WyqmbAQpSG4nakgX]{bombas}: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.4MQhLi3s1GBaKMix]{Portal do Reator}.</li><li><b>Epílogo:</b> Fugir do reator transforma Yuvalin numa pequena área de Tormenta (provável fim da Jornada). Vencendo: desfile triunfal, medalhas diante da antiga Sede da Guilda, títulos de nobreza, terras e assentos no novo conselho. Lislah recusa, doa as propriedades, desiste (a contragosto) de zumbificar os mortos da guerra e parte: \"Despeçam-se de Ezequias por mim. E tomem cuidado. Ele é um bom homem, mas só tem Tormenta dentro da cabeça.\" Personagens no 18º nível.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "DARimD73GfLRNgaC",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!YISl3VN5WByH52Jr.DARimD73GfLRNgaC"
+    },
+    {
+      "name": "O Código Lefeu: trechos e vantagens",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Brecha na Armadura:</b> \"Foi feito a partir do esqueleto de um gigante e revestido em minério líquido... a blindagem, portanto, não cobre a estrutura uniformemente...\" Ignoram a RD do ARQUEMIS-B (não a do reator).</li><li><b>É Grande, mas não É Dois:</b> \"A máquina é limitada por seu tamanho... Possui dificuldade para atingir alvos pequenos e móveis.\" +10 na Defesa contra os ataques corpo a corpo do colosso.</li><li><b>Explosão de Raiva:</b> \"...escutam vozes em suas mentes... Talvez suas mentes estejam sendo controladas remotamente ou... por algo dentro do próprio ARQUEMIS-B?\" Magos do Reinado confundem a tripulação: o colosso perde a cura acelerada.</li><li><b>Fogo de Suporte:</b> \"...alguns pontos poderiam ser visados, como suas torres de artilharia...\" Com Lislah e o Mariposa: no fim da 2ª rodada e a cada duas rodadas, o colosso perde uma torre (1d4), até a 8ª.</li><li><b>Fonte de Mana:</b> \"Há um reator interno... e ele é muito potente... tenho uma hipótese de qual seria...\" +5 em Fortitude contra o Campo de Distorção do reator.</li><li><b>Referências Religiosas:</b> \"...reconheci o símbolo em seu braço. Era um símbolo sagrado, mas de nenhum deus artoniano.\" +5 em Misticismo e Vontade contra o Campo de Anulação do reator.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "gwvmwGypiAPZgMGo",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!YISl3VN5WByH52Jr.gwvmwGypiAPZgMGo"
+    },
+    {
+      "name": "Missões Adicionais",
+      "type": "text",
+      "sort": 600,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Resgate:</b> Entrar na cidade ocupada para resgatar alguém (um nobre, um general, a própria Lislah): furtividade, ação e fuga protegendo o resgatado.</li><li><b>Espionagem:</b> Infiltrar uma base purista para roubar planos de defesa (sentinelas, turnos, suprimentos) e sair vivo.</li><li><b>Diplomacia:</b> Conseguir aliados em outros reinos, entre nobres hesitantes ou simpatizantes puristas; intriga, veneno e assassinato nos bailes.</li><li><b>Sabotagem:</b> Desabilitar algo importante, como um canhão antiaéreo que impede o Mariposa de sobrevoar a cidade.</li></ul><p style=\"text-align:justify\">Cercos reais duravam anos: se quiser, deixe a situação entrar em impasse enquanto o grupo vive outras aventuras.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "kKvFPOLitaOofIOf",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!YISl3VN5WByH52Jr.kKvFPOLitaOofIOf"
+    }
+  ],
+  "_key": "!journal!YISl3VN5WByH52Jr"
+}

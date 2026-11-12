@@ -1,0 +1,78 @@
+{
+  "name": "Parceiro: Mariposa (destruidor mestre)",
+  "type": "poder",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">O navio-templo de Lislah Céu Negro, de ébano e velas escuras, iluminado por marujos fantasmas, com grumetes zumbis, marujos esqueletos, navegadores goblins, artilheiros anões e clérigos qareens de Tenebra. Invisibilidade parcial depois do anoitecer; equipes de reparo o deixam inteiro a cada combate (cura acelerada). Nos combates contra os Espectros, conta como aliado @UUID[Compendium.tormenta20.parceiros.Item.FIJfKOIU8dzbvSDG]{destruidor} mestre.</p><p style=\"text-align:justify\">Contra o ARQUEMIS-B, os canhões não o ferem, mas o deixam sempre flanqueado (e desligam torres com Fogo de Suporte).</p><p style=\"text-align:justify\">Arraste para a ficha de um personagem durante a cena e apague depois.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Mentes Malignas que Planejam Destruição",
+    "tipo": "ability",
+    "ativacao": {
+      "execucao": "passive",
+      "custo": 0,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "subtipo": ""
+  },
+  "folder": "yWmpv5N6xCJfzwIG",
+  "flags": {
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-itens",
+      "assinatura": "5b67fe50",
+      "assinaturas": [
+        "5b67fe50"
+      ]
+    }
+  },
+  "_id": "NzSFcnDT7aRAV3I4",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!NzSFcnDT7aRAV3I4"
+}

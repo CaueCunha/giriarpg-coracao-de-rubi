@@ -1,0 +1,40 @@
+{
+  "name": "A5 · Salto sobre Yuvalin",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/falling.svg",
+  "folder": "m46aRGEO1spomPQr",
+  "flags": {
+    "world": {
+      "cdr": "a5",
+      "cdrRole": "saltoYuvalin"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-macros",
+      "assinatura": "750bce09",
+      "assinaturas": [
+        "750bce09"
+      ]
+    }
+  },
+  "command": "// A5 · Salto sobre Yuvalin (Mentes Malignas, Parte 2, Cena 1). Só o mestre.\n// Selecione os tokens que vão saltar, escolha a perícia do método de salto e rode.\n// O resultado diz em que cena cada um pousa. Ajuste com +2/-2 (habilidade ou ideia criativa) e combine com o grupo.\nif (!game.user.isGM) return ui.notifications.warn(\"Só o mestre roda esta macro.\");\nconst { DialogV2 } = foundry.applications.api;\nconst atores = canvas.tokens.controlled.map((t) => t.actor).filter(Boolean);\nif (!atores.length) return ui.notifications.warn(\"Selecione os tokens que vão saltar.\");\nconst POUSO = [\n\t[19, \"Cena 2 · Distrito do Carvão: Muros Externos (e sofre 10d6 de impacto)\", \"10d6\"],\n\t[24, \"Cena 2 · Distrito do Carvão: Muros Externos\"],\n\t[26, \"Cena 3 · Distrito do Carvão: Jardins-Estufa (e começa surpreendido pelas baterias)\"],\n\t[27, \"Cena 3 · Distrito do Carvão: Jardins-Estufa\"],\n\t[29, \"Cena 4 · Distrito do Carvão: Bairro Boêmio\"],\n\t[31, \"Cena 5 · Distrito da Bigorna: Oficina Beluhga\"],\n\t[33, \"Cena 6 · Distrito da Bigorna: Taverna Fim do Mundo\"],\n\t[35, \"Cena 7 · Distrito da Bigorna: Minérios Maravilhosos\"],\n\t[37, \"Cena 8 · Distrito da Forja: Parque Normandia\"],\n\t[39, \"Cena 9 · Distrito da Forja: Sede da Guilda\"],\n\t[44, \"Cena 10 · Distrito da Forja: Kanpeki\"],\n\t[999, \"Cena 11 · Portões da Fundição\"]\n];\nconst P = CONFIG.T20?.pericias ?? {};\nconst nome = (id) => { const v = P[id]; return game.i18n.localize(typeof v === \"string\" ? v : v?.label ?? id); };\nconst opcoes = [[\"acro\", \"paraquedas\"], [\"atle\", \"paraquedas\"], [\"cava\", \"montaria\"], [\"pilo\", \"veículo\"], [\"mist\", \"Voo ou similar\"], [\"refl\", \"voo natural\"]]\n\t.map(([id, m]) => '<option value=\"' + id + '\">' + nome(id) + \" (\" + m + \")</option>\").join(\"\");\nconst r = await DialogV2.wait({\n\twindow: { title: \"Salto sobre Yuvalin\" }, rejectClose: false,\n\tcontent: \"<p>\" + atores.map((a) => a.name).join(\", \") + '</p><label>Perícia <select name=\"pericia\">' + opcoes + '</select></label><label><input type=\"checkbox\" name=\"voo\"> Tem deslocamento de voo (+5)</label><label>Ajuste (habilidade ou ideia: +2 ou -2) <input type=\"number\" name=\"ajuste\" value=\"0\"></label>',\n\tbuttons: [{ action: \"saltar\", label: \"Saltar!\", default: true, callback: (e, b) => ({ f: b.form.elements }) }]\n});\nif (!r) return;\nconst per = r.f.pericia.value;\nconst bonus = (r.f.voo.checked ? 5 : 0) + (Number(r.f.ajuste.value) || 0);\nlet html = \"\";\nfor (const a of atores) {\n\tconst t = (await new Roll(\"1d20 + \" + (a.system.pericias?.[per]?.value ?? 0) + \" + \" + bonus).evaluate()).total;\n\tconst [, local, dano] = POUSO.find(([max]) => t <= max);\n\tlet extra = \"\";\n\tif (dano) extra = \" Dano da queda: <b>\" + (await new Roll(dano).evaluate()).total + \"</b> de impacto.\";\n\thtml += \"<p><b>\" + a.name + \"</b> (\" + nome(per) + \" \" + t + \"): \" + local + \".\" + extra + \"</p>\";\n}\nChatMessage.create({ whisper: ChatMessage.getWhisperRecipients(\"GM\").map((u) => u.id), content: \"<h3>Salto sobre Yuvalin</h3>\" + html + \"<p><i>Ao entrar num distrito novo: Percepção ou Sobrevivência CD 30 para escolher a cena; sem descanso entre cenas.</i></p>\" });",
+  "_id": "jrg04OsoexYaiCCn",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "author": null,
+  "_key": "!macros!jrg04OsoexYaiCCn"
+}

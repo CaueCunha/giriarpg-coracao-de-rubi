@@ -1,0 +1,94 @@
+{
+  "name": "Engrenagens dos Espectros",
+  "type": "tesouro",
+  "img": "systems/tormenta20/icons/itens/gerais/engrenagens.webp",
+  "flags": {
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-itens",
+      "assinatura": "2aa03972",
+      "assinaturas": [
+        "2aa03972"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Tiradas dos destroços de um dos Três Espectros (CD 30 para extrair). Cada uma conta como T$ 1.000 em matéria-prima para fabricar engenhocas.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Mentes Malignas que Planejam Destruição",
+    "qtd": 1,
+    "preco": 1000,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "kIFWs2zyI1uWd9Qj",
+  "_id": "6AZmn8CGsykQl6SC",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!6AZmn8CGsykQl6SC"
+}

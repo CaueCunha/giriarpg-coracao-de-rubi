@@ -1,0 +1,52 @@
+{
+  "name": "Caminhada pelo Inferno",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "keqb1HyWE1QHG5Xr",
+  "system": {
+    "attributes": {
+      "nd": "—"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 2, Cena 12 (interior da Fundição Central).</b></p><p style=\"text-align:justify\">Chegar à Fornalha Central com a fundição trancando as comportas e esquentando: teste estendido aberto (qualquer perícia justificável), CD 25 +2 por teste feito, <b>5 sucessos</b>.</p>",
+      "effects": "<p style=\"text-align:justify\">A voz de Kor Kovith deixa todos @STATUS[abalado] (Von CD 25 anula).</p><p style=\"text-align:justify\">Cada falha: [[/r 3d6[fogo]]] de fogo. Falha total: o grupo se perde, é emboscado por um grupo de assalto de elite e recomeça.</p><p style=\"text-align:justify\">A sirene conta como condição ruim para lançar magias; desativá-la (Ofício [engenhoqueiro] ou Investigação CD 30) vale como um dos testes.</p>",
+      "actions": "<p style=\"text-align:justify\">Use a macro <b>CdR · Teste estendido</b> (5 sucessos; ajuste a CD a cada teste).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura5"
+    },
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-ameacas",
+      "assinatura": "0c222d69",
+      "assinaturas": [
+        "0c222d69"
+      ]
+    }
+  },
+  "_id": "b1Rv6xVe9PVuERtL",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!b1Rv6xVe9PVuERtL"
+}

@@ -1,0 +1,237 @@
+{
+  "name": "Hariken",
+  "type": "arma",
+  "img": "systems/tormenta20/icons/itens/equipamentos/katana.webp",
+  "sort": 400000,
+  "flags": {
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-itens",
+      "assinatura": "ccff2319",
+      "assinaturas": [
+        "ccff2319"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">A mítica espada de Mestre Hatori Muramune: katana de mitral, formidável e veloz. Ele a entrega ao personagem que jurar resgatar seu assistente Goro Okazaki (Parte 2, Cena 10).</p><p style=\"text-align:justify\"><b>Automação:</b> formidável (+2 no dano) entra sozinho; veloz e mitral ficam com o mestre.</p><p style=\"text-align:justify\">A espada tradicional do samurai tem lâmina levemente curva e apenas um gume. A katana é uma arma adaptável e ágil. É muito grande para ser empunhada com uma só mão sem treinamento especial; por isso, é uma arma exótica. Ela pode ser usada como uma arma marcial de duas mãos.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Mentes Malignas que Planejam Destruição",
+    "equipado": 0,
+    "equipado2": {
+      "slot": 0,
+      "type": "hand"
+    },
+    "carregado": true,
+    "peso": 2.5,
+    "espacos": 1,
+    "qtd": 1,
+    "preco": 100,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "rolls": [
+      {
+        "name": "Ataque",
+        "key": "ataque0",
+        "type": "ataque",
+        "parts": [
+          [
+            "1d20",
+            "",
+            ""
+          ],
+          [
+            "luta",
+            "",
+            ""
+          ],
+          [
+            "0",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      },
+      {
+        "name": "Dano",
+        "key": "dano1",
+        "type": "dano",
+        "parts": [
+          [
+            "1d8",
+            "corte",
+            ""
+          ],
+          [
+            "@for",
+            "",
+            ""
+          ]
+        ],
+        "adaptavel": "1d10",
+        "versatil": ""
+      }
+    ],
+    "criticoM": 19,
+    "criticoX": 2,
+    "alcance": "",
+    "tipoUso": "sim",
+    "propriedades": {
+      "ada": true,
+      "agi": true,
+      "alo": false,
+      "dup": false,
+      "ver": false,
+      "adaptavel": true,
+      "agil": true,
+      "alongada": false,
+      "arremesso": false,
+      "ataqueDistancia": false,
+      "duasMaos": false,
+      "dupla": false,
+      "leve": false,
+      "municao": false,
+      "versatil": false,
+      "des": false
+    },
+    "ativacao": {
+      "custo": null,
+      "condicao": "",
+      "execucao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "chatFlavor": "",
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null,
+      "mpMultiplier": false
+    },
+    "origin": "",
+    "tags": [],
+    "chatGif": "",
+    "upgrades": {
+      "melhoria1": "specialmaterial",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "material": [],
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "itemType": [],
+      "improvement": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "materialEspecial1": "",
+      "enableAutoUpgrades": true
+    },
+    "ataques": 0,
+    "proficiencia": "exotica",
+    "proposito": "corpo-a-corpo",
+    "empunhadura": "uma",
+    "size": "normal",
+    "rolltags": [],
+    "automationtags": []
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.tormenta20.equipamentos.Item.Flif0uZZpMv1qcQw",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "kIFWs2zyI1uWd9Qj",
+  "_id": "EZRXVnzkfPTHAbL1",
+  "effects": [
+    {
+      "name": "Formidável",
+      "img": "icons/svg/upgrade.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "+2 no dano.",
+      "system": {
+        "changes": [
+          {
+            "key": "dano",
+            "value": "2",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": true,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "self"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "HvfGJZYOPmQOyCBC",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!EZRXVnzkfPTHAbL1.HvfGJZYOPmQOyCBC"
+    }
+  ],
+  "_key": "!items!EZRXVnzkfPTHAbL1"
+}

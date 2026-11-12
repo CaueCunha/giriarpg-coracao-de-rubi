@@ -1,0 +1,52 @@
+{
+  "name": "Portal do Reator",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "keqb1HyWE1QHG5Xr",
+  "system": {
+    "attributes": {
+      "nd": "—"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cena 5 (o plano de Ezequias).</b></p><p style=\"text-align:justify\">Plantar ao menos <b>duas</b> das três bombas alquímicas de Ezequias na base do portal, do lado da Tormenta. Elas explodem duas rodadas depois do último teste.</p>",
+      "effects": "<p style=\"text-align:justify\">Entrar pelo \"olho\": ação completa e Atletismo CD 25 para escalar, depois ação completa e Acrobacia CD 25 para saltar (quem voa só faz a Acrobacia). Falha: cai, [[/r 2d6[impacto]]], e recomeça.</p><p style=\"text-align:justify\">Do outro lado, quem não é lefou faz Vontade CD 25: passa, @STATUS[frustrado] pelo resto do dia; falha, @STATUS[alquebrado] e @STATUS[esmorecido] pelo resto do dia.</p><p style=\"text-align:justify\">Os lefeu ignoram quem não os ameaça (não distinguem o grupo dos puristas); se perturbados, use @UUID[Compendium.giria-t20.ameacas.Actor.iyw5BEMbEtquOLqT]{ezzayn}.</p>",
+      "actions": "<p style=\"text-align:justify\"><b>Armar bomba</b>: ação completa e Ladinagem ou Ofício (alquimia ou coerente) CD 25. Falha: tenta de novo. Falha por 5+: explode, [[/r 12d6[impacto]]] em alcance curto.</p><p style=\"text-align:justify\">A estrutura do portal (RD 10, 50 PV) só sofre dano de ataques ou magias feitos dentro da Tormenta: destruí-la assim prende o herói lá.</p><p style=\"text-align:justify\">Sem fechar o portal, ainda dá para derrotar o reator em Arton reduzindo seus PV a zero.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura5"
+    },
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-ameacas",
+      "assinatura": "f74edb08",
+      "assinaturas": [
+        "f74edb08"
+      ]
+    }
+  },
+  "_id": "4MQhLi3s1GBaKMix",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!4MQhLi3s1GBaKMix"
+}
