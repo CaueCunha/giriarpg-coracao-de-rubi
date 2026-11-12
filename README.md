@@ -1,6 +1,6 @@
-# Coração de Rubi · módulo para Foundry VTT
+# Giria T20 - Coração de Rubi (Campanha) · módulo para Foundry VTT
 
-Este é o conteúdo da campanha **Coração de Rubi** (Tormenta20) num módulo do Foundry VTT: ameaças, perigos, parceiros, itens, diários e macros com automação. Os compêndios ficam na pasta **Coração de Rubi** da aba de Compêndios, um por tipo, com uma pasta por patamar e as pastas das aventuras dentro:
+Este é o conteúdo da campanha **Coração de Rubi** (Tormenta20) num módulo do Foundry VTT: ameaças, perigos, parceiros, itens, diários e macros com automação. Os compêndios ficam na pasta **Giria T20 - Coração de Rubi (Campanha)** da aba de Compêndios, um por tipo, com uma pasta por patamar e as pastas das aventuras dentro:
 
 | Compêndio | Patamar 1 · Iniciante | Campanha |
 |---|---|---|
@@ -34,13 +34,13 @@ Baixe o `module.zip` da [última versão](https://github.com/CaueCunha/giriarpg-
 **Nada vai para o mundo sozinho.** O módulo só oferece os compêndios, e você escolhe o que entra no mundo:
 
 - **Um documento:** arraste-o do compêndio para a barra lateral (ou para a cena, no caso de ameaças).
-- **Uma aventura inteira:** use **Puxar do compêndio**. Ele fica no botão **Coração de Rubi**, no topo da aba de Compêndios, em **Configurações › Coração de Rubi** e na macro **CdR · Puxar do compêndio**. Marque as aventuras e ele cria só o que falta, nas pastas do compêndio (Patamar › aventura) e com os mesmos IDs, para os links dos diários e as macros funcionarem. O que já está no mundo nunca é substituído.
+- **Uma aventura inteira:** use **Puxar do compêndio**. Ele fica no botão **Coração de Rubi**, no topo da aba de Compêndios, em **Configurações › Giria T20 - Coração de Rubi (Campanha)** e na macro **CdR · Puxar do compêndio**. Marque as aventuras e ele cria só o que falta, nas pastas do compêndio (Patamar › aventura) e com os mesmos IDs, para os links dos diários e as macros funcionarem. O que já está no mundo nunca é substituído.
 
 As macros da campanha procuram as ameaças, as tabelas e os diários **no mundo**, pelas marcas que os geradores sempre usaram. Por isso, puxe a aventura antes de usar as macros dela. Se faltar alguma coisa, a macro avisa.
 
 ### Limpar do mundo
 
-**Limpar do mundo** (no botão **Coração de Rubi**, em **Configurações › Coração de Rubi** e na macro **CdR · Limpar do mundo**) apaga do mundo o conteúdo do módulo, para você puxar do compêndio só o que precisar. Por padrão:
+**Limpar do mundo** (no botão **Coração de Rubi**, em **Configurações › Giria T20 - Coração de Rubi (Campanha)** e na macro **CdR · Limpar do mundo**) apaga do mundo o conteúdo do módulo, para você puxar do compêndio só o que precisar. Por padrão:
 
 - apaga itens e poderes, diários, tabelas e macros; ameaças e NPCs só se você marcar (tokens nas cenas perdem a ficha);
 - **não apaga o que você editou** (o que não bate com nenhuma versão publicada), a não ser que você marque;
@@ -50,7 +50,7 @@ Itens nas fichas dos personagens e documentos que não são do módulo nunca sã
 
 ### Versões novas: atualizar só o que você quiser
 
-Quando sai uma versão nova, o Foundry atualiza os compêndios, mas o mundo não muda. O Mestre recebe uma mensagem no chat, uma vez só, dizendo quantos documentos do mundo têm melhorias. O aviso pode ser desligado em **Configurações › Coração de Rubi**.
+Quando sai uma versão nova, o Foundry atualiza os compêndios, mas o mundo não muda. O Mestre recebe uma mensagem no chat, uma vez só, dizendo quantos documentos do mundo têm melhorias. O aviso pode ser desligado em **Configurações › Giria T20 - Coração de Rubi (Campanha)**.
 
 **Atualizar do compêndio** (no mesmo botão, nas configurações e na macro **CdR · Atualizar do compêndio**) lista os documentos do mundo que vieram do módulo e mudaram:
 

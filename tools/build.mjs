@@ -233,7 +233,7 @@ export function escreverManifesto(packs) {
 	const repo = "https://github.com/CaueCunha/giriarpg-coracao-de-rubi";
 	const manifesto = {
 		id: MODULO,
-		title: "Coração de Rubi · Campanha (Tormenta20)",
+		title: "Giria T20 - Coração de Rubi (Campanha)",
 		description:
 			"<p>Conteúdo da campanha <b>Coração de Rubi</b> para o sistema Tormenta20: ameaças, perigos, parceiros, itens, diários e macros de cada aventura, organizados por patamar, e as ferramentas e poderes dos jogadores. Regras e itens que já existem no sistema ou no Giria T20 são ligados a eles, não duplicados. Nada é importado sozinho: puxe dos compêndios o que precisar. A macro <i>CdR · Atualizar do compêndio</i> traz as melhorias de versões novas só para o que você não editou.</p>",
 		version: versao,
@@ -254,7 +254,7 @@ export function escreverManifesto(packs) {
 			system: "tormenta20",
 			ownership: { PLAYER: "NONE", ASSISTANT: "OWNER" }
 		})),
-		packFolders: [{ name: "Coração de Rubi", sorting: "m", color: "#6b2f2f", packs: packs.map((p) => p.nome) }],
+		packFolders: [{ name: "Giria T20 - Coração de Rubi (Campanha)", sorting: "m", color: "#6b2f2f", packs: packs.map((p) => p.nome) }],
 		flags: { [MODULO]: { atos: Object.fromEntries(ATOS.map((a) => [a.id, { rotulo: a.rotulo }])) } },
 		url: repo,
 		manifest: `${repo}/releases/latest/download/module.json`,
