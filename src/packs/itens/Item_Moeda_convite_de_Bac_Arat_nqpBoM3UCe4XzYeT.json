@@ -1,0 +1,94 @@
+{
+  "name": "Moeda-convite de Bac Arat",
+  "type": "tesouro",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Moeda de brilho esverdeado, borda levemente espetada, mais grossa e pesada que um tibar comum. Numa face, o brasão de Aslothia; na outra, uma lua minguante e a inscrição BAC ARAT. Cada moeda permite o ingresso de um convidado mais um acompanhante no Leilão das Sombras.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Blefe Fatal",
+    "qtd": 2,
+    "preco": 0,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "eyVGC7GleCuuj7ZM",
+  "flags": {
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "ee16add5",
+      "assinaturas": [
+        "ee16add5"
+      ]
+    }
+  },
+  "_id": "nqpBoM3UCe4XzYeT",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!nqpBoM3UCe4XzYeT"
+}

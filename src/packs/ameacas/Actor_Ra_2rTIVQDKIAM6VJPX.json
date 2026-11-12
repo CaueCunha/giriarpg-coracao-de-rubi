@@ -1,0 +1,4243 @@
+{
+  "name": "Rà",
+  "type": "npc",
+  "img": "systems/tormenta20/icons/ameacas/cultista-da-traicao.png",
+  "folder": "oG5kDaZ0qLIQ4bGL",
+  "prototypeToken": {
+    "name": "Rà",
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/tormenta20/icons/ameacas/cultista-da-traicao.png"
+    },
+    "disposition": -1,
+    "actorLink": false,
+    "bar1": {
+      "attribute": "attributes.pv"
+    }
+  },
+  "system": {
+    "atributos": {
+      "for": {
+        "base": 1,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "des": {
+        "base": 6,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "con": {
+        "base": 3,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "int": {
+        "base": 4,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "sab": {
+        "base": 1,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "car": {
+        "base": 6,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      }
+    },
+    "attributes": {
+      "nd": "11",
+      "cd": 30,
+      "pv": {
+        "value": 280,
+        "max": 280,
+        "temp": 0,
+        "min": 0
+      },
+      "pm": {
+        "value": 70,
+        "max": 70,
+        "temp": 0,
+        "min": 0
+      },
+      "defesa": {
+        "base": 16,
+        "atributo": "des",
+        "pda": 0,
+        "value": 10,
+        "outros": 0,
+        "condi": 0,
+        "bonus": []
+      },
+      "movement": {
+        "walk": {
+          "base": 9,
+          "bonus": []
+        },
+        "climb": {
+          "base": 0,
+          "bonus": []
+        },
+        "burrow": {
+          "base": 0,
+          "bonus": []
+        },
+        "swim": {
+          "base": 0,
+          "bonus": []
+        },
+        "fly": {
+          "base": 0,
+          "bonus": []
+        },
+        "hover": false,
+        "unit": "m",
+        "tags": []
+      },
+      "sentidos": {
+        "value": [],
+        "custom": ""
+      },
+      "carga": {
+        "value": 0,
+        "atributo": "for",
+        "base": 10,
+        "bonus": [],
+        "limit": 0,
+        "max": 0,
+        "pct": 0,
+        "encumbered": false
+      },
+      "conjuracao": "int",
+      "nivel": {
+        "value": 0,
+        "xp": {
+          "value": 0,
+          "pct": 0,
+          "proximo": 0
+        }
+      },
+      "treino": 0
+    },
+    "detalhes": {
+      "tipo": "hum",
+      "raca": "Humana",
+      "resistencias": "evasão aprimorada, imunidade a atordoamento e encantamento",
+      "ataquescac": "Florete magnífico x2 +27 (1d6+18, 16).",
+      "ataquesad": "",
+      "equipamento": "Armadura de couro ajustada, reforçada e defensora, cosmético x2, estojo de disfarces aprimorado, florete magnífico.",
+      "tesouro": "Nenhum.",
+      "biography": {
+        "value": "<p style=\"text-align:justify\">Assassina famosa no submundo, alta e esguia, roupas exóticas e chamativas; voz estridente e autoconfiança infantil, péssima perdedora. Mimetiza qualquer criatura que já viu: passou a aventura disfarçada de Prinkster (as duas piscadelas com o olho esquerdo são dela). Contratada pelo Conde Ferren Asloth para tirar o Pulmão da Montanha de \"mãos erradas\". Lança magias como uma barda de 12º nível (CD 30). Em combate: Velocidade primeiro; depois duas ações agredir, ou agredir e magia; Imagem Espelhada para se defender, Bola de Fogo para atacar, Toque Vampírico ao sofrer dano. Parte 3, Cena 4 (Cassino Dimensional).</p>",
+        "public": ""
+      },
+      "origem": "",
+      "divindade": "",
+      "movimento": "",
+      "role": ""
+    },
+    "tracos": {
+      "tamanho": "med",
+      "resistencias": {
+        "dano": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "perda": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "acido": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "corte": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "eletricidade": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "essencia": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "fogo": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "frio": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "impacto": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "luz": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "psiquico": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "perfuracao": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "trevas": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        }
+      },
+      "ic": {
+        "value": [
+          "atordoado",
+          "enfeiticado"
+        ],
+        "custom": ""
+      },
+      "idiomas": {
+        "value": [],
+        "custom": ""
+      },
+      "profArmaduras": {
+        "value": [],
+        "custom": ""
+      },
+      "profArmas": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "dinheiro": {
+      "tc": 0,
+      "tl": 0,
+      "to": 0,
+      "tp": 0
+    },
+    "modificadores": {
+      "custoPM": 0,
+      "atributos": {
+        "for": [],
+        "des": [],
+        "con": [],
+        "int": [],
+        "sab": [],
+        "car": [],
+        "fisicos": [],
+        "mentais": [],
+        "geral": []
+      },
+      "ataque": {
+        "geral": [],
+        "cac": [],
+        "ad": []
+      },
+      "cura": {
+        "geral": [],
+        "mag": [],
+        "alq": []
+      },
+      "dano": {
+        "ad": [],
+        "alq": [],
+        "cac": [],
+        "geral": [],
+        "mag": []
+      },
+      "pericias": {
+        "geral": [],
+        "resistencia": [],
+        "semataque": [],
+        "ataque": [],
+        "atr": {
+          "for": [],
+          "des": [],
+          "con": [],
+          "int": [],
+          "sab": [],
+          "car": []
+        }
+      }
+    },
+    "pericias": {
+      "acro": {
+        "treinado": false,
+        "outros": 8,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": true,
+        "size": false
+      },
+      "ades": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "atle": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "for",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "atua": {
+        "treinado": false,
+        "outros": 10,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cava": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "conh": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cura": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "dipl": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "enga": {
+        "treinado": false,
+        "outros": 10,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "fort": {
+        "treinado": false,
+        "outros": 2,
+        "custom": false,
+        "label": "",
+        "atributo": "con",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "furt": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": true,
+        "size": true
+      },
+      "guer": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "inic": {
+        "treinado": false,
+        "outros": 8,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "inti": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "intu": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "inve": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "joga": {
+        "treinado": false,
+        "outros": 10,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "ladi": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": true,
+        "pda": true,
+        "size": false
+      },
+      "luta": {
+        "treinado": false,
+        "outros": 21,
+        "custom": false,
+        "label": "",
+        "atributo": "for",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "mist": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "nobr": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "perc": {
+        "treinado": false,
+        "outros": 7,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "pilo": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "pont": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "refl": {
+        "treinado": false,
+        "outros": 11,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "reli": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "sobr": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "vont": {
+        "treinado": false,
+        "outros": 10,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "alfa": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "alqu": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "arme": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "arte": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cozi": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "enge": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": true,
+        "size": false
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourcePrimary"
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourceSecondary"
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourceTertiary"
+      },
+      "deathsave": {
+        "value": 0,
+        "max": 3,
+        "label": "T20.ResourceDeathSave"
+      },
+      "shadow": {
+        "value": 0,
+        "max": 5,
+        "label": "T20.ResourceShadow"
+      },
+      "catarse": {
+        "value": 0,
+        "max": 3,
+        "label": "T20.ResourceCatarse"
+      }
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura3"
+    },
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "e222591d",
+      "assinaturas": [
+        "e222591d"
+      ]
+    }
+  },
+  "_id": "2rTIVQDKIAM6VJPX",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": [
+    {
+      "name": "Florete magnífico",
+      "type": "arma",
+      "img": "systems/tormenta20/icons/itens/equipamentos/florete.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Dois ataques por ação agredir.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Blefe Fatal",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "1d6+18",
+                "perfuracao",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 16,
+        "criticoX": 2,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "marcial",
+        "empunhadura": "leve",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 0,
+        "peso": 0,
+        "qtd": 1,
+        "preco": 0,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": 0,
+          "condicao": "",
+          "execucao": "passive",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": 0,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_id": "052RKSEV4ukpuxNh",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.052RKSEV4ukpuxNh"
+    },
+    {
+      "name": "Distração",
+      "type": "poder",
+      "img": "icons/svg/card-hand.svg",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Uma vez por rodada, quando é atingida por um ataque, Rà pode fazer um teste de Atuação. Se o resultado for maior que o ataque do oponente, evita o ataque.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Blefe Fatal",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "reaction",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "jQ4fglvsUgRvGJOy",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.jQ4fglvsUgRvGJOy"
+    },
+    {
+      "name": "Espetáculo Mortal",
+      "type": "poder",
+      "img": "icons/svg/combat.svg",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Quando usa a ação agredir ou lança uma magia com execução de uma ação padrão, Rà pode gastar 1 PM para fazer um ataque adicional com seu florete.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Blefe Fatal",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "free",
+          "custo": 1,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "gRdG2TxWls2NCumu",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.gRdG2TxWls2NCumu"
+    },
+    {
+      "name": "Evasão Aprimorada",
+      "type": "poder",
+      "img": "icons/svg/wingfoot.svg",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Quando sofre um efeito que permite Reflexos para reduzir o dano à metade, não sofre dano se passar e sofre metade se falhar.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.SDSlkLynTwwAZkjR]{Evasão Aprimorada (Bucaneiro)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.SDSlkLynTwwAZkjR]{Evasão Aprimorada (Bucaneiro)}</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Blefe Fatal",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "passive",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "WNj9hLadwYiciIZZ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.SDSlkLynTwwAZkjR",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.WNj9hLadwYiciIZZ"
+    },
+    {
+      "name": "Amedrontar",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/amedrontar.webp",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U]{Amedrontar}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 179",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 1,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "scene",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "short",
+        "alvo": "1 animal ou humanoide",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": "Vontade parcial"
+        },
+        "rolls": [],
+        "tipo": "arc",
+        "circulo": 1,
+        "preparada": false,
+        "escola": "nec",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.tormenta20.magias.Item.m14TgW19d1JTBz8U",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "Xhkx78bIPjlYF4xB",
+      "folder": null,
+      "effects": [
+        {
+          "_id": "MUrzvtaGMvCLRxeO",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Item.dx8QPZrPlrOrzLQU",
+          "tint": "#ffffff",
+          "transfer": false,
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Amedrontar",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>alvos que falhem na resistência ficam apavorados por 1d4+1 rodadas, em vez de apenas 1.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.MUrzvtaGMvCLRxeO"
+        },
+        {
+          "_id": "pLdZFZttmQcYM2gf",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Item.dx8QPZrPlrOrzLQU",
+          "tint": "#ffffff",
+          "transfer": false,
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Amedrontar",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda o alvo para 1 criatura.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.pLdZFZttmQcYM2gf"
+        },
+        {
+          "_id": "emzRdWJD3Nn610Dd",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Item.dx8QPZrPlrOrzLQU",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Amedrontar",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 5,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>afeta todos os alvos válidos a sua escolha dentro do alcance.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.emzRdWJD3Nn610Dd"
+        },
+        {
+          "_id": "hzai8JoSBulNNGcL",
+          "disabled": false,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": "sceneEnd",
+            "expired": false
+          },
+          "origin": "Item.p238CZtFsOfXHxuZ",
+          "transfer": false,
+          "flags": {
+            "tormenta20": {}
+          },
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Amedrontado",
+          "img": "systems/tormenta20/icons/magias/amedrontar.webp",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.hzai8JoSBulNNGcL"
+        }
+      ],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB"
+    },
+    {
+      "name": "Criar Ilusão",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/criar-ilusao.webp",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Esta magia cria uma ilusão visual (uma criatura, uma parede...) ou sonora (um grito de socorro, um uivo assustador...). A magia cria apenas imagens ou sons simples, com volume equivalente ao tom de voz normal para cada cubo de 1,5m no efeito. Não é possível criar cheiros, texturas ou temperaturas, nem sons complexos, como uma música ou diálogo. Criaturas e objetos atravessam uma ilusão sem sofrer dano, mas a magia pode, por exemplo, esconder uma armadilha ou inimigo. A magia é dissipada se você sair do alcance.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.q6jHyHSI2hWrZGE9]{Criar Ilusão}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 189",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 1,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "scene",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "ilusão que se estende a até 4 cubos de 1,5m",
+        "alcance": "medium",
+        "alvo": "",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": "Vontade desacredita"
+        },
+        "rolls": [],
+        "tipo": "arc",
+        "circulo": 1,
+        "preparada": false,
+        "escola": "ilu",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.tormenta20.magias.Item.q6jHyHSI2hWrZGE9",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "TUztdHiEy4rdae7E",
+      "folder": null,
+      "effects": [
+        {
+          "_id": "spbJqtsNyEus0DsB",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.q6jHyHSI2hWrZGE9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Criar Ilusão",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "duracao",
+                "value": "sustentada",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 1,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda a duração para sustentada. A cada rodada você pode gastar uma ação livre para mover a imagem ou alterar levemente o som, como aumentar o volume ou fazer com que pareça se afastar ou se aproximar, ainda dentro dos limites do efeito. Você pode, por exemplo, criar a ilusão de um fantasma que anda pela sala, controlando seus movimentos. Quando você para de sustentar a magia, a imagem ou som persistem por mais uma rodada antes de a magia se dissipar.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E.spbJqtsNyEus0DsB"
+        },
+        {
+          "_id": "QlOuRmHtneT8Klkd",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.q6jHyHSI2hWrZGE9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Criar Ilusão",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": true,
+              "custo": 1,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>aumenta o efeito da ilusão em +1 cubo de 1,5m.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E.QlOuRmHtneT8Klkd"
+        },
+        {
+          "_id": "ix4tYmGQKWsD4qm9",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.q6jHyHSI2hWrZGE9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Criar Ilusão",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 1,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>também pode criar ilusões de imagem e sons combinados.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E.ix4tYmGQKWsD4qm9"
+        },
+        {
+          "_id": "XPnFCUGef7Vzk4hB",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.q6jHyHSI2hWrZGE9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Criar Ilusão",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 1,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>também pode criar sons complexos com volume máximo equivalente ao que cinco pessoas podem produzir para cada cubo de 1,5m no efeito. Com uma ação livre, você pode alterar o volume do som ou fazê-lo se aproximar ou se afastar dentro do alcance.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E.XPnFCUGef7Vzk4hB"
+        },
+        {
+          "_id": "KCh9EirEXWjnGMnf",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.q6jHyHSI2hWrZGE9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Criar Ilusão",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>também pode criar odores e sensações térmicas, que são percebidos a uma distância igual ao dobro do tamanho máximo do efeito. Por exemplo, uma miragem de uma fogueira com 4 cubos de 1,5m poderia emanar calor e cheiro de queimado a até 12m.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E.KCh9EirEXWjnGMnf"
+        },
+        {
+          "_id": "nvoYH6aUfHKYxmCz",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.q6jHyHSI2hWrZGE9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Criar Ilusão",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "alcance",
+                "value": "longo",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda o alcance para longo e o efeito para esfera com 30m de raio. Em vez do normal, você cria um som muito alto, equivalente a uma multidão. Criaturas na área lançam magias como se estivessem em uma condição ruim e a CD de testes de Percepção para ouvir aumenta em +10. Requer 2º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E.nvoYH6aUfHKYxmCz"
+        },
+        {
+          "_id": "SwlefmwQv60MUpDq",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.q6jHyHSI2hWrZGE9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Criar Ilusão",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>também criar sensações táteis, como texturas; criaturas que não saibam que é uma ilusão não conseguem atravessá-la sem passar em um teste de Vontade (objetos ainda a atravessam). A ilusão ainda é incapaz de causar ou sofrer dano. Requer 2º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E.SwlefmwQv60MUpDq"
+        },
+        {
+          "_id": "fiAISOsxT8IwhiYk",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.q6jHyHSI2hWrZGE9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Criar Ilusão",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "duracao",
+                "value": "sustentada",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 5,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda a duração para sustentada. Além do normal, você pode gastar uma ação livre para modificar livremente a ilusão (mas não pode acrescentar novos aprimoramentos após lançá-la). Requer 3º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E.fiAISOsxT8IwhiYk"
+        }
+      ],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E"
+    },
+    {
+      "name": "Disfarce Ilusório",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/disfarce-ilusorio.webp",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Você muda a aparência do alvo, incluindo seu equipamento. Isso inclui altura, peso, tom de pele, cor de cabelo, timbre de voz etc. O alvo recebe +10 em testes de Enganação para disfarce. O alvo não recebe novas habilidades (você pode ficar parecido com outra raça, mas não ganhará as habilidades dela), nem modifica o equipamento (uma espada longa disfarçada de bordão continua funcionando e causando dano como uma espada).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.19donXyns0pliwj9]{Disfarce Ilusório}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 191",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 1,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "scene",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "self",
+        "alvo": "Você",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": "Vontade desacredita"
+        },
+        "rolls": [],
+        "tipo": "arc",
+        "circulo": 1,
+        "preparada": false,
+        "escola": "ilu",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.tormenta20.magias.Item.19donXyns0pliwj9",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "RjHC0czMuZwU0Fmm",
+      "folder": null,
+      "effects": [
+        {
+          "_id": "OzwC492cmUgKWnFm",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.19donXyns0pliwj9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Disfarce Ilusório",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "alcance",
+                "value": "Toque",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "alvo",
+                "value": "1 criatura",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "duracao",
+                "value": "1 semana",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda o alcance para toque, o alvo para 1 criatura e a duração para 1 semana. Em vez do normal, você faz uma pequena alteração na aparência do alvo, como deixar o nariz vermelho ou fazer brotar um gerânio no alto da cabeça. A mudança é inofensiva, mas persistente — se a flor for arrancada, por exemplo, outra nascerá no local.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm.OzwC492cmUgKWnFm"
+        },
+        {
+          "_id": "pPq2TcPrzdXkmfEX",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.19donXyns0pliwj9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Disfarce Ilusório",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "alcance",
+                "value": "curto",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "alvo",
+                "value": "1 objeto",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 1,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda o alcance para curto e o alvo para 1 objeto. Você pode, por exemplo, transformar pedaços de ferro em moedas de ouro. Você recebe +10 em testes de Enganação para falsificação.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm.pPq2TcPrzdXkmfEX"
+        },
+        {
+          "_id": "z8TvHB67DLEFGOTg",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.19donXyns0pliwj9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Disfarce Ilusório",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "alcance",
+                "value": "curto",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "alvo",
+                "value": "1 criatura",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda o alcance para curto e o alvo para 1 criatura. Uma criatura involuntária pode anular o efeito com um teste de Vontade.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm.z8TvHB67DLEFGOTg"
+        },
+        {
+          "_id": "OoPwbcX5fo5b4Gdw",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.19donXyns0pliwj9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Disfarce Ilusório",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.enga.bonus",
+                "value": 10,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>a ilusão inclui odores e sensações. Isso muda o bônus em testes de Enganação para disfarce para +20.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm.OoPwbcX5fo5b4Gdw"
+        },
+        {
+          "_id": "n74QuQJV3yaPkc50",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.19donXyns0pliwj9",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Disfarce Ilusório",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "alcance",
+                "value": "curto",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "alvo",
+                "value": "criaturas escolhidas",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 3,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda o alcance para curto e o alvo para criaturas escolhidas. Cada criatura pode ter uma aparência diferente. Criaturas involuntárias podem anular o efeito com um teste de Vontade. Requer 2º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm.n74QuQJV3yaPkc50"
+        },
+        {
+          "_id": "3uj68ogrLBvuDZOS",
+          "disabled": false,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": "sceneEnd",
+            "expired": false
+          },
+          "origin": "Item.ImzpDE9niUkXOWPk",
+          "transfer": false,
+          "flags": {
+            "tormenta20": {}
+          },
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Disfarce Ilusório",
+          "img": "systems/tormenta20/icons/magias/disfarce-ilusorio.webp",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.enga.bonus",
+                "value": 10,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm.3uj68ogrLBvuDZOS"
+        }
+      ],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm"
+    },
+    {
+      "name": "Imagem Espelhada",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/imagem-espelhada.webp",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Três cópias ilusórias suas aparecem. As duplicatas ficam ao seu redor e imitam suas ações, tornando difícil para um inimigo saber quem atacar. Você recebe +6 na Defesa. Cada vez que um ataque contra você erra, uma das imagens desaparece e o bônus na Defesa diminui em 2. Um oponente deve ver as cópias para ser confundido. Se você estiver invisível, ou o atacante fechar os olhos, você não recebe o bônus (mas o atacante ainda sofre penalidades normais por não enxergar).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.secWy6zyYamo3Xnx]{Imagem Espelhada}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 195",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 1,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "scene",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "self",
+        "alvo": "Você",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "tipo": "arc",
+        "circulo": 1,
+        "preparada": false,
+        "escola": "ilu",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.tormenta20.magias.Item.secWy6zyYamo3Xnx",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "J7anB5PsNvzFIBSX",
+      "folder": null,
+      "effects": [
+        {
+          "_id": "ZSZDtJL7aUQUSG97",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.secWy6zyYamo3Xnx",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Imagem Espelhada",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.defesa.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": true,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>aumenta o número de cópias em +1 (e o bônus na Defesa em +2).</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.J7anB5PsNvzFIBSX.ZSZDtJL7aUQUSG97"
+        },
+        {
+          "_id": "k8TLQFBMiTSCyYfM",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.secWy6zyYamo3Xnx",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Imagem Espelhada",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>além do normal, toda vez que uma cópia é destruída, emite um clarão de luz. A criatura que destruiu a cópia fica ofuscada por uma rodada. Requer 2º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.J7anB5PsNvzFIBSX.k8TLQFBMiTSCyYfM"
+        },
+        {
+          "_id": "6hE5xGjEoeH1tq6A",
+          "disabled": false,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": "sceneEnd",
+            "expired": false
+          },
+          "origin": "Item.zJjM1i69MWx3xcBT",
+          "transfer": false,
+          "flags": {
+            "tormenta20": {}
+          },
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Imagem Espelhada",
+          "img": "systems/tormenta20/icons/magias/imagem-espelhada.webp",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.defesa.bonus",
+                "value": 6,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.J7anB5PsNvzFIBSX.6hE5xGjEoeH1tq6A"
+        }
+      ],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.J7anB5PsNvzFIBSX"
+    },
+    {
+      "name": "Leque Cromático",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/leque-cromatico.webp",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Um cone de luzes brilhantes surge das suas mãos, deixando os animais e humanoides na área atordoados por 1 rodada (apenas uma vez por cena, Vontade anula) e ofuscados pela cena. Esta magia não afeta criaturas cegas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.g48EeeYhek5Wh5Ll]{Leque Cromático}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 196",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 1,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "self",
+        "alvo": "",
+        "area": "cone de 4,5m",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": "Vontade parcial"
+        },
+        "rolls": [],
+        "tipo": "arc",
+        "circulo": 1,
+        "preparada": false,
+        "escola": "ilu",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.tormenta20.magias.Item.g48EeeYhek5Wh5Ll",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "iORa9SFTevp9A2Kg",
+      "folder": null,
+      "effects": [
+        {
+          "_id": "8cLF4KVgcGp4Fr8W",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.g48EeeYhek5Wh5Ll",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Leque Cromático",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": true,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>além do normal, as criaturas afetadas ficam vulneráveis pela cena.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.iORa9SFTevp9A2Kg.8cLF4KVgcGp4Fr8W"
+        },
+        {
+          "_id": "JBNZINQxuDnryTXP",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.g48EeeYhek5Wh5Ll",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Leque Cromático",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>também afeta espíritos e monstros na área. Requer 2º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.iORa9SFTevp9A2Kg.JBNZINQxuDnryTXP"
+        },
+        {
+          "_id": "uvOtJBPqxmJfEpde",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.g48EeeYhek5Wh5Ll",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Leque Cromático",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 5,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.iORa9SFTevp9A2Kg.uvOtJBPqxmJfEpde"
+        },
+        {
+          "_id": "1gKeyUctPVRQwZvv",
+          "disabled": false,
+          "duration": {
+            "value": 1,
+            "units": "rounds",
+            "expiry": "turnStart",
+            "expired": false
+          },
+          "origin": "Item.aUvSqSllFALQh4kY",
+          "transfer": false,
+          "flags": {
+            "tormenta20": {}
+          },
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Leque Cromático",
+          "img": "systems/tormenta20/icons/magias/leque-cromatico.webp",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.iORa9SFTevp9A2Kg.1gKeyUctPVRQwZvv"
+        }
+      ],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.iORa9SFTevp9A2Kg"
+    },
+    {
+      "name": "Bola de Fogo",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/bola-de-fogo.webp",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Esta famosa magia de ataque cria uma poderosa explosão, causando 6d6 pontos de dano de fogo em todas as criaturas e objetos livres na área.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.gcjCsjzpk2OtClSt]{Bola de Fogo}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 182",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 3,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "medium",
+        "alvo": "",
+        "area": "esfera com 6m de raio",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": "Reflexos reduz à metade"
+        },
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "6d6",
+                "fogo",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "tipo": "arc",
+        "circulo": 2,
+        "preparada": false,
+        "escola": "evo",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.tormenta20.magias.Item.gcjCsjzpk2OtClSt",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "lSpKrwbT8iN5mRc5",
+      "folder": null,
+      "effects": [
+        {
+          "_id": "vr1mvLoNAjr0kzFk",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.gcjCsjzpk2OtClSt",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Bola de Fogo",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "dano",
+                "value": "2d6",
+                "priority": null,
+                "type": "custom",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": true,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>aumenta o dano em +2d6.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.vr1mvLoNAjr0kzFk"
+        },
+        {
+          "_id": "4mjjwGR0xITCBgNW",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.gcjCsjzpk2OtClSt",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Bola de Fogo",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "area",
+                "value": "efeito de esfera flamejante com tamanho 1,5m",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "duracao",
+                "value": "Cena",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "dano",
+                "value": "3d6",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda a área para efeito de esfera flamejante com tamanho Médio e a duração para cena. Em vez do normal, cria uma esfera flamejante com 1,5m de diâmetro que causa 3d6 pontos de dano a qualquer criatura no mesmo espaço. Você pode gastar uma ação de movimento para fazer a esfera voar 9m em qualquer direção. Ela é imune a dano, mas pode ser apagada com água. Uma criatura só pode sofrer dano da esfera uma vez por rodada.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.4mjjwGR0xITCBgNW"
+        },
+        {
+          "_id": "akpWTbxnAAT2vgBf",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.gcjCsjzpk2OtClSt",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Bola de Fogo",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "duracao",
+                "value": "1 dia ou até ser descarregada",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 3,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda a duração para um dia ou até ser descarregada. Em vez do normal, você cria uma pequena pedra flamejante, que pode detonar como uma reação, descarregando a magia. A pedra pode ser usada como uma arma de arremesso com alcance curto. Uma vez detonada, causa o dano da magia numa área de esfera com 6m de raio.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.akpWTbxnAAT2vgBf"
+        }
+      ],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5"
+    },
+    {
+      "name": "Toque Vampírico",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Sua mão brilha com energia sombria, causando 6d6 pontos de dano de trevas. Você recupera pontos de vida iguais à metade do dano causado (se causou algum dano).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.6KvwDBikOdbzhRGv]{Toque Vampírico}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 209",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 3,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "touch",
+        "alvo": "1 criatura",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": "Fortitude reduz à metade"
+        },
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "6d6",
+                "trevas",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "tipo": "arc",
+        "circulo": 2,
+        "preparada": false,
+        "escola": "nec",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.tormenta20.magias.Item.6KvwDBikOdbzhRGv",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "jvhiAF0EoT9tVJGI",
+      "folder": null,
+      "effects": [
+        {
+          "_id": "fj5KlCRUOCLnTq44",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.6KvwDBikOdbzhRGv",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Toque Vampírico",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda a resistência para nenhum. Como parte da execução da magia, você pode fazer um ataque corpo a corpo contra o alvo. Se acertar, causa o dano do ataque e da magia, e recupera pontos de vida iguais à metade do dano da magia.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.jvhiAF0EoT9tVJGI.fj5KlCRUOCLnTq44"
+        },
+        {
+          "_id": "o1gxPtSDjy8HIDNW",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.6KvwDBikOdbzhRGv",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Toque Vampírico",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "dano",
+                "value": "2d6",
+                "priority": null,
+                "type": "custom",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": true,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>aumenta o dano em +2d6.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.jvhiAF0EoT9tVJGI.o1gxPtSDjy8HIDNW"
+        },
+        {
+          "_id": "oAjy0YHQ5tHNiIYZ",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.6KvwDBikOdbzhRGv",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Toque Vampírico",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "alcance",
+                "value": "pessoal",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "alvo",
+                "value": "você",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "duracao",
+                "value": "Cena",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "dano",
+                "value": "3d6",
+                "priority": null,
+                "type": "custom",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 2,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda o alcance para pessoal, o alvo para você e a duração para cena. Em vez do normal, a cada rodada você pode gastar uma ação padrão para tocar 1 criatura e causar 3d6 pontos de dano. Você recupera pontos de vida iguais à metade do dano causado. Requer 3º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.jvhiAF0EoT9tVJGI.oAjy0YHQ5tHNiIYZ"
+        },
+        {
+          "origin": "Item.6KvwDBikOdbzhRGv",
+          "tint": "#ffffff",
+          "flags": {
+            "tormenta20": {}
+          },
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": "sceneEnd",
+            "expired": false
+          },
+          "disabled": false,
+          "_id": "bQynWDQOBC3Tz2m6",
+          "transfer": false,
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Toque Vampírico (Cena)",
+          "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.jvhiAF0EoT9tVJGI.bQynWDQOBC3Tz2m6"
+        }
+      ],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.jvhiAF0EoT9tVJGI"
+    },
+    {
+      "name": "Velocidade",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/velocidade.webp",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">O alvo pode realizar uma ação padrão ou de movimento adicional por turno. Esta ação não pode ser usada para lançar magias e ativar engenhocas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XWEJNZMs6Wb9uUHF]{Velocidade}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 210",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 3,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "sust",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "short",
+        "alvo": "1 criatura",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "tipo": "arc",
+        "circulo": 2,
+        "preparada": false,
+        "escola": "tra",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.tormenta20.magias.Item.XWEJNZMs6Wb9uUHF",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "KVaTHa3qTfu2Y0FK",
+      "folder": null,
+      "effects": [
+        {
+          "_id": "QV7vK1gyaReMinFt",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.XWEJNZMs6Wb9uUHF",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Velocidade",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "alvo",
+                "value": "criaturas escolhidas no alcance",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 7,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda o alvo para criaturas escolhidas no alcance. Requer 4º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.KVaTHa3qTfu2Y0FK.QV7vK1gyaReMinFt"
+        },
+        {
+          "_id": "Zlwp9Xz7314vDIdG",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Compendium.tormenta20.magias.XWEJNZMs6Wb9uUHF",
+          "transfer": false,
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Velocidade",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "alcance",
+                "value": "pessoal",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "alvo",
+                "value": "você",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 7,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda o alcance para pessoal e o alvo para você. Você acelera sua mente, além de seu corpo. A ação adicional pode ser usada para lançar magias e ativar engenhocas. Requer 4º círculo.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.KVaTHa3qTfu2Y0FK.Zlwp9Xz7314vDIdG"
+        },
+        {
+          "_id": "ctQWvBBt10JFqkV9",
+          "disabled": false,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": "sceneEnd",
+            "expired": false
+          },
+          "origin": "Item.bcI6qQ9HH1A8YCcu",
+          "transfer": false,
+          "flags": {
+            "tormenta20": {}
+          },
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Velocidade",
+          "img": "systems/tormenta20/icons/magias/velocidade.webp",
+          "type": "base",
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.KVaTHa3qTfu2Y0FK.ctQWvBBt10JFqkV9"
+        },
+        {
+          "_id": "Cmz2EEKOBV7wG0jD",
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": "Item.Lr2HLRTDMGrZB7eL",
+          "transfer": false,
+          "flags": {
+            "tormenta20": {}
+          },
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "name": "Velocidade",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "duracao",
+                "value": "sustentada",
+                "priority": 0,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "description": "<p>muda a duração para cena. A ação adicional que você pode fazer é apenas de movimento. Uma criatura só pode receber uma ação adicional por turno como efeito de Velocidade.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.KVaTHa3qTfu2Y0FK.Cmz2EEKOBV7wG0jD"
+        }
+      ],
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.KVaTHa3qTfu2Y0FK"
+    }
+  ],
+  "effects": [],
+  "_key": "!actors!2rTIVQDKIAM6VJPX"
+}

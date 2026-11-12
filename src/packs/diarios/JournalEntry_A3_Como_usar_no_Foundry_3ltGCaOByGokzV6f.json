@@ -1,0 +1,114 @@
+{
+  "name": "A3 · Como usar no Foundry",
+  "folder": "ADHDesQC5dfThHvO",
+  "flags": {
+    "world": {
+      "cdr": "a3",
+      "cdrRole": "comoUsar"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-diarios",
+      "assinatura": "79aa828c",
+      "assinaturas": [
+        "79aa828c"
+      ]
+    }
+  },
+  "_id": "3ltGCaOByGokzV6f",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Tudo desta aventura fica nas pastas <b>A3 · Blefe Fatal</b> (Atores, Itens, Tabelas, Macros e Diários). As ameaças novas e as variantes estão em <i>Ameaças</i>; os perigos e testes em <i>Perigos e Testes</i>. Cenas e mapas ficam por sua conta.</p><p style=\"text-align:justify\">As criaturas do livro básico (esqueleto, esqueleto de elite, aparição, hidra, cultista de Sszzaas, ogro) vêm do compêndio de ameaças do <b>Giria T20</b>: os links do roteiro abrem as fichas de lá.</p><p style=\"text-align:justify\">Dazan e o Guarda de Aslavi (besteiro) são cópias das fichas do sistema (vampiro e esqueleto de elite) com as mudanças do livro.</p><p style=\"text-align:justify\">Fichas conferidas com o livro (pp. 59–61).</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "wQTXnVQWHOot2DY7",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!3ltGCaOByGokzV6f.wQTXnVQWHOot2DY7"
+    },
+    {
+      "name": "Automações",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Assassino Putrefato:</b> Espada púrpura com +4d8 de trevas automático e botão \"Sangrando\"; Ataque Furtivo (+7d6) como opção; Emanação de Trevas com rolagem e botão \"Fatigado\"; Vulto Mortal (+10 Furtividade) como botão.</li><li><b>Enxame de Papa-dim:</b> Rolagem do enxame (8d8+20) e botões \"Atordoado (1 rodada)\" e \"Sangrando\" na Mordida Trituradora.</li><li><b>Rà:</b> Florete com margem 16, magias de barda (CD 30) na ficha; Distração e Espetáculo Mortal descritos.</li><li><b>Sihnion e Sillion:</b> Rolagem do aparar (+27) na reação.</li><li><b>Partida de Wyrt:</b> Macro A3 · Partida de Wyrt: aposta, mão inicial, blefe, ajuda, Hora da Verdade contra Prinkster (+14), pote, Bebida Amarga (CD crescente, aplica frustrado/esmorecido/inconsciente) e os 8 comentários em ordem.</li><li><b>Fuga dos Papa-Dim:</b> Macro CdR · Teste estendido (5 sucessos de Conduzir).</li><li><b>Cassino Dimensional:</b> Macro A3 · Cassino Dimensional: compra 3 cartas por personagem e 5 para Rà (d20 + d4), mostra a ordem de ação e o que cada carta permite.</li><li><b>Licor de Tinta de Kraken:</b> Tabela 1d6.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "XMLtRpDdpc0TBwDC",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!3ltGCaOByGokzV6f.XMLtRpDdpc0TBwDC"
+    }
+  ],
+  "_key": "!journal!3ltGCaOByGokzV6f"
+}

@@ -14,12 +14,13 @@ import assert from "node:assert/strict";
 import { criarMundo, carregarModulo, prepararMesa, problemas, limparRegistros, MODULO } from "./ajudantes.mjs";
 import { politicaPadrao, politicaAleatoria, politicaRoteiro } from "../tools/sim/dialogos.mjs";
 import { semearDados } from "../tools/sim/sorte.mjs";
+import { ATOS } from "../tools/conteudo.mjs";
 
 const SORTEIOS = Number(process.env.CDR_SORTEIOS ?? 6);
 
 const mundo = await criarMundo({ semente: "macros" });
 await carregarModulo(mundo);
-await mundo.game.modules.get(MODULO).api.puxar({ atos: ["campanha", "patamar1"] });
+await mundo.game.modules.get(MODULO).api.puxar({ atos: ATOS.map((a) => a.id) });
 await prepararMesa(mundo, { alvoNpc: false });
 const pjs = mundo.game.actors.filter((a) => a.type === "character");
 

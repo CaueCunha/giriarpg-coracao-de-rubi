@@ -18,6 +18,12 @@ export const ATOS = [
 		geradores: ["a1-forja-de-herois", "a2-segredo-das-minas"]
 	},
 	{
+		id: "patamar2",
+		rotulo: "Patamar 2 · Veterano (aventuras 3 e 4)",
+		cor: "#7a3f5f",
+		geradores: ["a3-blefe-fatal"]
+	},
+	{
 		id: "campanha",
 		rotulo: "Campanha (ferramentas do mestre e artefatos dos jogadores)",
 		cor: "#6b5a2f",

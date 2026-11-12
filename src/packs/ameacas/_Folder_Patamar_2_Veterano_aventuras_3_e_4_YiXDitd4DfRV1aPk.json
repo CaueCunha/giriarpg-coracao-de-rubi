@@ -1,0 +1,27 @@
+{
+  "_id": "YiXDitd4DfRV1aPk",
+  "name": "Patamar 2 · Veterano (aventuras 3 e 4)",
+  "type": "Actor",
+  "folder": null,
+  "sorting": "a",
+  "sort": 200000,
+  "color": "#7a3f5f",
+  "description": "",
+  "flags": {
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2"
+    }
+  },
+  "_key": "!folders!YiXDitd4DfRV1aPk",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

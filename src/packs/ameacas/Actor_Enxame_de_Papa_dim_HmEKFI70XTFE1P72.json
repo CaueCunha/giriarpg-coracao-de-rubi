@@ -1,0 +1,1107 @@
+{
+  "name": "Enxame de Papa-dim",
+  "type": "npc",
+  "img": "systems/tormenta20/icons/itens/gerais/bolsa-de-po.webp",
+  "folder": "oG5kDaZ0qLIQ4bGL",
+  "prototypeToken": {
+    "name": "Enxame de Papa-dim",
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "systems/tormenta20/icons/itens/gerais/bolsa-de-po.webp"
+    },
+    "disposition": -1,
+    "actorLink": false,
+    "bar1": {
+      "attribute": "attributes.pv"
+    }
+  },
+  "system": {
+    "atributos": {
+      "for": {
+        "base": 5,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "des": {
+        "base": 1,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "con": {
+        "base": 5,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "int": {
+        "base": -2,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "sab": {
+        "base": 0,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "car": {
+        "base": 0,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      }
+    },
+    "attributes": {
+      "nd": "8",
+      "cd": 24,
+      "pv": {
+        "value": 69,
+        "max": 69,
+        "temp": 0,
+        "min": 0
+      },
+      "pm": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "min": 0
+      },
+      "defesa": {
+        "base": 18,
+        "atributo": "des",
+        "pda": 0,
+        "value": 10,
+        "outros": 0,
+        "condi": 0,
+        "bonus": []
+      },
+      "movement": {
+        "walk": {
+          "base": 6,
+          "bonus": []
+        },
+        "climb": {
+          "base": 0,
+          "bonus": []
+        },
+        "burrow": {
+          "base": 0,
+          "bonus": []
+        },
+        "swim": {
+          "base": 0,
+          "bonus": []
+        },
+        "fly": {
+          "base": 0,
+          "bonus": []
+        },
+        "hover": false,
+        "unit": "m",
+        "tags": []
+      },
+      "sentidos": {
+        "value": [
+          "escuro"
+        ],
+        "custom": ""
+      },
+      "carga": {
+        "value": 0,
+        "atributo": "for",
+        "base": 10,
+        "bonus": [],
+        "limit": 0,
+        "max": 0,
+        "pct": 0,
+        "encumbered": false
+      },
+      "conjuracao": "int",
+      "nivel": {
+        "value": 0,
+        "xp": {
+          "value": 0,
+          "pct": 0,
+          "proximo": 0
+        }
+      },
+      "treino": 0
+    },
+    "detalhes": {
+      "tipo": "mon",
+      "raca": "",
+      "resistencias": "enxame (imune a manobras e a efeitos de alvo único que não causam dano; vulnerável a dano de área; metade do dano de armas)",
+      "ataquescac": "",
+      "ataquesad": "",
+      "equipamento": "",
+      "tesouro": "Moedas e gemas no valor de T$ 6d6 × 100.",
+      "biography": {
+        "value": "<p style=\"text-align:justify\">Bolsas de moedas douradas, gelatinosas e translúcidas de um metro de altura, que pulam tilintando e trituram tudo em busca de ouro. A lenda diz que são algibeiras perdidas que absorveram a ganância dos donos. Parte 2, Cena 2 (Floresta dos Papa-Dim): matar um enxame não resolve, outro aparece; use o perigo Fuga dos Papa-Dim. Conhecimento, Misticismo ou Sobrevivência CD 20 para conhecê-los.</p>",
+        "public": ""
+      },
+      "origem": "",
+      "divindade": "",
+      "movimento": "",
+      "role": ""
+    },
+    "tracos": {
+      "tamanho": "gra",
+      "resistencias": {
+        "dano": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "perda": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "acido": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "corte": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "eletricidade": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "essencia": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "fogo": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "frio": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "impacto": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "luz": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "psiquico": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "perfuracao": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "trevas": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        }
+      },
+      "ic": {
+        "value": [],
+        "custom": ""
+      },
+      "idiomas": {
+        "value": [],
+        "custom": ""
+      },
+      "profArmaduras": {
+        "value": [],
+        "custom": ""
+      },
+      "profArmas": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "dinheiro": {
+      "tc": 0,
+      "tl": 0,
+      "to": 0,
+      "tp": 0
+    },
+    "modificadores": {
+      "custoPM": 0,
+      "atributos": {
+        "for": [],
+        "des": [],
+        "con": [],
+        "int": [],
+        "sab": [],
+        "car": [],
+        "fisicos": [],
+        "mentais": [],
+        "geral": []
+      },
+      "ataque": {
+        "geral": [],
+        "cac": [],
+        "ad": []
+      },
+      "cura": {
+        "geral": [],
+        "mag": [],
+        "alq": []
+      },
+      "dano": {
+        "ad": [],
+        "alq": [],
+        "cac": [],
+        "geral": [],
+        "mag": []
+      },
+      "pericias": {
+        "geral": [],
+        "resistencia": [],
+        "semataque": [],
+        "ataque": [],
+        "atr": {
+          "for": [],
+          "des": [],
+          "con": [],
+          "int": [],
+          "sab": [],
+          "car": []
+        }
+      }
+    },
+    "pericias": {
+      "acro": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": true,
+        "size": false
+      },
+      "ades": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "atle": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "for",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "atua": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cava": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "conh": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cura": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "dipl": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "enga": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "fort": {
+        "treinado": false,
+        "outros": 10,
+        "custom": false,
+        "label": "",
+        "atributo": "con",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "furt": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": true,
+        "size": true
+      },
+      "guer": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "inic": {
+        "treinado": false,
+        "outros": 7,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "inti": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "intu": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "inve": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "joga": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "ladi": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": true,
+        "pda": true,
+        "size": false
+      },
+      "luta": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "for",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "mist": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "nobr": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "perc": {
+        "treinado": false,
+        "outros": 4,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "pilo": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "pont": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "refl": {
+        "treinado": false,
+        "outros": 9,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "reli": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "sobr": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "vont": {
+        "treinado": false,
+        "outros": 4,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "alfa": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "alqu": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "arme": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "arte": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cozi": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "enge": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": true,
+        "size": false
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourcePrimary"
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourceSecondary"
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourceTertiary"
+      },
+      "deathsave": {
+        "value": 0,
+        "max": 3,
+        "label": "T20.ResourceDeathSave"
+      },
+      "shadow": {
+        "value": 0,
+        "max": 5,
+        "label": "T20.ResourceShadow"
+      },
+      "catarse": {
+        "value": 0,
+        "max": 3,
+        "label": "T20.ResourceCatarse"
+      }
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura3"
+    },
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "20755472",
+      "assinaturas": [
+        "20755472"
+      ]
+    }
+  },
+  "_id": "HmEKFI70XTFE1P72",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": [
+    {
+      "name": "Enxame",
+      "type": "poder",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Pode entrar no espaço de um personagem e, no fim do turno, causa 8d8+20 pontos de dano de perfuração automaticamente a quem estiver no seu espaço. Imune a manobras e a efeitos de alvo único que não causam dano; vulnerável a dano de área; sofre metade do dano de ataques com armas. Estar dentro do enxame é condição ruim para lançar magias.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.ZPxFnXhUZ2dbcedC.Item.nz0XHpkunR0VxXVd]{Enxame (Enxame Kobold)}</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Blefe Fatal",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "passive",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [
+          {
+            "name": "Dano do enxame",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "8d8+20",
+                "perfuracao",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "IY0trBRE4PHUdKrM",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!HmEKFI70XTFE1P72.IY0trBRE4PHUdKrM"
+    },
+    {
+      "name": "Ganância",
+      "type": "poder",
+      "img": "icons/svg/coins.svg",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Quem sofre dano do enxame perde T$ 1 por ponto de dano. Se alguém jogar moedas ou objetos de T$ 100 ou mais no enxame, os papa-dim se concentram em devorá-los e ficam atordoados por uma rodada.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Blefe Fatal",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "passive",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "Wb7XjhxkF09xrElO",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!HmEKFI70XTFE1P72.Wb7XjhxkF09xrElO"
+    },
+    {
+      "name": "Mordida Trituradora",
+      "type": "poder",
+      "img": "icons/magic/control/debuff-energy-hold-blue-yellow.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Uma criatura que sofra dano do enxame fica atordoada por uma rodada e sangrando (Fort CD 24 evita). Só pode ser atordoada por esta habilidade uma vez por cena.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Blefe Fatal",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "passive",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": "Fortitude evita"
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "VVn40CXsP5tpoCux",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [
+        {
+          "name": "Atordoado (1 rodada)",
+          "img": "systems/tormenta20/icons/conditions/atordoado.svg",
+          "statuses": [
+            "atordoado"
+          ],
+          "duration": {
+            "value": 1,
+            "units": "rounds",
+            "expiry": "turnStart",
+            "expired": false
+          },
+          "system": {
+            "status": {
+              "category": "mental",
+              "childEffect": [
+                "desprevenido"
+              ],
+              "ignoreImunity": false,
+              "upgrade": ""
+            },
+            "changes": [],
+            "targets": [],
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "type": "base",
+          "disabled": false,
+          "start": null,
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": false,
+          "showIcon": 1,
+          "flags": {},
+          "_id": "kB34HDFGTx6VEDcO",
+          "origin": null,
+          "folder": null,
+          "sort": 0,
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!HmEKFI70XTFE1P72.VVn40CXsP5tpoCux.kB34HDFGTx6VEDcO"
+        },
+        {
+          "name": "Sangrando",
+          "img": "systems/tormenta20/icons/conditions/sangrando.svg",
+          "statuses": [
+            "sangrando"
+          ],
+          "duration": {
+            "expiry": "sceneEnd",
+            "value": null,
+            "units": "seconds",
+            "expired": false
+          },
+          "system": {
+            "changes": [
+              {
+                "key": "dano",
+                "value": "1d6[perda]",
+                "type": "custom",
+                "phase": "initial",
+                "priority": null
+              }
+            ],
+            "status": {
+              "category": "metabolismo",
+              "ignoreImunity": false,
+              "upgrade": "",
+              "childEffect": []
+            },
+            "targets": [],
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "type": "base",
+          "disabled": false,
+          "start": null,
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": false,
+          "showIcon": 1,
+          "flags": {},
+          "_id": "yThXVGvxeKNJeO0P",
+          "origin": null,
+          "folder": null,
+          "sort": 0,
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!HmEKFI70XTFE1P72.VVn40CXsP5tpoCux.yThXVGvxeKNJeO0P"
+        }
+      ],
+      "_key": "!actors.items!HmEKFI70XTFE1P72.VVn40CXsP5tpoCux"
+    }
+  ],
+  "effects": [],
+  "_key": "!actors!HmEKFI70XTFE1P72"
+}

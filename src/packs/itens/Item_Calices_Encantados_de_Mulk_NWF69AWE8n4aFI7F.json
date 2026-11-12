@@ -1,0 +1,96 @@
+{
+  "name": "Cálices Encantados de Mulk",
+  "type": "equipamento",
+  "img": "icons/svg/tankard.svg",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Um par de cálices de vidro elegantes, idênticos para qualquer um, exceto seu usuário. Quando a palavra de comando é pronunciada, o usuário enxerga um dos cálices ficar escuro.</p><p style=\"text-align:justify\">O cálice escuro torna venenoso qualquer líquido dentro dele: quem beber um gole deve passar em um teste de Fortitude (CD Int) ou fica @STATUS[enjoado] e perde [[/r 4d12[veneno]]] PV por rodada, por 10 rodadas. O outro cálice transforma líquido em antídoto — ideal para chantagens…</p><p style=\"text-align:justify\">Acessório médio. Item do leilão de Bac Arat.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Blefe Fatal",
+    "tipo": "acessorio",
+    "preco": 7500,
+    "peso": 0,
+    "espacos": 1,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "qtd": 1,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "rolls": [],
+    "equipado": false,
+    "equipado2": {
+      "slot": 0,
+      "type": "body"
+    },
+    "armadura": {
+      "maxAtr": 0,
+      "penalidade": 0,
+      "value": 0
+    }
+  },
+  "folder": "eyVGC7GleCuuj7ZM",
+  "flags": {
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "6593b6cf",
+      "assinaturas": [
+        "6593b6cf"
+      ]
+    }
+  },
+  "_id": "NWF69AWE8n4aFI7F",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!NWF69AWE8n4aFI7F"
+}

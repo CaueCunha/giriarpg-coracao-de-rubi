@@ -14,6 +14,8 @@ import { criarMundo, carregarModulo, problemas, limparRegistros, manifesto, MODU
 import { lerPackFonte } from "../tools/sim/sistema.mjs";
 import { FONTE_PACKS, T20_DIR } from "../tools/caminhos.mjs";
 import { getProperty } from "../tools/sim/utils.mjs";
+import { ATOS } from "../tools/conteudo.mjs";
+const TODOS = ATOS.map((a) => a.id);
 
 const m = manifesto();
 const packs = m.packs.map((p) => ({ ...p, ...lerPackFonte(path.join(FONTE_PACKS, p.name)) }));
@@ -54,7 +56,7 @@ test("compêndios têm o formato do foundryvtt-cli", () => {
 
 test("module.json descreve os compêndios por tipo, com pastas por ato", () => {
 	assert.equal(m.id, MODULO);
-	assert.deepEqual(Object.keys(m.flags[MODULO].atos).sort(), ["campanha", "patamar1"]);
+	assert.deepEqual(Object.keys(m.flags[MODULO].atos).sort(), [...TODOS].sort());
 	const nomes = m.packs.map((p) => p.name);
 	assert.deepEqual(nomes, ["ameacas", "poderes", "itens", "diarios", "tabelas", "macros"]);
 	assert.deepEqual(m.packFolders.flatMap((f) => f.packs ?? []).sort(), [...nomes].sort(), "packFolders deve conter todos os compêndios");
@@ -107,7 +109,7 @@ await carregarModulo(mundo);
 
 test("todo documento passa pelos modelos de dados sem perder campos", async () => {
 	limparRegistros(mundo);
-	await mundo.game.modules.get(MODULO).api.puxar({ atos: ["campanha", "patamar1"] });
+	await mundo.game.modules.get(MODULO).api.puxar({ atos: TODOS });
 	await mundo.aguardarOcioso();
 	assert.deepEqual(problemas(mundo, { avisos: true }), []);
 	for (const p of packs) {

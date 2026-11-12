@@ -1,0 +1,40 @@
+{
+  "name": "A3 · Cassino Dimensional",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/card-joker.svg",
+  "folder": "GwyG2iNNuF7OUZac",
+  "flags": {
+    "world": {
+      "cdr": "a3",
+      "cdrRole": "cassino"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-macros",
+      "assinatura": "3fba09ae",
+      "assinaturas": [
+        "3fba09ae"
+      ]
+    }
+  },
+  "command": "// A3 · Cassino Dimensional (Blefe Fatal, Parte 3, Cena 4). Só o mestre.\n// Baralho simulado com d20 + d4 (como no livro). Selecione os tokens (personagens e Rà).\n// \"Comprar\" completa a mão de cada um (3 cartas; 5 para Rà) e mostra a ordem de ação.\n// \"Usar cartas\" retira da mão as cartas marcadas. As mãos ficam salvas entre as rodadas.\nif (!game.user.isGM) return ui.notifications.warn(\"Só o mestre roda esta macro.\");\nconst { DialogV2 } = foundry.applications.api;\nconst FLAG = \"cdrCassino\";\nconst NAIPES = { 1: [\"paus\", \"♣\", \"ação de movimento\"], 2: [\"copas\", \"♥\", \"ação padrão (exceto atacar)\"], 3: [\"espadas\", \"♠\", \"ação agredir\"], 4: [\"ouros\", \"♦\", \"ação completa\"] };\nconst VALORES = { 1: \"Ás\", 11: \"Valete\", 12: \"Rainha\", 13: \"Rei\", 14: \"Curinga\" };\nconst ESPECIAL = { 1: \"ação extra que não conta no limite do turno\", 11: \"outra criatura em alcance curto rola de novo um teste\", 12: \"habilidade sem pagar o custo básico em PM\", 13: \"+5 em um teste\", 14: \"emula qualquer carta\" };\nconst nomeCarta = (c) => c.v === 14 ? \"Curinga\" : (VALORES[c.v] ?? c.v) + \" de \" + NAIPES[c.n][0] + \" \" + NAIPES[c.n][1];\nconst descCarta = (c) => nomeCarta(c) + (c.v === 14 ? \"\" : \" (\" + NAIPES[c.n][2] + \")\") + (ESPECIAL[c.v] ? \" — \" + ESPECIAL[c.v] : \"\");\nasync function carta() {\n\tlet v;\n\tdo v = (await new Roll(\"1d20\").evaluate()).total; while (v > 14);\n\tconst n = (await new Roll(\"1d4\").evaluate()).total;\n\treturn { v, n };\n}\nconst st = foundry.utils.deepClone(game.user.getFlag(\"world\", FLAG) ?? {});\nconst atores = canvas.tokens.controlled.map((t) => t.actor).filter(Boolean);\nif (!atores.length) return ui.notifications.warn(\"Selecione os tokens dos personagens e de Rà.\");\nconst ehRa = (a) => /^r[aà]$/i.test(a.name.trim());\nconst corpo = atores.map((a) => \"<p><b>\" + a.name + \"</b>: \" + ((st[a.id] ?? []).map((c, i) => '<label><input type=\"checkbox\" name=\"u_' + a.id + \"_\" + i + '\"> ' + descCarta(c) + \"</label>\").join(\"<br>\") || \"sem cartas\") + \"</p>\").join(\"\");\nconst r = await DialogV2.wait({\n\twindow: { title: \"Cassino Dimensional\" }, content: corpo, rejectClose: false,\n\tbuttons: [\n\t\t{ action: \"comprar\", label: \"Comprar (nova rodada)\", default: true, callback: () => ({ a: \"comprar\" }) },\n\t\t{ action: \"usar\", label: \"Usar/descartar marcadas\", callback: (e, b) => ({ a: \"usar\", f: b.form.elements }) },\n\t\t{ action: \"zerar\", label: \"Encerrar o jogo\", callback: () => ({ a: \"zerar\" }) }\n\t]\n});\nif (!r) return;\nif (r.a === \"zerar\") { await game.user.unsetFlag(\"world\", FLAG); return ui.notifications.info(\"Cassino Dimensional encerrado.\"); }\nlet html = \"\";\nif (r.a === \"usar\") {\n\tfor (const a of atores) {\n\t\tconst mao = st[a.id] ?? [];\n\t\tconst usadas = mao.filter((c, i) => r.f[\"u_\" + a.id + \"_\" + i]?.checked);\n\t\tif (!usadas.length) continue;\n\t\tst[a.id] = mao.filter((c, i) => !r.f[\"u_\" + a.id + \"_\" + i]?.checked);\n\t\thtml += \"<p><b>\" + a.name + \"</b> usa/descarta: \" + usadas.map(nomeCarta).join(\", \") + \".</p>\";\n\t}\n} else {\n\tconst ordem = [];\n\tfor (const a of atores) {\n\t\tconst mao = st[a.id] ?? [];\n\t\tconst alvo = ehRa(a) ? 5 : 3;\n\t\twhile (mao.length < alvo) mao.push(await carta());\n\t\tst[a.id] = mao;\n\t\tconst maior = Math.max(...mao.filter((c) => c.v >= 2 && c.v <= 10).map((c) => c.v), 0);\n\t\tordem.push({ a, maior });\n\t\thtml += \"<p><b>\" + a.name + \"</b>: \" + mao.map(descCarta).join(\"; \") + \".</p>\";\n\t}\n\tordem.sort((x, y) => y.maior - x.maior);\n\thtml = \"<p><b>Ordem (maior carta numérica):</b> \" + ordem.map((o) => o.a.name + \" (\" + (o.maior || \"—\") + \")\").join(\" → \") + \"</p>\" + html;\n}\nawait game.user.setFlag(\"world\", FLAG, st);\nif (html) ChatMessage.create({ whisper: ChatMessage.getWhisperRecipients(\"GM\").map((u) => u.id), content: \"<h3>Cassino Dimensional</h3>\" + html });",
+  "_id": "DAAH0AGdaU6u3WWX",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "author": null,
+  "_key": "!macros!DAAH0AGdaU6u3WWX"
+}

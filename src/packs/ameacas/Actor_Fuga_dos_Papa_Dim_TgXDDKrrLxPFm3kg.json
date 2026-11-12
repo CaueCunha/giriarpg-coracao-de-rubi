@@ -1,0 +1,52 @@
+{
+  "name": "Fuga dos Papa-Dim",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "fXvtY4xXc4f9DdQK",
+  "system": {
+    "attributes": {
+      "nd": "14"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 2, Cena 2 (Floresta dos Papa-Dim).</b></p><p style=\"text-align:justify\">Cruzar a floresta sem ser devorado: <b>5 sucessos</b> na ação Conduzir (a pé: 7, e Atletismo no lugar de Reflexos). Defina quem leva os convites: se chegar a 0 PV por mordida dos papa-dim, o enxame devora as moedas (derrotar o enxame para recuperar).</p>",
+      "effects": "<p style=\"text-align:justify\">Carruagem: RD 5, 70 PV. No início de cada rodada, cada personagem na carruagem faz Reflexos CD 20: falha [[/r 2d6[impacto]]]; falha por 10+ [[/r 4d6[impacto]]] e cai. Quem voa não testa, mas não conduz.</p><p style=\"text-align:justify\">Papa-dim que alcançam a carruagem causam [[/r 6d6+5[perfuracao]]] a ela; 20 de dano quebra uma roda.</p>",
+      "actions": "<p style=\"text-align:justify\"><b>Conduzir</b> (Destreza, Adestramento ou Pilotagem CD 25): passa, avança; falha, avança e é alcançada; falha por 5+, não avança e é alcançada.</p><p style=\"text-align:justify\"><b>Ajudar o Condutor</b>: Atletismo nos arreios, Percepção para achar a rota etc.</p><p style=\"text-align:justify\"><b>Atacar as Criaturas</b>: 50 de dano no enxame na rodada impede o ataque à carruagem.</p><p style=\"text-align:justify\"><b>Quem Quer Dinheiro</b>: jogar T$ 100 em moedas ou objetos como isca impede o ataque na rodada.</p><p style=\"text-align:justify\"><b>Lançar uma magia</b>: Vontade CD 15 + custo em PM (condição ruim).</p><p style=\"text-align:justify\"><b>Embarcar</b> (Atletismo CD 20, ação completa): para quem caiu; falha, é atacado pelo enxame.</p><p style=\"text-align:justify\"><b>Consertar Roda</b>: carroça parada, dois testes de Ladinagem ou Ofício CD 20; enquanto isso um enxame ataca (o grupo ou a carroça).</p><p style=\"text-align:justify\">Use a macro <b>CdR · Teste estendido</b> para o placar (5 sucessos).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura3"
+    },
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "b0c00621",
+      "assinaturas": [
+        "b0c00621"
+      ]
+    }
+  },
+  "_id": "TgXDDKrrLxPFm3kg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!TgXDDKrrLxPFm3kg"
+}

@@ -1,0 +1,150 @@
+{
+  "name": "A3 · Licor de Tinta de Kraken",
+  "img": "icons/consumables/potions/potion-flask-corked-pink.webp",
+  "folder": "KgCxEmYo5gTA4lVo",
+  "flags": {
+    "world": {
+      "cdr": "a3",
+      "cdrRole": "licorKraken"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-tabelas",
+      "assinatura": "e84d879c",
+      "assinaturas": [
+        "e84d879c"
+      ]
+    }
+  },
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "description": "Servido na entrada do leilão (Parte 2, Cena 5): \"É para dar sorte... se você estiver com sorte.\" Misticismo ou Ofício (alquimia) CD 20 percebe que é mágico, mas não o efeito.",
+  "_id": "T86A8FkGrg6s1vfy",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "results": [
+    {
+      "type": "text",
+      "range": [
+        1,
+        2
+      ],
+      "weight": 2,
+      "name": "Inebriado",
+      "description": "O personagem fica inebriado (–2 em testes de Destreza e Sabedoria e em perícias baseadas nesses atributos) até o fim do dia.",
+      "_id": "e6OHcOwBYQocgEH9",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!T86A8FkGrg6s1vfy.e6OHcOwBYQocgEH9"
+    },
+    {
+      "type": "text",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "name": "Nenhum efeito",
+      "description": "Só o gosto de tinta e alga.",
+      "_id": "kvCZLLPnJ8IRicU1",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!T86A8FkGrg6s1vfy.kvCZLLPnJ8IRicU1"
+    },
+    {
+      "type": "text",
+      "range": [
+        4,
+        5
+      ],
+      "weight": 2,
+      "name": "Sorte",
+      "description": "+2 em um atributo à escolha do personagem até o fim do dia.",
+      "_id": "pwEHyEvQgG9qi0Lt",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!T86A8FkGrg6s1vfy.pwEHyEvQgG9qi0Lt"
+    },
+    {
+      "type": "text",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "name": "Muita sorte",
+      "description": "+2 em um atributo à escolha até o fim do dia, mais [[/r 2d10]] PV temporários e [[/r 1d10]] PM temporários.",
+      "_id": "iM5DIAY6QVSb27Ja",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!T86A8FkGrg6s1vfy.iM5DIAY6QVSb27Ja"
+    }
+  ],
+  "_key": "!tables!T86A8FkGrg6s1vfy"
+}
