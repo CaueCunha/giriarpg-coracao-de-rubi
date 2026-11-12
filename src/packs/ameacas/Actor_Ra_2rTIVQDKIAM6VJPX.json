@@ -1160,7 +1160,7 @@
       "folder": null,
       "effects": [
         {
-          "_id": "MUrzvtaGMvCLRxeO",
+          "_id": "gOuA2dXltcwUOX9e",
           "flags": {
             "tormenta20": {}
           },
@@ -1220,10 +1220,10 @@
           "start": null,
           "showIcon": 1,
           "folder": null,
-          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.MUrzvtaGMvCLRxeO"
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.gOuA2dXltcwUOX9e"
         },
         {
-          "_id": "pLdZFZttmQcYM2gf",
+          "_id": "7OFgjoAajBwE8Q1e",
           "flags": {
             "tormenta20": {}
           },
@@ -1283,10 +1283,10 @@
           "start": null,
           "showIcon": 1,
           "folder": null,
-          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.pLdZFZttmQcYM2gf"
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.7OFgjoAajBwE8Q1e"
         },
         {
-          "_id": "emzRdWJD3Nn610Dd",
+          "_id": "DpJl5E1nHJ8ZDmFa",
           "flags": {
             "tormenta20": {}
           },
@@ -1346,10 +1346,10 @@
           "start": null,
           "showIcon": 1,
           "folder": null,
-          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.emzRdWJD3Nn610Dd"
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.DpJl5E1nHJ8ZDmFa"
         },
         {
-          "_id": "hzai8JoSBulNNGcL",
+          "_id": "Y9eBzAQmvTxkKoFK",
           "disabled": false,
           "duration": {
             "value": null,
@@ -1407,7 +1407,7 @@
           "start": null,
           "showIcon": 1,
           "folder": null,
-          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.hzai8JoSBulNNGcL"
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.Y9eBzAQmvTxkKoFK"
         }
       ],
       "_key": "!actors.items!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB"
@@ -3265,7 +3265,7 @@
       "folder": null,
       "effects": [
         {
-          "_id": "vr1mvLoNAjr0kzFk",
+          "_id": "thxC23yymTSn7geb",
           "flags": {
             "tormenta20": {}
           },
@@ -3333,10 +3333,10 @@
           "start": null,
           "showIcon": 1,
           "folder": null,
-          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.vr1mvLoNAjr0kzFk"
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.thxC23yymTSn7geb"
         },
         {
-          "_id": "4mjjwGR0xITCBgNW",
+          "_id": "gn452hQgE39OnYdd",
           "flags": {
             "tormenta20": {}
           },
@@ -3418,10 +3418,10 @@
           "start": null,
           "showIcon": 1,
           "folder": null,
-          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.4mjjwGR0xITCBgNW"
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.gn452hQgE39OnYdd"
         },
         {
-          "_id": "akpWTbxnAAT2vgBf",
+          "_id": "ubQBfQrzV0HqbL1b",
           "flags": {
             "tormenta20": {}
           },
@@ -3489,7 +3489,7 @@
           "start": null,
           "showIcon": 1,
           "folder": null,
-          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.akpWTbxnAAT2vgBf"
+          "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.ubQBfQrzV0HqbL1b"
         }
       ],
       "_key": "!actors.items!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5"

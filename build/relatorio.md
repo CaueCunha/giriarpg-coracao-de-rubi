@@ -121,13 +121,14 @@
 
 ## Patamar 2 · Veterano (aventuras 3 e 4)
 
-- Ameaças e NPCs: 12 documento(s)
-- Itens: 8 documento(s)
-- Diários: 3 documento(s)
-- Tabelas: 1 documento(s)
-- Macros: 2 documento(s)
+- Ameaças e NPCs: 32 documento(s)
+- Poderes: 2 documento(s)
+- Itens: 19 documento(s)
+- Diários: 6 documento(s)
+- Tabelas: 2 documento(s)
+- Macros: 3 documento(s)
 
-### Ligações com o sistema e o Giria T20 (63)
+### Ligações com o sistema e o Giria T20 (136)
 
 | Dono | Item | Tipo | O que foi feito |
 |---|---|---|---|
@@ -193,6 +194,79 @@
 | Guarda de Aslavi (besteiro) | Meia armadura | equipamento | origem no Giria T20 (manual) |
 | Guarda de Aslavi (besteiro) | Besta pesada | arma | ficha do livro + origem no sistema |
 | Guarda de Aslavi (besteiro) | Besta pesada | arma | origem no Giria T20 (uso) |
+| Aaron Sauer | Florete | arma | ficha do livro + origem no sistema |
+| Aaron Sauer | Florete | arma | origem no Giria T20 (uso) |
+| Aaron Sauer | Pistola | arma | ficha do livro + origem no sistema |
+| Aaron Sauer | Pistola | arma | origem no Giria T20 (uso) |
+| Aaron Sauer | Ataque Furtivo | poder | ficha do livro + origem no sistema |
+| Aaron Sauer | Ataque Furtivo | poder | origem no Giria T20 (uso) |
+| Aaron Sauer | Ódio Puro | poder | ficha do livro + origem no sistema |
+| Aaron Sauer | Saque Rápido | poder | ficha do livro + origem no sistema |
+| Aaron Sauer | Saque Rápido | poder | origem no Giria T20 (passivo) |
+| Aaron Sauer | Evasão | poder | ficha do livro + origem no sistema |
+| Aaron Sauer | Evasão | poder | origem no Giria T20 (script) |
+| Bando Pirata | Cimitarra | arma | ficha do livro + origem no sistema |
+| Bando Pirata | Cimitarra | arma | origem no Giria T20 (uso) |
+| Bando Pirata | Pernas do Mar | poder | ficha do livro + origem no sistema |
+| Bando Pirata | Pernas do Mar | poder | origem no Giria T20 (passivo) |
+| Bhalorg | Mordida | arma | ficha do livro + origem no sistema |
+| Bhalorg | Magia Acelerada | poder | ficha do livro + origem no sistema |
+| Bhalorg | Magia Acelerada | poder | origem no Giria T20 (uso) |
+| Bhalorg | Trespassar | poder | ficha do livro + origem no sistema |
+| Bhalorg | Trespassar | poder | origem no Giria T20 (uso) |
+| Bhalorg | Curar Ferimentos | magia | já era cópia do sistema |
+| Bhalorg | Curar Ferimentos | magia | link para o Giria T20 |
+| Bhalorg | Despedaçar | magia | já era cópia do sistema |
+| Bhalorg | Despedaçar | magia | link para o Giria T20 |
+| Bhalorg | Dissipar Magia | magia | já era cópia do sistema |
+| Bhalorg | Dissipar Magia | magia | link para o Giria T20 |
+| Bhalorg | Tempestade Divina | magia | já era cópia do sistema |
+| Bhalorg | Tempestade Divina | magia | link para o Giria T20 |
+| Bhalorg | Erupção Glacial | magia | já era cópia do sistema |
+| Bhalorg | Erupção Glacial | magia | link para o Giria T20 |
+| Bhalorg | Conjurar Elemental | magia | já era cópia do sistema |
+| Bhalorg | Conjurar Elemental | magia | link para o Giria T20 |
+| Bhalorg | Raio Polar | magia | já era cópia do sistema |
+| Bhalorg | Raio Polar | magia | link para o Giria T20 |
+| Capitã Alurra | Florete | arma | ficha do livro + origem no sistema |
+| Capitã Alurra | Florete | arma | origem no Giria T20 (uso) |
+| Capitã Alurra | Pernas do Mar | poder | ficha do livro + origem no sistema |
+| Capitã Alurra | Pernas do Mar | poder | origem no Giria T20 (passivo) |
+| Capitã Alurra | Evasão | poder | ficha do livro + origem no sistema |
+| Capitã Alurra | Evasão | poder | origem no Giria T20 (script) |
+| Ginete de Serpe | Mangual | arma | ficha do livro + origem no sistema |
+| Ginete de Serpe | Mangual | arma | origem no Giria T20 (uso) |
+| Goblin | Espada longa | arma | ficha do livro + origem no sistema |
+| Goblin | Espada longa | arma | origem no Giria T20 (uso) |
+| Goblin | Arco longo | arma | ficha do livro + origem no sistema |
+| Goblin | Arco longo | arma | origem no Giria T20 (uso) |
+| Revoada de Serpes | Mordida | arma | ficha do livro + origem no sistema |
+| Revoada de Serpes | Ferrão | arma | ficha do livro + origem no sistema |
+| Revoada de Serpes | Agarrar Aprimorado | poder | ficha do livro + origem no sistema |
+| Pudim Alvinegro | Pancada | arma | ficha do livro + origem no sistema |
+| Pudim Alvinegro | Agarrar Aprimorado | poder | ficha do livro + origem no sistema |
+| Thalliathos | Amedrontar | magia | já era cópia do sistema |
+| Thalliathos | Amedrontar | magia | link para o Giria T20 |
+| Thalliathos | Armadura Arcana | magia | já era cópia do sistema |
+| Thalliathos | Armadura Arcana | magia | link para o Giria T20 |
+| Thalliathos | Enfeitiçar | magia | já era cópia do sistema |
+| Thalliathos | Enfeitiçar | magia | link para o Giria T20 |
+| Thalliathos | Bola de Fogo | magia | já era cópia do sistema |
+| Thalliathos | Bola de Fogo | magia | link para o Giria T20 |
+| Thalliathos | Campo de Força | magia | já era cópia do sistema |
+| Thalliathos | Campo de Força | magia | link para o Giria T20 |
+| Thalliathos | Vidência | magia | já era cópia do sistema |
+| Thalliathos | Vidência | magia | link para o Giria T20 |
+| Thalliathos | Mão Poderosa | magia | já era cópia do sistema |
+| Thalliathos | Mão Poderosa | magia | link para o Giria T20 |
+| Thalliathos | Talho Invisível | magia | já era cópia do sistema |
+| Thalliathos | Talho Invisível | magia | link para o Giria T20 |
+| Turba de Zumbis do Pântano | Pancada | arma | ficha do livro + origem no sistema |
+| Verme do Gelo Larva | Mordida | arma | ficha do livro + origem no sistema |
+| Verme do Gelo Larva | Agarrar Aprimorado | poder | ficha do livro + origem no sistema |
+| Verme do Gelo Larva | Engolir | poder | ficha do livro + origem no sistema |
+| Verme do Pântano | Mordida | arma | ficha do livro + origem no sistema |
+| Verme do Pântano | Agarrar Aprimorado | poder | ficha do livro + origem no sistema |
 | (item) | Adaga do Último Suspiro | arma | já era cópia do sistema |
 
 ### Avisos do Foundry simulado (0)
@@ -213,10 +287,10 @@
 
 ## Compêndios
 
-- `ameacas` (Ameaças e NPCs): 47 documento(s), 11 pasta(s)
-- `poderes` (Poderes): 5 documento(s), 6 pasta(s)
-- `itens` (Itens): 27 documento(s), 5 pasta(s)
-- `diarios` (Diários): 12 documento(s), 5 pasta(s)
-- `tabelas` (Tabelas): 2 documento(s), 4 pasta(s)
-- `macros` (Macros): 14 documento(s), 7 pasta(s)
+- `ameacas` (Ameaças e NPCs): 67 documento(s), 14 pasta(s)
+- `poderes` (Poderes): 7 documento(s), 8 pasta(s)
+- `itens` (Itens): 38 documento(s), 6 pasta(s)
+- `diarios` (Diários): 15 documento(s), 6 pasta(s)
+- `tabelas` (Tabelas): 3 documento(s), 5 pasta(s)
+- `macros` (Macros): 15 documento(s), 8 pasta(s)
 

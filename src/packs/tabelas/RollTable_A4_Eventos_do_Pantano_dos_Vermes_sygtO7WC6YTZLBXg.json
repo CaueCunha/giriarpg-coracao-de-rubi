@@ -1,0 +1,366 @@
+{
+  "name": "A4 · Eventos do Pântano dos Vermes",
+  "img": "icons/svg/hazard.svg",
+  "folder": "ARMhlWJRadmDeIl9",
+  "flags": {
+    "world": {
+      "cdr": "a4",
+      "cdrRole": "eventosPantano"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-tabelas",
+      "assinatura": "4372c8df",
+      "assinaturas": [
+        "4372c8df"
+      ]
+    }
+  },
+  "formula": "1d12",
+  "replacement": true,
+  "displayRoll": true,
+  "description": "Uma rolagem por hora de travessia (teste estendido de Sobrevivência CD 25, 5 sucessos). Resultado repetido vira o evento 1.",
+  "_id": "sygtO7WC6YTZLBXg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "results": [
+    {
+      "type": "text",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "name": "Pântano dos Mortos",
+      "description": "Corpos humanoides inchados se erguem das águas, com fome. Duas @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.OVwTAToZfchCoE8r]{turbas de zumbis do pântano}.",
+      "_id": "xWkBxRMalqCHCG0F",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.xWkBxRMalqCHCG0F"
+    },
+    {
+      "type": "text",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "name": "Macaquinhos Travessos",
+      "description": "Micos com pelo de folhagem na barriga jogam uma pedra que faz faísca no gás: todos sofrem [[/r 8d6[fogo]]] de fogo (Ref CD 20 reduz à metade).",
+      "_id": "GEYmH0rAFizRTCfP",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.GEYmH0rAFizRTCfP"
+    },
+    {
+      "type": "text",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "name": "Lamaçal",
+      "description": "Lodo como piche: Fortitude CD 20 ou @STATUS[fatigado] até o fim do dia. Ideias e habilidades podem dar bônus.",
+      "_id": "GqfcB1VEtrDSaWk5",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.GqfcB1VEtrDSaWk5"
+    },
+    {
+      "type": "text",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "name": "Mensagem Numa Garrafa",
+      "description": "Garrafa esverdeada com um papel em anão (Conhecimento CD 15): \"Morreram todos. Logo morrerei. Não faça como nós. Proteja-se do ácido.\"",
+      "_id": "HGbHC9a7nKPyUOFy",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.HGbHC9a7nKPyUOFy"
+    },
+    {
+      "type": "text",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "name": "Gases Tóxicos",
+      "description": "Cheiro adocicado, lábios em espasmos, cabeça leve: Fortitude CD 20 ou @STATUS[alquebrado] até o fim do dia.",
+      "_id": "TITTiLkryjiGwCms",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.TITTiLkryjiGwCms"
+    },
+    {
+      "type": "text",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "name": "Esqueleto Blindado",
+      "description": "Esqueleto limpo preso nas raízes de uma árvore, ainda com uma @UUID[Compendium.giria-t20.livro-basico.Item.JVB4JAaxPjf0PFFN]{couraça} de aço intacta: é uma couraça polida cáustica.",
+      "_id": "iLS2mRlulosPZQA5",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.iLS2mRlulosPZQA5"
+    },
+    {
+      "type": "text",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "name": "Águas Profundas",
+      "description": "O pântano fica fundo: Atletismo CD 20 para nadar (penalidade de armadura conta). Quem falha fica @STATUS[fatigado].",
+      "_id": "6BTvAY0j2J4quR51",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.6BTvAY0j2J4quR51"
+    },
+    {
+      "type": "text",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "name": "Poção Surpresa",
+      "description": "Uma garrafa amarrada num cipó esbarra no ombro: @UUID[Compendium.giria-t20.livro-basico.Item.WrtZs4ql74DKHLKm]{poção de resistência a energia}.",
+      "_id": "Zx6BJTlcIn8UhTBq",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.Zx6BJTlcIn8UhTBq"
+    },
+    {
+      "type": "text",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "name": "Gases Venenosos",
+      "description": "Nuvem esverdeada que queima os pulmões: todos ficam @STATUS[envenenado], perdem [[/r 2d12]] PV por 3 rodadas e ficam @STATUS[fraco] (Fort CD 20 reduz para 1 rodada e evita a condição).",
+      "_id": "6uQt4XQ9LYbSAzuG",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.6uQt4XQ9LYbSAzuG"
+    },
+    {
+      "type": "text",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "name": "Um Tronco no Caminho",
+      "description": "Árvore gigantesca tombada: contornar leva duas horas, menos 15 minutos por personagem que passe em Atletismo ou Sobrevivência CD 20 (Controlar Plantas, Desintegrar etc. contam como sucesso).",
+      "_id": "8lGGBEYfF9HyUHWY",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.8lGGBEYfF9HyUHWY"
+    },
+    {
+      "type": "text",
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "name": "Pântano dos Mortos 2: o Inimigo Agora é Outro!",
+      "description": "Zumbis bloqueiam a passagem, mas dois @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.uATOLkTQbVnnhPiT]{vermes do pântano} explodem do lodo, engolem os zumbis e se viram contra o grupo.",
+      "_id": "lCUulFxaN3dbdQ3h",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.lCUulFxaN3dbdQ3h"
+    },
+    {
+      "type": "text",
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "name": "Macaquinhos Solícitos",
+      "description": "Micos com pelo de caveira deixam cair uma pedra colorida. Percepção CD 15 para devolver: os micos guiam o grupo (conta como um sucesso no teste estendido, uma hora a menos). Se forem grossos, jogam fezes e fogem.",
+      "_id": "nrRnQ0Yi2KR5sEmw",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!sygtO7WC6YTZLBXg.nrRnQ0Yi2KR5sEmw"
+    }
+  ],
+  "_key": "!tables!sygtO7WC6YTZLBXg"
+}

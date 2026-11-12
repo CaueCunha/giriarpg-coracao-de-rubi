@@ -1,0 +1,52 @@
+{
+  "name": "Ases nas Alturas",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "BqcHzDr8JgHlSn7U",
+  "system": {
+    "attributes": {
+      "nd": "—"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 4, Cena 8 (batalha aérea sobre a nuvem).</b></p><p style=\"text-align:justify\">Sobreviver ao ataque final de Aaron Sauer sobre a nuvem mágica (quadrado de 4,5 m) presa ao Vento Vasto por arpões. Com Aaron morto, a luta acaba.</p>",
+      "effects": "<p style=\"text-align:justify\">No começo de cada rodada, o Vento Vasto dispara os canhões: todos na nuvem sofrem [[/r 6d6[impacto]]] (Ref CD 20 reduz à metade).</p><p style=\"text-align:justify\">Personagem na borda que sofre dano faz Acrobacia CD 10 + metade do dano; se falhar, cai a 9 m por rodada (campo de levitação de Vectora). Passou de 30 m, sai do campo e despenca. Os vilões lutam no campo sem cair.</p><p style=\"text-align:justify\">Use a macro <b>A4 · Ases nas Alturas</b>.</p>",
+      "actions": "<p style=\"text-align:justify\">Com Masaru como parceiro, o herói gasta uma ação de movimento para Masaru voar até quem cai e trazê-lo de volta.</p><p style=\"text-align:justify\">Quem sabe dos motivos dos piratas pode virar qualquer um deles com Diplomacia CD 30.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura4"
+    },
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "cdaa4cb9",
+      "assinaturas": [
+        "cdaa4cb9"
+      ]
+    }
+  },
+  "_id": "748dutSspGvRhrtB",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!748dutSspGvRhrtB"
+}

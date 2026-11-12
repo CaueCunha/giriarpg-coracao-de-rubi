@@ -1,0 +1,217 @@
+{
+  "name": "Parceiro: Masaru Yuudai",
+  "type": "poder",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Mestre de mahou-jutsu lefou do templo Ozora. Não quer ficar longe de Vectora por muito tempo (convencer pode exigir perícias sociais CD 20). Começa como parceiro <b>iniciante</b>: +2 em ataques corpo a corpo.</p><p style=\"text-align:justify\"><b>Veterano</b> (cumpra: ( ) conversar longamente sobre destruir a Tormenta; ( ) contar sobre as pessoas que o herói perdeu; ( ) treinar com Masaru em Ozora): uma vez por rodada causa 3d6 de eletricidade, fogo ou frio num alvo atingido por um ataque corpo a corpo do herói.</p><p style=\"text-align:justify\"><b>Mestre</b> (cumpra: ( ) aprender mahou-jutsu; ( ) presentear Masaru com uma relíquia de Tamu-ra): uma vez por cena, como ação livre, um jutsu: <b>Forma Espiritual</b> (invisível e incorpóreo, desloca em qualquer direção por 1d6 rodadas); <b>Integridade Corporal</b> (recupera 6d8 PV); <b>Mente Ausente</b> (imune a confusão, +2 em ataques e Vontade por uma cena); <b>Toque Paralisante</b> (criatura adjacente faz Fort CD Sab ou fica paralisada por 1d4 rodadas).</p><p style=\"text-align:justify\">Masaru ensina @UUID[Compendium.giria-t20.herois-de-arton.Item.7EXRSoIMUQZOdLlc]{Mahou-Jutsu} a quem se mostrar honrado (um poder geral ao subir de nível, ou por treinamento).</p><p style=\"text-align:justify\"><b>Automação:</b> use o efeito do nível atual no ataque (opções abaixo).</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Caravana Cartesiana",
+    "tipo": "ability",
+    "ativacao": {
+      "execucao": "passive",
+      "custo": 0,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "subtipo": ""
+  },
+  "folder": "e5J48Tl8dSqEFHB2",
+  "flags": {
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "86b81cdc",
+      "assinaturas": [
+        "86b81cdc"
+      ]
+    }
+  },
+  "_id": "B8pvVjY29j04Hajg",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "name": "Masaru iniciante (+2 corpo a corpo)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "+2 em ataques corpo a corpo.",
+      "system": {
+        "changes": [
+          {
+            "key": "ataque",
+            "value": "2",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "attack"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "rZLJXeBGjgob4POC",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!B8pvVjY29j04Hajg.rZLJXeBGjgob4POC"
+    },
+    {
+      "name": "Masaru veterano (+3d6 elemental)",
+      "img": "icons/magic/fire/flame-burning-embers-yellow.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "Uma vez por rodada: +3d6 de eletricidade, fogo ou frio.",
+      "system": {
+        "changes": [
+          {
+            "key": "dano",
+            "value": "3d6",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "attack"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "Mp8dMMDVDYfibxt0",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!B8pvVjY29j04Hajg.Mp8dMMDVDYfibxt0"
+    }
+  ],
+  "_key": "!items!B8pvVjY29j04Hajg"
+}

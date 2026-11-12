@@ -1,0 +1,40 @@
+{
+  "name": "A4 · Ases nas Alturas",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/wing.svg",
+  "folder": "OVJUxR8b0sOEp4SR",
+  "flags": {
+    "world": {
+      "cdr": "a4",
+      "cdrRole": "asesNasAlturas"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-macros",
+      "assinatura": "2b8eae4c",
+      "assinaturas": [
+        "2b8eae4c"
+      ]
+    }
+  },
+  "command": "// A4 · Ases nas Alturas (Caravana Cartesiana, Parte 4, Cena 8). Só o mestre.\n// Selecione os tokens na nuvem. \"Canhões\" rola o dano do Vento Vasto e os Reflexos de cada um (CD 20, metade).\n// \"Teste de borda\" rola Acrobacia (CD 10 + metade do dano) de quem está na borda e sofreu dano.\nif (!game.user.isGM) return ui.notifications.warn(\"Só o mestre roda esta macro.\");\nconst { DialogV2 } = foundry.applications.api;\nconst atores = canvas.tokens.controlled.map((t) => t.actor).filter(Boolean);\nif (!atores.length) return ui.notifications.warn(\"Selecione os tokens na nuvem.\");\nconst val = (a, id) => a?.system?.pericias?.[id]?.value ?? 0;\nconst r = await DialogV2.wait({\n\twindow: { title: \"Ases nas Alturas\" }, rejectClose: false,\n\tcontent: '<p>' + atores.map((a) => a.name).join(\", \") + '</p><label>Dano sofrido (para o teste de borda) <input type=\"number\" name=\"dano\" value=\"10\" min=\"0\"></label>',\n\tbuttons: [\n\t\t{ action: \"canhoes\", label: \"Canhões do Vento Vasto\", default: true, callback: () => ({ a: \"canhoes\" }) },\n\t\t{ action: \"borda\", label: \"Teste de borda\", callback: (e, b) => ({ a: \"borda\", dano: Number(b.form.elements.dano.value) || 0 }) }\n\t]\n});\nif (!r) return;\nlet html = \"\";\nif (r.a === \"canhoes\") {\n\tconst dano = (await new Roll(\"6d6\").evaluate()).total;\n\thtml = \"<p>Canhões: <b>\" + dano + \"</b> de impacto (Ref CD 20 reduz à metade).</p>\";\n\tfor (const a of atores) {\n\t\tconst t = (await new Roll(\"1d20 + \" + val(a, \"refl\")).evaluate()).total;\n\t\thtml += \"<p>\" + a.name + \": Reflexos \" + t + \" → <b>\" + (t >= 20 ? Math.floor(dano / 2) : dano) + \"</b> de dano.</p>\";\n\t}\n} else {\n\tconst cd = 10 + Math.floor(r.dano / 2);\n\tfor (const a of atores) {\n\t\tconst t = (await new Roll(\"1d20 + \" + val(a, \"acro\")).evaluate()).total;\n\t\thtml += \"<p>\" + a.name + \": Acrobacia \" + t + \" vs CD \" + cd + \" → \" + (t >= cd ? \"se segura\" : \"<b>cai</b> (9 m por rodada; passou de 30 m, despenca)\") + \".</p>\";\n\t}\n}\nChatMessage.create({ whisper: ChatMessage.getWhisperRecipients(\"GM\").map((u) => u.id), content: \"<h3>Ases nas Alturas</h3>\" + html });",
+  "_id": "C9SsDSG6LCIWDGFu",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "author": null,
+  "_key": "!macros!C9SsDSG6LCIWDGFu"
+}

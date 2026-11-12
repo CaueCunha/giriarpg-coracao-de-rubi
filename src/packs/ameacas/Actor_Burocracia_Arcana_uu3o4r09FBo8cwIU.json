@@ -1,0 +1,52 @@
+{
+  "name": "Burocracia Arcana",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "BqcHzDr8JgHlSn7U",
+  "system": {
+    "attributes": {
+      "nd": "12"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 1, Cena 6 (Castelo Vectorius).</b></p><p style=\"text-align:justify\">Conseguir o visto de permanência em Vectora e a permissão para usar a magia de Raisenzan na cidade: <b>7 sucessos</b> entre Preencher Formulário e Responder Entrevista.</p>",
+      "effects": "<p style=\"text-align:justify\">No fim de cada rodada, cada personagem faz Vontade CD 20 (+2 por teste já feito). Falha: @STATUS[frustrado]; falha por 10+: também @STATUS[atordoado] por uma rodada. Já frustrado: @STATUS[esmorecido]. Já esmorecido: surta e sai da cena.</p><p style=\"text-align:justify\">Todos surtaram antes dos 7 sucessos: sem visto (tentar de novo em uma semana, sem a proteção da lei). Todos os testes com sucesso: carta de recomendação de Vectorius (20% de desconto por conta dos cofres da cidade).</p>",
+      "actions": "<p style=\"text-align:justify\"><b>Preencher Formulário</b> (Conhecimento ou Nobreza CD 25).</p><p style=\"text-align:justify\"><b>Responder Entrevista</b> (Diplomacia ou Enganação CD 25): convencer uma cópia de Vectorius.</p><p style=\"text-align:justify\"><b>Debater Planos</b> (qualquer perícia justificável, CD 10): ajudar um colega.</p><p style=\"text-align:justify\">Use a macro <b>CdR · Teste estendido</b> (7 sucessos).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura4"
+    },
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "2258a4ac",
+      "assinaturas": [
+        "2258a4ac"
+      ]
+    }
+  },
+  "_id": "uu3o4r09FBo8cwIU",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!uu3o4r09FBo8cwIU"
+}

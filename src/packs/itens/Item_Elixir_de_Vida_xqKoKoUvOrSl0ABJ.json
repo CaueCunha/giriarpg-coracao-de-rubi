@@ -1,0 +1,127 @@
+{
+  "name": "Elixir de Vida",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/balsamo-restaurador.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Tônico analgésico de Salistick. Ingerir é uma ação padrão e recupera 4d6 PV. Preparado alquímico; a CD para fabricar aumenta em +5.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Caravana Cartesiana",
+    "qtd": 1,
+    "preco": 210,
+    "ativacao": {
+      "execucao": "action",
+      "custo": 0,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "rolls": [
+      {
+        "name": "Cura",
+        "key": "formula0",
+        "type": "formula",
+        "parts": [
+          [
+            "4d6",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ],
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "tipo": "",
+    "subtipo": ""
+  },
+  "folder": "XFZE185KT6H6JqD9",
+  "flags": {
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "ce464447",
+      "assinaturas": [
+        "ce464447"
+      ]
+    }
+  },
+  "_id": "xqKoKoUvOrSl0ABJ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!xqKoKoUvOrSl0ABJ"
+}

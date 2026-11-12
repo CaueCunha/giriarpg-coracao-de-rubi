@@ -21,7 +21,7 @@ export const ATOS = [
 		id: "patamar2",
 		rotulo: "Patamar 2 · Veterano (aventuras 3 e 4)",
 		cor: "#7a3f5f",
-		geradores: ["a3-blefe-fatal"]
+		geradores: ["a3-blefe-fatal", "a4-caravana-cartesiana"]
 	},
 	{
 		id: "campanha",

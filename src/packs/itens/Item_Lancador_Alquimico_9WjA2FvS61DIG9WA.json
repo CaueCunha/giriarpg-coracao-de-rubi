@@ -1,0 +1,96 @@
+{
+  "name": "Lançador Alquímico",
+  "type": "equipamento",
+  "img": "systems/tormenta20/icons/itens/equipamentos/mosquete.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Cano grosso com empunhadura e gatilho de Salistick. Carregar um preparado ou poção é uma ação padrão. Exige as duas mãos e arremessa o item carregado em alcance médio, com +2 na CD para resistir ao efeito. Equipamento de aventura.</p><p style=\"text-align:justify\">O @UUID[Compendium.giria-t20.ameacas-de-arton.Item.P9e9cFFwm8AvSBwA]{bacamarte} também é vendido livremente em Yuton.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Caravana Cartesiana",
+    "tipo": "acessorio",
+    "preco": 600,
+    "peso": 0,
+    "espacos": 2,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "qtd": 1,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "rolls": [],
+    "equipado": false,
+    "equipado2": {
+      "slot": 0,
+      "type": "body"
+    },
+    "armadura": {
+      "maxAtr": 0,
+      "penalidade": 0,
+      "value": 0
+    }
+  },
+  "folder": "XFZE185KT6H6JqD9",
+  "flags": {
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "9ffdae7d",
+      "assinaturas": [
+        "9ffdae7d"
+      ]
+    }
+  },
+  "_id": "9WjA2FvS61DIG9WA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!9WjA2FvS61DIG9WA"
+}
