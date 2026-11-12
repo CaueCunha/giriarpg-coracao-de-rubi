@@ -1,0 +1,30 @@
+{
+  "name": "Ameaças",
+  "type": "Actor",
+  "folder": "tr3KetT7rrQmSh0c",
+  "color": "#7a3f5f",
+  "flags": {
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2"
+    }
+  },
+  "_id": "Y16AUXXacHBwT84S",
+  "description": "",
+  "sorting": "a",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!Y16AUXXacHBwT84S"
+}

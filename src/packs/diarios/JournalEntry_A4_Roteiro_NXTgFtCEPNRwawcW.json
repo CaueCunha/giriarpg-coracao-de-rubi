@@ -1,0 +1,266 @@
+{
+  "name": "A4 · Roteiro",
+  "folder": "L8GvGJDv7ZoEcEkR",
+  "flags": {
+    "world": {
+      "cdr": "a4",
+      "cdrRole": "roteiro"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-diarios",
+      "assinatura": "beb95cd1",
+      "assinaturas": [
+        "beb95cd1"
+      ]
+    }
+  },
+  "_id": "NXTgFtCEPNRwawcW",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\"><b>Caravana Cartesiana</b> (livro, pp. 63–83). Personagens do 11º ao 15º nível. Uma volta ao mundo a bordo de Vectora para restaurar o Parvathar com as quatro energias elementais puras.</p><p style=\"text-align:justify\"><b>Parte 1:</b> Vectora, Dhormûg, Masaru e o dragão Raisenzan (eletricidade). <b>Parte 2:</b> Salistick e o Pântano dos Vermes (ácido), com os piratas do Vento Vasto. <b>Parte 3:</b> Sckharshantallas, o jantar de Sckhar e Thalliathos (fogo). <b>Parte 4:</b> as Uivantes e o santuário de Beluhga (frio), e a batalha aérea contra Aaron Sauer.</p><p style=\"text-align:justify\">Por trás de tudo, o espião purista @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.h7PZYJdME0xOeAv2]{Aaron Sauer}: raptou Raijin para chantagear Kaminari e a filha de Alurra para usar os piratas. Leve o @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.wv2BDn3GiDbUgJuZ]{Parvathar, o Pulmão da Montanha} (ele não pode ser teletransportado nesta fase).</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "tKzDuDvPsKa9ppAW",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!NXTgFtCEPNRwawcW.tKzDuDvPsKa9ppAW"
+    },
+    {
+      "name": "Parte 1 — Amigos de Alta Estirpe",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — O Mercado nas Nuvens:</b> Praça da estátua de Vectorius. Um guarda anão inspeciona o fole (\"Que Khalmyr arranque a minha barba se isso não é artesanato anão!\") e explica a lei: proibida magia que cause prejuízo ou permita trapaça (encantamentos, ilusões, transmutações). Estalagens dez vezes mais caras; tudo do livro básico à venda (itens mágicos com Investigação). Investigação CD 20 sobre o fole: procurem Dhormûg (Intuição CD 20: as intenções são legítimas).</li><li><b>Cena 2 — Oficina Assistência Arcana:</b> Bairro de Mucro. Dhormûg, jovem anã inventora de tranças cor de cobre, alegre e tagarela: \"Seja qual for a peça com defeito, eu dou um jeito!\" Reconhece o Parvathar (feito pela família dela), explica que precisa absorver as quatro energias puras e indica Masaru Yuudai, no templo Ozora. <b>O Espião:</b> um rapaz loiro de vestes brancas imaculadas, \"Sauer, mercador de Valkaria\".</li><li><b>Cena 3 — O Templo Ozora:</b> Torre de turmalina azul, antigo altar de Hydora, alunos treinando no ar. Masaru (lefou, cicatrizes vermelhas) medita no chão; o que voa no teto é uma projeção. Para falar com ele, é preciso voar até o teto (poções e pergaminhos de voo à venda). @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.kAWBn54hurpHYMFc]{Kaminari} e @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.u56r8IEdQ0PiXtne]{Raijin} atacam como parte do treino. Metade do grupo caído: \"Basta!\" e voltem depois. Um gêmeo caído ou os dois com menos de 10 PV: Masaru recebe o grupo.</li><li><b>Cena 4 — Raisenzan e as Energias Elementais:</b> A estátua do pilar é o dragão celestial Raisenzan (preguiçoso e debochado; @UUID[Compendium.giria-t20.ameacas.Actor.plWHj0nqvGL15Jix]{ficha de dragão celestial}). O sopro dele energiza o Parvathar com eletricidade. O mapa de raios aponta: um pântano perto de Yuton, a capital de Sckharshantallas e um cume nas Uivantes. Dhormûg explica as habilidades do artefato. Masaru pode acompanhar como @UUID[Compendium.giriarpg-coracao-de-rubi.poderes.Item.B8pvVjY29j04Hajg]{parceiro}.</li><li><b>Cena 5 — Carona de dragão:</b> Raisenzan entrega o @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.DcGQ6C1SqnXAEJdK]{Apito de Raisenzan}. Hospedagem em Ozora, mas é preciso pedir documentos no palácio.</li><li><b>Cena 6 — Audiência em Vectora:</b> Castelo Vectorius, cópias do arquimago carimbando papéis. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.uu3o4r09FBo8cwIU]{Burocracia Arcana}. Prêmio máximo: @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.fjoH9J552WnXzAER]{Carta de recomendação de Vectorius}.</li><li><b>Cena 7 — Traição Celeste:</b> Separe um aventureiro: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.kAWBn54hurpHYMFc]{Kaminari} ataca chorando e pedindo desculpas, e foge com metade dos PV. (Aaron raptou Raijin.)</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "8aJr9Wo6QUOZW7gL",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!NXTgFtCEPNRwawcW.8aJr9Wo6QUOZW7gL"
+    },
+    {
+      "name": "Parte 2 — Pântano, Pudim e Piratas",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — O Lugar Esquecido pelos Deuses:</b> Yuton, capital de Salistick. Magia divina enfraquecida (rolagens de efeito no mínimo, CD –5; +2 PM cancela). Medicina, alquimia e pólvora livres: @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.D1n34DvlfXs0P0YD]{Antídoto Universal}, @UUID[Compendium.giria-t20.ameacas-de-arton.Item.P9e9cFFwm8AvSBwA]{bacamarte} (T$ 450), @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.xqKoKoUvOrSl0ABJ]{Elixir de Vida}, @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.9WjA2FvS61DIG9WA]{Lançador Alquímico}, @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.cXqlQgtlt0P6P45s]{Pomada Protetora}, @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.0zahofDPzIVVmDLA]{Tônico Revigorante}. Investigação: <b>10</b> o nome vem dos vermes nos mortos-vivos; <b>15</b> um dragão ronda o pântano / dizem que é o lar de Mzzylein; <b>20</b> o pântano é o laboratório necromântico de Mzzylein.</li><li><b>Cena 2 — Pântano dos Vermes:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.rmVmORF6zdkJ1Woz]{Travessia do Pântano dos Vermes} com a tabela @UUID[Compendium.giriarpg-coracao-de-rubi.tabelas.RollTable.sygtO7WC6YTZLBXg]{Eventos do Pântano dos Vermes}.</li><li><b>Cena 3 — Pudim Alvinegro:</b> Um esqueleto de dragão envolto em gosma negra se ergue do lamaçal: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.ADVil92vxKaxI4sG]{Pudim Alvinegro}. Derrotado, o Parvathar absorve o ácido.</li><li><b>Cena 4 — Piratas!:</b> O dirigível Vento Vasto (proa de raposa, peças de navios diferentes). @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.YZCHunrt6P1zENrC]{Capitã Alurra}, @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.Bo0iJUzBuO8asWiV]{Goblin}, @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.kAWBn54hurpHYMFc]{Kaminari} e um @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.zRVDf1J8ZOaKpCsI]{bando pirata} por aventureiro. Líderes derrotados: fogem (vá para a Parte 3). Piratas vencem: Cena 5.</li><li><b>Cena 5 — Prisioneiros num Navio:</b> Vento Vasto: 90 × 15 m, dois andares. Desarmados, amarrados, conjuradores amordaçados; acordam com metade do nível em PV e PM. Soltar-se: Força ou Acrobacia CD 25 (falha: 1d3 de dano). Porta: fechadura CD 20 (–5 sem ferramentas) ou Força CD 15 (barulho). Os piratas dividem o butim numa sala de estoque: 4 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.zRVDf1J8ZOaKpCsI]{bandos piratas} com as armas dos heróis; tesouro de [[/r 2d4*10000]] T$. Subir é suicídio (6 bandos e os líderes; Alurra joga os heróis para fora). O navio já está nas docas de Vectora.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "VBsdDEuMSobZvTiw",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!NXTgFtCEPNRwawcW.VBsdDEuMSobZvTiw"
+    },
+    {
+      "name": "Parte 3 — A Chama do Rei",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — Presente de Dragão:</b> Raisenzan não entra em Sckharshantallas (\"Tenho apenas 600 anos, sou jovem demais para morrer!\"), mas entrega a @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.0okiYnEEmN8jGAzJ]{Tiara de Beluhga}.</li><li><b>Cena 2 — Sob a Sombra do Dragão:</b> Tyros, feudo de Trebuck. Só se entra por terra. Fortitude CD 15 (20 de armadura pesada) ou fatigado até o fim da jornada. Emboscada: 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.o3PbyQQ3CA6Ve3jo]{ginetes de serpe} e uma @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.3NzXBDTY1hrISaM7]{revoada de serpes}.</li><li><b>Cena 3 — Dia do Tributo:</b> Ghallistryx. Fila de oferendas ao castelo; com a tiara de Beluhga, as aias levam o grupo a Schaven, filho de Sckhar, que convida para o jantar. Trajes: T$ 100 (aceitáveis) ou T$ 1.000 (luxuosos, +2 na cena); presentes T$ 300 cada. Alurra também foi convidada (deu a Sckhar o crânio do \"dragão que ela matou\").</li><li><b>Cena 4 — Que Convença o Melhor:</b> Sckhar entra em forma élfica com o crânio, elogia Alurra e sai. Schaven escolhe Alurra como agente. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.j8Rww7OZZmwK8YBd]{Jogo de Influências}.</li><li><b>Cena 5 — A Ordem do Rei:</b> Schaven quer remover o irmão Thalliathos, barão de Tyros, que parou de repassar tributos. @UUID[Compendium.giriarpg-coracao-de-rubi.poderes.Item.ubCGsQG6cCm18cle]{Schaven acompanha como parceiro destruidor mestre}.</li><li><b>Cena 6 — Jantar à Luz de Chamas:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.7Bhq7QaPCv8k6cWt]{Thalliathos} põe a coroa de rubi e cresce. A 0 PV vira um @UUID[Compendium.giria-t20.ameacas.Actor.eHAHgDlAXql7oMgP]{dragão adulto} com PV e PM restaurados. Derrotado, a coroa se despedaça e o rubi solta a névoa de fogo para o Parvathar. Saquear Tyros (tesouro de ND 14 dobrado) é escolha moral do grupo. O apito chama a nuvem de volta.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "d6Zbk3RvpG4GJxr8",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!NXTgFtCEPNRwawcW.d6Zbk3RvpG4GJxr8"
+    },
+    {
+      "name": "Parte 4 — Enterrem Meu Coração nas Uivantes",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — Entrando Numa Fria:</b> Masaru indica o santuário de Beluhga; a nuvem só leva até a base. Dhormûg quer inspecionar o Parvathar.</li><li><b>Cena 2 — O Cliente sem Razão:</b> Aaron negocia uma harpa com Dhormûg (\"Oh, seus clientes preferidos chegaram\"). Quando as Uivantes forem mencionadas: Percepção oposta à Furtividade de Aaron (+17); quem passar o vê ouvindo pela janela.</li><li><b>Cena 2,5 — Tá Chovendo Goblin:</b> Quem seguir Aaron é interceptado por @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.Bo0iJUzBuO8asWiV]{Goblin} e 2 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.zRVDf1J8ZOaKpCsI]{bandos piratas}. Goblin capturado fala (Intimidação ou oferta); Intimidação CD 25: Aaron é purista e contratou o Vento Vasto.</li><li><b>Cena 3 — A Montanha dos Ventos:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.2vKh2Qd1F6HBFCpH]{Escalada nas Uivantes}. Platô congelado: 4 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.9oTcCQwod4SKaMJX]{vermes do gelo larva}.</li><li><b>Cena 4 — A Vila no Gelo:</b> Korm (humanos e anões). Kirima, o guia de bigode espesso com dois lobos: T$ 100 por dia; @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.mSqAdo2ZyYhPU2Qw]{Roupas de frio de Kirima} por T$ 30.</li><li><b>Cena 5 — Para o Alto e ao Vento:</b> Subida e tempestade (@UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.2vKh2Qd1F6HBFCpH]{veja o perigo}).</li><li><b>Cena 6 — Caverna Congelada:</b> Kirima espera do lado de fora. Caverna de gelo eterno. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.9OxHCT9OVBDEN3V5]{Desmoronamento}.</li><li><b>Cena 7 — O Guardião do Inverno:</b> Câmara de pilastras de gelo e o corpo de Beluhga em forma humana. Quem não tem imunidade a frio ou resistência a frio 10+ fica @STATUS[lento]. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.7OsK9sLENZ3WpEL4]{Bhalorg}; a 0 PV volta a ser humano: conversar (ele devolve a joia, energiza o Parvathar com frio e cura 10d8+10 PV e 2d8 PM de cada um) ou matar (vira cristais; a joia fica).</li><li><b>Cena 8 — Ases nas Alturas:</b> O Vento Vasto arpoa a nuvem. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.h7PZYJdME0xOeAv2]{Aaron Sauer} com Alurra, Kaminari, Goblin (se vivos) e 4 bandos piratas. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.748dutSspGvRhrtB]{Ases nas Alturas} e a macro <b>A4 · Ases nas Alturas</b>.</li><li><b>Epílogo:</b> Dhormûg refaz costuras, entalhes e verniz entoando cantigas; Masaru estabiliza com energia neutra. Uma pequena explosão quebra as janelas do quarteirão, e o Pulmão brilha furta-cor. Hora de voltar a Yuvalin... onde uma surpresa desagradável espera. Personagens no 15º nível.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "Cji8RPovcttzkoYC",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!NXTgFtCEPNRwawcW.Cji8RPovcttzkoYC"
+    },
+    {
+      "name": "Masaru e Mahou-Jutsu",
+      "type": "text",
+      "sort": 600,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Masaru Yuudai, lefou tamuraniano, perdeu a infância e o mestre para a Tormenta e dominou o mahou-jutsu quase sozinho. Detecta \"pulsos\" de energia elemental conforme Vectora se aproxima deles. Quer lutar contra a Tormenta, mas não quer abandonar o templo; seguir a rota de Vectora resolve as duas coisas.</p><p style=\"text-align:justify\">Um personagem pode aprender @UUID[Compendium.giria-t20.herois-de-arton.Item.7EXRSoIMUQZOdLlc]{Mahou-Jutsu} (poder de combate) gastando um poder geral ao subir de nível ou com treinamento. Com o livro Império de Jade, o mestre pode permitir jutsus com \"toque\" ou \"golpe\" no nome no lugar de magias.</p><p style=\"text-align:justify\">Progresso do parceiro: veja @UUID[Compendium.giriarpg-coracao-de-rubi.poderes.Item.B8pvVjY29j04Hajg]{Parceiro: Masaru Yuudai}.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "Rbve87jWtflOo1HN",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!NXTgFtCEPNRwawcW.Rbve87jWtflOo1HN"
+    }
+  ],
+  "_key": "!journal!NXTgFtCEPNRwawcW"
+}

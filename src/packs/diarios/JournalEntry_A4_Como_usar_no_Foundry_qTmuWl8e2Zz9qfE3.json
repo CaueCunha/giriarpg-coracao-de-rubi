@@ -1,0 +1,114 @@
+{
+  "name": "A4 · Como usar no Foundry",
+  "folder": "L8GvGJDv7ZoEcEkR",
+  "flags": {
+    "world": {
+      "cdr": "a4",
+      "cdrRole": "comoUsar"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-diarios",
+      "assinatura": "fca0f188",
+      "assinaturas": [
+        "fca0f188"
+      ]
+    }
+  },
+  "_id": "qTmuWl8e2Zz9qfE3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Tudo desta aventura fica nas pastas <b>A4 · Caravana Cartesiana</b> (Atores, Itens, Tabelas, Macros e Diários). Ameaças em <i>Ameaças</i>; perigos e testes em <i>Perigos e Testes</i>. Cenas e mapas ficam por sua conta.</p><p style=\"text-align:justify\">Serpe, dragão adulto, dragão celestial, peçonha concentrada, gelo extremo, bacamarte e Mahou-Jutsu vêm do <b>Giria T20</b> pelos links do roteiro.</p><p style=\"text-align:justify\">Kaminari e Raijin têm a mesma ficha (o livro dá um bloco para os dois). Fichas conferidas com o livro (pp. 79–83).</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "MXBrTWEtrS25VGOJ",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!qTmuWl8e2Zz9qfE3.MXBrTWEtrS25VGOJ"
+    },
+    {
+      "name": "Automações",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Aaron Sauer:</b> Florete com botão \"Sangrando\"; Ataque Furtivo (+8d6) e Ódio Puro (+2) como opções no ataque.</li><li><b>Capitã Alurra:</b> Movam-se, Sacripantas! como botão (+4 em perícias e dano dos aliados até o fim da cena).</li><li><b>Ginete de Serpe:</b> +1d12 de perfuração da montaria automático no mangual.</li><li><b>Pudim Alvinegro, Verme do Gelo, Turba do Pântano:</b> Dano de energia extra automático nos ataques; habilidades com rolagens e botões de condição (vulnerável, lento, enjoado).</li><li><b>Revoada de Serpes:</b> Ferrão com botão \"Envenenado\".</li><li><b>Parvathar:</b> Aspirar gasta 3 PM ao usar; Assoprar com rolagem manual.</li><li><b>Parceiro Masaru:</b> Opções no ataque: iniciante (+2) e veterano (+3d6).</li><li><b>Pomada Protetora:</b> Botão de RD 5 até o fim da cena.</li><li><b>Testes estendidos:</b> Burocracia Arcana, Travessia do Pântano, Jogo de Influências e Desmoronamento: macro CdR · Teste estendido. Pântano: tabela de eventos 1d12. Batalha aérea: macro A4 · Ases nas Alturas.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "i7WP0ew8xk4Ckwlx",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!qTmuWl8e2Zz9qfE3.i7WP0ew8xk4Ckwlx"
+    }
+  ],
+  "_key": "!journal!qTmuWl8e2Zz9qfE3"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Desmoronamento",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "BqcHzDr8JgHlSn7U",
+  "system": {
+    "attributes": {
+      "nd": "14"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 4, Cena 6 (caverna congelada).</b></p><p style=\"text-align:justify\">Avançar pelos túneis até o centro do santuário com toneladas de neve e rocha nos calcanhares: <b>7 sucessos</b> em Avançar.</p>",
+      "effects": "<p style=\"text-align:justify\">No fim de cada rodada, cada personagem faz Reflexos CD 25 (+1 por teste já feito). Falha: [[/r 4d6[impacto]]] de impacto e [[/r 4d6[frio]]] de frio, e só pode Escapar.</p>",
+      "actions": "<p style=\"text-align:justify\"><b>Avançar</b> (CD 30): qualquer perícia justificável, cada uma no máximo duas vezes.</p><p style=\"text-align:justify\"><b>Escapar/Soltar Colega</b> (Força CD 20): quem falhou nos Reflexos se solta (ou outro o solta) e pode agir na rodada seguinte.</p><p style=\"text-align:justify\">Use a macro <b>CdR · Teste estendido</b> (7 sucessos).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura4"
+    },
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "046442fe",
+      "assinaturas": [
+        "046442fe"
+      ]
+    }
+  },
+  "_id": "9OxHCT9OVBDEN3V5",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!9OxHCT9OVBDEN3V5"
+}

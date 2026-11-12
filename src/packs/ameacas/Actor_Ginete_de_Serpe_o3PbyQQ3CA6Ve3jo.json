@@ -1,0 +1,1089 @@
+{
+  "name": "Ginete de Serpe",
+  "type": "npc",
+  "img": "systems/tormenta20/icons/ameacas/serpe.png",
+  "folder": "Y16AUXXacHBwT84S",
+  "prototypeToken": {
+    "name": "Ginete de Serpe",
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/tormenta20/icons/ameacas/serpe.png"
+    },
+    "disposition": -1,
+    "actorLink": false,
+    "bar1": {
+      "attribute": "attributes.pv"
+    }
+  },
+  "system": {
+    "atributos": {
+      "for": {
+        "base": 6,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "des": {
+        "base": 2,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "con": {
+        "base": 6,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "int": {
+        "base": 0,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "sab": {
+        "base": 0,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      },
+      "car": {
+        "base": 1,
+        "value": 0,
+        "racial": 0,
+        "bonus": 0
+      }
+    },
+    "attributes": {
+      "nd": "9",
+      "cd": 10,
+      "pv": {
+        "value": 72,
+        "max": 72,
+        "temp": 0,
+        "min": 0
+      },
+      "pm": {
+        "value": 0,
+        "max": 0,
+        "temp": 0,
+        "min": 0
+      },
+      "defesa": {
+        "base": 31,
+        "atributo": "des",
+        "pda": 0,
+        "value": 10,
+        "outros": 0,
+        "condi": 0,
+        "bonus": []
+      },
+      "movement": {
+        "walk": {
+          "base": 6,
+          "bonus": []
+        },
+        "climb": {
+          "base": 0,
+          "bonus": []
+        },
+        "burrow": {
+          "base": 0,
+          "bonus": []
+        },
+        "swim": {
+          "base": 0,
+          "bonus": []
+        },
+        "fly": {
+          "base": 18,
+          "bonus": []
+        },
+        "hover": false,
+        "unit": "m",
+        "tags": []
+      },
+      "sentidos": {
+        "value": [],
+        "custom": ""
+      },
+      "carga": {
+        "value": 0,
+        "atributo": "for",
+        "base": 10,
+        "bonus": [],
+        "limit": 0,
+        "max": 0,
+        "pct": 0,
+        "encumbered": false
+      },
+      "conjuracao": "int",
+      "nivel": {
+        "value": 0,
+        "xp": {
+          "value": 0,
+          "pct": 0,
+          "proximo": 0
+        }
+      },
+      "treino": 0
+    },
+    "detalhes": {
+      "tipo": "hum",
+      "raca": "Humano",
+      "resistencias": "",
+      "ataquescac": "Mangual x2 +29 (2d10+20, 19, mais 1d12 perfurante).",
+      "ataquesad": "",
+      "equipamento": "Armadura de couro, escudo pesado, mangual certeiro.",
+      "tesouro": "Padrão.",
+      "biography": {
+        "value": "<p style=\"text-align:justify\">Bandido de elite de Sckharshantallas, endurecido pela vida ao lado das serpes. Montado numa serpe com armadura (voo 18 m). Parte 3, Cena 2: dois ginetes guiam uma revoada de serpes.</p>",
+        "public": ""
+      },
+      "origem": "",
+      "divindade": "",
+      "movimento": "",
+      "role": ""
+    },
+    "tracos": {
+      "tamanho": "med",
+      "resistencias": {
+        "dano": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "perda": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "acido": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "corte": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "eletricidade": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "essencia": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "fogo": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "frio": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "impacto": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "luz": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "psiquico": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "perfuracao": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        },
+        "trevas": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "danoPorDado": false
+        }
+      },
+      "ic": {
+        "value": [],
+        "custom": ""
+      },
+      "idiomas": {
+        "value": [],
+        "custom": ""
+      },
+      "profArmaduras": {
+        "value": [],
+        "custom": ""
+      },
+      "profArmas": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "dinheiro": {
+      "tc": 0,
+      "tl": 0,
+      "to": 0,
+      "tp": 0
+    },
+    "modificadores": {
+      "custoPM": 0,
+      "atributos": {
+        "for": [],
+        "des": [],
+        "con": [],
+        "int": [],
+        "sab": [],
+        "car": [],
+        "fisicos": [],
+        "mentais": [],
+        "geral": []
+      },
+      "ataque": {
+        "geral": [],
+        "cac": [],
+        "ad": []
+      },
+      "cura": {
+        "geral": [],
+        "mag": [],
+        "alq": []
+      },
+      "dano": {
+        "ad": [],
+        "alq": [],
+        "cac": [],
+        "geral": [],
+        "mag": []
+      },
+      "pericias": {
+        "geral": [],
+        "resistencia": [],
+        "semataque": [],
+        "ataque": [],
+        "atr": {
+          "for": [],
+          "des": [],
+          "con": [],
+          "int": [],
+          "sab": [],
+          "car": []
+        }
+      }
+    },
+    "pericias": {
+      "acro": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": true,
+        "size": false
+      },
+      "ades": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "atle": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "for",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "atua": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cava": {
+        "treinado": false,
+        "outros": 7,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "conh": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cura": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "dipl": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "enga": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "fort": {
+        "treinado": false,
+        "outros": 10,
+        "custom": false,
+        "label": "",
+        "atributo": "con",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "furt": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": true,
+        "size": true
+      },
+      "guer": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "inic": {
+        "treinado": false,
+        "outros": 7,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "inti": {
+        "treinado": false,
+        "outros": 8,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "intu": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "inve": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "joga": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "car",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "ladi": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": true,
+        "pda": true,
+        "size": false
+      },
+      "luta": {
+        "treinado": false,
+        "outros": 19,
+        "custom": false,
+        "label": "",
+        "atributo": "for",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "mist": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "nobr": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "perc": {
+        "treinado": false,
+        "outros": 5,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "pilo": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "pont": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "refl": {
+        "treinado": false,
+        "outros": 9,
+        "custom": false,
+        "label": "",
+        "atributo": "des",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "reli": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "sobr": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "vont": {
+        "treinado": false,
+        "outros": 6,
+        "custom": false,
+        "label": "",
+        "atributo": "sab",
+        "st": false,
+        "pda": false,
+        "size": false
+      },
+      "alfa": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "alqu": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "arme": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "arte": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "cozi": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": false,
+        "size": false
+      },
+      "enge": {
+        "treinado": false,
+        "outros": 0,
+        "custom": false,
+        "label": "",
+        "atributo": "int",
+        "st": true,
+        "pda": true,
+        "size": false
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourcePrimary"
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourceSecondary"
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "label": "T20.ResourceTertiary"
+      },
+      "deathsave": {
+        "value": 0,
+        "max": 3,
+        "label": "T20.ResourceDeathSave"
+      },
+      "shadow": {
+        "value": 0,
+        "max": 5,
+        "label": "T20.ResourceShadow"
+      },
+      "catarse": {
+        "value": 0,
+        "max": 3,
+        "label": "T20.ResourceCatarse"
+      }
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura4"
+    },
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "02df7455",
+      "assinaturas": [
+        "02df7455"
+      ]
+    }
+  },
+  "_id": "o3PbyQQ3CA6Ve3jo",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "items": [
+    {
+      "name": "Mangual",
+      "type": "arma",
+      "img": "systems/tormenta20/icons/itens/equipamentos/mangual.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Dois ataques por ação agredir. Montado: +1d12 de perfuração da serpe (entra sozinho).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.k4aGem7SrVRtJ9tO]{Mangual}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.k4aGem7SrVRtJ9tO]{Mangual}</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Caravana Cartesiana",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "2d10+20",
+                "impacto",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 19,
+        "criticoX": 2,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "marcial",
+        "empunhadura": "leve",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 0,
+        "peso": 0,
+        "qtd": 1,
+        "preco": 0,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": 0,
+          "condicao": "",
+          "execucao": "passive",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": 0,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_id": "qFZSzYYtAaS7GYAA",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.k4aGem7SrVRtJ9tO",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [
+        {
+          "name": "Montaria Feroz",
+          "img": "systems/tormenta20/icons/ameacas/serpe.png",
+          "type": "base",
+          "transfer": false,
+          "disabled": true,
+          "description": "+1d12 de perfuração enquanto montado.",
+          "system": {
+            "changes": [
+              {
+                "key": "dano",
+                "value": "1d12[perfuracao]",
+                "type": "add",
+                "priority": null,
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": true,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": [
+                "self"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "behaviors": null
+            },
+            "identifier": "",
+            "upgrade": {
+              "type": null,
+              "itemType": []
+            }
+          },
+          "_id": "EqTEcrB8TMF6uvFr",
+          "origin": null,
+          "tint": "#ffffff",
+          "start": null,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "statuses": [],
+          "showIcon": 1,
+          "folder": null,
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!o3PbyQQ3CA6Ve3jo.qFZSzYYtAaS7GYAA.EqTEcrB8TMF6uvFr"
+        }
+      ],
+      "_key": "!actors.items!o3PbyQQ3CA6Ve3jo.qFZSzYYtAaS7GYAA"
+    },
+    {
+      "name": "Escudo de Escamas",
+      "type": "poder",
+      "img": "icons/skills/melee/shield-damaged-broken-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">Uma vez por rodada, o ginete pode fazer com que uma revoada de serpes em alcance curto sofra o dano de um ataque ou habilidade em seu lugar.</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Caravana Cartesiana",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "reaction",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "UsTP7Imlmbd0uK16",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!o3PbyQQ3CA6Ve3jo.UsTP7Imlmbd0uK16"
+    },
+    {
+      "name": "Montaria Feroz",
+      "type": "poder",
+      "img": "systems/tormenta20/icons/ameacas/serpe.png",
+      "system": {
+        "description": {
+          "value": "<p style=\"text-align:justify\">O ginete cavalga uma @UUID[Compendium.giria-t20.ameacas.Actor.N1zMOukMdldQKz6y]{serpe}. Montado, tem voo 18 m e +1d12 nas rolagens de dano corpo a corpo (já no mangual).</p>",
+          "unidentified": ""
+        },
+        "source": "Coração de Rubi — Caravana Cartesiana",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "passive",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": 0
+        },
+        "efeito": "",
+        "subtipo": ""
+      },
+      "_id": "RNUx2puGpJB2sKHs",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "effects": [],
+      "_key": "!actors.items!o3PbyQQ3CA6Ve3jo.RNUx2puGpJB2sKHs"
+    }
+  ],
+  "effects": [],
+  "_key": "!actors!o3PbyQQ3CA6Ve3jo"
+}

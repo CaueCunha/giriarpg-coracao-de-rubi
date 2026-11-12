@@ -1,0 +1,112 @@
+{
+  "name": "Tônico Revigorante",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/bebida-comum.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Bebida amarga de Salistick que remove uma condição de fadiga. Preparado alquímico.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Caravana Cartesiana",
+    "qtd": 1,
+    "preco": 60,
+    "ativacao": {
+      "execucao": "action",
+      "custo": 0,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "rolls": [],
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "tipo": "",
+    "subtipo": ""
+  },
+  "folder": "XFZE185KT6H6JqD9",
+  "flags": {
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "4417c0d4",
+      "assinaturas": [
+        "4417c0d4"
+      ]
+    }
+  },
+  "_id": "0zahofDPzIVVmDLA",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!0zahofDPzIVVmDLA"
+}

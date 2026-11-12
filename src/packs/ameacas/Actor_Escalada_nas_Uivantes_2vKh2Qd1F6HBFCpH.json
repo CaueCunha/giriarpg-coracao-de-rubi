@@ -1,0 +1,52 @@
+{
+  "name": "Escalada nas Uivantes",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "BqcHzDr8JgHlSn7U",
+  "system": {
+    "attributes": {
+      "nd": "—"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 4, Cenas 3 e 5.</b></p><p style=\"text-align:justify\">Chegar a Korm e depois ao santuário de Beluhga. Roupas de frio de Kirima: +5 em Fortitude contra frio.</p>",
+      "effects": "<p style=\"text-align:justify\"><b>Trilha até Korm:</b> Fortitude CD 20 ou @STATUS[fatigado] até o fim da cena. Depois, emboscada de 4 vermes do gelo larva no platô congelado.</p><p style=\"text-align:justify\"><b>Subida:</b> [[/r 4d8[frio]]] de frio e @STATUS[fatigado] (Fort CD 25 evita).</p><p style=\"text-align:justify\"><b>Tempestade:</b> cada um faz Atletismo CD 25 (+5 pelo equipamento de segurança); quem falha escorrega e sofre [[/r 10d6[impacto]]]. Reflexos CD 25 segura o companheiro da frente, com –2 no próprio Atletismo.</p>",
+      "actions": "<p style=\"text-align:justify\">Kirima cobra T$ 100 por dia (comida e equipamento) e vende as roupas de frio por T$ 30. Defina a ordem de marcha: há passagens estreitas.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura4"
+    },
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "a2cc041e",
+      "assinaturas": [
+        "a2cc041e"
+      ]
+    }
+  },
+  "_id": "2vKh2Qd1F6HBFCpH",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!2vKh2Qd1F6HBFCpH"
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Parvathar, o Pulmão da Montanha",
+  "type": "equipamento",
+  "img": "systems/tormenta20/icons/itens/gerais/ferramenta-pesada.webp",
+  "flags": {
+    "world": {
+      "cdrRole": "parvathar",
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "b92031d2",
+      "assinaturas": [
+        "b92031d2"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Criado pelos anões de Doherimm para forjar aço-rubi, usa energias elementais como combustível: transforma chamas comuns em chamas rubras, fortes o bastante para moldar aço-rubi. Preso ao corpo do usuário, é um item vestido de 1 espaço. Não pode ser teletransportado enquanto se regenera (a energia se dissipa ou ele explode).</p><p style=\"text-align:justify\"><b>Aspirar.</b> Quando sofre um efeito que causa dano de ácido, eletricidade, fogo ou frio, o usuário pode gastar 3 PM para reduzir esse dano à metade.</p><p style=\"text-align:justify\"><b>Assoprar.</b> Se já usou Aspirar na cena, o usuário gasta uma ação padrão para disparar um cone de 6 m: criaturas na área sofrem 1d6 de dano para cada 5 pontos de dano absorvidos com Aspirar, do mesmo tipo de energia (Reflexos CD Car reduz à metade). Depois, precisa Aspirar de novo antes de Assoprar outra vez.</p><p style=\"text-align:justify\"><b>Energias restauradas:</b> eletricidade (Raisenzan, Parte 1) · ácido (pudim alvinegro, Parte 2) · fogo (rubi de Thalliathos, Parte 3) · frio (Beluhga, Parte 4). Com as quatro, Dhormûg e Masaru o restauram por completo (Epílogo): o couro brilha em furta-cor.</p><p style=\"text-align:justify\"><b>Automação:</b> Aspirar com custo de 3 PM no uso; para Assoprar, role [[/r 1d6]] por 5 pontos absorvidos.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Caravana Cartesiana",
+    "tipo": "acessorio",
+    "preco": 0,
+    "peso": 0,
+    "espacos": 1,
+    "ativacao": {
+      "execucao": "reaction",
+      "custo": 3,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "qtd": 1,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "rolls": [],
+    "equipado": false,
+    "equipado2": {
+      "slot": 0,
+      "type": "body"
+    },
+    "armadura": {
+      "maxAtr": 0,
+      "penalidade": 0,
+      "value": 0
+    }
+  },
+  "folder": "XFZE185KT6H6JqD9",
+  "_id": "wv2BDn3GiDbUgJuZ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!wv2BDn3GiDbUgJuZ"
+}

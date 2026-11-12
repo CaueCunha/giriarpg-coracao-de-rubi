@@ -1,0 +1,52 @@
+{
+  "name": "Jogo de Influências",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "BqcHzDr8JgHlSn7U",
+  "system": {
+    "attributes": {
+      "nd": "14"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cena 4 (jantar de gala de Sckhar).</b></p><p style=\"text-align:justify\">Cair nas graças de Schaven: <b>7 sucessos</b> em Estabelecer Presença, Performance e Politicagem durante as <b>3 rodadas</b> do jantar (uma hora cada).</p>",
+      "effects": "<p style=\"text-align:justify\">No início de cada rodada, Alurra faz Intimidação (+14) oposta pela Vontade de um personagem à escolha; se vencer, ele não age na rodada.</p><p style=\"text-align:justify\">Trajes luxuosos: +2 em todos os testes da cena. Presente comprado (T$ 300): gaste para rolar de novo um teste recém-feito.</p><p style=\"text-align:justify\">Cada sucesso acima de 7: presente de [[/r 1d6*1000]] T$ de nobres satisfeitos. Sem os 7: um nobre pede T$ 10.000 de suborno para interceder.</p>",
+      "actions": "<p style=\"text-align:justify\"><b>Atrapalhar Alurra</b> (Intuição CD 20): próximo Intimidação dela com –5.</p><p style=\"text-align:justify\"><b>Conduzir a Conversa</b> (Enganação CD 25): +5 no próximo teste de um colega.</p><p style=\"text-align:justify\"><b>Estabelecer Presença</b> (Intimidação CD 30). <b>Performance</b> (Atuação CD 32). <b>Politicagem</b> (Diplomacia CD 30).</p><p style=\"text-align:justify\"><b>Seguir Protocolos</b> (Nobreza CD 20): +5 no próprio próximo teste ou no de um colega.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura4"
+    },
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "88548aa2",
+      "assinaturas": [
+        "88548aa2"
+      ]
+    }
+  },
+  "_id": "j8Rww7OZZmwK8YBd",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!j8Rww7OZZmwK8YBd"
+}

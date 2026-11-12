@@ -1,0 +1,152 @@
+{
+  "name": "A4 · Documentos para os jogadores",
+  "folder": "L8GvGJDv7ZoEcEkR",
+  "flags": {
+    "world": {
+      "cdr": "a4",
+      "cdrRole": "documentos"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-diarios",
+      "assinatura": "6b251f9c",
+      "assinaturas": [
+        "6b251f9c"
+      ]
+    }
+  },
+  "_id": "Q3buXaaqX3T75uQw",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Mensagem na garrafa (em anão)",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Morreram todos. Logo morrerei. Não faça como nós. Proteja-se do ácido.</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "YiLfV8jOgP052vjv",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Q3buXaaqX3T75uQw.YiLfV8jOgP052vjv"
+    },
+    {
+      "name": "Convite para o jantar de Sckhar",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Pergaminho com o brasão de Sckhar em cera vermelha. Num canto, o tipo de traje exigido e o alfaiate a consultar.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "pLCSnHTWhwUc3Fsi",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Q3buXaaqX3T75uQw.pLCSnHTWhwUc3Fsi"
+    },
+    {
+      "name": "Lei de Vectora",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>É proibida a conjuração de qualquer magia capaz de causar prejuízo ou possibilitar trapaça, como encantamentos, ilusões e transmutações.</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "0e5Zct5ANHExzrt0",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Q3buXaaqX3T75uQw.0e5Zct5ANHExzrt0"
+    }
+  ],
+  "_key": "!journal!Q3buXaaqX3T75uQw"
+}

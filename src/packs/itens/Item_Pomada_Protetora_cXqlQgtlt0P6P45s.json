@@ -1,0 +1,180 @@
+{
+  "name": "Pomada Protetora",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/oleo.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Pasta espessa e cinzenta que deixa a pele dura como pedra. Espalhar é uma ação completa e fornece resistência a dano 5 por uma cena. Preparado alquímico; a CD para fabricar aumenta em +10.<br><b>Automação:</b> botão do efeito no cartão.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Caravana Cartesiana",
+    "qtd": 1,
+    "preco": 750,
+    "ativacao": {
+      "execucao": "full",
+      "custo": 0,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "rolls": [],
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "tipo": "",
+    "subtipo": ""
+  },
+  "folder": "XFZE185KT6H6JqD9",
+  "flags": {
+    "world": {
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "8641b82b",
+      "assinaturas": [
+        "8641b82b"
+      ]
+    }
+  },
+  "_id": "cXqlQgtlt0P6P45s",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "name": "Pomada Protetora (RD 5)",
+      "img": "systems/tormenta20/icons/itens/gerais/oleo.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "Resistência a dano 5 até o fim da cena.",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "sceneEnd",
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.tracos.resistencias.dano.bonus",
+            "value": "5",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": false,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": []
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "Lraveh6vUIBZEho2",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!cXqlQgtlt0P6P45s.Lraveh6vUIBZEho2"
+    }
+  ],
+  "_key": "!items!cXqlQgtlt0P6P45s"
+}

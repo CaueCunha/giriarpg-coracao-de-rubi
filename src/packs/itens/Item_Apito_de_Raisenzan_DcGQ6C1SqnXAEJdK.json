@@ -1,0 +1,95 @@
+{
+  "name": "Apito de Raisenzan",
+  "type": "tesouro",
+  "img": "systems/tormenta20/icons/itens/gerais/apito.webp",
+  "flags": {
+    "world": {
+      "cdrRole": "apito",
+      "cdr": "a4"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "31c7c035",
+      "assinaturas": [
+        "31c7c035"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Apito metálico de formato exótico, usado por monges em missões diplomáticas. Soprado ao ar livre, invoca uma nuvem quadrada de 4,5 m de lado que leva todos sobre ela a um local pedido; Raisenzan fala pela nuvem com voz de trovão. No destino, a nuvem some. Invocada de novo, só volta para Ozora.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Caravana Cartesiana",
+    "qtd": 1,
+    "preco": 0,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "XFZE185KT6H6JqD9",
+  "_id": "DcGQ6C1SqnXAEJdK",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!DcGQ6C1SqnXAEJdK"
+}
