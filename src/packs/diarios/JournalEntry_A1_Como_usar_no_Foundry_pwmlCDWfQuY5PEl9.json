@@ -1,0 +1,114 @@
+{
+  "name": "A1 · Como usar no Foundry",
+  "folder": "Dj25DxX9Bfdzi85M",
+  "flags": {
+    "world": {
+      "cdr": "a1",
+      "cdrRole": "comoUsar"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-diarios",
+      "assinatura": "4eb7c5ec",
+      "assinaturas": [
+        "4eb7c5ec"
+      ]
+    }
+  },
+  "_id": "pwmlCDWfQuY5PEl9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Tudo desta aventura fica nas pastas <b>A1 · Forja de Heróis</b> (Atores, Itens, Tabelas, Macros e Diários). As ameaças novas estão em <i>Ameaças</i> e os perigos e testes estendidos em <i>Perigos e Testes</i>. Cenas e mapas ficam por sua conta.</p><p style=\"text-align:justify\">As criaturas do livro básico (glop, bandido, chefe bandido, gorlogg, aranha gigante, turba zumbi) vêm do compêndio de ameaças do <b>Giria T20</b>: os links do roteiro abrem as fichas de lá, e você arrasta para a cena.</p><p style=\"text-align:justify\">Fichas conferidas com o livro (pp. 26–27): Defesa, PV, CD, iniciativa, percepção, resistências e ataques.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "igeCKgS13lyzsDin",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!pwmlCDWfQuY5PEl9.igeCKgS13lyzsDin"
+    },
+    {
+      "name": "Automações",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Mamãe Glop:</b> Meiose Glópica automática: no início do turno dela em combate, o módulo rola 1d6 e, no par, põe um glop ao lado e no combate.</li><li><b>Estátua Animada:</b> Pancada com botão \"Atordoado (1 rodada)\" no cartão (uma vez por cena por criatura fica com você).</li><li><b>Zelin:</b> Marca da Presa como opção no ataque (+1d8, ou +2d8 contra humanoide não humano).</li><li><b>Milla:</b> Arcano de Batalha (+4) entra sozinho em Seta Infalível e Bola de Fogo; Raio Arcano com rolagem.</li><li><b>Ruschel:</b> Mira Apurada como opção na besta (+2 no ataque e na margem).</li><li><b>Stagh:</b> Garras com +1d6 de frio automático; Aura de Frio com rolagem.</li><li><b>Éter Elemental (frio):</b> +1d4 de frio como opção nos ataques enquanto estiver na ficha.</li><li><b>Testes estendidos:</b> Forja da Kanpeki, Fim do Mundo e Portão Sul: macro CdR · Teste estendido. Julgamento: macro A1 · O Julgamento (placar, alternância de apelos e testemunhas).</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "hProGUO3FjGx71RZ",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!pwmlCDWfQuY5PEl9.hProGUO3FjGx71RZ"
+    }
+  ],
+  "_key": "!journal!pwmlCDWfQuY5PEl9"
+}

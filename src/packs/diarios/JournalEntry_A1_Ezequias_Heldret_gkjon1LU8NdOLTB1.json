@@ -1,0 +1,152 @@
+{
+  "name": "A1 · Ezequias Heldret",
+  "folder": "Dj25DxX9Bfdzi85M",
+  "flags": {
+    "world": {
+      "cdr": "a1",
+      "cdrRole": "ezequias"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-diarios",
+      "assinatura": "643fd5ff",
+      "assinaturas": [
+        "643fd5ff"
+      ]
+    }
+  },
+  "_id": "gkjon1LU8NdOLTB1",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Quem é",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Principal NPC da campanha: guia os heróis até a Cidade na Tormenta. Patriarca da família Heldret, descendente de um dos exploradores que fundaram Zakharov. Dono de algumas das minas mais lucrativas de Yuvalin e conselheiro da Guilda dos Mineradores, onde é só tolerado. Apelidado de \"Professor\".</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "X6GEoQcNj5b6Tg7S",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!gkjon1LU8NdOLTB1.X6GEoQcNj5b6Tg7S"
+    },
+    {
+      "name": "Aparência",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Estatura mediana, postura retraída e fala enérgica. Pele alva de quem pouco vê o sol, cabelos acobreados desgrenhados, dedos longos e finos com uma articulação a mais. Sobretudo de couro cheio de bolsos com cacarecos \"científicos\" e óculos de solda de lentes grossas que nunca tira.</p><p style=\"text-align:justify\"><b>Segredo:</b> os óculos escondem a esclerótica laranja brilhante: Ezequias é lefou e se passa por humano para evitar problemas. Se descobrirem, ele não nega: busca entender a \"maldição\" para um dia revertê-la.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "lDlVjK61P2NeQCo8",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!gkjon1LU8NdOLTB1.lDlVjK61P2NeQCo8"
+    },
+    {
+      "name": "Personalidade",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Pesquisador de minérios e materiais exóticos, extremamente inteligente e culto, sobretudo sobre a Tormenta, de quem fala com pavor e empolgação (\"conheça seu inimigo\"). Agitado, positivo, tagarela e sem muito trato social; explica tudo de forma didática e pensa em voz alta. Curioso sobre o passado dos personagens.</p><p style=\"text-align:justify\">Autômato <b>Ford</b>: pirâmide com rodas que puxa sua carroça de metal e solta gases vermelhos de cheiro ácido.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "ERowYON8GxN4EwQW",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!gkjon1LU8NdOLTB1.ERowYON8GxN4EwQW"
+    }
+  ],
+  "_key": "!journal!gkjon1LU8NdOLTB1"
+}

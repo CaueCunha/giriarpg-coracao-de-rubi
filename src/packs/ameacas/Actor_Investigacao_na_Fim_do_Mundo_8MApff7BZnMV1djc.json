@@ -1,0 +1,52 @@
+{
+  "name": "Investigação na Fim do Mundo",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "QFmZFK2ZBodTkCEF",
+  "system": {
+    "attributes": {
+      "nd": "1"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 2, tarefa \"Investigação de Contrabando\" (Distrito da Bigorna).</b></p><p style=\"text-align:justify\">Investigar a taverna dos goblins do Príncipe da Pólvora Galix. Cada jogador descreve como investiga; teste estendido com perícias relacionadas, cada perícia só uma vez pelo grupo, CD 15. Cada sucesso revela uma pista (tabela \"A1 · Pistas na Taverna Fim do Mundo\", 1d6). Três falhas: o grupo é expulso por ser enxerido.</p>",
+      "effects": "<p style=\"text-align:justify\">Violência é crime dentro da cidade e pouco louvável.</p>",
+      "actions": "<p style=\"text-align:justify\">Levar as provas à Sede da Guarda: T$ 200. Fingir que não achou nada: Galix fica devendo um favor (testemunha no julgamento). Anote a escolha.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura1"
+    },
+    "world": {
+      "cdr": "a1"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "bfd6d868",
+      "assinaturas": [
+        "bfd6d868"
+      ]
+    }
+  },
+  "_id": "8MApff7BZnMV1djc",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!8MApff7BZnMV1djc"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Interrogatório dos Mercenários",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "QFmZFK2ZBodTkCEF",
+  "system": {
+    "attributes": {
+      "nd": "2"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cena 4 (manhã depois da emboscada).</b></p><p style=\"text-align:justify\">Arrancar dos capangas a ordem de Rodford. Zelin é leal e difícil de intimidar; os outros podem abrir o bico.</p>",
+      "effects": "<p style=\"text-align:justify\">Cada personagem faz um teste de perícia diferente, CD 20, explicando como usa a perícia (Diplomacia, Intimidação, Investigação para achar ordens ou pagamentos...).</p>",
+      "actions": "<p style=\"text-align:justify\">Anote cada resultado positivo. Depois, Ezequias volta a Yuvalin e acusa Rodford Varhim em público: o caso vai a julgamento.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura1"
+    },
+    "world": {
+      "cdr": "a1"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "3b32895b",
+      "assinaturas": [
+        "3b32895b"
+      ]
+    }
+  },
+  "_id": "hl46nh8qhl7GBjz5",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!hl46nh8qhl7GBjz5"
+}

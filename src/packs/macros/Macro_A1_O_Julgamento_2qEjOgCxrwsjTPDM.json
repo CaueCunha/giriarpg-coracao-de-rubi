@@ -1,0 +1,41 @@
+{
+  "name": "A1 · O Julgamento",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/statue.svg",
+  "folder": "QrRgqvbZURT8MBla",
+  "flags": {
+    "world": {
+      "cdr": "a1",
+      "cdrRole": "julgamento"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-macros",
+      "assinatura": "2858f86a",
+      "assinaturas": [
+        "3874b629",
+        "2858f86a"
+      ]
+    }
+  },
+  "command": "// A1 · O Julgamento: 5 sucessos antes de 3 falhas (Forja de Heróis, Parte 3, Cena 6).\n// Selecione o token de quem faz a arguição e rode. O placar e as testemunhas ficam salvos no mundo.\nif (!game.user.isGM) return ui.notifications.warn(\"Só o mestre roda esta macro.\");\nconst { DialogV2 } = foundry.applications.api;\nconst FLAG = \"cdrJulgamento\";\nconst GRUPOS = { racional: [\"conh\", \"dipl\", \"inve\", \"nobr\"], emocional: [\"atua\", \"enga\", \"inti\", \"intu\"] };\nconst CDS = { fraca: 22, honesta: 17, espetacular: 12 };\nconst nome = (id) => { const v = CONFIG.T20?.pericias?.[id]; return game.i18n.localize(typeof v === \"string\" ? v : v?.label ?? id); };\nlet st = foundry.utils.deepClone(game.user.getFlag(\"world\", FLAG) ?? { s: 0, f: 0, ultimo: null, testemunhas: 0, fim: false });\nconst placar = () => \"<b>\" + st.s + \"/5</b> sucessos, <b>\" + st.f + \"/3</b> falhas, \" + st.testemunhas + \" testemunha(s) restante(s)\";\nactor = canvas.tokens.controlled[0]?.actor ?? null;\nconst opcoes = Object.entries(GRUPOS).map(([g, ps]) => '<optgroup label=\"Apelo ' + (g === \"racional\" ? \"Racional\" : \"Emocional\") + '\">' + ps.map((p) => '<option value=\"' + g + \":\" + p + '\"' + (st.ultimo === g ? \" disabled\" : \"\") + \">\" + nome(p) + \"</option>\").join(\"\") + \"</optgroup>\").join(\"\");\nconst content = \"<p>\" + placar() + (st.ultimo ? \" · o último apelo foi <b>\" + st.ultimo + \"</b>: agora use o outro grupo.\" : \"\") + \"</p>\" +\n\t'<label>Perícia <select name=\"pericia\">' + opcoes + \"</select></label>\" +\n\t'<label>Justificativa <select name=\"just\"><option value=\"fraca\">Fraca (CD 22)</option><option value=\"honesta\" selected>Honesta (CD 17)</option><option value=\"espetacular\">Espetacular (CD 12)</option></select></label>' +\n\t'<label>Testemunhas recrutadas (Cena 5) <input type=\"number\" name=\"test\" value=\"' + st.testemunhas + '\" min=\"0\"></label>';\nconst r = await DialogV2.wait({\n\twindow: { title: \"O Julgamento\" }, content, rejectClose: false,\n\tbuttons: [\n\t\t{ action: \"rolar\", label: actor ? \"Rolar (\" + actor.name + \")\" : \"Selecione um token\", default: true, callback: (e, b) => ({ a: \"rolar\", f: b.form.elements }) },\n\t\t{ action: \"zerar\", label: \"Recomeçar\", callback: (e, b) => ({ a: \"zerar\", f: b.form.elements }) }\n\t]\n});\nif (!r) return;\nif (r.a === \"zerar\") {\n\tawait game.user.setFlag(\"world\", FLAG, { s: 0, f: 0, ultimo: null, testemunhas: Number(r.f.test.value) || 0, fim: false });\n\treturn ui.notifications.info(\"Julgamento recomeçado.\");\n}\nif (!actor) return ui.notifications.warn(\"Selecione o token de quem faz a arguição.\");\nif (st.fim) return ui.notifications.warn(\"O julgamento já terminou. Use Recomeçar.\");\nst.testemunhas = Number(r.f.test.value) || 0;\nconst [grupo, pericia] = r.f.pericia.value.split(\":\");\nconst cd = CDS[r.f.just.value];\nconst roll = await new Roll(\"1d20 + \" + (actor.system.pericias?.[pericia]?.value ?? 0)).evaluate();\nlet total = roll.total;\nlet extra = \"\";\nif (total < cd && st.testemunhas > 0) {\n\tconst usar = await DialogV2.confirm({ window: { title: \"Testemunha\" }, content: \"<p>\" + actor.name + \" tirou <b>\" + total + \"</b> contra CD \" + cd + \". Gastar uma testemunha (+1d6)?</p>\" });\n\tif (usar) {\n\t\tconst d6 = await new Roll(\"1d6\").evaluate();\n\t\ttotal += d6.total;\n\t\tst.testemunhas -= 1;\n\t\textra = \" + testemunha \" + d6.total;\n\t}\n}\nconst ok = total >= cd;\nif (ok) st.s += 1; else st.f += 1;\nst.ultimo = grupo;\nlet veredito = \"\";\nif (st.s >= 5) { st.fim = true; veredito = \"<p><b>Culpado!</b> Rodford é sentenciado à prisão perpétua. Vá para o Epílogo.</p>\"; }\nelse if (st.f >= 3) { st.fim = true; veredito = \"<p><b>Absolvido.</b> Rodford bane o grupo e Ezequias da cidade (Derrota no Tribunal).</p>\"; }\nawait game.user.setFlag(\"world\", FLAG, st);\nChatMessage.create({\n\tspeaker: ChatMessage.getSpeaker({ actor }),\n\twhisper: ChatMessage.getWhisperRecipients(\"GM\").map((u) => u.id),\n\tcontent: \"<h3>O Julgamento</h3><p>Apelo \" + grupo + \", \" + nome(pericia) + \", CD \" + cd + \": <b>\" + roll.total + extra + \" = \" + total + \"</b> → \" + (ok ? \"sucesso\" : \"falha\") + \".</p><p>\" + placar() + \"</p>\" + veredito\n});",
+  "_id": "2qEjOgCxrwsjTPDM",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "author": null,
+  "_key": "!macros!2qEjOgCxrwsjTPDM"
+}

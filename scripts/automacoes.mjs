@@ -6,6 +6,9 @@
 //   Item: flags.world.cdrParceiro = "lonien" (ou o nome "Parceira: Lonien (Veterana)")
 //       Quem tem o poder da Lonien na ficha e cai a 0 PV ou menos cura 4d8+4 na hora, 1x por cena
 //       (a marca "Lonien — cura de emergência usada" some no fim da cena).
+//   Ator: flags.world.cdrAutomacoes.meiose = { ator: "Glop", giria: "<uuid>" }  (Mamãe Glop, A1)
+//       No início do turno da criatura (em combate), rola 1d6; no par, um glop surge ao lado e entra no combate
+//       (usa o ator do mundo com esse nome ou, se não houver, o do Giria T20).
 // Novas aventuras acrescentam chaves aqui.
 // Só um cliente executa automações: o mestre ativo.
 const souMestreAtivo = () => (game.users.activeGM ?? game.users.find((u) => u.isGM && u.active))?.isSelf ?? false;
@@ -67,6 +70,37 @@ async function curaAcelerada(actor) {
   });
 }
 
+// ---------- Meiose Glópica ----------
+async function meiose(actor, combat) {
+  const m = auto(actor).meiose;
+  if (!m?.ator) return;
+  const roll = await new Roll("1d6").evaluate();
+  const par = roll.total % 2 === 0;
+  await roll.toMessage({
+    speaker: ChatMessage.getSpeaker({ actor }),
+    whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id),
+    flavor: `<strong>Meiose Glópica</strong>: ${par ? `par, um ${m.ator.toLowerCase()} surge ao lado!` : "ímpar, nada acontece."}`,
+  });
+  if (!par) return;
+  let base = game.actors.find((a) => a.name === m.ator && a.type === "npc");
+  if (!base && m.giria) {
+    const doc = await fromUuid(m.giria).catch(() => null);
+    if (doc) {
+      const dados = doc.toObject();
+      delete dados.folder;
+      base = await Actor.implementation.create({ ...dados, _stats: { compendiumSource: m.giria } });
+    }
+  }
+  if (!base) return ui.notifications.warn(`Meiose Glópica: ponha um ator "${m.ator}" no mundo.`);
+  const tok = combat.combatant?.token;
+  const cena = tok?.parent ?? canvas.scene;
+  if (!cena) return;
+  const g = cena.grid?.size ?? canvas.grid?.size ?? 100;
+  const td = await base.getTokenDocument({ x: (tok?.x ?? 0) + (tok?.width ?? 1) * g, y: tok?.y ?? 0 });
+  const [novo] = await cena.createEmbeddedDocuments("Token", [td.toObject()]);
+  await combat.createEmbeddedDocuments("Combatant", [{ tokenId: novo.id, sceneId: cena.id, actorId: base.id, name: novo.name }]);
+}
+
 async function aoMudarPV(actor, antes, agora) {
   if (antes > 0 && agora <= 0 && temLonien(actor)) await curaLonien(actor, { automatico: true });
 }
@@ -91,6 +125,8 @@ export function ligarAutomacoes() {
     if (!("turn" in changes || "round" in changes) || !combat.started) return;
     if (!souMestreAtivo()) return;
     const actor = combat.combatant?.actor;
-    if (actor) await curaAcelerada(actor);
+    if (!actor) return;
+    await curaAcelerada(actor);
+    await meiose(actor, combat);
   });
 }

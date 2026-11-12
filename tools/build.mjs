@@ -14,7 +14,7 @@ import crypto from "node:crypto";
 import { criarMundo } from "./sim/mundo.mjs";
 import { ATOS, PACKS, MODULO } from "./conteudo.mjs";
 import { assinatura } from "../scripts/assinatura.mjs";
-import { ligarAoSistema, indiceSistema, indiceGiria } from "./ligar-sistema.mjs";
+import { ligarAoSistema, indiceSistema, indiceGiria, resolverGiria } from "./ligar-sistema.mjs";
 import { RAIZ, GERADORES, FONTE_PACKS, HISTORICO } from "./caminhos.mjs";
 import { deepClone } from "./sim/utils.mjs";
 
@@ -274,7 +274,8 @@ async function main() {
 	const linhas = ["# Relatório do build", ""];
 	const porAto = [];
 	let indice = null;
-	const giria = indiceGiria(JSON.parse(fs.readFileSync(path.join(RAIZ, "src/giria-indice.json"), "utf8")).itens);
+	const listaGiria = JSON.parse(fs.readFileSync(path.join(RAIZ, "src/giria-indice.json"), "utf8")).itens;
+	const giria = indiceGiria(listaGiria);
 	let versaoSistema = "1.6.4";
 	for (const ato of ATOS) {
 		console.log(`» ${ato.rotulo}: ${ato.geradores.length} gerador(es)`);
@@ -283,6 +284,7 @@ async function main() {
 		indice ??= indiceSistema(mundo.sistema.packs);
 		const semMarca = Object.entries(docs).flatMap(([t, l]) => l.filter((d) => !d.flags?.world?.cdr).map((d) => `${t} "${d.name}"`));
 		if (semMarca.length) throw new Error(`Documentos sem a marca flags.world.cdr: ${semMarca.join(", ")}`);
+		resolverGiria(docs, listaGiria);
 		const ligacoes = ligarAoSistema(docs, indice, ato.id, giria);
 		porAto.push({ ato, docs: estabilizarIds(docs) });
 		linhas.push(`## ${ato.rotulo}`, "");

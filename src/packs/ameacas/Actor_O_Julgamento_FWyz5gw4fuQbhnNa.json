@@ -1,0 +1,52 @@
+{
+  "name": "O Julgamento",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "QFmZFK2ZBodTkCEF",
+  "system": {
+    "attributes": {
+      "nd": "3"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cena 6 (Conselho da Guilda dos Mineradores).</b></p><p style=\"text-align:justify\">Convencer o Conselho dos crimes de Rodford: 5 sucessos antes de 3 falhas.</p>",
+      "effects": "<p style=\"text-align:justify\"><b>Rodada:</b> um personagem faz uma arguição, escolhe o apelo e a perícia e justifica. Não pode usar uma perícia do mesmo grupo do jogador anterior.</p><p style=\"text-align:justify\"><b>Apelo Racional:</b> Conhecimento, Diplomacia, Investigação, Nobreza. <b>Apelo Emocional:</b> Atuação, Enganação, Intimidação, Intuição.</p><p style=\"text-align:justify\"><b>CD pela justificativa:</b> fraca 22, honesta 17, espetacular 12.</p><p style=\"text-align:justify\"><b>Testemunhas</b> (Cena 5): cada uma vale [[/r 1d6]] somado a um teste, decidido depois de rolar e antes do resultado.</p>",
+      "actions": "<p style=\"text-align:justify\">Culpado: Rodford pega prisão perpétua e Ezequias vira presidente (Epílogo). Absolvido: o grupo e Ezequias são banidos para o \"Estábulo\" e precisam limpar o nome (quadro \"Derrota no Tribunal\").</p><p style=\"text-align:justify\"><b>Automação:</b> macro A1 · O Julgamento.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura1"
+    },
+    "world": {
+      "cdr": "a1"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "d862d551",
+      "assinaturas": [
+        "d862d551"
+      ]
+    }
+  },
+  "_id": "FWyz5gw4fuQbhnNa",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!FWyz5gw4fuQbhnNa"
+}

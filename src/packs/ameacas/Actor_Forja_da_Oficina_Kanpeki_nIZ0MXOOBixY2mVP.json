@@ -1,0 +1,52 @@
+{
+  "name": "Forja da Oficina Kanpeki",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "QFmZFK2ZBodTkCEF",
+  "system": {
+    "attributes": {
+      "nd": "1"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 2, tarefa \"Auxílio em Manufatura\" (Goro Okazaki).</b></p><p style=\"text-align:justify\">Ajudar Goro a terminar a espada: operar o fole, segurar a lâmina na têmpera, preparar os óleos. Teste estendido com perícias diferentes (Atletismo, Ofício, Fortitude...), CD 15, 3 sucessos. Falha total estraga a espada.</p>",
+      "effects": "<p style=\"text-align:justify\"><b>Arruaceiros:</b> depois da primeira parte, @UUID[Compendium.giria-t20.ameacas.Actor.fK8H5betBV7TQqkq]{6 bandidos} invadem. Dois personagens continuam ajudando Goro (ação completa e um teste por rodada; mais 3 sucessos terminam a espada) enquanto o resto luta. Trocar de função custa uma ação completa. Com metade dos bandidos derrotada, a gangue foge.</p>",
+      "actions": "<p style=\"text-align:justify\">Espada pronta e oficina protegida: Goro dobra a recompensa (T$ 60 por pessoa) e fica em dívida de honra. Espada estragada: metade da recompensa. Anote o resultado (testemunha no julgamento).</p><p style=\"text-align:justify\"><b>Automação:</b> use a macro CdR · Teste estendido (CD 15, 3 sucessos).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura1"
+    },
+    "world": {
+      "cdr": "a1"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "fc52aea7",
+      "assinaturas": [
+        "fc52aea7"
+      ]
+    }
+  },
+  "_id": "nIZ0MXOOBixY2mVP",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!nIZ0MXOOBixY2mVP"
+}

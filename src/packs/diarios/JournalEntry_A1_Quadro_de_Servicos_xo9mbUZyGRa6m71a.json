@@ -1,0 +1,380 @@
+{
+  "name": "A1 · Quadro de Serviços",
+  "folder": "Dj25DxX9Bfdzi85M",
+  "flags": {
+    "world": {
+      "cdr": "a1",
+      "cdrRole": "quadro"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-diarios",
+      "assinatura": "afaaff41",
+      "assinaturas": [
+        "afaaff41"
+      ]
+    }
+  },
+  "ownership": {
+    "default": 2
+  },
+  "_id": "xo9mbUZyGRa6m71a",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Amansar Espírito do Gelo",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>Solicitante:</b> Penellope Pendragon<br><b>Local:</b> Oficina Beluhga, Distrito da Bigorna</p><p><i>Adquiri um cristal elemental das Uivantes, mas parece que o espírito dentro dele ainda está ativo. Preciso de aventureiros bons de briga para cuidar do elemental quando eu abrir o cristal.</i></p><p><b>Nível de Perigo:</b> 3<br><b>Recompensa:</b> T$ 200</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "wmUmWy69QgM4L9uu",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!xo9mbUZyGRa6m71a.wmUmWy69QgM4L9uu"
+    },
+    {
+      "name": "Auxílio em Manufatura",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>Solicitante:</b> Goro Okazaki<br><b>Local:</b> Oficina Kanpeki, Distrito da Forja</p><p><i>Contrato ajudantes para ajudar na forja de espada. Pago bem.</i></p><p><b>Nível de Perigo:</b> 1<br><b>Recompensa:</b> T$ 30/pessoa</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "eFUkJ8kRBp8lZCS6",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!xo9mbUZyGRa6m71a.eFUkJ8kRBp8lZCS6"
+    },
+    {
+      "name": "Caçada Exótica",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>Solicitante:</b> Chef Rizzelena<br><b>Local:</b> Taverna Pombo de Ouro, Distrito da Forja</p><p><i>Procuro aventureiros capazes para perseguir e abater uma iguaria que habita o leito do rio.</i></p><p><b>Nível de Perigo:</b> 2<br><b>Recompensa:</b> T$ 120/peça</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "CBpLcFcFBR1fKoL6",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!xo9mbUZyGRa6m71a.CBpLcFcFBR1fKoL6"
+    },
+    {
+      "name": "Coleta de Ingredientes",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>Solicitante:</b> Boticário Rafu<br><b>Local:</b> Poções Promissoras, Distrito da Bigorna</p><p><i>Procuro caçadores de monstros para ajudar na coleta de ingredientes... Perigosos.</i></p><p><b>Nível de Perigo:</b> 2<br><b>Recompensa:</b> T$ 100+</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "Stg7Iv3lvngEWO4a",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!xo9mbUZyGRa6m71a.Stg7Iv3lvngEWO4a"
+    },
+    {
+      "name": "Coleta e Entrega de Encomenda",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>Solicitante:</b> \"Sr. P\"<br><b>Local:</b> Normandia</p><p><i>Procuro um grupo de aventureiros destemidos e discretos que possam coletar uma encomenda no porto e levá-la para um ponto específico na cidade. Pago muito bem pelo serviço. Interessados me encontrem em Normandia, estarei todos os dias, ao meio-dia, sentado num dos bancos da praça central vestindo uma boina azul.</i></p><p><b>Nível de Perigo:</b> 1<br><b>Recompensa:</b> a definir</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "KPHFQgFv4ni1VeDd",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!xo9mbUZyGRa6m71a.KPHFQgFv4ni1VeDd"
+    },
+    {
+      "name": "Escolta até Tarrafet",
+      "type": "text",
+      "sort": 600,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>Solicitante:</b> Astor Cartografia & Geologia<br><b>Local:</b> Distrito da Bigorna</p><p><i>Preciso colher amostras de solo na região de Tarrafet, mas o local é infestado de mortos-vivos errantes. Por esse motivo busco contratar uma escolta de aventureiros.</i></p><p><b>Nível de Perigo:</b> 3<br><b>Recompensa:</b> T$ 400</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "4lY7EAzDR5e6dbCq",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!xo9mbUZyGRa6m71a.4lY7EAzDR5e6dbCq"
+    },
+    {
+      "name": "Investigação de Contrabando e Venda de Material Ilegal",
+      "type": "text",
+      "sort": 700,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>Solicitante:</b> Guilda dos Mineradores<br><b>Local:</b> Taverna Fim do Mundo, Distrito da Bigorna</p><p><i>A Guilda recebeu denúncias de que goblins estão vendendo explosivos ilegais na taverna Fim do Mundo. Investiguem o local por pistas que possam levar aos produtos ou aos contrabandistas, e tragam as informações e provas para a Sede da Guarda.</i></p><p><b>Nível de Perigo:</b> 1<br><b>Recompensa:</b> T$ 200</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "URRZE0KPxDFHD0Jo",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!xo9mbUZyGRa6m71a.URRZE0KPxDFHD0Jo"
+    },
+    {
+      "name": "Investigação nas Minas Heldret",
+      "type": "text",
+      "sort": 800,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>Solicitante:</b> Mineradora Heldret<br><b>Local:</b> Minas Heldret</p><p><i>A Mineradora Heldret contrata aventureiros experientes para averiguar uma câmara suspeita encontrada durante as escavações.</i></p><p><b>Nível de Perigo:</b> 3<br><b>Recompensa:</b> T$ 500</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "3BhRvspYGT2NMrzG",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!xo9mbUZyGRa6m71a.3BhRvspYGT2NMrzG"
+    },
+    {
+      "name": "Reforço nas Muralhas",
+      "type": "text",
+      "sort": 900,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>Solicitante:</b> Sargento Elias Fletcher<br><b>Local:</b> Distrito do Carvão, Portão Sul</p><p><i>Estamos com problemas para fiscalizar o portão e poucos homens disponíveis. Aceitamos reforço de aventureiros registrados.</i></p><p><b>Nível de Perigo:</b> 2<br><b>Recompensa:</b> T$ 50/pessoa</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "AkgPQNoWHSnEYXkI",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!xo9mbUZyGRa6m71a.AkgPQNoWHSnEYXkI"
+    }
+  ],
+  "_key": "!journal!xo9mbUZyGRa6m71a"
+}

@@ -61,3 +61,34 @@ test("Lonien: cura 4d8+4 ao cair a 0 PV, só uma vez por cena", async () => {
 	assert.deepEqual(problemas(mundo, { avisos: true }), []);
 	mundo.encerrar();
 });
+
+test("Meiose Glópica: no par, um glop surge ao lado da Mamãe Glop e entra no combate", async () => {
+	const mundo = await criarMundo({ semente: "cdr-meiose" });
+	await carregarModulo(mundo, { ready: true });
+	await mundo.game.modules.get(MODULO).api.puxar({ atos: ["patamar1"] });
+	const mamae = mundo.game.actors.find((a) => a.name === "Mamãe Glop");
+	assert.ok(mamae, "Mamãe Glop não veio do compêndio");
+	assert.equal(mamae.getFlag("world", "cdrAutomacoes")?.meiose?.ator, "Glop");
+	// O Giria T20 não está no mundo simulado: o glop vem do ator do mundo com o nome.
+	await globalThis.Actor.create({ name: "Glop", type: "npc", system: { attributes: { pv: { value: 5, max: 5 } } } });
+	await mundo.criarCena("Fundição");
+	await mundo.colocarToken(await mundo.criarPJ("Rak", { nivel: 1 }));
+	await mundo.colocarToken(mamae);
+	const combate = await mundo.iniciarCombate();
+	await mundo.aguardarOcioso();
+	const antes = combate.combatants.size;
+	const glopsAntes = mundo.canvas.scene.tokens.filter((t) => t.name === "Glop").length;
+	let pares = 0;
+	for (let i = 0; i < 8; i++) {
+		mundo.chat.length = 0;
+		await combate.nextTurn();
+		await mundo.aguardarOcioso();
+		const msg = mundo.chat.find((c) => /Meiose Glópica/.test(c.flavor ?? c.content ?? ""));
+		if (msg && /par, um glop/.test(msg.flavor ?? "")) pares++;
+	}
+	assert.ok(pares > 0, "em 8 turnos devia sair pelo menos um par");
+	assert.equal(combate.combatants.size, antes + pares, "cada par devia pôr um glop no combate");
+	assert.equal(mundo.canvas.scene.tokens.filter((t) => t.name === "Glop").length, glopsAntes + pares);
+	assert.deepEqual(problemas(mundo, { avisos: true }), []);
+	mundo.encerrar();
+});
