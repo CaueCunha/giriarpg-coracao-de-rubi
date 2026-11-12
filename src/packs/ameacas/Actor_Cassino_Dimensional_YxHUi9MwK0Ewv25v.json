@@ -1,0 +1,52 @@
+{
+  "name": "Cassino Dimensional",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "fXvtY4xXc4f9DdQK",
+  "system": {
+    "attributes": {
+      "nd": "11"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cena 4 (porão da Lixo Trancado).</b></p><p style=\"text-align:justify\">Vencer Rà em combate, agindo com cartas, numa redoma de cartas flutuantes de 15 m de raio. Fortitude CD 20 ao chegar: quem falha começa @STATUS[enjoado] na primeira rodada. Use a macro <b>A3 · Cassino Dimensional</b> (simula o baralho com d20 e d4).</p>",
+      "effects": "<p style=\"text-align:justify\">No início de cada rodada, cada personagem compra até ter 3 cartas; Rà, até 5. Age primeiro quem tem a maior carta numérica, em ordem decrescente.</p><p style=\"text-align:justify\">Cada ação gasta uma carta; o naipe define a ação: <b>paus</b> movimento, <b>copas</b> padrão (exceto atacar), <b>espadas</b> agredir, <b>ouros</b> completa. Os personagens continuam limitados a uma padrão e uma de movimento por turno; Rà não.</p><p style=\"text-align:justify\">No fim da rodada, pode descartar as cartas não usadas.</p>",
+      "actions": "<p style=\"text-align:justify\"><b>Ás:</b> ação (do naipe) que não conta no limite do turno. <b>Valete:</b> outra criatura em alcance curto rola de novo um teste recém-feito. <b>Rainha:</b> habilidade sem pagar o custo básico em PM (ainda gasta a carta da ação). <b>Rei:</b> +5 em um teste. <b>Curinga:</b> emula qualquer carta.</p><p style=\"text-align:justify\">Vencida, Rà cai inerte; o grupo volta à mesa da taverna, com Rà desacordada sob a mesa.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura3"
+    },
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "f87bcef8",
+      "assinaturas": [
+        "f87bcef8"
+      ]
+    }
+  },
+  "_id": "YxHUi9MwK0Ewv25v",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!YxHUi9MwK0Ewv25v"
+}

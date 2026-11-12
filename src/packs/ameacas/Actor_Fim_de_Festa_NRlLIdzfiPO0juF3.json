@@ -1,0 +1,52 @@
+{
+  "name": "Fim de Festa",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "fXvtY4xXc4f9DdQK",
+  "system": {
+    "attributes": {
+      "nd": "—"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cena 1 (sala de exposição de Bac Arat).</b></p><p style=\"text-align:justify\">Chegar ao palco, 12 m adiante, fugindo da multidão enfurecida de malfeitores e seguranças. Enfrentar todos não é opção. A escada para o térreo está obstruída.</p>",
+      "effects": "<p style=\"text-align:justify\">Rolem Iniciativa. Cada ação de movimento exige Acrobacia ou Atletismo CD 20: passa, avança metade do deslocamento (terreno difícil); falha, não avança.</p><p style=\"text-align:justify\">No fim de cada rodada, quem não está no palco sofre [[/r 4d8+4[corte]]] de corte da turba.</p>",
+      "actions": "<p style=\"text-align:justify\">Outras saídas: voar, Intimidação CD 25 etc. Causar 50 de dano na multidão (ou habilidades a critério do mestre) impede o dano da turba na rodada.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura3"
+    },
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "25098ebc",
+      "assinaturas": [
+        "25098ebc"
+      ]
+    }
+  },
+  "_id": "NRlLIdzfiPO0juF3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!NRlLIdzfiPO0juF3"
+}

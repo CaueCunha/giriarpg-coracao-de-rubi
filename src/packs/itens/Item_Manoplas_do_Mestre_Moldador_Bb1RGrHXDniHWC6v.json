@@ -1,0 +1,96 @@
+{
+  "name": "Manoplas do Mestre Moldador",
+  "type": "equipamento",
+  "img": "systems/tormenta20/icons/itens/equipamentos/manopla.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Par de manoplas grossas de couro avermelhado, reforçadas com aço, que permitem moldar rocha e minérios comuns (mas não material especial) com as mãos.</p><p style=\"text-align:justify\">Você pode lançar @UUID[Compendium.giria-t20.livro-basico.Item.T1fJO9LOyBxtBBDN]{Transmutar Objetos}, com um aprimoramento adicional: <b>+3 PM:</b> muda a execução para ação completa e a duração para permanente. Se já conhece a magia, o custo para lançá-la diminui em –1 PM.</p><p style=\"text-align:justify\">Acessório médio. Item do leilão de Bac Arat.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Blefe Fatal",
+    "tipo": "acessorio",
+    "preco": 21000,
+    "peso": 0,
+    "espacos": 1,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "qtd": 1,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "rolls": [],
+    "equipado": false,
+    "equipado2": {
+      "slot": 0,
+      "type": "body"
+    },
+    "armadura": {
+      "maxAtr": 0,
+      "penalidade": 0,
+      "value": 0
+    }
+  },
+  "folder": "eyVGC7GleCuuj7ZM",
+  "flags": {
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "34a31c09",
+      "assinaturas": [
+        "34a31c09"
+      ]
+    }
+  },
+  "_id": "Bb1RGrHXDniHWC6v",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!Bb1RGrHXDniHWC6v"
+}

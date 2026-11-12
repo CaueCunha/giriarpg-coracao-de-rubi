@@ -1,0 +1,95 @@
+{
+  "name": "Pulmão da Montanha",
+  "type": "tesouro",
+  "img": "systems/tormenta20/icons/itens/gerais/ferramenta-pesada.webp",
+  "flags": {
+    "world": {
+      "cdrRole": "pulmaoDaMontanha",
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "436a11e9",
+      "assinaturas": [
+        "436a11e9"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Fole de ferreiro de madeira escura adornado com runas. O couro lembra escamas e o bocal de saída tem a forma de uma cabeça de dragão, que parece \"soprar\" quando o objeto é manipulado. Dizem que é capaz de aspirar e expirar energias elementais.</p><p style=\"text-align:justify\">É a ferramenta necessária para forjar aço-rubi, mas suas capacidades mágicas estão latentes e só serão reveladas na Aventura 4. Quando o grupo o encontra, o couro está desgastado e as cores das escamas, opacas e desbotadas.</p><p style=\"text-align:justify\"><b>Artefato.</b></p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Blefe Fatal",
+    "qtd": 1,
+    "preco": 0,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "eyVGC7GleCuuj7ZM",
+  "_id": "ODFCYvmcgL09yFJl",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!ODFCYvmcgL09yFJl"
+}

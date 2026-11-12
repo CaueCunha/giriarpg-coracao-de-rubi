@@ -2,9 +2,9 @@
 
 Este é o conteúdo da campanha **Coração de Rubi** (Tormenta20) num módulo do Foundry VTT: ameaças, perigos, parceiros, itens, diários e macros com automação. Os compêndios ficam na pasta **Giria T20 - Coração de Rubi (Campanha)** da aba de Compêndios, um por tipo, com uma pasta por patamar e as pastas das aventuras dentro:
 
-| Compêndio | Patamar 1 · Iniciante | Campanha |
-|---|---|---|
-| **Ameaças e NPCs**, **Poderes**, **Itens**, **Diários**, **Macros** | A1 · Forja de Heróis, A2 · O Segredo das Minas | ferramentas do mestre e o Dado de Aniversário |
+| Compêndio | Patamar 1 · Iniciante | Patamar 2 · Veterano | Campanha |
+|---|---|---|---|
+| **Ameaças e NPCs**, **Poderes**, **Itens**, **Diários**, **Tabelas**, **Macros** | A1 · Forja de Heróis, A2 · O Segredo das Minas | A3 · Blefe Fatal | ferramentas do mestre e o Dado de Aniversário |
 
 É um módulo da família **Giria**: o que já existe no [Giria T20](https://github.com/CaueCunha/giria-t20) não é duplicado aqui (veja [Ligação com o sistema e o Giria T20](#ligação-com-o-sistema-e-o-giria-t20)). A contagem de cada compêndio está em [`build/relatorio.md`](build/relatorio.md).
 
@@ -148,7 +148,7 @@ Para incluir uma aventura nova:
 2. Acrescente o nome dele no patamar certo em [`tools/conteudo.mjs`](tools/conteudo.mjs).
 3. Rode `npm run build` e `npm test`.
 
-Marque cada gerador com `flags.world.cdr` (a marca da aventura) e `flags.world.cdrRole` (o papel do documento), inclusive nas pastas: o build falha se faltar a marca. Hoje as Aventuras 1 e 2 têm gerador; as aventuras 3 a 6 entram nos patamares 2 a 4.
+Marque cada gerador com `flags.world.cdr` (a marca da aventura) e `flags.world.cdrRole` (o papel do documento), inclusive nas pastas: o build falha se faltar a marca. Hoje as Aventuras 1, 2 e 3 têm gerador; as aventuras 4 a 6 entram nos patamares 2 a 4.
 
 ### Versões
 

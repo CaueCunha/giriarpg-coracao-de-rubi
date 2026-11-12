@@ -1,0 +1,1529 @@
+{
+  "name": "Dazan, o Vampiro Falido",
+  "type": "npc",
+  "img": "systems/tormenta20/icons/ameacas/vampiro.png",
+  "sort": 100001,
+  "flags": {
+    "tormenta20": {
+      "sheet": {},
+      "lvlconfig": {
+        "pv": {},
+        "pm": {}
+      },
+      "version": "1.3.0.0",
+      "coracaoDeRubi": "aventura3"
+    },
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "0a298cc0",
+      "assinaturas": [
+        "0a298cc0"
+      ]
+    }
+  },
+  "system": {
+    "atributos": {
+      "for": {
+        "value": 0,
+        "bonus": 0,
+        "base": 6,
+        "racial": 0
+      },
+      "des": {
+        "value": 0,
+        "bonus": 0,
+        "base": 5,
+        "racial": 0
+      },
+      "con": {
+        "value": 0,
+        "bonus": 0,
+        "base": 5,
+        "racial": 0
+      },
+      "int": {
+        "value": 0,
+        "bonus": 0,
+        "base": 3,
+        "racial": 0
+      },
+      "sab": {
+        "value": 0,
+        "bonus": 0,
+        "base": 3,
+        "racial": 0
+      },
+      "car": {
+        "value": 0,
+        "bonus": 0,
+        "base": 6,
+        "racial": 0
+      }
+    },
+    "attributes": {
+      "cd": 29,
+      "pv": {
+        "value": 550,
+        "min": -500,
+        "max": 550,
+        "temp": 0
+      },
+      "pm": {
+        "value": 0,
+        "min": 0,
+        "max": 0,
+        "temp": 0
+      },
+      "movement": {
+        "burrow": {
+          "base": 0,
+          "bonus": []
+        },
+        "climb": {
+          "base": 21,
+          "bonus": []
+        },
+        "fly": {
+          "base": 0,
+          "bonus": []
+        },
+        "swim": {
+          "base": 0,
+          "bonus": []
+        },
+        "walk": {
+          "base": 21,
+          "bonus": []
+        },
+        "unit": "m",
+        "hover": false,
+        "tags": []
+      },
+      "defesa": {
+        "base": 31,
+        "value": 0,
+        "outros": 0,
+        "atributo": "des",
+        "pda": 0,
+        "bonus": [],
+        "condi": 0
+      },
+      "sentidos": {
+        "value": [
+          "escuro"
+        ],
+        "custom": ""
+      },
+      "conjuracao": "int",
+      "nivel": {
+        "value": 1,
+        "xp": {
+          "value": 0,
+          "pct": 0,
+          "proximo": 0
+        }
+      },
+      "nd": "11",
+      "carga": {
+        "value": 0,
+        "base": 10,
+        "bonus": [],
+        "max": 0,
+        "pct": 0,
+        "encumbered": false,
+        "atributo": "for",
+        "limit": 0
+      },
+      "treino": 0
+    },
+    "detalhes": {
+      "biography": {
+        "value": "<p style=\"text-align:justify\"><b>Variante do Coração de Rubi (p. 59):</b> vampiro que já viu dias melhores. Faminto, está fatigado (a Defesa 36 já conta a penalidade), faz só um ataque com espada por rodada e não usa Presença Majestosa. Rouba as moedas-convite do grupo e deixa um rastro de sangue (Parte 2, Cena 1). Com menos da metade dos PV grita \"Vocês me pagam!\" e foge em forma de morcego. Volta no leilão para acusar o grupo pela \"morte\" de Prinkster.</p>",
+        "public": ""
+      },
+      "raca": "Morto-vivo",
+      "tipo": "hum",
+      "divindade": "",
+      "equipamento": "",
+      "resistencias": "cura acelerada 10, redução de dano 10/luz.",
+      "tesouro": "Dobro.",
+      "role": "solo",
+      "origem": "",
+      "ataquescac": "Espada longa x2 +25 (2d8+25 mais 2d10 de trevas, 17) e garra +36 (2d6+25 mais 2d10 de trevas).",
+      "movimento": "",
+      "ataquesad": ""
+    },
+    "tracos": {
+      "tamanho": "med",
+      "resistencias": {
+        "perda": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "acido": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "corte": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "eletricidade": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "essencia": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "fogo": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "frio": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "impacto": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "luz": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 10,
+          "danoPorDado": false
+        },
+        "psiquico": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "perfuracao": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "trevas": {
+          "value": 0,
+          "base": 0,
+          "bonus": [],
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "excecao": 0,
+          "danoPorDado": false
+        },
+        "dano": {
+          "value": 10,
+          "imunidade": false,
+          "vulnerabilidade": false,
+          "base": 0,
+          "bonus": [],
+          "excecao": 0,
+          "danoPorDado": false
+        }
+      },
+      "ic": {
+        "value": [],
+        "custom": ""
+      },
+      "idiomas": {
+        "value": [
+          "comum"
+        ],
+        "custom": ""
+      },
+      "profArmaduras": {
+        "value": [],
+        "custom": ""
+      },
+      "profArmas": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "dinheiro": {
+      "tl": 0,
+      "to": 0,
+      "tp": 0,
+      "tc": 0
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "label": "Recurso 1"
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "label": "Recurso 2"
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "label": "Recurso 3"
+      },
+      "deathsave": {
+        "value": 0,
+        "max": 3,
+        "label": "Falha na Morte"
+      },
+      "shadow": {
+        "value": 0,
+        "max": 5,
+        "label": "Pontos de Sombra"
+      },
+      "catarse": {
+        "value": 0,
+        "max": 3,
+        "label": "Catarse"
+      }
+    },
+    "pericias": {
+      "acro": {
+        "atributo": "des",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "ades": {
+        "atributo": "car",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "atle": {
+        "atributo": "for",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "atua": {
+        "atributo": "car",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "cava": {
+        "atributo": "des",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "conh": {
+        "atributo": "int",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "cura": {
+        "atributo": "sab",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "dipl": {
+        "atributo": "car",
+        "outros": 0,
+        "treinado": true,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "enga": {
+        "atributo": "car",
+        "outros": 0,
+        "treinado": true,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "fort": {
+        "atributo": "con",
+        "outros": 1,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "furt": {
+        "atributo": "des",
+        "outros": 10,
+        "treinado": true,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "guer": {
+        "atributo": "int",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "inic": {
+        "atributo": "des",
+        "outros": 0,
+        "treinado": true,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "inti": {
+        "atributo": "car",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "intu": {
+        "atributo": "sab",
+        "outros": 0,
+        "treinado": false,
+        "label": "",
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false
+      },
+      "inve": {
+        "atributo": "int",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "joga": {
+        "atributo": "car",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "ladi": {
+        "atributo": "des",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "luta": {
+        "atributo": "for",
+        "outros": 9,
+        "treinado": true,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "mist": {
+        "atributo": "int",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "nobr": {
+        "atributo": "int",
+        "outros": 0,
+        "treinado": true,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "ofi0": {
+        "atributo": "int",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "perc": {
+        "atributo": "sab",
+        "outros": 0,
+        "treinado": true,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "pilo": {
+        "atributo": "des",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "pont": {
+        "atributo": "des",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "refl": {
+        "atributo": "des",
+        "outros": 15,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "reli": {
+        "atributo": "sab",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "sobr": {
+        "atributo": "sab",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "vont": {
+        "atributo": "sab",
+        "outros": 11,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      },
+      "_pc0": {
+        "atributo": "for",
+        "outros": 0,
+        "treinado": false,
+        "st": false,
+        "pda": false,
+        "size": false,
+        "custom": false,
+        "label": ""
+      }
+    },
+    "modificadores": {
+      "atributos": {
+        "geral": [
+          ""
+        ],
+        "fisicos": [
+          ""
+        ],
+        "mentais": [
+          ""
+        ],
+        "for": [
+          ""
+        ],
+        "des": [
+          ""
+        ],
+        "con": [
+          ""
+        ],
+        "int": [
+          ""
+        ],
+        "sab": [
+          ""
+        ],
+        "car": [
+          ""
+        ]
+      },
+      "dano": {
+        "geral": [
+          ""
+        ],
+        "cac": [
+          ""
+        ],
+        "ad": [
+          ""
+        ],
+        "mag": [
+          ""
+        ],
+        "alq": [
+          ""
+        ]
+      },
+      "custoPM": 0,
+      "pericias": {
+        "geral": [
+          ""
+        ],
+        "semataque": [
+          ""
+        ],
+        "ataque": [
+          ""
+        ],
+        "resistencia": [
+          ""
+        ],
+        "atr": {
+          "for": [
+            ""
+          ],
+          "des": [
+            ""
+          ],
+          "con": [
+            ""
+          ],
+          "int": [
+            ""
+          ],
+          "sab": [
+            ""
+          ],
+          "car": [
+            ""
+          ]
+        }
+      },
+      "ataque": {
+        "geral": [],
+        "cac": [],
+        "ad": []
+      },
+      "cura": {
+        "geral": [],
+        "mag": [],
+        "alq": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "flags": {},
+    "name": "Dazan, o Vampiro Falido",
+    "displayName": 0,
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "actorLink": false,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.pv"
+    },
+    "bar2": {
+      "attribute": "attributes.pm"
+    },
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "dim": 0,
+      "bright": 0,
+      "angle": 360,
+      "color": null,
+      "alpha": 1,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "coloration": 1,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": "systems/tormenta20/icons/ameacas/vampiro.png",
+      "tint": "#ffffff",
+      "scaleX": 1.1,
+      "scaleY": 1.1,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": true,
+      "range": 18,
+      "brightness": 1,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": {},
+    "appendNumber": false,
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "depth": 1
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.tormenta20.ameacas.Actor.d5Im71VWcxIz9xKM",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "oG5kDaZ0qLIQ4bGL",
+  "_id": "xpZszCUdRe1x7VWU",
+  "items": [
+    {
+      "type": "poder",
+      "name": "Dominação Vampírica",
+      "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+      "system": {
+        "description": {
+          "value": "O vampiro sussurra palavras de controle para um humanoide em alcance curto. A vítima fica confusa, enfeitiçada ou fascinada até o final da cena ou perde suas memórias da última hora, a escolha do vampiro (Von CD 29 evita). Uma criatura só pode ser alvo desta habilidade uma vez por cena<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.d5Im71VWcxIz9xKM.Item.mZck2eUTP7KO1ZmU]{Dominação Vampírica (Vampiro)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.bestiario-de-arton.Item.3wPDoybN67XrAbcN]{Dominação Vampírica}</p>",
+          "unidentified": ""
+        },
+        "source": "",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 0,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "efeito": "",
+        "alcance": "none",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "tipo": "ability",
+        "subtipo": "",
+        "origin": "",
+        "tags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": []
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.bestiario-de-arton.Item.3wPDoybN67XrAbcN",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "Ow2atBNQcAVFh7lb",
+      "effects": [],
+      "_key": "!actors.items!xpZszCUdRe1x7VWU.Ow2atBNQcAVFh7lb"
+    },
+    {
+      "type": "poder",
+      "name": "Drenar Sangue",
+      "img": "icons/magic/death/mouth-bite-fangs-vampire.webp",
+      "system": {
+        "description": {
+          "value": "O vampiro drena sangue de uma criatura viva que esteja agarrando; ele causa 6d6 pontos de dano de perfuração e recupera a mesma quantidade de PV. Uma criatura morta pelo vampiro desta forma se erguerá como um vampiro na próxima noite e deverá vencer um teste de Vontade oposto contra o vampiro ou ficará sob o controle dele até que ele a liberte ou seja destruído<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.d5Im71VWcxIz9xKM.Item.SHCaQHbCCkeSmJen]{Drenar Sangue (Vampiro)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.bestiario-de-arton.Item.xbFON0rFJVsZYwyW]{Drenar Sangue}</p>",
+          "unidentified": ""
+        },
+        "source": "",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 0,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "efeito": "",
+        "alcance": "none",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "6d6",
+                "perfuracao",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "tipo": "ability",
+        "subtipo": "",
+        "origin": "",
+        "tags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": []
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.bestiario-de-arton.Item.xbFON0rFJVsZYwyW",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "SufPzJAjp0hkqQiA",
+      "effects": [],
+      "_key": "!actors.items!xpZszCUdRe1x7VWU.SufPzJAjp0hkqQiA"
+    },
+    {
+      "type": "poder",
+      "name": "Forma de Morcego",
+      "img": "icons/creatures/mammals/bat-movement-flying-purple.webp",
+      "system": {
+        "description": {
+          "value": "O vampiro se transforma em um morcego. Ele se torna Minúsculo (+5 em Furtividade e -5 em testes de manobra) e recebe deslocamento de voo 12m. Seu equipamento é absorvido (retornando quando ele volta ao normal) e suas outras estatísticas não são alteradas. A transformação dura quanto tempo ele desejar, mas termina caso faça um ataque, lance uma magia ou sofra dano<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.d5Im71VWcxIz9xKM.Item.GEPyEaJqIBNHrQCO]{Forma de Morcego (Vampiro)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.bestiario-de-arton.Item.1Yp0XX2OEnotswu1]{Forma de Morcego}</p>",
+          "unidentified": ""
+        },
+        "source": "",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 0,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "efeito": "",
+        "alcance": "none",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "tipo": "ability",
+        "subtipo": "",
+        "origin": "",
+        "tags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": []
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.bestiario-de-arton.Item.1Yp0XX2OEnotswu1",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "e0heNUiZrnDoeZ7A",
+      "effects": [],
+      "_key": "!actors.items!xpZszCUdRe1x7VWU.e0heNUiZrnDoeZ7A"
+    },
+    {
+      "type": "poder",
+      "name": "Sensibilidade ao Sol",
+      "img": "icons/creatures/unholy/demon-winged-cyclops-drooling.webp",
+      "system": {
+        "description": {
+          "value": "Quando exposto a luz solar direta, o vampiro fica ofuscado e perde 6d6 PV por rodada.<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.d5Im71VWcxIz9xKM.Item.0ADQhYISqIwurOzM]{Sensibilidade ao Sol (Vampiro)}</p>",
+          "unidentified": ""
+        },
+        "source": "",
+        "ativacao": {
+          "execucao": "",
+          "custo": 0,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "efeito": "",
+        "alcance": "none",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "tipo": "ability",
+        "subtipo": "",
+        "origin": "",
+        "tags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": []
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "UfBwt0ArDUHxdDla",
+      "effects": [],
+      "_key": "!actors.items!xpZszCUdRe1x7VWU.UfBwt0ArDUHxdDla"
+    },
+    {
+      "name": "Espada longa",
+      "type": "arma",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp",
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<section class=\"secret\">Espada longa x2</section><p>Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.LirOBCaOzAEWQpFk]{Espada longa}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.LirOBCaOzAEWQpFk]{Espada longa}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 148",
+        "equipado": 0,
+        "carregado": true,
+        "peso": 2,
+        "espacos": 1,
+        "qtd": 1,
+        "preco": 15,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "2d8+25",
+                "corte",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ],
+              [
+                "2d10",
+                "trevas",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 17,
+        "criticoX": 2,
+        "alcance": "-",
+        "tipoUso": "sim",
+        "propriedades": {
+          "ada": false,
+          "agi": false,
+          "alo": false,
+          "arr": false,
+          "dst": false,
+          "dms": false,
+          "dup": false,
+          "lev": false,
+          "mun": false,
+          "ver": false,
+          "adaptavel": false,
+          "agil": false,
+          "alongada": false,
+          "arremesso": false,
+          "ataqueDistancia": false,
+          "duasMaos": false,
+          "dupla": false,
+          "leve": false,
+          "municao": false,
+          "versatil": false,
+          "des": false
+        },
+        "ativacao": {
+          "custo": null,
+          "condicao": "",
+          "execucao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "chatFlavor": "",
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "upgrades": {
+          "melhoria1": "precise",
+          "melhoria2": "specialmaterial",
+          "melhoria3": "",
+          "melhoria4": "",
+          "material": [],
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "itemType": [],
+          "improvement": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "materialEspecial1": "",
+          "enableAutoUpgrades": true
+        },
+        "proficiencia": "marcial",
+        "proposito": "corpo-a-corpo",
+        "empunhadura": "uma",
+        "size": "normal",
+        "ataques": 0,
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "rolltags": [],
+        "automationtags": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.LirOBCaOzAEWQpFk",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": "brhICwdHcOUqvMPi",
+      "sort": 2200000,
+      "_id": "rSsf0z07H6cAn5hY",
+      "effects": [],
+      "_key": "!actors.items!xpZszCUdRe1x7VWU.rSsf0z07H6cAn5hY"
+    },
+    {
+      "folder": "38RRBscxCtcFC5s4",
+      "name": "Garra",
+      "type": "arma",
+      "img": "icons/creatures/claws/claw-bear-paw-swipe-red.webp",
+      "system": {
+        "description": {
+          "value": "<section class=\"secret\">garras</section>",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipado": 0,
+        "carregado": true,
+        "peso": 0,
+        "espacos": 0,
+        "qtd": 1,
+        "preco": 0,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "11",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "2d6+25",
+                "corte",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ],
+              [
+                "2d10",
+                "trevas",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 20,
+        "criticoX": 2,
+        "alcance": "",
+        "tipoUso": "sim",
+        "propriedades": {
+          "ada": false,
+          "agi": false,
+          "alo": false,
+          "arr": false,
+          "dst": false,
+          "dms": false,
+          "dup": false,
+          "lev": false,
+          "mun": false,
+          "ver": false,
+          "des": false
+        },
+        "origin": "",
+        "tags": [],
+        "chatFlavor": "",
+        "ativacao": {
+          "custo": null,
+          "condicao": "",
+          "execucao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": null,
+          "mpMultiplier": false,
+          "type": "",
+          "target": ""
+        },
+        "chatGif": "",
+        "upgrades": {
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "material": [],
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "itemType": [],
+          "improvement": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "materialEspecial1": "",
+          "enableAutoUpgrades": true
+        },
+        "proficiencia": "natural",
+        "proposito": "corpo-a-corpo",
+        "empunhadura": "leve",
+        "size": "normal",
+        "ataques": 0,
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "rolltags": [],
+        "automationtags": []
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_id": "5qJNITQ7pVIT6WrJ",
+      "effects": [],
+      "_key": "!actors.items!xpZszCUdRe1x7VWU.5qJNITQ7pVIT6WrJ"
+    },
+    {
+      "_id": "fsSk7CZJY9h1LVVs",
+      "name": "Armadura completa",
+      "type": "equipamento",
+      "img": "systems/tormenta20/icons/itens/equipamentos/armadura-completa.webp",
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p>A mais forte e pesada das armaduras, formada por placas de metal forjadas e encaixadas de modo a cobrir o corpo inteiro. Inclui manoplas e grevas (luvas e botas metálicas, respectivamente), um elmo com viseira e uma túnica acolchoada para ser usada sob as placas. Correias e fivelas distribuem o peso da armadura pelo corpo inteiro. </p><p>Esta armadura precisa ser feita sob medida para cada usuário; um ferreiro cobra T$ 200 para adaptar uma armadura completa a um novo usuário.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.CTeeKAq8zZlaJTpA]{Armadura completa}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.CTeeKAq8zZlaJTpA]{Armadura completa}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 154",
+        "equipado": true,
+        "carregado": true,
+        "peso": 25,
+        "espacos": 5,
+        "qtd": 1,
+        "preco": 3000,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "tipo": "pesada",
+        "armadura": {
+          "value": 10,
+          "penalidade": -5,
+          "maxAtr": 0
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "ativacao": {
+          "custo": 0,
+          "condicao": "",
+          "execucao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "upgrades": {
+          "melhoria1": "delicate",
+          "melhoria2": "specialmaterial",
+          "melhoria3": "",
+          "melhoria4": "",
+          "material": [],
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "itemType": [],
+          "improvement": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "materialEspecial1": "",
+          "enableAutoUpgrades": true
+        },
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": "body"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.CTeeKAq8zZlaJTpA",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "folder": "rsvFZjPiYXV5s7IN",
+      "sort": 200000,
+      "effects": [],
+      "_key": "!actors.items!xpZszCUdRe1x7VWU.fsSk7CZJY9h1LVVs"
+    }
+  ],
+  "effects": [],
+  "_key": "!actors!xpZszCUdRe1x7VWU"
+}

@@ -1,0 +1,190 @@
+{
+  "name": "A3 · Documentos para os jogadores",
+  "folder": "ADHDesQC5dfThHvO",
+  "flags": {
+    "world": {
+      "cdr": "a3",
+      "cdrRole": "documentos"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-diarios",
+      "assinatura": "2a878fb8",
+      "assinaturas": [
+        "2a878fb8"
+      ]
+    }
+  },
+  "_id": "G2X1Ifbe6V4GCqT9",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Pergaminho sobre os Itens (Bac Arat)",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Os produtos mais maravilhosos, por valores um tanto quanto presunçosos.</i></p><ul><li><b>Pingente da Sereia Adormecida.</b> “Quando o sono eterno dominar sua alma, segure o Pingente da Sereia Adormecida forte em sua palma.”</li><li><b>Cálice Encantado de Mulk.</b> “Se os lábios de um amigo o elixir toca, sua saúde será recuperada. Se um inimigo o líquido prova, sua vida poderá ser fulminada.”</li><li><b>Adaga do Último Suspiro.</b> “Em face da morte do amor irrefutável, a vingança será, então, inevitável.”</li><li><b>Manoplas do Mestre Moldador.</b> “Ao toque dessas luvas, pedras e metal serão tão moldáveis quanto barro primordial.”</li><li><b>Pulmão da Montanha.</b> “O sangue da terra toma forma, quando o sopro poderoso atinge a bigorna.”</li></ul><p></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "aJsVDsYKQ1jLi0xI",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!G2X1Ifbe6V4GCqT9.aJsVDsYKQ1jLi0xI"
+    },
+    {
+      "name": "Moeda-convite de Bac Arat",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Moeda de brilho esverdeado e borda espetada. Numa face, o brasão de Aslothia; na outra, uma lua minguante e a inscrição <b>BAC ARAT</b>. Vale um convidado e um acompanhante.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "h67LyDqEcXzOawKl",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!G2X1Ifbe6V4GCqT9.h67LyDqEcXzOawKl"
+    },
+    {
+      "name": "Placa na estrada",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Você está adentrando a Floresta dos Papa-Dim. Cuidado.</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "AW0x4UMiRK7qquyG",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!G2X1Ifbe6V4GCqT9.AW0x4UMiRK7qquyG"
+    },
+    {
+      "name": "Recompensa (anunciada em Bac Arat)",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Notícias frescas da capital! O reino está oferecendo uma recompensa de cem mil Tibares pela cabeça de foragidos cuja descrição se parece muito com esse grupo aí!</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "Hl5VATGybs52ImQO",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!G2X1Ifbe6V4GCqT9.Hl5VATGybs52ImQO"
+    }
+  ],
+  "_key": "!journal!G2X1Ifbe6V4GCqT9"
+}

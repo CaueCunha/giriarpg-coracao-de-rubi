@@ -1,0 +1,266 @@
+{
+  "name": "A3 · Roteiro",
+  "folder": "ADHDesQC5dfThHvO",
+  "flags": {
+    "world": {
+      "cdr": "a3",
+      "cdrRole": "roteiro"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-diarios",
+      "assinatura": "064a156c",
+      "assinaturas": [
+        "064a156c"
+      ]
+    }
+  },
+  "_id": "cFCere1MWXTFXeng",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\"><b>Blefe Fatal</b> (livro, pp. 47–61). Personagens do 8º ao 11º nível. Aventura de intriga em Aslavi, cidade de jogatina e leilões de Aslothia, o Reino dos Mortos: esperteza vale mais que força bruta. Aqui nada é proibido, desde que você não seja pego.</p><p style=\"text-align:justify\"><b>Parte 1:</b> entrar em Aslavi e descobrir o leilão e o artefato. <b>Parte 2:</b> chegar ao Leilão das Sombras em Bac Arat; os itens são roubados e o grupo é acusado. <b>Parte 3:</b> atrás da verdadeira ladra, Rà, até o Cassino Dimensional.</p><p style=\"text-align:justify\"><b>Introdução:</b> em Yuvalin, o anão Thrûn ouviu boatos de um item capaz de forjar aço-rubi que será leiloado em Aslothia. Ezequias conta de Aslavi e entrega a missão e a @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.jbWfxPbtq0NigxLO]{Carta de crédito da Guilda dos Mineradores}.</p><p style=\"text-align:justify\"><b>Viagem</b> (cerca de 2.000 km, semanas): pelo leste, cruzando a Supremacia Purista, ou pelo sul (Deheon, Wynlla e o Mar do Dragão-Rei). Resolva com descrição (Jornadas, T20 p. 267), com o perigo complexo Jornada pelos Ermos (longa, T20 p. 320) ou com uma aventura sua.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "51wj0yO3Xzm7cvlV",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cFCere1MWXTFXeng.51wj0yO3Xzm7cvlV"
+    },
+    {
+      "name": "Aslavi",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Cerca de 100 km ao sul de Milothiann, sobre uma colina íngreme: construções amontoadas, vielas estreitas que terminam em barrancos, névoa densa e lampiões. Muro de pedra de 6 m; portão vigiado por quatro esqueletos (dois no portão, dois na torre) e uma aparição.</p><p style=\"text-align:justify\"><b>Barganha:</b> vencer muda o preço em 15% a seu favor; vencer por 10 ou mais, 30%. Perder por 5 ou mais: compra algo sem valor real.</p><p style=\"text-align:justify\"><b>Leilões secretos:</b> cimitarra dançarina, adaga sanguinária, clava profana, punhal sszzazita, carapaça demoníaca, manto da noite, anel da invisibilidade, brincos da sagacidade, caveira maldita e todo tipo de veneno.</p><p style=\"text-align:justify\">Forasteiros são tolerados porque a cidade enche os cofres reais. Devotos de deuses do Bem, cavaleiros da Luz e arcanistas não recebem essa hospitalidade.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "g4QzTovw3bOO3FZ6",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cFCere1MWXTFXeng.g4QzTovw3bOO3FZ6"
+    },
+    {
+      "name": "Parte 1 — Mão de Kobold",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — Portões da Morte:</b> A aparição cobra pedágio de T$ 200 por pessoa. Se não pagarem, ou se virem devoto de Azgher, Khalmyr, Lena ou Thyatis, cavaleiro da Luz ou arcanista, os guardas atacam: @UUID[Compendium.giria-t20.ameacas.Actor.MKKB4eECVXAjyvRy]{aparição}, @UUID[Compendium.giria-t20.ameacas.Actor.0QJaEz9fdHb47RXi]{2 esqueletos de elite} no portão e @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.FB0MG9PgBtCNqH7S]{2 besteiros} na torre. Mesmo de dia a aparição não fica debilitada (o céu é sempre encoberto). Se o combate passar de 5 rodadas, no início da 6ª surgem [[/r 1d4+1]] @UUID[Compendium.giria-t20.ameacas.Actor.XAJNOpuVGZSZpjW7]{esqueletos}.</li><li><b>Cena 2 — Em Aslavi:</b> Praça central de comerciantes que sussurram ofertas. Passeios, compras, e logo a Lixo Trancado.</li><li><b>Cena 3 — Lixo Trancado:</b> Maior taverna de Aslavi: bar no térreo, hospedaria em cima e casa de apostas no porão (o dobro do tamanho). Agatha, a taverneira da colher de pau; Opritnik, hynne recepcionista, garçom e batedor de carteiras; as raparigas Tayla e Aiana; três @UUID[Compendium.giria-t20.ameacas.Actor.4zzHSrERPWvDQQav]{ogros} seguranças com maças. Opritnik deixa escapar que o osteon da mesa do fundo vai conduzir o leilão amanhã (e reclamou do omelete de naja). Prinkster, de casaca e cartola, com os \"colegas\" Vrat e Porac (@UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.onikJiovDkUVzmPJ]{assassinos putrefatos} disfarçados), convida para o jogo: \"Se quiserem conversar, precisam jogar.\"</li><li><b>Cena 4 — Partida de Wyrt:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.LSMeSc4gTtNSOimM]{Partida de Wyrt}. Macro <b>A3 · Partida de Wyrt</b> (página \"Comentários de Prinkster\"). No fim, duas @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.nqpBoM3UCe4XzYeT]{moedas-convite de Bac Arat} ficam na mesa.</li><li><b>Cena 5 — Ambição Élfica:</b> Uma adaga crava na mesa onde estavam as moedas. Trio de Elfos: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.pAeyjhLcGthZqc9z]{Sihnion}, @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.GGeAVeLI246BHWAT]{Sillion} e @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.xKqW1gdSN74FdmfX]{Siora}. Os seguranças estão escoltando Prinkster: ninguém intervém.</li><li><b>Cena 6 — Hospedagem Grátis:</b> Agatha agradece, repreende Opritnik e oferece os aposentos pelo tempo que quiserem. Três dias para descansar, comprar e se preparar.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "AsqSSlxzaCITtTYa",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cFCere1MWXTFXeng.AsqSSlxzaCITtTYa"
+    },
+    {
+      "name": "Parte 2 — Castelo de Barro",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — Sangue & Ouro:</b> As moedas-convite sumiram. Investigação CD 15: pedaço de capa preta ensanguentado na janela. A rua dos fundos está sob <i>Escuridão</i>; Sobrevivência CD 15 (–5 sem dissipar) segue o sangue até um casebre. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.xpZszCUdRe1x7VWU]{Dazan, o Vampiro Falido} dorme no divã com uma taça vazia; o próximo movimento o acorda. Com menos da metade dos PV foge como morcego. Os convites estão no casebre.</li><li><b>Cena 2 — Floresta dos Papa-Dim:</b> Agatha empresta uma carruagem. Placa: \"Você está adentrando a Floresta dos Papa-Dim. Cuidado\". Conhecimento, Misticismo ou Sobrevivência CD 20 para saber o que são. Percepção CD 15: a carruagem da frente joga moedas e os papa-dim param para recolher. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.HmEKFI70XTFE1P72]{Enxame de Papa-dim}; matar não resolve: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.TgXDDKrrLxPFm3kg]{Fuga dos Papa-Dim}.</li><li><b>Cena 3 — Chegando em Bac Arat:</b> Mansão de pedra de três andares, salão circular sob abóbada de vitral, luzes vermelhas e roxas. Banquete e aposentos; de manhã, o pergaminho do leilão (veja \"Documentos para os jogadores\") e a exposição no 2º andar: ilusões dos cinco itens numa sala pentagonal (os verdadeiros estão nos \"cofres malditos\"). Itens: @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.W45USR2jJLMYSZAs]{Pingente da Sereia Adormecida}, @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.NWF69AWE8n4aFI7F]{Cálices Encantados de Mulk}, @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.Pw7UdlFhKxUjDaZL]{Adaga do Último Suspiro}, @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.Bb1RGrHXDniHWC6v]{Manoplas do Mestre Moldador} e @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.ODFCYvmcgL09yFJl]{Pulmão da Montanha}.</li><li><b>Cena 4 — Medusas Barraqueiras:</b> Três medusas brigam por uma bolsa; a terceira organiza apostas. A bolsa voa no grupo: todos fazem Reflexos e o menor resultado leva [[/r 1d4+2[impacto]]] e cai. Irmãs Medusas: 3 @UUID[Compendium.giria-t20.ameacas.Actor.QmbDo3LPMBsBDcno]{cultistas de Sszzaas} (raça medusa). A segurança chega em [[/r 1d4+1]] rodadas e expulsa todos, mas Prinkster intervém: \"Esses não. São meus convidados.\" À noite, festa.</li><li><b>Cena 5 — O Dia do Leilão:</b> Na entrada, um esqueleto garçom serve @UUID[Compendium.giriarpg-coracao-de-rubi.tabelas.RollTable.T86A8FkGrg6s1vfy]{Licor de Tinta de Kraken} (Misticismo ou Ofício (alquimia) CD 20: é mágico). Prinkster abre o leilão com o Pingente... que não chega. O palco explode: Prinkster morto, \"desta vez, em definitivo\". Dazan acusa o grupo e a multidão avança. Termine a cena aqui.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "Zb7kgG0Ja2rYdO06",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cFCere1MWXTFXeng.Zb7kgG0Ja2rYdO06"
+    },
+    {
+      "name": "Parte 3 — Valha-me Nimb",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — Fim de Festa:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.NRlLIdzfiPO0juF3]{Fim de Festa}</li><li><b>Cena 2 — Detrás das Cortinas:</b> Porta trancada com trava de madeira. Salão com urna num pedestal no meio de uma piscina sem fundo; porta de pedra trancada por magia; teletransporte não funciona. A urna guarda uma chave de ferro; ao pegá-la, um elfo anuncia a recompensa de T$ 100.000 pelo grupo e surge a Guardiã do Cofre: uma @UUID[Compendium.giria-t20.ameacas.Actor.HZ42DL62joiPLBL5]{hidra} (cinco cabeças). Lembre que podem fugir pela porta de pedra com a chave.</li><li><b>Cena 3 — Desvendando o Mistério:</b> O cofre pentagonal com os itens verdadeiros. \"Prinkster\" guarda o Pulmão da Montanha numa caixa e se revela: é @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.2rTIVQDKIAM6VJPX]{Rà}. Bola de Fogo na parede e fuga; 4 @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.onikJiovDkUVzmPJ]{assassinos putrefatos} bloqueiam o caminho. Depois, perseguição de carroça (Rà joga prata aos papa-dim) até a Lixo Trancado.</li><li><b>Cena 4 — De volta à Taverna:</b> Rastro de sangue até o porão. Rà segura Agatha com uma adaga; Opritnik e as raparigas desmaiados; os ogros enfeitiçados. Rà quer a recompensa e propõe um Wyrt: \"Se me atacarem agora... todos aqui morrem.\" Teletransporte para o @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.YxHUi9MwK0Ewv25v]{Cassino Dimensional} (macro <b>A3 · Cassino Dimensional</b>).</li><li><b>Epílogo:</b> De volta à mesa, Rà desacordada. Agatha está com o Pulmão da Montanha e o @UUID[Compendium.giriarpg-coracao-de-rubi.itens.Item.tE8SmUkIZKwb7dXp]{Bastão de teletransporte de Rà}: \"Ele serve para ir até Vectora. Agora vão, antes que os guardas cheguem!\" O grupo surge no Mercado das Nuvens. Perguntas: como o artefato funciona? Para quem Rà ia entregá-lo em Vectora? Personagens no 11º nível.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "9ZLhQQ0LmrwOZWP6",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cFCere1MWXTFXeng.9ZLhQQ0LmrwOZWP6"
+    },
+    {
+      "name": "Comentários de Prinkster",
+      "type": "text",
+      "sort": 600,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Um por rodada da Partida de Wyrt, nesta ordem, se os personagens beberem com ele (a macro solta sozinha).</p><ol><li>Aslavi é um antro de ladrões e oportunistas: mercadores das Repúblicas Livres e de Vectora viram alvos fáceis de golpistas.</li><li>Comerciantes foragidos de outros reinos trazem estoques de procedência duvidosa.</li><li>Eles ficam na rua principal: itens raros... ou ilegais.</li><li>As melhores mercadorias estão nos 'leilões das sombras', secretos, com convite personalizado.</li><li>Itens mágicos confiscados pelas autoridades aparecem nos leilões; rumores de que enriquecem o regente Ferren Asloth (sussurrado).</li><li>O convite é uma moeda especial entregue por um estranho; Prinkster será o apresentador do próximo.</li><li>O maior leilão será na mansão Bac Arat em três dias, com baile; a joia é um objeto para criar as armas mais poderosas de Arton.</li><li>O item é o 'Pulmão da Montanha', um fole de ferreiro mágico. \"Chega de conversa!\"</li></ol>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "eLDZWnn2Gd1Jd2Yw",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!cFCere1MWXTFXeng.eLDZWnn2Gd1Jd2Yw"
+    }
+  ],
+  "_key": "!journal!cFCere1MWXTFXeng"
+}

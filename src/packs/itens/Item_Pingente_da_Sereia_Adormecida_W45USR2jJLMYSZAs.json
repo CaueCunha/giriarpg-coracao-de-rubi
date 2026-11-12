@@ -1,0 +1,96 @@
+{
+  "name": "Pingente da Sereia Adormecida",
+  "type": "equipamento",
+  "img": "systems/tormenta20/icons/itens/gerais/joia-familia.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Uma pérola enorme e brilhante, envolta em uma rede de fios de prata. Seu usuário se torna imune a sono e sua recuperação de PV e PM é sempre confortável.</p><p style=\"text-align:justify\">O usuário pode gastar uma ação de movimento e 1 PM para remover uma condição de fadiga que esteja afetando qualquer criatura em alcance curto.</p><p style=\"text-align:justify\">Acessório menor. Item do leilão de Bac Arat (Parte 2, Cena 3).</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Blefe Fatal",
+    "tipo": "acessorio",
+    "preco": 3000,
+    "peso": 0,
+    "espacos": 1,
+    "ativacao": {
+      "custo": 1,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "qtd": 1,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "rolls": [],
+    "equipado": false,
+    "equipado2": {
+      "slot": 0,
+      "type": "body"
+    },
+    "armadura": {
+      "maxAtr": 0,
+      "penalidade": 0,
+      "value": 0
+    }
+  },
+  "folder": "eyVGC7GleCuuj7ZM",
+  "flags": {
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "a28ecd25",
+      "assinaturas": [
+        "a28ecd25"
+      ]
+    }
+  },
+  "_id": "W45USR2jJLMYSZAs",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!W45USR2jJLMYSZAs"
+}

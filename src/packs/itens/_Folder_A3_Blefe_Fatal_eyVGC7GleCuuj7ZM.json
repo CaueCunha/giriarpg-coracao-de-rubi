@@ -1,0 +1,30 @@
+{
+  "name": "A3 · Blefe Fatal",
+  "type": "Item",
+  "color": "#7a3f5f",
+  "flags": {
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2"
+    }
+  },
+  "_id": "eyVGC7GleCuuj7ZM",
+  "description": "",
+  "folder": "rLCJfOecX5S2qhqB",
+  "sorting": "a",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!eyVGC7GleCuuj7ZM"
+}

@@ -1,0 +1,170 @@
+{
+  "name": "Adaga do Último Suspiro",
+  "type": "arma",
+  "img": "systems/tormenta20/icons/itens/equipamentos/adaga.webp",
+  "sort": 100000,
+  "flags": {
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-itens",
+      "assinatura": "a6190bcd",
+      "assinaturas": [
+        "a6190bcd"
+      ]
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Uma adaga prateada com uma lágrima vermelha em rubi na base da lâmina e empunhadura totalmente preta. A Último Suspiro é uma adaga formidável, assassina e sanguinária.</p><p style=\"text-align:justify\">Você pode gastar 2 PM para tocar em um cadáver e ver a última cena vista por esta criatura antes de morrer.</p><p style=\"text-align:justify\">Arma específica. Item do leilão de Bac Arat. O livro não detalha os encantos: os efeitos de assassina e sanguinária ficam com o mestre.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Blefe Fatal",
+    "equipado": 0,
+    "equipado2": {
+      "slot": 0,
+      "type": "hand"
+    },
+    "carregado": true,
+    "peso": 0.5,
+    "espacos": 1,
+    "qtd": 1,
+    "preco": 70000,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "rolls": [
+      {
+        "name": "Ataque",
+        "key": "ataque0",
+        "type": "ataque",
+        "parts": [
+          [
+            "1d20",
+            "",
+            ""
+          ],
+          [
+            "luta",
+            "",
+            ""
+          ],
+          [
+            "0",
+            "",
+            ""
+          ]
+        ],
+        "adaptavel": "",
+        "versatil": ""
+      },
+      {
+        "name": "Dano",
+        "key": "dano1",
+        "type": "dano",
+        "parts": [
+          [
+            "1d4",
+            "perfuracao",
+            ""
+          ],
+          [
+            "@for",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ],
+    "criticoM": 19,
+    "criticoX": 2,
+    "alcance": "short",
+    "tipoUso": "sim",
+    "propriedades": {
+      "ada": false,
+      "agi": false,
+      "alo": false,
+      "arr": true,
+      "dst": false,
+      "dup": false,
+      "mun": false,
+      "ver": false,
+      "adaptavel": false,
+      "agil": false,
+      "alongada": false,
+      "arremesso": true,
+      "ataqueDistancia": false,
+      "duasMaos": false,
+      "dupla": false,
+      "leve": true,
+      "municao": false,
+      "versatil": false,
+      "des": false
+    },
+    "ativacao": {
+      "custo": 2,
+      "condicao": "",
+      "execucao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "chatFlavor": "",
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null,
+      "mpMultiplier": false
+    },
+    "proposito": "corpo-a-corpo",
+    "origin": "",
+    "tags": [],
+    "chatGif": "",
+    "upgrades": {
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "material": [],
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "itemType": [],
+      "improvement": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "materialEspecial1": "",
+      "enableAutoUpgrades": true
+    },
+    "ataques": 0,
+    "proficiencia": "simples",
+    "empunhadura": "leve",
+    "size": "normal",
+    "rolltags": [],
+    "automationtags": []
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.tormenta20.equipamentos.Item.XuObO7LzBBNoIsGv",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "eyVGC7GleCuuj7ZM",
+  "_id": "Pw7UdlFhKxUjDaZL",
+  "effects": [],
+  "_key": "!items!Pw7UdlFhKxUjDaZL"
+}

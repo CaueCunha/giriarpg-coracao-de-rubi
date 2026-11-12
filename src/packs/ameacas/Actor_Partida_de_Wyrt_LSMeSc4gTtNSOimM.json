@@ -1,0 +1,52 @@
+{
+  "name": "Partida de Wyrt",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "fXvtY4xXc4f9DdQK",
+  "system": {
+    "attributes": {
+      "nd": "—"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 1, Cena 4 (porão da Lixo Trancado).</b></p><p style=\"text-align:justify\">Manter Prinkster falando sobre o leilão (não precisa ganhar). Até dois personagens jogam; Prinkster e os capangas Vrat e Porac jogam como um só, com T$ 300. Use a macro <b>A3 · Partida de Wyrt</b>.</p>",
+      "effects": "<p style=\"text-align:justify\"><b>Aposta inicial:</b> T$ 100 por personagem. <b>Aposta da rodada:</b> no seu turno, T$ 20 ou T$ 50; os outros cobrem (Prinkster paga o triplo: T$ 60 ou T$ 150).</p><p style=\"text-align:justify\"><b>Mão Inicial:</b> Carisma CD 15 (passa: +5 na Jogatina; falha por 5+: –5) ou Ladinagem CD 20 (passa: +5; falha por 5+: pego trapaceando e expulso pelos ogros).</p><p style=\"text-align:justify\"><b>Ajudar/Atrapalhar:</b> quem está fora ajuda com qualquer perícia justificável (CD 10/15), ou atrapalha Prinkster (CD 15: –1, e –1 a cada 10 acima). Cada perícia uma vez; falha por 5+ é expulso por \"atrapalhar a mesa\".</p><p style=\"text-align:justify\"><b>Blefar:</b> Enganação CD 20 (+2; falha por 5+: –5).</p><p style=\"text-align:justify\"><b>Hora da Verdade:</b> Jogatina oposto (pode sem treino); Prinkster +14. Quem vence leva o pote.</p><p style=\"text-align:justify\"><b>Bebida Amarga:</b> fim de cada rodada, Fortitude CD 15 +1 por teste já feito. 1ª falha @STATUS[frustrado], 2ª @STATUS[esmorecido], 3ª @STATUS[inconsciente] (sai do jogo). Quem não bebe ofende Prinkster: sem comentário na rodada.</p>",
+      "actions": "<p style=\"text-align:justify\">Fim de jogo quando os dois personagens ou Prinkster ficam sem dinheiro. Prinkster se despede com duas piscadelas do olho esquerdo e deixa na mesa duas moedas-convite de Bac Arat.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura3"
+    },
+    "world": {
+      "cdr": "a3"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar2",
+      "antigo": "patamar2-ameacas",
+      "assinatura": "7a09d7b4",
+      "assinaturas": [
+        "7a09d7b4"
+      ]
+    }
+  },
+  "_id": "LSMeSc4gTtNSOimM",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!LSMeSc4gTtNSOimM"
+}
