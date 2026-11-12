@@ -1,0 +1,152 @@
+{
+  "name": "A5 · Documentos para os jogadores",
+  "folder": "kX69dbjBbHvAxlEu",
+  "flags": {
+    "world": {
+      "cdr": "a5",
+      "cdrRole": "documentos"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-diarios",
+      "assinatura": "40a4bdfb",
+      "assinaturas": [
+        "40a4bdfb"
+      ]
+    }
+  },
+  "_id": "Mz6ZBLfgVguTtd7o",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Pichação na Taverna Fim do Mundo",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><b>ESPERAMOS QUE GOSTE DO PRESENTE, LIXO PURISTA! ASS: OS GOBLINS</b></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "umpcLvaW5lDz7YDx",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Mz6ZBLfgVguTtd7o.umpcLvaW5lDz7YDx"
+    },
+    {
+      "name": "Discurso de Kor Kovith (Fundição Central)",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Minha mente não consegue compreender porque pequenos passarinhos saltitantes entraram de tão bom grado nesta gaiola. Por que desceram do céu ao inferno? Teriam se apaixonado por mim, o Príncipe? Sou tão puro, o mais puro de todos! Purguei minha própria carne nas chamas. Agora cantem, passarinhos. Cantem pela débil Kor Kovith e pela esplendorosa Supremacia. Cantem seus gritos de dor! O príncipe irá dançar a música de vocês.</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "GA9wXdIaTLpQTOAb",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Mz6ZBLfgVguTtd7o.GA9wXdIaTLpQTOAb"
+    },
+    {
+      "name": "Caderno de Ezequias (o que dá para ler)",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Planos de uma máquina apelidada <b>ARQUEMIS-B</b>: esqueleto de gigante reanimado, banhado em adamante líquido, com dois braços biônicos adicionais e um canhão de rajadas arcanas. O ARQUEMIS-A explodiu em fase de testes. O resto está num código estranho que, quanto mais se estuda, mais parece fazer sentido...</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "2HzYH9efC5WlHryv",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!Mz6ZBLfgVguTtd7o.2HzYH9efC5WlHryv"
+    }
+  ],
+  "_key": "!journal!Mz6ZBLfgVguTtd7o"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "JyBHXF2nuezKpOao",
+  "name": "Patamar 3 · Campeão (aventura 5)",
+  "type": "Item",
+  "folder": null,
+  "sorting": "a",
+  "sort": 300000,
+  "color": "#7a5a2f",
+  "description": "",
+  "flags": {
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3"
+    }
+  },
+  "_key": "!folders!JyBHXF2nuezKpOao",
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

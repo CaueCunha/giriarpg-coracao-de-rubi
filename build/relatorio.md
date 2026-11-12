@@ -272,6 +272,57 @@
 ### Avisos do Foundry simulado (0)
 
 
+## Patamar 3 · Campeão (aventura 5)
+
+- Ameaças e NPCs: 16 documento(s)
+- Poderes: 3 documento(s)
+- Itens: 5 documento(s)
+- Diários: 3 documento(s)
+- Macros: 1 documento(s)
+
+### Ligações com o sistema e o Giria T20 (35)
+
+| Dono | Item | Tipo | O que foi feito |
+|---|---|---|---|
+| ARQUEMIS-B | Espada titânica | arma | link para o sistema |
+| ARQUEMIS-B | Seta Infalível | magia | já era cópia do sistema |
+| ARQUEMIS-B | Seta Infalível | magia | link para o Giria T20 |
+| ARQUEMIS-B | Flecha Ácida | magia | já era cópia do sistema |
+| ARQUEMIS-B | Flecha Ácida | magia | link para o Giria T20 |
+| ARQUEMIS-B | Lança Ígnea | magia | já era cópia do sistema |
+| ARQUEMIS-B | Lança Ígnea | magia | link para o Giria T20 |
+| ARQUEMIS-B | Raio Polar | magia | já era cópia do sistema |
+| ARQUEMIS-B | Raio Polar | magia | link para o Giria T20 |
+| Ber'baram | Marrada | arma | link para o sistema |
+| Ber'baram | Marrada | arma | origem no Giria T20 (manual) |
+| Manada de Ber'baram | Marrada | arma | link para o sistema |
+| Manada de Ber'baram | Marrada | arma | origem no Giria T20 (manual) |
+| Corvo de Krauser | Pancada | arma | ficha do livro + origem no sistema |
+| Corvo de Krauser | Goblins Consertadores (cura acelerada 20) | poder | ficha do livro + origem no sistema |
+| Diligência Dracocérbera | Mordida | arma | ficha do livro + origem no sistema |
+| Diligência Dracocérbera | Aura Aterradora | poder | ficha do livro + origem no sistema |
+| Golem de Reconhecimento | Pancada | arma | ficha do livro + origem no sistema |
+| Grupo de Assalto de Elite | Espada bastarda | arma | ficha do livro + origem no sistema |
+| Grupo de Assalto de Elite | Espada bastarda | arma | origem no Giria T20 (uso) |
+| Grupo de Assalto de Elite | Besta pesada | arma | ficha do livro + origem no sistema |
+| Grupo de Assalto de Elite | Besta pesada | arma | origem no Giria T20 (uso) |
+| Príncipe Conrad Kor Kovith | Espada longa | arma | ficha do livro + origem no sistema |
+| Príncipe Conrad Kor Kovith | Espada longa | arma | origem no Giria T20 (uso) |
+| Príncipe Conrad Kor Kovith | Teletransporte | poder | link para o sistema |
+| Reator de Tormenta | Mordida | arma | ficha do livro + origem no sistema |
+| Reator de Tormenta | Desintegrar | magia | já era cópia do sistema |
+| Reator de Tormenta | Desintegrar | magia | link para o Giria T20 |
+| Reator de Tormenta | Enxame Rubro | magia | já era cópia do sistema |
+| Reator de Tormenta | Enxame Rubro | magia | link para o Giria T20 |
+| Reator de Tormenta | Metamorfose | magia | já era cópia do sistema |
+| Reator de Tormenta | Metamorfose | magia | link para o Giria T20 |
+| Reator de Tormenta | Relâmpago | magia | já era cópia do sistema |
+| Reator de Tormenta | Relâmpago | magia | link para o Giria T20 |
+| (item) | Hariken | arma | já era cópia do sistema |
+
+### Avisos do Foundry simulado (0)
+
+
 ## Campanha (ferramentas do mestre e artefatos dos jogadores)
 
 - Poderes: 1 documento(s)
@@ -287,10 +338,10 @@
 
 ## Compêndios
 
-- `ameacas` (Ameaças e NPCs): 67 documento(s), 14 pasta(s)
-- `poderes` (Poderes): 7 documento(s), 8 pasta(s)
-- `itens` (Itens): 38 documento(s), 6 pasta(s)
-- `diarios` (Diários): 15 documento(s), 6 pasta(s)
+- `ameacas` (Ameaças e NPCs): 83 documento(s), 18 pasta(s)
+- `poderes` (Poderes): 10 documento(s), 10 pasta(s)
+- `itens` (Itens): 43 documento(s), 8 pasta(s)
+- `diarios` (Diários): 18 documento(s), 8 pasta(s)
 - `tabelas` (Tabelas): 3 documento(s), 5 pasta(s)
-- `macros` (Macros): 15 documento(s), 8 pasta(s)
+- `macros` (Macros): 16 documento(s), 10 pasta(s)
 

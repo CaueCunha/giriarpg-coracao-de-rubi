@@ -1,0 +1,52 @@
+{
+  "name": "O Código Lefeu",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "keqb1HyWE1QHG5Xr",
+  "system": {
+    "attributes": {
+      "nd": "16"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 3, Cena 2 (caderno de Ezequias).</b></p><p style=\"text-align:justify\">Estudar as anotações de Ezequias em <b>3 dias</b> para descobrir as fraquezas do ARQUEMIS-B. No início de cada dia, cada personagem faz uma das ações (ou ajuda um colega).</p>",
+      "effects": "<p style=\"text-align:justify\">No fim de cada dia, quem fez uma ação faz Vontade CD 30 (+2 por teste já feito): 1 falha @STATUS[frustrado]; 2 falhas @STATUS[alquebrado]; 3 falhas perde para sempre 1 ponto de Int, Sab ou Car (aleatório).</p><p style=\"text-align:justify\">Cada sucesso revela um trecho do caderno e a vantagem dele (veja \"O Código Lefeu\" no roteiro).</p>",
+      "actions": "<p style=\"text-align:justify\"><b>Brecha na Armadura</b> (Ofício [armeiro] CD 35). <b>É Grande, mas não É Dois</b> (Iniciativa CD 35). <b>Explosão de Raiva</b> (Luta CD 35).</p><p style=\"text-align:justify\"><b>Fogo de Suporte</b> (Pontaria CD 35). <b>Fonte de Mana</b> (Misticismo CD 35). <b>Referências Religiosas</b> (Religião CD 35).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura5"
+    },
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-ameacas",
+      "assinatura": "5fae359b",
+      "assinaturas": [
+        "5fae359b"
+      ]
+    }
+  },
+  "_id": "eecYFajfPO8q0AGQ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!eecYFajfPO8q0AGQ"
+}

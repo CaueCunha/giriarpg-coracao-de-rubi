@@ -1,0 +1,114 @@
+{
+  "name": "A5 · Como usar no Foundry",
+  "folder": "kX69dbjBbHvAxlEu",
+  "flags": {
+    "world": {
+      "cdr": "a5",
+      "cdrRole": "comoUsar"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-diarios",
+      "assinatura": "446a912c",
+      "assinaturas": [
+        "446a912c"
+      ]
+    }
+  },
+  "_id": "tlb7dkFKg3xKufQi",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">Tudo desta aventura fica nas pastas <b>A5 · Mentes Malignas</b> (Atores, Itens, Macros e Diários). Ameaças em <i>Ameaças</i>; perigos e testes em <i>Perigos e Testes</i>. Cenas e mapas ficam por sua conta.</p><p style=\"text-align:justify\">Golem de ferro, capitão-baluarte, capelão de guerra, cavaleiro do Leopardo Negro e o lefeu ezzayn vêm do <b>Giria T20</b> pelos links do roteiro.</p><p style=\"text-align:justify\">Os Espectros e o ARQUEMIS-B são construtos colossais: o combate com eles é abstrato (o dano representa abordagens, tripulantes derrotados e pontos estruturais). Fichas conferidas com o livro (pp. 100–103).</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "uhbPIx2QgjZSs0Eg",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!tlb7dkFKg3xKufQi.uhbPIx2QgjZSs0Eg"
+    },
+    {
+      "name": "Automações",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>ARQUEMIS-B e Corvo de Krauser:</b> Cura acelerada automática no início do turno (30 e 20). Quando a tripulação ou os goblins forem afetados por uma condição, apague a habilidade de cura da ficha para desligar.</li><li><b>Ber'baram, Manada, Kor Kovith:</b> Fogo e trevas extras automáticos nos ataques; botões de Em Chamas e Agarrado.</li><li><b>Campo de Distorção (ARQUEMIS-B e Reator):</b> Botões de Esmorecido e Debilitado por 1 rodada e rolagem dos PM perdidos.</li><li><b>Golem de Reconhecimento:</b> Sensor de Caça como opção no ataque (+2d8 ou +4d8 contra humanoide).</li><li><b>Hariken:</b> Formidável (+2 no dano) automático.</li><li><b>Testes estendidos:</b> Perseguição Celeste, Caminhada pelo Inferno e O Código Lefeu: macro CdR · Teste estendido. Salto: macro A5 · Salto sobre Yuvalin.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "Y0FvIYabKB0fDFyD",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!tlb7dkFKg3xKufQi.Y0FvIYabKB0fDFyD"
+    }
+  ],
+  "_key": "!journal!tlb7dkFKg3xKufQi"
+}

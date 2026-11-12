@@ -1,0 +1,52 @@
+{
+  "name": "Perseguição Celeste",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "keqb1HyWE1QHG5Xr",
+  "system": {
+    "attributes": {
+      "nd": "15"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 1, Cena 4 (a bordo do Mariposa).</b></p><p style=\"text-align:justify\">Encontrar um dos Três Espectros Invisíveis: <b>5 sucessos</b> em Olhos no Céu em até <b>5 rodadas</b>. Role 1d6 para o espectro: 1–2 Hidra Helicoide, 3–4 Diligência Dracocérbera, 5–6 Corvo de Krauser (role de novo se já foi destruído). Três noites para destruir os três.</p>",
+      "effects": "<p style=\"text-align:justify\">No fim de cada rodada, cada personagem faz Fortitude CD 20 (+2 por teste anterior); falha: @STATUS[enjoado] e não age na rodada seguinte.</p><p style=\"text-align:justify\">No fim de cada rodada, o espectro atinge o Mariposa (Ref CD 30 reduz à metade): Hidra [[/r 12d6[eletricidade]]], Diligência [[/r 6d12[trevas]]], Corvo [[/r 6d8+10[impacto]]].</p><p style=\"text-align:justify\">Com os 5 sucessos, o espectro perde a Invisibilidade Noturna e começa o combate (o Mariposa é um aliado destruidor mestre). Sem eles, o espectro encontra o grupo: combate com todos surpreendidos.</p>",
+      "actions": "<p style=\"text-align:justify\"><b>Olhos no Céu</b> (Percepção CD 30).</p><p style=\"text-align:justify\"><b>Recompor</b> (Diplomacia ou Intimidação CD 20): tira um colega do enjoo.</p><p style=\"text-align:justify\"><b>Prestar Ajuda</b>: Conhecimento (estrelas faltando), Guerra, Investigação, Misticismo, Sobrevivência etc.</p><p style=\"text-align:justify\"><b>Manobras Defensivas</b> (Pilotagem CD 30): o Mariposa não é atingido nesta rodada.</p><p style=\"text-align:justify\"><b>No combate:</b> abordar com Atletismo CD 30 (sem ataques à distância do navio; Acrobacia CD 20 no início de cada turno ou cai, [[/r 40d6[impacto]]]; quem voa não testa).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura5"
+    },
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-ameacas",
+      "assinatura": "ffada5c2",
+      "assinaturas": [
+        "ffada5c2"
+      ]
+    }
+  },
+  "_id": "N4KLwGro1siMa6KZ",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!N4KLwGro1siMa6KZ"
+}

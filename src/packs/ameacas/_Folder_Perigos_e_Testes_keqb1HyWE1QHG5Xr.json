@@ -1,0 +1,30 @@
+{
+  "name": "Perigos e Testes",
+  "type": "Actor",
+  "folder": "ttdgKM5M8D6yLzJM",
+  "color": "#7a5a2f",
+  "flags": {
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3"
+    }
+  },
+  "_id": "keqb1HyWE1QHG5Xr",
+  "description": "",
+  "sorting": "a",
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!folders!keqb1HyWE1QHG5Xr"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Pólvora Goblin",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "keqb1HyWE1QHG5Xr",
+  "system": {
+    "attributes": {
+      "nd": "8"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 2, Cena 6 (Taverna Fim do Mundo).</b></p><p style=\"text-align:justify\">A taverna barricada (portas RD 5, 30 PV) parece um bastião da resistência. Dentro, só a pichação \"ESPERAMOS QUE GOSTE DO PRESENTE, LIXO PURISTA! ASS: OS GOBLINS\" e muita pólvora.</p>",
+      "effects": "<p style=\"text-align:justify\">Entrar arma o mecanismo: criaturas em alcance médio sofrem [[/r 20d6[fogo]]] de fogo (Reflexos CD 30 reduz para [[/r 10d6[fogo]]]). Atacar a barricada com fogo explode tudo sem direito a teste.</p>",
+      "actions": "<p style=\"text-align:justify\">Investigação ou Ladinagem CD 30 percebe e desarma a armadilha.</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura5"
+    },
+    "world": {
+      "cdr": "a5"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar3",
+      "antigo": "patamar3-ameacas",
+      "assinatura": "4bd0d636",
+      "assinaturas": [
+        "4bd0d636"
+      ]
+    }
+  },
+  "_id": "r9F0WMyr8oJcHPEr",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!r9F0WMyr8oJcHPEr"
+}

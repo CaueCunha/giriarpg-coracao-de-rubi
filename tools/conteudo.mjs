@@ -24,6 +24,12 @@ export const ATOS = [
 		geradores: ["a3-blefe-fatal", "a4-caravana-cartesiana"]
 	},
 	{
+		id: "patamar3",
+		rotulo: "Patamar 3 · Campeão (aventura 5)",
+		cor: "#7a5a2f",
+		geradores: ["a5-mentes-malignas"]
+	},
+	{
 		id: "campanha",
 		rotulo: "Campanha (ferramentas do mestre e artefatos dos jogadores)",
 		cor: "#6b5a2f",
