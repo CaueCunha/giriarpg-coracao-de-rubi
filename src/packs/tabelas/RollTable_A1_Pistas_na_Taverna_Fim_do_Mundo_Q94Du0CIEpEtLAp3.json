@@ -1,0 +1,204 @@
+{
+  "name": "A1 · Pistas na Taverna Fim do Mundo",
+  "img": "icons/svg/tankard.svg",
+  "folder": "dGAFIA4ReFLgYtGV",
+  "flags": {
+    "world": {
+      "cdr": "a1",
+      "cdrRole": "pistasGalix"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-tabelas",
+      "assinatura": "12d2ea6d",
+      "assinaturas": [
+        "12d2ea6d"
+      ]
+    }
+  },
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "description": "Um sucesso no teste estendido (CD 15, cada perícia uma vez pelo grupo) revela uma pista. Role de novo se repetir.",
+  "_id": "Q94Du0CIEpEtLAp3",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "results": [
+    {
+      "type": "text",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "name": "Cozinha de fachada",
+      "description": "Apesar de ter uma \"Cozinha\" nos fundos, a taverna serve apenas bebidas. Sempre que algum prato é pedido, os funcionários dizem que o suprimento acabou.",
+      "_id": "KaXY7QubyAxucnTW",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!Q94Du0CIEpEtLAp3.KaXY7QubyAxucnTW"
+    },
+    {
+      "type": "text",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "name": "Visitantes suspeitos",
+      "description": "A taverna recebe vários visitantes suspeitos, que não raramente são levados para os fundos e saem com pacotes estranhos.",
+      "_id": "qgifaEffjXWxcNEz",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!Q94Du0CIEpEtLAp3.qgifaEffjXWxcNEz"
+    },
+    {
+      "type": "text",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "name": "Fuligem preta",
+      "description": "Uma fuligem preta pelo chão da taverna. Um personagem treinado em Ofício (alquimia) percebe que é pólvora.",
+      "_id": "KnSXifh9EdYSxV79",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!Q94Du0CIEpEtLAp3.KnSXifh9EdYSxV79"
+    },
+    {
+      "type": "text",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "name": "Príncipe da Pólvora",
+      "description": "O dono da taverna é chamado pelos frequentadores de \"Príncipe da Pólvora Galix\".",
+      "_id": "pabvPiN233EG4oio",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!Q94Du0CIEpEtLAp3.pabvPiN233EG4oio"
+    },
+    {
+      "type": "text",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "name": "Monopólio, não crime",
+      "description": "Nenhum dos produtos vendidos pela gangue de Galix é realmente ilegal, apenas controlado como monopólio pela Guilda.",
+      "_id": "JKqV76L6TcBUjoi3",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!Q94Du0CIEpEtLAp3.JKqV76L6TcBUjoi3"
+    },
+    {
+      "type": "text",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "name": "Proteção paga",
+      "description": "Galix diz com todas as letras que não entende por que a Guilda poria aventureiros em seu encalço, já que ele paga muito bem pela \"proteção\" dos agentes da Guilda.",
+      "_id": "lTYNdlFQDqJBvjQs",
+      "img": null,
+      "documentUuid": null,
+      "drawn": false,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!Q94Du0CIEpEtLAp3.lTYNdlFQDqJBvjQs"
+    }
+  ],
+  "_key": "!tables!Q94Du0CIEpEtLAp3"
+}

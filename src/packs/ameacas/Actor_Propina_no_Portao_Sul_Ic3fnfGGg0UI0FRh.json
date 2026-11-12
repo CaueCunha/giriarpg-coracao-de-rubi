@@ -1,0 +1,52 @@
+{
+  "name": "Propina no Portão Sul",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "QFmZFK2ZBodTkCEF",
+  "system": {
+    "attributes": {
+      "nd": "2"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 2, tarefa \"Reforço nas Muralhas\" (Sargento Elias Fletcher).</b></p><p style=\"text-align:justify\">Fletcher trouxe o grupo como guarda-costas para cobrar propina de contrabandistas. O grupo escolhe entre ajudar ou prender os bandidos.</p>",
+      "effects": "<p style=\"text-align:justify\"><b>Ajudar na negociação:</b> teste estendido de Intimidação CD 16, 3 sucessos (Fletcher pode fazer um dos testes, com Intimidação +6). Sucesso: Fletcher paga T$ 100 a mais por personagem. Falha: os bandidos atacam.</p><p style=\"text-align:justify\"><b>Prender os bandidos:</b> @UUID[Compendium.giria-t20.ameacas.Actor.fK8H5betBV7TQqkq]{6 bandidos} e @UUID[Compendium.giria-t20.ameacas.Actor.z7K9pfPEVqvKYvBg]{chefe bandido}. Fletcher e dois guardas lutam como aliados iniciantes do tipo @UUID[Compendium.tormenta20.parceiros.Item.Un1h4jcM8qtf4F8L]{Guardião}. Derrotados, os bandidos se entregam.</p>",
+      "actions": "<p style=\"text-align:justify\">Anote a escolha (os guardas do Portão Sul testemunham no julgamento se o grupo prendeu os contrabandistas).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura1"
+    },
+    "world": {
+      "cdr": "a1"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "042929bc",
+      "assinaturas": [
+        "042929bc"
+      ]
+    }
+  },
+  "_id": "Ic3fnfGGg0UI0FRh",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!Ic3fnfGGg0UI0FRh"
+}

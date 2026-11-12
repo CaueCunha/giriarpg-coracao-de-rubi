@@ -1,0 +1,190 @@
+{
+  "name": "A1 · Documentos para os jogadores",
+  "folder": "Dj25DxX9Bfdzi85M",
+  "flags": {
+    "world": {
+      "cdr": "a1",
+      "cdrRole": "documentos"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-diarios",
+      "assinatura": "2f5fa464",
+      "assinaturas": [
+        "2f5fa464"
+      ]
+    }
+  },
+  "_id": "dFKNjm6uHZkltgrS",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Pergaminho da Guilda (Parte 1)",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Os aventureiros com licença temporária nível Quartzo devem se apresentar a um dos Mestres da Forja na Fundição Central para resolver um problema de infestação. Os recrutas têm dois dias para concluir a tarefa.</i></p><p>Os aventureiros registrados são divididos em categorias: <b>Quartzo</b>, aventureiros em treinamento; <b>Topázio</b>, os profissionais; e <b>Coríndon</b>, os aventureiros de elite. A categoria define o tipo de missão que se pode aceitar no quadro da Guilda.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "pNib7dwbC6mpHrm8",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!dFKNjm6uHZkltgrS.pNib7dwbC6mpHrm8"
+    },
+    {
+      "name": "Carta de E.H. (Parte 3)",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Convidamos o esquadrão a comparecer à loja Minérios Maravilhosos, no Distrito da Bigorna. — E.H.</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "mzVIzkwHtkuAX0xx",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!dFKNjm6uHZkltgrS.mzVIzkwHtkuAX0xx"
+    },
+    {
+      "name": "Recado de Artemis",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p><i>Digam ao seu contratante que eu agradeço a gentileza, mas peço que ele não envie mais coisas assim. Obrigado e tenham um bom dia.</i></p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "6Sv2tPZ4bV16e8E7",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!dFKNjm6uHZkltgrS.6Sv2tPZ4bV16e8E7"
+    },
+    {
+      "name": "Carta de Peter Varhim (dentro do pacote)",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p>Uma declaração de amor a Artemis, assinada por <b>Peter Varhim</b>, herdeiro de uma das casas fundadoras de Yuvalin, junto com a gema.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "naGPzZ77hUol4vx4",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!dFKNjm6uHZkltgrS.naGPzZ77hUol4vx4"
+    }
+  ],
+  "_key": "!journal!dFKNjm6uHZkltgrS"
+}

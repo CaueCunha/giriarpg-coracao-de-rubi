@@ -1,0 +1,94 @@
+{
+  "name": "Amostra de aço-rubi de Ezequias",
+  "type": "tesouro",
+  "img": "systems/tormenta20/icons/itens/gerais/aco-rubi.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Pepita metálica carmesim que Ezequias tira do bolso no discurso de posse: veio das minas do sul, onde também acharam indícios de uma oficina anã com os segredos para trabalhar o metal. Gancho para a Aventura 2.</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Forja de Heróis",
+    "qtd": 1,
+    "preco": 0,
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "ativacao": {
+      "custo": 0,
+      "condicao": "",
+      "execucao": "passive",
+      "qtd": "",
+      "special": ""
+    },
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "rolls": [],
+    "container": false
+  },
+  "folder": "JTn4vxmEomcuSXeH",
+  "flags": {
+    "world": {
+      "cdr": "a1"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "492bcd43",
+      "assinaturas": [
+        "492bcd43"
+      ]
+    }
+  },
+  "_id": "V8coPaqyIW59mFal",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [],
+  "_key": "!items!V8coPaqyIW59mFal"
+}

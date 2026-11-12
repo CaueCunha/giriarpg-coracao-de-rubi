@@ -4,7 +4,7 @@ Este é o conteúdo da campanha **Coração de Rubi** (Tormenta20) num módulo d
 
 | Compêndio | Patamar 1 · Iniciante | Campanha |
 |---|---|---|
-| **Ameaças e NPCs**, **Poderes**, **Itens**, **Diários**, **Macros** | A2 · O Segredo das Minas (a A1 não foi montada no Foundry) | ferramentas do mestre e o Dado de Aniversário |
+| **Ameaças e NPCs**, **Poderes**, **Itens**, **Diários**, **Macros** | A1 · Forja de Heróis, A2 · O Segredo das Minas | ferramentas do mestre e o Dado de Aniversário |
 
 É um módulo da família **Giria**: o que já existe no [Giria T20](https://github.com/CaueCunha/giria-t20) não é duplicado aqui (veja [Ligação com o sistema e o Giria T20](#ligação-com-o-sistema-e-o-giria-t20)). A contagem de cada compêndio está em [`build/relatorio.md`](build/relatorio.md).
 
@@ -68,6 +68,7 @@ A atualização troca o documento pela versão do compêndio com o **mesmo ID**,
 | Flag | O que faz | Usado em |
 |---|---|---|
 | `flags.world.cdrAutomacoes.curaAcelerada = { valor, excecao }` (ficha) | No início do turno da criatura em combate, recupera `valor` PV e sussurra ao mestre ("antes → depois"); com `excecao`, lembra de descontar esse tipo de dano | Troll Rubi (15, ácido), Abominação Rubi (10) |
+| `flags.world.cdrAutomacoes.meiose = { ator, giria }` (ficha) | No início do turno em combate, rola 1d6; no par, um glop surge ao lado e entra no combate (ator do mundo com esse nome ou, se não houver, o do Giria) | Mamãe Glop (A1) |
 | `flags.world.cdrParceiro = "lonien"` (item) | Quem tem o poder da Lonien e cai a 0 PV ou menos cura 4d8+4 sozinho, 1x por cena (marca "Lonien — cura de emergência usada", que some no fim da cena) | Parceira: Lonien (Veterana) |
 
 As flags ficam em `flags.world` porque entram na assinatura e vão junto ao puxar. Para uma aventura nova, acrescente a chave em [`scripts/automacoes.mjs`](scripts/automacoes.mjs). A API fica em `game.modules.get("giriarpg-coracao-de-rubi").api` (`abrirPuxar`, `abrirAtualizar`, `abrirLimpar`, `curaLonien(ator)`).
@@ -85,8 +86,9 @@ Poderes, magias e armas que já existem no sistema ou no Giria T20 são reaprove
 - As **magias** dos NPCs são a magia do sistema, com os efeitos de aprimoramento dela. Por cima vêm o custo, a CD e as rolagens da ficha do NPC, uma nota "Nesta ficha (Coração de Rubi)" e o link "No Giria T20".
 - **Armas, poderes e itens** com o mesmo nome mantêm os números da ficha da aventura. Se o Giria T20 tem o item, a origem (`compendiumSource`) aponta para a versão do Giria, que é a automatizada; senão, para o sistema. A descrição ganha os links "No sistema" e "No Giria T20".
 - Ataques naturais genéricos (Pancada, Mordida, Garra...) não são ligados ao Giria.
+- **Ameaças do livro básico** (glop, bandido, gorlogg...) não são copiadas: o gerador escreve `@GIRIA[Nome|T20]{rótulo}` e o build troca pelo link da ficha no compêndio de ameaças do Giria. `@GIRIA_UUID[Nome|T20]` vira só o uuid, para flags de automação. Marcador sem ficha no índice quebra o build.
 
-O índice do Giria fica em [`src/giria-indice.json`](src/giria-indice.json), porque o repositório do Giria é privado e o CI não o alcança. Para atualizar depois de uma versão nova do Giria: clone o `giria-t20` ao lado deste repositório e rode `node tools/giria-indice.mjs ../giria-t20`, depois `npm run build`. Os testes conferem cada link do Giria contra esse índice.
+O índice do Giria fica em [`src/giria-indice.json`](src/giria-indice.json), porque o repositório do Giria é privado e o CI não o alcança. Para atualizar depois de uma versão nova do Giria: clone o `giria-t20` ao lado deste repositório, abra os lotes de ameaças com `node ../giria-t20/tools/abrir-lotes.mjs` e rode `node tools/giria-indice.mjs ../giria-t20`, depois `npm run build`. Os testes conferem cada link do Giria contra esse índice.
 
 O relatório completo do que foi ligado está em [`build/relatorio.md`](build/relatorio.md).
 
@@ -105,7 +107,7 @@ npm test
 Os testes rodam num **Foundry v14 simulado**, sem servidor (veja [`tools/sim/README.md`](tools/sim/README.md)). A simulação usa os modelos de dados reais do Tormenta20, então cada documento é validado e limpo como o Foundry faria. Um campo que o Foundry descartaria em silêncio faz o teste falhar. Os testes cobrem:
 
 - **Macros:** todas são executadas numa cena da aventura, em combate, com um PJ selecionado e um NPC como alvo. Cada uma roda com os valores padrão, com cada opção do primeiro menu do diálogo e com 6 rodadas de escolhas sorteadas. Depois de cada execução o combate avança turnos e um PJ sofre dano, para disparar os ganchos das automações. Falham exceções, `console.error`, documentos inválidos, campos descartados, links quebrados e rolagens não avaliadas.
-- **Automações:** o Troll Rubi recupera 15 PV no turno dele com o aviso do ácido; a Lonien cura 4d8+4 ao cair a 0 PV e não cura de novo na mesma cena.
+- **Automações:** a Mamãe Glop põe um glop no combate a cada par; o Troll Rubi recupera 15 PV no turno dele com o aviso do ácido; a Lonien cura 4d8+4 ao cair a 0 PV e não cura de novo na mesma cena.
 - **Geradores:** cada patamar roda limpo num mundo vazio, e rodar de novo substitui em vez de duplicar.
 - **Compêndios:**
   - formato do `foundryvtt-cli` e IDs únicos;
@@ -146,7 +148,7 @@ Para incluir uma aventura nova:
 2. Acrescente o nome dele no patamar certo em [`tools/conteudo.mjs`](tools/conteudo.mjs).
 3. Rode `npm run build` e `npm test`.
 
-Marque cada gerador com `flags.world.cdr` (a marca da aventura) e `flags.world.cdrRole` (o papel do documento), inclusive nas pastas: o build falha se faltar a marca. Hoje só a Aventura 2 tem gerador; as aventuras 3 a 6 entram nos patamares 2 a 4 conforme forem preparadas.
+Marque cada gerador com `flags.world.cdr` (a marca da aventura) e `flags.world.cdrRole` (o papel do documento), inclusive nas pastas: o build falha se faltar a marca. Hoje as Aventuras 1 e 2 têm gerador; as aventuras 3 a 6 entram nos patamares 2 a 4.
 
 ### Versões
 

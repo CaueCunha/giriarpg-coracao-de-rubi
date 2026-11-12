@@ -1,0 +1,182 @@
+{
+  "name": "Éter Elemental (frio)",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/gelo-eterno.webp",
+  "system": {
+    "description": {
+      "value": "<p style=\"text-align:justify\">Tirado de um stagh (CD 18 para extrair). Você pode gastar uma ação padrão para aplicar este éter em uma arma ou munição, que causará +1d4 pontos de dano de frio até o fim da cena.</p><p style=\"text-align:justify\"><b>Automação:</b> com o éter na ficha, Shift+clique no ataque e marque a opção durante a cena. Gaste a dose (quantidade) ao aplicar.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.ameacas-de-arton.Item.4BuwuitEvKU8dw5v]{Éter Elemental}</p>",
+      "unidentified": ""
+    },
+    "source": "Coração de Rubi — Forja de Heróis",
+    "qtd": 1,
+    "preco": 60,
+    "ativacao": {
+      "execucao": "action",
+      "custo": 0,
+      "condicao": "",
+      "qtd": "",
+      "special": ""
+    },
+    "origin": "",
+    "tags": [],
+    "rolltags": [],
+    "automationtags": [],
+    "chatFlavor": "",
+    "chatGif": "",
+    "carregado": true,
+    "espacos": 0,
+    "peso": 0,
+    "pv": {
+      "value": 0,
+      "max": 0
+    },
+    "rd": 0,
+    "consume": {
+      "amount": 0,
+      "mpMultiplier": false,
+      "target": "",
+      "type": ""
+    },
+    "duracao": {
+      "units": "inst",
+      "value": 0,
+      "special": ""
+    },
+    "range": {
+      "units": "",
+      "value": 0
+    },
+    "alcance": "",
+    "alvo": "",
+    "area": "",
+    "efeito": "",
+    "resistencia": {
+      "txt": "",
+      "pericia": "",
+      "atributo": "",
+      "bonus": 0
+    },
+    "upgrades": {
+      "itemType": [],
+      "improvement": [],
+      "material": [],
+      "enchantment": [],
+      "curse": [],
+      "innovation": [],
+      "melhoria1": "",
+      "melhoria2": "",
+      "melhoria3": "",
+      "melhoria4": "",
+      "materialEspecial1": "",
+      "encanto1": "",
+      "encanto2": "",
+      "encanto3": "",
+      "enableAutoUpgrades": true
+    },
+    "rolls": [],
+    "tipo": "",
+    "subtipo": ""
+  },
+  "folder": "JTn4vxmEomcuSXeH",
+  "flags": {
+    "world": {
+      "cdr": "a1"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "7484842c",
+      "assinaturas": [
+        "7484842c"
+      ]
+    }
+  },
+  "_id": "LXankSgG603Vrgmm",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.giria-t20.ameacas-de-arton.Item.4BuwuitEvKU8dw5v",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "effects": [
+    {
+      "name": "Éter elemental (frio)",
+      "img": "systems/tormenta20/icons/itens/gerais/gelo-eterno.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": true,
+      "description": "+1d4 de frio até o fim da cena.",
+      "system": {
+        "changes": [
+          {
+            "key": "dano",
+            "value": "1d4[frio]",
+            "type": "add",
+            "priority": null,
+            "phase": "initial"
+          }
+        ],
+        "targets": [],
+        "status": null,
+        "onuse": true,
+        "abilityUse": {
+          "description": "",
+          "automatic": false,
+          "aumenta": false,
+          "custo": null,
+          "names": [],
+          "types": [
+            "attack"
+          ]
+        },
+        "aura": {
+          "isAura": false,
+          "range": 0,
+          "behaviors": null
+        },
+        "identifier": "",
+        "upgrade": {
+          "type": null,
+          "itemType": []
+        }
+      },
+      "_id": "Afs3sn770Vq9qLkO",
+      "origin": null,
+      "tint": "#ffffff",
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!LXankSgG603Vrgmm.Afs3sn770Vq9qLkO"
+    }
+  ],
+  "_key": "!items!LXankSgG603Vrgmm"
+}

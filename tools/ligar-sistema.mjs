@@ -189,3 +189,38 @@ export function ligarAoSistema(docs, indice, ato, giria = null) {
 	docs.Item = (docs.Item ?? []).map((i) => tratar(i, null));
 	return registro;
 }
+
+/**
+ * Troca os marcadores do Giria nos documentos gerados:
+ *   @GIRIA[Nome|livro]{rótulo} → @UUID[uuid do Giria]{rótulo}
+ *   @GIRIA_UUID[Nome|livro]    → uuid do Giria (para flags de automação)
+ * O livro (T20, AdA...) escolhe entre versões com o mesmo nome. Marcador sem item no índice quebra o build.
+ */
+export function resolverGiria(docs, lista) {
+	const porNome = new Map();
+	for (const i of lista) {
+		const k = normalizar(i.nome);
+		if (!porNome.has(k)) porNome.set(k, []);
+		porNome.get(k).push(i);
+	}
+	const faltando = new Set();
+	const achar = (nome, livro) => {
+		const c = porNome.get(normalizar(nome)) ?? [];
+		const r = c.find((i) => i.nome === nome && (!livro || i.livro === livro)) ?? c.find((i) => !livro || i.livro === livro);
+		if (!r) faltando.add(`${nome}${livro ? ` (${livro})` : ""}`);
+		return r?.uuid;
+	};
+	const RE = /@GIRIA(_UUID)?\[([^\]|]+)(?:\|([^\]]+))?\]/g;
+	for (const [tipo, lista2] of Object.entries(docs)) {
+		docs[tipo] = lista2.map((d) => {
+			const txt = JSON.stringify(d);
+			if (!txt.includes("@GIRIA")) return d;
+			return JSON.parse(txt.replace(RE, (_, soUuid, nome, livro) => {
+				const u = achar(nome, livro);
+				return u ? (soUuid ? u : `@UUID[${u}]`) : _;
+			}));
+		});
+	}
+	if (faltando.size) throw new Error(`Marcadores @GIRIA sem item no índice do Giria: ${[...faltando].join(", ")}`);
+}
+

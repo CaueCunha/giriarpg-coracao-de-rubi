@@ -1,0 +1,228 @@
+{
+  "name": "A1 · Roteiro",
+  "folder": "Dj25DxX9Bfdzi85M",
+  "flags": {
+    "world": {
+      "cdr": "a1",
+      "cdrRole": "roteiro"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-diarios",
+      "assinatura": "d22e5fbe",
+      "assinaturas": [
+        "d22e5fbe"
+      ]
+    }
+  },
+  "_id": "ll5kOdC0v4luOyTD",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "categories": [],
+  "pages": [
+    {
+      "name": "Visão geral",
+      "type": "text",
+      "sort": 100,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\"><b>Forja de Heróis</b> (livro, pp. 13–27). Personagens de 1º nível, terminam no 4º. Apresenta Ezequias Heldret e o plano de destruir a área de Tormenta ao norte de Zakharov.</p><p style=\"text-align:justify\"><b>Parte 1:</b> exame de admissão da Guilda dos Mineradores (Quartzo → Topázio). <b>Parte 2:</b> tarefas do Quadro de Serviços até somar ND 10 (Topázio → Coríndon). <b>Parte 3:</b> Ezequias, a emboscada de Zelin e o julgamento de Rodford Varhim.</p><p style=\"text-align:justify\">Com a variante de marcos, os personagens sobem de nível ao fim de cada parte.</p><p style=\"text-align:justify\"><b>Anote o resultado de cada tarefa:</b> ele decide as testemunhas do julgamento.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "89BrnKSBd99mwAW1",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ll5kOdC0v4luOyTD.89BrnKSBd99mwAW1"
+    },
+    {
+      "name": "Parte 1 — Vida de Aventureiro",
+      "type": "text",
+      "sort": 200,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — Recrutamento:</b> Sede da Guilda, Distrito da Forja. Os jogadores contam por que querem a licença. A oficial Helena leva o grupo; cada um recebe o pergaminho e a Insígnia da Guilda: Quartzo. Tarefa: infestação na Fundição Central, em dois dias (mostre o mapa da p. 7).</li><li><b>Cena 2 — O Teste:</b> Mestre da Forja Himmerzan (careca, seco, não responde perguntas). Cada personagem faz Conhecimento, Diplomacia, Intimidação ou Investigação; sorteie uma informação com CD ≤ resultado: <b>CD 10</b> ratos e criaturas vêm nos carros de transporte; <b>CD 15</b> três operários feridos com queimaduras estranhas; <b>CD 15</b> um sobrevivente sentiu dor de ácido na perna; <b>CD 20</b> Himmerzan substituiu um mestre na Guerra Purista, rumores de que é oficial purista.</li><li><b>Cena 3 — Entranhas da Fundição:</b> Portas trancadas atrás do grupo. Percepção CD 10 ou surpreendido. @UUID[Compendium.giria-t20.ameacas.Actor.7kH7Ze9ZyQXkDlhT]{4 glops}. Rastro de gosma verde até o fundo.</li><li><b>Cena 4 — Caixotes Perigosos:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.FIUplQSaMGq33fHV]{Caixotes Perigosos}</li><li><b>Cena 5 — Mamãe Glop:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.uAKt4CtLfuCZ8hF2]{Mamãe Glop} + @UUID[Compendium.giria-t20.ameacas.Actor.7kH7Ze9ZyQXkDlhT]{1d4 glops filhinhos} (sem XP). Sobrevivência CD 16 explica a mamãe. Vitória: promoção a Topázio.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "VRfhhmllVUkxgK9j",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ll5kOdC0v4luOyTD.VRfhhmllVUkxgK9j"
+    },
+    {
+      "name": "Parte 2 — Trabalho Duro",
+      "type": "text",
+      "sort": 300,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<p style=\"text-align:justify\">O grupo escolhe um nome de esquadrão e pega tarefas do mural (o diário \"A1 · Quadro de Serviços\" tem os cartazes para mostrar aos jogadores). Nível de perigo = ND. Ao somar ND 10, o grupo é chamado para virar Coríndon (Parte 3). Descanso entre tarefas à vontade, mas esperar demais pode custar missões.</p><ul><li><b>Amansar Espírito do Gelo (ND 3, T$ 200):</b> Pen-Pen (Penellope Pendragon), anã de barba azul, Oficina Beluhga. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.ALtmK6GLb82AXqeO]{Stagh}: em até 4 rodadas volta ao cristal; da 5ª em diante, recompensa pela metade; dois caídos e Pen-Pen interrompe (sem recompensa). Tesouro: @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.ALtmK6GLb82AXqeO]{éter elemental (frio)}.</li><li><b>Auxílio em Manufatura (ND 1, T$ 30/pessoa):</b> Goro Okazaki, Oficina Kanpeki. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.nIZ0MXOOBixY2mVP]{Forja da Oficina Kanpeki}. Gangue paga pela Guilda (a oficina não é afiliada).</li><li><b>Caçada Exótica (ND 2, T$ 120/cauda):</b> Chef Rizzelena, Taverna Pombo de Ouro. Margem do Rio Panteão (Porto Vharim): Sobrevivência CD 15 para achar; falha = emboscada (Percepção CD 15 ou surpreendido). @UUID[Compendium.giria-t20.ameacas.Actor.l6NOLg8HtBJpKVAj]{2 gorloggs}; a cada 2 rodadas, 1d4: no 1 surge outro (até 2 vezes). Tirar a cauda: ação completa, Ofício ou Sobrevivência CD 15.</li><li><b>Coleta de Ingredientes (ND 2, T$ 100+):</b> Boticário Rafu, qareen, Poções Promissoras. @UUID[Compendium.giria-t20.ameacas.Actor.ZjAV3NXuB0ZROCHs]{Aranha gigante} na floresta a leste. Três dias depois, mais 2d4+2 doses de bálsamo restaurador.</li><li><b>Coleta e Entrega de Encomenda (ND 1, T$ 150 + 150):</b> \"Sr. P\" (Peter Varhim, boina azul, Normandia). Pacote no porto à noite; emboscada de @UUID[Compendium.giria-t20.ameacas.Actor.fK8H5betBV7TQqkq]{6 bandidos} na volta. Se abrirem: a Gema do Sr. P e a carta de amor. Artemis Joias Especiais recusa o presente (recado em \"Documentos\"). Guardar o segredo faz de Peter testemunha; extorqui-lo o deixa inimigo.</li><li><b>Escolta até Tarrafet (ND 3, T$ 400):</b> Adina Astor, hynne cartógrafa. Um dia de viagem pelo Rio Panteão, acampamento. A máquina atrai @UUID[Compendium.giria-t20.ameacas.Actor.Qk9okLSrfLXz55jd]{turbas zumbis}: mais uma a cada 3 rodadas, por [[/r 1d3+6]] rodadas. Metade do grupo caído: fogem, metade da recompensa e Adina frustrada.</li><li><b>Investigação de Contrabando (ND 1, T$ 200):</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.8MApff7BZnMV1djc]{Investigação na Fim do Mundo}; tabela @UUID[Compendium.giriarpg-coracao-de-rubi.tabelas.RollTable.Q94Du0CIEpEtLAp3]{Pistas na Taverna Fim do Mundo}.</li><li><b>Investigação nas Minas Heldret (ND 3, T$ 500):</b> Contramestre Haldor, trilhos aéreos até a câmara anã soterrada (18 × 18 m, runas, porta dupla de metal). @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.JhDCSbc5Q0MAi8ER]{2 estátuas animadas}.</li><li><b>Reforço nas Muralhas (ND 2, T$ 50/pessoa):</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.Ic3fnfGGg0UI0FRh]{Propina no Portão Sul}</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "LxRGsq0pUzzqncNP",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ll5kOdC0v4luOyTD.LxRGsq0pUzzqncNP"
+    },
+    {
+      "name": "Parte 3 — Grandes Poderes, Grandes Problemas",
+      "type": "text",
+      "sort": 400,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Cena 1 — O Chamado de Ezequias:</b> Um hynne afobado entrega a carta assinada \"E.H.\" (Investigação CD 15: a loja é de um conselheiro da Guilda, herdeiro fundador). Minérios Maravilhosos, Distrito da Bigorna. Ezequias propõe ajudar com \"o MEU assassinato\": viagem falsa para atrair Zelin, o capanga de Rodford. Dois dias para se preparar.</li><li><b>Cena 2 — Viagem Falsa:</b> Discurso em Normandia. Portão sul: carroça de metal puxada pelo autômato Ford. Cada jogador escolhe do arsenal de Ezequias uma arma, escudo ou item esotérico de adamante ou mitral, com mais uma melhoria à escolha. Aproveite a viagem para os personagens conhecerem Ezequias (diário \"A1 · Ezequias Heldret\").</li><li><b>Cena 3 — Emboscada Reversa:</b> À noite, o alarme dispara. @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.ADcf9KsGmPLEolyZ]{Zelin Alexevich}, @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.tSQtwNUE2Xerjzhz]{Milla Hofforva}, @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.8FrroASBDFyOmNU7]{Ruschel Vodorov} e @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.xwZSO3vZDmPQYQr7]{Igor Raitter}. O combate mais difícil da aventura. Ezequias ofusca os inimigos na 1ª rodada e depois ajuda como parceiro (item \"Parceiro: Ezequias (Emboscada Reversa)\"). Zelin ou mais da metade caídos: o resto se rende.</li><li><b>Cena 4 — De volta a Yuvalin:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.hl46nh8qhl7GBjz5]{Interrogatório dos Mercenários}. Ezequias despeja os capangas na Sede e acusa Rodford Varhim: julgamento pelo Conselho.</li><li><b>Cena 5 — A Preparação:</b> Ezequias, preso na Sede, pede testemunhas. Os jogadores lembram sozinhos de quem pode depor (página \"Testemunhas\"). Cada uma vale +1d6 em um teste do julgamento.</li><li><b>Cena 6 — O Julgamento:</b> @UUID[Compendium.giriarpg-coracao-de-rubi.ameacas.Actor.FWyz5gw4fuQbhnNa]{O Julgamento}. Use a macro <b>A1 · O Julgamento</b>.</li><li><b>Epílogo:</b> Culpado: Ezequias é eleito presidente e anuncia o plano de destruir a Tormenta e fazer de Yuvalin a maior produtora de aço-rubi de Arton (Amostra de aço-rubi de Ezequias). Personagens no 4º nível.</li></ul>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "rgMyJO1b69iabyN2",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ll5kOdC0v4luOyTD.rgMyJO1b69iabyN2"
+    },
+    {
+      "name": "Testemunhas",
+      "type": "text",
+      "sort": 500,
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "content": "<ul><li><b>Príncipe da Pólvora Galix:</b> Se ficou devendo um favor: conta que pagava propina à Guilda.</li><li><b>Peter Varhim:</b> Se o grupo guardou o segredo: depõe contra o pai abusivo.</li><li><b>Goro Okazaki e Hatori Muramune:</b> Atestam a honra do grupo e os ataques à Oficina Kanpeki; Muramune ouviu Rodford dizer que ele \"um dia se arrependeria de ter negado a Guilda\".</li><li><b>Chef Rizzelena:</b> Atesta a bravura do grupo.</li><li><b>Guardas do Portão Sul:</b> Se o grupo prendeu os contrabandistas: relatam o esquema de corrupção.</li><li><b>Boticário Rafu:</b> Se o grupo abateu a aranha.</li><li><b>Penellope Pendragon:</b> Se o grupo domou o espírito do gelo.</li><li><b>Adina Astor:</b> Se a pesquisa terminou: longa e entediante explicação de como o grupo ajudou a mineração.</li><li><b>Contramestre Haldor:</b> Se o grupo derrotou as estátuas: Rodford negou proteção da Guilda aos trabalhadores da Heldret.</li></ul><p style=\"text-align:justify\"><b>Derrota no Tribunal:</b> Rodford bane o grupo e Ezequias. Eles recuam para o \"Estábulo\" e precisam limpar o nome: figuras que não depuseram, invadir a Sede atrás de documentos, ou pequenas missões no estilo da Parte 2.</p>",
+        "format": 1,
+        "markdown": ""
+      },
+      "_id": "llrvJIpigWZoJP7v",
+      "system": {},
+      "image": {
+        "caption": ""
+      },
+      "video": {},
+      "src": null,
+      "category": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!journal.pages!ll5kOdC0v4luOyTD.llrvJIpigWZoJP7v"
+    }
+  ],
+  "_key": "!journal!ll5kOdC0v4luOyTD"
+}

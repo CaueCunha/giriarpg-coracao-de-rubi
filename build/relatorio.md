@@ -2,16 +2,57 @@
 
 ## Patamar 1 · Iniciante (aventuras 1 e 2)
 
-- Ameaças e NPCs: 22 documento(s)
-- Poderes: 3 documento(s)
-- Itens: 13 documento(s)
-- Diários: 4 documento(s)
-- Macros: 2 documento(s)
+- Ameaças e NPCs: 35 documento(s)
+- Poderes: 4 documento(s)
+- Itens: 19 documento(s)
+- Diários: 9 documento(s)
+- Tabelas: 1 documento(s)
+- Macros: 3 documento(s)
 
-### Ligações com o sistema e o Giria T20 (61)
+### Ligações com o sistema e o Giria T20 (102)
 
 | Dono | Item | Tipo | O que foi feito |
 |---|---|---|---|
+| Estátua Animada | Pancada | arma | ficha do livro + origem no sistema |
+| Mamãe Glop | Pancada | arma | ficha do livro + origem no sistema |
+| Zelin Alexevich | Espada bastarda | arma | ficha do livro + origem no sistema |
+| Zelin Alexevich | Espada bastarda | arma | origem no Giria T20 (uso) |
+| Zelin Alexevich | Espada curta | arma | ficha do livro + origem no sistema |
+| Zelin Alexevich | Espada curta | arma | origem no Giria T20 (uso) |
+| Zelin Alexevich | Ímpeto | poder | ficha do livro + origem no sistema |
+| Zelin Alexevich | Ímpeto | poder | origem no Giria T20 (temporario) |
+| Zelin Alexevich | Marca da Presa | poder | ficha do livro + origem no sistema |
+| Zelin Alexevich | Marca da Presa | poder | origem no Giria T20 (uso) |
+| Milla Hofforva | Arcano de Batalha | poder | ficha do livro + origem no sistema |
+| Milla Hofforva | Arcano de Batalha | poder | origem no Giria T20 (passivo) |
+| Milla Hofforva | Raio Arcano | poder | ficha do livro + origem no sistema |
+| Milla Hofforva | Raio Arcano | poder | origem no Giria T20 (uso) |
+| Milla Hofforva | Armadura Arcana | magia | já era cópia do sistema |
+| Milla Hofforva | Armadura Arcana | magia | link para o Giria T20 |
+| Milla Hofforva | Seta Infalível | magia | já era cópia do sistema |
+| Milla Hofforva | Seta Infalível | magia | link para o Giria T20 |
+| Milla Hofforva | Bola de Fogo | magia | já era cópia do sistema |
+| Milla Hofforva | Bola de Fogo | magia | link para o Giria T20 |
+| Milla Hofforva | Dissipar Magia | magia | já era cópia do sistema |
+| Milla Hofforva | Dissipar Magia | magia | link para o Giria T20 |
+| Ruschel Vodorov | Espada longa | arma | ficha do livro + origem no sistema |
+| Ruschel Vodorov | Espada longa | arma | origem no Giria T20 (uso) |
+| Ruschel Vodorov | Besta pesada | arma | ficha do livro + origem no sistema |
+| Ruschel Vodorov | Besta pesada | arma | origem no Giria T20 (uso) |
+| Ruschel Vodorov | Mira Apurada | poder | ficha do livro + origem no sistema |
+| Ruschel Vodorov | Mira Apurada | poder | origem no Giria T20 (uso) |
+| Ruschel Vodorov | Recarga Rápida | poder | link para o sistema |
+| Igor Raitter | Martelo de guerra | arma | ficha do livro + origem no sistema |
+| Igor Raitter | Martelo de guerra | arma | origem no Giria T20 (uso) |
+| Igor Raitter | Arma Espiritual | magia | já era cópia do sistema |
+| Igor Raitter | Arma Espiritual | magia | link para o Giria T20 |
+| Igor Raitter | Curar Ferimentos | magia | já era cópia do sistema |
+| Igor Raitter | Curar Ferimentos | magia | link para o Giria T20 |
+| Igor Raitter | Escudo da Fé | magia | já era cópia do sistema |
+| Igor Raitter | Escudo da Fé | magia | link para o Giria T20 |
+| Igor Raitter | Oração | magia | já era cópia do sistema |
+| Igor Raitter | Oração | magia | link para o Giria T20 |
+| Igor Raitter | Soco de Arsenal | magia | já era cópia do sistema |
 | Anão Capanga | Machado de batalha | arma | ficha do livro + origem no sistema |
 | Anão Capanga | Machado de batalha | arma | origem no Giria T20 (uso) |
 | Anão Veterano | Machado anão | arma | ficha do livro + origem no sistema |
@@ -67,6 +108,7 @@
 | Lobo | Derrubar | poder | ficha do livro + origem no sistema |
 | Lobo | Táticas de Alcateia | poder | ficha do livro + origem no sistema |
 | Lobo | Mordida | arma | ficha do livro + origem no sistema |
+| (item) | Éter Elemental (frio) | consumivel | origem no Giria T20 (manual) |
 | (item) | Machado anão de aço-rubi | arma | já era cópia do sistema |
 | (item) | Flechas de aço-rubi | consumivel | já era cópia do sistema |
 | (item) | Pistola certeira | arma | já era cópia do sistema |
@@ -92,9 +134,10 @@
 
 ## Compêndios
 
-- `ameacas` (Ameaças e NPCs): 22 documento(s), 4 pasta(s)
-- `poderes` (Poderes): 4 documento(s), 5 pasta(s)
-- `itens` (Itens): 13 documento(s), 2 pasta(s)
-- `diarios` (Diários): 4 documento(s), 2 pasta(s)
-- `macros` (Macros): 11 documento(s), 4 pasta(s)
+- `ameacas` (Ameaças e NPCs): 35 documento(s), 7 pasta(s)
+- `poderes` (Poderes): 5 documento(s), 6 pasta(s)
+- `itens` (Itens): 19 documento(s), 3 pasta(s)
+- `diarios` (Diários): 9 documento(s), 3 pasta(s)
+- `tabelas` (Tabelas): 1 documento(s), 2 pasta(s)
+- `macros` (Macros): 12 documento(s), 5 pasta(s)
 

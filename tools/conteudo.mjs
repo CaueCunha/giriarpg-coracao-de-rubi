@@ -15,7 +15,7 @@ export const ATOS = [
 		id: "patamar1",
 		rotulo: "Patamar 1 · Iniciante (aventuras 1 e 2)",
 		cor: "#3f5f7a",
-		geradores: ["a2-segredo-das-minas"]
+		geradores: ["a1-forja-de-herois", "a2-segredo-das-minas"]
 	},
 	{
 		id: "campanha",

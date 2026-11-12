@@ -1,0 +1,52 @@
+{
+  "name": "Caixotes Perigosos",
+  "type": "hazard",
+  "img": "icons/environment/traps/saw-steel-grey.webp",
+  "folder": "QFmZFK2ZBodTkCEF",
+  "system": {
+    "attributes": {
+      "nd": "1"
+    },
+    "detalhes": {
+      "goal": "<p style=\"text-align:justify\"><b>Parte 1, Cena 4 (armazém da Fundição Central).</b></p><p style=\"text-align:justify\">Atravessar o corredor bagunçado pelos glops sem que os caixotes enormes desabem. Percepção CD 15 nota as caixas deslizando para a beirada.</p>",
+      "effects": "<p style=\"text-align:justify\"><b>Caixotes em Queda</b> (ninguém percebeu): desabam sobre o grupo desprevenido. Reflexos CD 20; quem falhar sofre [[/r 2d6[impacto]]] de impacto.</p><p style=\"text-align:justify\"><b>Caixotes Instáveis</b> (alguém percebeu): cada personagem tem uma rodada para agir: correr dali (Atletismo CD 20), passar devagar sem esbarrar (Acrobacia CD 20) ou uma solução criativa (Eclético, Especialista, <i>Teia</i> segurando os caixotes). Quem falhar sofre metade: [[/r 1d6[impacto]]].</p>",
+      "actions": "<p style=\"text-align:justify\">O barulho atrai a Mamãe Glop (Cena 5).</p>"
+    }
+  },
+  "flags": {
+    "tormenta20": {
+      "coracaoDeRubi": "aventura1"
+    },
+    "world": {
+      "cdr": "a1"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-ameacas",
+      "assinatura": "cdfbf51e",
+      "assinaturas": [
+        "cdfbf51e"
+      ]
+    }
+  },
+  "_id": "FIUplQSaMGq33fHV",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {},
+  "items": [],
+  "effects": [],
+  "_key": "!actors!FIUplQSaMGq33fHV"
+}

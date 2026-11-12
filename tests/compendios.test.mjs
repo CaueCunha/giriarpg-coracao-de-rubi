@@ -56,7 +56,7 @@ test("module.json descreve os compêndios por tipo, com pastas por ato", () => {
 	assert.equal(m.id, MODULO);
 	assert.deepEqual(Object.keys(m.flags[MODULO].atos).sort(), ["campanha", "patamar1"]);
 	const nomes = m.packs.map((p) => p.name);
-	assert.deepEqual(nomes, ["ameacas", "poderes", "itens", "diarios", "macros"]);
+	assert.deepEqual(nomes, ["ameacas", "poderes", "itens", "diarios", "tabelas", "macros"]);
 	assert.deepEqual(m.packFolders.flatMap((f) => f.packs ?? []).sort(), [...nomes].sort(), "packFolders deve conter todos os compêndios");
 	for (const p of m.packs) assert.equal(p.path, `packs/${p.name}`);
 	for (const f of [...m.esmodules, ...m.styles, ...m.languages.map((l) => l.path)]) assert.ok(fs.existsSync(f), `${f} não existe`);

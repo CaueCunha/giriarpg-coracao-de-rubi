@@ -1,10 +1,11 @@
 /**
  * Gera src/giria-indice.json: índice (nome → uuid) dos itens do módulo Giria T20, o compêndio de
- * automações do Cauê. O build usa esse índice para apontar itens, poderes e magias das aventuras
+ * automações do Cauê (itens e ameaças). O build usa esse índice para apontar itens, poderes e magias das aventuras
  * para a versão automatizada do Giria em vez de duplicar a regra.
  *
  * O repositório do Giria é privado, então o índice fica versionado aqui e o CI não precisa dele.
  * Para atualizar: clone o giria-t20 e rode
+ *   node ../giria-t20/tools/abrir-lotes.mjs   (abre os lotes .zip de ameaças)
  *   node tools/giria-indice.mjs ../giria-t20
  */
 import fs from "node:fs";
@@ -25,11 +26,11 @@ const commit = (() => {
 
 const { entradas } = await mapearFontes();
 const itens = entradas
-	.filter((e) => e.fonte.type === "Item" && e.doc?._id && e.doc?.name)
+	.filter((e) => ["Item", "Actor"].includes(e.fonte.type) && e.doc?._id && e.doc?.name)
 	.map((e) => ({
 		nome: e.doc.name,
 		tipo: e.doc.type,
-		uuid: `Compendium.giria-t20.${e.pack}.Item.${e.doc._id}`,
+		uuid: `Compendium.giria-t20.${e.pack}.${e.fonte.type}.${e.doc._id}`,
 		nivel: e.doc.flags?.["giria-t20"]?.automacao?.nivel ?? null,
 		livro: e.doc.flags?.["giria-t20"]?.fonte?.livro ?? null
 	}))
