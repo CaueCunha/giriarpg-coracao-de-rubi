@@ -51,3 +51,15 @@ test("a Espada longa do Humano Mercenário (A2) é a do Giria, com os números d
 	assert.equal(e.img, "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp");
 	assert.equal(e.system.rolls.find((r) => r.type === "dano").parts[0][0], "1d8+6");
 });
+
+test("toda ameaça vem com o token padrão (nome ao passar o mouse, visão, barras de PV e PM para o dono)", () => {
+	const erros = [];
+	const dir = path.join(RAIZ, "src/packs/ameacas");
+	for (const f of fs.readdirSync(dir).filter((n) => n.startsWith("Actor_"))) {
+		const a = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+		if (a.type !== "npc") continue;
+		const t = a.prototypeToken ?? {};
+		if (t.displayName !== 30 || t.displayBars !== 40 || t.sight?.enabled !== true || t.bar1?.attribute !== "attributes.pv" || t.bar2?.attribute !== "attributes.pm") erros.push(a.name);
+	}
+	assert.deepEqual(erros, []);
+});

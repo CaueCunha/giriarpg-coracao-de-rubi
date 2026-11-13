@@ -281,7 +281,12 @@ async function criarAmeaca(a, folder) {
 			texture: { src: a.img },
 			disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE,
 			actorLink: false,
-			bar1: { attribute: "attributes.pv" }
+			// Padrão do Cauê: nome ao passar o mouse (qualquer um), visão ligada, barras sempre para o dono (PV e PM, que o sistema pinta de azul).
+			displayName: CONST.TOKEN_DISPLAY_MODES.HOVER,
+			displayBars: CONST.TOKEN_DISPLAY_MODES.OWNER,
+			sight: { enabled: true },
+			bar1: { attribute: "attributes.pv" },
+			bar2: { attribute: "attributes.pm" }
 		},
 		system: {
 			atributos: Object.fromEntries(Object.entries(a.atr).map(([k, v]) => [k, { base: v }])),
