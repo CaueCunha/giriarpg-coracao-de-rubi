@@ -720,9 +720,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "a9c1d07b",
+      "assinatura": "ea914fe0",
       "assinaturas": [
-        "a9c1d07b"
+        "a9c1d07b",
+        "10921cb3",
+        "ea914fe0"
       ]
     }
   },
@@ -744,15 +746,37 @@
   },
   "items": [
     {
+      "_id": "cgOAIZWv9rBQvO7C",
       "name": "Cimitarra",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/cimitarra.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 147
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "y6IKZPxsQebq1AkW"
+          },
+          "pack": "equipamentos",
+          "versao": "4dac9239"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Dois ataques por ação agredir (bando).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.y6IKZPxsQebq1AkW]{Cimitarra}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.y6IKZPxsQebq1AkW]{Cimitarra}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Dois ataques por ação agredir (bando).</p></div><hr><p style=\"text-align:justify\">Espada com a lâmina curva e muito afiada. A cimitarra é uma arma ágil.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 147.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.y6IKZPxsQebq1AkW]{Cimitarra}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 147",
         "rolls": [
           {
             "name": "Ataque",
@@ -803,7 +827,7 @@
         "alcance": "",
         "proposito": "corpo-a-corpo",
         "proficiencia": "marcial",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -815,24 +839,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 2,
         "qtd": 1,
-        "preco": 0,
+        "preco": 15,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -860,13 +884,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "cgOAIZWv9rBQvO7C",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -878,13 +895,12 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!zRVDf1J8ZOaKpCsI.cgOAIZWv9rBQvO7C"
     },
     {
       "name": "Bando",
       "type": "poder",
-      "img": "icons/svg/combat.svg",
+      "img": "icons/weapons/polearms/trident-fork-white.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">O bando pirata é um grupo de indivíduos. Se um ataque do bando exceder a Defesa do inimigo por 10 ou mais, causa o dobro do dano; se errar, ainda causa metade. Imune a manobras de combate e a efeitos de alvo único que não causam dano; vulnerável a dano de área. Quem tem Trespassar e acerta o bando pode usá-lo contra ele (uma vez por turno).</p>",
@@ -948,24 +964,118 @@
       "_key": "!actors.items!zRVDf1J8ZOaKpCsI.uLuDyc0Z7lM6KV6o"
     },
     {
+      "_id": "V4EeZB6JnbxNlhbN",
       "name": "Pernas do Mar",
       "type": "poder",
-      "img": "icons/svg/wingfoot.svg",
+      "img": "systems/tormenta20/icons/classes/bucaneiro.webp",
+      "effects": [
+        {
+          "origin": null,
+          "tint": "#ffffff",
+          "flags": {
+            "tormenta20": {}
+          },
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "disabled": false,
+          "_id": "jbDR1BMVlpmGuSyH",
+          "transfer": true,
+          "name": "Pernas do Mar",
+          "img": "systems/tormenta20/icons/classes/bucaneiro.webp",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.acro.bonus",
+                "value": "2",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.atle.bonus",
+                "value": "2",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "disposition": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!zRVDf1J8ZOaKpCsI.V4EeZB6JnbxNlhbN.jbDR1BMVlpmGuSyH",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 48
+          },
+          "automacao": {
+            "nivel": "passivo",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "QUqBvHLdSXPrVWQ0"
+          },
+          "pack": "poderes",
+          "versao": "41d6bfce"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Quando está se equilibrando ou escalando, o bando pirata não fica desprevenido e seu deslocamento não é reduzido à metade.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.QUqBvHLdSXPrVWQ0]{Pernas do Mar}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.QUqBvHLdSXPrVWQ0]{Pernas do Mar}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Quando está se equilibrando ou escalando, o bando pirata não fica desprevenido e seu deslocamento não é reduzido à metade.</p></div><hr><p style=\"text-align:justify\">Você recebe +2 em Acrobacia e Atletismo. Além disso, quando está se equilibrando ou escalando, você não fica desprevenido e seu deslocamento não é reduzido à metade.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 48.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.QUqBvHLdSXPrVWQ0]{Pernas do Mar}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
-        "tipo": "ability",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 48",
+        "tipo": "classe",
         "ativacao": {
-          "execucao": "passive",
+          "execucao": "",
           "custo": 0,
           "condicao": "",
           "qtd": "",
           "special": ""
         },
-        "alcance": "",
+        "alcance": "none",
         "area": "",
         "duracao": {
           "value": 0,
@@ -974,7 +1084,7 @@
         },
         "resistencia": {
           "pericia": "",
-          "atributo": "",
+          "atributo": "sab",
           "bonus": 0,
           "txt": ""
         },
@@ -987,18 +1097,11 @@
         "chatGif": "",
         "range": {
           "units": "",
-          "value": 0
+          "value": null
         },
         "efeito": "",
-        "subtipo": ""
+        "subtipo": "Bucaneiro"
       },
-      "_id": "V4EeZB6JnbxNlhbN",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1010,7 +1113,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!zRVDf1J8ZOaKpCsI.V4EeZB6JnbxNlhbN"
     }
   ],

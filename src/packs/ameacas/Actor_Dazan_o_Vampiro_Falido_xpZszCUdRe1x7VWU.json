@@ -19,9 +19,12 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "0a298cc0",
+      "assinatura": "d88f7e14",
       "assinaturas": [
-        "0a298cc0"
+        "0a298cc0",
+        "8a3cae06",
+        "b911a7e5",
+        "d88f7e14"
       ]
     }
   },
@@ -841,18 +844,19 @@
   "_id": "xpZszCUdRe1x7VWU",
   "items": [
     {
-      "type": "poder",
+      "_id": "Ow2atBNQcAVFh7lb",
       "name": "Dominação Vampírica",
-      "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+      "type": "poder",
+      "img": "modules/giria-t20/icons/poderes/racial.webp",
       "system": {
         "description": {
-          "value": "O vampiro sussurra palavras de controle para um humanoide em alcance curto. A vítima fica confusa, enfeitiçada ou fascinada até o final da cena ou perde suas memórias da última hora, a escolha do vampiro (Von CD 29 evita). Uma criatura só pode ser alvo desta habilidade uma vez por cena<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.d5Im71VWcxIz9xKM.Item.mZck2eUTP7KO1ZmU]{Dominação Vampírica (Vampiro)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.bestiario-de-arton.Item.3wPDoybN67XrAbcN]{Dominação Vampírica}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p>O vampiro sussurra palavras de controle para um humanoide em alcance curto. A vítima fica confusa, enfeitiçada ou fascinada até o final da cena ou perde suas memórias da última hora, a escolha do vampiro (Von CD 29 evita). Uma criatura só pode ser alvo desta habilidade uma vez por cena</div><hr><p><em>Dominação Vampírica.</em> Você pode gastar uma ação completa e 3 PM para sussurrar palavras de controle para um humanoide em alcance curto. O alvo fica confuso, enfeitiçado ou fascinado até o final da cena ou perde suas memórias da última hora, à sua escolha (Vontade CD Car evita). Uma criatura só pode ser alvo desta habilidade uma vez por cena. <em>Pré-requisito:</em> Presença Majestosa.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.bestiario-de-arton.Item.3wPDoybN67XrAbcN]{Dominação Vampírica}</p>",
           "unidentified": ""
         },
-        "source": "",
+        "source": "Bestiário de Arton, p. 162",
         "ativacao": {
-          "execucao": "action",
-          "custo": 0,
+          "execucao": "full",
+          "custo": 3,
           "qtd": "",
           "condicao": "",
           "special": ""
@@ -867,16 +871,16 @@
           "units": ""
         },
         "efeito": "",
-        "alcance": "none",
+        "alcance": "short",
         "area": "",
         "resistencia": {
-          "pericia": "",
-          "atributo": "",
+          "pericia": "vont",
+          "atributo": "car",
           "bonus": 0,
-          "txt": ""
+          "txt": "Vontade evita"
         },
         "rolls": [],
-        "tipo": "ability",
+        "tipo": "racial",
         "subtipo": "",
         "origin": "",
         "tags": [],
@@ -885,12 +889,23 @@
         "rolltags": [],
         "automationtags": []
       },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "BdA",
+            "pagina": 162
+          },
+          "automacao": {
+            "nivel": "manual",
+            "notas": "Bênção vampírica: o vampiro escolhe uma ao criar o personagem e pode trocar poderes de classe por outras. Arraste para a ficha só as escolhidas. Aplique a condição escolhida pelo cartão."
+          },
+          "status": "rascunho",
+          "revisao": 1,
+          "pack": "poderes",
+          "versao": "c64ea15d"
+        }
       },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -902,20 +917,19 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "Ow2atBNQcAVFh7lb",
-      "effects": [],
       "_key": "!actors.items!xpZszCUdRe1x7VWU.Ow2atBNQcAVFh7lb"
     },
     {
-      "type": "poder",
+      "_id": "SufPzJAjp0hkqQiA",
       "name": "Drenar Sangue",
-      "img": "icons/magic/death/mouth-bite-fangs-vampire.webp",
+      "type": "poder",
+      "img": "modules/giria-t20/icons/poderes/racial.webp",
       "system": {
         "description": {
-          "value": "O vampiro drena sangue de uma criatura viva que esteja agarrando; ele causa 6d6 pontos de dano de perfuração e recupera a mesma quantidade de PV. Uma criatura morta pelo vampiro desta forma se erguerá como um vampiro na próxima noite e deverá vencer um teste de Vontade oposto contra o vampiro ou ficará sob o controle dele até que ele a liberte ou seja destruído<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.d5Im71VWcxIz9xKM.Item.SHCaQHbCCkeSmJen]{Drenar Sangue (Vampiro)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.bestiario-de-arton.Item.xbFON0rFJVsZYwyW]{Drenar Sangue}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p>O vampiro drena sangue de uma criatura viva que esteja agarrando; ele causa 6d6 pontos de dano de perfuração e recupera a mesma quantidade de PV. Uma criatura morta pelo vampiro desta forma se erguerá como um vampiro na próxima noite e deverá vencer um teste de Vontade oposto contra o vampiro ou ficará sob o controle dele até que ele a liberte ou seja destruído</div><hr><p><em>Drenar Sangue.</em> Você pode gastar uma ação padrão para drenar sangue de uma criatura viva que esteja agarrando. Você causa 2d6 pontos de dano de perfuração por patamar e recupera a mesma quantidade de PV. Drenar sangue dessa forma não conta como se alimentar.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.bestiario-de-arton.Item.xbFON0rFJVsZYwyW]{Drenar Sangue}</p>",
           "unidentified": ""
         },
-        "source": "",
+        "source": "Bestiário de Arton, p. 162",
         "ativacao": {
           "execucao": "action",
           "custo": 0,
@@ -957,7 +971,7 @@
             "adaptavel": ""
           }
         ],
-        "tipo": "ability",
+        "tipo": "racial",
         "subtipo": "",
         "origin": "",
         "tags": [],
@@ -966,12 +980,23 @@
         "rolltags": [],
         "automationtags": []
       },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "BdA",
+            "pagina": 162
+          },
+          "automacao": {
+            "nivel": "manual",
+            "notas": "Bênção vampírica: o vampiro escolhe uma ao criar o personagem e pode trocar poderes de classe por outras. Arraste para a ficha só as escolhidas. Aumente os dados por patamar (veterano 4d6, campeão 6d6, lenda 8d6) e cure-se do mesmo valor."
+          },
+          "status": "rascunho",
+          "revisao": 1,
+          "pack": "poderes",
+          "versao": "a23899a4"
+        }
       },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -983,30 +1008,29 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "SufPzJAjp0hkqQiA",
-      "effects": [],
       "_key": "!actors.items!xpZszCUdRe1x7VWU.SufPzJAjp0hkqQiA"
     },
     {
-      "type": "poder",
+      "_id": "e0heNUiZrnDoeZ7A",
       "name": "Forma de Morcego",
-      "img": "icons/creatures/mammals/bat-movement-flying-purple.webp",
+      "type": "poder",
+      "img": "modules/giria-t20/icons/poderes/racial.webp",
       "system": {
         "description": {
-          "value": "O vampiro se transforma em um morcego. Ele se torna Minúsculo (+5 em Furtividade e -5 em testes de manobra) e recebe deslocamento de voo 12m. Seu equipamento é absorvido (retornando quando ele volta ao normal) e suas outras estatísticas não são alteradas. A transformação dura quanto tempo ele desejar, mas termina caso faça um ataque, lance uma magia ou sofra dano<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.d5Im71VWcxIz9xKM.Item.GEPyEaJqIBNHrQCO]{Forma de Morcego (Vampiro)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.bestiario-de-arton.Item.1Yp0XX2OEnotswu1]{Forma de Morcego}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p>O vampiro se transforma em um morcego. Ele se torna Minúsculo (+5 em Furtividade e -5 em testes de manobra) e recebe deslocamento de voo 12m. Seu equipamento é absorvido (retornando quando ele volta ao normal) e suas outras estatísticas não são alteradas. A transformação dura quanto tempo ele desejar, mas termina caso faça um ataque, lance uma magia ou sofra dano</div><hr><p><em>Forma de Morcego.</em> Você pode gastar uma ação padrão e 3 PM para se transformar em um morcego. Isso funciona como o efeito básico da Forma Selvagem Veloz (<em>Tormenta20</em>, p. 63); exceto que você se torna Minúsculo, seu deslocamento se torna 3m, você recebe deslocamento de voo 12m e não recebe uma arma natural, Por fim, a transformação termina caso você faça um ataque, lance uma magia ou sofra dano.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.bestiario-de-arton.Item.1Yp0XX2OEnotswu1]{Forma de Morcego}</p>",
           "unidentified": ""
         },
-        "source": "",
+        "source": "Bestiário de Arton, p. 162",
         "ativacao": {
           "execucao": "action",
-          "custo": 0,
+          "custo": 3,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
           "value": 0,
-          "units": "inst",
+          "units": "scene",
           "special": ""
         },
         "range": {
@@ -1023,7 +1047,7 @@
           "txt": ""
         },
         "rolls": [],
-        "tipo": "ability",
+        "tipo": "racial",
         "subtipo": "",
         "origin": "",
         "tags": [],
@@ -1032,12 +1056,99 @@
         "rolltags": [],
         "automationtags": []
       },
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
+      "effects": [
+        {
+          "name": "Forma de Morcego",
+          "img": "icons/svg/aura.svg",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "tint": "#ffffff",
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": "sceneEnd",
+            "expired": false
+          },
+          "origin": null,
+          "description": "<p>Forma de morcego: Minúsculo, 3m e voo 12m.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "flags": {},
+          "system": {
+            "changes": [
+              {
+                "key": "system.tracos.tamanho",
+                "value": "min",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "system.attributes.movement.walk.base",
+                "value": 3,
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "system.attributes.movement.fly.base",
+                "value": 12,
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": null,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0
+            }
+          },
+          "_id": "cWmX4ugAJEGjFwtK",
+          "_key": "!actors.items.effects!xpZszCUdRe1x7VWU.e0heNUiZrnDoeZ7A.cWmX4ugAJEGjFwtK",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "BdA",
+            "pagina": 162
+          },
+          "automacao": {
+            "nivel": "temporario",
+            "notas": "Bênção vampírica: o vampiro escolhe uma ao criar o personagem e pode trocar poderes de classe por outras. Arraste para a ficha só as escolhidas. Apague o efeito ao atacar, lançar magia ou sofrer dano."
+          },
+          "status": "rascunho",
+          "revisao": 1,
+          "pack": "poderes",
+          "versao": "5dc00950"
+        }
       },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1049,14 +1160,12 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "e0heNUiZrnDoeZ7A",
-      "effects": [],
       "_key": "!actors.items!xpZszCUdRe1x7VWU.e0heNUiZrnDoeZ7A"
     },
     {
       "type": "poder",
       "name": "Sensibilidade ao Sol",
-      "img": "icons/creatures/unholy/demon-winged-cyclops-drooling.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "Quando exposto a luz solar direta, o vampiro fica ofuscado e perde 6d6 PV por rodada.<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.d5Im71VWcxIz9xKM.Item.0ADQhYISqIwurOzM]{Sensibilidade ao Sol (Vampiro)}</p>",
@@ -1120,13 +1229,34 @@
       "_key": "!actors.items!xpZszCUdRe1x7VWU.UfBwt0ArDUHxdDla"
     },
     {
+      "_id": "rSsf0z07H6cAn5hY",
       "name": "Espada longa",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp",
-      "flags": {},
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 148
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "LirOBCaOzAEWQpFk"
+          },
+          "pack": "equipamentos",
+          "versao": "61abc4ca"
+        }
+      },
       "system": {
         "description": {
-          "value": "<section class=\"secret\">Espada longa x2</section><p>Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.LirOBCaOzAEWQpFk]{Espada longa}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.LirOBCaOzAEWQpFk]{Espada longa}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><section class=\"secret\">Espada longa x2</section><p>Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.</p></div><hr><p style=\"text-align:justify\">Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 148.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.LirOBCaOzAEWQpFk]{Espada longa}</p>",
           "unidentified": ""
         },
         "source": "Tormenta20 — Edição Jogo do Ano, p. 148",
@@ -1264,9 +1394,6 @@
         "rolltags": [],
         "automationtags": []
       },
-      "ownership": {
-        "default": 0
-      },
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1278,17 +1405,13 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "folder": "brhICwdHcOUqvMPi",
-      "sort": 2200000,
-      "_id": "rSsf0z07H6cAn5hY",
-      "effects": [],
       "_key": "!actors.items!xpZszCUdRe1x7VWU.rSsf0z07H6cAn5hY"
     },
     {
       "folder": "38RRBscxCtcFC5s4",
       "name": "Garra",
       "type": "arma",
-      "img": "icons/creatures/claws/claw-bear-paw-swipe-red.webp",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
       "system": {
         "description": {
           "value": "<section class=\"secret\">garras</section>",
@@ -1444,14 +1567,34 @@
       "name": "Armadura completa",
       "type": "equipamento",
       "img": "systems/tormenta20/icons/itens/equipamentos/armadura-completa.webp",
-      "flags": {},
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 154
+          },
+          "automacao": {
+            "nivel": "manual",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "CTeeKAq8zZlaJTpA"
+          },
+          "pack": "equipamentos",
+          "versao": "62cdae0e"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p>A mais forte e pesada das armaduras, formada por placas de metal forjadas e encaixadas de modo a cobrir o corpo inteiro. Inclui manoplas e grevas (luvas e botas metálicas, respectivamente), um elmo com viseira e uma túnica acolchoada para ser usada sob as placas. Correias e fivelas distribuem o peso da armadura pelo corpo inteiro. </p><p>Esta armadura precisa ser feita sob medida para cada usuário; um ferreiro cobra T$ 200 para adaptar uma armadura completa a um novo usuário.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.CTeeKAq8zZlaJTpA]{Armadura completa}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.CTeeKAq8zZlaJTpA]{Armadura completa}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p>A mais forte e pesada das armaduras, formada por placas de metal forjadas e encaixadas de modo a cobrir o corpo inteiro. Inclui manoplas e grevas (luvas e botas metálicas, respectivamente), um elmo com viseira e uma túnica acolchoada para ser usada sob as placas. Correias e fivelas distribuem o peso da armadura pelo corpo inteiro. </p><p>Esta armadura precisa ser feita sob medida para cada usuário; um ferreiro cobra T$ 200 para adaptar uma armadura completa a um novo usuário.</p></div><hr><p style=\"text-align:justify\">A mais forte e pesada das armaduras, formada por placas de metal forjadas e encaixadas de modo a cobrir o corpo inteiro. Inclui uma túnica acolchoada para ser usada sob as placas. Correias e fivelas distribuem o peso da armadura pelo corpo inteiro.</p><p style=\"text-align:justify\">Esta armadura precisa ser feita sob medida para cada usuário; um ferreiro cobra T$ 200 para adaptar uma armadura completa a um novo usuário.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 154.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.CTeeKAq8zZlaJTpA]{Armadura completa}</p>",
           "unidentified": ""
         },
         "source": "Tormenta20 — Edição Jogo do Ano, p. 154",
-        "equipado": true,
+        "equipado": false,
         "carregado": true,
         "peso": 25,
         "espacos": 5,
@@ -1481,8 +1624,8 @@
           "special": ""
         },
         "upgrades": {
-          "melhoria1": "delicate",
-          "melhoria2": "specialmaterial",
+          "melhoria1": "",
+          "melhoria2": "",
           "melhoria3": "",
           "melhoria4": "",
           "material": [],
@@ -1504,9 +1647,6 @@
           "type": "body"
         }
       },
-      "ownership": {
-        "default": 0
-      },
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1518,9 +1658,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "folder": "rsvFZjPiYXV5s7IN",
-      "sort": 200000,
-      "effects": [],
       "_key": "!actors.items!xpZszCUdRe1x7VWU.fsSk7CZJY9h1LVVs"
     }
   ],

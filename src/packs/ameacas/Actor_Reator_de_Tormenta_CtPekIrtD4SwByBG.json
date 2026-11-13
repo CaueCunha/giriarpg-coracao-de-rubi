@@ -722,9 +722,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar3",
       "antigo": "patamar3-ameacas",
-      "assinatura": "e9410891",
+      "assinatura": "d9dde104",
       "assinaturas": [
-        "e9410891"
+        "e9410891",
+        "d9dde104"
       ]
     }
   },
@@ -1466,107 +1467,6 @@
       "name": "Desintegrar",
       "type": "magia",
       "img": "systems/tormenta20/icons/magias/desintegrar.webp",
-      "sort": 0,
-      "flags": {},
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">Você dispara um raio fino e esverdeado que causa 10d12 pontos de dano de essência. Se o alvo passar no teste de resistência, em vez disso sofre 2d12 pontos de dano.</p><p style=\"text-align:justify\">Independentemente do resultado do teste de Fortitude, se os PV do alvo forem reduzidos a 0 ou menos, ele será completamente desintegrado, restando apenas pó.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.oFPOvZqHlPTyj4XD]{Desintegrar}</p>",
-          "unidentified": ""
-        },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 190",
-        "ativacao": {
-          "execucao": "action",
-          "custo": 10,
-          "qtd": "",
-          "condicao": "",
-          "special": ""
-        },
-        "duracao": {
-          "value": 0,
-          "units": "inst",
-          "special": ""
-        },
-        "range": {
-          "value": null,
-          "units": ""
-        },
-        "consume": {
-          "type": "",
-          "target": "",
-          "amount": null,
-          "mpMultiplier": false
-        },
-        "efeito": "",
-        "alcance": "medium",
-        "alvo": "1 criatura ou objeto",
-        "area": "",
-        "resistencia": {
-          "pericia": "",
-          "atributo": "int",
-          "bonus": 0,
-          "txt": "Fortitude parcial"
-        },
-        "rolls": [
-          {
-            "name": "Dano",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "10d12",
-                "essencia",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          },
-          {
-            "name": "Dano parcial",
-            "key": "dano1",
-            "type": "dano",
-            "parts": [
-              [
-                "2d12",
-                "essencia",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
-        "tipo": "arc",
-        "circulo": 4,
-        "preparada": false,
-        "escola": "tra",
-        "chatFlavor": "",
-        "origin": "",
-        "tags": [],
-        "chatGif": "",
-        "rolltags": [],
-        "automationtags": [],
-        "equipado2": {
-          "slot": 0,
-          "type": ""
-        }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.oFPOvZqHlPTyj4XD",
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "_id": "s1K2dYMquAmzqALq",
-      "folder": null,
       "effects": [
         {
           "_id": "cIgqZhfUcxHpJI5h",
@@ -1640,30 +1540,42 @@
           "_key": "!actors.items.effects!CtPekIrtD4SwByBG.s1K2dYMquAmzqALq.cIgqZhfUcxHpJI5h"
         }
       ],
-      "_key": "!actors.items!CtPekIrtD4SwByBG.s1K2dYMquAmzqALq"
-    },
-    {
-      "name": "Enxame Rubro",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/enxame-rubro.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 190
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "oFPOvZqHlPTyj4XD"
+          },
+          "pack": "magias",
+          "versao": "a585f0eb"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Você conjura um enxame de pequenas criaturas da Tormenta. O enxame pode passar pelo espaço de outras criaturas e não impede que outras criaturas entrem no espaço dele. No final de cada um de seus turnos, o enxame causa 4d12 pontos de dano de ácido a qualquer criatura em seu espaço (Reflexos reduz à metade). Você pode gastar uma ação de movimento para mover o enxame com deslocamento de 12m.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.K2VH0rr4Qw6OqQjA]{Enxame Rubro}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você dispara um raio fino e esverdeado que causa 10d12 pontos de dano de essência. Se o alvo passar no teste de resistência, em vez disso sofre 2d12 pontos de dano.</p><p style=\"text-align:justify\">Independentemente do resultado do teste de Fortitude, se os PV do alvo forem reduzidos a 0 ou menos, ele será completamente desintegrado, restando apenas pó.</p></div><hr><p style=\"text-align:justify\">Você dispara um raio fino e esverdeado que causa 10d12 pontos de dano de essência. Se o alvo passar no teste de resistência, em vez disso sofre 2d12 pontos de dano.</p><p style=\"text-align:justify\">Independentemente do resultado do teste de Fortitude, se os PV do alvo forem reduzidos a 0 ou menos, ele será completamente desintegrado, restando apenas pó.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 190.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.oFPOvZqHlPTyj4XD]{Desintegrar}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 192",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 190",
         "ativacao": {
           "execucao": "action",
-          "custo": 6,
+          "custo": 10,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
           "value": 0,
-          "units": "sust",
+          "units": "inst",
           "special": ""
         },
         "range": {
@@ -1676,15 +1588,15 @@
           "amount": null,
           "mpMultiplier": false
         },
-        "efeito": "1 enxame Grande (quadrado de 3m);",
+        "efeito": "",
         "alcance": "medium",
-        "alvo": "",
+        "alvo": "1 criatura ou objeto",
         "area": "",
         "resistencia": {
-          "pericia": "",
+          "pericia": "fort",
           "atributo": "int",
           "bonus": 0,
-          "txt": "Reflexos reduz à metade"
+          "txt": "Fortitude parcial"
         },
         "rolls": [
           {
@@ -1693,8 +1605,22 @@
             "type": "dano",
             "parts": [
               [
-                "4d12",
-                "acido",
+                "10d12",
+                "essencia",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano parcial",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "2d12",
+                "essencia",
                 ""
               ]
             ],
@@ -1703,9 +1629,9 @@
           }
         ],
         "tipo": "arc",
-        "circulo": 3,
-        "preparada": false,
-        "escola": "con",
+        "circulo": 4,
+        "preparada": true,
+        "escola": "tra",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -1717,9 +1643,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "s1K2dYMquAmzqALq",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1727,12 +1651,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.K2VH0rr4Qw6OqQjA",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.oFPOvZqHlPTyj4XD",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "NzwiXeR9GGBinLnr",
-      "folder": null,
+      "_key": "!actors.items!CtPekIrtD4SwByBG.s1K2dYMquAmzqALq"
+    },
+    {
+      "name": "Enxame Rubro",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/enxame-rubro.webp",
       "effects": [
         {
           "_id": "1SDSEzDgHgq6bgCu",
@@ -2121,30 +2049,42 @@
           "_key": "!actors.items.effects!CtPekIrtD4SwByBG.NzwiXeR9GGBinLnr.u8hPPED75jx5p7Eq"
         }
       ],
-      "_key": "!actors.items!CtPekIrtD4SwByBG.NzwiXeR9GGBinLnr"
-    },
-    {
-      "name": "Metamorfose",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/metamorfose.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 192
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "K2VH0rr4Qw6OqQjA"
+          },
+          "pack": "magias",
+          "versao": "974fa5fd"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Você muda sua aparência e forma — incluindo seu equipamento — para qualquer outra criatura, existente ou imaginada. Independentemente da forma escolhida, você recebe +20 em testes de Enganação para disfarce. Características não mencionadas não mudam.</p><p style=\"text-align:justify\">Se mudar para uma forma humanoide, pode mudar o tipo de dano (entre corte, impacto e perfuração) de suas armas (se usa uma maça e transformá-la em espada longa, ela pode causar dano de corte, por exemplo). Se quiser, pode assumir uma forma humanoide com uma categoria de tamanho acima ou abaixo da sua; nesse caso aplique os modificadores em Furtividade e testes de manobra.</p><p style=\"text-align:justify\">Se mudar para outras formas, você pode escolher uma Forma Selvagem do druida (veja no Capítulo 1). Nesse caso você não pode atacar com suas armas, falar ou lançar magias até voltar ao normal, mas recebe uma ou mais armas naturais e os bônus da forma selvagem escolhida.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.Mv8Lzi5PEklOW36c]{Metamorfose}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você conjura um enxame de pequenas criaturas da Tormenta. O enxame pode passar pelo espaço de outras criaturas e não impede que outras criaturas entrem no espaço dele. No final de cada um de seus turnos, o enxame causa 4d12 pontos de dano de ácido a qualquer criatura em seu espaço (Reflexos reduz à metade). Você pode gastar uma ação de movimento para mover o enxame com deslocamento de 12m.</p></div><hr><p style=\"text-align:justify\">Você conjura um enxame de pequenas criaturas da Tormenta. O enxame pode passar pelo espaço de outras criaturas e não impede que outras criaturas entrem no espaço dele. No final de cada um de seus turnos, o enxame causa 4d12 pontos de dano de ácido a qualquer criatura em seu espaço (Reflexos reduz à metade). Você pode gastar uma ação de movimento para mover o enxame com deslocamento de 12m.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 192.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.K2VH0rr4Qw6OqQjA]{Enxame Rubro}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 204",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 192",
         "ativacao": {
           "execucao": "action",
-          "custo": 3,
+          "custo": 6,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
           "value": 0,
-          "units": "scene",
+          "units": "sust",
           "special": ""
         },
         "range": {
@@ -2157,21 +2097,36 @@
           "amount": null,
           "mpMultiplier": false
         },
-        "efeito": "",
-        "alcance": "self",
-        "alvo": "você",
+        "efeito": "1 enxame Grande (quadrado de 3m);",
+        "alcance": "medium",
+        "alvo": "",
         "area": "",
         "resistencia": {
-          "pericia": "",
+          "pericia": "refl",
           "atributo": "int",
           "bonus": 0,
-          "txt": ""
+          "txt": "Reflexos reduz à metade"
         },
-        "rolls": [],
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "4d12",
+                "acido",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
         "tipo": "arc",
-        "circulo": 2,
-        "preparada": false,
-        "escola": "tra",
+        "circulo": 3,
+        "preparada": true,
+        "escola": "con",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -2183,9 +2138,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "NzwiXeR9GGBinLnr",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2193,12 +2146,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.Mv8Lzi5PEklOW36c",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.K2VH0rr4Qw6OqQjA",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "aLitcse1rJ3Lqtys",
-      "folder": null,
+      "_key": "!actors.items!CtPekIrtD4SwByBG.NzwiXeR9GGBinLnr"
+    },
+    {
+      "name": "Metamorfose",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/metamorfose.webp",
       "effects": [
         {
           "_id": "aV6VDldLyDBxlZ3w",
@@ -2748,20 +2705,32 @@
           "_key": "!actors.items.effects!CtPekIrtD4SwByBG.aLitcse1rJ3Lqtys.ePMIJBbxJ1i0p3OP"
         }
       ],
-      "_key": "!actors.items!CtPekIrtD4SwByBG.aLitcse1rJ3Lqtys"
-    },
-    {
-      "name": "Relâmpago",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/relampago.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 204
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "Mv8Lzi5PEklOW36c"
+          },
+          "pack": "magias",
+          "versao": "c4bd573c"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Você dispara um poderoso raio que causa 6d6 pontos de dano de eletricidade em todas as criaturas e objetos livres na área.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.BfYpxjs0NeqhAs8q]{Relâmpago}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você muda sua aparência e forma — incluindo seu equipamento — para qualquer outra criatura, existente ou imaginada. Independentemente da forma escolhida, você recebe +20 em testes de Enganação para disfarce. Características não mencionadas não mudam.</p><p style=\"text-align:justify\">Se mudar para uma forma humanoide, pode mudar o tipo de dano (entre corte, impacto e perfuração) de suas armas (se usa uma maça e transformá-la em espada longa, ela pode causar dano de corte, por exemplo). Se quiser, pode assumir uma forma humanoide com uma categoria de tamanho acima ou abaixo da sua; nesse caso aplique os modificadores em Furtividade e testes de manobra.</p><p style=\"text-align:justify\">Se mudar para outras formas, você pode escolher uma Forma Selvagem do druida (veja no Capítulo 1). Nesse caso você não pode atacar com suas armas, falar ou lançar magias até voltar ao normal, mas recebe uma ou mais armas naturais e os bônus da forma selvagem escolhida.</p></div><hr><p style=\"text-align:justify\">Você muda sua aparência e forma — incluindo seu equipamento — para qualquer outra criatura, existente ou imaginada. Independentemente da forma escolhida, você recebe +20 em testes de Enganação para disfarce. Características não mencionadas não mudam.</p><p style=\"text-align:justify\">Se mudar para uma forma humanoide, pode mudar o tipo de dano (entre corte, impacto e perfuração) de suas armas (se usa uma maça e transformá-la em espada longa, ela pode causar dano de corte, por exemplo). Se quiser, pode assumir uma forma humanoide com uma categoria de tamanho acima ou abaixo da sua; nesse caso aplique os modificadores em Furtividade e testes de manobra.</p><p style=\"text-align:justify\">Se mudar para outras formas, você pode escolher uma Forma Selvagem do druida (veja no Capítulo 1). Nesse caso você não pode atacar com suas armas, falar ou lançar magias até voltar ao normal, mas recebe uma ou mais armas naturais e os bônus da forma selvagem escolhida.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 204.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.Mv8Lzi5PEklOW36c]{Metamorfose}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 203",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 204",
         "ativacao": {
           "execucao": "action",
           "custo": 3,
@@ -2771,7 +2740,7 @@
         },
         "duracao": {
           "value": 0,
-          "units": "inst",
+          "units": "scene",
           "special": ""
         },
         "range": {
@@ -2785,35 +2754,20 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "medium",
-        "alvo": "",
-        "area": "linha",
+        "alcance": "self",
+        "alvo": "você",
+        "area": "",
         "resistencia": {
           "pericia": "",
           "atributo": "int",
           "bonus": 0,
-          "txt": "Reflexos reduz à metade"
+          "txt": ""
         },
-        "rolls": [
-          {
-            "name": "Dano",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "6d6",
-                "eletricidade",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
+        "rolls": [],
         "tipo": "arc",
         "circulo": 2,
-        "preparada": false,
-        "escola": "evo",
+        "preparada": true,
+        "escola": "tra",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -2825,9 +2779,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "aLitcse1rJ3Lqtys",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2835,12 +2787,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.BfYpxjs0NeqhAs8q",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.Mv8Lzi5PEklOW36c",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "pCkVqcCYBOZXIfnN",
-      "folder": null,
+      "_key": "!actors.items!CtPekIrtD4SwByBG.aLitcse1rJ3Lqtys"
+    },
+    {
+      "name": "Relâmpago",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/relampago.webp",
       "effects": [
         {
           "_id": "Dv4p2g0WEIkRsFNO",
@@ -2992,6 +2948,107 @@
           "_key": "!actors.items.effects!CtPekIrtD4SwByBG.pCkVqcCYBOZXIfnN.G6HZaHzMiHXntFiJ"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 203
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "BfYpxjs0NeqhAs8q"
+          },
+          "pack": "magias",
+          "versao": "cfe60b1c"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você dispara um poderoso raio que causa 6d6 pontos de dano de eletricidade em todas as criaturas e objetos livres na área.</p></div><hr><p style=\"text-align:justify\">Você dispara um poderoso raio que causa 6d6 pontos de dano de eletricidade em todas as criaturas e objetos livres na área.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 203.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.BfYpxjs0NeqhAs8q]{Relâmpago}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 203",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 3,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "medium",
+        "alvo": "",
+        "area": "linha",
+        "resistencia": {
+          "pericia": "refl",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": "Reflexos reduz à metade"
+        },
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "6d6",
+                "eletricidade",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "tipo": "arc",
+        "circulo": 2,
+        "preparada": true,
+        "escola": "evo",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "_id": "pCkVqcCYBOZXIfnN",
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.BfYpxjs0NeqhAs8q",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!CtPekIrtD4SwByBG.pCkVqcCYBOZXIfnN"
     }
   ],

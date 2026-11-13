@@ -722,9 +722,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "dae54edd",
+      "assinatura": "d030d949",
       "assinaturas": [
-        "dae54edd"
+        "dae54edd",
+        "24fe7592",
+        "d030d949"
       ]
     }
   },
@@ -746,15 +748,37 @@
   },
   "items": [
     {
+      "_id": "N3coszHKthA86jtP",
       "name": "Machado anão",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/machado-anao.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 149
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "xXK2IqgRyxPdhdmQ"
+          },
+          "pack": "equipamentos",
+          "versao": "99a31bb3"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.xXK2IqgRyxPdhdmQ]{Machado anão}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.xXK2IqgRyxPdhdmQ]{Machado anão}</p>",
+          "value": "<p style=\"text-align:justify\">A arma preferida de onze entre dez guerreiros anões. Um machado anão é muito grande para ser usado com uma só mão sem treinamento especial; por isso é uma arma exótica. Ele pode ser usado como uma arma marcial de duas mãos.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 149.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.xXK2IqgRyxPdhdmQ]{Machado anão}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — O Segredo das Minas",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 149",
         "rolls": [
           {
             "name": "Ataque",
@@ -805,7 +829,7 @@
         "alcance": "",
         "proposito": "corpo-a-corpo",
         "proficiencia": "exotica",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -817,24 +841,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 4,
         "qtd": 1,
-        "preco": 0,
+        "preco": 30,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -862,13 +886,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "N3coszHKthA86jtP",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -880,19 +897,40 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!JZkBFgpkrnZ3FEro.N3coszHKthA86jtP"
     },
     {
+      "_id": "HYGtFGx7fJSRFkKL",
       "name": "Besta pesada",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/besta-pesada.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 146
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "iYY0Jr19T5ERm43G"
+          },
+          "pack": "equipamentos",
+          "versao": "d933013f"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.iYY0Jr19T5ERm43G]{Besta pesada}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.iYY0Jr19T5ERm43G]{Besta pesada}</p>",
+          "value": "<p style=\"text-align:justify\">Versão maior e mais potente da besta leve. Recarregar uma besta pesada é uma ação padrão.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 146.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.iYY0Jr19T5ERm43G]{Besta pesada}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — O Segredo das Minas",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 146",
         "rolls": [
           {
             "name": "Ataque",
@@ -942,8 +980,8 @@
         "criticoX": 2,
         "alcance": "medium",
         "proposito": "disparo",
-        "proficiencia": "simples",
-        "empunhadura": "leve",
+        "proficiencia": "marcial",
+        "empunhadura": "duas",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -955,24 +993,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 2,
+        "peso": 4,
         "qtd": 1,
-        "preco": 0,
+        "preco": 50,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -1000,13 +1038,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "HYGtFGx7fJSRFkKL",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1018,7 +1049,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!JZkBFgpkrnZ3FEro.HYGtFGx7fJSRFkKL"
     }
   ],

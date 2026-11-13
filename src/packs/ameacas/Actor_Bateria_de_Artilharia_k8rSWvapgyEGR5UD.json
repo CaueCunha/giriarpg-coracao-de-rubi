@@ -722,9 +722,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar3",
       "antigo": "patamar3-ameacas",
-      "assinatura": "abef7214",
+      "assinatura": "93eeaa54",
       "assinaturas": [
-        "abef7214"
+        "abef7214",
+        "93eeaa54"
       ]
     }
   },
@@ -748,7 +749,7 @@
     {
       "name": "Canhão",
       "type": "arma",
-      "img": "icons/svg/explosion.svg",
+      "img": "icons/creatures/abilities/fang-tooth-blood-red.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Dois disparos por ação agredir.</p>",

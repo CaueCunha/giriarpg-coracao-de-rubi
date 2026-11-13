@@ -722,9 +722,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "1a76a3c8",
+      "assinatura": "702962e6",
       "assinaturas": [
-        "1a76a3c8"
+        "1a76a3c8",
+        "1bf9d0dd",
+        "702962e6"
       ]
     }
   },
@@ -746,15 +748,37 @@
   },
   "items": [
     {
+      "_id": "Xd4RfexgEPuoGo7T",
       "name": "Florete",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/florete.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 148
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "r3tlhprPUh8qHesx"
+          },
+          "pack": "equipamentos",
+          "versao": "3c1e24db"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Dois ataques por ação agredir. Pungente de mitral (já na margem).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.r3tlhprPUh8qHesx]{Florete}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.r3tlhprPUh8qHesx]{Florete}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Dois ataques por ação agredir. Pungente de mitral (já na margem).</p></div><hr><p style=\"text-align:justify\">A lâmina leve e fina desta espada torna a arma muito precisa. O florete é uma arma ágil.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 148.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.r3tlhprPUh8qHesx]{Florete}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Blefe Fatal",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 148",
         "rolls": [
           {
             "name": "Ataque",
@@ -802,10 +826,10 @@
         ],
         "criticoM": 17,
         "criticoX": 2,
-        "alcance": "",
+        "alcance": "-",
         "proposito": "corpo-a-corpo",
         "proficiencia": "marcial",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -817,24 +841,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 1,
         "qtd": 1,
-        "preco": 0,
+        "preco": 20,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -862,13 +886,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "Xd4RfexgEPuoGo7T",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -880,19 +897,40 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!GGeAVeLI246BHWAT.Xd4RfexgEPuoGo7T"
     },
     {
+      "_id": "h5yt7Q4lxhKAZSQ3",
       "name": "Adaga",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/adaga.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 146
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "XuObO7LzBBNoIsGv"
+          },
+          "pack": "equipamentos",
+          "versao": "123d3c5e"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.XuObO7LzBBNoIsGv]{Adaga}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XuObO7LzBBNoIsGv]{Adaga}</p>",
+          "value": "<p style=\"text-align:justify\">Esta faca afiada é usada por muitos habitantes adultos do Reinado, embora seja favorita de ladrões e assassinos, por ser facilmente escondida (fornece +5 em testes de Ladinagem para ocultá-la). Quando ataca com uma adaga, você pode usar sua Destreza em vez de Força nos testes de ataque. Uma adaga pode ser arremessada.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 146.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XuObO7LzBBNoIsGv]{Adaga}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Blefe Fatal",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 146",
         "rolls": [
           {
             "name": "Ataque",
@@ -941,7 +979,7 @@
         "criticoM": 19,
         "criticoX": 2,
         "alcance": "short",
-        "proposito": "arremesso",
+        "proposito": "corpo-a-corpo",
         "proficiencia": "simples",
         "empunhadura": "leve",
         "equipado2": {
@@ -955,24 +993,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 0.5,
         "qtd": 1,
-        "preco": 0,
+        "preco": 2,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -1000,13 +1038,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "h5yt7Q4lxhKAZSQ3",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1018,7 +1049,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!GGeAVeLI246BHWAT.h5yt7Q4lxhKAZSQ3"
     },
     {

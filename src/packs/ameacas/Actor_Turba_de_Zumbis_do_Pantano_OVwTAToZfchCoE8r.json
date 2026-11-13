@@ -722,9 +722,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "cda955de",
+      "assinatura": "c3710860",
       "assinaturas": [
-        "cda955de"
+        "cda955de",
+        "c3710860"
       ]
     }
   },
@@ -1115,7 +1116,7 @@
     {
       "name": "Bando",
       "type": "poder",
-      "img": "icons/svg/combat.svg",
+      "img": "icons/weapons/polearms/trident-fork-white.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">A turba é um grupo de indivíduos. Se um ataque do bando exceder a Defesa do inimigo por 10 ou mais, causa o dobro do dano; se errar, ainda causa metade. Imune a manobras de combate e a efeitos de alvo único que não causam dano; vulnerável a dano de área. Quem tem Trespassar e acerta o bando pode usá-lo contra ele (uma vez por turno).</p>",

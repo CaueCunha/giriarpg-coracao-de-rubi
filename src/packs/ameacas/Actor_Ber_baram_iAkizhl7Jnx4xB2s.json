@@ -727,9 +727,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar3",
       "antigo": "patamar3-ameacas",
-      "assinatura": "133ab8c8",
+      "assinatura": "56e0c6cc",
       "assinaturas": [
-        "133ab8c8"
+        "133ab8c8",
+        "a7b048a8",
+        "56e0c6cc"
       ]
     }
   },
@@ -753,10 +755,10 @@
     {
       "name": "Marrada",
       "type": "arma",
-      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "img": "systems/tormenta20/icons/poderes/ameacas/marrada.webp",
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Mais 3d6 de fogo (entra sozinho).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.O33OJJxfLmdoYa33]{Marrada}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.herois-de-arton.Item.LdK2k0FVO42XygeH]{Marrada (1d6)}</p>",
+          "value": "<p style=\"text-align:justify\">Mais 3d6 de fogo (entra sozinho).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.O33OJJxfLmdoYa33]{Marrada}</p>",
           "unidentified": ""
         },
         "source": "Coração de Rubi — Mentes Malignas que Planejam Destruição",
@@ -881,7 +883,7 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.giria-t20.herois-de-arton.Item.LdK2k0FVO42XygeH",
+        "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
       },
@@ -961,7 +963,7 @@
     {
       "name": "Baforada Flamejante",
       "type": "poder",
-      "img": "icons/magic/fire/flame-burning-embers-yellow.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Cone de 9 m: 7d6 de fogo (Ref CD 26 reduz à metade). Recarga (movimento).</p>",
@@ -1123,7 +1125,7 @@
     {
       "name": "Sangue de Lava",
       "type": "poder",
-      "img": "icons/magic/fire/flame-burning-embers-yellow.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Quando sofre dano de corte ou perfuração, criaturas adjacentes sofrem 4d6 de fogo e ficam em chamas (Ref CD 26 reduz à metade e evita as chamas).</p>",

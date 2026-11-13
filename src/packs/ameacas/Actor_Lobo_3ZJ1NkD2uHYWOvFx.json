@@ -18,9 +18,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "e495f4a8",
+      "assinatura": "6b1bde84",
       "assinaturas": [
-        "e495f4a8"
+        "e495f4a8",
+        "6b1bde84"
       ]
     }
   },
@@ -844,7 +845,7 @@
       "folder": "0V7x5o397UvG3xKP",
       "name": "Derrubar",
       "type": "poder",
-      "img": "icons/creatures/abilities/paw-glowing-yellow.webp",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
       "system": {
         "description": {
           "value": "Se o lobo acerta um ataque de mordida, pode fazer a manobra derrubar (teste +7)<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.LDR3zCdm6KlFPj3F]{Derrubar}</p>",
@@ -972,7 +973,7 @@
       "folder": "0V7x5o397UvG3xKP",
       "name": "Táticas de Alcateia",
       "type": "poder",
-      "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+      "img": "systems/tormenta20/icons/poderes/ameacas/taticas-alcateia.webp",
       "system": {
         "description": {
           "value": "Quando flanqueia um inimigo, o lobo recebe +2 no teste de ataque e na rolagem de dano (além do bônus normal por flanquear, para um total de +4 no ataque e +2 no dano).<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.OfHvpjwVrlXts8gl]{Táticas de Alcateia}</p>",
@@ -1115,7 +1116,7 @@
       "folder": "38RRBscxCtcFC5s4",
       "name": "Mordida",
       "type": "arma",
-      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
       "system": {
         "description": {
           "value": "<section class=\"secret\">Mordida</section><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.D0wp4XltbdzsgGEW]{Mordida}</p>",

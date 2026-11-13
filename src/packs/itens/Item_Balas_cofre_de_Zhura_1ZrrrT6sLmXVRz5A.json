@@ -1,24 +1,46 @@
 {
+  "_id": "1ZrrrT6sLmXVRz5A",
   "name": "Balas (cofre de Zhura)",
   "type": "consumivel",
   "img": "systems/tormenta20/icons/itens/equipamentos/balas.webp",
-  "sort": 100000,
+  "effects": [],
   "flags": {
+    "giria-t20": {
+      "fonte": {
+        "livro": "T20",
+        "pagina": 151
+      },
+      "automacao": {
+        "nivel": "manual",
+        "notas": ""
+      },
+      "status": "revisado",
+      "revisao": 1,
+      "sistema": {
+        "pack": "equipamentos",
+        "id": "3kWjlkSaIAiYa4lm"
+      },
+      "pack": "equipamentos",
+      "versao": "1b7d1156"
+    },
     "world": {
       "cdr": "a2"
     },
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-itens",
-      "assinatura": "166cb7a5",
+      "assinatura": "50e1a819",
       "assinaturas": [
-        "166cb7a5"
+        "166cb7a5",
+        "b9548492",
+        "1e7f9737",
+        "50e1a819"
       ]
     }
   },
   "system": {
     "description": {
-      "value": "<p style=\"text-align:justify\">Uma bolsa com 20 balas (pequenas esferas de chumbo) e pólvora. Recarregar uma pistola ou um mosquete é uma ação padrão.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.3kWjlkSaIAiYa4lm]{Balas}</p>",
+      "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Uma bolsa com 20 balas (pequenas esferas de chumbo) e pólvora. Recarregar uma pistola ou um mosquete é uma ação padrão.</p></div><hr><p style=\"text-align:justify\">Uma bolsa com 20 balas (pequenas esferas de chumbo) e pólvora. Recarregar uma pistola ou um mosquete é uma ação padrão.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 151.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.3kWjlkSaIAiYa4lm]{Balas}</p>",
       "unidentified": ""
     },
     "source": "Tormenta20 — Edição Jogo do Ano, p. 151",
@@ -91,9 +113,6 @@
     "rolltags": [],
     "automationtags": []
   },
-  "ownership": {
-    "default": 0
-  },
   "_stats": {
     "coreVersion": "14.366",
     "systemId": "tormenta20",
@@ -105,8 +124,6 @@
     "duplicateSource": null,
     "exportSource": null
   },
-  "folder": "FYqoFd8yCzZseA4H",
-  "_id": "1ZrrrT6sLmXVRz5A",
-  "effects": [],
+  "folder": "pVjhRGntbqBZmEcv",
   "_key": "!items!1ZrrrT6sLmXVRz5A"
 }

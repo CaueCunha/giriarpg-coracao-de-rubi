@@ -10,11 +10,13 @@
  *  - Habilidade com o nome de uma habilidade de ameaça do sistema (ex.: Drenar Sangue do Vampiro):
  *    ganha o link para a habilidade dentro da ameaça.
  *
- *  - Giria T20 (o compêndio de automações do Cauê): quando o Giria tem o item com o mesmo nome e tipo,
- *    a origem (_stats.compendiumSource) passa a ser a versão do Giria, que é a automatizada, e a
- *    descrição ganha o link "No Giria T20". Magia continua mesclada com a do sistema (a ficha do NPC
- *    precisa dos números dela), mas também ganha o link do Giria. O índice vem de src/giria-indice.json
- *    (tools/giria-indice.mjs), porque o repositório do Giria é privado.
+ *  - Giria T20 (o compêndio refinado do Cauê, presente em todas as campanhas) vem primeiro: quando o
+ *    Giria tem o item com o mesmo nome e tipo, o item passa a SER a cópia do Giria (arte, descrição,
+ *    melhorias e automação), com origem no Giria, e só os números da ficha do livro entram por cima
+ *    (rolagens de ataque e dano, crítico, quantidade). O texto da ficha vira uma nota no topo. Magia é a
+ *    magia do Giria com custo, CD e rolagens da ficha. Habilidade que só existe dentro de uma ameaça do
+ *    Giria empresta a arte. As cópias vêm de src/giria-docs.json (tools/giria-docs.mjs) e o índice de
+ *    src/giria-indice.json (tools/giria-indice.mjs), porque o repositório do Giria é privado.
  *
  * Tudo que é próprio da campanha fica como o gerador criou.
  */
@@ -30,7 +32,10 @@ export const normalizar = (s) =>
 		.trim();
 
 /** Nomes genéricos demais para ligar a uma habilidade embutida numa ameaça qualquer. */
-const GENERICOS = new Set(["garra", "garras", "mordida", "pancada", "pincas", "chifres", "chifrada", "cauda", "ferrao", "toque", "soco", "tentaculos", "bico", "pisotear"]);
+export const GENERICOS = new Set(["garra", "garras", "mordida", "pancada", "pincas", "chifres", "chifrada", "cauda", "ferrao", "toque", "soco", "tentaculos", "bico", "pisotear"]);
+
+/** Nomes iguais a itens do Giria que são outra coisa (ex.: Sumo-Sacerdote (admissão), Marrada (1d6) de raça). */
+const NAO_GIRIA = new Set(["sumo sacerdote", "marrada"]);
 
 /** Quando o sistema tem mais de um item com o mesmo nome. */
 const PREFERIDOS = {
@@ -141,15 +146,85 @@ function mesclarMagia(gerado, ref) {
 	return out;
 }
 
+/** A nota com o texto da ficha do livro, sem os links que o próprio build acrescenta. */
+function notaDaFicha(desc) {
+	const txt = String(desc ?? "").replace(/<p class="cdr-ref">.*?<\/p>/g, "").trim();
+	return txt ? `<div class="cdr-nota"><p><b>Nesta ficha (Coração de Rubi):</b></p>${txt}</div><hr>` : "";
+}
+
+/**
+ * O item do Giria no lugar do item gerado: arte, descrição, melhorias e automação do Giria, com o nome,
+ * as rolagens e os números da ficha do livro por cima. Efeitos: os do Giria; os do gerador entram se o
+ * Giria não tiver nenhum ou, em armas, quando trazem dano extra da ficha (ex.: +1d6 de fogo).
+ */
+/**
+ * O system do Giria encaixado no modelo do sistema (o system do item gerado pelo Foundry simulado):
+ * chaves que o modelo não tem saem (o Foundry descartaria), chaves que faltam ficam com o valor do modelo
+ * e, onde o formato difere (ex.: texto no Giria, lista no modelo), vale o modelo.
+ */
+function podar(v, modelo) {
+	const obj = (x) => x && typeof x === "object" && !Array.isArray(x);
+	if (!obj(modelo)) return Array.isArray(modelo) === Array.isArray(v) && (typeof v === typeof modelo || modelo === null || v === null) ? v : modelo;
+	if (!obj(v)) return deepClone(modelo);
+	const out = deepClone(modelo);
+	for (const k of Object.keys(v)) if (k in modelo) out[k] = podar(v[k], modelo[k]);
+	return out;
+}
+
+function copiarDoGiria(gerado, gdoc, uuid) {
+	const s = deepClone(gdoc);
+	s.system = podar(s.system ?? {}, gerado.system ?? {});
+	const g = gerado.system ?? {};
+	const out = {
+		...s,
+		_id: gerado._id,
+		name: gerado.name,
+		flags: mergeObject(deepClone(s.flags ?? {}), deepClone(gerado.flags ?? {}), { inplace: false }),
+		_stats: { ...(s._stats ?? {}), compendiumSource: uuid }
+	};
+	delete out.folder;
+	const sys = out.system;
+	if (g.rolls?.length) sys.rolls = deepClone(g.rolls);
+	if (gerado.type === "arma") {
+		for (const k of ["criticoM", "criticoX"]) if (g[k] !== undefined) sys[k] = g[k];
+		for (const [k, v] of Object.entries(g.upgrades ?? {})) if (v) sys.upgrades = { ...(sys.upgrades ?? {}), [k]: v };
+	}
+	if (g.qtd !== undefined) sys.qtd = g.qtd;
+	if (g.preco && g.preco !== sys.preco) sys.preco = g.preco;
+	if (g.ativacao?.custo && sys.ativacao) sys.ativacao = { ...sys.ativacao, custo: g.ativacao.custo };
+	if (g.resistencia?.txt) sys.resistencia = { ...(sys.resistencia ?? {}), txt: g.resistencia.txt };
+	sys.source = sys.source || g.source;
+	sys.description = { ...(sys.description ?? {}), value: `${notaDaFicha(g.description?.value)}${sys.description?.value ?? ""}${linkGiria({ uuid, nome: s.name })}` };
+	const doGiria = deepClone(s.effects ?? []);
+	const nomes = new Set(doGiria.map((e) => e.name));
+	const proprios = deepClone(gerado.effects ?? []).filter((e) => !nomes.has(e.name));
+	out.effects = !doGiria.length || gerado.type === "arma" ? [...doGiria, ...proprios] : doGiria;
+	return out;
+}
+
 /**
  * Aplica as ligações a todos os documentos capturados de um ato. Retorna um registro
  * [{ ato, dono, item, tipo, acao, uuid }] para o relatório do build.
  */
-export function ligarAoSistema(docs, indice, ato, giria = null) {
+export function ligarAoSistema(docs, indice, ato, giria = null, giriaDocs = null) {
 	const registro = [];
 	const tratar = (item, dono) => {
 		if (!["magia", "poder", "arma", "equipamento", "consumivel", "tesouro"].includes(item.type)) return item;
-		const g = GENERICOS.has(normalizar(item.name)) ? null : escolherGiria(giria, item);
+		const g = GENERICOS.has(normalizar(item.name)) || NAO_GIRIA.has(normalizar(item.name)) ? null : escolherGiria(giria, item);
+		const gdoc = g ? giriaDocs?.itens?.[g.uuid] : null;
+		if (gdoc) {
+			registro.push({ ato, dono: dono?.name ?? "(item)", item: item.name, tipo: item.type, acao: `item do Giria T20 (${g.nivel ?? "?"}) + números da ficha`, uuid: g.uuid });
+			if (item.type !== "magia") return copiarDoGiria(item, gdoc, g.uuid);
+			const m = mesclarMagia(item, { doc: gdoc, uuid: g.uuid });
+			m.system.description.value += linkGiria(g);
+			return m;
+		}
+		if (g) registro.push({ ato, dono: dono?.name ?? "(item)", item: item.name, tipo: item.type, acao: "AVISO: está no Giria mas falta em src/giria-docs.json (rode tools/giria-docs.mjs)", uuid: g.uuid });
+		const arte = giriaDocs?.imagens?.[`${normalizar(item.name)}|${item.type}`];
+		if (arte && arte !== item.img) {
+			item = { ...deepClone(item), img: arte };
+			registro.push({ ato, dono: dono?.name ?? "(item)", item: item.name, tipo: item.type, acao: "arte do Giria T20 (habilidade de ameaça)", uuid: "" });
+		}
 		const comGiria = (doc) => {
 			if (!g) return doc;
 			if (doc.type !== "magia") doc._stats = { ...(doc._stats ?? {}), compendiumSource: g.uuid };

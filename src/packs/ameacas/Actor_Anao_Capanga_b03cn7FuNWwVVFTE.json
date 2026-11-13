@@ -722,9 +722,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "61c09b03",
+      "assinatura": "552a0e16",
       "assinaturas": [
-        "61c09b03"
+        "61c09b03",
+        "6d8cf629",
+        "552a0e16"
       ]
     }
   },
@@ -746,15 +748,37 @@
   },
   "items": [
     {
+      "_id": "PFw7ni2R6nHUCkiF",
       "name": "Machado de batalha",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/machado-de-batalha.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 149
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "v5HYdRxOsBcnXATP"
+          },
+          "pack": "equipamentos",
+          "versao": "5c74699e"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.v5HYdRxOsBcnXATP]{Machado de batalha}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.v5HYdRxOsBcnXATP]{Machado de batalha}</p>",
+          "value": "<p style=\"text-align:justify\">Adaptado do machado de lenhador, este não é um instrumento para corte de árvores, mas sim uma arma capaz de causar ferimentos terríveis.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 149.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.v5HYdRxOsBcnXATP]{Machado de batalha}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — O Segredo das Minas",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 149",
         "rolls": [
           {
             "name": "Ataque",
@@ -805,7 +829,7 @@
         "alcance": "",
         "proposito": "corpo-a-corpo",
         "proficiencia": "marcial",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -817,24 +841,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 3,
         "qtd": 1,
-        "preco": 0,
+        "preco": 10,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -862,13 +886,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "PFw7ni2R6nHUCkiF",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -880,7 +897,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!b03cn7FuNWwVVFTE.PFw7ni2R6nHUCkiF"
     }
   ],

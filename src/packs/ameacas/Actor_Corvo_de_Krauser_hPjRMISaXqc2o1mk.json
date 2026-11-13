@@ -725,9 +725,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar3",
       "antigo": "patamar3-ameacas",
-      "assinatura": "2a4bb265",
+      "assinatura": "23098eed",
       "assinaturas": [
-        "2a4bb265"
+        "2a4bb265",
+        "23098eed"
       ]
     }
   },
@@ -889,7 +890,7 @@
     {
       "name": "Canhão",
       "type": "arma",
-      "img": "icons/svg/explosion.svg",
+      "img": "icons/creatures/abilities/fang-tooth-blood-red.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Dois disparos por ação agredir.</p>",
@@ -1093,7 +1094,7 @@
     {
       "name": "Goblins Consertadores (cura acelerada 20)",
       "type": "poder",
-      "img": "icons/svg/regen.svg",
+      "img": "icons/skills/trades/construction-carpentry-hammer-gray.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Goblins engenhoqueiros rastejam por dentro da aeronave consertando tudo. São imunes a dano, mas não a efeitos mentais: Vontade +4 (com a resistência a magia da nave); qualquer condição desliga a cura.<br><b>Automação:</b> em combate, o módulo cura 20 PV no início do turno. Se a equipe for afetada por uma condição (mental, no caso do ARQUEMIS), desligue apagando a marca em <i>flags.world.cdrAutomacoes</i> ou apague esta habilidade.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.n59OF2MBGj6wtLFB]{Goblins Consertadores}</p>",
@@ -1240,7 +1241,7 @@
     {
       "name": "Ordem Inquestionável",
       "type": "poder",
-      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Uma vez por rodada, efeito igual ao da magia Comando (CD 40). Não é mágico: vem da autoridade militar do capitão.</p>",
@@ -1306,7 +1307,7 @@
     {
       "name": "Saraivada",
       "type": "poder",
-      "img": "icons/svg/explosion.svg",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Dispara todos os canhões: criaturas em alcance médio sofrem 16d12 de impacto (Ref CD 40 reduz à metade). Recarga (padrão).</p>",

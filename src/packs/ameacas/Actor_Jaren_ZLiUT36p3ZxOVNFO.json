@@ -720,9 +720,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "a03c9e07",
+      "assinatura": "3c8d4ee8",
       "assinaturas": [
-        "a03c9e07"
+        "a03c9e07",
+        "a958e7f2",
+        "3c8d4ee8"
       ]
     }
   },
@@ -952,15 +954,37 @@
       "_key": "!actors.items!ZLiUT36p3ZxOVNFO.sMPbhLzCiVa90sEH"
     },
     {
+      "_id": "93EMmUFqMFtmWpUg",
       "name": "Espada curta",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/espada-curta.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 148
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "boM5sIgADaFaQ3xG"
+          },
+          "pack": "equipamentos",
+          "versao": "94de3a85"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.boM5sIgADaFaQ3xG]{Espada curta}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.boM5sIgADaFaQ3xG]{Espada curta}</p>",
+          "value": "<p style=\"text-align:justify\">O tipo mais comum de espada, usada por guardas ou como arma secundária de guerreiros mais capazes. Mede entre 40 e 50cm.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 148.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.boM5sIgADaFaQ3xG]{Espada curta}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — O Segredo das Minas",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 148",
         "rolls": [
           {
             "name": "Ataque",
@@ -1023,24 +1047,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 1,
         "qtd": 1,
-        "preco": 0,
+        "preco": 10,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -1068,13 +1092,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "93EMmUFqMFtmWpUg",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1086,7 +1103,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!ZLiUT36p3ZxOVNFO.93EMmUFqMFtmWpUg"
     },
     {

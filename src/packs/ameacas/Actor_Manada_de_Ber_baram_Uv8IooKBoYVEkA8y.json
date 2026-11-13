@@ -727,9 +727,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar3",
       "antigo": "patamar3-ameacas",
-      "assinatura": "b5b2fdc4",
+      "assinatura": "37e7d6c0",
       "assinaturas": [
-        "b5b2fdc4"
+        "b5b2fdc4",
+        "a30e6caa",
+        "37e7d6c0"
       ]
     }
   },
@@ -753,10 +755,10 @@
     {
       "name": "Marrada",
       "type": "arma",
-      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "img": "systems/tormenta20/icons/poderes/ameacas/marrada.webp",
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Mais 6d6 de fogo (entra sozinho).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.O33OJJxfLmdoYa33]{Marrada}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.herois-de-arton.Item.LdK2k0FVO42XygeH]{Marrada (1d6)}</p>",
+          "value": "<p style=\"text-align:justify\">Mais 6d6 de fogo (entra sozinho).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.O33OJJxfLmdoYa33]{Marrada}</p>",
           "unidentified": ""
         },
         "source": "Coração de Rubi — Mentes Malignas que Planejam Destruição",
@@ -881,7 +883,7 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.giria-t20.herois-de-arton.Item.LdK2k0FVO42XygeH",
+        "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
       },
@@ -961,7 +963,7 @@
     {
       "name": "Baforada Flamejante",
       "type": "poder",
-      "img": "icons/magic/fire/flame-burning-embers-yellow.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Cone de 9 m: 14d6 de fogo e em chamas (Ref CD 28 reduz à metade e evita as chamas). Recarga (movimento).</p>",
@@ -1273,7 +1275,7 @@
     {
       "name": "Sangue de Lava",
       "type": "poder",
-      "img": "icons/magic/fire/flame-burning-embers-yellow.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Quando sofre dano de corte ou perfuração, criaturas adjacentes sofrem 8d6 de fogo e ficam em chamas (Ref CD 28 reduz à metade e evita as chamas).</p>",
@@ -1429,7 +1431,7 @@
     {
       "name": "Bando",
       "type": "poder",
-      "img": "icons/svg/combat.svg",
+      "img": "icons/weapons/polearms/trident-fork-white.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">A manada é um grupo de indivíduos. Se um ataque do bando exceder a Defesa do inimigo por 10 ou mais, causa o dobro do dano; se errar, ainda causa metade. Imune a manobras de combate e a efeitos de alvo único que não causam dano; vulnerável a dano de área. Quem tem Trespassar e acerta o bando pode usá-lo contra ele (uma vez por turno).</p>",

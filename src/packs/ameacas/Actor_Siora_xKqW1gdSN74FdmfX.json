@@ -722,9 +722,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "a2a9a509",
+      "assinatura": "3081e720",
       "assinaturas": [
-        "a2a9a509"
+        "a2a9a509",
+        "80bbd70c",
+        "3081e720"
       ]
     }
   },
@@ -746,15 +748,37 @@
   },
   "items": [
     {
+      "_id": "hDjjEftiVDAYJN5t",
       "name": "Adaga",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/adaga.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 146
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "XuObO7LzBBNoIsGv"
+          },
+          "pack": "equipamentos",
+          "versao": "123d3c5e"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.XuObO7LzBBNoIsGv]{Adaga}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XuObO7LzBBNoIsGv]{Adaga}</p>",
+          "value": "<p style=\"text-align:justify\">Esta faca afiada é usada por muitos habitantes adultos do Reinado, embora seja favorita de ladrões e assassinos, por ser facilmente escondida (fornece +5 em testes de Ladinagem para ocultá-la). Quando ataca com uma adaga, você pode usar sua Destreza em vez de Força nos testes de ataque. Uma adaga pode ser arremessada.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 146.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XuObO7LzBBNoIsGv]{Adaga}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Blefe Fatal",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 146",
         "rolls": [
           {
             "name": "Ataque",
@@ -802,7 +826,7 @@
         ],
         "criticoM": 19,
         "criticoX": 2,
-        "alcance": "",
+        "alcance": "short",
         "proposito": "corpo-a-corpo",
         "proficiencia": "simples",
         "empunhadura": "leve",
@@ -817,24 +841,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 0.5,
         "qtd": 1,
-        "preco": 0,
+        "preco": 2,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -862,13 +886,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "hDjjEftiVDAYJN5t",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -880,19 +897,40 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!xKqW1gdSN74FdmfX.hDjjEftiVDAYJN5t"
     },
     {
+      "_id": "83WIw6JsBXoW9P1W",
       "name": "Adaga (arremesso)",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/adaga.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 146
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "XuObO7LzBBNoIsGv"
+          },
+          "pack": "equipamentos",
+          "versao": "123d3c5e"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.XuObO7LzBBNoIsGv]{Adaga}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XuObO7LzBBNoIsGv]{Adaga}</p>",
+          "value": "<p style=\"text-align:justify\">Esta faca afiada é usada por muitos habitantes adultos do Reinado, embora seja favorita de ladrões e assassinos, por ser facilmente escondida (fornece +5 em testes de Ladinagem para ocultá-la). Quando ataca com uma adaga, você pode usar sua Destreza em vez de Força nos testes de ataque. Uma adaga pode ser arremessada.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 146.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XuObO7LzBBNoIsGv]{Adaga}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Blefe Fatal",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 146",
         "rolls": [
           {
             "name": "Ataque",
@@ -941,7 +979,7 @@
         "criticoM": 19,
         "criticoX": 2,
         "alcance": "short",
-        "proposito": "arremesso",
+        "proposito": "corpo-a-corpo",
         "proficiencia": "simples",
         "empunhadura": "leve",
         "equipado2": {
@@ -955,24 +993,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 0.5,
         "qtd": 1,
-        "preco": 0,
+        "preco": 2,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -1000,13 +1038,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "83WIw6JsBXoW9P1W",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1018,85 +1049,12 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!xKqW1gdSN74FdmfX.83WIw6JsBXoW9P1W"
     },
     {
       "name": "Amedrontar",
       "type": "magia",
       "img": "systems/tormenta20/icons/magias/amedrontar.webp",
-      "sort": 0,
-      "flags": {},
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U]{Amedrontar}</p>",
-          "unidentified": ""
-        },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 179",
-        "ativacao": {
-          "execucao": "action",
-          "custo": 1,
-          "qtd": "",
-          "condicao": "",
-          "special": ""
-        },
-        "duracao": {
-          "value": 0,
-          "units": "scene",
-          "special": ""
-        },
-        "range": {
-          "value": null,
-          "units": ""
-        },
-        "consume": {
-          "type": "",
-          "target": "",
-          "amount": null,
-          "mpMultiplier": false
-        },
-        "efeito": "",
-        "alcance": "short",
-        "alvo": "1 animal ou humanoide",
-        "area": "",
-        "resistencia": {
-          "pericia": "",
-          "atributo": "int",
-          "bonus": 0,
-          "txt": "Vontade parcial"
-        },
-        "rolls": [],
-        "tipo": "arc",
-        "circulo": 1,
-        "preparada": false,
-        "escola": "nec",
-        "chatFlavor": "",
-        "origin": "",
-        "tags": [],
-        "chatGif": "",
-        "rolltags": [],
-        "automationtags": [],
-        "equipado2": {
-          "slot": 0,
-          "type": ""
-        }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.m14TgW19d1JTBz8U",
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "_id": "M21sIrlAhrmSmP3l",
-      "folder": null,
       "effects": [
         {
           "_id": "gOuA2dXltcwUOX9e",
@@ -1349,30 +1307,43 @@
           "_key": "!actors.items.effects!xKqW1gdSN74FdmfX.M21sIrlAhrmSmP3l.Y9eBzAQmvTxkKoFK"
         }
       ],
-      "_key": "!actors.items!xKqW1gdSN74FdmfX.M21sIrlAhrmSmP3l"
-    },
-    {
-      "name": "Crânio Voador",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/cranio-voador.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 179
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "m14TgW19d1JTBz8U",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "a312eec0"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta magia cria um crânio envolto em energia negativa. Quando atinge o alvo, ele causa 4d8+4 pontos de dano de trevas e se desfaz emitindo um som horrendo, deixando abalado o alvo e todos os inimigos num raio de 3m dele (criaturas já abaladas ficam apavoradas por 1d4 rodadas). Passar no teste de resistência diminui o dano à metade e evita a condição (as demais criaturas na área também tem direito ao teste de resistência, para evitar a condição).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.CgK2xhGbfCc6BkWy]{Crânio Voador}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p></div><hr><p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 179.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U]{Amedrontar}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 188",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 179",
         "ativacao": {
           "execucao": "action",
-          "custo": 3,
+          "custo": 1,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
           "value": 0,
-          "units": "inst",
+          "units": "scene",
           "special": ""
         },
         "range": {
@@ -1386,34 +1357,19 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "medium",
-        "alvo": "1 criatura",
+        "alcance": "short",
+        "alvo": "1 animal ou humanoide",
         "area": "",
         "resistencia": {
-          "pericia": "",
+          "pericia": "vont",
           "atributo": "int",
           "bonus": 0,
-          "txt": "Fortitude reduz à metade"
+          "txt": "Vontade parcial"
         },
-        "rolls": [
-          {
-            "name": "Dano",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "4d8+4",
-                "trevas",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
+        "rolls": [],
         "tipo": "arc",
-        "circulo": 2,
-        "preparada": false,
+        "circulo": 1,
+        "preparada": true,
         "escola": "nec",
         "chatFlavor": "",
         "origin": "",
@@ -1426,9 +1382,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "M21sIrlAhrmSmP3l",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1436,12 +1390,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.CgK2xhGbfCc6BkWy",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "rGbtM6yfhhwbdByY",
-      "folder": null,
+      "_key": "!actors.items!xKqW1gdSN74FdmfX.M21sIrlAhrmSmP3l"
+    },
+    {
+      "name": "Crânio Voador",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/cranio-voador.webp",
       "effects": [
         {
           "_id": "iWVL3LqCAysDTdUy",
@@ -1578,30 +1536,43 @@
           "_key": "!actors.items.effects!xKqW1gdSN74FdmfX.rGbtM6yfhhwbdByY.ikgSGxAkgpeQ1GMS"
         }
       ],
-      "_key": "!actors.items!xKqW1gdSN74FdmfX.rGbtM6yfhhwbdByY"
-    },
-    {
-      "name": "Manto de Sombras",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/manto-de-sombras.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 188
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "CgK2xhGbfCc6BkWy",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "f95a764b"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Você fica coberto por um manto de energia sombria. Nesta forma, torna-se incorpóreo (inclui seu equipamento): só pode ser afetado por armas e habilidades mágicas, ou por outras criaturas incorpóreas, e pode atravessar objetos sólidos, mas não manipulá-los. Também não pode atacar criaturas normais (mas ainda pode lançar magias nelas). Além disso, se torna vulnerável à luz direta: se exposto a uma fonte de luz, sofre 1 ponto de dano por rodada.</p><p style=\"text-align:justify\">Você pode gastar uma ação de movimento e 1 PM para “entrar” em uma sombra do seu tamanho ou maior e se teletransportar para outra sombra, também do seu tamanho ou maior, em alcance médio.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.iHOlYjBeNhqDVYbQ]{Manto de Sombras}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta magia cria um crânio envolto em energia negativa. Quando atinge o alvo, ele causa 4d8+4 pontos de dano de trevas e se desfaz emitindo um som horrendo, deixando abalado o alvo e todos os inimigos num raio de 3m dele (criaturas já abaladas ficam apavoradas por 1d4 rodadas). Passar no teste de resistência diminui o dano à metade e evita a condição (as demais criaturas na área também tem direito ao teste de resistência, para evitar a condição).</p></div><hr><p style=\"text-align:justify\">Esta magia cria um crânio envolto em energia negativa. Quando atinge o alvo, ele causa 4d8+4 pontos de dano de trevas e se desfaz emitindo um som horrendo, deixando abalado o alvo e todos os inimigos num raio de 3m dele (criaturas já abaladas ficam apavoradas por 1d4 rodadas). Passar no teste de resistência diminui o dano à metade e evita a condição (as demais criaturas na área também tem direito ao teste de resistência, para evitar a condição).</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 188.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.CgK2xhGbfCc6BkWy]{Crânio Voador}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 197",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 188",
         "ativacao": {
           "execucao": "action",
-          "custo": 6,
+          "custo": 3,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
           "value": 0,
-          "units": "sust",
+          "units": "inst",
           "special": ""
         },
         "range": {
@@ -1615,20 +1586,35 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "self",
-        "alvo": "você",
-        "area": "",
+        "alcance": "medium",
+        "alvo": "1 criatura",
+        "area": "raio de 3m",
         "resistencia": {
-          "pericia": "",
-          "atributo": "sab",
+          "pericia": "fort",
+          "atributo": "int",
           "bonus": 0,
-          "txt": ""
+          "txt": "Fortitude reduz à metade"
         },
-        "rolls": [],
-        "tipo": "uni",
-        "circulo": 3,
-        "preparada": false,
-        "escola": "ilu",
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "4d8+4",
+                "trevas",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "tipo": "arc",
+        "circulo": 2,
+        "preparada": true,
+        "escola": "nec",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -1640,9 +1626,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "rGbtM6yfhhwbdByY",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1650,12 +1634,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.iHOlYjBeNhqDVYbQ",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.CgK2xhGbfCc6BkWy",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "PFq2yC3nY3QtcztV",
-      "folder": null,
+      "_key": "!actors.items!xKqW1gdSN74FdmfX.rGbtM6yfhhwbdByY"
+    },
+    {
+      "name": "Manto de Sombras",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/manto-de-sombras.webp",
       "effects": [
         {
           "_id": "w3CnxOpPGtGiHDL0",
@@ -1797,20 +1785,32 @@
           "_key": "!actors.items.effects!xKqW1gdSN74FdmfX.PFq2yC3nY3QtcztV.GCs5lGiAmGOxNRGY"
         }
       ],
-      "_key": "!actors.items!xKqW1gdSN74FdmfX.PFq2yC3nY3QtcztV"
-    },
-    {
-      "name": "Tentáculos de Trevas",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/tentaculos-de-trevas.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 197
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "iHOlYjBeNhqDVYbQ"
+          },
+          "pack": "magias",
+          "versao": "4a054cee"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Um círculo de energias sombrias se abre no chão, de onde surgem tentáculos feitos de treva viscosa. Ao lançar a magia e no início de cada um de seus turnos, você faz um teste da manobra agarrar (usando seu valor de Misticismo) contra cada criatura na área. Se você passar, a criatura é agarrada; se a vítima já está agarrada, é esmagada, sofrendo 4d6 pontos de dano de trevas. A área conta como terreno difícil. Os tentáculos são imunes a dano.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.IYB0YK1zLune1fs0]{Tentáculos de Trevas}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você fica coberto por um manto de energia sombria. Nesta forma, torna-se incorpóreo (inclui seu equipamento): só pode ser afetado por armas e habilidades mágicas, ou por outras criaturas incorpóreas, e pode atravessar objetos sólidos, mas não manipulá-los. Também não pode atacar criaturas normais (mas ainda pode lançar magias nelas). Além disso, se torna vulnerável à luz direta: se exposto a uma fonte de luz, sofre 1 ponto de dano por rodada.</p><p style=\"text-align:justify\">Você pode gastar uma ação de movimento e 1 PM para “entrar” em uma sombra do seu tamanho ou maior e se teletransportar para outra sombra, também do seu tamanho ou maior, em alcance médio.</p></div><hr><p style=\"text-align:justify\">Você fica coberto por um manto de energia sombria. Nesta forma, torna-se incorpóreo (inclui seu equipamento): só pode ser afetado por armas e habilidades mágicas, ou por outras criaturas incorpóreas, e pode atravessar objetos sólidos, mas não manipulá-los. Também não pode atacar criaturas normais (mas ainda pode lançar magias nelas). Além disso, se torna vulnerável à luz direta: se exposto a uma fonte de luz, sofre 1 ponto de dano por rodada.</p><p style=\"text-align:justify\">Você pode gastar uma ação de movimento e 1 PM para “entrar” em uma sombra do seu tamanho ou maior e se teletransportar para outra sombra, também do seu tamanho ou maior, em alcance médio.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 197.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.iHOlYjBeNhqDVYbQ]{Manto de Sombras}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 209",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 197",
         "ativacao": {
           "execucao": "action",
           "custo": 6,
@@ -1820,7 +1820,7 @@
         },
         "duracao": {
           "value": 0,
-          "units": "scene",
+          "units": "sust",
           "special": ""
         },
         "range": {
@@ -1834,59 +1834,20 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "medium",
-        "alvo": "",
-        "area": "esfera com 6m de raio",
+        "alcance": "self",
+        "alvo": "você",
+        "area": "",
         "resistencia": {
           "pericia": "",
-          "atributo": "int",
+          "atributo": "sab",
           "bonus": 0,
           "txt": ""
         },
-        "rolls": [
-          {
-            "name": "Manobra Agarrar",
-            "key": "ataque0",
-            "type": "ataque",
-            "parts": [
-              [
-                "1d20",
-                "",
-                ""
-              ],
-              [
-                "mist",
-                "int",
-                ""
-              ],
-              [
-                "",
-                "",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          },
-          {
-            "name": "Dano",
-            "key": "dano1",
-            "type": "dano",
-            "parts": [
-              [
-                "4d6",
-                "trevas",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
-        "tipo": "arc",
+        "rolls": [],
+        "tipo": "uni",
         "circulo": 3,
-        "preparada": false,
-        "escola": "nec",
+        "preparada": true,
+        "escola": "ilu",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -1898,9 +1859,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "PFq2yC3nY3QtcztV",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1908,12 +1867,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.IYB0YK1zLune1fs0",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.iHOlYjBeNhqDVYbQ",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "1EUjewLyzS7siEsx",
-      "folder": null,
+      "_key": "!actors.items!xKqW1gdSN74FdmfX.PFq2yC3nY3QtcztV"
+    },
+    {
+      "name": "Tentáculos de Trevas",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/tentaculos-de-trevas.webp",
       "effects": [
         {
           "_id": "Ir0SWnjYsYoMdHNG",
@@ -2050,6 +2013,132 @@
           "_key": "!actors.items.effects!xKqW1gdSN74FdmfX.1EUjewLyzS7siEsx.AC5wUIi8k4c9C1Y9"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 209
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": "Custos dos aprimoramentos conferidos com o Livro Básico."
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "IYB0YK1zLune1fs0",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "d8a94911"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Um círculo de energias sombrias se abre no chão, de onde surgem tentáculos feitos de treva viscosa. Ao lançar a magia e no início de cada um de seus turnos, você faz um teste da manobra agarrar (usando seu valor de Misticismo) contra cada criatura na área. Se você passar, a criatura é agarrada; se a vítima já está agarrada, é esmagada, sofrendo 4d6 pontos de dano de trevas. A área conta como terreno difícil. Os tentáculos são imunes a dano.</p></div><hr><p style=\"text-align:justify\">Um círculo de energias sombrias se abre no chão, de onde surgem tentáculos feitos de treva viscosa. Ao lançar a magia e no início de cada um de seus turnos, você faz um teste da manobra agarrar (usando seu valor de Misticismo) contra cada criatura na área. Se você passar, a criatura é agarrada; se a vítima já está agarrada, é esmagada, sofrendo 4d6 pontos de dano de trevas. A área conta como terreno difícil. Os tentáculos são imunes a dano.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 209.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.IYB0YK1zLune1fs0]{Tentáculos de Trevas}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 209",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 6,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "scene",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "medium",
+        "alvo": "",
+        "area": "esfera com 6m de raio",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [
+          {
+            "name": "Manobra Agarrar",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "mist",
+                "int",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "4d6",
+                "trevas",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "tipo": "arc",
+        "circulo": 3,
+        "preparada": true,
+        "escola": "nec",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "_id": "1EUjewLyzS7siEsx",
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.IYB0YK1zLune1fs0",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!xKqW1gdSN74FdmfX.1EUjewLyzS7siEsx"
     }
   ],

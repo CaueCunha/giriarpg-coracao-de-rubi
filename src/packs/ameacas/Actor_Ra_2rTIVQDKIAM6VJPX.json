@@ -723,9 +723,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "e222591d",
+      "assinatura": "38e2a591",
       "assinaturas": [
-        "e222591d"
+        "e222591d",
+        "38e2a591"
       ]
     }
   },
@@ -887,7 +888,7 @@
     {
       "name": "Distração",
       "type": "poder",
-      "img": "icons/svg/card-hand.svg",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Uma vez por rodada, quando é atingida por um ataque, Rà pode fazer um teste de Atuação. Se o resultado for maior que o ataque do oponente, evita o ataque.</p>",
@@ -1017,24 +1018,48 @@
       "_key": "!actors.items!2rTIVQDKIAM6VJPX.gRdG2TxWls2NCumu"
     },
     {
+      "_id": "WNj9hLadwYiciIZZ",
       "name": "Evasão Aprimorada",
       "type": "poder",
-      "img": "icons/svg/wingfoot.svg",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao-aprimorada.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 48
+          },
+          "automacao": {
+            "nivel": "script",
+            "notas": "Botão de resistência do cartão: passou em Reflexos para metade, o próximo dano sai zerado; falhou, o chat avisa para aplicar metade (scripts/reducao-dano.mjs).",
+            "script": "reducao-dano"
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "SDSlkLynTwwAZkjR",
+            "revisado": true
+          },
+          "pack": "poderes",
+          "versao": "c802ac7c"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Quando sofre um efeito que permite Reflexos para reduzir o dano à metade, não sofre dano se passar e sofre metade se falhar.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.SDSlkLynTwwAZkjR]{Evasão Aprimorada (Bucaneiro)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.SDSlkLynTwwAZkjR]{Evasão Aprimorada (Bucaneiro)}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Quando sofre um efeito que permite Reflexos para reduzir o dano à metade, não sofre dano se passar e sofre metade se falhar.</p></div><hr><p style=\"text-align:justify\">A partir do 10º nível, quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano algum se passar e sofre apenas metade do dano se falhar. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou na condição imóvel.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 48.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.SDSlkLynTwwAZkjR]{Evasão Aprimorada (Bucaneiro)}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Blefe Fatal",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 48",
         "tipo": "ability",
         "ativacao": {
-          "execucao": "passive",
+          "execucao": "",
           "custo": 0,
           "condicao": "",
           "qtd": "",
           "special": ""
         },
-        "alcance": "",
+        "alcance": "none",
         "area": "",
         "duracao": {
           "value": 0,
@@ -1042,10 +1067,10 @@
           "special": ""
         },
         "resistencia": {
-          "pericia": "",
-          "atributo": "",
+          "pericia": "refl",
+          "atributo": "sab",
           "bonus": 0,
-          "txt": ""
+          "txt": "Reflexos"
         },
         "rolls": [],
         "origin": "",
@@ -1056,18 +1081,11 @@
         "chatGif": "",
         "range": {
           "units": "",
-          "value": 0
+          "value": null
         },
         "efeito": "",
-        "subtipo": ""
+        "subtipo": "Bucaneiro"
       },
-      "_id": "WNj9hLadwYiciIZZ",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1079,85 +1097,12 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!2rTIVQDKIAM6VJPX.WNj9hLadwYiciIZZ"
     },
     {
       "name": "Amedrontar",
       "type": "magia",
       "img": "systems/tormenta20/icons/magias/amedrontar.webp",
-      "sort": 0,
-      "flags": {},
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U]{Amedrontar}</p>",
-          "unidentified": ""
-        },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 179",
-        "ativacao": {
-          "execucao": "action",
-          "custo": 1,
-          "qtd": "",
-          "condicao": "",
-          "special": ""
-        },
-        "duracao": {
-          "value": 0,
-          "units": "scene",
-          "special": ""
-        },
-        "range": {
-          "value": null,
-          "units": ""
-        },
-        "consume": {
-          "type": "",
-          "target": "",
-          "amount": null,
-          "mpMultiplier": false
-        },
-        "efeito": "",
-        "alcance": "short",
-        "alvo": "1 animal ou humanoide",
-        "area": "",
-        "resistencia": {
-          "pericia": "",
-          "atributo": "int",
-          "bonus": 0,
-          "txt": "Vontade parcial"
-        },
-        "rolls": [],
-        "tipo": "arc",
-        "circulo": 1,
-        "preparada": false,
-        "escola": "nec",
-        "chatFlavor": "",
-        "origin": "",
-        "tags": [],
-        "chatGif": "",
-        "rolltags": [],
-        "automationtags": [],
-        "equipado2": {
-          "slot": 0,
-          "type": ""
-        }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.m14TgW19d1JTBz8U",
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "_id": "Xhkx78bIPjlYF4xB",
-      "folder": null,
       "effects": [
         {
           "_id": "gOuA2dXltcwUOX9e",
@@ -1410,20 +1355,33 @@
           "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB.Y9eBzAQmvTxkKoFK"
         }
       ],
-      "_key": "!actors.items!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB"
-    },
-    {
-      "name": "Criar Ilusão",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/criar-ilusao.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 179
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "m14TgW19d1JTBz8U",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "a312eec0"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta magia cria uma ilusão visual (uma criatura, uma parede...) ou sonora (um grito de socorro, um uivo assustador...). A magia cria apenas imagens ou sons simples, com volume equivalente ao tom de voz normal para cada cubo de 1,5m no efeito. Não é possível criar cheiros, texturas ou temperaturas, nem sons complexos, como uma música ou diálogo. Criaturas e objetos atravessam uma ilusão sem sofrer dano, mas a magia pode, por exemplo, esconder uma armadilha ou inimigo. A magia é dissipada se você sair do alcance.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.q6jHyHSI2hWrZGE9]{Criar Ilusão}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p></div><hr><p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 179.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U]{Amedrontar}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 189",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 179",
         "ativacao": {
           "execucao": "action",
           "custo": 1,
@@ -1446,21 +1404,21 @@
           "amount": null,
           "mpMultiplier": false
         },
-        "efeito": "ilusão que se estende a até 4 cubos de 1,5m",
-        "alcance": "medium",
-        "alvo": "",
+        "efeito": "",
+        "alcance": "short",
+        "alvo": "1 animal ou humanoide",
         "area": "",
         "resistencia": {
-          "pericia": "",
+          "pericia": "vont",
           "atributo": "int",
           "bonus": 0,
-          "txt": "Vontade desacredita"
+          "txt": "Vontade parcial"
         },
         "rolls": [],
         "tipo": "arc",
         "circulo": 1,
-        "preparada": false,
-        "escola": "ilu",
+        "preparada": true,
+        "escola": "nec",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -1472,9 +1430,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "Xhkx78bIPjlYF4xB",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1482,12 +1438,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.q6jHyHSI2hWrZGE9",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "TUztdHiEy4rdae7E",
-      "folder": null,
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.Xhkx78bIPjlYF4xB"
+    },
+    {
+      "name": "Criar Ilusão",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/criar-ilusao.webp",
       "effects": [
         {
           "_id": "spbJqtsNyEus0DsB",
@@ -2018,20 +1978,32 @@
           "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E.fiAISOsxT8IwhiYk"
         }
       ],
-      "_key": "!actors.items!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E"
-    },
-    {
-      "name": "Disfarce Ilusório",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/disfarce-ilusorio.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 189
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "q6jHyHSI2hWrZGE9"
+          },
+          "pack": "magias",
+          "versao": "5d63c303"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Você muda a aparência do alvo, incluindo seu equipamento. Isso inclui altura, peso, tom de pele, cor de cabelo, timbre de voz etc. O alvo recebe +10 em testes de Enganação para disfarce. O alvo não recebe novas habilidades (você pode ficar parecido com outra raça, mas não ganhará as habilidades dela), nem modifica o equipamento (uma espada longa disfarçada de bordão continua funcionando e causando dano como uma espada).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.19donXyns0pliwj9]{Disfarce Ilusório}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta magia cria uma ilusão visual (uma criatura, uma parede...) ou sonora (um grito de socorro, um uivo assustador...). A magia cria apenas imagens ou sons simples, com volume equivalente ao tom de voz normal para cada cubo de 1,5m no efeito. Não é possível criar cheiros, texturas ou temperaturas, nem sons complexos, como uma música ou diálogo. Criaturas e objetos atravessam uma ilusão sem sofrer dano, mas a magia pode, por exemplo, esconder uma armadilha ou inimigo. A magia é dissipada se você sair do alcance.</p></div><hr><p style=\"text-align:justify\">Esta magia cria uma ilusão visual (uma criatura, uma parede...) ou sonora (um grito de socorro, um uivo assustador...). A magia cria apenas imagens ou sons simples, com volume equivalente ao tom de voz normal para cada cubo de 1,5m no efeito. Não é possível criar cheiros, texturas ou temperaturas, nem sons complexos, como uma música ou diálogo. Criaturas e objetos atravessam uma ilusão sem sofrer dano, mas a magia pode, por exemplo, esconder uma armadilha ou inimigo. A magia é dissipada se você sair do alcance.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 189.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.q6jHyHSI2hWrZGE9]{Criar Ilusão}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 191",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 189",
         "ativacao": {
           "execucao": "action",
           "custo": 1,
@@ -2054,12 +2026,12 @@
           "amount": null,
           "mpMultiplier": false
         },
-        "efeito": "",
-        "alcance": "self",
-        "alvo": "Você",
-        "area": "",
+        "efeito": "ilusão que se estende a até 4 cubos de 1,5m",
+        "alcance": "medium",
+        "alvo": "",
+        "area": "cubo de 1,5m",
         "resistencia": {
-          "pericia": "",
+          "pericia": "vont",
           "atributo": "int",
           "bonus": 0,
           "txt": "Vontade desacredita"
@@ -2067,7 +2039,7 @@
         "rolls": [],
         "tipo": "arc",
         "circulo": 1,
-        "preparada": false,
+        "preparada": true,
         "escola": "ilu",
         "chatFlavor": "",
         "origin": "",
@@ -2080,9 +2052,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "TUztdHiEy4rdae7E",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2090,12 +2060,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.19donXyns0pliwj9",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.q6jHyHSI2hWrZGE9",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "RjHC0czMuZwU0Fmm",
-      "folder": null,
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.TUztdHiEy4rdae7E"
+    },
+    {
+      "name": "Disfarce Ilusório",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/disfarce-ilusorio.webp",
       "effects": [
         {
           "_id": "OzwC492cmUgKWnFm",
@@ -2557,20 +2531,32 @@
           "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm.3uj68ogrLBvuDZOS"
         }
       ],
-      "_key": "!actors.items!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm"
-    },
-    {
-      "name": "Imagem Espelhada",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/imagem-espelhada.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 191
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "19donXyns0pliwj9"
+          },
+          "pack": "magias",
+          "versao": "a1d05f68"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Três cópias ilusórias suas aparecem. As duplicatas ficam ao seu redor e imitam suas ações, tornando difícil para um inimigo saber quem atacar. Você recebe +6 na Defesa. Cada vez que um ataque contra você erra, uma das imagens desaparece e o bônus na Defesa diminui em 2. Um oponente deve ver as cópias para ser confundido. Se você estiver invisível, ou o atacante fechar os olhos, você não recebe o bônus (mas o atacante ainda sofre penalidades normais por não enxergar).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.secWy6zyYamo3Xnx]{Imagem Espelhada}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você muda a aparência do alvo, incluindo seu equipamento. Isso inclui altura, peso, tom de pele, cor de cabelo, timbre de voz etc. O alvo recebe +10 em testes de Enganação para disfarce. O alvo não recebe novas habilidades (você pode ficar parecido com outra raça, mas não ganhará as habilidades dela), nem modifica o equipamento (uma espada longa disfarçada de bordão continua funcionando e causando dano como uma espada).</p></div><hr><p style=\"text-align:justify\">Você muda a aparência do alvo, incluindo seu equipamento. Isso inclui altura, peso, tom de pele, cor de cabelo, timbre de voz etc. O alvo recebe +10 em testes de Enganação para disfarce. O alvo não recebe novas habilidades (você pode ficar parecido com outra raça, mas não ganhará as habilidades dela), nem modifica o equipamento (uma espada longa disfarçada de bordão continua funcionando e causando dano como uma espada).</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 191.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.19donXyns0pliwj9]{Disfarce Ilusório}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 195",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 191",
         "ativacao": {
           "execucao": "action",
           "custo": 1,
@@ -2598,15 +2584,15 @@
         "alvo": "Você",
         "area": "",
         "resistencia": {
-          "pericia": "",
+          "pericia": "vont",
           "atributo": "int",
           "bonus": 0,
-          "txt": ""
+          "txt": "Vontade desacredita"
         },
         "rolls": [],
         "tipo": "arc",
         "circulo": 1,
-        "preparada": false,
+        "preparada": true,
         "escola": "ilu",
         "chatFlavor": "",
         "origin": "",
@@ -2619,9 +2605,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "RjHC0czMuZwU0Fmm",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2629,12 +2613,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.secWy6zyYamo3Xnx",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.19donXyns0pliwj9",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "J7anB5PsNvzFIBSX",
-      "folder": null,
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.RjHC0czMuZwU0Fmm"
+    },
+    {
+      "name": "Imagem Espelhada",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/imagem-espelhada.webp",
       "effects": [
         {
           "_id": "ZSZDtJL7aUQUSG97",
@@ -2840,20 +2828,32 @@
           "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.J7anB5PsNvzFIBSX.6hE5xGjEoeH1tq6A"
         }
       ],
-      "_key": "!actors.items!2rTIVQDKIAM6VJPX.J7anB5PsNvzFIBSX"
-    },
-    {
-      "name": "Leque Cromático",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/leque-cromatico.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 195
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "secWy6zyYamo3Xnx"
+          },
+          "pack": "magias",
+          "versao": "d94807a1"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Um cone de luzes brilhantes surge das suas mãos, deixando os animais e humanoides na área atordoados por 1 rodada (apenas uma vez por cena, Vontade anula) e ofuscados pela cena. Esta magia não afeta criaturas cegas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.g48EeeYhek5Wh5Ll]{Leque Cromático}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Três cópias ilusórias suas aparecem. As duplicatas ficam ao seu redor e imitam suas ações, tornando difícil para um inimigo saber quem atacar. Você recebe +6 na Defesa. Cada vez que um ataque contra você erra, uma das imagens desaparece e o bônus na Defesa diminui em 2. Um oponente deve ver as cópias para ser confundido. Se você estiver invisível, ou o atacante fechar os olhos, você não recebe o bônus (mas o atacante ainda sofre penalidades normais por não enxergar).</p></div><hr><p style=\"text-align:justify\">Três cópias ilusórias suas aparecem. As duplicatas ficam ao seu redor e imitam suas ações, tornando difícil para um inimigo saber quem atacar. Você recebe +6 na Defesa. Cada vez que um ataque contra você erra, uma das imagens desaparece e o bônus na Defesa diminui em 2. Um oponente deve ver as cópias para ser confundido. Se você estiver invisível, ou o atacante fechar os olhos, você não recebe o bônus (mas o atacante ainda sofre penalidades normais por não enxergar).</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 195.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.secWy6zyYamo3Xnx]{Imagem Espelhada}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 196",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 195",
         "ativacao": {
           "execucao": "action",
           "custo": 1,
@@ -2863,7 +2863,7 @@
         },
         "duracao": {
           "value": 0,
-          "units": "inst",
+          "units": "scene",
           "special": ""
         },
         "range": {
@@ -2878,18 +2878,18 @@
         },
         "efeito": "",
         "alcance": "self",
-        "alvo": "",
-        "area": "cone de 4,5m",
+        "alvo": "Você",
+        "area": "",
         "resistencia": {
           "pericia": "",
           "atributo": "int",
           "bonus": 0,
-          "txt": "Vontade parcial"
+          "txt": ""
         },
         "rolls": [],
         "tipo": "arc",
         "circulo": 1,
-        "preparada": false,
+        "preparada": true,
         "escola": "ilu",
         "chatFlavor": "",
         "origin": "",
@@ -2902,9 +2902,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "J7anB5PsNvzFIBSX",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2912,12 +2910,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.g48EeeYhek5Wh5Ll",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.secWy6zyYamo3Xnx",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "iORa9SFTevp9A2Kg",
-      "folder": null,
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.J7anB5PsNvzFIBSX"
+    },
+    {
+      "name": "Leque Cromático",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/leque-cromatico.webp",
       "effects": [
         {
           "_id": "8cLF4KVgcGp4Fr8W",
@@ -3170,23 +3172,35 @@
           "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.iORa9SFTevp9A2Kg.1gKeyUctPVRQwZvv"
         }
       ],
-      "_key": "!actors.items!2rTIVQDKIAM6VJPX.iORa9SFTevp9A2Kg"
-    },
-    {
-      "name": "Bola de Fogo",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/bola-de-fogo.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 196
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "g48EeeYhek5Wh5Ll"
+          },
+          "pack": "magias",
+          "versao": "e94b420a"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta famosa magia de ataque cria uma poderosa explosão, causando 6d6 pontos de dano de fogo em todas as criaturas e objetos livres na área.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.gcjCsjzpk2OtClSt]{Bola de Fogo}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Um cone de luzes brilhantes surge das suas mãos, deixando os animais e humanoides na área atordoados por 1 rodada (apenas uma vez por cena, Vontade anula) e ofuscados pela cena. Esta magia não afeta criaturas cegas.</p></div><hr><p style=\"text-align:justify\">Um cone de luzes brilhantes surge das suas mãos, deixando os animais e humanoides na área atordoados por 1 rodada (apenas uma vez por cena, Vontade anula) e ofuscados pela cena. Esta magia não afeta criaturas cegas.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 196.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.g48EeeYhek5Wh5Ll]{Leque Cromático}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 182",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 196",
         "ativacao": {
           "execucao": "action",
-          "custo": 3,
+          "custo": 1,
           "qtd": "",
           "condicao": "",
           "special": ""
@@ -3207,35 +3221,20 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "medium",
+        "alcance": "self",
         "alvo": "",
-        "area": "esfera com 6m de raio",
+        "area": "cone de 4,5m",
         "resistencia": {
-          "pericia": "",
-          "atributo": "",
+          "pericia": "vont",
+          "atributo": "int",
           "bonus": 0,
-          "txt": "Reflexos reduz à metade"
+          "txt": "Vontade parcial"
         },
-        "rolls": [
-          {
-            "name": "Dano",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "6d6",
-                "fogo",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
+        "rolls": [],
         "tipo": "arc",
-        "circulo": 2,
-        "preparada": false,
-        "escola": "evo",
+        "circulo": 1,
+        "preparada": true,
+        "escola": "ilu",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -3247,9 +3246,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "iORa9SFTevp9A2Kg",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -3257,12 +3254,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.gcjCsjzpk2OtClSt",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.g48EeeYhek5Wh5Ll",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "lSpKrwbT8iN5mRc5",
-      "folder": null,
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.iORa9SFTevp9A2Kg"
+    },
+    {
+      "name": "Bola de Fogo",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/bola-de-fogo.webp",
       "effects": [
         {
           "_id": "thxC23yymTSn7geb",
@@ -3492,20 +3493,32 @@
           "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5.ubQBfQrzV0HqbL1b"
         }
       ],
-      "_key": "!actors.items!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5"
-    },
-    {
-      "name": "Toque Vampírico",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 182
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "gcjCsjzpk2OtClSt"
+          },
+          "pack": "magias",
+          "versao": "6965bcc3"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Sua mão brilha com energia sombria, causando 6d6 pontos de dano de trevas. Você recupera pontos de vida iguais à metade do dano causado (se causou algum dano).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.6KvwDBikOdbzhRGv]{Toque Vampírico}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta famosa magia de ataque cria uma poderosa explosão, causando 6d6 pontos de dano de fogo em todas as criaturas e objetos livres na área.</p></div><hr><p style=\"text-align:justify\">Esta famosa magia de ataque cria uma poderosa explosão, causando 6d6 pontos de dano de fogo em todas as criaturas e objetos livres na área.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 182.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.gcjCsjzpk2OtClSt]{Bola de Fogo}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 209",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 182",
         "ativacao": {
           "execucao": "action",
           "custo": 3,
@@ -3529,14 +3542,14 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "touch",
-        "alvo": "1 criatura",
-        "area": "",
+        "alcance": "medium",
+        "alvo": "",
+        "area": "esfera com 6m de raio",
         "resistencia": {
-          "pericia": "",
+          "pericia": "refl",
           "atributo": "int",
           "bonus": 0,
-          "txt": "Fortitude reduz à metade"
+          "txt": "Reflexos reduz à metade"
         },
         "rolls": [
           {
@@ -3546,7 +3559,7 @@
             "parts": [
               [
                 "6d6",
-                "trevas",
+                "fogo",
                 ""
               ]
             ],
@@ -3556,8 +3569,8 @@
         ],
         "tipo": "arc",
         "circulo": 2,
-        "preparada": false,
-        "escola": "nec",
+        "preparada": true,
+        "escola": "evo",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -3569,9 +3582,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "lSpKrwbT8iN5mRc5",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -3579,12 +3590,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.6KvwDBikOdbzhRGv",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.gcjCsjzpk2OtClSt",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "jvhiAF0EoT9tVJGI",
-      "folder": null,
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.lSpKrwbT8iN5mRc5"
+    },
+    {
+      "name": "Toque Vampírico",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
       "effects": [
         {
           "_id": "fj5KlCRUOCLnTq44",
@@ -3874,20 +3889,33 @@
           "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.jvhiAF0EoT9tVJGI.bQynWDQOBC3Tz2m6"
         }
       ],
-      "_key": "!actors.items!2rTIVQDKIAM6VJPX.jvhiAF0EoT9tVJGI"
-    },
-    {
-      "name": "Velocidade",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/velocidade.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 209
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "6KvwDBikOdbzhRGv",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "631e3b15"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">O alvo pode realizar uma ação padrão ou de movimento adicional por turno. Esta ação não pode ser usada para lançar magias e ativar engenhocas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XWEJNZMs6Wb9uUHF]{Velocidade}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Sua mão brilha com energia sombria, causando 6d6 pontos de dano de trevas. Você recupera pontos de vida iguais à metade do dano causado (se causou algum dano).</p></div><hr><p style=\"text-align:justify\">Sua mão brilha com energia sombria, causando 6d6 pontos de dano de trevas. Você recupera pontos de vida iguais à metade do dano causado (se causou algum dano).</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 209.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.6KvwDBikOdbzhRGv]{Toque Vampírico}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 210",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 209",
         "ativacao": {
           "execucao": "action",
           "custo": 3,
@@ -3897,7 +3925,7 @@
         },
         "duracao": {
           "value": 0,
-          "units": "sust",
+          "units": "inst",
           "special": ""
         },
         "range": {
@@ -3911,20 +3939,35 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "short",
+        "alcance": "touch",
         "alvo": "1 criatura",
         "area": "",
         "resistencia": {
-          "pericia": "",
+          "pericia": "fort",
           "atributo": "int",
           "bonus": 0,
-          "txt": ""
+          "txt": "Fortitude reduz à metade"
         },
-        "rolls": [],
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "6d6",
+                "trevas",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
         "tipo": "arc",
         "circulo": 2,
-        "preparada": false,
-        "escola": "tra",
+        "preparada": true,
+        "escola": "nec",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -3936,9 +3979,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "jvhiAF0EoT9tVJGI",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -3946,12 +3987,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.XWEJNZMs6Wb9uUHF",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.6KvwDBikOdbzhRGv",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "KVaTHa3qTfu2Y0FK",
-      "folder": null,
+      "_key": "!actors.items!2rTIVQDKIAM6VJPX.jvhiAF0EoT9tVJGI"
+    },
+    {
+      "name": "Velocidade",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/velocidade.webp",
       "effects": [
         {
           "_id": "QV7vK1gyaReMinFt",
@@ -4235,6 +4280,92 @@
           "_key": "!actors.items.effects!2rTIVQDKIAM6VJPX.KVaTHa3qTfu2Y0FK.Cmz2EEKOBV7wG0jD"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 210
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "XWEJNZMs6Wb9uUHF"
+          },
+          "pack": "magias",
+          "versao": "19cc0d8b"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">O alvo pode realizar uma ação padrão ou de movimento adicional por turno. Esta ação não pode ser usada para lançar magias e ativar engenhocas.</p></div><hr><p style=\"text-align:justify\">O alvo pode realizar uma ação padrão ou de movimento adicional por turno. Esta ação não pode ser usada para lançar magias e ativar engenhocas.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 210.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XWEJNZMs6Wb9uUHF]{Velocidade}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 210",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 3,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "sust",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "short",
+        "alvo": "1 criatura",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "tipo": "arc",
+        "circulo": 2,
+        "preparada": true,
+        "escola": "tra",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "_id": "KVaTHa3qTfu2Y0FK",
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.XWEJNZMs6Wb9uUHF",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!2rTIVQDKIAM6VJPX.KVaTHa3qTfu2Y0FK"
     }
   ],

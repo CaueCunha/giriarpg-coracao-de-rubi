@@ -81,14 +81,26 @@ A pasta **Campanha** traz o poder **Dado de Aniversário** com a macro **PJ · D
 
 ### Ligação com o sistema e o Giria T20
 
-Poderes, magias e armas que já existem no sistema ou no Giria T20 são reaproveitados:
+O **Giria T20 vem primeiro**: ele é o compêndio refinado que está em todas as campanhas, então o módulo usa os itens dele em vez de criar os seus.
 
-- As **magias** dos NPCs são a magia do sistema, com os efeitos de aprimoramento dela. Por cima vêm o custo, a CD e as rolagens da ficha do NPC, uma nota "Nesta ficha (Coração de Rubi)" e o link "No Giria T20".
-- **Armas, poderes e itens** com o mesmo nome mantêm os números da ficha da aventura. Se o Giria T20 tem o item, a origem (`compendiumSource`) aponta para a versão do Giria, que é a automatizada; senão, para o sistema. A descrição ganha os links "No sistema" e "No Giria T20".
-- Ataques naturais genéricos (Pancada, Mordida, Garra...) não são ligados ao Giria.
+- **Armas, poderes, consumíveis, equipamentos e tesouros** com o mesmo nome e tipo de um item do Giria viram a **cópia do item do Giria**: arte, descrição, melhorias e automação. Por cima entram só os números da ficha do livro (rolagens de ataque e dano, crítico, quantidade, preço próprio) e o texto da ficha, como nota "Nesta ficha (Coração de Rubi)" no topo. A origem (`compendiumSource`) aponta para o Giria. Em armas, dano extra da ficha (ex.: +1d6 de fogo) entra junto com os efeitos do Giria; em poderes, valem os efeitos do Giria.
+- As **magias** dos NPCs são a magia do Giria (ou a do sistema, se o Giria não tiver), com o custo, a CD e as rolagens da ficha por cima.
+- **Habilidades de ameaça** que só existem dentro de uma ficha do Giria (Bando, Insanidade da Tormenta, Agarrar Aprimorado...) mantêm a regra da ficha do livro e pegam a **arte** do Giria.
+- Só quando o Giria não tem o item o gerador cria um próprio, ligado ao sistema quando ele tem um item com o mesmo nome (link "No sistema").
+- Ataques naturais genéricos (Pancada, Mordida, Garra...) e nomes que no Giria são outra coisa (`NAO_GIRIA` em [`tools/ligar-sistema.mjs`](tools/ligar-sistema.mjs)) não são trocados.
 - **Ameaças do livro básico** (glop, bandido, gorlogg...) não são copiadas: o gerador escreve `@GIRIA[Nome|T20]{rótulo}` e o build troca pelo link da ficha no compêndio de ameaças do Giria. `@GIRIA_UUID[Nome|T20]` vira só o uuid, para flags de automação. Marcador sem ficha no índice quebra o build.
 
-O índice do Giria fica em [`src/giria-indice.json`](src/giria-indice.json), porque o repositório do Giria é privado e o CI não o alcança. Para atualizar depois de uma versão nova do Giria: clone o `giria-t20` ao lado deste repositório, abra os lotes de ameaças com `node ../giria-t20/tools/abrir-lotes.mjs` e rode `node tools/giria-indice.mjs ../giria-t20`, depois `npm run build`. Os testes conferem cada link do Giria contra esse índice.
+O repositório do Giria é privado e o CI não o alcança, então duas cópias ficam versionadas aqui: o índice ([`src/giria-indice.json`](src/giria-indice.json)) e os itens do Giria que a campanha usa ([`src/giria-docs.json`](src/giria-docs.json)). Para atualizar depois de uma versão nova do Giria (ou depois de um gerador novo citar itens novos), com o `giria-t20` clonado ao lado:
+
+```bash
+npm run build                                   # para os nomes novos aparecerem em src/packs
+(cd ../giria-t20 && npm ci && node tools/abrir-lotes.mjs && node tools/build-packs.mjs)
+node tools/giria-indice.mjs ../giria-t20
+node tools/giria-docs.mjs ../giria-t20
+npm run build
+```
+
+Se um item está no índice do Giria mas falta a cópia, o relatório do build avisa ("AVISO: está no Giria mas falta em src/giria-docs.json"). Os testes conferem cada link do Giria contra o índice.
 
 O relatório completo do que foi ligado está em [`build/relatorio.md`](build/relatorio.md).
 

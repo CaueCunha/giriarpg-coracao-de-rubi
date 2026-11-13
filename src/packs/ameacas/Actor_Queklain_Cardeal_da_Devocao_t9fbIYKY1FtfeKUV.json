@@ -722,9 +722,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar4",
       "antigo": "patamar4-ameacas",
-      "assinatura": "bbe37409",
+      "assinatura": "31b4532f",
       "assinaturas": [
-        "bbe37409"
+        "bbe37409",
+        "01d7f785",
+        "31b4532f"
       ]
     }
   },
@@ -746,140 +748,10 @@
   },
   "items": [
     {
+      "_id": "BmFj81RAvxknebtW",
       "name": "Machado de guerra",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/machado-de-guerra.webp",
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">Dois ataques por ação agredir. Mais 1d6 de matéria vermelha (entra sozinho).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.P4MW0Ezhmya6Hm89]{Machado de guerra}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.P4MW0Ezhmya6Hm89]{Machado de guerra}</p>",
-          "unidentified": ""
-        },
-        "source": "Coração de Rubi — Horizonte de Sangue",
-        "rolls": [
-          {
-            "name": "Ataque",
-            "key": "ataque0",
-            "type": "ataque",
-            "parts": [
-              [
-                "1d20",
-                "",
-                ""
-              ],
-              [
-                "luta",
-                "",
-                ""
-              ],
-              [
-                "0",
-                "",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          },
-          {
-            "name": "Dano",
-            "key": "dano1",
-            "type": "dano",
-            "parts": [
-              [
-                "3d6+28",
-                "corte",
-                ""
-              ],
-              [
-                "",
-                "",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
-        "criticoM": 19,
-        "criticoX": 3,
-        "alcance": "",
-        "proposito": "corpo-a-corpo",
-        "proficiencia": "marcial",
-        "empunhadura": "leve",
-        "equipado2": {
-          "type": "hand",
-          "slot": 0
-        },
-        "origin": "",
-        "tags": [],
-        "rolltags": [],
-        "automationtags": [],
-        "chatFlavor": "",
-        "chatGif": "",
-        "carregado": true,
-        "espacos": 0,
-        "peso": 0,
-        "qtd": 1,
-        "preco": 0,
-        "pv": {
-          "value": 0,
-          "max": 0
-        },
-        "rd": 0,
-        "ativacao": {
-          "custo": 0,
-          "condicao": "",
-          "execucao": "passive",
-          "qtd": "",
-          "special": ""
-        },
-        "consume": {
-          "amount": 0,
-          "mpMultiplier": false,
-          "target": "",
-          "type": ""
-        },
-        "upgrades": {
-          "itemType": [],
-          "improvement": [],
-          "material": [],
-          "enchantment": [],
-          "curse": [],
-          "innovation": [],
-          "melhoria1": "",
-          "melhoria2": "",
-          "melhoria3": "",
-          "melhoria4": "",
-          "materialEspecial1": "",
-          "encanto1": "",
-          "encanto2": "",
-          "encanto3": "",
-          "enableAutoUpgrades": true
-        },
-        "ataques": 0,
-        "equipado": 0,
-        "tipoUso": "sim",
-        "propriedades": {},
-        "size": "normal"
-      },
-      "_id": "BmFj81RAvxknebtW",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.P4MW0Ezhmya6Hm89",
-        "duplicateSource": null,
-        "exportSource": null
-      },
       "effects": [
         {
           "name": "Matéria vermelha",
@@ -1020,6 +892,150 @@
           "_key": "!actors.items.effects!t9fbIYKY1FtfeKUV.BmFj81RAvxknebtW.sdM8BHM3yEQwb54N"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 149
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "P4MW0Ezhmya6Hm89"
+          },
+          "pack": "equipamentos",
+          "versao": "e19d83ca"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Dois ataques por ação agredir. Mais 1d6 de matéria vermelha (entra sozinho).</p></div><hr><p style=\"text-align:justify\">Este imenso machado de lâmina dupla é uma arma extremamente perigosa.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 149.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.P4MW0Ezhmya6Hm89]{Machado de guerra}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 149",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "3d6+28",
+                "corte",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 19,
+        "criticoX": 3,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "marcial",
+        "empunhadura": "duas",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 2,
+        "peso": 6,
+        "qtd": 1,
+        "preco": 20,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": null,
+          "condicao": "",
+          "execucao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": null,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.P4MW0Ezhmya6Hm89",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!t9fbIYKY1FtfeKUV.BmFj81RAvxknebtW"
     },
     {
@@ -1446,7 +1462,7 @@
     {
       "name": "Insanidade da Tormenta",
       "type": "poder",
-      "img": "icons/svg/eye.svg",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Criaturas que comecem o turno em alcance curto ou que vejam a criatura pela primeira vez na cena perdem 3d10 PM (Vontade CD 47 evita).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.8nFwKzbB32HSlNC5]{Insanidade da Tormenta}</p>",

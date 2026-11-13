@@ -722,9 +722,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "66706246",
+      "assinatura": "26afdafc",
       "assinaturas": [
-        "66706246"
+        "66706246",
+        "26afdafc"
       ]
     }
   },
@@ -1028,83 +1029,44 @@
       "_key": "!actors.items!onikJiovDkUVzmPJ.b93BPDHSjkhByswt"
     },
     {
+      "_id": "4Bp8E5PlATfOJzC2",
       "name": "Ataque Furtivo",
       "type": "poder",
-      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-furtivo.webp",
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">+7d6 de dano contra alvo desprevenido ou flanqueado.<br><b>Automação:</b> Shift+clique na espada e marque a opção.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.4o2kchrTeo495pRf]{Ataque Furtivo}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.sE4mWoW3zqLZaCYC]{Ataque Furtivo}</p>",
-          "unidentified": ""
-        },
-        "source": "Coração de Rubi — Blefe Fatal",
-        "tipo": "ability",
-        "ativacao": {
-          "execucao": "passive",
-          "custo": 0,
-          "condicao": "",
-          "qtd": "",
-          "special": ""
-        },
-        "alcance": "",
-        "area": "",
-        "duracao": {
-          "value": 0,
-          "units": "inst",
-          "special": ""
-        },
-        "resistencia": {
-          "pericia": "",
-          "atributo": "",
-          "bonus": 0,
-          "txt": ""
-        },
-        "rolls": [],
-        "origin": "",
-        "tags": [],
-        "rolltags": [],
-        "automationtags": [],
-        "chatFlavor": "",
-        "chatGif": "",
-        "range": {
-          "units": "",
-          "value": 0
-        },
-        "efeito": "",
-        "subtipo": ""
-      },
-      "_id": "4Bp8E5PlATfOJzC2",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.sE4mWoW3zqLZaCYC",
-        "duplicateSource": null,
-        "exportSource": null
-      },
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/ataque-furtivo.webp",
       "effects": [
         {
-          "name": "Ataque Furtivo (+7d6)",
-          "img": "systems/tormenta20/icons/poderes/ameacas/ataque-furtivo.webp",
-          "type": "base",
-          "transfer": false,
+          "_id": "6FGfjphOJvL5rYbm",
+          "flags": {
+            "ActiveAuras": {
+              "isAura": false,
+              "ignoreSelf": false,
+              "hidden": false,
+              "height": false,
+              "aura": "None",
+              "radius": null
+            },
+            "tormenta20": {}
+          },
           "disabled": true,
-          "description": "+7d6 de dano furtivo.",
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "name": "Ataque Furtivo",
+          "img": "systems/tormenta20/icons/classes/ladino.webp",
+          "type": "base",
           "system": {
             "changes": [
               {
                 "key": "dano",
-                "value": "7d6",
+                "value": "roll",
+                "priority": 0,
                 "type": "add",
-                "priority": null,
                 "phase": "initial"
               }
             ],
@@ -1116,39 +1078,24 @@
               "automatic": false,
               "aumenta": false,
               "custo": null,
-              "names": [
-                "Espada púrpura"
-              ],
+              "names": [],
               "types": [
-                "self"
+                "attack"
               ]
             },
             "aura": {
               "isAura": false,
               "range": 0,
-              "behaviors": null
-            },
-            "identifier": "",
-            "upgrade": {
-              "type": null,
-              "itemType": []
+              "disposition": []
             }
           },
-          "_id": "o9UvfsHpTOQy7Cqv",
-          "origin": null,
-          "tint": "#ffffff",
-          "start": null,
-          "duration": {
-            "value": null,
-            "units": "seconds",
-            "expiry": null,
-            "expired": false
-          },
+          "description": "",
           "statuses": [],
+          "sort": 0,
+          "start": null,
           "showIcon": 1,
           "folder": null,
-          "sort": 0,
-          "flags": {},
+          "_key": "!actors.items.effects!onikJiovDkUVzmPJ.4Bp8E5PlATfOJzC2.6FGfjphOJvL5rYbm",
           "_stats": {
             "coreVersion": "14.366",
             "systemId": "tormenta20",
@@ -1159,10 +1106,96 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "_key": "!actors.items.effects!onikJiovDkUVzmPJ.4Bp8E5PlATfOJzC2.o9UvfsHpTOQy7Cqv"
+          }
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 73
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "sE4mWoW3zqLZaCYC"
+          },
+          "pack": "poderes",
+          "versao": "21e51e01"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">+7d6 de dano contra alvo desprevenido ou flanqueado.<br><b>Automação:</b> Shift+clique na espada e marque a opção.</p></div><hr><p style=\"text-align:justify\">Você sabe atingir os pontos vitais de inimigos distraídos. Uma vez por rodada, quando atinge uma criatura desprevenida com um ataque corpo a corpo ou em alcance curto, ou uma criatura que esteja flanqueando, você causa 1d6 pontos de dano extra. A cada dois níveis, esse dano extra aumenta em +1d6. Uma criatura imune a acertos críticos também é imune a ataques furtivos.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 73.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.sE4mWoW3zqLZaCYC]{Ataque Furtivo}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 73",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "passive",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "none",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "sab",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "1d6",
+                "dano",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": null
+        },
+        "efeito": "",
+        "subtipo": "Ladino"
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.sE4mWoW3zqLZaCYC",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!onikJiovDkUVzmPJ.4Bp8E5PlATfOJzC2"
     },
     {
@@ -1451,24 +1484,48 @@
       "_key": "!actors.items!onikJiovDkUVzmPJ.vytdTPocJ0Pf17Ti"
     },
     {
+      "_id": "FvCdqfhm8tRwZLmX",
       "name": "Evasão Aprimorada",
       "type": "poder",
-      "img": "icons/svg/wingfoot.svg",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao-aprimorada.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 48
+          },
+          "automacao": {
+            "nivel": "script",
+            "notas": "Botão de resistência do cartão: passou em Reflexos para metade, o próximo dano sai zerado; falhou, o chat avisa para aplicar metade (scripts/reducao-dano.mjs).",
+            "script": "reducao-dano"
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "SDSlkLynTwwAZkjR",
+            "revisado": true
+          },
+          "pack": "poderes",
+          "versao": "c802ac7c"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Quando sofre um efeito que permite Reflexos para reduzir o dano à metade, não sofre dano se passar e sofre metade se falhar.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.SDSlkLynTwwAZkjR]{Evasão Aprimorada (Bucaneiro)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.SDSlkLynTwwAZkjR]{Evasão Aprimorada (Bucaneiro)}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Quando sofre um efeito que permite Reflexos para reduzir o dano à metade, não sofre dano se passar e sofre metade se falhar.</p></div><hr><p style=\"text-align:justify\">A partir do 10º nível, quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano algum se passar e sofre apenas metade do dano se falhar. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou na condição imóvel.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 48.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.SDSlkLynTwwAZkjR]{Evasão Aprimorada (Bucaneiro)}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Blefe Fatal",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 48",
         "tipo": "ability",
         "ativacao": {
-          "execucao": "passive",
+          "execucao": "",
           "custo": 0,
           "condicao": "",
           "qtd": "",
           "special": ""
         },
-        "alcance": "",
+        "alcance": "none",
         "area": "",
         "duracao": {
           "value": 0,
@@ -1476,10 +1533,10 @@
           "special": ""
         },
         "resistencia": {
-          "pericia": "",
-          "atributo": "",
+          "pericia": "refl",
+          "atributo": "sab",
           "bonus": 0,
-          "txt": ""
+          "txt": "Reflexos"
         },
         "rolls": [],
         "origin": "",
@@ -1490,18 +1547,11 @@
         "chatGif": "",
         "range": {
           "units": "",
-          "value": 0
+          "value": null
         },
         "efeito": "",
-        "subtipo": ""
+        "subtipo": "Bucaneiro"
       },
-      "_id": "FvCdqfhm8tRwZLmX",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1513,7 +1563,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!onikJiovDkUVzmPJ.FvCdqfhm8tRwZLmX"
     }
   ],

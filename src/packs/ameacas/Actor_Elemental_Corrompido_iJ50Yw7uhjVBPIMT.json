@@ -732,9 +732,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar4",
       "antigo": "patamar4-ameacas",
-      "assinatura": "872bc840",
+      "assinatura": "7ac475e8",
       "assinaturas": [
-        "872bc840"
+        "872bc840",
+        "7ac475e8"
       ]
     }
   },
@@ -1174,7 +1175,7 @@
     {
       "name": "Agarrar Aprimorado",
       "type": "poder",
-      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Quando acerta um ataque de mordida, pode fazer a manobra agarrar como ação livre (teste +56).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.uor3YTotDJ33vJYN]{Agarrar Aprimorado}</p>",
@@ -1255,7 +1256,7 @@
     {
       "name": "Corpo Volátil",
       "type": "poder",
-      "img": "systems/tormenta20/icons/itens/gerais/acido.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Se sofrer 20 ou mais de eletricidade ou fogo mágicos, a água evapora numa nuvem corrosiva de 6 m ao redor. Quem começa o turno nela sofre 10d6 de ácido e fica enjoado (Fort CD 42 reduz à metade e evita). Dentro da nuvem: deslocamento 3 m, –2 em ataque e dano, camuflagem leve até 1,5 m e total além disso.</p>",
@@ -1403,7 +1404,7 @@
     {
       "name": "Engolfar",
       "type": "poder",
-      "img": "systems/tormenta20/icons/itens/gerais/acido.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Se começa o turno agarrando uma criatura Grande ou menor, faz um teste de agarrar; se vencer, a engolfa: continua agarrada, submersa, sufocando e sofrendo 10d6 de ácido no início de cada rodada do elemental. Escapa com Atletismo (natação) CD 42.</p>",
@@ -1484,7 +1485,7 @@
     {
       "name": "Reabastecer (cura acelerada 50)",
       "type": "poder",
-      "img": "icons/svg/regen.svg",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Em contato com um corpo d'água Médio ou maior, tem cura acelerada 50. Se fosse sofrer dano mágico de frio, cura metade do dano.<br><b>Automação:</b> no rio, o módulo cura 50 PV no início do turno. Apague esta habilidade se ele sair da água.</p>",
@@ -1565,7 +1566,7 @@
     {
       "name": "Torrente Cáustica",
       "type": "poder",
-      "img": "systems/tormenta20/icons/itens/gerais/acido.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Uma criatura em alcance médio sofre 10d6 (metade ácido, metade impacto) e fica caída (Ref CD 42 reduz à metade e evita). Falha por 10+: empurrada 6 m e armadura/escudo corroído (–1 na Defesa). Recarga (movimento).</p>",
