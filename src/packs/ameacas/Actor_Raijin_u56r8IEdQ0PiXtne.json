@@ -12,8 +12,16 @@
     },
     "disposition": -1,
     "actorLink": false,
+    "displayName": 30,
+    "displayBars": 40,
+    "sight": {
+      "enabled": true
+    },
     "bar1": {
       "attribute": "attributes.pv"
+    },
+    "bar2": {
+      "attribute": "attributes.pm"
     }
   },
   "system": {

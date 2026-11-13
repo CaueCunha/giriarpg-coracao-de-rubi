@@ -738,14 +738,14 @@
   "prototypeToken": {
     "flags": {},
     "name": "Lobo",
-    "displayName": 0,
+    "displayName": 30,
     "width": 1,
     "height": 1,
     "lockRotation": false,
     "rotation": 0,
     "actorLink": false,
     "disposition": -1,
-    "displayBars": 0,
+    "displayBars": 40,
     "bar1": {
       "attribute": "attributes.pv"
     },
@@ -790,15 +790,7 @@
       "alphaThreshold": 0.75
     },
     "sight": {
-      "angle": 360,
-      "enabled": true,
-      "range": 9,
-      "brightness": 1,
-      "visionMode": "basic",
-      "color": null,
-      "attenuation": 0.1,
-      "saturation": 0,
-      "contrast": 0
+      "enabled": true
     },
     "detectionModes": {},
     "appendNumber": false,
