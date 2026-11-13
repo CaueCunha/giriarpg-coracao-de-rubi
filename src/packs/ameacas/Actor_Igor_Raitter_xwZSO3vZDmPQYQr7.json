@@ -720,10 +720,12 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "d8315397",
+      "assinatura": "15bfbae9",
       "assinaturas": [
         "3092e697",
-        "d8315397"
+        "d8315397",
+        "2b188ade",
+        "15bfbae9"
       ]
     }
   },
@@ -745,15 +747,37 @@
   },
   "items": [
     {
+      "_id": "x6rC39dGINY2thK5",
       "name": "Martelo de guerra",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/martelo-de-guerra.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 149
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "VxjPnjvWAKkpjMLE"
+          },
+          "pack": "equipamentos",
+          "versao": "5f125072"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.VxjPnjvWAKkpjMLE]{Martelo de guerra}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.VxjPnjvWAKkpjMLE]{Martelo de guerra}</p>",
+          "value": "<p style=\"text-align:justify\">Outra ferramenta adaptada para combate, esta é a arma favorita de quase todos os anões que não usam machados.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 149.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.VxjPnjvWAKkpjMLE]{Martelo de guerra}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Forja de Heróis",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 149",
         "rolls": [
           {
             "name": "Ataque",
@@ -804,7 +828,7 @@
         "alcance": "",
         "proposito": "corpo-a-corpo",
         "proficiencia": "marcial",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -816,24 +840,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 2.5,
         "qtd": 1,
-        "preco": 0,
+        "preco": 12,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -861,13 +885,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "x6rC39dGINY2thK5",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -879,100 +896,12 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!xwZSO3vZDmPQYQr7.x6rC39dGINY2thK5"
     },
     {
       "name": "Arma Espiritual",
       "type": "magia",
       "img": "systems/tormenta20/icons/magias/arma-espiritual.webp",
-      "sort": 0,
-      "flags": {},
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">Você invoca a arma preferida de sua divindade (caso sua divindade possua uma), que surge flutuando a seu lado. Uma vez por rodada, quando você sofre um ataque corpo a corpo, pode usar uma reação para que a arma cause automaticamente 2d6 pontos de dano do tipo da arma — por exemplo, uma espada longa causa dano de corte — no oponente que fez o ataque. Esta magia se dissipa se você morrer.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.oyIcPlsAaASUEJpT]{Arma Espiritual}</p>",
-          "unidentified": ""
-        },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 180",
-        "ativacao": {
-          "execucao": "action",
-          "custo": 1,
-          "qtd": "",
-          "condicao": "",
-          "special": ""
-        },
-        "duracao": {
-          "value": 0,
-          "units": "scene",
-          "special": ""
-        },
-        "range": {
-          "value": null,
-          "units": ""
-        },
-        "consume": {
-          "type": "",
-          "target": "",
-          "amount": null,
-          "mpMultiplier": false
-        },
-        "efeito": "",
-        "alcance": "self",
-        "alvo": "Você",
-        "area": "",
-        "resistencia": {
-          "pericia": "",
-          "atributo": "sab",
-          "bonus": 0,
-          "txt": ""
-        },
-        "rolls": [
-          {
-            "name": "Dano",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "0",
-                "corte",
-                ""
-              ]
-            ],
-            "adaptavel": "",
-            "versatil": ""
-          }
-        ],
-        "tipo": "div",
-        "circulo": 1,
-        "preparada": false,
-        "escola": "con",
-        "chatFlavor": "",
-        "origin": "",
-        "tags": [],
-        "chatGif": "",
-        "rolltags": [],
-        "automationtags": [],
-        "equipado2": {
-          "slot": 0,
-          "type": ""
-        }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.oyIcPlsAaASUEJpT",
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "_id": "hGfMebfBHLg3KmZz",
-      "folder": null,
       "effects": [
         {
           "_id": "ACOiqPjZ28XUn0DE",
@@ -1525,20 +1454,32 @@
           "_key": "!actors.items.effects!xwZSO3vZDmPQYQr7.hGfMebfBHLg3KmZz.NfOWBcjWQBsJNdP7"
         }
       ],
-      "_key": "!actors.items!xwZSO3vZDmPQYQr7.hGfMebfBHLg3KmZz"
-    },
-    {
-      "name": "Curar Ferimentos",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 180
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "oyIcPlsAaASUEJpT"
+          },
+          "pack": "magias",
+          "versao": "90b8324c"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p>Você canaliza luz que recupera 2d8+2 pontos de vida na criatura tocada. Curar Ferimentos anula Infligir Ferimentos. Truque: muda o alvo para 1 morto-vivo. Em vez do normal, causa 1d8 pontos de dano de luz (Vontade reduz à metade).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você invoca a arma preferida de sua divindade (caso sua divindade possua uma), que surge flutuando a seu lado. Uma vez por rodada, quando você sofre um ataque corpo a corpo, pode usar uma reação para que a arma cause automaticamente 2d6 pontos de dano do tipo da arma — por exemplo, uma espada longa causa dano de corte — no oponente que fez o ataque. Esta magia se dissipa se você morrer.</p></div><hr><p style=\"text-align:justify\">Você invoca a arma preferida de sua divindade (caso sua divindade possua uma), que surge flutuando a seu lado. Uma vez por rodada, quando você sofre um ataque corpo a corpo, pode usar uma reação para que a arma cause automaticamente 2d6 pontos de dano do tipo da arma — por exemplo, uma espada longa causa dano de corte — no oponente que fez o ataque. Esta magia se dissipa se você morrer.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 180.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.oyIcPlsAaASUEJpT]{Arma Espiritual}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 189",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 180",
         "ativacao": {
           "execucao": "action",
           "custo": 1,
@@ -1548,7 +1489,7 @@
         },
         "duracao": {
           "value": 0,
-          "units": "inst",
+          "units": "scene",
           "special": ""
         },
         "range": {
@@ -1562,8 +1503,8 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "touch",
-        "alvo": "1 criatura",
+        "alcance": "self",
+        "alvo": "Você",
         "area": "",
         "resistencia": {
           "pericia": "",
@@ -1573,24 +1514,24 @@
         },
         "rolls": [
           {
-            "name": "Cura",
+            "name": "Dano",
             "key": "dano0",
             "type": "dano",
             "parts": [
               [
-                "2d8+2",
-                "curapv",
+                "0",
+                "corte",
                 ""
               ]
             ],
-            "versatil": "",
-            "adaptavel": ""
+            "adaptavel": "",
+            "versatil": ""
           }
         ],
         "tipo": "div",
         "circulo": 1,
-        "preparada": false,
-        "escola": "evo",
+        "preparada": true,
+        "escola": "con",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -1602,9 +1543,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "hGfMebfBHLg3KmZz",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1612,12 +1551,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.oyIcPlsAaASUEJpT",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "rm9Sq0sCETfuWW1k",
-      "folder": null,
+      "_key": "!actors.items!xwZSO3vZDmPQYQr7.hGfMebfBHLg3KmZz"
+    },
+    {
+      "name": "Curar Ferimentos",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
       "effects": [
         {
           "_id": "WfK0G57CTHvwmZQN",
@@ -1974,30 +1917,42 @@
           "_key": "!actors.items.effects!xwZSO3vZDmPQYQr7.rm9Sq0sCETfuWW1k.QN4twfGJqC8cIN4Q"
         }
       ],
-      "_key": "!actors.items!xwZSO3vZDmPQYQr7.rm9Sq0sCETfuWW1k"
-    },
-    {
-      "name": "Escudo da Fé",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/escudo-da-fe.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 189
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "soVAGPRWQmKxOrPm"
+          },
+          "pack": "magias",
+          "versao": "0699c20b"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Um escudo místico se manifesta momentaneamente para bloquear um golpe. O alvo recebe +2 na Defesa.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XJoWTcH8zVtHc2xa]{Escudo da Fé}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p>Você canaliza luz que recupera 2d8+2 pontos de vida na criatura tocada. Curar Ferimentos anula Infligir Ferimentos. Truque: muda o alvo para 1 morto-vivo. Em vez do normal, causa 1d8 pontos de dano de luz (Vontade reduz à metade).</p></div><hr><p>Você canaliza luz que recupera 2d8+2 pontos de vida na criatura tocada. Curar Ferimentos anula Infligir Ferimentos. Truque: muda o alvo para 1 morto-vivo. Em vez do normal, causa 1d8 pontos de dano de luz (Vontade reduz à metade).</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 189.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 192",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 189",
         "ativacao": {
-          "execucao": "reaction",
+          "execucao": "action",
           "custo": 1,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
-          "value": 1,
-          "units": "turn",
+          "value": 0,
+          "units": "inst",
           "special": ""
         },
         "range": {
@@ -2011,7 +1966,7 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "short",
+        "alcance": "touch",
         "alvo": "1 criatura",
         "area": "",
         "resistencia": {
@@ -2020,11 +1975,26 @@
           "bonus": 0,
           "txt": ""
         },
-        "rolls": [],
+        "rolls": [
+          {
+            "name": "Cura",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "2d8+2",
+                "curapv",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
         "tipo": "div",
         "circulo": 1,
-        "preparada": false,
-        "escola": "abj",
+        "preparada": true,
+        "escola": "evo",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -2036,9 +2006,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "rm9Sq0sCETfuWW1k",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2046,12 +2014,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.XJoWTcH8zVtHc2xa",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.soVAGPRWQmKxOrPm",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "dabGMiPSngDFaLFF",
-      "folder": null,
+      "_key": "!actors.items!xwZSO3vZDmPQYQr7.rm9Sq0sCETfuWW1k"
+    },
+    {
+      "name": "Escudo da Fé",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/escudo-da-fe.webp",
       "effects": [
         {
           "_id": "zlwPjz8JTtjR40lL",
@@ -2559,30 +2531,43 @@
           "_key": "!actors.items.effects!xwZSO3vZDmPQYQr7.dabGMiPSngDFaLFF.CSIeEqX88BfQt2gv"
         }
       ],
-      "_key": "!actors.items!xwZSO3vZDmPQYQr7.dabGMiPSngDFaLFF"
-    },
-    {
-      "name": "Oração",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/oracao.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 192
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "XJoWTcH8zVtHc2xa",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "91e92540"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Você e os seus aliados no alcance recebem +2 em testes de perícia e rolagens de dano, e todos os seus inimigos no alcance sofrem –2 em testes de perícia e rolagens de dano. Esse efeito é cumulativo com outras magias. Componente material: T$ 20 por PM gasto em incensos ou outras oferendas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.VtD27Z068vl78qH3]{Oração}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Um escudo místico se manifesta momentaneamente para bloquear um golpe. O alvo recebe +2 na Defesa.</p></div><hr><p style=\"text-align:justify\">Um escudo místico se manifesta momentaneamente para bloquear um golpe. O alvo recebe +2 na Defesa.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 192.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XJoWTcH8zVtHc2xa]{Escudo da Fé}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 200",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 192",
         "ativacao": {
-          "execucao": "action",
-          "custo": 3,
+          "execucao": "reaction",
+          "custo": 1,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
-          "value": 0,
-          "units": "sust",
+          "value": 1,
+          "units": "turn",
           "special": ""
         },
         "range": {
@@ -2590,14 +2575,14 @@
           "units": ""
         },
         "consume": {
-          "type": "material",
+          "type": "",
           "target": "",
-          "amount": 5,
-          "mpMultiplier": true
+          "amount": null,
+          "mpMultiplier": false
         },
         "efeito": "",
         "alcance": "short",
-        "alvo": "todas as criaturas (veja texto)",
+        "alvo": "1 criatura",
         "area": "",
         "resistencia": {
           "pericia": "",
@@ -2607,9 +2592,9 @@
         },
         "rolls": [],
         "tipo": "div",
-        "circulo": 2,
-        "preparada": false,
-        "escola": "enc",
+        "circulo": 1,
+        "preparada": true,
+        "escola": "abj",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -2621,9 +2606,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "dabGMiPSngDFaLFF",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2631,12 +2614,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.VtD27Z068vl78qH3",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.XJoWTcH8zVtHc2xa",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "o3RZv1CqJh7ELuED",
-      "folder": null,
+      "_key": "!actors.items!xwZSO3vZDmPQYQr7.dabGMiPSngDFaLFF"
+    },
+    {
+      "name": "Oração",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/oracao.webp",
       "effects": [
         {
           "_id": "exdSf1vmYai2SJBe",
@@ -3089,12 +3076,98 @@
           "_key": "!actors.items.effects!xwZSO3vZDmPQYQr7.o3RZv1CqJh7ELuED.jAiHZFWTXuPFnXio"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 200
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "VtD27Z068vl78qH3"
+          },
+          "pack": "magias",
+          "versao": "81b51460"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você e os seus aliados no alcance recebem +2 em testes de perícia e rolagens de dano, e todos os seus inimigos no alcance sofrem –2 em testes de perícia e rolagens de dano. Esse efeito é cumulativo com outras magias. Componente material: T$ 20 por PM gasto em incensos ou outras oferendas.</p></div><hr><p style=\"text-align:justify\">Você e os seus aliados no alcance recebem +2 em testes de perícia e rolagens de dano, e todos os seus inimigos no alcance sofrem –2 em testes de perícia e rolagens de dano. Esse efeito é cumulativo com outras magias. Componente material: T$ 20 por PM gasto em incensos ou outras oferendas.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 200.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.VtD27Z068vl78qH3]{Oração}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 200",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 3,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "sust",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "material",
+          "target": "",
+          "amount": 5,
+          "mpMultiplier": true
+        },
+        "efeito": "",
+        "alcance": "short",
+        "alvo": "todas as criaturas (veja texto)",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "sab",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "tipo": "div",
+        "circulo": 2,
+        "preparada": true,
+        "escola": "enc",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "_id": "o3RZv1CqJh7ELuED",
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.VtD27Z068vl78qH3",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!xwZSO3vZDmPQYQr7.o3RZv1CqJh7ELuED"
     },
     {
       "type": "magia",
       "name": "Soco de Arsenal",
-      "img": "icons/svg/item-bag.svg",
+      "img": "systems/tormenta20/icons/magias/soco-do-mestre.webp",
       "system": {
         "description": {
           "value": "<section class=\"secret\">Soco de Arsenal (Padrão, 5 PM) Uma criatura em alcance médio sofre 5d6+5 pontos de dano de impacto e é empurrada 3m na direção oposta (Fortitude reduz o dano à metade e evita o empurrão).</section>",

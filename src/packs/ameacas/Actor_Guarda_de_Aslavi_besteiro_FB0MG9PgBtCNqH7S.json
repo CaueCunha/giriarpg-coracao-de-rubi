@@ -19,9 +19,12 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "d69acb69",
+      "assinatura": "c017e04e",
       "assinaturas": [
-        "d69acb69"
+        "d69acb69",
+        "a1471b56",
+        "3c54c49f",
+        "c017e04e"
       ]
     }
   },
@@ -841,13 +844,34 @@
   "_id": "FB0MG9PgBtCNqH7S",
   "items": [
     {
+      "_id": "x2GDh14ZNn0CjKOr",
       "name": "Espada longa",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp",
-      "flags": {},
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 148
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "LirOBCaOzAEWQpFk"
+          },
+          "pack": "equipamentos",
+          "versao": "61abc4ca"
+        }
+      },
       "system": {
         "description": {
-          "value": "<section class=\"secret\">Espada longa</section><p>Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.LirOBCaOzAEWQpFk]{Espada longa}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.LirOBCaOzAEWQpFk]{Espada longa}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><section class=\"secret\">Espada longa</section><p>Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.</p></div><hr><p style=\"text-align:justify\">Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 148.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.LirOBCaOzAEWQpFk]{Espada longa}</p>",
           "unidentified": ""
         },
         "source": "Tormenta20 — Edição Jogo do Ano, p. 148",
@@ -918,7 +942,7 @@
         ],
         "criticoM": 19,
         "criticoX": 2,
-        "alcance": "",
+        "alcance": "-",
         "tipoUso": "sim",
         "propriedades": {
           "ada": false,
@@ -986,9 +1010,6 @@
         "rolltags": [],
         "automationtags": []
       },
-      "ownership": {
-        "default": 0
-      },
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1000,10 +1021,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "folder": "brhICwdHcOUqvMPi",
-      "sort": 2200000,
-      "_id": "x2GDh14ZNn0CjKOr",
-      "effects": [],
       "_key": "!actors.items!FB0MG9PgBtCNqH7S.x2GDh14ZNn0CjKOr"
     },
     {
@@ -1011,14 +1028,34 @@
       "name": "Escudo pesado",
       "type": "equipamento",
       "img": "systems/tormenta20/icons/itens/equipamentos/escudo-pesado.webp",
-      "flags": {},
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 154
+          },
+          "automacao": {
+            "nivel": "manual",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "1yGTB9tyXXSaN1wS"
+          },
+          "pack": "equipamentos",
+          "versao": "9bb312de"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p>Normalmente feito de aço, este escudo é preso ao antebraço  e também  deve  ser  empunhado com firmeza, impedindo o usuário de usar aquela mão.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.1yGTB9tyXXSaN1wS]{Escudo pesado}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.1yGTB9tyXXSaN1wS]{Escudo pesado}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p>Normalmente feito de aço, este escudo é preso ao antebraço  e também  deve  ser  empunhado com firmeza, impedindo o usuário de usar aquela mão.</p></div><hr><p style=\"text-align:justify\">Normalmente feito de aço, este escudo é preso ao antebraço e também deve ser empunhado com firmeza, impedindo o usuário de usar aquela mão.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 154.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.1yGTB9tyXXSaN1wS]{Escudo pesado}</p>",
           "unidentified": ""
         },
         "source": "Tormenta20 — Edição Jogo do Ano, p. 154",
-        "equipado": true,
+        "equipado": false,
         "carregado": true,
         "peso": 7,
         "espacos": 2,
@@ -1068,11 +1105,8 @@
         "automationtags": [],
         "equipado2": {
           "slot": 0,
-          "type": "body"
+          "type": "hand"
         }
-      },
-      "ownership": {
-        "default": 0
       },
       "_stats": {
         "coreVersion": "14.366",
@@ -1085,9 +1119,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "folder": "rsvFZjPiYXV5s7IN",
-      "sort": 101563,
-      "effects": [],
       "_key": "!actors.items!FB0MG9PgBtCNqH7S.tpUJEyJHpBBLm8z5"
     },
     {
@@ -1095,14 +1126,34 @@
       "name": "Meia armadura",
       "type": "equipamento",
       "img": "systems/tormenta20/icons/itens/equipamentos/meia-armadura.webp",
-      "flags": {},
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 154
+          },
+          "automacao": {
+            "nivel": "manual",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "nFV1X6lQbAhbocA6"
+          },
+          "pack": "equipamentos",
+          "versao": "28a2cb4d"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p>Uma cota de malha reforçada com placas de metal.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.nFV1X6lQbAhbocA6]{Meia armadura}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.nFV1X6lQbAhbocA6]{Meia armadura}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p>Uma cota de malha reforçada com placas de metal.</p></div><hr><p style=\"text-align:justify\">Uma cota de malha reforçada com placas de metal.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 154.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.nFV1X6lQbAhbocA6]{Meia armadura}</p>",
           "unidentified": ""
         },
         "source": "Tormenta20 — Edição Jogo do Ano, p. 154",
-        "equipado": true,
+        "equipado": false,
         "carregado": true,
         "peso": 22,
         "espacos": 5,
@@ -1155,9 +1206,6 @@
           "type": "body"
         }
       },
-      "ownership": {
-        "default": 0
-      },
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1169,21 +1217,40 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "folder": "rsvFZjPiYXV5s7IN",
-      "sort": 100196,
-      "effects": [],
       "_key": "!actors.items!FB0MG9PgBtCNqH7S.EiDBG7Hi2q7Q4vqy"
     },
     {
+      "_id": "WFsZq4C7EMEaFcxM",
       "name": "Besta pesada",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/besta-pesada.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 146
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "iYY0Jr19T5ERm43G"
+          },
+          "pack": "equipamentos",
+          "versao": "d933013f"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.iYY0Jr19T5ERm43G]{Besta pesada}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.iYY0Jr19T5ERm43G]{Besta pesada}</p>",
+          "value": "<p style=\"text-align:justify\">Versão maior e mais potente da besta leve. Recarregar uma besta pesada é uma ação padrão.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 146.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.iYY0Jr19T5ERm43G]{Besta pesada}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Blefe Fatal",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 146",
         "rolls": [
           {
             "name": "Ataque",
@@ -1233,8 +1300,8 @@
         "criticoX": 2,
         "alcance": "medium",
         "proposito": "disparo",
-        "proficiencia": "simples",
-        "empunhadura": "leve",
+        "proficiencia": "marcial",
+        "empunhadura": "duas",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -1246,24 +1313,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 2,
+        "peso": 4,
         "qtd": 1,
-        "preco": 0,
+        "preco": 50,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -1291,13 +1358,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "WFsZq4C7EMEaFcxM",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1309,7 +1369,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!FB0MG9PgBtCNqH7S.WFsZq4C7EMEaFcxM"
     }
   ],

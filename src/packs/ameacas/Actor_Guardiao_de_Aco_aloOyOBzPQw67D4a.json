@@ -722,9 +722,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "edd88685",
+      "assinatura": "1207a0cb",
       "assinaturas": [
-        "edd88685"
+        "edd88685",
+        "1207a0cb"
       ]
     }
   },
@@ -955,7 +956,7 @@
     {
       "name": "Pancada Atordoante",
       "type": "poder",
-      "img": "icons/magic/control/debuff-energy-hold-blue-yellow.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Uma criatura atingida pela pancada do guardião de aço fica atordoada por uma rodada (Fort CD 17 evita). Uma criatura só pode ser atordoada por esta habilidade uma vez por cena.<br><b>Automação:</b> no cartão da Pancada, aplique \"Atordoado (1 rodada)\" em quem falhar; ele some sozinho.</p>",

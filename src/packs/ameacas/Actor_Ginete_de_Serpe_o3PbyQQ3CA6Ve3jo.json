@@ -720,9 +720,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "02df7455",
+      "assinatura": "90d0a03a",
       "assinaturas": [
-        "02df7455"
+        "02df7455",
+        "dd443721",
+        "90d0a03a"
       ]
     }
   },
@@ -744,140 +746,10 @@
   },
   "items": [
     {
+      "_id": "qFZSzYYtAaS7GYAA",
       "name": "Mangual",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/mangual.webp",
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">Dois ataques por ação agredir. Montado: +1d12 de perfuração da serpe (entra sozinho).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.k4aGem7SrVRtJ9tO]{Mangual}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.k4aGem7SrVRtJ9tO]{Mangual}</p>",
-          "unidentified": ""
-        },
-        "source": "Coração de Rubi — Caravana Cartesiana",
-        "rolls": [
-          {
-            "name": "Ataque",
-            "key": "ataque0",
-            "type": "ataque",
-            "parts": [
-              [
-                "1d20",
-                "",
-                ""
-              ],
-              [
-                "luta",
-                "",
-                ""
-              ],
-              [
-                "0",
-                "",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          },
-          {
-            "name": "Dano",
-            "key": "dano1",
-            "type": "dano",
-            "parts": [
-              [
-                "2d10+20",
-                "impacto",
-                ""
-              ],
-              [
-                "",
-                "",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
-        "criticoM": 19,
-        "criticoX": 2,
-        "alcance": "",
-        "proposito": "corpo-a-corpo",
-        "proficiencia": "marcial",
-        "empunhadura": "leve",
-        "equipado2": {
-          "type": "hand",
-          "slot": 0
-        },
-        "origin": "",
-        "tags": [],
-        "rolltags": [],
-        "automationtags": [],
-        "chatFlavor": "",
-        "chatGif": "",
-        "carregado": true,
-        "espacos": 0,
-        "peso": 0,
-        "qtd": 1,
-        "preco": 0,
-        "pv": {
-          "value": 0,
-          "max": 0
-        },
-        "rd": 0,
-        "ativacao": {
-          "custo": 0,
-          "condicao": "",
-          "execucao": "passive",
-          "qtd": "",
-          "special": ""
-        },
-        "consume": {
-          "amount": 0,
-          "mpMultiplier": false,
-          "target": "",
-          "type": ""
-        },
-        "upgrades": {
-          "itemType": [],
-          "improvement": [],
-          "material": [],
-          "enchantment": [],
-          "curse": [],
-          "innovation": [],
-          "melhoria1": "",
-          "melhoria2": "",
-          "melhoria3": "",
-          "melhoria4": "",
-          "materialEspecial1": "",
-          "encanto1": "",
-          "encanto2": "",
-          "encanto3": "",
-          "enableAutoUpgrades": true
-        },
-        "ataques": 0,
-        "equipado": 0,
-        "tipoUso": "sim",
-        "propriedades": {},
-        "size": "normal"
-      },
-      "_id": "qFZSzYYtAaS7GYAA",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.k4aGem7SrVRtJ9tO",
-        "duplicateSource": null,
-        "exportSource": null
-      },
       "effects": [
         {
           "name": "Montaria Feroz",
@@ -949,6 +821,150 @@
           "_key": "!actors.items.effects!o3PbyQQ3CA6Ve3jo.qFZSzYYtAaS7GYAA.EqTEcrB8TMF6uvFr"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 149
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "k4aGem7SrVRtJ9tO"
+          },
+          "pack": "equipamentos",
+          "versao": "f248d108"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Dois ataques por ação agredir. Montado: +1d12 de perfuração da serpe (entra sozinho).</p></div><hr><p style=\"text-align:justify\">Uma haste metálica ligada a uma corrente com uma esfera de aço na ponta, que pode se enroscar na arma do adversário. O mangual é uma arma versátil, fornecendo +2 em testes para desarmar.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 149.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.k4aGem7SrVRtJ9tO]{Mangual}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 149",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "2d10+20",
+                "impacto",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 19,
+        "criticoX": 2,
+        "alcance": "",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "marcial",
+        "empunhadura": "uma",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 1,
+        "peso": 2.5,
+        "qtd": 1,
+        "preco": 8,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": null,
+          "condicao": "",
+          "execucao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": null,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.k4aGem7SrVRtJ9tO",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!o3PbyQQ3CA6Ve3jo.qFZSzYYtAaS7GYAA"
     },
     {

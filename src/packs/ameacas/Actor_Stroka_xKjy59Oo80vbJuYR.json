@@ -722,9 +722,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "a8396659",
+      "assinatura": "952963ca",
       "assinaturas": [
-        "a8396659"
+        "a8396659",
+        "1f7de34c",
+        "952963ca"
       ]
     }
   },
@@ -746,15 +748,37 @@
   },
   "items": [
     {
+      "_id": "V1Q5nNRjcu7J6Dlv",
       "name": "Martelo de guerra",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/martelo-de-guerra.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 149
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "VxjPnjvWAKkpjMLE"
+          },
+          "pack": "equipamentos",
+          "versao": "5f125072"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.VxjPnjvWAKkpjMLE]{Martelo de guerra}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.VxjPnjvWAKkpjMLE]{Martelo de guerra}</p>",
+          "value": "<p style=\"text-align:justify\">Outra ferramenta adaptada para combate, esta é a arma favorita de quase todos os anões que não usam machados.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 149.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.VxjPnjvWAKkpjMLE]{Martelo de guerra}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — O Segredo das Minas",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 149",
         "rolls": [
           {
             "name": "Ataque",
@@ -805,7 +829,7 @@
         "alcance": "",
         "proposito": "corpo-a-corpo",
         "proficiencia": "marcial",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -817,24 +841,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 2.5,
         "qtd": 1,
-        "preco": 0,
+        "preco": 12,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -862,13 +886,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "V1Q5nNRjcu7J6Dlv",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -880,19 +897,40 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!xKjy59Oo80vbJuYR.V1Q5nNRjcu7J6Dlv"
     },
     {
+      "_id": "a6X9Nds5OMn8GKmZ",
       "name": "Escudo pesado",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/escudo-pesado.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 152
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "w5MOK5PvKvRjH9pM"
+          },
+          "pack": "equipamentos",
+          "versao": "7b499c56"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Ataque com o escudo. Também é o ataque do Contra-golpe.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.w5MOK5PvKvRjH9pM]{Escudo pesado (Arma)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.w5MOK5PvKvRjH9pM]{Escudo pesado (Arma)}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Ataque com o escudo. Também é o ataque do Contra-golpe.</p></div><hr><p>Você pode usar um escudo como uma arma marcial, mas perde seu bônus na Defesa até o próximo turno.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 152.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.w5MOK5PvKvRjH9pM]{Escudo pesado (Arma)}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — O Segredo das Minas",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 152",
         "rolls": [
           {
             "name": "Ataque",
@@ -943,7 +981,7 @@
         "alcance": "",
         "proposito": "corpo-a-corpo",
         "proficiencia": "marcial",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -956,7 +994,7 @@
         "chatGif": "",
         "carregado": true,
         "espacos": 0,
-        "peso": 0,
+        "peso": 7,
         "qtd": 1,
         "preco": 0,
         "pv": {
@@ -965,14 +1003,14 @@
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -1000,13 +1038,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "a6X9Nds5OMn8GKmZ",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1018,93 +1049,42 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!xKjy59Oo80vbJuYR.a6X9Nds5OMn8GKmZ"
     },
     {
+      "_id": "1Le0J36tHCY66keA",
       "name": "Bloqueio com Escudo",
       "type": "poder",
-      "img": "icons/skills/melee/shield-damaged-broken-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">Uma vez por rodada, quando sofre dano, Stroka recebe redução de dano 5 contra este dano.<br><b>Automação:</b> use a habilidade e aplique o efeito do cartão em Stroka antes de aplicar o dano; ele some sozinho no início do próximo turno.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.suFpHfckhlVgiVSw]{Bloqueio com Escudo}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.suFpHfckhlVgiVSw]{Bloqueio com Escudo}</p>",
-          "unidentified": ""
-        },
-        "source": "Coração de Rubi — O Segredo das Minas",
-        "tipo": "ability",
-        "ativacao": {
-          "execucao": "reaction",
-          "custo": 0,
-          "condicao": "",
-          "qtd": "",
-          "special": ""
-        },
-        "alcance": "",
-        "area": "",
-        "duracao": {
-          "value": 0,
-          "units": "inst",
-          "special": ""
-        },
-        "resistencia": {
-          "pericia": "",
-          "atributo": "",
-          "bonus": 0,
-          "txt": ""
-        },
-        "rolls": [],
-        "origin": "",
-        "tags": [],
-        "rolltags": [],
-        "automationtags": [],
-        "chatFlavor": "",
-        "chatGif": "",
-        "range": {
-          "units": "",
-          "value": 0
-        },
-        "efeito": "",
-        "subtipo": ""
-      },
-      "_id": "1Le0J36tHCY66keA",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.suFpHfckhlVgiVSw",
-        "duplicateSource": null,
-        "exportSource": null
-      },
+      "img": "systems/tormenta20/icons/poderes/combate.webp",
       "effects": [
         {
-          "name": "Bloqueio com Escudo (RD 5)",
-          "img": "icons/skills/melee/shield-damaged-broken-blue.webp",
+          "name": "Bloqueio com Escudo",
+          "img": "icons/svg/aura.svg",
           "type": "base",
           "transfer": false,
           "disabled": false,
-          "description": "",
+          "tint": "#ffffff",
           "duration": {
-            "value": 1,
-            "units": "rounds",
+            "value": null,
+            "units": "seconds",
             "expiry": "turnStart",
             "expired": false
           },
+          "origin": null,
+          "description": "<p>RD igual ao bônus do escudo (ajuste o valor).</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "flags": {},
           "system": {
             "changes": [
               {
                 "key": "system.tracos.resistencias.dano.bonus",
-                "value": "5",
-                "type": "add",
+                "value": "2",
                 "priority": null,
+                "type": "add",
                 "phase": "initial"
               }
             ],
@@ -1121,24 +1101,11 @@
             },
             "aura": {
               "isAura": false,
-              "range": 0,
-              "behaviors": null
-            },
-            "identifier": "",
-            "upgrade": {
-              "type": null,
-              "itemType": []
+              "range": 0
             }
           },
-          "_id": "nQS5dfLGXwWIgGRi",
-          "origin": null,
-          "tint": "#ffffff",
-          "start": null,
-          "statuses": [],
-          "showIcon": 1,
-          "folder": null,
-          "sort": 0,
-          "flags": {},
+          "_id": "Wo9cYYCdLFYlCwut",
+          "_key": "!actors.items.effects!xKjy59Oo80vbJuYR.1Le0J36tHCY66keA.Wo9cYYCdLFYlCwut",
           "_stats": {
             "coreVersion": "14.366",
             "systemId": "tormenta20",
@@ -1149,10 +1116,82 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "_key": "!actors.items.effects!xKjy59Oo80vbJuYR.1Le0J36tHCY66keA.nQS5dfLGXwWIgGRi"
+          }
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 124
+          },
+          "automacao": {
+            "nivel": "temporario",
+            "notas": "Ajuste a RD ao bônus na Defesa do seu escudo."
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "suFpHfckhlVgiVSw",
+            "revisado": true
+          },
+          "pack": "poderes",
+          "versao": "df9500a9"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Uma vez por rodada, quando sofre dano, Stroka recebe redução de dano 5 contra este dano.<br><b>Automação:</b> use a habilidade e aplique o efeito do cartão em Stroka antes de aplicar o dano; ele some sozinho no início do próximo turno.</p></div><hr><p style=\"text-align:justify\">Quando sofre dano, você pode gastar 1 PM para receber redução de dano igual ao bônus na Defesa que seu escudo fornece contra este dano. Você só pode usar este poder se estiver usando um escudo. Pré-requisito: Estilo de Arma e Escudo.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 124.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.suFpHfckhlVgiVSw]{Bloqueio com Escudo}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 124",
+        "tipo": "geral",
+        "ativacao": {
+          "execucao": "reaction",
+          "custo": 1,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "none",
+        "area": "",
+        "duracao": {
+          "value": 1,
+          "units": "round",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "sab",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": null
+        },
+        "efeito": "",
+        "subtipo": "Combate"
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.suFpHfckhlVgiVSw",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!xKjy59Oo80vbJuYR.1Le0J36tHCY66keA"
     },
     {

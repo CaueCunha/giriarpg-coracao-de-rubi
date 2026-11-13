@@ -1,13 +1,13 @@
 {
   "name": "Éter Elemental (frio)",
   "type": "consumivel",
-  "img": "systems/tormenta20/icons/itens/gerais/gelo-eterno.webp",
+  "img": "systems/tormenta20/icons/itens/gerais/essencia-mana.webp",
   "system": {
     "description": {
-      "value": "<p style=\"text-align:justify\">Tirado de um stagh (CD 18 para extrair). Você pode gastar uma ação padrão para aplicar este éter em uma arma ou munição, que causará +1d4 pontos de dano de frio até o fim da cena.</p><p style=\"text-align:justify\"><b>Automação:</b> com o éter na ficha, Shift+clique no ataque e marque a opção durante a cena. Gaste a dose (quantidade) ao aplicar.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.ameacas-de-arton.Item.4BuwuitEvKU8dw5v]{Éter Elemental}</p>",
+      "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Tirado de um stagh (CD 18 para extrair). Você pode gastar uma ação padrão para aplicar este éter em uma arma ou munição, que causará +1d4 pontos de dano de frio até o fim da cena.</p><p style=\"text-align:justify\"><b>Automação:</b> com o éter na ficha, Shift+clique no ataque e marque a opção durante a cena. Gaste a dose (quantidade) ao aplicar.</p></div><hr><p>Extraído de elementais, este líquido viscoso tem cor e textura relacionados ao elemento de origem. Uma dose é suficiente para cobrir uma arma corpo a corpo ou 20 munições; aplicá-lo é uma ação padrão e faz a arma (ou as munições) causar +1d4 pontos de dano do tipo do dano elemental até o fim da cena. Múltiplas doses não são cumulativas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.ameacas-de-arton.Item.4BuwuitEvKU8dw5v]{Éter Elemental}</p>",
       "unidentified": ""
     },
-    "source": "Coração de Rubi — Forja de Heróis",
+    "source": "Ameaças de Arton, p. 396",
     "qtd": 1,
     "preco": 60,
     "ativacao": {
@@ -24,29 +24,29 @@
     "chatFlavor": "",
     "chatGif": "",
     "carregado": true,
-    "espacos": 0,
-    "peso": 0,
+    "espacos": 0.5,
+    "peso": 0.5,
     "pv": {
       "value": 0,
       "max": 0
     },
     "rd": 0,
     "consume": {
-      "amount": 0,
+      "amount": null,
       "mpMultiplier": false,
       "target": "",
       "type": ""
     },
     "duracao": {
-      "units": "inst",
+      "units": "scene",
       "value": 0,
       "special": ""
     },
     "range": {
       "units": "",
-      "value": 0
+      "value": null
     },
-    "alcance": "",
+    "alcance": "none",
     "alvo": "",
     "area": "",
     "efeito": "",
@@ -74,39 +74,10 @@
       "enableAutoUpgrades": true
     },
     "rolls": [],
-    "tipo": "",
+    "tipo": "alchemy",
     "subtipo": ""
   },
-  "folder": "JTn4vxmEomcuSXeH",
-  "flags": {
-    "world": {
-      "cdr": "a1"
-    },
-    "giriarpg-coracao-de-rubi": {
-      "ato": "patamar1",
-      "antigo": "patamar1-itens",
-      "assinatura": "7484842c",
-      "assinaturas": [
-        "7484842c"
-      ]
-    }
-  },
   "_id": "LXankSgG603Vrgmm",
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "_stats": {
-    "coreVersion": "14.366",
-    "systemId": "tormenta20",
-    "systemVersion": "1.6.4",
-    "createdTime": null,
-    "modifiedTime": null,
-    "lastModifiedBy": null,
-    "compendiumSource": "Compendium.giria-t20.ameacas-de-arton.Item.4BuwuitEvKU8dw5v",
-    "duplicateSource": null,
-    "exportSource": null
-  },
   "effects": [
     {
       "name": "Éter elemental (frio)",
@@ -178,5 +149,47 @@
       "_key": "!items.effects!LXankSgG603Vrgmm.Afs3sn770Vq9qLkO"
     }
   ],
+  "flags": {
+    "giria-t20": {
+      "fonte": {
+        "livro": "AdA",
+        "pagina": 396
+      },
+      "automacao": {
+        "nivel": "manual",
+        "notas": "Some +1d4 do elemento no dano à mão."
+      },
+      "status": "revisado",
+      "revisao": 1,
+      "pack": "equipamentos",
+      "versao": "e1be59f9"
+    },
+    "world": {
+      "cdr": "a1"
+    },
+    "giriarpg-coracao-de-rubi": {
+      "ato": "patamar1",
+      "antigo": "patamar1-itens",
+      "assinatura": "eb402b79",
+      "assinaturas": [
+        "7484842c",
+        "27b4a69a",
+        "bb6acc17",
+        "eb402b79"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.366",
+    "systemId": "tormenta20",
+    "systemVersion": "1.6.4",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null,
+    "compendiumSource": "Compendium.giria-t20.ameacas-de-arton.Item.4BuwuitEvKU8dw5v",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "pVjhRGntbqBZmEcv",
   "_key": "!items!LXankSgG603Vrgmm"
 }

@@ -722,9 +722,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "0261189c",
+      "assinatura": "12312e93",
       "assinaturas": [
-        "0261189c"
+        "0261189c",
+        "12312e93"
       ]
     }
   },
@@ -881,78 +882,6 @@
       "name": "Amedrontar",
       "type": "magia",
       "img": "systems/tormenta20/icons/magias/amedrontar.webp",
-      "sort": 0,
-      "flags": {},
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U]{Amedrontar}</p>",
-          "unidentified": ""
-        },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 179",
-        "ativacao": {
-          "execucao": "action",
-          "custo": 1,
-          "qtd": "",
-          "condicao": "",
-          "special": ""
-        },
-        "duracao": {
-          "value": 0,
-          "units": "scene",
-          "special": ""
-        },
-        "range": {
-          "value": null,
-          "units": ""
-        },
-        "consume": {
-          "type": "",
-          "target": "",
-          "amount": null,
-          "mpMultiplier": false
-        },
-        "efeito": "",
-        "alcance": "short",
-        "alvo": "1 animal ou humanoide",
-        "area": "",
-        "resistencia": {
-          "pericia": "",
-          "atributo": "int",
-          "bonus": 0,
-          "txt": "Vontade parcial"
-        },
-        "rolls": [],
-        "tipo": "arc",
-        "circulo": 1,
-        "preparada": false,
-        "escola": "nec",
-        "chatFlavor": "",
-        "origin": "",
-        "tags": [],
-        "chatGif": "",
-        "rolltags": [],
-        "automationtags": [],
-        "equipado2": {
-          "slot": 0,
-          "type": ""
-        }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.m14TgW19d1JTBz8U",
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "_id": "xp2Mk2sflZJhtZR4",
-      "folder": null,
       "effects": [
         {
           "_id": "gOuA2dXltcwUOX9e",
@@ -1205,20 +1134,33 @@
           "_key": "!actors.items.effects!7Bhq7QaPCv8k6cWt.xp2Mk2sflZJhtZR4.Y9eBzAQmvTxkKoFK"
         }
       ],
-      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.xp2Mk2sflZJhtZR4"
-    },
-    {
-      "name": "Armadura Arcana",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/armadura-arcana.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 179
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "m14TgW19d1JTBz8U",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "a312eec0"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta magia cria uma película protetora invisível, mas tangível, fornecendo +5 na Defesa. Esse bônus é cumulativo com outras magias, mas não com bônus fornecido por armaduras.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.vUsntyToyQl1TuFZ]{Armadura Arcana}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p></div><hr><p style=\"text-align:justify\">O alvo é envolvido por energias sombrias e assustadoras. Se falhar na resistência, fica apavorado por 1 rodada, depois abalado. Se passar, fica abalado por 1d4 rodadas.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 179.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U]{Amedrontar}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 181",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 179",
         "ativacao": {
           "execucao": "action",
           "custo": 1,
@@ -1242,20 +1184,20 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "self",
-        "alvo": "Você",
+        "alcance": "short",
+        "alvo": "1 animal ou humanoide",
         "area": "",
         "resistencia": {
-          "pericia": "",
+          "pericia": "vont",
           "atributo": "int",
           "bonus": 0,
-          "txt": ""
+          "txt": "Vontade parcial"
         },
         "rolls": [],
         "tipo": "arc",
         "circulo": 1,
-        "preparada": false,
-        "escola": "abj",
+        "preparada": true,
+        "escola": "nec",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -1267,9 +1209,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "xp2Mk2sflZJhtZR4",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1277,12 +1217,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.vUsntyToyQl1TuFZ",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.m14TgW19d1JTBz8U",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "QGXEBdeD1aTouFIS",
-      "folder": null,
+      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.xp2Mk2sflZJhtZR4"
+    },
+    {
+      "name": "Armadura Arcana",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/armadura-arcana.webp",
       "effects": [
         {
           "_id": "SedwBcqTEwsI23ya",
@@ -1581,20 +1525,33 @@
           "_key": "!actors.items.effects!7Bhq7QaPCv8k6cWt.QGXEBdeD1aTouFIS.i9DvcQzfkabIuT1r"
         }
       ],
-      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.QGXEBdeD1aTouFIS"
-    },
-    {
-      "name": "Enfeitiçar",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/enfeiticar.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 181
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "vUsntyToyQl1TuFZ",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "a701dd30"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">O alvo fica enfeitiçado (veja a página 394). Um alvo hostil ou que esteja envolvido em um combate recebe +5 em seu teste de resistência. Se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e o alvo retorna à atitude que tinha antes (ou piorada, de acordo com o mestre).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.lJYJQFhk5oai46Ty]{Enfeitiçar}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta magia cria uma película protetora invisível, mas tangível, fornecendo +5 na Defesa. Esse bônus é cumulativo com outras magias, mas não com bônus fornecido por armaduras.</p></div><hr><p style=\"text-align:justify\">Esta magia cria uma película protetora invisível, mas tangível, fornecendo +5 na Defesa. Esse bônus é cumulativo com outras magias, mas não com bônus fornecido por armaduras.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 181.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.vUsntyToyQl1TuFZ]{Armadura Arcana}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 191",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 181",
         "ativacao": {
           "execucao": "action",
           "custo": 1,
@@ -1618,25 +1575,23 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "short",
-        "alvo": "1 humanóide",
+        "alcance": "self",
+        "alvo": "Você",
         "area": "",
         "resistencia": {
           "pericia": "",
           "atributo": "int",
           "bonus": 0,
-          "txt": "Vontade anula"
+          "txt": ""
         },
         "rolls": [],
         "tipo": "arc",
         "circulo": 1,
-        "preparada": false,
-        "escola": "enc",
+        "preparada": true,
+        "escola": "abj",
         "chatFlavor": "",
-        "tags": [
-          "Encantamento"
-        ],
         "origin": "",
+        "tags": [],
         "chatGif": "",
         "rolltags": [],
         "automationtags": [],
@@ -1645,9 +1600,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "QGXEBdeD1aTouFIS",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1655,12 +1608,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.lJYJQFhk5oai46Ty",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.vUsntyToyQl1TuFZ",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "fS507r6nDDjVYDK0",
-      "folder": null,
+      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.QGXEBdeD1aTouFIS"
+    },
+    {
+      "name": "Enfeitiçar",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/enfeiticar.webp",
       "effects": [
         {
           "_id": "FwAyrI4xhfoFeoEK",
@@ -1998,30 +1955,42 @@
           "_key": "!actors.items.effects!7Bhq7QaPCv8k6cWt.fS507r6nDDjVYDK0.VZhJA14VPhWCyycr"
         }
       ],
-      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.fS507r6nDDjVYDK0"
-    },
-    {
-      "name": "Bola de Fogo",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/bola-de-fogo.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 191
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "lJYJQFhk5oai46Ty"
+          },
+          "pack": "magias",
+          "versao": "2dcf545d"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta famosa magia de ataque cria uma poderosa explosão, causando 6d6 pontos de dano de fogo em todas as criaturas e objetos livres na área.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.gcjCsjzpk2OtClSt]{Bola de Fogo}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">O alvo fica enfeitiçado (veja a página 394). Um alvo hostil ou que esteja envolvido em um combate recebe +5 em seu teste de resistência. Se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e o alvo retorna à atitude que tinha antes (ou piorada, de acordo com o mestre).</p></div><hr><p style=\"text-align:justify\">O alvo fica enfeitiçado (veja a página 394). Um alvo hostil ou que esteja envolvido em um combate recebe +5 em seu teste de resistência. Se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e o alvo retorna à atitude que tinha antes (ou piorada, de acordo com o mestre).</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 191.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.lJYJQFhk5oai46Ty]{Enfeitiçar}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 182",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 191",
         "ativacao": {
           "execucao": "action",
-          "custo": 3,
+          "custo": 1,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
           "value": 0,
-          "units": "inst",
+          "units": "scene",
           "special": ""
         },
         "range": {
@@ -2035,38 +2004,25 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "medium",
-        "alvo": "",
-        "area": "esfera com 6m de raio",
+        "alcance": "short",
+        "alvo": "1 humanóide",
+        "area": "",
         "resistencia": {
-          "pericia": "",
-          "atributo": "",
+          "pericia": "vont",
+          "atributo": "int",
           "bonus": 0,
-          "txt": "Reflexos reduz à metade"
+          "txt": "Vontade anula"
         },
-        "rolls": [
-          {
-            "name": "Dano",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "6d6",
-                "fogo",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
+        "rolls": [],
         "tipo": "arc",
-        "circulo": 2,
-        "preparada": false,
-        "escola": "evo",
+        "circulo": 1,
+        "preparada": true,
+        "escola": "enc",
         "chatFlavor": "",
+        "tags": [
+          "Encantamento"
+        ],
         "origin": "",
-        "tags": [],
         "chatGif": "",
         "rolltags": [],
         "automationtags": [],
@@ -2075,9 +2031,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "fS507r6nDDjVYDK0",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2085,12 +2039,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.gcjCsjzpk2OtClSt",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.lJYJQFhk5oai46Ty",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "ebW6KCZQz0i4Xv5U",
-      "folder": null,
+      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.fS507r6nDDjVYDK0"
+    },
+    {
+      "name": "Bola de Fogo",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/bola-de-fogo.webp",
       "effects": [
         {
           "_id": "thxC23yymTSn7geb",
@@ -2320,20 +2278,32 @@
           "_key": "!actors.items.effects!7Bhq7QaPCv8k6cWt.ebW6KCZQz0i4Xv5U.ubQBfQrzV0HqbL1b"
         }
       ],
-      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.ebW6KCZQz0i4Xv5U"
-    },
-    {
-      "name": "Campo de Força",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/campo-de-forca.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 182
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "gcjCsjzpk2OtClSt"
+          },
+          "pack": "magias",
+          "versao": "6965bcc3"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta magia cria uma película protetora sobre você. Você recebe 30 pontos de vida temporários.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.BmiLj15LQW7f76j8]{Campo de Força}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta famosa magia de ataque cria uma poderosa explosão, causando 6d6 pontos de dano de fogo em todas as criaturas e objetos livres na área.</p></div><hr><p style=\"text-align:justify\">Esta famosa magia de ataque cria uma poderosa explosão, causando 6d6 pontos de dano de fogo em todas as criaturas e objetos livres na área.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 182.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.gcjCsjzpk2OtClSt]{Bola de Fogo}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 183",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 182",
         "ativacao": {
           "execucao": "action",
           "custo": 3,
@@ -2343,7 +2313,7 @@
         },
         "duracao": {
           "value": 0,
-          "units": "scene",
+          "units": "inst",
           "special": ""
         },
         "range": {
@@ -2357,35 +2327,35 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "self",
-        "alvo": "Você",
-        "area": "",
+        "alcance": "medium",
+        "alvo": "",
+        "area": "esfera com 6m de raio",
         "resistencia": {
-          "pericia": "",
+          "pericia": "refl",
           "atributo": "int",
           "bonus": 0,
-          "txt": ""
+          "txt": "Reflexos reduz à metade"
         },
         "rolls": [
           {
-            "name": "Pontos de Vida Temporários",
+            "name": "Dano",
             "key": "dano0",
             "type": "dano",
             "parts": [
               [
-                "30",
-                "curatpv",
+                "6d6",
+                "fogo",
                 ""
               ]
             ],
-            "adaptavel": "",
-            "versatil": ""
+            "versatil": "",
+            "adaptavel": ""
           }
         ],
         "tipo": "arc",
         "circulo": 2,
-        "preparada": false,
-        "escola": "abj",
+        "preparada": true,
+        "escola": "evo",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -2397,9 +2367,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "ebW6KCZQz0i4Xv5U",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2407,12 +2375,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.BmiLj15LQW7f76j8",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.gcjCsjzpk2OtClSt",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "470vzWstSGMzhZfM",
-      "folder": null,
+      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.ebW6KCZQz0i4Xv5U"
+    },
+    {
+      "name": "Campo de Força",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/campo-de-forca.webp",
       "effects": [
         {
           "_id": "KZnXMsQZkI6g64rR",
@@ -2875,17 +2847,137 @@
           "_key": "!actors.items.effects!7Bhq7QaPCv8k6cWt.470vzWstSGMzhZfM.F5qdveKy9DPG6ntB"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 183
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": "Campo de Força: troca de duração para instantânea fica com a mesa"
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "BmiLj15LQW7f76j8"
+          },
+          "pack": "magias",
+          "versao": "92be80da"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta magia cria uma película protetora sobre você. Você recebe 30 pontos de vida temporários.</p></div><hr><p style=\"text-align:justify\">Esta magia cria uma película protetora sobre você. Você recebe 30 pontos de vida temporários.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 183.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.BmiLj15LQW7f76j8]{Campo de Força}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 183",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 3,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "scene",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "self",
+        "alvo": "Você",
+        "area": "",
+        "resistencia": {
+          "pericia": "",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [
+          {
+            "name": "Pontos de Vida Temporários",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "30",
+                "curatpv",
+                ""
+              ]
+            ],
+            "adaptavel": "",
+            "versatil": ""
+          }
+        ],
+        "tipo": "arc",
+        "circulo": 2,
+        "preparada": true,
+        "escola": "abj",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "_id": "470vzWstSGMzhZfM",
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.BmiLj15LQW7f76j8",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!7Bhq7QaPCv8k6cWt.470vzWstSGMzhZfM"
     },
     {
       "name": "Vidência",
       "type": "magia",
       "img": "systems/tormenta20/icons/magias/videncia.webp",
-      "sort": 0,
-      "flags": {},
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 211
+          },
+          "automacao": {
+            "nivel": "manual",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "y0AkIvcwBstmPcpX"
+          },
+          "pack": "magias",
+          "versao": "8433db58"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Através de uma superfície reflexiva (bacia de água benta para clérigos, lago para druidas, bola de cristal para magos, espelho para feiticeiros etc.) você pode ver e ouvir uma criatura escolhida e seus arredores (cerca de 6m em qualquer direção), mesmo que ela se mova. O alvo pode estar a qualquer distância, mas se passar em um teste de Vontade, a magia falha. A vítima recebe bônus ou penalidades em seu teste de resistência, dependendo do conhecimento que você tiver dela.</p><ul><li><p>Não conhece o alvo: +10.</p></li><li><p>Ouviu falar do alvo: +5.</p></li><li><p>O alvo está em outro plano ou mundo: +5.</p></li><li><p>Já encontrou o alvo pessoalmente: +0.</p></li><li><p>Tem uma pintura, escultura ou outra representação do alvo: –2.</p></li><li><p>Conhece bem o alvo: –5.</p></li><li><p>Tem um pertence pessoal ou peça de roupa do alvo: –5.</p></li><li><p>Tem uma parte do corpo do alvo (unhas, cabelos...): –10.</p></li></ul><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.y0AkIvcwBstmPcpX]{Vidência}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Através de uma superfície reflexiva (bacia de água benta para clérigos, lago para druidas, bola de cristal para magos, espelho para feiticeiros etc.) você pode ver e ouvir uma criatura escolhida e seus arredores (cerca de 6m em qualquer direção), mesmo que ela se mova. O alvo pode estar a qualquer distância, mas se passar em um teste de Vontade, a magia falha. A vítima recebe bônus ou penalidades em seu teste de resistência, dependendo do conhecimento que você tiver dela.</p><ul><li><p>Não conhece o alvo: +10.</p></li><li><p>Ouviu falar do alvo: +5.</p></li><li><p>O alvo está em outro plano ou mundo: +5.</p></li><li><p>Já encontrou o alvo pessoalmente: +0.</p></li><li><p>Tem uma pintura, escultura ou outra representação do alvo: –2.</p></li><li><p>Conhece bem o alvo: –5.</p></li><li><p>Tem um pertence pessoal ou peça de roupa do alvo: –5.</p></li><li><p>Tem uma parte do corpo do alvo (unhas, cabelos...): –10.</p></li></ul></div><hr><p style=\"text-align:justify\">Através de uma superfície reflexiva (bacia de água benta para clérigos, lago para druidas, bola de cristal para magos, espelho para feiticeiros etc.) você pode ver e ouvir uma criatura escolhida e seus arredores (cerca de 6m em qualquer direção), mesmo que ela se mova. O alvo pode estar a qualquer distância, mas se passar em um teste de Vontade, a magia falha. A vítima recebe bônus ou penalidades em seu teste de resistência, dependendo do conhecimento que você tiver dela.</p><ul><li><p>Não conhece o alvo: +10.</p></li><li><p>Ouviu falar do alvo: +5.</p></li><li><p>O alvo está em outro plano ou mundo: +5.</p></li><li><p>Já encontrou o alvo pessoalmente: +0.</p></li><li><p>Tem uma pintura, escultura ou outra representação do alvo: –2.</p></li><li><p>Conhece bem o alvo: –5.</p></li><li><p>Tem um pertence pessoal ou peça de roupa do alvo: –5.</p></li><li><p>Tem uma parte do corpo do alvo (unhas, cabelos...): –10.</p></li></ul><p><em>Tormenta20 — Edição Jogo do Ano, p. 211.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.y0AkIvcwBstmPcpX]{Vidência}</p>",
           "unidentified": ""
         },
         "source": "Tormenta20 — Edição Jogo do Ano, p. 211",
@@ -2916,7 +3008,7 @@
         "alvo": "1 criatura",
         "area": "",
         "resistencia": {
-          "pericia": "",
+          "pericia": "vont",
           "atributo": "sab",
           "bonus": 0,
           "txt": "Vontade anula"
@@ -2924,7 +3016,7 @@
         "rolls": [],
         "tipo": "uni",
         "circulo": 3,
-        "preparada": false,
+        "preparada": true,
         "escola": "adv",
         "chatFlavor": "",
         "origin": "",
@@ -2937,9 +3029,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "xzfDCAIGfyNNDngR",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2947,106 +3037,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.y0AkIvcwBstmPcpX",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.y0AkIvcwBstmPcpX",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "xzfDCAIGfyNNDngR",
-      "folder": null,
-      "effects": [],
       "_key": "!actors.items!7Bhq7QaPCv8k6cWt.xzfDCAIGfyNNDngR"
     },
     {
       "name": "Mão Poderosa",
       "type": "magia",
       "img": "systems/tormenta20/icons/magias/mao-poderosa.webp",
-      "sort": 0,
-      "flags": {},
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">Esta magia cria uma mão flutuante Grande que sempre se posiciona entre você e um oponente a sua escolha. A mão fornece cobertura leve (+5 na Defesa) contra esse oponente. Nada é capaz de enganar a mão — coisas como escuridão, invisibilidade, metamorfose e disfarces mundanos não a impedem de protegê-lo. A mão tem Defesa 20 e PV e resistências iguais aos seus. Com uma ação de movimento, você pode comandar a mão para que o proteja de outro oponente ou para que realize uma das ações a seguir.</p><p style=\"text-align:justify\">Agarrar: a mão usa uma manobra agarrar contra o oponente, usando o seu Misticismo com um bônus adicional de +10. A mão mantém o oponente agarrado, mas não causa dano.</p><p style=\"text-align:justify\">Esmagar: a mão esmaga um oponente agarrado, causando 2d6+10 pontos de dano de impacto.</p><p style=\"text-align:justify\">Empurrar: a mão afasta o oponente (manobra empurrar usando o seu Misticismo com um bônus adicional de +10). A mão acompanha o oponente para empurrá-lo o máximo que conseguir, dentro do alcance da magia.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.FW1NLpibuEisXYw4]{Mão Poderosa}</p>",
-          "unidentified": ""
-        },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 197",
-        "ativacao": {
-          "execucao": "action",
-          "custo": 10,
-          "qtd": "",
-          "condicao": "",
-          "special": ""
-        },
-        "duracao": {
-          "value": 0,
-          "units": "sust",
-          "special": ""
-        },
-        "range": {
-          "value": null,
-          "units": ""
-        },
-        "consume": {
-          "type": "",
-          "target": "",
-          "amount": null,
-          "mpMultiplier": false
-        },
-        "efeito": "mão gigante de energia",
-        "alcance": "medium",
-        "alvo": "",
-        "area": "",
-        "resistencia": {
-          "pericia": "",
-          "atributo": "int",
-          "bonus": 0,
-          "txt": ""
-        },
-        "rolls": [
-          {
-            "name": "Dano",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "2d6+12",
-                "impacto",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
-        "tipo": "arc",
-        "circulo": 4,
-        "preparada": false,
-        "escola": "con",
-        "chatFlavor": "",
-        "origin": "",
-        "tags": [],
-        "chatGif": "",
-        "rolltags": [],
-        "automationtags": [],
-        "equipado2": {
-          "slot": 0,
-          "type": ""
-        }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.FW1NLpibuEisXYw4",
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "_id": "JXUzEjON8uTL6Gg5",
-      "folder": null,
       "effects": [
         {
           "_id": "5hyZVJ9poT1Fxzm9",
@@ -3252,20 +3252,33 @@
           "_key": "!actors.items.effects!7Bhq7QaPCv8k6cWt.JXUzEjON8uTL6Gg5.ES7NvdGWBQWCoLj0"
         }
       ],
-      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.JXUzEjON8uTL6Gg5"
-    },
-    {
-      "name": "Talho Invisível",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/talho-invisivel.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 197
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "FW1NLpibuEisXYw4",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "5efa8116"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta magia cruel foi desenvolvida pelo mago de combate Edauros, quando ainda era um bípede. Você faz um gesto rápido e dispara uma lâmina de ar em alta velocidade. Criaturas na área sofrem 10d8 pontos de dano de corte e ficam sangrando. Alvos que passem no teste de resistência sofrem metade do dano e não ficam sangrando.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.9ApArOLIFHb2gcyx]{Talho Invisível}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta magia cria uma mão flutuante Grande que sempre se posiciona entre você e um oponente a sua escolha. A mão fornece cobertura leve (+5 na Defesa) contra esse oponente. Nada é capaz de enganar a mão — coisas como escuridão, invisibilidade, metamorfose e disfarces mundanos não a impedem de protegê-lo. A mão tem Defesa 20 e PV e resistências iguais aos seus. Com uma ação de movimento, você pode comandar a mão para que o proteja de outro oponente ou para que realize uma das ações a seguir.</p><p style=\"text-align:justify\">Agarrar: a mão usa uma manobra agarrar contra o oponente, usando o seu Misticismo com um bônus adicional de +10. A mão mantém o oponente agarrado, mas não causa dano.</p><p style=\"text-align:justify\">Esmagar: a mão esmaga um oponente agarrado, causando 2d6+10 pontos de dano de impacto.</p><p style=\"text-align:justify\">Empurrar: a mão afasta o oponente (manobra empurrar usando o seu Misticismo com um bônus adicional de +10). A mão acompanha o oponente para empurrá-lo o máximo que conseguir, dentro do alcance da magia.</p></div><hr><p style=\"text-align:justify\">Esta magia cria uma mão flutuante Grande que sempre se posiciona entre você e um oponente a sua escolha. A mão fornece cobertura leve (+5 na Defesa) contra esse oponente. Nada é capaz de enganar a mão — coisas como escuridão, invisibilidade, metamorfose e disfarces mundanos não a impedem de protegê-lo. A mão tem Defesa 20 e PV e resistências iguais aos seus. Com uma ação de movimento, você pode comandar a mão para que o proteja de outro oponente ou para que realize uma das ações a seguir.</p><p style=\"text-align:justify\">Agarrar: a mão usa uma manobra agarrar contra o oponente, usando o seu Misticismo com um bônus adicional de +10. A mão mantém o oponente agarrado, mas não causa dano.</p><p style=\"text-align:justify\">Esmagar: a mão esmaga um oponente agarrado, causando 2d6+10 pontos de dano de impacto.</p><p style=\"text-align:justify\">Empurrar: a mão afasta o oponente (manobra empurrar usando o seu Misticismo com um bônus adicional de +10). A mão acompanha o oponente para empurrá-lo o máximo que conseguir, dentro do alcance da magia.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 197.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.FW1NLpibuEisXYw4]{Mão Poderosa}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 207",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 197",
         "ativacao": {
           "execucao": "action",
           "custo": 10,
@@ -3275,7 +3288,7 @@
         },
         "duracao": {
           "value": 0,
-          "units": "inst",
+          "units": "sust",
           "special": ""
         },
         "range": {
@@ -3288,15 +3301,15 @@
           "amount": null,
           "mpMultiplier": false
         },
-        "efeito": "",
-        "alcance": "self",
+        "efeito": "mão gigante de energia",
+        "alcance": "medium",
         "alvo": "",
-        "area": "cone de 9m",
+        "area": "",
         "resistencia": {
           "pericia": "",
           "atributo": "int",
           "bonus": 0,
-          "txt": "Fortitude parcial"
+          "txt": ""
         },
         "rolls": [
           {
@@ -3305,8 +3318,8 @@
             "type": "dano",
             "parts": [
               [
-                "10d8",
-                "corte",
+                "2d6+12",
+                "impacto",
                 ""
               ]
             ],
@@ -3316,8 +3329,8 @@
         ],
         "tipo": "arc",
         "circulo": 4,
-        "preparada": false,
-        "escola": "evo",
+        "preparada": true,
+        "escola": "con",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -3329,9 +3342,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "JXUzEjON8uTL6Gg5",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -3339,12 +3350,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.9ApArOLIFHb2gcyx",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.FW1NLpibuEisXYw4",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "QLPbBAHUGcYChE88",
-      "folder": null,
+      "_key": "!actors.items!7Bhq7QaPCv8k6cWt.JXUzEjON8uTL6Gg5"
+    },
+    {
+      "name": "Talho Invisível",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/talho-invisivel.webp",
       "effects": [
         {
           "_id": "WnAMkZUCUwPkIONG",
@@ -3503,6 +3518,107 @@
           "_key": "!actors.items.effects!7Bhq7QaPCv8k6cWt.QLPbBAHUGcYChE88.zh7z6IqsNsmcYD8B"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 207
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "9ApArOLIFHb2gcyx"
+          },
+          "pack": "magias",
+          "versao": "ca490203"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta magia cruel foi desenvolvida pelo mago de combate Edauros, quando ainda era um bípede. Você faz um gesto rápido e dispara uma lâmina de ar em alta velocidade. Criaturas na área sofrem 10d8 pontos de dano de corte e ficam sangrando. Alvos que passem no teste de resistência sofrem metade do dano e não ficam sangrando.</p></div><hr><p style=\"text-align:justify\">Esta magia cruel foi desenvolvida pelo mago de combate Edauros, quando ainda era um bípede. Você faz um gesto rápido e dispara uma lâmina de ar em alta velocidade. Criaturas na área sofrem 10d8 pontos de dano de corte e ficam sangrando. Alvos que passem no teste de resistência sofrem metade do dano e não ficam sangrando.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 207.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.9ApArOLIFHb2gcyx]{Talho Invisível}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 207",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 10,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "self",
+        "alvo": "",
+        "area": "cone de 9m",
+        "resistencia": {
+          "pericia": "fort",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": "Fortitude parcial"
+        },
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "10d8",
+                "corte",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "tipo": "arc",
+        "circulo": 4,
+        "preparada": true,
+        "escola": "evo",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "_id": "QLPbBAHUGcYChE88",
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.9ApArOLIFHb2gcyx",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!7Bhq7QaPCv8k6cWt.QLPbBAHUGcYChE88"
     }
   ],

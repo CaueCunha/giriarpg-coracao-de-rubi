@@ -276,6 +276,8 @@ async function main() {
 	let indice = null;
 	const listaGiria = JSON.parse(fs.readFileSync(path.join(RAIZ, "src/giria-indice.json"), "utf8")).itens;
 	const giria = indiceGiria(listaGiria);
+	const arqDocs = path.join(RAIZ, "src/giria-docs.json");
+	const giriaDocs = fs.existsSync(arqDocs) ? JSON.parse(fs.readFileSync(arqDocs, "utf8")) : null;
 	let versaoSistema = "1.6.4";
 	for (const ato of ATOS) {
 		console.log(`» ${ato.rotulo}: ${ato.geradores.length} gerador(es)`);
@@ -285,7 +287,7 @@ async function main() {
 		const semMarca = Object.entries(docs).flatMap(([t, l]) => l.filter((d) => !d.flags?.world?.cdr).map((d) => `${t} "${d.name}"`));
 		if (semMarca.length) throw new Error(`Documentos sem a marca flags.world.cdr: ${semMarca.join(", ")}`);
 		resolverGiria(docs, listaGiria);
-		const ligacoes = ligarAoSistema(docs, indice, ato.id, giria);
+		const ligacoes = ligarAoSistema(docs, indice, ato.id, giria, giriaDocs);
 		porAto.push({ ato, docs: estabilizarIds(docs) });
 		linhas.push(`## ${ato.rotulo}`, "");
 		for (const p of PACKS) {

@@ -728,9 +728,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "4ae1f1ff",
+      "assinatura": "a5e37cf7",
       "assinaturas": [
-        "4ae1f1ff"
+        "4ae1f1ff",
+        "a5e37cf7"
       ]
     }
   },
@@ -962,7 +963,7 @@
     {
       "name": "Glops Filhinhos",
       "type": "poder",
-      "img": "systems/tormenta20/icons/ameacas/glop.png",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">A mamãe glop está sempre acompanhada por 1d4 glops, que a protegem instintivamente. Esses glops, assim como os gerados pela Meiose Glópica, não rendem pontos de experiência.</p>",
@@ -1043,7 +1044,7 @@
     {
       "name": "Meiose Glópica",
       "type": "poder",
-      "img": "systems/tormenta20/icons/ameacas/glop.png",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Quando ameaçada, a mamãe pode gerar outros glops filhinhos para protegê-la. No início de cada turno da mamãe, role um dado. Em um resultado par, um glop surge num espaço adjacente a ela. Ele age normalmente, no turno da mamãe, a partir da próxima rodada.<br><b>Automação:</b> em combate, o módulo rola o dado no início do turno dela e, no par, põe um glop ao lado e no combate (usa o ator \"Glop\" do mundo ou o do Giria T20).</p>",

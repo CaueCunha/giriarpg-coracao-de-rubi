@@ -726,9 +726,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "8c7158b3",
+      "assinatura": "9233ac02",
       "assinaturas": [
-        "8c7158b3"
+        "8c7158b3",
+        "9233ac02"
       ]
     }
   },
@@ -960,7 +961,7 @@
     {
       "name": "Aura de Frio",
       "type": "poder",
-      "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">No início de cada turno do stagh, todas as criaturas em alcance curto sofrem 1d6+3 pontos de dano de frio (Fort CD 17 reduz à metade).<br><b>Automação:</b> role o dano no início do turno dele e aplique metade em quem passar.</p>",

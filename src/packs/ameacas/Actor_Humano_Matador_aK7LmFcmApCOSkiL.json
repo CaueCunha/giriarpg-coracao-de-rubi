@@ -720,9 +720,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar1",
       "antigo": "patamar1-ameacas",
-      "assinatura": "906c9ecd",
+      "assinatura": "b5b2aa28",
       "assinaturas": [
-        "906c9ecd"
+        "906c9ecd",
+        "b6251dcf",
+        "b5b2aa28"
       ]
     }
   },
@@ -744,15 +746,37 @@
   },
   "items": [
     {
+      "_id": "RwGvjJo4WJjvZxT2",
       "name": "Espada longa",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 148
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "LirOBCaOzAEWQpFk"
+          },
+          "pack": "equipamentos",
+          "versao": "61abc4ca"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.LirOBCaOzAEWQpFk]{Espada longa}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.LirOBCaOzAEWQpFk]{Espada longa}</p>",
+          "value": "<p style=\"text-align:justify\">Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 148.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.LirOBCaOzAEWQpFk]{Espada longa}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — O Segredo das Minas",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 148",
         "rolls": [
           {
             "name": "Ataque",
@@ -800,10 +824,10 @@
         ],
         "criticoM": 19,
         "criticoX": 2,
-        "alcance": "",
+        "alcance": "-",
         "proposito": "corpo-a-corpo",
         "proficiencia": "marcial",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -815,24 +839,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 2,
         "qtd": 1,
-        "preco": 0,
+        "preco": 15,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -860,13 +884,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "RwGvjJo4WJjvZxT2",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -878,19 +895,40 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!aK7LmFcmApCOSkiL.RwGvjJo4WJjvZxT2"
     },
     {
+      "_id": "Sk4AN92ygExJUSm7",
       "name": "Arco longo",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/arco-longo.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 146
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "B1hiWU8eEI1NHwcv"
+          },
+          "pack": "equipamentos",
+          "versao": "bdb132b4"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.B1hiWU8eEI1NHwcv]{Arco longo}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.B1hiWU8eEI1NHwcv]{Arco longo}</p>",
+          "value": "<p style=\"text-align:justify\">Este arco reforçado tem a altura de uma pessoa. Ao contrário da versão curta, é primariamente uma arma de guerra. Por ter uma puxada pesada, permite que você aplique sua Força às rolagens de dano (ao contrário de outras armas de disparo). Porém, um arco longo não pode ser usado se você estiver montado.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 146.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.B1hiWU8eEI1NHwcv]{Arco longo}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — O Segredo das Minas",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 146",
         "rolls": [
           {
             "name": "Ataque",
@@ -941,7 +979,7 @@
         "alcance": "medium",
         "proposito": "disparo",
         "proficiencia": "marcial",
-        "empunhadura": "leve",
+        "empunhadura": "duas",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -953,27 +991,27 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 2,
+        "peso": 1.5,
         "qtd": 1,
-        "preco": 0,
+        "preco": 100,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
-          "type": ""
+          "type": "ammo"
         },
         "upgrades": {
           "itemType": [],
@@ -998,13 +1036,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "Sk4AN92ygExJUSm7",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1016,7 +1047,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!aK7LmFcmApCOSkiL.Sk4AN92ygExJUSm7"
     },
     {

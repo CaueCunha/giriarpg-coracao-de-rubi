@@ -720,9 +720,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "c50c2f5f",
+      "assinatura": "3dfe6816",
       "assinaturas": [
-        "c50c2f5f"
+        "c50c2f5f",
+        "988484c4",
+        "3dfe6816"
       ]
     }
   },
@@ -744,15 +746,37 @@
   },
   "items": [
     {
+      "_id": "UHcBh5yTdqrDAXWk",
       "name": "Florete",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/florete.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 148
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "r3tlhprPUh8qHesx"
+          },
+          "pack": "equipamentos",
+          "versao": "3c1e24db"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.r3tlhprPUh8qHesx]{Florete}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.r3tlhprPUh8qHesx]{Florete}</p>",
+          "value": "<p style=\"text-align:justify\">A lâmina leve e fina desta espada torna a arma muito precisa. O florete é uma arma ágil.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 148.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.r3tlhprPUh8qHesx]{Florete}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 148",
         "rolls": [
           {
             "name": "Ataque",
@@ -800,10 +824,10 @@
         ],
         "criticoM": 18,
         "criticoX": 2,
-        "alcance": "",
+        "alcance": "-",
         "proposito": "corpo-a-corpo",
         "proficiencia": "marcial",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -815,24 +839,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 1,
         "qtd": 1,
-        "preco": 0,
+        "preco": 20,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -860,13 +884,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "UHcBh5yTdqrDAXWk",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -878,7 +895,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!YZCHunrt6P1zENrC.UHcBh5yTdqrDAXWk"
     },
     {
@@ -1293,24 +1309,118 @@
       "_key": "!actors.items!YZCHunrt6P1zENrC.FtxBNptNFjHd3ZBA"
     },
     {
+      "_id": "mxzucu0ABRZg7LUV",
       "name": "Pernas do Mar",
       "type": "poder",
-      "img": "icons/svg/wingfoot.svg",
+      "img": "systems/tormenta20/icons/classes/bucaneiro.webp",
+      "effects": [
+        {
+          "origin": null,
+          "tint": "#ffffff",
+          "flags": {
+            "tormenta20": {}
+          },
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "disabled": false,
+          "_id": "jbDR1BMVlpmGuSyH",
+          "transfer": true,
+          "name": "Pernas do Mar",
+          "img": "systems/tormenta20/icons/classes/bucaneiro.webp",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.acro.bonus",
+                "value": "2",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.atle.bonus",
+                "value": "2",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "disposition": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!YZCHunrt6P1zENrC.mxzucu0ABRZg7LUV.jbDR1BMVlpmGuSyH",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 48
+          },
+          "automacao": {
+            "nivel": "passivo",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "QUqBvHLdSXPrVWQ0"
+          },
+          "pack": "poderes",
+          "versao": "41d6bfce"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Quando está se equilibrando ou escalando, Alurra não fica desprevenido e seu deslocamento não é reduzido à metade.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.QUqBvHLdSXPrVWQ0]{Pernas do Mar}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.QUqBvHLdSXPrVWQ0]{Pernas do Mar}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Quando está se equilibrando ou escalando, Alurra não fica desprevenido e seu deslocamento não é reduzido à metade.</p></div><hr><p style=\"text-align:justify\">Você recebe +2 em Acrobacia e Atletismo. Além disso, quando está se equilibrando ou escalando, você não fica desprevenido e seu deslocamento não é reduzido à metade.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 48.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.QUqBvHLdSXPrVWQ0]{Pernas do Mar}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
-        "tipo": "ability",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 48",
+        "tipo": "classe",
         "ativacao": {
-          "execucao": "passive",
+          "execucao": "",
           "custo": 0,
           "condicao": "",
           "qtd": "",
           "special": ""
         },
-        "alcance": "",
+        "alcance": "none",
         "area": "",
         "duracao": {
           "value": 0,
@@ -1319,7 +1429,7 @@
         },
         "resistencia": {
           "pericia": "",
-          "atributo": "",
+          "atributo": "sab",
           "bonus": 0,
           "txt": ""
         },
@@ -1332,18 +1442,11 @@
         "chatGif": "",
         "range": {
           "units": "",
-          "value": 0
+          "value": null
         },
         "efeito": "",
-        "subtipo": ""
+        "subtipo": "Bucaneiro"
       },
-      "_id": "mxzucu0ABRZg7LUV",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1355,28 +1458,51 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!YZCHunrt6P1zENrC.mxzucu0ABRZg7LUV"
     },
     {
+      "_id": "6U3zlAjhEgot3PE2",
       "name": "Evasão",
       "type": "poder",
-      "img": "icons/svg/wingfoot.svg",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 47
+          },
+          "automacao": {
+            "nivel": "script",
+            "notas": "Botão de resistência do cartão: passou em Reflexos para metade, o próximo dano sai zerado (scripts/reducao-dano.mjs).",
+            "script": "reducao-dano"
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "1aHAxGnkuTaaBJDx",
+            "revisado": true
+          },
+          "pack": "poderes",
+          "versao": "da92831f"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Quando sofre um efeito que permite Reflexos para reduzir o dano à metade, não sofre dano se passar.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.HGh7ECxVmjfrdd8u]{Evasão (Ladino)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.1aHAxGnkuTaaBJDx]{Evasão (Bucaneiro)}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Quando sofre um efeito que permite Reflexos para reduzir o dano à metade, não sofre dano se passar.</p></div><hr><p style=\"text-align:justify\">A partir do 2º nível, quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano algum se passar. Você ainda sofre dano normal se falhar no teste de Reflexos. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou na condição imóvel.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 47.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.1aHAxGnkuTaaBJDx]{Evasão (Bucaneiro)}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 47",
         "tipo": "ability",
         "ativacao": {
-          "execucao": "passive",
+          "execucao": "",
           "custo": 0,
           "condicao": "",
           "qtd": "",
           "special": ""
         },
-        "alcance": "",
+        "alcance": "none",
         "area": "",
         "duracao": {
           "value": 0,
@@ -1384,10 +1510,10 @@
           "special": ""
         },
         "resistencia": {
-          "pericia": "",
-          "atributo": "",
+          "pericia": "refl",
+          "atributo": "sab",
           "bonus": 0,
-          "txt": ""
+          "txt": "Reflexos"
         },
         "rolls": [],
         "origin": "",
@@ -1398,18 +1524,11 @@
         "chatGif": "",
         "range": {
           "units": "",
-          "value": 0
+          "value": null
         },
         "efeito": "",
-        "subtipo": ""
+        "subtipo": "Bucaneiro"
       },
-      "_id": "6U3zlAjhEgot3PE2",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1421,7 +1540,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!YZCHunrt6P1zENrC.6U3zlAjhEgot3PE2"
     }
   ],

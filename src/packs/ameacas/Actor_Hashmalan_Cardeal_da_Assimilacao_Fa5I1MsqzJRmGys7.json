@@ -722,9 +722,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar4",
       "antigo": "patamar4-ameacas",
-      "assinatura": "5083ca9c",
+      "assinatura": "10aaab34",
       "assinaturas": [
-        "5083ca9c"
+        "5083ca9c",
+        "10aaab34"
       ]
     }
   },
@@ -895,7 +896,7 @@
     {
       "name": "Insanidade da Tormenta",
       "type": "poder",
-      "img": "icons/svg/eye.svg",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Criaturas que comecem o turno em alcance curto ou que vejam a criatura pela primeira vez na cena perdem 3d12 PM (Vontade CD 49 evita).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.8nFwKzbB32HSlNC5]{Insanidade da Tormenta}</p>",

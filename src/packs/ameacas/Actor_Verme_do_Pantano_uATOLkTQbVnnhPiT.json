@@ -722,9 +722,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "91673d69",
+      "assinatura": "82b4791e",
       "assinaturas": [
-        "91673d69"
+        "91673d69",
+        "82b4791e"
       ]
     }
   },
@@ -886,7 +887,7 @@
     {
       "name": "Agarrar Aprimorado",
       "type": "poder",
-      "img": "icons/svg/net.svg",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Quando acerta a mordida, pode fazer a manobra agarrar como ação livre (teste +28).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.uor3YTotDJ33vJYN]{Agarrar Aprimorado}</p>",

@@ -723,9 +723,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "a5b319be",
+      "assinatura": "03b27b29",
       "assinaturas": [
-        "a5b319be"
+        "a5b319be",
+        "03b27b29"
       ]
     }
   },
@@ -1023,16 +1024,105 @@
       "_key": "!actors.items!7OsK9sLENZ3WpEL4.72EDESDcsQU1kxl4"
     },
     {
+      "_id": "Al4uMdvlB9RG6zDf",
       "name": "Magia Acelerada",
       "type": "poder",
-      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "img": "systems/tormenta20/icons/poderes/magia.webp",
+      "effects": [
+        {
+          "_id": "fPqECUOrKeE0zwX0",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": true,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "name": "Magia Acelerada",
+          "img": "icons/svg/aura.svg",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "execucao",
+                "value": "livre",
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 4,
+              "names": [],
+              "types": [
+                "spell"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "disposition": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!7OsK9sLENZ3WpEL4.Al4uMdvlB9RG6zDf.fPqECUOrKeE0zwX0",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 131
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "IEJy49pSweeiokI8"
+          },
+          "pack": "poderes",
+          "versao": "0d227435"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Uma vez por rodada, quando lança uma magia com execução de ação completa ou menor, Bhalorg pode gastar 4 PM para mudar a execução para livre.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.IEJy49pSweeiokI8]{Magia Acelerada}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.IEJy49pSweeiokI8]{Magia Acelerada}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Uma vez por rodada, quando lança uma magia com execução de ação completa ou menor, Bhalorg pode gastar 4 PM para mudar a execução para livre.</p></div><hr><p style=\"text-align:justify\">Muda a execução da magia para ação livre. Você só pode aplicar este aprimoramento em magias com execução de movimento, padrão ou completa e só pode lançar uma magia como ação livre por rodada. Custo: +4 PM. Pré-requisito: lançar magias de 2º círculo.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 131.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.IEJy49pSweeiokI8]{Magia Acelerada}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
-        "tipo": "ability",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 131",
+        "tipo": "geral",
         "ativacao": {
           "execucao": "free",
           "custo": 4,
@@ -1040,7 +1130,7 @@
           "qtd": "",
           "special": ""
         },
-        "alcance": "",
+        "alcance": "none",
         "area": "",
         "duracao": {
           "value": 0,
@@ -1049,7 +1139,7 @@
         },
         "resistencia": {
           "pericia": "",
-          "atributo": "",
+          "atributo": "sab",
           "bonus": 0,
           "txt": ""
         },
@@ -1062,18 +1152,11 @@
         "chatGif": "",
         "range": {
           "units": "",
-          "value": 0
+          "value": null
         },
         "efeito": "",
-        "subtipo": ""
+        "subtipo": "Magia"
       },
-      "_id": "Al4uMdvlB9RG6zDf",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1085,28 +1168,106 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!7OsK9sLENZ3WpEL4.Al4uMdvlB9RG6zDf"
     },
     {
+      "_id": "8A6j0SrTfJdZLP4C",
       "name": "Trespassar",
       "type": "poder",
-      "img": "systems/tormenta20/icons/poderes/ameacas/dilacerar.webp",
+      "img": "systems/tormenta20/icons/poderes/combate.webp",
+      "effects": [
+        {
+          "name": "Trespassar (1 PM)",
+          "img": "icons/svg/upgrade.svg",
+          "type": "base",
+          "transfer": true,
+          "disabled": true,
+          "tint": "#ffffff",
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": null,
+          "description": "<p>Derrubou o alvo: ataque outra criatura no alcance.</p>",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "flags": {},
+          "system": {
+            "changes": [],
+            "targets": [],
+            "status": null,
+            "onuse": true,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 1,
+              "names": [],
+              "types": [
+                "attack"
+              ]
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0
+            }
+          },
+          "_id": "ofg0Y6sJuVpMSF6v",
+          "_key": "!actors.items.effects!7OsK9sLENZ3WpEL4.8A6j0SrTfJdZLP4C.ofg0Y6sJuVpMSF6v",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 129
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "XJq0YiMjgtbCNDzk",
+            "revisado": true
+          },
+          "pack": "poderes",
+          "versao": "baa4c654"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Uma vez por rodada, quando faz um ataque corpo a corpo e reduz os PV do alvo a 0 ou menos, pode fazer um ataque adicional contra outra criatura ao alcance.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.XJq0YiMjgtbCNDzk]{Trespassar}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XJq0YiMjgtbCNDzk]{Trespassar}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Uma vez por rodada, quando faz um ataque corpo a corpo e reduz os PV do alvo a 0 ou menos, pode fazer um ataque adicional contra outra criatura ao alcance.</p></div><hr><p style=\"text-align:justify\">Quando você faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance. Pré-requisito: Ataque Poderoso.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 129.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.XJq0YiMjgtbCNDzk]{Trespassar}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
-        "tipo": "ability",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 129",
+        "tipo": "geral",
         "ativacao": {
-          "execucao": "free",
-          "custo": 0,
+          "execucao": "",
+          "custo": 1,
           "condicao": "",
           "qtd": "",
           "special": ""
         },
-        "alcance": "",
+        "alcance": "none",
         "area": "",
         "duracao": {
           "value": 0,
@@ -1115,7 +1276,7 @@
         },
         "resistencia": {
           "pericia": "",
-          "atributo": "",
+          "atributo": "sab",
           "bonus": 0,
           "txt": ""
         },
@@ -1128,18 +1289,11 @@
         "chatGif": "",
         "range": {
           "units": "",
-          "value": 0
+          "value": null
         },
         "efeito": "",
-        "subtipo": ""
+        "subtipo": "Combate"
       },
-      "_id": "8A6j0SrTfJdZLP4C",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1151,100 +1305,12 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!7OsK9sLENZ3WpEL4.8A6j0SrTfJdZLP4C"
     },
     {
       "name": "Curar Ferimentos",
       "type": "magia",
       "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
-      "sort": 0,
-      "flags": {},
-      "system": {
-        "description": {
-          "value": "<p>Você canaliza luz que recupera 2d8+2 pontos de vida na criatura tocada. Curar Ferimentos anula Infligir Ferimentos. Truque: muda o alvo para 1 morto-vivo. Em vez do normal, causa 1d8 pontos de dano de luz (Vontade reduz à metade).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos}</p>",
-          "unidentified": ""
-        },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 189",
-        "ativacao": {
-          "execucao": "action",
-          "custo": 1,
-          "qtd": "",
-          "condicao": "",
-          "special": ""
-        },
-        "duracao": {
-          "value": 0,
-          "units": "inst",
-          "special": ""
-        },
-        "range": {
-          "value": null,
-          "units": ""
-        },
-        "consume": {
-          "type": "",
-          "target": "",
-          "amount": null,
-          "mpMultiplier": false
-        },
-        "efeito": "",
-        "alcance": "touch",
-        "alvo": "1 criatura",
-        "area": "",
-        "resistencia": {
-          "pericia": "",
-          "atributo": "sab",
-          "bonus": 0,
-          "txt": ""
-        },
-        "rolls": [
-          {
-            "name": "Cura",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "2d8+2",
-                "curapv",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
-        "tipo": "div",
-        "circulo": 1,
-        "preparada": false,
-        "escola": "evo",
-        "chatFlavor": "",
-        "origin": "",
-        "tags": [],
-        "chatGif": "",
-        "rolltags": [],
-        "automationtags": [],
-        "equipado2": {
-          "slot": 0,
-          "type": ""
-        }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm",
-        "duplicateSource": null,
-        "exportSource": null
-      },
-      "_id": "ms6839nzPmJOBxQW",
-      "folder": null,
       "effects": [
         {
           "_id": "3XtwGUMvcv4MG0fH",
@@ -1601,20 +1667,32 @@
           "_key": "!actors.items.effects!7OsK9sLENZ3WpEL4.ms6839nzPmJOBxQW.mg6pAVVKgd8AhgZD"
         }
       ],
-      "_key": "!actors.items!7OsK9sLENZ3WpEL4.ms6839nzPmJOBxQW"
-    },
-    {
-      "name": "Despedaçar",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/despedacar.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 189
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "soVAGPRWQmKxOrPm"
+          },
+          "pack": "magias",
+          "versao": "0699c20b"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta magia emite um som alto e agudo. O alvo sofre 1d8+2 pontos de dano de impacto (ou o dobro disso e ignora RD se for um construto ou objeto mundano) e fica atordoado por uma rodada (apenas uma vez por cena). Um teste de Fortitude reduz o dano à metade e evita o atordoamento. Despedaçar anula Transmutar Objetos.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.I177NeKSwiAn8vz5]{Despedaçar}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p>Você canaliza luz que recupera 2d8+2 pontos de vida na criatura tocada. Curar Ferimentos anula Infligir Ferimentos. Truque: muda o alvo para 1 morto-vivo. Em vez do normal, causa 1d8 pontos de dano de luz (Vontade reduz à metade).</p></div><hr><p>Você canaliza luz que recupera 2d8+2 pontos de vida na criatura tocada. Curar Ferimentos anula Infligir Ferimentos. Truque: muda o alvo para 1 morto-vivo. Em vez do normal, causa 1d8 pontos de dano de luz (Vontade reduz à metade).</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 189.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 190",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 189",
         "ativacao": {
           "execucao": "action",
           "custo": 1,
@@ -1638,24 +1716,24 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "short",
-        "alvo": "1 criatura ou objeto mundano pequeno",
+        "alcance": "touch",
+        "alvo": "1 criatura",
         "area": "",
         "resistencia": {
           "pericia": "",
           "atributo": "sab",
           "bonus": 0,
-          "txt": "Fortitude parcial ou Reflexos anula"
+          "txt": ""
         },
         "rolls": [
           {
-            "name": "Dano",
+            "name": "Cura",
             "key": "dano0",
             "type": "dano",
             "parts": [
               [
-                "1d8+2",
-                "impacto",
+                "2d8+2",
+                "curapv",
                 ""
               ]
             ],
@@ -1665,7 +1743,7 @@
         ],
         "tipo": "div",
         "circulo": 1,
-        "preparada": false,
+        "preparada": true,
         "escola": "evo",
         "chatFlavor": "",
         "origin": "",
@@ -1678,9 +1756,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "ms6839nzPmJOBxQW",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1688,12 +1764,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.I177NeKSwiAn8vz5",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.soVAGPRWQmKxOrPm",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "QYRqWylGj0FYhS8x",
-      "folder": null,
+      "_key": "!actors.items!7OsK9sLENZ3WpEL4.ms6839nzPmJOBxQW"
+    },
+    {
+      "name": "Despedaçar",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/despedacar.webp",
       "effects": [
         {
           "_id": "Qc6hwah7METrABIk",
@@ -2190,23 +2270,36 @@
           "_key": "!actors.items.effects!7OsK9sLENZ3WpEL4.QYRqWylGj0FYhS8x.Agc9NttEitT9Lky1"
         }
       ],
-      "_key": "!actors.items!7OsK9sLENZ3WpEL4.QYRqWylGj0FYhS8x"
-    },
-    {
-      "name": "Dissipar Magia",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 190
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "I177NeKSwiAn8vz5",
+            "revisado": true
+          },
+          "pack": "magias",
+          "versao": "881cd61b"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Você dissipa outras magias que estejam ativas, como se sua duração tivesse acabado. Note que efeitos de magias instantâneas não podem ser dissipados (não se pode dissipar uma Bola de Fogo ou Relâmpago depois que já causaram dano...). Se lançar essa magia em uma criatura ou área, faça um teste de Misticismo; você dissipa as magias com CD igual ou menor que o resultado do teste. Se lançada contra um item mágico, o transforma em um item mundano por 1d6 rodadas (Vontade anula).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta magia emite um som alto e agudo. O alvo sofre 1d8+2 pontos de dano de impacto (ou o dobro disso e ignora RD se for um construto ou objeto mundano) e fica atordoado por uma rodada (apenas uma vez por cena). Um teste de Fortitude reduz o dano à metade e evita o atordoamento. Despedaçar anula Transmutar Objetos.</p></div><hr><p style=\"text-align:justify\">Esta magia emite um som alto e agudo. O alvo sofre 1d8+2 pontos de dano de impacto (ou o dobro disso e ignora RD se for um construto ou objeto mundano) e fica atordoado por uma rodada (apenas uma vez por cena). Um teste de Fortitude reduz o dano à metade e evita o atordoamento. Despedaçar anula Transmutar Objetos.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 190.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.I177NeKSwiAn8vz5]{Despedaçar}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 191",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 190",
         "ativacao": {
           "execucao": "action",
-          "custo": 3,
+          "custo": 1,
           "qtd": "",
           "condicao": "",
           "special": ""
@@ -2227,20 +2320,35 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "medium",
-        "alvo": "1 criatura ou 1 objeto mágico",
-        "area": "ou esfera com 3m de raio",
+        "alcance": "short",
+        "alvo": "1 criatura ou objeto mundano pequeno",
+        "area": "",
         "resistencia": {
-          "pericia": "",
+          "pericia": "fort",
           "atributo": "sab",
           "bonus": 0,
-          "txt": ""
+          "txt": "Fortitude parcial ou Reflexos anula"
         },
-        "rolls": [],
-        "tipo": "uni",
-        "circulo": 2,
-        "preparada": false,
-        "escola": "abj",
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "1d8+2",
+                "impacto",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "tipo": "div",
+        "circulo": 1,
+        "preparada": true,
+        "escola": "evo",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -2252,9 +2360,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "QYRqWylGj0FYhS8x",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2262,12 +2368,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.rfTGYwrXLjcIAIP5",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.I177NeKSwiAn8vz5",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "zEQrigUeO4zPuo2q",
-      "folder": null,
+      "_key": "!actors.items!7OsK9sLENZ3WpEL4.QYRqWylGj0FYhS8x"
+    },
+    {
+      "name": "Dissipar Magia",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
       "effects": [
         {
           "_id": "VdHvw7wVzfnl5nEs",
@@ -2341,22 +2451,34 @@
           "_key": "!actors.items.effects!7OsK9sLENZ3WpEL4.zEQrigUeO4zPuo2q.VdHvw7wVzfnl5nEs"
         }
       ],
-      "_key": "!actors.items!7OsK9sLENZ3WpEL4.zEQrigUeO4zPuo2q"
-    },
-    {
-      "name": "Tempestade Divina",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/tempestade-divina.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 191
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "rfTGYwrXLjcIAIP5"
+          },
+          "pack": "magias",
+          "versao": "7d1c882e"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta magia só pode ser usada em ambientes abertos. A área fica sujeita a um vendaval — ataques à distância sofrem penalidade de –5, chamas são apagadas e névoas são dissipadas. Você também pode gerar chuva (–5 em testes de Percepção), neve (como chuva, e a área se torna terreno difícil) ou granizo (como chuva, mais 1 ponto de dano de impacto por rodada, no início de seus turnos).</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.veCfW87hsFWhz59h]{Tempestade Divina}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você dissipa outras magias que estejam ativas, como se sua duração tivesse acabado. Note que efeitos de magias instantâneas não podem ser dissipados (não se pode dissipar uma Bola de Fogo ou Relâmpago depois que já causaram dano...). Se lançar essa magia em uma criatura ou área, faça um teste de Misticismo; você dissipa as magias com CD igual ou menor que o resultado do teste. Se lançada contra um item mágico, o transforma em um item mundano por 1d6 rodadas (Vontade anula).</p></div><hr><p style=\"text-align:justify\">Você dissipa outras magias que estejam ativas, como se sua duração tivesse acabado. Note que efeitos de magias instantâneas não podem ser dissipados (não se pode dissipar uma Bola de Fogo ou Relâmpago depois que já causaram dano...). Se lançar essa magia em uma criatura ou área, faça um teste de Misticismo; você dissipa as magias com CD igual ou menor que o resultado do teste. Se lançada contra um item mágico, o transforma em um item mundano por 1d6 rodadas (Vontade anula).</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 191.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 208",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 191",
         "ativacao": {
-          "execucao": "full",
+          "execucao": "action",
           "custo": 3,
           "qtd": "",
           "condicao": "",
@@ -2364,7 +2486,7 @@
         },
         "duracao": {
           "value": 0,
-          "units": "sust",
+          "units": "inst",
           "special": ""
         },
         "range": {
@@ -2378,35 +2500,20 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "long",
-        "alvo": "",
-        "area": "cilindro com 15m de raio e 15m de altura",
+        "alcance": "medium",
+        "alvo": "1 criatura ou 1 objeto mágico",
+        "area": "ou esfera com 3m de raio",
         "resistencia": {
           "pericia": "",
           "atributo": "sab",
           "bonus": 0,
           "txt": ""
         },
-        "rolls": [
-          {
-            "name": "Dano",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "",
-                "",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
-        "tipo": "div",
+        "rolls": [],
+        "tipo": "uni",
         "circulo": 2,
-        "preparada": false,
-        "escola": "evo",
+        "preparada": true,
+        "escola": "abj",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -2418,9 +2525,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "zEQrigUeO4zPuo2q",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -2428,12 +2533,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.veCfW87hsFWhz59h",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.rfTGYwrXLjcIAIP5",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "QL9OOgjndO8F6B6g",
-      "folder": null,
+      "_key": "!actors.items!7OsK9sLENZ3WpEL4.zEQrigUeO4zPuo2q"
+    },
+    {
+      "name": "Tempestade Divina",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/tempestade-divina.webp",
       "effects": [
         {
           "_id": "Eh1Q3A1YMHDDh8D0",
@@ -3007,30 +3116,42 @@
           "_key": "!actors.items.effects!7OsK9sLENZ3WpEL4.QL9OOgjndO8F6B6g.ijM2FBbOeyEosZdt"
         }
       ],
-      "_key": "!actors.items!7OsK9sLENZ3WpEL4.QL9OOgjndO8F6B6g"
-    },
-    {
-      "name": "Erupção Glacial",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/erupcao-glacial.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 208
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "veCfW87hsFWhz59h"
+          },
+          "pack": "magias",
+          "versao": "a2480376"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Estacas de gelo irrompem do chão. Criaturas na área sofrem 4d6 de dano de corte, 4d6 de dano de frio e ficam caídas. Passar no teste de Reflexos evita o dano de corte e a queda. As estacas duram pela cena, o que torna a área afetada terreno difícil, e concedem cobertura leve para criaturas dentro da área ou atrás dela. As estacas são destruídas caso sofram qualquer quantidade de dano por fogo mágico.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.FYoig9D5AWpvNOHu]{Erupção Glacial}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta magia só pode ser usada em ambientes abertos. A área fica sujeita a um vendaval — ataques à distância sofrem penalidade de –5, chamas são apagadas e névoas são dissipadas. Você também pode gerar chuva (–5 em testes de Percepção), neve (como chuva, e a área se torna terreno difícil) ou granizo (como chuva, mais 1 ponto de dano de impacto por rodada, no início de seus turnos).</p></div><hr><p style=\"text-align:justify\">Esta magia só pode ser usada em ambientes abertos. A área fica sujeita a um vendaval — ataques à distância sofrem penalidade de –5, chamas são apagadas e névoas são dissipadas. Você também pode gerar chuva (–5 em testes de Percepção), neve (como chuva, e a área se torna terreno difícil) ou granizo (como chuva, mais 1 ponto de dano de impacto por rodada, no início de seus turnos).</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 208.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.veCfW87hsFWhz59h]{Tempestade Divina}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 192",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 208",
         "ativacao": {
-          "execucao": "action",
-          "custo": 6,
+          "execucao": "full",
+          "custo": 3,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
           "value": 0,
-          "units": "inst",
+          "units": "sust",
           "special": ""
         },
         "range": {
@@ -3044,14 +3165,14 @@
           "mpMultiplier": false
         },
         "efeito": "",
-        "alcance": "medium",
+        "alcance": "long",
         "alvo": "",
-        "area": "quadrado de 6m de lado",
+        "area": "cilindro com 15m de raio e 15m de altura",
         "resistencia": {
           "pericia": "",
-          "atributo": "int",
+          "atributo": "sab",
           "bonus": 0,
-          "txt": "Relfexos parcial"
+          "txt": ""
         },
         "rolls": [
           {
@@ -3060,13 +3181,8 @@
             "type": "dano",
             "parts": [
               [
-                "4d6",
-                "corte",
-                ""
-              ],
-              [
-                "4d6",
-                "frio",
+                "",
+                "",
                 ""
               ]
             ],
@@ -3074,9 +3190,9 @@
             "adaptavel": ""
           }
         ],
-        "tipo": "arc",
-        "circulo": 3,
-        "preparada": false,
+        "tipo": "div",
+        "circulo": 2,
+        "preparada": true,
         "escola": "evo",
         "chatFlavor": "",
         "origin": "",
@@ -3089,9 +3205,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "QL9OOgjndO8F6B6g",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -3099,12 +3213,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.FYoig9D5AWpvNOHu",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.veCfW87hsFWhz59h",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "oMSD5C9gCtu1AEGW",
-      "folder": null,
+      "_key": "!actors.items!7OsK9sLENZ3WpEL4.QL9OOgjndO8F6B6g"
+    },
+    {
+      "name": "Erupção Glacial",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/erupcao-glacial.webp",
       "effects": [
         {
           "_id": "iy4jO2ic61n5u4Ur",
@@ -3270,30 +3388,42 @@
           "_key": "!actors.items.effects!7OsK9sLENZ3WpEL4.oMSD5C9gCtu1AEGW.eIIdbGWVnGrr2NxQ"
         }
       ],
-      "_key": "!actors.items!7OsK9sLENZ3WpEL4.oMSD5C9gCtu1AEGW"
-    },
-    {
-      "name": "Conjurar Elemental",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/conjurar-elemental.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 192
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "FYoig9D5AWpvNOHu"
+          },
+          "pack": "magias",
+          "versao": "87bf6c18"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Esta magia transforma uma porção de um elemento inerte em uma criatura elemental Grande do tipo do elemento alvo. Por exemplo, lançar esta magia numa fogueira ou tocha cria um elemental do fogo. Você pode criar elementais do ar, água, fogo e terra com essa magia. O elemental obedece a todos os seus comandos e pode funcionar como um parceiro do tipo destruidor (cuja habilidade custa apenas 2 PM para ser usada) e mais um tipo entre os indicados na lista abaixo, ambos mestres. O elemental auxilia apenas você e não conta em seu limite de parceiros.</p><p style=\"text-align:justify\">Ar: assassino, perseguidor ou vigilante. Dano de eletricidade.</p><p style=\"text-align:justify\">Água: ajudante, guardião ou médico. Dano de frio.</p><p style=\"text-align:justify\">Fogo: atirador, combatente ou fortão. Dano de fogo.</p><p style=\"text-align:justify\">Terra: combatente, guardião ou montaria. Dano de impacto.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.JctewV5T9iIwOD8b]{Conjurar Elemental}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Estacas de gelo irrompem do chão. Criaturas na área sofrem 4d6 de dano de corte, 4d6 de dano de frio e ficam caídas. Passar no teste de Reflexos evita o dano de corte e a queda. As estacas duram pela cena, o que torna a área afetada terreno difícil, e concedem cobertura leve para criaturas dentro da área ou atrás dela. As estacas são destruídas caso sofram qualquer quantidade de dano por fogo mágico.</p></div><hr><p style=\"text-align:justify\">Estacas de gelo irrompem do chão. Criaturas na área sofrem 4d6 de dano de corte, 4d6 de dano de frio e ficam caídas. Passar no teste de Reflexos evita o dano de corte e a queda. As estacas duram pela cena, o que torna a área afetada terreno difícil, e concedem cobertura leve para criaturas dentro da área ou atrás dela. As estacas são destruídas caso sofram qualquer quantidade de dano por fogo mágico.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 192.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.FYoig9D5AWpvNOHu]{Erupção Glacial}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 195",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 192",
         "ativacao": {
-          "execucao": "full",
-          "custo": 10,
+          "execucao": "action",
+          "custo": 6,
           "qtd": "",
           "condicao": "",
           "special": ""
         },
         "duracao": {
           "value": 0,
-          "units": "sust",
+          "units": "inst",
           "special": ""
         },
         "range": {
@@ -3306,21 +3436,41 @@
           "amount": null,
           "mpMultiplier": false
         },
-        "efeito": "parceiro elemental",
+        "efeito": "",
         "alcance": "medium",
         "alvo": "",
-        "area": "",
+        "area": "quadrado de 6m de lado",
         "resistencia": {
           "pericia": "",
           "atributo": "int",
           "bonus": 0,
-          "txt": ""
+          "txt": "Relfexos parcial"
         },
-        "rolls": [],
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "4d6",
+                "corte",
+                ""
+              ],
+              [
+                "4d6",
+                "frio",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
         "tipo": "arc",
-        "circulo": 4,
-        "preparada": false,
-        "escola": "con",
+        "circulo": 3,
+        "preparada": true,
+        "escola": "evo",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -3332,9 +3482,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "oMSD5C9gCtu1AEGW",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -3342,12 +3490,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.JctewV5T9iIwOD8b",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.FYoig9D5AWpvNOHu",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "yqw6QwvE1UnySnBk",
-      "folder": null,
+      "_key": "!actors.items!7OsK9sLENZ3WpEL4.oMSD5C9gCtu1AEGW"
+    },
+    {
+      "name": "Conjurar Elemental",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/conjurar-elemental.webp",
       "effects": [
         {
           "_id": "ZffMLMzFyGZxZRvs",
@@ -4358,22 +4510,34 @@
           "_key": "!actors.items.effects!7OsK9sLENZ3WpEL4.yqw6QwvE1UnySnBk.6GUgGPUfc28AqsLd"
         }
       ],
-      "_key": "!actors.items!7OsK9sLENZ3WpEL4.yqw6QwvE1UnySnBk"
-    },
-    {
-      "name": "Raio Polar",
-      "type": "magia",
-      "img": "systems/tormenta20/icons/magias/raio-polar.webp",
-      "sort": 0,
-      "flags": {},
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 195
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "JctewV5T9iIwOD8b"
+          },
+          "pack": "magias",
+          "versao": "c1e3829e"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Você dispara um raio azul esbranquiçado de gelo e ar congelante. O alvo sofre 10d8 pontos de dano de frio e fica preso em um bloco de gelo (paralisado). Se passar no teste de resistência, sofre metade do dano e, em vez de paralisado, fica lento por uma rodada.</p><p style=\"text-align:justify\">É possível quebrar o gelo para libertar uma criatura presa: o bloco tem 20 PV, RD 10 e é vulnerável a fogo. Uma criatura presa pode gastar uma ação completa para fazer um teste de Atletismo e se libertar do gelo; cada vez que passar no teste causa 10 pontos de dano ao bloco, ignorando a RD.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.KQTBh5aVCqDUSpvr]{Raio Polar}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Esta magia transforma uma porção de um elemento inerte em uma criatura elemental Grande do tipo do elemento alvo. Por exemplo, lançar esta magia numa fogueira ou tocha cria um elemental do fogo. Você pode criar elementais do ar, água, fogo e terra com essa magia. O elemental obedece a todos os seus comandos e pode funcionar como um parceiro do tipo destruidor (cuja habilidade custa apenas 2 PM para ser usada) e mais um tipo entre os indicados na lista abaixo, ambos mestres. O elemental auxilia apenas você e não conta em seu limite de parceiros.</p><p style=\"text-align:justify\">Ar: assassino, perseguidor ou vigilante. Dano de eletricidade.</p><p style=\"text-align:justify\">Água: ajudante, guardião ou médico. Dano de frio.</p><p style=\"text-align:justify\">Fogo: atirador, combatente ou fortão. Dano de fogo.</p><p style=\"text-align:justify\">Terra: combatente, guardião ou montaria. Dano de impacto.</p></div><hr><p style=\"text-align:justify\">Esta magia transforma uma porção de um elemento inerte em uma criatura elemental Grande do tipo do elemento alvo. Por exemplo, lançar esta magia numa fogueira ou tocha cria um elemental do fogo. Você pode criar elementais do ar, água, fogo e terra com essa magia. O elemental obedece a todos os seus comandos e pode funcionar como um parceiro do tipo destruidor (cuja habilidade custa apenas 2 PM para ser usada) e mais um tipo entre os indicados na lista abaixo, ambos mestres. O elemental auxilia apenas você e não conta em seu limite de parceiros.</p><p style=\"text-align:justify\">Ar: assassino, perseguidor ou vigilante. Dano de eletricidade.</p><p style=\"text-align:justify\">Água: ajudante, guardião ou médico. Dano de frio.</p><p style=\"text-align:justify\">Fogo: atirador, combatente ou fortão. Dano de fogo.</p><p style=\"text-align:justify\">Terra: combatente, guardião ou montaria. Dano de impacto.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 195.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.JctewV5T9iIwOD8b]{Conjurar Elemental}</p>",
           "unidentified": ""
         },
-        "source": "Tormenta20 — Edição Jogo do Ano, p. 203",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 195",
         "ativacao": {
-          "execucao": "action",
+          "execucao": "full",
           "custo": 10,
           "qtd": "",
           "condicao": "",
@@ -4381,7 +4545,7 @@
         },
         "duracao": {
           "value": 0,
-          "units": "inst",
+          "units": "sust",
           "special": ""
         },
         "range": {
@@ -4394,36 +4558,21 @@
           "amount": null,
           "mpMultiplier": false
         },
-        "efeito": "",
+        "efeito": "parceiro elemental",
         "alcance": "medium",
-        "alvo": "1 criatura",
+        "alvo": "",
         "area": "",
         "resistencia": {
           "pericia": "",
           "atributo": "int",
           "bonus": 0,
-          "txt": "Fortitude parcial"
+          "txt": ""
         },
-        "rolls": [
-          {
-            "name": "Dano",
-            "key": "dano0",
-            "type": "dano",
-            "parts": [
-              [
-                "10d8",
-                "frio",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
+        "rolls": [],
         "tipo": "arc",
         "circulo": 4,
-        "preparada": false,
-        "escola": "evo",
+        "preparada": true,
+        "escola": "con",
         "chatFlavor": "",
         "origin": "",
         "tags": [],
@@ -4435,9 +4584,7 @@
           "type": ""
         }
       },
-      "ownership": {
-        "default": 0
-      },
+      "_id": "yqw6QwvE1UnySnBk",
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -4445,12 +4592,16 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.tormenta20.magias.Item.KQTBh5aVCqDUSpvr",
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.JctewV5T9iIwOD8b",
         "duplicateSource": null,
         "exportSource": null
       },
-      "_id": "o7pyCBk2cIiTRMzk",
-      "folder": null,
+      "_key": "!actors.items!7OsK9sLENZ3WpEL4.yqw6QwvE1UnySnBk"
+    },
+    {
+      "name": "Raio Polar",
+      "type": "magia",
+      "img": "systems/tormenta20/icons/magias/raio-polar.webp",
       "effects": [
         {
           "_id": "CrwNaVUQFY0BSg4H",
@@ -4656,6 +4807,107 @@
           "_key": "!actors.items.effects!7OsK9sLENZ3WpEL4.o7pyCBk2cIiTRMzk.ckXqjoP1IqLcYoly"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 203
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "magias",
+            "id": "KQTBh5aVCqDUSpvr"
+          },
+          "pack": "magias",
+          "versao": "c585cc54"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Você dispara um raio azul esbranquiçado de gelo e ar congelante. O alvo sofre 10d8 pontos de dano de frio e fica preso em um bloco de gelo (paralisado). Se passar no teste de resistência, sofre metade do dano e, em vez de paralisado, fica lento por uma rodada.</p><p style=\"text-align:justify\">É possível quebrar o gelo para libertar uma criatura presa: o bloco tem 20 PV, RD 10 e é vulnerável a fogo. Uma criatura presa pode gastar uma ação completa para fazer um teste de Atletismo e se libertar do gelo; cada vez que passar no teste causa 10 pontos de dano ao bloco, ignorando a RD.</p></div><hr><p style=\"text-align:justify\">Você dispara um raio azul esbranquiçado de gelo e ar congelante. O alvo sofre 10d8 pontos de dano de frio e fica preso em um bloco de gelo (paralisado). Se passar no teste de resistência, sofre metade do dano e, em vez de paralisado, fica lento por uma rodada.</p><p style=\"text-align:justify\">É possível quebrar o gelo para libertar uma criatura presa: o bloco tem 20 PV, RD 10 e é vulnerável a fogo. Uma criatura presa pode gastar uma ação completa para fazer um teste de Atletismo e se libertar do gelo; cada vez que passar no teste causa 10 pontos de dano ao bloco, ignorando a RD.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 203.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.KQTBh5aVCqDUSpvr]{Raio Polar}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 203",
+        "ativacao": {
+          "execucao": "action",
+          "custo": 10,
+          "qtd": "",
+          "condicao": "",
+          "special": ""
+        },
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "range": {
+          "value": null,
+          "units": ""
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "mpMultiplier": false
+        },
+        "efeito": "",
+        "alcance": "medium",
+        "alvo": "1 criatura",
+        "area": "",
+        "resistencia": {
+          "pericia": "fort",
+          "atributo": "int",
+          "bonus": 0,
+          "txt": "Fortitude parcial"
+        },
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "10d8",
+                "frio",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "tipo": "arc",
+        "circulo": 4,
+        "preparada": true,
+        "escola": "evo",
+        "chatFlavor": "",
+        "origin": "",
+        "tags": [],
+        "chatGif": "",
+        "rolltags": [],
+        "automationtags": [],
+        "equipado2": {
+          "slot": 0,
+          "type": ""
+        }
+      },
+      "_id": "o7pyCBk2cIiTRMzk",
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.KQTBh5aVCqDUSpvr",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!7OsK9sLENZ3WpEL4.o7pyCBk2cIiTRMzk"
     }
   ],

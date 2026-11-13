@@ -720,9 +720,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar4",
       "antigo": "patamar4-ameacas",
-      "assinatura": "73e9e94b",
+      "assinatura": "47de1f0b",
       "assinaturas": [
-        "73e9e94b"
+        "73e9e94b",
+        "da6f85d7",
+        "47de1f0b"
       ]
     }
   },
@@ -1619,7 +1621,7 @@
     {
       "name": "Distorção Temporal",
       "type": "poder",
-      "img": "icons/svg/clockwork.svg",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Ezequias realiza uma ação padrão e uma de movimento adicionais a cada turno.</p>",
@@ -1754,7 +1756,7 @@
       "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Para um devoto de Aharadak, desobedecer Ezequias conta como violar suas Obrigações e Restrições.</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.deuses-de-arton.Item.VbgfCpPCdSHGZSRc]{Sumo-Sacerdote (admissão)}</p>",
+          "value": "<p style=\"text-align:justify\">Para um devoto de Aharadak, desobedecer Ezequias conta como violar suas Obrigações e Restrições.</p>",
           "unidentified": ""
         },
         "source": "Coração de Rubi — Horizonte de Sangue",
@@ -1807,7 +1809,7 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.giria-t20.deuses-de-arton.Item.VbgfCpPCdSHGZSRc",
+        "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
       },
@@ -1817,7 +1819,7 @@
     {
       "name": "Coração da Tormenta (dano por rodada)",
       "type": "poder",
-      "img": "icons/svg/eye.svg",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Rolagem dos 10d6 de perda de PV por rodada para quem sofre os efeitos do Coração de Rubi.</p>",

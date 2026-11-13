@@ -720,9 +720,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar3",
       "antigo": "patamar3-ameacas",
-      "assinatura": "476568e9",
+      "assinatura": "03a576fd",
       "assinaturas": [
-        "476568e9"
+        "476568e9",
+        "03a576fd"
       ]
     }
   },
@@ -884,7 +885,7 @@
     {
       "name": "Aura Aterradora",
       "type": "poder",
-      "img": "icons/svg/skull.svg",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Criatura que comece o turno em alcance longo fica abalada até o fim da cena (Von CD 38 evita e fica imune até o fim da cena).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.e31Rv6abHQNaulQA]{Aura Aterradora}</p>",

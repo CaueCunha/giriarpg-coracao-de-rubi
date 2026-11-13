@@ -722,9 +722,10 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "20755472",
+      "assinatura": "fca41f62",
       "assinaturas": [
-        "20755472"
+        "20755472",
+        "fca41f62"
       ]
     }
   },
@@ -748,7 +749,7 @@
     {
       "name": "Enxame",
       "type": "poder",
-      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "img": "icons/svg/upgrade.svg",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">Pode entrar no espaço de um personagem e, no fim do turno, causa 8d8+20 pontos de dano de perfuração automaticamente a quem estiver no seu espaço. Imune a manobras e a efeitos de alvo único que não causam dano; vulnerável a dano de área; sofre metade do dano de ataques com armas. Estar dentro do enxame é condição ruim para lançar magias.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.ameacas.Actor.ZPxFnXhUZ2dbcedC.Item.nz0XHpkunR0VxXVd]{Enxame (Enxame Kobold)}</p>",

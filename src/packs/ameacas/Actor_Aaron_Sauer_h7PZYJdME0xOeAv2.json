@@ -720,9 +720,11 @@
     "giriarpg-coracao-de-rubi": {
       "ato": "patamar2",
       "antigo": "patamar2-ameacas",
-      "assinatura": "350b8b12",
+      "assinatura": "1dc462d1",
       "assinaturas": [
-        "350b8b12"
+        "350b8b12",
+        "88b23029",
+        "1dc462d1"
       ]
     }
   },
@@ -744,140 +746,10 @@
   },
   "items": [
     {
+      "_id": "dTEDZPiQQ8Sgku90",
       "name": "Florete",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/florete.webp",
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">Dois ataques por ação agredir. Maciço, pungente e sanguinário (sangramento).</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.r3tlhprPUh8qHesx]{Florete}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.r3tlhprPUh8qHesx]{Florete}</p>",
-          "unidentified": ""
-        },
-        "source": "Coração de Rubi — Caravana Cartesiana",
-        "rolls": [
-          {
-            "name": "Ataque",
-            "key": "ataque0",
-            "type": "ataque",
-            "parts": [
-              [
-                "1d20",
-                "",
-                ""
-              ],
-              [
-                "luta",
-                "",
-                ""
-              ],
-              [
-                "0",
-                "",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          },
-          {
-            "name": "Dano",
-            "key": "dano1",
-            "type": "dano",
-            "parts": [
-              [
-                "3d6+20",
-                "perfuracao",
-                ""
-              ],
-              [
-                "",
-                "",
-                ""
-              ]
-            ],
-            "versatil": "",
-            "adaptavel": ""
-          }
-        ],
-        "criticoM": 16,
-        "criticoX": 3,
-        "alcance": "",
-        "proposito": "corpo-a-corpo",
-        "proficiencia": "marcial",
-        "empunhadura": "leve",
-        "equipado2": {
-          "type": "hand",
-          "slot": 0
-        },
-        "origin": "",
-        "tags": [],
-        "rolltags": [],
-        "automationtags": [],
-        "chatFlavor": "",
-        "chatGif": "",
-        "carregado": true,
-        "espacos": 0,
-        "peso": 0,
-        "qtd": 1,
-        "preco": 0,
-        "pv": {
-          "value": 0,
-          "max": 0
-        },
-        "rd": 0,
-        "ativacao": {
-          "custo": 0,
-          "condicao": "",
-          "execucao": "passive",
-          "qtd": "",
-          "special": ""
-        },
-        "consume": {
-          "amount": 0,
-          "mpMultiplier": false,
-          "target": "",
-          "type": ""
-        },
-        "upgrades": {
-          "itemType": [],
-          "improvement": [],
-          "material": [],
-          "enchantment": [],
-          "curse": [],
-          "innovation": [],
-          "melhoria1": "",
-          "melhoria2": "",
-          "melhoria3": "",
-          "melhoria4": "",
-          "materialEspecial1": "",
-          "encanto1": "",
-          "encanto2": "",
-          "encanto3": "",
-          "enableAutoUpgrades": true
-        },
-        "ataques": 0,
-        "equipado": 0,
-        "tipoUso": "sim",
-        "propriedades": {},
-        "size": "normal"
-      },
-      "_id": "dTEDZPiQQ8Sgku90",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.r3tlhprPUh8qHesx",
-        "duplicateSource": null,
-        "exportSource": null
-      },
       "effects": [
         {
           "name": "Sangrando",
@@ -954,18 +826,184 @@
           "_key": "!actors.items.effects!h7PZYJdME0xOeAv2.dTEDZPiQQ8Sgku90.nSGWTo9c3Fizv3Ks"
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 148
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "r3tlhprPUh8qHesx"
+          },
+          "pack": "equipamentos",
+          "versao": "3c1e24db"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Dois ataques por ação agredir. Maciço, pungente e sanguinário (sangramento).</p></div><hr><p style=\"text-align:justify\">A lâmina leve e fina desta espada torna a arma muito precisa. O florete é uma arma ágil.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 148.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.r3tlhprPUh8qHesx]{Florete}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 148",
+        "rolls": [
+          {
+            "name": "Ataque",
+            "key": "ataque0",
+            "type": "ataque",
+            "parts": [
+              [
+                "1d20",
+                "",
+                ""
+              ],
+              [
+                "luta",
+                "",
+                ""
+              ],
+              [
+                "0",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          },
+          {
+            "name": "Dano",
+            "key": "dano1",
+            "type": "dano",
+            "parts": [
+              [
+                "3d6+20",
+                "perfuracao",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "criticoM": 16,
+        "criticoX": 3,
+        "alcance": "-",
+        "proposito": "corpo-a-corpo",
+        "proficiencia": "marcial",
+        "empunhadura": "uma",
+        "equipado2": {
+          "type": "hand",
+          "slot": 0
+        },
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "carregado": true,
+        "espacos": 1,
+        "peso": 1,
+        "qtd": 1,
+        "preco": 20,
+        "pv": {
+          "value": 0,
+          "max": 0
+        },
+        "rd": 0,
+        "ativacao": {
+          "custo": null,
+          "condicao": "",
+          "execucao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "consume": {
+          "amount": null,
+          "mpMultiplier": false,
+          "target": "",
+          "type": ""
+        },
+        "upgrades": {
+          "itemType": [],
+          "improvement": [],
+          "material": [],
+          "enchantment": [],
+          "curse": [],
+          "innovation": [],
+          "melhoria1": "",
+          "melhoria2": "",
+          "melhoria3": "",
+          "melhoria4": "",
+          "materialEspecial1": "",
+          "encanto1": "",
+          "encanto2": "",
+          "encanto3": "",
+          "enableAutoUpgrades": true
+        },
+        "ataques": 0,
+        "equipado": 0,
+        "tipoUso": "sim",
+        "propriedades": {},
+        "size": "normal"
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.r3tlhprPUh8qHesx",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!h7PZYJdME0xOeAv2.dTEDZPiQQ8Sgku90"
     },
     {
+      "_id": "bEU1XV52LOeMYigI",
       "name": "Pistola",
       "type": "arma",
       "img": "systems/tormenta20/icons/itens/equipamentos/pistola.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 150
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "equipamentos",
+            "id": "TILlgOKqyS3Ps4le"
+          },
+          "pack": "equipamentos",
+          "versao": "7e217957"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Adamante, precisa, mira telescópica.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.equipamentos.Item.TILlgOKqyS3Ps4le]{Pistola}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.TILlgOKqyS3Ps4le]{Pistola}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Adamante, precisa, mira telescópica.</p></div><hr><p style=\"text-align:justify\">A arma de fogo mais comum. Recarregar uma pistola é uma ação padrão.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 150.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.TILlgOKqyS3Ps4le]{Pistola}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 150",
         "rolls": [
           {
             "name": "Ataque",
@@ -1013,10 +1051,10 @@
         ],
         "criticoM": 18,
         "criticoX": 3,
-        "alcance": "medium",
+        "alcance": "short",
         "proposito": "disparo",
         "proficiencia": "fogo",
-        "empunhadura": "leve",
+        "empunhadura": "uma",
         "equipado2": {
           "type": "hand",
           "slot": 0
@@ -1028,24 +1066,24 @@
         "chatFlavor": "",
         "chatGif": "",
         "carregado": true,
-        "espacos": 0,
-        "peso": 0,
+        "espacos": 1,
+        "peso": 1,
         "qtd": 1,
-        "preco": 0,
+        "preco": 250,
         "pv": {
           "value": 0,
           "max": 0
         },
         "rd": 0,
         "ativacao": {
-          "custo": 0,
+          "custo": null,
           "condicao": "",
-          "execucao": "passive",
+          "execucao": "",
           "qtd": "",
           "special": ""
         },
         "consume": {
-          "amount": 0,
+          "amount": null,
           "mpMultiplier": false,
           "target": "",
           "type": ""
@@ -1073,13 +1111,6 @@
         "propriedades": {},
         "size": "normal"
       },
-      "_id": "bEU1XV52LOeMYigI",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1091,87 +1122,47 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!h7PZYJdME0xOeAv2.bEU1XV52LOeMYigI"
     },
     {
+      "_id": "tV410fTiBQ1MIUTb",
       "name": "Ataque Furtivo",
       "type": "poder",
-      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-furtivo.webp",
-      "system": {
-        "description": {
-          "value": "<p style=\"text-align:justify\">+8d6 de dano contra alvo desprevenido ou flanqueado.<br><b>Automação:</b> Shift+clique na arma e marque a opção.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.4o2kchrTeo495pRf]{Ataque Furtivo}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.sE4mWoW3zqLZaCYC]{Ataque Furtivo}</p>",
-          "unidentified": ""
-        },
-        "source": "Coração de Rubi — Caravana Cartesiana",
-        "tipo": "ability",
-        "ativacao": {
-          "execucao": "passive",
-          "custo": 0,
-          "condicao": "",
-          "qtd": "",
-          "special": ""
-        },
-        "alcance": "",
-        "area": "",
-        "duracao": {
-          "value": 0,
-          "units": "inst",
-          "special": ""
-        },
-        "resistencia": {
-          "pericia": "",
-          "atributo": "",
-          "bonus": 0,
-          "txt": ""
-        },
-        "rolls": [],
-        "origin": "",
-        "tags": [],
-        "rolltags": [],
-        "automationtags": [],
-        "chatFlavor": "",
-        "chatGif": "",
-        "range": {
-          "units": "",
-          "value": 0
-        },
-        "efeito": "",
-        "subtipo": ""
-      },
-      "_id": "tV410fTiBQ1MIUTb",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
-      "_stats": {
-        "coreVersion": "14.366",
-        "systemId": "tormenta20",
-        "systemVersion": "1.6.4",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.sE4mWoW3zqLZaCYC",
-        "duplicateSource": null,
-        "exportSource": null
-      },
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/ataque-furtivo.webp",
       "effects": [
         {
-          "name": "Ataque Furtivo (+8d6)",
-          "img": "systems/tormenta20/icons/poderes/ameacas/ataque-furtivo.webp",
-          "type": "base",
-          "transfer": false,
+          "_id": "6FGfjphOJvL5rYbm",
+          "flags": {
+            "ActiveAuras": {
+              "isAura": false,
+              "ignoreSelf": false,
+              "hidden": false,
+              "height": false,
+              "aura": "None",
+              "radius": null
+            },
+            "tormenta20": {}
+          },
           "disabled": true,
-          "description": "+8d6 de dano furtivo.",
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "name": "Ataque Furtivo",
+          "img": "systems/tormenta20/icons/classes/ladino.webp",
+          "type": "base",
           "system": {
             "changes": [
               {
                 "key": "dano",
-                "value": "8d6",
+                "value": "roll",
+                "priority": 0,
                 "type": "add",
-                "priority": null,
                 "phase": "initial"
               }
             ],
@@ -1183,40 +1174,24 @@
               "automatic": false,
               "aumenta": false,
               "custo": null,
-              "names": [
-                "Florete",
-                "Pistola"
-              ],
+              "names": [],
               "types": [
-                "self"
+                "attack"
               ]
             },
             "aura": {
               "isAura": false,
               "range": 0,
-              "behaviors": null
-            },
-            "identifier": "",
-            "upgrade": {
-              "type": null,
-              "itemType": []
+              "disposition": []
             }
           },
-          "_id": "4LcmBePTWVrLtWeQ",
-          "origin": null,
-          "tint": "#ffffff",
-          "start": null,
-          "duration": {
-            "value": null,
-            "units": "seconds",
-            "expiry": null,
-            "expired": false
-          },
+          "description": "",
           "statuses": [],
+          "sort": 0,
+          "start": null,
           "showIcon": 1,
           "folder": null,
-          "sort": 0,
-          "flags": {},
+          "_key": "!actors.items.effects!h7PZYJdME0xOeAv2.tV410fTiBQ1MIUTb.6FGfjphOJvL5rYbm",
           "_stats": {
             "coreVersion": "14.366",
             "systemId": "tormenta20",
@@ -1227,10 +1202,96 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "_key": "!actors.items.effects!h7PZYJdME0xOeAv2.tV410fTiBQ1MIUTb.4LcmBePTWVrLtWeQ"
+          }
         }
       ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 73
+          },
+          "automacao": {
+            "nivel": "uso",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "sE4mWoW3zqLZaCYC"
+          },
+          "pack": "poderes",
+          "versao": "21e51e01"
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">+8d6 de dano contra alvo desprevenido ou flanqueado.<br><b>Automação:</b> Shift+clique na arma e marque a opção.</p></div><hr><p style=\"text-align:justify\">Você sabe atingir os pontos vitais de inimigos distraídos. Uma vez por rodada, quando atinge uma criatura desprevenida com um ataque corpo a corpo ou em alcance curto, ou uma criatura que esteja flanqueando, você causa 1d6 pontos de dano extra. A cada dois níveis, esse dano extra aumenta em +1d6. Uma criatura imune a acertos críticos também é imune a ataques furtivos.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 73.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.sE4mWoW3zqLZaCYC]{Ataque Furtivo}</p>",
+          "unidentified": ""
+        },
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 73",
+        "tipo": "ability",
+        "ativacao": {
+          "execucao": "passive",
+          "custo": 0,
+          "condicao": "",
+          "qtd": "",
+          "special": ""
+        },
+        "alcance": "none",
+        "area": "",
+        "duracao": {
+          "value": 0,
+          "units": "inst",
+          "special": ""
+        },
+        "resistencia": {
+          "pericia": "",
+          "atributo": "sab",
+          "bonus": 0,
+          "txt": ""
+        },
+        "rolls": [
+          {
+            "name": "Dano",
+            "key": "dano0",
+            "type": "dano",
+            "parts": [
+              [
+                "1d6",
+                "dano",
+                ""
+              ]
+            ],
+            "versatil": "",
+            "adaptavel": ""
+          }
+        ],
+        "origin": "",
+        "tags": [],
+        "rolltags": [],
+        "automationtags": [],
+        "chatFlavor": "",
+        "chatGif": "",
+        "range": {
+          "units": "",
+          "value": null
+        },
+        "efeito": "",
+        "subtipo": "Ladino"
+      },
+      "_stats": {
+        "coreVersion": "14.366",
+        "systemId": "tormenta20",
+        "systemVersion": "1.6.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.giria-t20.livro-basico.Item.sE4mWoW3zqLZaCYC",
+        "duplicateSource": null,
+        "exportSource": null
+      },
       "_key": "!actors.items!h7PZYJdME0xOeAv2.tV410fTiBQ1MIUTb"
     },
     {
@@ -1302,7 +1363,7 @@
     {
       "name": "Ódio Puro",
       "type": "poder",
-      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
       "system": {
         "description": {
           "value": "<p style=\"text-align:justify\">+5 em testes de Vontade quando segue ordens de um superior (purista de ND maior) e +2 nas rolagens de dano contra humanoides não humanos.<br><b>Automação:</b> opção no ataque.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.habilidades-de-criaturas.Item.3vD2WrnThZX4CPkz]{Ódio Puro}</p>",
@@ -1436,24 +1497,111 @@
       "_key": "!actors.items!h7PZYJdME0xOeAv2.vY4AT4AzaqH2eEqN"
     },
     {
+      "_id": "5XjPriYZvtWreQvB",
       "name": "Saque Rápido",
       "type": "poder",
-      "img": "systems/tormenta20/icons/itens/equipamentos/pistola.webp",
+      "img": "systems/tormenta20/icons/poderes/combate.webp",
+      "effects": [
+        {
+          "_id": "0TBHaDd77nEF7tAv",
+          "flags": {
+            "tormenta20": {}
+          },
+          "disabled": false,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "name": "Saque Rápido",
+          "img": "systems/tormenta20/icons/poderes/combate.webp",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.inic.bonus",
+                "value": "2",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ],
+            "targets": [],
+            "status": null,
+            "onuse": false,
+            "abilityUse": {
+              "description": "",
+              "automatic": false,
+              "aumenta": false,
+              "custo": 0,
+              "names": [],
+              "types": []
+            },
+            "aura": {
+              "isAura": false,
+              "range": 0,
+              "disposition": []
+            }
+          },
+          "description": "",
+          "statuses": [],
+          "sort": 0,
+          "start": null,
+          "showIcon": 1,
+          "folder": null,
+          "_key": "!actors.items.effects!h7PZYJdME0xOeAv2.5XjPriYZvtWreQvB.0TBHaDd77nEF7tAv",
+          "_stats": {
+            "coreVersion": "14.366",
+            "systemId": "tormenta20",
+            "systemVersion": "1.6.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null
+          }
+        }
+      ],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 129
+          },
+          "automacao": {
+            "nivel": "passivo",
+            "notas": ""
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "xfgWUlAbj4PwvuPf"
+          },
+          "pack": "poderes",
+          "versao": "19d0ba24"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Saca itens como ação livre e recarrega a pistola como ação de movimento.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.xfgWUlAbj4PwvuPf]{Saque Rápido}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.xfgWUlAbj4PwvuPf]{Saque Rápido}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Saca itens como ação livre e recarrega a pistola como ação de movimento.</p></div><hr><p style=\"text-align:justify\">Você recebe +2 em Iniciativa e pode sacar ou guardar itens como uma ação livre (em vez de ação de movimento). Além disso, a ação que você gasta para recarregar armas de disparo diminui em uma categoria (ação completa para padrão, padrão para movimento, movimento para livre). Pré-requisito: treinado em Iniciativa.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 129.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.xfgWUlAbj4PwvuPf]{Saque Rápido}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
-        "tipo": "ability",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 129",
+        "tipo": "geral",
         "ativacao": {
-          "execucao": "passive",
+          "execucao": "",
           "custo": 0,
           "condicao": "",
           "qtd": "",
           "special": ""
         },
-        "alcance": "",
+        "alcance": "none",
         "area": "",
         "duracao": {
           "value": 0,
@@ -1462,7 +1610,7 @@
         },
         "resistencia": {
           "pericia": "",
-          "atributo": "",
+          "atributo": "sab",
           "bonus": 0,
           "txt": ""
         },
@@ -1475,18 +1623,11 @@
         "chatGif": "",
         "range": {
           "units": "",
-          "value": 0
+          "value": null
         },
         "efeito": "",
-        "subtipo": ""
+        "subtipo": "Combate"
       },
-      "_id": "5XjPriYZvtWreQvB",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1498,28 +1639,51 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!h7PZYJdME0xOeAv2.5XjPriYZvtWreQvB"
     },
     {
+      "_id": "EgAHGg7Jr4D3FAAv",
       "name": "Evasão",
       "type": "poder",
-      "img": "icons/svg/wingfoot.svg",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "effects": [],
+      "flags": {
+        "giria-t20": {
+          "fonte": {
+            "livro": "T20",
+            "pagina": 47
+          },
+          "automacao": {
+            "nivel": "script",
+            "notas": "Botão de resistência do cartão: passou em Reflexos para metade, o próximo dano sai zerado (scripts/reducao-dano.mjs).",
+            "script": "reducao-dano"
+          },
+          "status": "revisado",
+          "revisao": 1,
+          "sistema": {
+            "pack": "poderes",
+            "id": "1aHAxGnkuTaaBJDx",
+            "revisado": true
+          },
+          "pack": "poderes",
+          "versao": "da92831f"
+        }
+      },
       "system": {
         "description": {
-          "value": "<p style=\"text-align:justify\">Quando sofre um efeito que permite Reflexos para reduzir o dano à metade, não sofre dano se passar.</p><p class=\"cdr-ref\"><i>No sistema:</i> @UUID[Compendium.tormenta20.poderes.Item.HGh7ECxVmjfrdd8u]{Evasão (Ladino)}</p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.1aHAxGnkuTaaBJDx]{Evasão (Bucaneiro)}</p>",
+          "value": "<div class=\"cdr-nota\"><p><b>Nesta ficha (Coração de Rubi):</b></p><p style=\"text-align:justify\">Quando sofre um efeito que permite Reflexos para reduzir o dano à metade, não sofre dano se passar.</p></div><hr><p style=\"text-align:justify\">A partir do 2º nível, quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, você não sofre dano algum se passar. Você ainda sofre dano normal se falhar no teste de Reflexos. Esta habilidade exige liberdade de movimentos; você não pode usá-la se estiver de armadura pesada ou na condição imóvel.</p><p><em>Tormenta20 — Edição Jogo do Ano, p. 47.</em></p><p class=\"cdr-ref\"><i>No Giria T20:</i> @UUID[Compendium.giria-t20.livro-basico.Item.1aHAxGnkuTaaBJDx]{Evasão (Bucaneiro)}</p>",
           "unidentified": ""
         },
-        "source": "Coração de Rubi — Caravana Cartesiana",
+        "source": "Tormenta20 — Edição Jogo do Ano, p. 47",
         "tipo": "ability",
         "ativacao": {
-          "execucao": "passive",
+          "execucao": "",
           "custo": 0,
           "condicao": "",
           "qtd": "",
           "special": ""
         },
-        "alcance": "",
+        "alcance": "none",
         "area": "",
         "duracao": {
           "value": 0,
@@ -1527,10 +1691,10 @@
           "special": ""
         },
         "resistencia": {
-          "pericia": "",
-          "atributo": "",
+          "pericia": "refl",
+          "atributo": "sab",
           "bonus": 0,
-          "txt": ""
+          "txt": "Reflexos"
         },
         "rolls": [],
         "origin": "",
@@ -1541,18 +1705,11 @@
         "chatGif": "",
         "range": {
           "units": "",
-          "value": 0
+          "value": null
         },
         "efeito": "",
-        "subtipo": ""
+        "subtipo": "Bucaneiro"
       },
-      "_id": "EgAHGg7Jr4D3FAAv",
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0
-      },
-      "flags": {},
       "_stats": {
         "coreVersion": "14.366",
         "systemId": "tormenta20",
@@ -1564,7 +1721,6 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "effects": [],
       "_key": "!actors.items!h7PZYJdME0xOeAv2.EgAHGg7Jr4D3FAAv"
     }
   ],
