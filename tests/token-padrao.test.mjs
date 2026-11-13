@@ -25,6 +25,8 @@ test("ameaça do módulo criada sem barras ganha PV e PM; ameaça de fora fica c
 	assert.equal(bb.bar2.id, "bar2");
 	assert.equal(bb.bar2.maxcolor, "#80B3FF");
 	assert.equal(bb.bar1.maxcolor, "#80FF00");
+	assert.equal(bb.bar1.position, "bottom-inner");
+	assert.equal(bb.bar2.position, "top-inner");
 	assert.equal(outra.prototypeToken.bar2.attribute, "attributes.carga");
 	mundo.encerrar();
 });

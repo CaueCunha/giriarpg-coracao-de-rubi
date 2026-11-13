@@ -43,7 +43,7 @@
             "attribute": "attributes.pm",
             "mincolor": "#000080",
             "maxcolor": "#80B3FF",
-            "position": "bottom-inner",
+            "position": "top-inner",
             "gmVisibility": -1,
             "ownerVisibility": 50,
             "otherVisibility": 0
