@@ -16,14 +16,33 @@ export const MODULO = "giriarpg-coracao-de-rubi";
 
 /**
  * Token padrão de toda ameaça do módulo (pedido do Cauê, 13/11/2026): nome ao passar o mouse (qualquer um), visão
- * ligada, barras sempre visíveis para o dono, PV na barra 1 e PM na barra 2 (attributes.pm, que o sistema pinta de azul).
+ * ligada, barras sempre visíveis para o dono, PV na barra 1 e PM na barra 2 (attributes.pm, azul).
+ * O Cauê usa o Bar Brawl (fork T20), que desenha as barras com as cores gravadas em flags.barbrawl.resourceBars e,
+ * sem elas, cria a barra 2 com as cores da barra 1 (vermelho/verde). Por isso as duas barras vão explícitas,
+ * com as cores padrão do Bar Brawl (PV vermelho→verde, PM azul).
  */
+const barra = (id, order, attribute, mincolor, maxcolor) => ({
+	id,
+	order,
+	attribute,
+	mincolor,
+	maxcolor,
+	position: "bottom-inner",
+	gmVisibility: -1, // herda do dono
+	ownerVisibility: 50, // sempre
+	otherVisibility: 0 // nunca
+});
+export const BARRAS_BARBRAWL = Object.freeze({
+	bar1: barra("bar1", 0, "attributes.pv", "#FF0000", "#80FF00"),
+	bar2: barra("bar2", 1, "attributes.pm", "#000080", "#80B3FF")
+});
 export const TOKEN_PADRAO = Object.freeze({
 	displayName: 30, // CONST.TOKEN_DISPLAY_MODES.HOVER
 	displayBars: 40, // CONST.TOKEN_DISPLAY_MODES.OWNER
 	sight: { enabled: true },
 	bar1: { attribute: "attributes.pv" },
-	bar2: { attribute: "attributes.pm" }
+	bar2: { attribute: "attributes.pm" },
+	flags: { barbrawl: { resourceBars: BARRAS_BARBRAWL } }
 });
 
 /** Valores que a mesa muda e que sobrevivem a uma atualização. Mantenha igual a tools/conteudo.mjs. */
