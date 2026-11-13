@@ -581,7 +581,7 @@ const ameacaDaCampanha = (d) => {
 const barrasCertas = (t) => {
 	if (t?.bar1?.attribute !== TOKEN_PADRAO.bar1.attribute || t?.bar2?.attribute !== TOKEN_PADRAO.bar2.attribute) return false;
 	const bb = t?.flags?.barbrawl?.resourceBars ?? {};
-	return ["bar1", "bar2"].every((k) => ["id", "attribute", "maxcolor"].every((c) => bb[k]?.[c] === BARRAS_BARBRAWL[k][c]));
+	return ["bar1", "bar2"].every((k) => ["id", "attribute", "maxcolor", "position"].every((c) => bb[k]?.[c] === BARRAS_BARBRAWL[k][c]));
 };
 /** Só as barras (Foundry e Bar Brawl), para tokens já nas cenas. */
 const soBarras = () => ({

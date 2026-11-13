@@ -106,7 +106,7 @@ O relatório completo do que foi ligado está em [`build/relatorio.md`](build/re
 
 ### Token das ameaças
 
-Toda ameaça do módulo vem com o nome visível ao passar o mouse (qualquer um), a visão ligada e as barras sempre visíveis para o dono: **PV (`attributes.pv`) na barra 1 e PM (`attributes.pm`, azul) na barra 2** (`TOKEN_PADRAO` em `scripts/assinatura.mjs`). Com o **Bar Brawl** (fork T20), as duas barras também vão em `flags.barbrawl.resourceBars` com as cores dele (PV vermelho→verde, PM azul), porque sem isso ele cria a barra 2 com as cores da barra 1. No Foundry, o módulo garante isso ao criar a ameaça no mundo (vence o *Prototype Token Overrides* do mundo) e ao pôr o token na cena, e ao abrir o mundo corrige as ameaças que já estavam nele e os tokens delas nas cenas. Para desligar: configuração do módulo *Token padrão nas ameaças*.
+Toda ameaça do módulo vem com o nome visível ao passar o mouse (qualquer um), a visão ligada e as barras sempre visíveis para o dono: **PV (`attributes.pv`) na barra 1 e PM (`attributes.pm`, azul) na barra 2** (`TOKEN_PADRAO` em `scripts/assinatura.mjs`). Com o **Bar Brawl** (fork T20), as duas barras também vão em `flags.barbrawl.resourceBars` com as cores dele (PV vermelho→verde embaixo do token, PM azul em cima), porque sem isso ele cria a barra 2 com as cores da barra 1. No Foundry, o módulo garante isso ao criar a ameaça no mundo (vence o *Prototype Token Overrides* do mundo) e ao pôr o token na cena, e ao abrir o mundo corrige as ameaças que já estavam nele e os tokens delas nas cenas. Para desligar: configuração do módulo *Token padrão nas ameaças*.
 
 ### Artes
 

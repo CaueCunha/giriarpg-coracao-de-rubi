@@ -21,20 +21,20 @@ export const MODULO = "giriarpg-coracao-de-rubi";
  * sem elas, cria a barra 2 com as cores da barra 1 (vermelho/verde). Por isso as duas barras vão explícitas,
  * com as cores padrão do Bar Brawl (PV vermelho→verde, PM azul).
  */
-const barra = (id, order, attribute, mincolor, maxcolor) => ({
+const barra = (id, order, attribute, mincolor, maxcolor, position) => ({
 	id,
 	order,
 	attribute,
 	mincolor,
 	maxcolor,
-	position: "bottom-inner",
+	position,
 	gmVisibility: -1, // herda do dono
 	ownerVisibility: 50, // sempre
 	otherVisibility: 0 // nunca
 });
 export const BARRAS_BARBRAWL = Object.freeze({
-	bar1: barra("bar1", 0, "attributes.pv", "#FF0000", "#80FF00"),
-	bar2: barra("bar2", 1, "attributes.pm", "#000080", "#80B3FF")
+	bar1: barra("bar1", 0, "attributes.pv", "#FF0000", "#80FF00", "bottom-inner"), // PV embaixo
+	bar2: barra("bar2", 1, "attributes.pm", "#000080", "#80B3FF", "top-inner") // PM em cima (pedido do Cauê)
 });
 export const TOKEN_PADRAO = Object.freeze({
 	displayName: 30, // CONST.TOKEN_DISPLAY_MODES.HOVER
