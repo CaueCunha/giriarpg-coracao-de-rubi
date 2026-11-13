@@ -2,7 +2,7 @@
   "id": "giriarpg-coracao-de-rubi",
   "title": "Giria T20 - Coração de Rubi (Campanha)",
   "description": "<p>Conteúdo da campanha <b>Coração de Rubi</b> para o sistema Tormenta20: ameaças, perigos, parceiros, itens, diários e macros de cada aventura, organizados por patamar, e as ferramentas e poderes dos jogadores. Regras e itens que já existem no sistema ou no Giria T20 são ligados a eles, não duplicados. Nada é importado sozinho: puxe dos compêndios o que precisar. A macro <i>CdR · Atualizar do compêndio</i> traz as melhorias de versões novas só para o que você não editou.</p>",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -150,7 +150,7 @@
   },
   "url": "https://github.com/CaueCunha/giriarpg-coracao-de-rubi",
   "manifest": "https://github.com/CaueCunha/giriarpg-coracao-de-rubi/releases/latest/download/module.json",
-  "download": "https://github.com/CaueCunha/giriarpg-coracao-de-rubi/releases/download/v0.7.1/module.zip",
+  "download": "https://github.com/CaueCunha/giriarpg-coracao-de-rubi/releases/download/v0.7.2/module.zip",
   "readme": "https://github.com/CaueCunha/giriarpg-coracao-de-rubi#readme",
   "bugs": "https://github.com/CaueCunha/giriarpg-coracao-de-rubi/issues"
 }

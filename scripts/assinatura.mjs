@@ -14,6 +14,18 @@
  */
 export const MODULO = "giriarpg-coracao-de-rubi";
 
+/**
+ * Token padrão de toda ameaça do módulo (pedido do Cauê, 13/11/2026): nome ao passar o mouse (qualquer um), visão
+ * ligada, barras sempre visíveis para o dono, PV na barra 1 e PM na barra 2 (attributes.pm, que o sistema pinta de azul).
+ */
+export const TOKEN_PADRAO = Object.freeze({
+	displayName: 30, // CONST.TOKEN_DISPLAY_MODES.HOVER
+	displayBars: 40, // CONST.TOKEN_DISPLAY_MODES.OWNER
+	sight: { enabled: true },
+	bar1: { attribute: "attributes.pv" },
+	bar2: { attribute: "attributes.pm" }
+});
+
 /** Valores que a mesa muda e que sobrevivem a uma atualização. Mantenha igual a tools/conteudo.mjs. */
 export const PRESERVAR = [];
 
