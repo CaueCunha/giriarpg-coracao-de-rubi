@@ -19,6 +19,12 @@ test("ameaça do módulo criada sem barras ganha PV e PM; ameaça de fora fica c
 	assert.equal(nossa.prototypeToken.bar1.attribute, "attributes.pv");
 	assert.equal(nossa.prototypeToken.bar2.attribute, "attributes.pm");
 	assert.equal(nossa.prototypeToken.displayName, 30);
+	// Bar Brawl: PM azul na barra 2 (sem isso ele copia as cores da barra 1)
+	const bb = nossa.prototypeToken.flags.barbrawl.resourceBars;
+	assert.equal(bb.bar2.attribute, "attributes.pm");
+	assert.equal(bb.bar2.id, "bar2");
+	assert.equal(bb.bar2.maxcolor, "#80B3FF");
+	assert.equal(bb.bar1.maxcolor, "#80FF00");
 	assert.equal(outra.prototypeToken.bar2.attribute, "attributes.carga");
 	mundo.encerrar();
 });
@@ -29,9 +35,14 @@ test("corrigirTokens conserta as ameaças do módulo que já estão no mundo", a
 	await api(mundo).puxar({ atos: ["patamar1"] });
 	const ameacas = mundo.game.actors.filter((a) => a.type === "npc" && a.getFlag("world", "cdr"));
 	assert.ok(ameacas.length > 5);
-	for (const a of ameacas.slice(0, 3)) await a.update({ "prototypeToken.bar2.attribute": "" });
+	for (const a of ameacas.slice(0, 2)) await a.update({ "prototypeToken.bar2.attribute": "" });
+	// como o Bar Brawl deixava: barra 2 com id e cores da barra 1
+	await ameacas[2].update({ "prototypeToken.flags.barbrawl.resourceBars.bar2": { id: "bar1", attribute: "attributes.pm", mincolor: "#FF0000", maxcolor: "#80FF00" } });
 	const r = await api(mundo).corrigirTokens();
 	assert.equal(r.atores, 3);
-	for (const a of ameacas) assert.equal(a.prototypeToken.bar2.attribute, "attributes.pm", a.name);
+	for (const a of ameacas) {
+		assert.equal(a.prototypeToken.bar2.attribute, "attributes.pm", a.name);
+		assert.equal(a.prototypeToken.flags.barbrawl.resourceBars.bar2.maxcolor, "#80B3FF", a.name);
+	}
 	mundo.encerrar();
 });

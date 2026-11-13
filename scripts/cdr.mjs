@@ -13,7 +13,7 @@
  * As macros da campanha procuram atores, tabelas, diários e outras macros no MUNDO pelas marcas
  * flags.world.cdr/cdrRole: puxe a aventura antes de usar as macros dela.
  */
-import { MODULO, PRESERVAR, TOKEN_PADRAO, assinatura } from "./assinatura.mjs";
+import { MODULO, PRESERVAR, TOKEN_PADRAO, BARRAS_BARBRAWL, assinatura } from "./assinatura.mjs";
 import { ligarAutomacoes, curaLonien } from "./automacoes.mjs";
 
 export { PRESERVAR };
@@ -578,7 +578,18 @@ const ameacaDaCampanha = (d) => {
 	const s = d?._source ?? d;
 	return s?.type === "npc" && (!!s.flags?.world?.cdr || String(s._stats?.compendiumSource ?? "").startsWith(`Compendium.${MODULO}.`));
 };
-const barrasCertas = (t) => t?.bar1?.attribute === TOKEN_PADRAO.bar1.attribute && t?.bar2?.attribute === TOKEN_PADRAO.bar2.attribute;
+const barrasCertas = (t) => {
+	if (t?.bar1?.attribute !== TOKEN_PADRAO.bar1.attribute || t?.bar2?.attribute !== TOKEN_PADRAO.bar2.attribute) return false;
+	const bb = t?.flags?.barbrawl?.resourceBars ?? {};
+	return ["bar1", "bar2"].every((k) => ["id", "attribute", "maxcolor"].every((c) => bb[k]?.[c] === BARRAS_BARBRAWL[k][c]));
+};
+/** Só as barras (Foundry e Bar Brawl), para tokens já nas cenas. */
+const soBarras = () => ({
+	bar1: { ...TOKEN_PADRAO.bar1 },
+	bar2: { ...TOKEN_PADRAO.bar2 },
+	"flags.barbrawl.resourceBars.bar1": structuredClone(BARRAS_BARBRAWL.bar1),
+	"flags.barbrawl.resourceBars.bar2": structuredClone(BARRAS_BARBRAWL.bar2)
+});
 const tokenPadraoLigado = () => {
 	try {
 		return game.settings.get(MODULO, "tokenPadrao") !== false;
@@ -589,7 +600,7 @@ const tokenPadraoLigado = () => {
 
 /**
  * Põe o token padrão (TOKEN_PADRAO) nas ameaças do módulo que já estão no mundo e nos tokens delas nas cenas.
- * Nos tokens das cenas só as barras mudam (PV na 1 e PM na 2). Não mexe na assinatura: nada vira "editado".
+ * Nos tokens das cenas só as barras mudam (PV na 1 e PM azul na 2, também no Bar Brawl). Não mexe na assinatura: nada vira "editado".
  * @returns {Promise<{atores: number, tokens: number}>}
  */
 export async function corrigirTokens() {
@@ -600,20 +611,23 @@ export async function corrigirTokens() {
 	for (const cena of game.scenes ?? []) {
 		const mudar = cena.tokens.filter((t) => ameacaDaCampanha(t.actor ?? game.actors.get(t.actorId)) && !barrasCertas(t));
 		if (!mudar.length) continue;
-		await cena.updateEmbeddedDocuments("Token", mudar.map((t) => ({ _id: t.id, bar1: { ...TOKEN_PADRAO.bar1 }, bar2: { ...TOKEN_PADRAO.bar2 } })));
+		await cena.updateEmbeddedDocuments("Token", mudar.map((t) => ({ _id: t.id, ...soBarras() })));
 		tokens += mudar.length;
 	}
 	return { atores: atores.length, tokens };
 }
 
-// Na criação, o token padrão vence o "Prototype Token Overrides" do mundo e qualquer outro padrão.
-Hooks.on("preCreateActor", (actor) => {
-	if (tokenPadraoLigado() && ameacaDaCampanha(actor)) actor.updateSource({ prototypeToken: structuredClone(TOKEN_PADRAO) });
-});
-Hooks.on("preCreateToken", (token) => {
-	if (!tokenPadraoLigado() || barrasCertas(token._source ?? token)) return;
-	const actor = token.actor ?? game.actors?.get(token._source?.actorId ?? token.actorId);
-	if (ameacaDaCampanha(actor)) token.updateSource({ bar1: { ...TOKEN_PADRAO.bar1 }, bar2: { ...TOKEN_PADRAO.bar2 } });
+// Na criação, o token padrão vence o "Prototype Token Overrides" do mundo e o padrão do Bar Brawl. Os ganchos entram
+// no "setup", depois de todos os módulos carregarem, para rodar depois dos ganchos do Bar Brawl.
+Hooks.once("setup", () => {
+	Hooks.on("preCreateActor", (actor) => {
+		if (tokenPadraoLigado() && ameacaDaCampanha(actor)) actor.updateSource({ prototypeToken: structuredClone(TOKEN_PADRAO) });
+	});
+	Hooks.on("preCreateToken", (token) => {
+		if (!tokenPadraoLigado() || barrasCertas(token._source ?? token)) return;
+		const actor = token.actor ?? game.actors?.get(token._source?.actorId ?? token.actorId);
+		if (ameacaDaCampanha(actor)) token.updateSource(soBarras());
+	});
 });
 
 /* ------------------------------------------------------------------------ */
