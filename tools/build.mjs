@@ -13,7 +13,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { criarMundo } from "./sim/mundo.mjs";
 import { ATOS, PACKS, MODULO } from "./conteudo.mjs";
-import { assinatura } from "../scripts/assinatura.mjs";
+import { assinatura, TOKEN_PADRAO } from "../scripts/assinatura.mjs";
 import { ligarAoSistema, indiceSistema, indiceGiria, resolverGiria } from "./ligar-sistema.mjs";
 import { RAIZ, GERADORES, FONTE_PACKS, HISTORICO } from "./caminhos.mjs";
 import { deepClone } from "./sim/utils.mjs";
@@ -27,17 +27,7 @@ const lerGerador = (nome) => fs.readFileSync(path.join(GERADORES, `${nome}.js`),
 /* 1. Captura                                                                */
 /* ------------------------------------------------------------------------ */
 
-/**
- * Token padrão de toda ameaça (pedido do Cauê, 13/11/2026): nome ao passar o mouse (qualquer um), visão ligada,
- * barras sempre visíveis para o dono, PV na barra 1 e PM na barra 2 (o sistema pinta a barra 2 de azul).
- */
-export const TOKEN_PADRAO = {
-	displayName: 30, // CONST.TOKEN_DISPLAY_MODES.HOVER
-	displayBars: 40, // CONST.TOKEN_DISPLAY_MODES.OWNER
-	sight: { enabled: true },
-	bar1: { attribute: "attributes.pv" },
-	bar2: { attribute: "attributes.pm" }
-};
+export { TOKEN_PADRAO };
 
 export async function capturarAto(ato, { semente } = {}) {
 	const mundo = await criarMundo({ semente: semente ?? ato.id });
@@ -298,7 +288,7 @@ async function main() {
 		indice ??= indiceSistema(mundo.sistema.packs);
 		const semMarca = Object.entries(docs).flatMap(([t, l]) => l.filter((d) => !d.flags?.world?.cdr).map((d) => `${t} "${d.name}"`));
 		if (semMarca.length) throw new Error(`Documentos sem a marca flags.world.cdr: ${semMarca.join(", ")}`);
-		for (const a of docs.Actor ?? []) if (a.type === "npc") a.prototypeToken = { ...(a.prototypeToken ?? {}), ...TOKEN_PADRAO };
+		for (const a of docs.Actor ?? []) if (a.type === "npc") a.prototypeToken = { ...(a.prototypeToken ?? {}), ...structuredClone(TOKEN_PADRAO) };
 		resolverGiria(docs, listaGiria);
 		const ligacoes = ligarAoSistema(docs, indice, ato.id, giria, giriaDocs);
 		porAto.push({ ato, docs: estabilizarIds(docs) });

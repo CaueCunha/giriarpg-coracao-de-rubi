@@ -520,6 +520,13 @@ export function criarClasses(mundo) {
 		toJSON() {
 			return this.toObject();
 		}
+		/** Como no Foundry: mescla no _source (antes de gravar, nos ganchos preCreate) e prepara de novo. */
+		updateSource(changes = {}) {
+			changes = U.expandObject(U.deepClone(changes));
+			U.mergeObject(this._source, changes, { performDeletions: true });
+			this.prepareData();
+			return changes;
+		}
 		clone(data = {}, { save = false, keepId = false } = {}) {
 			const obj = U.mergeObject(this.toObject(), data, { inplace: false });
 			if (!keepId) delete obj._id;

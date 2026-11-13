@@ -13,7 +13,7 @@
  * As macros da campanha procuram atores, tabelas, diários e outras macros no MUNDO pelas marcas
  * flags.world.cdr/cdrRole: puxe a aventura antes de usar as macros dela.
  */
-import { MODULO, PRESERVAR, assinatura } from "./assinatura.mjs";
+import { MODULO, PRESERVAR, TOKEN_PADRAO, assinatura } from "./assinatura.mjs";
 import { ligarAutomacoes, curaLonien } from "./automacoes.mjs";
 
 export { PRESERVAR };
@@ -570,6 +570,53 @@ export async function registrarRedirecionamentos() {
 }
 
 /* ------------------------------------------------------------------------ */
+/* Token das ameaças                                                          */
+/* ------------------------------------------------------------------------ */
+
+/** Ameaça (npc) que veio do módulo: tem a marca da campanha ou foi tirada de um compêndio do módulo. */
+const ameacaDaCampanha = (d) => {
+	const s = d?._source ?? d;
+	return s?.type === "npc" && (!!s.flags?.world?.cdr || String(s._stats?.compendiumSource ?? "").startsWith(`Compendium.${MODULO}.`));
+};
+const barrasCertas = (t) => t?.bar1?.attribute === TOKEN_PADRAO.bar1.attribute && t?.bar2?.attribute === TOKEN_PADRAO.bar2.attribute;
+const tokenPadraoLigado = () => {
+	try {
+		return game.settings.get(MODULO, "tokenPadrao") !== false;
+	} catch {
+		return true;
+	}
+};
+
+/**
+ * Põe o token padrão (TOKEN_PADRAO) nas ameaças do módulo que já estão no mundo e nos tokens delas nas cenas.
+ * Nos tokens das cenas só as barras mudam (PV na 1 e PM na 2). Não mexe na assinatura: nada vira "editado".
+ * @returns {Promise<{atores: number, tokens: number}>}
+ */
+export async function corrigirTokens() {
+	if (!game.user.isGM) return { atores: 0, tokens: 0 };
+	const atores = game.actors.filter((a) => ameacaDaCampanha(a) && !barrasCertas(a.prototypeToken));
+	if (atores.length) await classe("Actor").updateDocuments(atores.map((a) => ({ _id: a.id, prototypeToken: structuredClone(TOKEN_PADRAO) })));
+	let tokens = 0;
+	for (const cena of game.scenes ?? []) {
+		const mudar = cena.tokens.filter((t) => ameacaDaCampanha(t.actor ?? game.actors.get(t.actorId)) && !barrasCertas(t));
+		if (!mudar.length) continue;
+		await cena.updateEmbeddedDocuments("Token", mudar.map((t) => ({ _id: t.id, bar1: { ...TOKEN_PADRAO.bar1 }, bar2: { ...TOKEN_PADRAO.bar2 } })));
+		tokens += mudar.length;
+	}
+	return { atores: atores.length, tokens };
+}
+
+// Na criação, o token padrão vence o "Prototype Token Overrides" do mundo e qualquer outro padrão.
+Hooks.on("preCreateActor", (actor) => {
+	if (tokenPadraoLigado() && ameacaDaCampanha(actor)) actor.updateSource({ prototypeToken: structuredClone(TOKEN_PADRAO) });
+});
+Hooks.on("preCreateToken", (token) => {
+	if (!tokenPadraoLigado() || barrasCertas(token._source ?? token)) return;
+	const actor = token.actor ?? game.actors?.get(token._source?.actorId ?? token.actorId);
+	if (ameacaDaCampanha(actor)) token.updateSource({ bar1: { ...TOKEN_PADRAO.bar1 }, bar2: { ...TOKEN_PADRAO.bar2 } });
+});
+
+/* ------------------------------------------------------------------------ */
 /* Ganchos                                                                    */
 /* ------------------------------------------------------------------------ */
 
@@ -577,6 +624,14 @@ Hooks.once("init", () => {
 	game.settings.register(MODULO, "avisarVersao", {
 		name: "Avisar quando houver melhorias",
 		hint: "Quando sai uma versão nova do módulo, o Mestre recebe no chat (uma vez) quantos documentos do mundo têm melhorias no compêndio. Nada é mudado sem a macro CdR · Atualizar do compêndio.",
+		scope: "world",
+		config: true,
+		type: Boolean,
+		default: true
+	});
+	game.settings.register(MODULO, "tokenPadrao", {
+		name: "Token padrão nas ameaças",
+		hint: "As ameaças do módulo ficam com nome ao passar o mouse, visão ligada e as barras sempre visíveis para o dono: PV na barra 1 e PM (azul) na barra 2. Ao abrir o mundo, corrige as que já estão nele e os tokens delas nas cenas.",
 		scope: "world",
 		config: true,
 		type: Boolean,
@@ -624,6 +679,7 @@ Hooks.once("init", () => {
 			abrirAtualizar,
 			procurarAtualizacoes,
 			atualizarDocumento,
+			corrigirTokens,
 			limpar,
 			abrirLimpar,
 			procurarParaLimpar,
@@ -641,6 +697,10 @@ Hooks.once("ready", async () => {
 	await registrarRedirecionamentos();
 	ligarAutomacoes();
 	if (!game.user.isGM || (game.users.activeGM && game.users.activeGM !== game.user)) return;
+	if (tokenPadraoLigado()) {
+		const { atores, tokens } = await corrigirTokens();
+		if (atores || tokens) ui.notifications.info(`Coração de Rubi: token padrão (PV e PM azul) em ${atores} ameaça(s) e ${tokens} token(s) nas cenas.`);
+	}
 	// Versão nova: só um aviso no chat, nada muda no mundo
 	const versao = modulo()?.version;
 	if (!game.settings.get(MODULO, "avisarVersao") || game.settings.get(MODULO, "avisado") === versao) return;

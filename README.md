@@ -104,6 +104,10 @@ Se um item está no índice do Giria mas falta a cópia, o relatório do build a
 
 O relatório completo do que foi ligado está em [`build/relatorio.md`](build/relatorio.md).
 
+### Token das ameaças
+
+Toda ameaça do módulo vem com o nome visível ao passar o mouse (qualquer um), a visão ligada e as barras sempre visíveis para o dono: **PV (`attributes.pv`) na barra 1 e PM (`attributes.pm`, azul) na barra 2** (`TOKEN_PADRAO` em `scripts/assinatura.mjs`). No Foundry, o módulo garante isso ao criar a ameaça no mundo (vence o *Prototype Token Overrides* do mundo) e ao pôr o token na cena, e ao abrir o mundo corrige as ameaças que já estavam nele e os tokens delas nas cenas. Para desligar: configuração do módulo *Token padrão nas ameaças*.
+
 ### Artes
 
 Os tokens feitos para a campanha ficam em [`assets/`](assets), uma pasta por aventura (A2: Guardião de Rubi, Abominação Rubi e K), em WebP de 512 px. As originais estão no Drive, em *Coração de Rubi / 2. NPCs*. Os geradores apontam para `modules/giriarpg-coracao-de-rubi/assets/...`.
