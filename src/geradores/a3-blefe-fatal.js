@@ -668,9 +668,9 @@ relatorio.criados.push(`Tabela: ${tabela.name}`);
 // ---------------------------------------------------------------------------
 const WYRT = String.raw`// A3 · Partida de Wyrt (Blefe Fatal, Parte 1, Cena 4). Só o mestre.
 // Selecione os tokens dos (até dois) personagens na mesa. "Jogar o turno" resolve o turno de um deles
-// (aposta, mão inicial, blefe, ajuda e Hora da Verdade contra Prinkster +14). "Fim da rodada" rola a
-// Bebida Amarga de quem bebeu (cada jogador rola a Fortitude no cartão do chat) e solta o próximo comentário de
-// Prinkster. Bolsas e placar ficam salvos.
+// (aposta, mão inicial, blefe, ajuda e Hora da Verdade contra Prinkster +14): cada teste vai ao chat num cartão e o
+// jogador rola pela ficha. "Fim da rodada" pede a Fortitude da Bebida Amarga de quem bebeu (a condição de quem falha
+// fica num botão só do mestre) e solta o próximo comentário de Prinkster. Bolsas e placar ficam salvos.
 if (!game.user.isGM) return ui.notifications.warn("Só o mestre roda esta macro.");
 const { DialogV2 } = foundry.applications.api;
 const FLAG = "cdrWyrt";
@@ -691,8 +691,6 @@ for (const a of selecionados) st.jogadores[a.id] ??= { nome: a.name, bolsa: 100,
 const ativos = Object.entries(st.jogadores).filter(([, j]) => !j.fora && j.bolsa > 0);
 const placar = () => "Prinkster: <b>T$ " + st.prinkster + "</b> · " + Object.values(st.jogadores).map((j) => j.nome + ": <b>T$ " + j.bolsa + "</b>" + (j.fora ? " (fora)" : "") + (j.falhas ? ", " + j.falhas + " falha(s) na bebida" : "")).join(" · ");
 const sussurro = (html) => ChatMessage.create({ whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id), content: "<h3>Partida de Wyrt</h3>" + html + "<p>" + placar() + "</p>" });
-const val = (a, id) => a?.system?.pericias?.[id]?.value ?? 0;
-const rolar = async (f) => (await new Roll(f).evaluate()).total;
 
 const content = "<p>" + placar() + "</p>" +
 	'<label>Turno de <select name="quem">' + ativos.map(([id, j]) => '<option value="' + id + '">' + j.nome + "</option>").join("") + "</select></label>" +
@@ -715,33 +713,45 @@ if (r.a === "zerar") {
 	await game.user.setFlag("world", FLAG, novo());
 	return ui.notifications.info("Nova partida de Wyrt: selecione os jogadores e rode de novo.");
 }
+const testes = game.modules.get("giriarpg-coracao-de-rubi")?.api?.testes;
+if (!testes) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
 if (r.a === "rodada") {
-	// Bebida Amarga: um cartão por quem bebeu; o jogador rola a Fortitude no botão e a falha é contada quando chega.
-	const api = game.modules.get("giriarpg-coracao-de-rubi")?.api;
-	if (!api?.pedirTeste) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
+	// Bebida Amarga: um cartão com a Fortitude de cada um que bebeu; cada jogador rola pela ficha.
+	// Quem falha ganha a condição por um botão que só o mestre vê.
 	const naoBebeu = (r.f.naoBebeu.value ?? "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
 	let html = "";
-	let beberam = 0;
+	const bebem = [];
 	for (const [id, j] of ativos) {
 		if (naoBebeu.includes(j.nome.toLowerCase())) { html += "<p>" + j.nome + " não bebeu.</p>"; continue; }
-		beberam++;
-		const cd = 15 + j.bebidas;
-		j.bebidas++;
-		const proxima = ["frustrado", "esmorecido", "inconsciente"][Math.min(j.falhas + 1, 3) - 1];
-		await api.pedirTeste({
-			titulo: "Bebida Amarga · " + j.nome, img: "icons/consumables/potions/potion-flask-corked-pink.webp", alvos: [id],
-			texto: "<p>Mais uma rodada da bebida da taverna. Dose " + j.bebidas + ".</p>",
-			pericia: "fort", cd,
-			sucesso: "aguenta a bebida.", falha: "sente a bebida: fica <b>" + proxima + "</b>" + (proxima === "inconsciente" ? " e sai do jogo" : "") + ".",
-			gancho: "wyrtBebida"
-		});
+		const ator = game.actors.get(id);
+		if (ator) bebem.push({ id, j, ator, cd: 15 + j.bebidas });
 	}
-	if (beberam && !naoBebeu.length && st.comentario < COMENTARIOS.length) {
-		html += "<p><b>Prinkster (" + (st.comentario + 1) + "/8):</b> <i>“" + COMENTARIOS[st.comentario] + "”</i></p>";
-		st.comentario++;
-	} else if (naoBebeu.length) html += "<p>Prinkster se ofende e não comenta nada nesta rodada.</p>";
+	if (bebem.length) {
+		const res = await testes.pedir({
+			titulo: "Bebida Amarga", texto: "Mais uma rodada da bebida da taverna.",
+			testes: bebem.map((b) => ({ ator: b.ator, pericia: "fort", cd: b.cd, rotulo: "dose " + (b.j.bebidas + 1) })),
+			sucessoTexto: "aguenta a bebida", falha: { texto: "a bebida pega" }
+		});
+		const A = testes.acoes();
+		for (const x of res ?? []) {
+			const j = st.jogadores[x.ator?.id];
+			if (!j) continue;
+			j.bebidas++;
+			if (x.passou) { html += "<p>" + j.nome + ": Fortitude " + x.total + " vs CD " + x.cd + " → resiste.</p>"; continue; }
+			j.falhas++;
+			const cond = ["frustrado", "esmorecido", "inconsciente"][Math.min(j.falhas, 3) - 1];
+			if (j.falhas >= 3) j.fora = true;
+			html += "<p>" + j.nome + ": Fortitude " + x.total + " vs CD " + x.cd + " → <b>" + cond + "</b>" + (j.fora ? " (sai do jogo)" : "") + ". " + A.status(x.ator, cond) + "</p>";
+		}
+		if (!naoBebeu.length && st.comentario < COMENTARIOS.length) {
+			html += "<p><b>Prinkster (" + (st.comentario + 1) + "/8):</b> <i>“" + COMENTARIOS[st.comentario] + "”</i></p>";
+			st.comentario++;
+		} else if (naoBebeu.length) html += "<p>Prinkster se ofende e não comenta nada nesta rodada.</p>";
+		await game.user.setFlag("world", FLAG, st);
+		return A.enviar({ whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id), content: "<h3>Partida de Wyrt</h3>" + html + "<p>" + placar() + "</p>" });
+	}
 	await game.user.setFlag("world", FLAG, st);
-	return sussurro(html + (beberam ? "<p>Bebida Amarga: os cartões de Fortitude estão no chat.</p>" : ""));
+	return sussurro(html);
 }
 const id = r.f.quem.value;
 const j = st.jogadores[id];
@@ -755,14 +765,19 @@ for (const [, x] of ativos) { const v = Math.min(aposta, x.bolsa); x.bolsa -= v;
 const vp = Math.min(aposta * 3, st.prinkster);
 st.prinkster -= vp;
 pote += vp;
-// Mão inicial
+// Os testes do herói vão ao chat, um de cada vez, e o jogador rola pela ficha.
+const um = async (titulo, texto, pericia, cd) => (await testes.pedir({ titulo, texto, testes: [{ ator, pericia, cd }] }))?.[0] ?? null;
 let mod = 0;
 if (r.f.mao.value === "car") {
-	const t = await rolar("1d20 + " + (ator.system.atributos?.car?.value ?? 0));
+	const x = await um("Wyrt · Mão inicial", "Sorte nas cartas: Carisma CD 15 (10 ou menos é mão ruim).", "atr:car", 15);
+	if (!x) return;
+	const t = x.total;
 	if (t >= 15) mod += 5; else if (t <= 10) mod -= 5;
 	html += "<p>Mão inicial (Carisma " + t + " vs 15): " + (t >= 15 ? "mão boa, +5" : t <= 10 ? "mão ruim, –5" : "nada") + ".</p>";
 } else {
-	const t = await rolar("1d20 + " + val(ator, "ladi"));
+	const x = await um("Wyrt · Mão inicial", "Trapaça nas cartas: Ladinagem CD 20 (15 ou menos é pego).", "ladi", 20);
+	if (!x) return;
+	const t = x.total;
 	if (t >= 20) mod += 5;
 	if (t <= 15) {
 		j.fora = true;
@@ -774,19 +789,19 @@ if (r.f.mao.value === "car") {
 	html += "<p>Ladinagem " + t + " vs 20: " + (t >= 20 ? "mão boa, +5" : "nada") + ".</p>";
 }
 if (r.f.blefe.checked) {
-	const t = await rolar("1d20 + " + val(ator, "enga"));
+	const x = await um("Wyrt · Blefe", "Blefe na mesa: Enganação CD 20 (15 ou menos fica evidente).", "enga", 20);
+	if (!x) return;
+	const t = x.total;
 	if (t >= 20) mod += 2; else if (t <= 15) mod -= 5;
 	html += "<p>Blefe (Enganação " + t + " vs 20): " + (t >= 20 ? "+2" : t <= 15 ? "blefe evidente, –5" : "nada") + ".</p>";
 }
 mod += Number(r.f.ajuda.value) || 0;
-// Hora da Verdade: todos os jogadores ativos rolam Jogatina; só o do turno tem os modificadores.
-const resultados = [];
-for (const [xid, x] of ativos) {
-	const a = game.actors.get(xid);
-	const t = await rolar("1d20 + " + val(a, "joga") + (xid === id ? " + " + mod : ""));
-	resultados.push({ nome: x.nome, id: xid, t });
-}
-const tp = await rolar("1d20 + 14 - " + (Number(r.f.atrapalha.value) || 0));
+// Hora da Verdade: todos os jogadores ativos rolam Jogatina (teste oposto); só o do turno tem os modificadores.
+const linhas = ativos.map(([xid]) => game.actors.get(xid)).filter(Boolean).map((a) => ({ ator: a, pericia: "joga", cd: null, bonus: a.id === id ? mod : 0 }));
+const hv = await testes.pedir({ titulo: "Wyrt · Hora da Verdade", texto: "Jogatina contra Prinkster (+14).", testes: linhas });
+if (!hv?.length) return;
+const resultados = hv.map((x) => ({ nome: x.nome, id: x.ator?.id ?? null, t: x.total }));
+const tp = (await new Roll("1d20 + 14 - " + (Number(r.f.atrapalha.value) || 0)).evaluate()).total;
 resultados.push({ nome: "Prinkster", id: null, t: tp });
 resultados.sort((a, b) => b.t - a.t);
 const venc = resultados[0];

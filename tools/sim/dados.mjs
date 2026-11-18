@@ -213,6 +213,8 @@ function tokenizar(formula) {
 }
 
 export class Roll {
+	static _proximoId = 0;
+	static _porId = new Map();
 	constructor(formula = "", data = {}, options = {}) {
 		this.data = data;
 		this.options = options;
@@ -342,7 +344,18 @@ export class Roll {
 	}
 
 	toJSON() {
-		return { class: "Roll", formula: this.formula, total: this.total, evaluated: this._evaluated };
+		this._simId ??= ++Roll._proximoId;
+		Roll._porId.set(this._simId, this);
+		return { class: "Roll", formula: this.formula, total: this.total, evaluated: this._evaluated, simId: this._simId };
+	}
+
+	/** Como no Foundry: refaz a rolagem a partir do JSON (no simulador, devolve a mesma rolagem). */
+	static fromData(d) {
+		const r = d?.simId && Roll._porId.get(d.simId);
+		if (r) return r;
+		const nova = new this(d.formula);
+		nova.evaluateSync?.();
+		return nova;
 	}
 
 	clone() {

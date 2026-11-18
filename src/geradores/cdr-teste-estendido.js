@@ -1,7 +1,7 @@
 // Teste estendido genérico (N sucessos antes de X falhas). Macro de script, só o mestre.
 // Selecione os tokens que vão rolar (ou nenhum, para qualquer jogador) e rode a macro. O progresso fica salvo entre sessões.
-// Rolar manda ao chat um cartão com o botão do teste: cada jogador rola o seu (com tokens selecionados, só eles).
-// Opcional: dano por falha (quem falha vê a rolagem do dano, aplicada pelos botões), ex.: "1d6[perda]".
+// Rolar manda ao chat um cartão com um botão por personagem: cada jogador rola pela ficha.
+// Opcional: dano por falha (rolado para quem falha e aplicado pelo mestre num botão do resumo), ex.: "1d6[perda]".
 // Botões "+1 sucesso" e "+1 falha" servem para efeitos que contam direto.
 // Exemplos (Aventura 2): Negociar com Zhura (andar 1, área 7): Diplomacia ou Intimidação CD 25 (20 com Stroka), 3 sucessos.
 // Epílogo, meio-termo entre Lonien e K: Diplomacia CD 25, 3 sucessos.
@@ -69,19 +69,42 @@ if (escolha.a === "mais" || escolha.a === "menos") {
   await gravar();
   return;
 }
-// Rolar: o cartão vai ao chat e cada jogador rola no botão. Sucessos e falhas são contados quando o resultado
-// chega; quem falha vê o dano da falha num cartão (aplicado pelos botões do cartão).
-const api = game.modules.get("giriarpg-coracao-de-rubi")?.api;
-if (!api?.pedirTeste) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
+// Rolar: o cartão vai ao chat com um botão por personagem; cada jogador rola pela ficha. Quando todos rolarem, a macro
+// conta sucessos e falhas; o dano da falha aparece num botão que só o mestre vê (nada é aplicado sozinho).
+const testesApi = game.modules.get("giriarpg-coracao-de-rubi")?.api?.testes;
+if (!testesApi) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
+const selecionados = [...new Set(canvas.tokens.controlled.map((tk) => tk.actor).filter(Boolean))];
+const herois = selecionados.length ? selecionados : game.users.filter((u) => !u.isGM && u.character).map((u) => u.character);
+if (!herois.length) return ui.notifications.warn("Selecione os tokens que vão rolar.");
 const pid = f.periciaRolagem.value || t.pericia;
-t.n++;
-await gravar();
-await api.pedirTeste({
-  titulo: nome, img: "icons/svg/d20-highlight.svg",
-  alvos: canvas.tokens.controlled.map((tk) => tk.actor?.id).filter(Boolean),
-  texto: `<p>Teste estendido: ${t.s}/${t.need} sucessos, ${t.f}/${t.maxF} falhas (cada rolagem leva ${t.tempo}).</p>`,
-  pericia: pid, cd: t.cd, bonus: Number(f.bonus.value) || 0,
-  sucesso: "avança no teste.", falha: "não avança" + (t.dano ? " e sofre o dano da falha." : "."),
-  danoNaFalha: t.dano || null,
-  gancho: "estendido", dados: { nome }
+const bonus = Number(f.bonus.value) || 0;
+const res = await testesApi.pedir({
+  titulo: nome,
+  texto: `Teste estendido: ${t.s}/${t.need} sucessos, ${t.f}/${t.maxF} falhas (cada rolagem leva ${t.tempo}).`,
+  testes: herois.map((a) => ({ ator: a, pericia: pid, cd: t.cd, bonus })),
+  falha: t.dano ? { texto: "sofre o dano da falha" } : null
 });
+if (!res?.length) return;
+const atual = foundry.utils.deepClone(game.user.getFlag("world", FLAG) ?? {});
+const tt = atual[nome] ?? t;
+const A = testesApi.acoes();
+const linhas = [];
+for (const x of res) {
+  x.passou ? tt.s++ : tt.f++;
+  let l = `${x.nome}: ${x.total} ${x.passou ? "✔" : "✘"}`;
+  if (!x.passou && tt.dano && x.ator) {
+    const d = await testesApi.rolarDano(tt.dano, `${nome}: dano da falha`);
+    l += ` · dano da falha <b>${d.total}</b> ${A.dano(x.ator, d)}`;
+  }
+  linhas.push(l);
+}
+tt.n++;
+let fim = "";
+if (tt.s >= tt.need) fim = `<p><b>Sucesso!</b> ${tt.s} sucessos.</p>`;
+else if (tt.f >= tt.maxF) fim = `<p><b>Fracasso.</b> ${tt.f} falhas.</p>`;
+await A.enviar({ whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id), content:
+  `<h3>${nome}</h3><p>${linhas.join("<br>")}</p><p>Progresso: ${tt.s}/${tt.need} sucessos, ${tt.f}/${tt.maxF} falhas. Rolagens feitas: ${tt.n} (× ${tt.tempo}).</p>${fim}` });
+if (fim) delete atual[nome]; else atual[nome] = tt;
+for (const k of Object.keys(testes)) delete testes[k];
+Object.assign(testes, atual);
+await gravar();
