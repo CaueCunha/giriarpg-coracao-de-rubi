@@ -31,6 +31,7 @@
       }
     ]
   },
+  "socket": true,
   "esmodules": [
     "scripts/cdr.mjs"
   ],

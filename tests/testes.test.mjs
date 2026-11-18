@@ -128,3 +128,8 @@ test("macros já no mundo se atualizam sozinhas e as editadas ganham cópia", as
 	assert.equal(await api(mundo).atualizarMacros(), null);
 	mundo.encerrar();
 });
+
+test("o manifesto liga o socket do módulo (o resultado do jogador volta ao mestre)", () => {
+	const m = JSON.parse(fs.readFileSync(path.join(RAIZ, "module.json"), "utf8"));
+	assert.equal(m.socket, true);
+});
