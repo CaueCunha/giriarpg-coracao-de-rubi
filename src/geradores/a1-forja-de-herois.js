@@ -608,8 +608,8 @@ relatorio.criados.push(`Tabela: ${tabela.name}`);
 
 // Macro do julgamento
 const JULGAMENTO = String.raw`// A1 · O Julgamento: 5 sucessos antes de 3 falhas (Forja de Heróis, Parte 3, Cena 6).
-// Selecione o token de quem faz a arguição e rode: o cartão vai ao chat e o jogador rola no botão.
-// O placar e as testemunhas ficam salvos no mundo e são contados quando o resultado chega.
+// Selecione o token de quem faz a arguição e rode: o cartão vai ao chat e o jogador rola pela ficha no botão.
+// Quando o resultado chega, a macro conta o placar (e oferece a testemunha numa falha). O placar fica salvo no mundo.
 if (!game.user.isGM) return ui.notifications.warn("Só o mestre roda esta macro.");
 const { DialogV2 } = foundry.applications.api;
 const FLAG = "cdrJulgamento";
@@ -638,19 +638,43 @@ if (r.a === "zerar") {
 }
 if (!actor) return ui.notifications.warn("Selecione o token de quem faz a arguição.");
 if (st.fim) return ui.notifications.warn("O julgamento já terminou. Use Recomeçar.");
-const api = game.modules.get("giriarpg-coracao-de-rubi")?.api;
-if (!api?.pedirTeste) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
+const testes = game.modules.get("giriarpg-coracao-de-rubi")?.api?.testes;
+if (!testes) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
 st.testemunhas = Number(r.f.test.value) || 0;
-await game.user.setFlag("world", FLAG, st);
 const [grupo, pericia] = r.f.pericia.value.split(":");
-const just = r.f.just.value;
-// O jogador rola no botão do cartão; o placar (e a testemunha, numa falha) é contado quando o resultado chega.
-await api.pedirTeste({
-	titulo: "O Julgamento", img: "icons/svg/statue.svg", alvos: [actor.id],
-	texto: "<p>Apelo " + (grupo === "racional" ? "racional" : "emocional") + " de <b>" + actor.name + "</b>: " + nome(pericia) + ", justificativa " + just + ".</p><p>" + placar() + "</p>",
-	pericia, cd: CDS[just],
-	sucesso: "convence o júri.", falha: "não convence o júri.",
-	gancho: "julgamento", dados: { grupo }
+const cd = CDS[r.f.just.value];
+// O jogador rola pela ficha no botão do cartão; quando o resultado chega, a macro conta o placar.
+const [res] = await testes.pedir({
+	titulo: "O Julgamento",
+	texto: "Apelo " + grupo + " de <b>" + actor.name + "</b> (justificativa " + r.f.just.value + "). " + placar() + ".",
+	testes: [{ ator: actor, pericia, cd }]
+});
+if (!res) return;
+st = foundry.utils.deepClone(game.user.getFlag("world", FLAG) ?? st);
+st.testemunhas = Number(r.f.test.value) || 0;
+let total = res.total;
+let extra = "";
+if (total < cd && st.testemunhas > 0) {
+	const usar = await DialogV2.confirm({ window: { title: "Testemunha" }, content: "<p>" + actor.name + " tirou <b>" + total + "</b> contra CD " + cd + ". Gastar uma testemunha (+1d6)?</p>" });
+	if (usar) {
+		const d6 = await new Roll("1d6").evaluate();
+		await d6.toMessage({ flavor: "<b>O Julgamento</b>: uma testemunha fala a favor do grupo (+1d6)" });
+		total += d6.total;
+		st.testemunhas -= 1;
+		extra = " + testemunha " + d6.total;
+	}
+}
+const ok = total >= cd;
+if (ok) st.s += 1; else st.f += 1;
+st.ultimo = grupo;
+let veredito = "";
+if (st.s >= 5) { st.fim = true; veredito = "<p><b>Culpado!</b> Rodford é sentenciado à prisão perpétua. Vá para o Epílogo.</p>"; }
+else if (st.f >= 3) { st.fim = true; veredito = "<p><b>Absolvido.</b> Rodford bane o grupo e Ezequias da cidade (Derrota no Tribunal).</p>"; }
+await game.user.setFlag("world", FLAG, st);
+ChatMessage.create({
+	speaker: ChatMessage.getSpeaker({ actor }),
+	whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id),
+	content: "<h3>O Julgamento</h3><p>Apelo " + grupo + ", " + nome(pericia) + ", CD " + cd + ": <b>" + res.total + extra + " = " + total + "</b> → " + (ok ? "sucesso" : "falha") + ".</p><p>" + placar() + "</p>" + veredito
 });`;
 await Macro.implementation.create({ name: "A1 · O Julgamento", type: "script", scope: "global", img: "icons/svg/statue.svg", folder: pasta.Macro.id, flags: FLAGS("julgamento"), command: JULGAMENTO });
 relatorio.criados.push("Macro: A1 · O Julgamento");

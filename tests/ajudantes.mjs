@@ -78,3 +78,19 @@ export function limparRegistros(mundo) {
 	mundo.chat.length = 0;
 	mundo.dialogos.length = 0;
 }
+
+/**
+ * Os jogadores da mesa simulada rolam: todo cartão de teste que chega ao chat (scripts/testes.mjs) tem cada linha
+ * clicada (primeira perícia oferecida), como se o dono do personagem clicasse no botão. Sem isso, a macro que espera
+ * os resultados ficaria parada para sempre.
+ */
+export function jogadoresRolam(mundo) {
+	const api = mundo.game.modules.get(MODULO).api;
+	globalThis.Hooks.on("createChatMessage", (msg) => {
+		const p = msg.flags?.[MODULO]?.pedido;
+		if (!p) return;
+		setTimeout(async () => {
+			for (const [l, ln] of p.linhas.entries()) await api._testeTestes.clicarRolar(msg, l, ln.pericias[0], {});
+		}, 0);
+	});
+}

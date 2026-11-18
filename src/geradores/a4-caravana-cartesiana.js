@@ -796,18 +796,21 @@ relatorio.criados.push(`Tabela: ${tabela.name}`);
 
 // Macro
 const ASES = String.raw`// A4 · Ases nas Alturas (Caravana Cartesiana, Parte 4, Cena 8). Só o mestre.
-// Manda ao chat o cartão do teste; cada jogador clica no botão e rola o próprio teste.
-// "Canhões" rola o dano do Vento Vasto e pede Reflexos (CD 20 reduz à metade): o dano se aplica pelos botões do cartão.
-// "Teste de borda" pede Acrobacia (CD 10 + metade do dano sofrido) de quem está na borda.
-// Com tokens selecionados, só eles rolam; sem seleção, qualquer jogador rola o seu.
+// Selecione os tokens na nuvem (sem seleção: os personagens dos jogadores) e rode. O cartão vai ao chat:
+// "Canhões" mostra o dano do Vento Vasto (6d6, rolado uma vez para todos) e um botão de Reflexos por personagem
+// (CD 20 reduz à metade). "Teste de borda" pede Acrobacia (CD 10 + metade do dano sofrido).
+// Cada jogador rola pela ficha; você aplica dano e metade pelos botões do cartão.
 if (!game.user.isGM) return ui.notifications.warn("Só o mestre roda esta macro.");
-const api = game.modules.get("giriarpg-coracao-de-rubi")?.api;
-if (!api?.pedirTeste) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
+const testes = game.modules.get("giriarpg-coracao-de-rubi")?.api?.testes;
+if (!testes) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
+// Quem testa: os tokens selecionados; sem seleção, os personagens dos jogadores.
+const selecionados = [...new Set(canvas.tokens.controlled.map((t) => t.actor).filter(Boolean))];
+const herois = selecionados.length ? selecionados : game.users.filter((u) => !u.isGM && u.character).map((u) => u.character);
+if (!herois.length) return ui.notifications.warn("Selecione os tokens dos personagens (ou ligue um personagem a cada jogador).");
 const { DialogV2 } = foundry.applications.api;
-const alvos = canvas.tokens.controlled.map((t) => t.actor?.id).filter(Boolean);
 const r = await DialogV2.wait({
 	window: { title: "Ases nas Alturas" }, rejectClose: false,
-	content: '<label>Dano sofrido (para o teste de borda) <input type="number" name="dano" value="10" min="0"></label>',
+	content: "<p>" + herois.map((a) => a.name).join(", ") + '</p><label>Dano sofrido (para o teste de borda) <input type="number" name="dano" value="10" min="0"></label>',
 	buttons: [
 		{ action: "canhoes", label: "Canhões do Vento Vasto", default: true, callback: () => ({ a: "canhoes" }) },
 		{ action: "borda", label: "Teste de borda", callback: (e, b) => ({ a: "borda", dano: Number(b.form.elements.dano.value) || 0 }) }
@@ -815,17 +818,16 @@ const r = await DialogV2.wait({
 });
 if (!r) return;
 if (r.a === "canhoes") {
-	await api.pedirTeste({
-		titulo: "Canhões do Vento Vasto", img: "icons/svg/explosion.svg", alvos,
-		texto: "<p>Os canhões do Vento Vasto varrem a nuvem. Quem está nela faz um teste de Reflexos.</p>",
-		pericia: "refl", cd: 20, dano: "6d6[impacto]", efeito: "metade"
+	await testes.pedir({
+		titulo: "Canhões do Vento Vasto", texto: "Os canhões do Vento Vasto varrem a nuvem.",
+		testes: herois.map((a) => ({ ator: a, pericia: "refl", cd: 20 })),
+		dano: "6d6[impacto]", sucesso: "metade", esperar: false
 	});
 } else {
-	await api.pedirTeste({
-		titulo: "Teste de borda", img: "icons/svg/wing.svg", alvos,
-		texto: "<p>Quem está na borda da nuvem e sofreu dano precisa se segurar.</p>",
-		pericia: "acro", cd: 10 + Math.floor(r.dano / 2),
-		sucesso: "se segura na borda.", falha: "<b>cai</b>! (9 m por rodada; passou de 30 m, despenca)"
+	await testes.pedir({
+		titulo: "Teste de borda", texto: "Quem está na borda da nuvem e sofreu dano precisa se segurar.",
+		testes: herois.map((a) => ({ ator: a, pericia: "acro", cd: 10 + Math.floor(r.dano / 2) })),
+		sucessoTexto: "se segura na borda", falha: { texto: "cai! 9 m por rodada; passou de 30 m, despenca" }, esperar: false
 	});
 }`;
 await Macro.implementation.create({ name: "A4 · Ases nas Alturas", type: "script", scope: "global", img: "icons/svg/wing.svg", folder: pasta.Macro.id, flags: FLAGS("asesNasAlturas"), command: ASES });

@@ -73,9 +73,18 @@ A atualização troca o documento pela versão do compêndio com o **mesmo ID**,
 
 As flags ficam em `flags.world` porque entram na assinatura e vão junto ao puxar. Para uma aventura nova, acrescente a chave em [`scripts/automacoes.mjs`](scripts/automacoes.mjs). A API fica em `game.modules.get("giriarpg-coracao-de-rubi").api` (`abrirPuxar`, `abrirAtualizar`, `abrirLimpar`, `curaLonien(ator)`).
 
-### Testes no chat: o jogador rola
+### Testes no chat: o jogador rola (padrão do Duelo de Dragões)
 
-As macros da campanha não rolam testes pelos personagens. Elas mandam ao chat um cartão, no formato dos poderes: a situação, o teste pedido (a CD só aparece para o mestre), a rolagem do dano quando há (com os botões do sistema para aplicar o dano todo, em dobro ou a metade) e o botão do teste. Cada jogador clica e rola o teste dos seus tokens selecionados (ou do seu personagem); o chat diz se passou e o que acontece. Nada é aplicado sozinho. Placar com estado (O Julgamento, Teste estendido, Bebida Amarga do Wyrt) é contado pelo mestre ativo quando o resultado chega. Usam o cartão: A1 · O Julgamento, A3 · Partida de Wyrt (Bebida Amarga), A4 · Ases nas Alturas, A5 · Salto sobre Yuvalin e CdR · Teste estendido. Para outras macros: `game.modules.get("giriarpg-coracao-de-rubi").api.pedirTeste({...})` (opções em `scripts/testes-chat.mjs`).
+O motor é o mesmo do módulo Duelo de Dragões (`scripts/testes.mjs`), com as regras do Cauê:
+
+1. Nenhuma macro rola perícia de resistência nem aplica dano, condição ou efeito direto.
+2. A macro manda ao chat um cartão com o dano já rolado uma vez para todos, como uma magia em área. A rolagem fica só no conteúdo (classe `roll--dano`), não em `rolls`.
+3. O cartão tem um botão Rolar por personagem, e o dono rola pela ficha. O resultado volta ao mestre pelo socket do módulo.
+4. O mestre aplica dano, metade, condição ou efeito por botões que só ele vê.
+5. O cartão usa as classes `tormenta20 item-card`, para os botões de dano ficarem em linha como nos poderes.
+6. As macros já no mundo se atualizam sozinhas ao abrir o mundo (uma vez por versão das macros), guardando uma cópia "(sua edição)" das que você editou em *Coração de Rubi / Cópias das suas edições*.
+
+Usam o cartão: A1 · O Julgamento, A3 · Partida de Wyrt (turno e Bebida Amarga), A4 · Ases nas Alturas, A5 · Salto sobre Yuvalin e CdR · Teste estendido. Para outras macros: `game.modules.get("giriarpg-coracao-de-rubi").api.testes.pedir({...})` (opções no topo de `scripts/testes.mjs`). Ficam de fora as ferramentas de poder de jogador ou de manutenção, que só marcam uso ou consertam fichas (K, Lonien, Dado de Aniversário, Aço-rubi). `tests/testes.test.mjs` confere as regras.
 
 ### O que fica aqui e o que fica no Giria T20
 

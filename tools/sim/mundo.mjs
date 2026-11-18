@@ -520,6 +520,14 @@ export async function criarMundo({ semente = "cdr", usuario = "Mestre", gm = tru
 				}
 				if (typeof d.content !== "string" && d.content !== undefined) d.content = String(d.content);
 				const msg = { id: U.randomID(), ...d, timestamp: Date.now(), origem: mundo.contexto.atual };
+				// Como um ChatMessage: update (mescla e chama o gancho) e getFlag.
+				Object.defineProperty(msg, "update", { enumerable: false, value: async (changes = {}) => {
+					const c = U.expandObject(U.deepClone(changes));
+					U.mergeObject(msg, c, { performDeletions: true });
+					mundo.chamarHook("updateChatMessage", msg, c, {}, mundo.game.user.id);
+					return msg;
+				} });
+				Object.defineProperty(msg, "getFlag", { enumerable: false, value: (scope, key) => U.getProperty(msg.flags?.[scope] ?? {}, key) });
 				mundo.chat.push(msg);
 				verificarLinks(d.content ?? "", `chat (${mundo.contexto.atual})`);
 				mundo.chamarHook("createChatMessage", msg, operation, mundo.game.user.id);
@@ -833,6 +841,11 @@ export async function criarMundo({ semente = "cdr", usuario = "Mestre", gm = tru
 	};
 	mundo.game = game;
 
+	{
+		const col = mundo.colecoes.ChatMessage;
+		const get = col.get.bind(col);
+		col.get = (id) => get(id) ?? mundo.chat.find((m) => m.id === id);
+	}
 	Object.defineProperty(mundo.colecoes.User, "activeGM", { get: () => mundo.colecoes.User.find((u) => u.isGM) ?? null });
 	const mestre = new User({ _id: U.randomID(), name: usuario, role: gm ? 4 : 1 });
 	mestre.targets = new Set();

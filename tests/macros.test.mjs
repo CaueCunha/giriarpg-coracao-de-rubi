@@ -11,7 +11,7 @@
  */
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { criarMundo, carregarModulo, prepararMesa, problemas, limparRegistros, MODULO } from "./ajudantes.mjs";
+import { criarMundo, carregarModulo, prepararMesa, problemas, limparRegistros, jogadoresRolam, MODULO } from "./ajudantes.mjs";
 import { politicaPadrao, politicaAleatoria, politicaRoteiro } from "../tools/sim/dialogos.mjs";
 import { semearDados } from "../tools/sim/sorte.mjs";
 import { ATOS } from "../tools/conteudo.mjs";
@@ -22,6 +22,7 @@ const mundo = await criarMundo({ semente: "macros" });
 await carregarModulo(mundo);
 await mundo.game.modules.get(MODULO).api.puxar({ atos: ATOS.map((a) => a.id) });
 await prepararMesa(mundo, { alvoNpc: false });
+jogadoresRolam(mundo);
 const pjs = mundo.game.actors.filter((a) => a.type === "character");
 
 /** Uma cena por aventura, com os PJs e os NPCs daquela marca. */

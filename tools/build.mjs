@@ -245,6 +245,7 @@ export function escreverManifesto(packs) {
 			systems: [{ id: "tormenta20", type: "system", compatibility: { minimum: "1.6.0" } }],
 			recommends: [{ id: "giria-t20", type: "module", reason: "Itens, poderes e magias citados nas aventuras apontam para o compêndio do Giria T20." }]
 		},
+		socket: true, // testes no chat: o resultado do jogador volta ao mestre (scripts/testes.mjs)
 		esmodules: ["scripts/cdr.mjs"],
 		styles: ["styles/cdr.css"],
 		languages: [{ lang: "pt-BR", name: "Português (Brasil)", path: "lang/pt-BR.json" }],

@@ -15,7 +15,7 @@
  */
 import { MODULO, PRESERVAR, TOKEN_PADRAO, BARRAS_BARBRAWL, assinatura } from "./assinatura.mjs";
 import { ligarAutomacoes, curaLonien } from "./automacoes.mjs";
-import { ligarTestesNoChat, pedirTeste, rolarPedido, resolver, resultadosContados } from "./testes-chat.mjs";
+import { ligarTestes, api as apiTestes, _teste as _testeTestes } from "./testes.mjs";
 
 export { PRESERVAR };
 
@@ -571,6 +571,76 @@ export async function registrarRedirecionamentos() {
 }
 
 /* ------------------------------------------------------------------------ */
+/* Macros do mundo: atualização sozinha                                       */
+/* ------------------------------------------------------------------------ */
+
+/** Rodada da atualização única das macros (0.9.0: testes no chat no padrão do Duelo de Dragões). */
+export const RODADA_MACROS = "0.9.0";
+
+/**
+ * Troca o código (command) de toda macro do mundo que veio do módulo, inclusive as editadas e as cópias arrastadas
+ * dos compêndios (para a barra de atalhos, por exemplo). A macro continua a mesma (id, nome, pasta e lugar na barra);
+ * só o código muda. Antes, cada macro editada à mão ganha uma cópia "(sua edição)" na pasta
+ * "Coração de Rubi / Cópias das suas edições (<rodada>)". Roda uma vez por mundo (configuração "macrosAtualizadas").
+ * @returns {Promise<{trocadas: number, copias: number}|null>}
+ */
+export async function atualizarMacros({ rodada = RODADA_MACROS } = {}) {
+	if (!game.user.isGM) return null;
+	if (game.settings.get(MODULO, "macrosAtualizadas") === rodada) return null;
+	const todo = await catalogo();
+	const cat = todo.filter((c) => c.tipo === "Macro");
+	const mapa = noMundo(todo);
+	const ids = idsDoMundo(todo, mapa);
+	let trocadas = 0;
+	let copias = 0;
+	let pasta = null;
+	const origem = (d) => d._stats?.compendiumSource ?? d.flags?.core?.sourceId ?? "";
+	for (const c of cat) {
+		const comp = await c.pack.getDocument(c.id);
+		if (!comp) continue;
+		const novo = linksParaMundo(comp.toObject(), ids).command;
+		const doMundo = game.macros.filter((w) => mapa.get(c.uuid) === w || w.id === c.id || origem(w) === c.uuid || origem(w).endsWith(`.Macro.${c.id}`));
+		for (const w of new Set(doMundo)) {
+			if (w.command === novo) continue;
+			const minha = assinatura(w.toObject(), "Macro");
+			if (!c.assinaturas.includes(minha)) {
+				if (!pasta) {
+					const nome = `Cópias das suas edições (${rodada})`;
+					let raiz = game.folders.find((f) => f.type === "Macro" && f.name === "Coração de Rubi" && !f.folder);
+					raiz ??= await classe("Folder").create({ name: "Coração de Rubi", type: "Macro", sorting: "a" });
+					pasta = game.folders.find((f) => f.type === "Macro" && f.name === nome && (f.folder?.id ?? f.folder) === raiz.id);
+					pasta ??= await classe("Folder").create({ name: nome, type: "Macro", folder: raiz.id, color: "#555555" });
+				}
+				const copia = w.toObject();
+				delete copia._id;
+				copia.name = `${w.name} (sua edição)`;
+				copia.folder = pasta.id;
+				// a cópia não é mais do módulo: não entra em Atualizar nem em Limpar
+				if (copia.flags?.world) {
+					delete copia.flags.world.cdr;
+					delete copia.flags.world.cdrRole;
+				}
+				if (copia._stats) delete copia._stats.compendiumSource;
+				await classe("Macro").createDocuments([copia]);
+				copias++;
+			}
+			await w.update({ command: novo });
+			trocadas++;
+		}
+	}
+	await game.settings.set(MODULO, "macrosAtualizadas", rodada);
+	if (trocadas) {
+		await ChatMessage.create({
+			whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id),
+			speaker: { alias: "Giria T20 - Coração de Rubi (Campanha)" },
+			content: `<h3>Coração de Rubi ${esc(rodada)}</h3><p>${trocadas} macro(s) do mundo (inclusive as que você puxou ou arrastou do compêndio) agora pedem os testes no chat: cada jogador clica no botão do seu herói e rola pela ficha, e você aplica o resultado pelos botões do cartão.</p>` +
+				(copias ? `<p>${copias} macro(s) que você tinha editado ficaram guardadas em <b>Coração de Rubi / Cópias das suas edições (${esc(rodada)})</b>, com "(sua edição)" no nome.</p>` : "")
+		});
+	}
+	return { trocadas, copias };
+}
+
+/* ------------------------------------------------------------------------ */
 /* Token das ameaças                                                          */
 /* ------------------------------------------------------------------------ */
 
@@ -636,8 +706,6 @@ Hooks.once("setup", () => {
 /* ------------------------------------------------------------------------ */
 
 Hooks.once("init", () => {
-	// Cartões de teste no chat: o botão precisa estar pronto antes de o chat desenhar as mensagens antigas.
-	ligarTestesNoChat();
 	game.settings.register(MODULO, "avisarVersao", {
 		name: "Avisar quando houver melhorias",
 		hint: "Quando sai uma versão nova do módulo, o Mestre recebe no chat (uma vez) quantos documentos do mundo têm melhorias no compêndio. Nada é mudado sem a macro CdR · Atualizar do compêndio.",
@@ -654,6 +722,7 @@ Hooks.once("init", () => {
 		type: Boolean,
 		default: true
 	});
+	game.settings.register(MODULO, "macrosAtualizadas", { scope: "world", config: false, type: String, default: "" });
 	game.settings.register(MODULO, "avisado", { scope: "world", config: false, type: String, default: "" });
 
 	const Base = foundry.applications?.api?.ApplicationV2;
@@ -697,6 +766,7 @@ Hooks.once("init", () => {
 			procurarAtualizacoes,
 			atualizarDocumento,
 			corrigirTokens,
+			atualizarMacros,
 			limpar,
 			abrirLimpar,
 			procurarParaLimpar,
@@ -706,10 +776,8 @@ Hooks.once("init", () => {
 			assinatura,
 			PRESERVAR,
 			curaLonien,
-			pedirTeste,
-			rolarPedido,
-			resolverTeste: resolver,
-			resultadosContados
+			testes: apiTestes,
+			_testeTestes
 		};
 	}
 });
@@ -717,7 +785,13 @@ Hooks.once("init", () => {
 Hooks.once("ready", async () => {
 	await registrarRedirecionamentos();
 	ligarAutomacoes();
+	ligarTestes();
 	if (!game.user.isGM || (game.users.activeGM && game.users.activeGM !== game.user)) return;
+	try {
+		await atualizarMacros();
+	} catch (e) {
+		console.error(`${MODULO} | macros`, e);
+	}
 	if (tokenPadraoLigado()) {
 		const { atores, tokens } = await corrigirTokens();
 		if (atores || tokens) ui.notifications.info(`Coração de Rubi: token padrão (PV e PM azul) em ${atores} ameaça(s) e ${tokens} token(s) nas cenas.`);

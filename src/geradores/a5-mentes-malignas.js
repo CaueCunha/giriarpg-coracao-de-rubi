@@ -707,43 +707,59 @@ for (const i of await Item.implementation.createDocuments(itens)) {
 
 // Macro
 const SALTO = String.raw`// A5 · Salto sobre Yuvalin (Mentes Malignas, Parte 2, Cena 1). Só o mestre.
-// Manda ao chat o cartão do salto. Cada jogador clica, escolhe a perícia do método de salto (e se tem voo, +5)
-// e rola; o chat diz em que cena ele pousa e, se for o caso, rola o dano da queda (aplicado pelos botões).
-// O ajuste (+2/-2 por habilidade ou ideia criativa) vale para todos; com tokens selecionados, só eles rolam.
+// Selecione os tokens que vão saltar (sem seleção: os personagens dos jogadores) e rode. O cartão vai ao chat com um
+// botão por método de salto para cada personagem; cada jogador rola pela ficha. Quando todos rolarem, a macro diz em
+// que cena cada um pousa; quem cai nos Muros Externos tem o dano da queda num botão que só você vê.
 if (!game.user.isGM) return ui.notifications.warn("Só o mestre roda esta macro.");
-const api = game.modules.get("giriarpg-coracao-de-rubi")?.api;
-if (!api?.pedirTeste) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
+const testes = game.modules.get("giriarpg-coracao-de-rubi")?.api?.testes;
+if (!testes) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
+// Quem testa: os tokens selecionados; sem seleção, os personagens dos jogadores.
+const selecionados = [...new Set(canvas.tokens.controlled.map((t) => t.actor).filter(Boolean))];
+const herois = selecionados.length ? selecionados : game.users.filter((u) => !u.isGM && u.character).map((u) => u.character);
+if (!herois.length) return ui.notifications.warn("Selecione os tokens dos personagens (ou ligue um personagem a cada jogador).");
 const { DialogV2 } = foundry.applications.api;
-const alvos = canvas.tokens.controlled.map((t) => t.actor?.id).filter(Boolean);
 const POUSO = [
-	[19, "pousa na Cena 2 · Distrito do Carvão: Muros Externos, e sofre 10d6 de impacto.", "10d6[impacto]"],
-	[24, "pousa na Cena 2 · Distrito do Carvão: Muros Externos."],
-	[26, "pousa na Cena 3 · Distrito do Carvão: Jardins-Estufa, e começa surpreendido pelas baterias."],
-	[27, "pousa na Cena 3 · Distrito do Carvão: Jardins-Estufa."],
-	[29, "pousa na Cena 4 · Distrito do Carvão: Bairro Boêmio."],
-	[31, "pousa na Cena 5 · Distrito da Bigorna: Oficina Beluhga."],
-	[33, "pousa na Cena 6 · Distrito da Bigorna: Taverna Fim do Mundo."],
-	[35, "pousa na Cena 7 · Distrito da Bigorna: Minérios Maravilhosos."],
-	[37, "pousa na Cena 8 · Distrito da Forja: Parque Normandia."],
-	[39, "pousa na Cena 9 · Distrito da Forja: Sede da Guilda."],
-	[44, "pousa na Cena 10 · Distrito da Forja: Kanpeki."],
-	[999, "pousa na Cena 11 · Portões da Fundição."]
+	[19, "Cena 2 · Distrito do Carvão: Muros Externos (e sofre 10d6 de impacto)", "10d6[impacto]"],
+	[24, "Cena 2 · Distrito do Carvão: Muros Externos"],
+	[26, "Cena 3 · Distrito do Carvão: Jardins-Estufa (e começa surpreendido pelas baterias)"],
+	[27, "Cena 3 · Distrito do Carvão: Jardins-Estufa"],
+	[29, "Cena 4 · Distrito do Carvão: Bairro Boêmio"],
+	[31, "Cena 5 · Distrito da Bigorna: Oficina Beluhga"],
+	[33, "Cena 6 · Distrito da Bigorna: Taverna Fim do Mundo"],
+	[35, "Cena 7 · Distrito da Bigorna: Minérios Maravilhosos"],
+	[37, "Cena 8 · Distrito da Forja: Parque Normandia"],
+	[39, "Cena 9 · Distrito da Forja: Sede da Guilda"],
+	[44, "Cena 10 · Distrito da Forja: Kanpeki"],
+	[999, "Cena 11 · Portões da Fundição"]
 ];
-const P = CONFIG.T20?.pericias ?? {};
-const nome = (id) => { const v = P[id]; return game.i18n.localize(typeof v === "string" ? v : v?.label ?? id); };
-const METODOS = [["acro", "paraquedas"], ["atle", "paraquedas"], ["cava", "montaria"], ["pilo", "veículo"], ["mist", "Voo ou similar"], ["refl", "voo natural"]]
-	.map(([id, m]) => [id, nome(id) + " (" + m + ")"]);
+// Métodos: paraquedas (Acrobacia ou Atletismo), montaria (Cavalgar), veículo (Pilotagem), Voo ou similar (Misticismo), voo natural (Reflexos).
+const METODOS = ["acro", "atle", "cava", "pilo", "mist", "refl"];
 const r = await DialogV2.wait({
 	window: { title: "Salto sobre Yuvalin" }, rejectClose: false,
-	content: '<label>Ajuste para todos (habilidade ou ideia: +2 ou -2) <input type="number" name="ajuste" value="0"></label>',
-	buttons: [{ action: "saltar", label: "Mandar ao chat", default: true, callback: (e, b) => ({ ajuste: Number(b.form.elements.ajuste.value) || 0 }) }]
+	content: "<p>Marque quem tem deslocamento de voo (+5) e o ajuste de cada um (habilidade ou ideia: +2 ou -2).</p>" +
+		herois.map((a, i) => '<div class="form-group"><label>' + a.name + '</label><label><input type="checkbox" name="voo' + i + '"> voo</label><input type="number" name="aj' + i + '" value="0" style="width:4em"></div>').join(""),
+	buttons: [{ action: "saltar", label: "Saltar!", default: true, callback: (e, b) => ({ f: b.form.elements }) }]
 });
 if (!r) return;
-await api.pedirTeste({
-	titulo: "Salto sobre Yuvalin", img: "icons/svg/falling.svg", alvos,
-	texto: "<p>Cada um escolhe como salta (paraquedas, montaria, veículo, magia ou voo) e rola a perícia do método. Quanto maior o resultado, mais perto da Fundição.</p><p><i>Ao entrar num distrito novo: Percepção ou Sobrevivência CD 30 para escolher a cena; sem descanso entre cenas.</i></p>",
-	pericia: "acro", escolherPericia: METODOS, voo: true, bonus: r.ajuste, faixas: POUSO
-});`;
+const res = await testes.pedir({
+	titulo: "Salto sobre Yuvalin",
+	texto: "Cada um escolhe como salta (paraquedas: Acrobacia ou Atletismo; montaria: Cavalgar; veículo: Pilotagem; magia: Misticismo; voo natural: Reflexos) e rola. Quanto maior, mais perto da Fundição.",
+	testes: herois.map((a, i) => ({ ator: a, pericias: METODOS, cd: null, bonus: (r.f["voo" + i]?.checked ? 5 : 0) + (Number(r.f["aj" + i]?.value) || 0) }))
+});
+if (!res?.length) return;
+const A = testes.acoes();
+let html = "<h3>Salto sobre Yuvalin</h3>";
+for (const x of res) {
+	const [, local, dano] = POUSO.find(([max]) => x.total <= max);
+	html += "<p><b>" + x.nome + "</b> (" + testes.nomePericia(x.pericia) + " " + x.total + "): " + local + ".";
+	if (dano && x.ator) {
+		const queda = await testes.rolarDano(dano, "Queda");
+		html += " Queda: <b>" + queda.total + "</b> de impacto. " + A.dano(x.ator, queda);
+	}
+	html += "</p>";
+}
+html += "<p><i>Ao entrar num distrito novo: Percepção ou Sobrevivência CD 30 para escolher a cena; sem descanso entre cenas.</i></p>";
+await A.enviar({ content: html });`;
 await Macro.implementation.create({ name: "A5 · Salto sobre Yuvalin", type: "script", scope: "global", img: "icons/svg/falling.svg", folder: pasta.Macro.id, flags: FLAGS("saltoYuvalin"), command: SALTO });
 relatorio.criados.push("Macro: A5 · Salto sobre Yuvalin");
 
