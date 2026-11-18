@@ -73,6 +73,10 @@ A atualização troca o documento pela versão do compêndio com o **mesmo ID**,
 
 As flags ficam em `flags.world` porque entram na assinatura e vão junto ao puxar. Para uma aventura nova, acrescente a chave em [`scripts/automacoes.mjs`](scripts/automacoes.mjs). A API fica em `game.modules.get("giriarpg-coracao-de-rubi").api` (`abrirPuxar`, `abrirAtualizar`, `abrirLimpar`, `curaLonien(ator)`).
 
+### Testes no chat: o jogador rola
+
+As macros da campanha não rolam testes pelos personagens. Elas mandam ao chat um cartão, no formato dos poderes: a situação, o teste pedido (a CD só aparece para o mestre), a rolagem do dano quando há (com os botões do sistema para aplicar o dano todo, em dobro ou a metade) e o botão do teste. Cada jogador clica e rola o teste dos seus tokens selecionados (ou do seu personagem); o chat diz se passou e o que acontece. Nada é aplicado sozinho. Placar com estado (O Julgamento, Teste estendido, Bebida Amarga do Wyrt) é contado pelo mestre ativo quando o resultado chega. Usam o cartão: A1 · O Julgamento, A3 · Partida de Wyrt (Bebida Amarga), A4 · Ases nas Alturas, A5 · Salto sobre Yuvalin e CdR · Teste estendido. Para outras macros: `game.modules.get("giriarpg-coracao-de-rubi").api.pedirTeste({...})` (opções em `scripts/testes-chat.mjs`).
+
 ### O que fica aqui e o que fica no Giria T20
 
 Este módulo ajuda o **mestre** a rodar a campanha e traz os **artefatos da campanha** que os jogadores usam (parceiros K e Lonien, itens de aço-rubi, o poder Dado de Aniversário). Regras gerais de personagem (poderes, magias e itens dos livros) ficam no **Giria T20**, a base dos jogadores em todas as campanhas. Por isso Armas da Destruição, Caminhos do Arcanista, Devoto de Nimb e Missa: Elevação do Espírito não estão aqui.

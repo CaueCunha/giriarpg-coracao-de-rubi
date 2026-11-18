@@ -669,7 +669,8 @@ relatorio.criados.push(`Tabela: ${tabela.name}`);
 const WYRT = String.raw`// A3 · Partida de Wyrt (Blefe Fatal, Parte 1, Cena 4). Só o mestre.
 // Selecione os tokens dos (até dois) personagens na mesa. "Jogar o turno" resolve o turno de um deles
 // (aposta, mão inicial, blefe, ajuda e Hora da Verdade contra Prinkster +14). "Fim da rodada" rola a
-// Bebida Amarga de quem bebeu e solta o próximo comentário de Prinkster. Bolsas e placar ficam salvos.
+// Bebida Amarga de quem bebeu (cada jogador rola a Fortitude no cartão do chat) e solta o próximo comentário de
+// Prinkster. Bolsas e placar ficam salvos.
 if (!game.user.isGM) return ui.notifications.warn("Só o mestre roda esta macro.");
 const { DialogV2 } = foundry.applications.api;
 const FLAG = "cdrWyrt";
@@ -715,29 +716,32 @@ if (r.a === "zerar") {
 	return ui.notifications.info("Nova partida de Wyrt: selecione os jogadores e rode de novo.");
 }
 if (r.a === "rodada") {
+	// Bebida Amarga: um cartão por quem bebeu; o jogador rola a Fortitude no botão e a falha é contada quando chega.
+	const api = game.modules.get("giriarpg-coracao-de-rubi")?.api;
+	if (!api?.pedirTeste) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
 	const naoBebeu = (r.f.naoBebeu.value ?? "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
 	let html = "";
 	let beberam = 0;
 	for (const [id, j] of ativos) {
 		if (naoBebeu.includes(j.nome.toLowerCase())) { html += "<p>" + j.nome + " não bebeu.</p>"; continue; }
 		beberam++;
-		const ator = game.actors.get(id);
 		const cd = 15 + j.bebidas;
-		const t = await rolar("1d20 + " + val(ator, "fort"));
 		j.bebidas++;
-		if (t >= cd) { html += "<p>" + j.nome + ": Fortitude " + t + " vs CD " + cd + " → resiste.</p>"; continue; }
-		j.falhas++;
-		const cond = ["frustrado", "esmorecido", "inconsciente"][Math.min(j.falhas, 3) - 1];
-		if (j.falhas >= 3) j.fora = true;
-		html += "<p>" + j.nome + ": Fortitude " + t + " vs CD " + cd + " → <b>" + cond + "</b>" + (j.fora ? " (sai do jogo)" : "") + ".</p>";
-		try { await ator?.toggleStatusEffect?.(cond, { active: true }); } catch (e) { console.warn(e); }
+		const proxima = ["frustrado", "esmorecido", "inconsciente"][Math.min(j.falhas + 1, 3) - 1];
+		await api.pedirTeste({
+			titulo: "Bebida Amarga · " + j.nome, img: "icons/consumables/potions/potion-flask-corked-pink.webp", alvos: [id],
+			texto: "<p>Mais uma rodada da bebida da taverna. Dose " + j.bebidas + ".</p>",
+			pericia: "fort", cd,
+			sucesso: "aguenta a bebida.", falha: "sente a bebida: fica <b>" + proxima + "</b>" + (proxima === "inconsciente" ? " e sai do jogo" : "") + ".",
+			gancho: "wyrtBebida"
+		});
 	}
 	if (beberam && !naoBebeu.length && st.comentario < COMENTARIOS.length) {
 		html += "<p><b>Prinkster (" + (st.comentario + 1) + "/8):</b> <i>“" + COMENTARIOS[st.comentario] + "”</i></p>";
 		st.comentario++;
 	} else if (naoBebeu.length) html += "<p>Prinkster se ofende e não comenta nada nesta rodada.</p>";
 	await game.user.setFlag("world", FLAG, st);
-	return sussurro(html);
+	return sussurro(html + (beberam ? "<p>Bebida Amarga: os cartões de Fortitude estão no chat.</p>" : ""));
 }
 const id = r.f.quem.value;
 const j = st.jogadores[id];

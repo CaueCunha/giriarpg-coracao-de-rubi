@@ -1,6 +1,7 @@
 // Teste estendido genérico (N sucessos antes de X falhas). Macro de script, só o mestre.
-// Selecione os tokens que vão rolar e rode a macro. O progresso fica salvo entre sessões.
-// Opcional: dano por falha (aplicado a quem falhou), ex.: "1d6[perda]".
+// Selecione os tokens que vão rolar (ou nenhum, para qualquer jogador) e rode a macro. O progresso fica salvo entre sessões.
+// Rolar manda ao chat um cartão com o botão do teste: cada jogador rola o seu (com tokens selecionados, só eles).
+// Opcional: dano por falha (quem falha vê a rolagem do dano, aplicada pelos botões), ex.: "1d6[perda]".
 // Botões "+1 sucesso" e "+1 falha" servem para efeitos que contam direto.
 // Exemplos (Aventura 2): Negociar com Zhura (andar 1, área 7): Diplomacia ou Intimidação CD 25 (20 com Stroka), 3 sucessos.
 // Epílogo, meio-termo entre Lonien e K: Diplomacia CD 25, 3 sucessos.
@@ -34,7 +35,7 @@ const content = `
 const escolha = await DialogV2.wait({
   window: { title: "Teste estendido" }, content, rejectClose: false,
   buttons: [
-    { action: "rolar", label: "Rolar (tokens selecionados)", default: true, callback: (e, b) => ({ a: "rolar", f: b.form.elements }) },
+    { action: "rolar", label: "Pedir o teste no chat", default: true, callback: (e, b) => ({ a: "rolar", f: b.form.elements }) },
     { action: "mais", label: "+1 sucesso", callback: (e, b) => ({ a: "mais", f: b.form.elements }) },
     { action: "menos", label: "+1 falha", callback: (e, b) => ({ a: "menos", f: b.form.elements }) },
     { action: "novo", label: "Novo teste", callback: (e, b) => ({ a: "novo", f: b.form.elements }) },
@@ -57,35 +58,30 @@ if (!nome || !testes[nome]) return ui.notifications.warn("Nenhum teste escolhido
 if (escolha.a === "apagar") { delete testes[nome]; await gravar(); return ui.notifications.info(`Teste "${nome}" apagado.`); }
 
 const t = testes[nome];
-const linhas = [];
-if (escolha.a === "mais") { t.s++; linhas.push("+1 sucesso (manual)"); }
-else if (escolha.a === "menos") { t.f++; linhas.push("+1 falha (manual)"); }
-else {
-  const tokens = canvas.tokens.controlled;
-  if (!tokens.length) return ui.notifications.warn("Selecione os tokens que vão rolar.");
-  const pid = f.periciaRolagem.value || t.pericia;
-  const bonus = Number(f.bonus.value) || 0;
-  for (const tok of tokens) {
-    const a = tok.actor;
-    const v = a.system.pericias?.[pid]?.value ?? 0;
-    const r = await new Roll(`1d20 + ${v} + ${bonus}`).evaluate();
-    await r.toMessage({ speaker: ChatMessage.getSpeaker({ token: tok.document }), flavor: `${nome}: ${nomePericia(pid)} (CD ${t.cd})` });
-    const ok = r.total >= t.cd;
-    ok ? t.s++ : t.f++;
-    linhas.push(`${a.name}: ${r.total} ${ok ? "✔" : "✘"}`);
-    if (!ok && t.dano) {
-      const d = await new Roll(t.dano).evaluate();
-      await d.toMessage({ speaker: ChatMessage.getSpeaker({ token: tok.document }), flavor: `${nome}: dano da falha` });
-      await a.applyDamageV2(d, 1);
-    }
-  }
-  t.n++;
+if (escolha.a === "mais" || escolha.a === "menos") {
+  escolha.a === "mais" ? t.s++ : t.f++;
+  let fim = "";
+  if (t.s >= t.need) fim = `<p><b>Sucesso!</b> ${t.s} sucessos.</p>`;
+  else if (t.f >= t.maxF) fim = `<p><b>Fracasso.</b> ${t.f} falhas.</p>`;
+  ChatMessage.create({ whisper: ChatMessage.getWhisperRecipients("GM"), content:
+    `<h3>${nome}</h3><p>${escolha.a === "mais" ? "+1 sucesso" : "+1 falha"} (manual)</p><p>Progresso: ${t.s}/${t.need} sucessos, ${t.f}/${t.maxF} falhas. Rolagens feitas: ${t.n} (× ${t.tempo}).</p>${fim}` });
+  if (fim) delete testes[nome];
+  await gravar();
+  return;
 }
-let fim = "";
-if (t.s >= t.need) fim = `<p><b>Sucesso!</b> ${t.s} sucessos.</p>`;
-else if (t.f >= t.maxF) fim = `<p><b>Fracasso.</b> ${t.f} falhas.</p>`;
-ChatMessage.create({ whisper: ChatMessage.getWhisperRecipients("GM"), content:
-  `<h3>${nome}</h3><p>${linhas.join("<br>")}</p><p>Progresso: ${t.s}/${t.need} sucessos, ${t.f}/${t.maxF} falhas. Rolagens feitas: ${t.n} (× ${t.tempo}).</p>${fim}` });
-if (fim) delete testes[nome];
+// Rolar: o cartão vai ao chat e cada jogador rola no botão. Sucessos e falhas são contados quando o resultado
+// chega; quem falha vê o dano da falha num cartão (aplicado pelos botões do cartão).
+const api = game.modules.get("giriarpg-coracao-de-rubi")?.api;
+if (!api?.pedirTeste) return ui.notifications.warn("Ative o módulo Coração de Rubi.");
+const pid = f.periciaRolagem.value || t.pericia;
+t.n++;
 await gravar();
-
+await api.pedirTeste({
+  titulo: nome, img: "icons/svg/d20-highlight.svg",
+  alvos: canvas.tokens.controlled.map((tk) => tk.actor?.id).filter(Boolean),
+  texto: `<p>Teste estendido: ${t.s}/${t.need} sucessos, ${t.f}/${t.maxF} falhas (cada rolagem leva ${t.tempo}).</p>`,
+  pericia: pid, cd: t.cd, bonus: Number(f.bonus.value) || 0,
+  sucesso: "avança no teste.", falha: "não avança" + (t.dano ? " e sofre o dano da falha." : "."),
+  danoNaFalha: t.dano || null,
+  gancho: "estendido", dados: { nome }
+});
