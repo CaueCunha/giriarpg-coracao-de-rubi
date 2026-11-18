@@ -15,6 +15,7 @@
  */
 import { MODULO, PRESERVAR, TOKEN_PADRAO, BARRAS_BARBRAWL, assinatura } from "./assinatura.mjs";
 import { ligarAutomacoes, curaLonien } from "./automacoes.mjs";
+import { ligarTestesNoChat, pedirTeste, rolarPedido, resolver, resultadosContados } from "./testes-chat.mjs";
 
 export { PRESERVAR };
 
@@ -635,6 +636,8 @@ Hooks.once("setup", () => {
 /* ------------------------------------------------------------------------ */
 
 Hooks.once("init", () => {
+	// Cartões de teste no chat: o botão precisa estar pronto antes de o chat desenhar as mensagens antigas.
+	ligarTestesNoChat();
 	game.settings.register(MODULO, "avisarVersao", {
 		name: "Avisar quando houver melhorias",
 		hint: "Quando sai uma versão nova do módulo, o Mestre recebe no chat (uma vez) quantos documentos do mundo têm melhorias no compêndio. Nada é mudado sem a macro CdR · Atualizar do compêndio.",
@@ -702,7 +705,11 @@ Hooks.once("init", () => {
 			atos,
 			assinatura,
 			PRESERVAR,
-			curaLonien
+			curaLonien,
+			pedirTeste,
+			rolarPedido,
+			resolverTeste: resolver,
+			resultadosContados
 		};
 	}
 });
