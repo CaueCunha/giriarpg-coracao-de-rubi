@@ -48,10 +48,16 @@ test("Ases nas Alturas: o cartão traz o dano e o botão de Reflexos; o jogador 
 	assert.equal(cartao.rolls.length, 1, "faltou a rolagem do dano");
 	assert.match(cartao.content, /roll--dano/);
 	assert.equal(resultados(mundo).length, 0, "a macro não pode rolar pelos personagens");
-	await api(mundo).rolarPedido(cartao);
+	// clique duplo: os dois cliques chegam juntos e só um rola
+	await Promise.all([api(mundo).rolarPedido(cartao), api(mundo).rolarPedido(cartao)]);
 	await mundo.aguardarOcioso();
 	const res = resultados(mundo);
-	assert.ok(res.length >= 1, "o botão devia rolar o teste");
+	assert.equal(res.length, 1, "o clique duplo não pode rolar duas vezes");
+	// clicar de novo depois também não
+	await api(mundo).rolarPedido(cartao);
+	await mundo.aguardarOcioso();
+	assert.equal(resultados(mundo).length, 1, "o mesmo personagem não rola duas vezes o mesmo cartão");
+	assert.equal(mundo.chat.filter(pedidoDe).length, 1, "o cartão foi mandado uma vez só");
 	assert.match(res[0].flavor, /Canhões do Vento Vasto/);
 	assert.match(res[0].flavor, /Passou|Falhou/);
 	assert.equal(pj.system.attributes.pv.value, pv, "o dano não pode ser aplicado sozinho");
