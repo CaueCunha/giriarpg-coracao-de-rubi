@@ -155,21 +155,38 @@ async function cartaoDeDano(titulo, formula, actor) {
  * @param {ChatMessage} message  o cartão
  * @param {Event} [event]
  */
+const emAndamento = new Set(); // cartões com rolagem em curso neste cliente (clique duplo)
+const jaRolados = new Set(); // "cartão:ator" já rolados aqui, antes de o Mestre marcar no cartão
+
 export async function rolarPedido(message, event) {
 	event?.preventDefault?.();
 	const pedido = flag(message, "pedido");
-	if (!pedido) return;
+	if (!pedido || emAndamento.has(message.id)) return;
+	emAndamento.add(message.id);
+	const botao = event?.currentTarget;
+	if (botao) botao.disabled = true;
+	try {
+		await rolarAgora(message, pedido, event);
+	} finally {
+		emAndamento.delete(message.id);
+		if (botao) botao.disabled = false;
+	}
+}
+
+async function rolarAgora(message, pedido, event) {
 	const atores = quemRola(pedido);
 	if (!atores.length) return ui.notifications.warn("Selecione o seu token (ou tenha um personagem) para rolar o teste.");
 	const escolha = await perguntar(pedido);
 	if (!escolha) return;
 	for (const actor of atores) {
-		if (pedido.rolaram?.includes(actor.id)) {
+		const chave = `${message.id}:${actor.id}`;
+		if (pedido.rolaram?.includes(actor.id) || jaRolados.has(chave)) {
 			ui.notifications.warn(`${actor.name} já rolou este teste.`);
 			continue;
 		}
 		const roll = await actor.rollPericia(escolha.pericia, { event, message: false });
 		if (!roll) continue;
+		jaRolados.add(chave);
 		const extra = escolha.extra + pedido.bonus;
 		const total = roll.total + extra;
 		const r = resolver(pedido, total);
