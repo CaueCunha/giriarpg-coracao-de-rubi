@@ -702,6 +702,40 @@ Hooks.once("setup", () => {
 });
 
 /* ------------------------------------------------------------------------ */
+/* Pasta dos compêndios                                                       */
+/* ------------------------------------------------------------------------ */
+
+/**
+ * Põe os compêndios do módulo na pasta do packFolders (module.json). O Foundry nem sempre cria essa pasta
+ * ao ativar o módulo num mundo, e aí os compêndios ficam soltos na barra lateral. Roda uma vez por mundo
+ * (setting pastaCompendios): depois disso, se o Mestre tirar um compêndio da pasta, ele fica onde está.
+ * Só mexe nos compêndios que estão soltos.
+ */
+export async function organizarCompendios({ forcar = false } = {}) {
+	if (!forcar && game.settings.get(MODULO, "pastaCompendios")) return { pasta: null, movidos: 0 };
+	const def = modulo()?.packFolders?.[0] ?? modulo()?._source?.packFolders?.[0];
+	const nome = def?.name ?? "Giria T20 - Coração de Rubi (Campanha)";
+	const ordem = def?.packs ?? [];
+	const lista = packs().sort((a, b) => (ordem.indexOf(a.metadata.name) + 1 || 99) - (ordem.indexOf(b.metadata.name) + 1 || 99));
+	const pastaDe = (p) => (typeof p.folder === "string" ? game.folders.get(p.folder) : p.folder) ?? null;
+	const soltos = lista.filter((p) => !pastaDe(p));
+	let pasta = game.folders.find((f) => f.type === "Compendium" && f.name === nome) ?? null;
+	if (soltos.length && !pasta) pasta = await Folder.create({ name: nome, type: "Compendium", sorting: def?.sorting ?? "m", color: def?.color ?? "#6b2f2f" });
+	if (pasta) {
+		for (const p of soltos) {
+			const sort = (lista.indexOf(p) + 1) * (CONST.SORT_INTEGER_DENSITY ?? 100000);
+			if (typeof p.setFolder === "function") {
+				await p.setFolder(pasta);
+				await p.configure({ sort });
+			} else await p.configure({ folder: pasta.id, sort });
+		}
+	}
+	await game.settings.set(MODULO, "pastaCompendios", true);
+	if (soltos.length) ui.compendium?.render?.();
+	return { pasta, movidos: soltos.length };
+}
+
+/* ------------------------------------------------------------------------ */
 /* Ganchos                                                                    */
 /* ------------------------------------------------------------------------ */
 
@@ -724,6 +758,7 @@ Hooks.once("init", () => {
 	});
 	game.settings.register(MODULO, "macrosAtualizadas", { scope: "world", config: false, type: String, default: "" });
 	game.settings.register(MODULO, "avisado", { scope: "world", config: false, type: String, default: "" });
+	game.settings.register(MODULO, "pastaCompendios", { scope: "world", config: false, type: Boolean, default: false });
 
 	const Base = foundry.applications?.api?.ApplicationV2;
 	if (Base) {
@@ -771,6 +806,7 @@ Hooks.once("init", () => {
 			abrirLimpar,
 			procurarParaLimpar,
 			abrirMenu,
+			organizarCompendios,
 			catalogo,
 			atos,
 			assinatura,
@@ -787,6 +823,11 @@ Hooks.once("ready", async () => {
 	ligarAutomacoes();
 	ligarTestes();
 	if (!game.user.isGM || (game.users.activeGM && game.users.activeGM !== game.user)) return;
+	try {
+		await organizarCompendios();
+	} catch (e) {
+		console.error(`${MODULO} | pasta dos compêndios`, e);
+	}
 	try {
 		await atualizarMacros();
 	} catch (e) {
