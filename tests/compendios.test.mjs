@@ -178,3 +178,25 @@ test("tabelas sorteiam", async () => {
 	}
 	mundo.encerrar();
 });
+
+test("ao abrir o mundo, os compêndios soltos vão para a pasta do módulo (uma vez só)", async () => {
+	const mundo = await criarMundo({ semente: "pasta-compendios" });
+	try {
+		await carregarModulo(mundo, { ready: true });
+		const g = mundo.game;
+		const nome = m.packFolders[0].name;
+		const pastas = g.folders.filter((f) => f.type === "Compendium" && f.name === nome);
+		assert.equal(pastas.length, 1, "a pasta dos compêndios deve existir uma vez");
+		const nossos = g.packs.filter((p) => p.metadata.packageName === MODULO);
+		assert.equal(nossos.length, m.packs.length);
+		for (const p of nossos) assert.equal(p.folder, pastas[0].id, `${p.metadata.name} fora da pasta`);
+		// o Mestre tira um compêndio da pasta: não volta sozinho
+		await nossos[0].configure({ folder: null });
+		const r = await g.modules.get(MODULO).api.organizarCompendios();
+		assert.equal(r.movidos, 0);
+		assert.equal(nossos[0].folder, null);
+		assert.equal(g.folders.filter((f) => f.type === "Compendium").length, 1);
+	} finally {
+		mundo.encerrar();
+	}
+});
