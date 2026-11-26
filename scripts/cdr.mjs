@@ -371,7 +371,7 @@ export async function atualizar({ confirmar = true } = {}) {
 	const ficaram = lista.length - editados.length - escolhidos.length;
 	await ChatMessage.create({
 		whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id),
-		speaker: { alias: "Giria T20 - Coração de Rubi (Campanha)" },
+		speaker: { alias: "T20 Giria - Coração de Rubi (Campanha)" },
 		content:
 			`<h3>Atualização do compêndio (v${esc(modulo()?.version)})</h3><p><b>${atualizados}</b> documento(s) atualizado(s)` +
 			`${falhas.length ? `, ${falhas.length} falha(s)` : ""}${ficaram ? `; ${ficaram} desmarcado(s) ficaram como estavam` : ""}.</p>` +
@@ -478,7 +478,7 @@ export async function limpar({ tipos = ["Item", "JournalEntry", "RollTable", "Ma
 	const mantidos = todos.length - lista.length;
 	await ChatMessage.create({
 		whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id),
-		speaker: { alias: "Giria T20 - Coração de Rubi (Campanha)" },
+		speaker: { alias: "T20 Giria - Coração de Rubi (Campanha)" },
 		content:
 			`<h3>Limpeza do mundo</h3><p><b>${apagados}</b> documento(s) apagado(s) e ${pastas} pasta(s) vazia(s) removida(s); ${mantidos} mantido(s).</p>` +
 			(copias.length ? `<p>Cópia guardada em: ${copias.map(esc).join(", ")}.</p>` : "") +
@@ -535,7 +535,7 @@ export async function abrirLimpar() {
 export async function abrirMenu() {
 	if (!game.user.isGM) return null;
 	const acao = await foundry.applications.api.DialogV2.wait({
-		window: { title: "Giria T20 - Coração de Rubi (Campanha)", icon: "fa-solid fa-gem" },
+		window: { title: "T20 Giria - Coração de Rubi (Campanha)", icon: "fa-solid fa-gem" },
 		position: { width: 440 },
 		content: `<p><b>Puxar do compêndio</b> traz aventuras inteiras para o mundo (só o que falta).</p>
 			<p><b>Atualizar do compêndio</b> mostra o que mudou na versão nova do módulo; nada que você editou é tocado.</p>
@@ -632,7 +632,7 @@ export async function atualizarMacros({ rodada = RODADA_MACROS } = {}) {
 	if (trocadas) {
 		await ChatMessage.create({
 			whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id),
-			speaker: { alias: "Giria T20 - Coração de Rubi (Campanha)" },
+			speaker: { alias: "T20 Giria - Coração de Rubi (Campanha)" },
 			content: `<h3>Coração de Rubi ${esc(rodada)}</h3><p>${trocadas} macro(s) do mundo (inclusive as que você puxou ou arrastou do compêndio) agora pedem os testes no chat: cada jogador clica no botão do seu herói e rola pela ficha, e você aplica o resultado pelos botões do cartão.</p>` +
 				(copias ? `<p>${copias} macro(s) que você tinha editado ficaram guardadas em <b>Coração de Rubi / Cópias das suas edições (${esc(rodada)})</b>, com "(sua edição)" no nome.</p>` : "")
 		});
@@ -711,15 +711,23 @@ Hooks.once("setup", () => {
  * (setting pastaCompendios): depois disso, se o Mestre tirar um compêndio da pasta, ele fica onde está.
  * Só mexe nos compêndios que estão soltos.
  */
+const PASTAS_ANTIGAS = ["Giria T20 - Coração de Rubi (Campanha)"];
+
 export async function organizarCompendios({ forcar = false } = {}) {
-	if (!forcar && game.settings.get(MODULO, "pastaCompendios")) return { pasta: null, movidos: 0 };
 	const def = modulo()?.packFolders?.[0] ?? modulo()?._source?.packFolders?.[0];
-	const nome = def?.name ?? "Giria T20 - Coração de Rubi (Campanha)";
+	const nome = def?.name ?? "T20 Giria - Coração de Rubi (Campanha)";
+	// pasta com o nome antigo (0.9.1): renomeia, mantendo o que o Mestre arrumou nela
+	const comNome = (n) => game.folders.find((f) => f.type === "Compendium" && f.name === n);
+	if (!comNome(nome)) {
+		const antiga = PASTAS_ANTIGAS.map(comNome).find(Boolean);
+		if (antiga) await antiga.update({ name: nome });
+	}
+	if (!forcar && game.settings.get(MODULO, "pastaCompendios")) return { pasta: comNome(nome) ?? null, movidos: 0 };
 	const ordem = def?.packs ?? [];
 	const lista = packs().sort((a, b) => (ordem.indexOf(a.metadata.name) + 1 || 99) - (ordem.indexOf(b.metadata.name) + 1 || 99));
 	const pastaDe = (p) => (typeof p.folder === "string" ? game.folders.get(p.folder) : p.folder) ?? null;
 	const soltos = lista.filter((p) => !pastaDe(p));
-	let pasta = game.folders.find((f) => f.type === "Compendium" && f.name === nome) ?? null;
+	let pasta = comNome(nome) ?? null;
 	if (soltos.length && !pasta) pasta = await Folder.create({ name: nome, type: "Compendium", sorting: def?.sorting ?? "m", color: def?.color ?? "#6b2f2f" });
 	if (pasta) {
 		for (const p of soltos) {
@@ -846,7 +854,7 @@ Hooks.once("ready", async () => {
 	const desat = lista.filter((p) => p.estado === "desatualizado").length;
 	await ChatMessage.create({
 		whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id),
-		speaker: { alias: "Giria T20 - Coração de Rubi (Campanha)" },
+		speaker: { alias: "T20 Giria - Coração de Rubi (Campanha)" },
 		content: `<p><b>Coração de Rubi v${esc(versao)}</b>: ${desat} documento(s) do mundo têm melhorias no compêndio${lista.length - desat ? ` e ${lista.length - desat} que você editou ficam como estão` : ""}.
 			Nada foi mudado. Para escolher o que atualizar, rode a macro <i>CdR · Atualizar do compêndio</i> ou use o botão <i>Coração de Rubi</i> na aba de Compêndios.</p>`
 	});

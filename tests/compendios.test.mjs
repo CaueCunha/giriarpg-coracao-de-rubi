@@ -200,3 +200,19 @@ test("ao abrir o mundo, os compêndios soltos vão para a pasta do módulo (uma 
 		mundo.encerrar();
 	}
 });
+
+test("pasta com o nome antigo (0.9.1) é renomeada, sem criar outra", async () => {
+	const mundo = await criarMundo({ semente: "pasta-antiga" });
+	try {
+		await carregarModulo(mundo);
+		const g = mundo.game;
+		const antiga = await g.folders.documentClass.create({ name: "Giria T20 - Coração de Rubi (Campanha)", type: "Compendium" });
+		await g.settings.set(MODULO, "pastaCompendios", true);
+		const r = await g.modules.get(MODULO).api.organizarCompendios();
+		assert.equal(r.pasta?.id, antiga.id);
+		assert.equal(antiga.name, m.packFolders[0].name);
+		assert.equal(g.folders.filter((f) => f.type === "Compendium").length, 1);
+	} finally {
+		mundo.encerrar();
+	}
+});
